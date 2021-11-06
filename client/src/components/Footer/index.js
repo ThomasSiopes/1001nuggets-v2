@@ -9,7 +9,8 @@ const FooterPage = () => {
                 <Row>
                     <Col xs={12} md={4} className="d-flex font-Lato">
                         <Container className="align-self-center">
-                            <Link to={`/`} className="navbar-brand text-white footer-img"><img src="/assets/images/thumbnails/undoctrination_small.png" alt="Footer Icon"/></Link>
+                            {/* <Link to={`/`} className="navbar-brand text-white footer-img"><img src="/assets/images/thumbnails/undoctrination_small.png" alt="Footer Icon"/></Link> */}
+                            Website Icon Goes Here
                         </Container>
                     </Col>
                     <Col xs={12} md={4} className="align-self-center mb-3">
@@ -19,9 +20,9 @@ const FooterPage = () => {
                         Site
                         <hr></hr>
                         <i>
-                            <p><Link className="text-white" to={`/`}>Authors</Link></p>
-                            <p><Link className="text-white" to={`/freethinkers`}>Freethinkers</Link></p>
-                            <p><Link className="text-white" to={`/thoughts`}>Thoughts</Link></p>
+                            <p><Link className="text-white" to={`/`}>Home</Link></p>
+                            <p><Link className="text-white" to={`/authors`}>Authors</Link></p>
+                            <p><Link className="text-white" to={`/topics`}>Topics</Link></p>
                         </i>
                     </Col>
                 </Row>

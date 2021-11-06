@@ -1,0 +1,43 @@
+[
+    {
+        "questions": [
+            {
+                "text": "Which option will you pick?",
+                "choices": [
+                    {"name": "Option 1", "value": 1},
+                    {"name": "Option 2", "value": 2},
+                    {"name": "Option 3", "value": 3}
+                ]
+            },
+            {
+                "text": "Which option will you pick this time?",
+                "choices": [
+                    {"name": "This time, option 1", "value": 1},
+                    {"name": "This time, option 2", "value": 2},
+                    {"name": "This time, option 3", "value": 3}
+                ]
+            },
+            {
+                "text": "How about now?",
+                "choices": [
+                    {"name": "Let's go with option 1", "value": 1},
+                    {"name": "Let's go with option 2", "value": 2},
+                    {"name": "Let's go with option 3", "value": 3}
+                ]
+            },
+            {
+                "text": "One final prompt:",
+                "choices": [
+                    {"name": "End it with option 1", "value": 1},
+                    {"name": "End it with option 2", "value": 2},
+                    {"name": "End it with option 3", "value": 3}
+                ]
+            }
+        ],
+        "scores": [
+            {"name": "Option 1", "value": 1, "score": 0},
+            {"name": "Option 2", "value": 2, "score": 0},
+            {"name": "Option 3", "value": 3, "score": 0}
+        ]
+    }
+]

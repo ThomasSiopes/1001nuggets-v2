@@ -16,28 +16,12 @@ const authorSchema = new Schema({
         type: String,
         required: true,
     },
-    FT: {
-        type: String,
-        required: true,
-    },
     quotes: [
         {
             type: Schema.Types.ObjectId,
             ref: "Quote",
         },
     ],
-    color: {
-        type: String,
-        required: false,
-    },
-    darkColor: {
-        type: String,
-        required: false,
-    },
-    lightColor: {
-        type: String,
-        required: false,
-    },
     thumbnail: {
         type: String,
         required: false,

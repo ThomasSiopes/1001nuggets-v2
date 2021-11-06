@@ -5,16 +5,12 @@ export const QUERY_AUTHOR_ALL = gql`
         authors {
             _id
             name
-            FT
             quotes {
                 _id
                 quoteText
                 author
                 topics
             }
-            color
-            darkColor
-            lightColor
             thumbnail
             links {
                 type
@@ -30,16 +26,12 @@ export const QUERY_AUTHOR_NAME = gql`
         authorName (name: $name){
             _id
             name
-            FT
             quotes {
                 _id
                 quoteText
                 author
                 topics
             }
-            color
-            darkColor
-            lightColor
             thumbnail
             links {
                 type
@@ -55,16 +47,12 @@ export const QUERY_AUTHOR_ID = gql`
         authorID (authorId: $authorId){
             _id
             name
-            FT
             quotes {
                 _id
                 quoteText
                 author
                 topics
             }
-            color
-            darkColor
-            lightColor
             thumbnail
             links {
                 type
@@ -148,6 +136,25 @@ export const QUERY_LINKS = gql`
             type
             text
             link
+        }
+    }
+`;
+
+export const QUERY_SCOREBOARD = gql`
+    query getScoreboard {
+        scoreboard {
+            questions {
+                text
+                choices {
+                    name
+                    value
+                }
+            }
+            scores {
+                name
+                value
+                score
+            }
         }
     }
 `;

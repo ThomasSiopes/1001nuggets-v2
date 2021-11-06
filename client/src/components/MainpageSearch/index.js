@@ -12,7 +12,7 @@ const MainPageSearch = () => {
 
     let authorList = [];
     for(let index of data.authors){
-        if(index.FT === "n") authorList.push(index)
+        authorList.push(index)
     }
     // console.log(authorList);
 
@@ -41,7 +41,7 @@ const MainPageSearch = () => {
             <Row id="myGroup" className="text-center">
                 {authorList.map((index) => (
                     <Col xs={12} key= {"search: " + index.name} className="my-1">
-                        <Link to={`/author/${index._id}`}>{index.name}</Link>
+                        <Link to={`/author/${index._id}`} className="link-theme">{index.name}</Link>
                     </Col>
                 ))}
             </Row>

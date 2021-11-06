@@ -14,7 +14,13 @@ function TopicNavigation () {
 
     const topicList = data.topics;
 
-    console.log(topicList);
+    let sortedList = []
+
+    for(let index of topicList) {
+        sortedList.push(index)
+    }
+
+    sortedList = sortedList.sort((a,b) => a.name.localeCompare(b.name));
 
     const searchFunction = () => {
         let input, filter, group, elements, body, textValue;
@@ -32,27 +38,26 @@ function TopicNavigation () {
     }
 
     return (
-        <Container className="text-center text-white">
+        <Container>
             <MetaTags>
-                <title>Undoctrination - Thoughts</title>
+                <title>1001 Nuggets - Topics</title>
             </MetaTags>
-            <h3 className="bg-theme py-3 rounded mb-3">Thoughts</h3>
-            <input type="text" id="myInput" onKeyUp={searchFunction} placeholder="Search for thought names..." className="mb-3"/>
-            <Row id="myGroup">
-                {topicList.map((index) => (
-                    <Col xs={12} sm={6} md={4} key={index.name} className="text-center mb-3">
-                        <Link to={`/topic/${index._id}`}>
-                            <Card bg={"theme"}>
-                                <Button variant={"theme"} className="block">
-                                    <Card.Body>
-                                        {index.name}
-                                    </Card.Body>
-                                </Button>
-                            </Card>
-                        </Link>
-                    </Col>
-                ))}
-            </Row>
+            <Card>
+            <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} Topics</Card.Header>
+                <Card.Header className="text-center py-3">
+                    <Card.Title>Topics</Card.Title>
+                </Card.Header>
+                <Card.Body>
+                    <input type="text" id="myInput" onKeyUp={searchFunction} placeholder="Search for thought names..." className="mb-3"/>
+                    <Row id="myGroup">
+                        {sortedList.map((index) => (
+                            <Col xs={12} sm={6} md={4} lg={3} key={index.name} className="text-center mb-3">
+                                <Link to={`/topic/${index._id}`} className="link-theme">{index.name}</Link>
+                            </Col>
+                        ))}
+                    </Row>
+                </Card.Body>
+            </Card>
         </Container>
     )
 }

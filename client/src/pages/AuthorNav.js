@@ -14,7 +14,7 @@ function Freethinkers () {
 
     let authorList = [];
     for(let index of data.authors){
-        if(index.FT !== "n") authorList.push(index)
+        authorList.push(index);
     }
 
     authorList = authorList.sort((a, b) => a.name.localeCompare(b.name));
@@ -27,7 +27,6 @@ function Freethinkers () {
         elements = group.getElementsByClassName("col-12")
 
         for(let i = 0; i < elements.length; ++i) {
-            console.log(i + ": " + elements[i]);
             body = elements[i].getElementsByTagName("a")[0];
             textValue = body.textContent || body.innerText;
             if(textValue.toUpperCase().indexOf(filter) > -1) elements[i].style.display="";
@@ -36,27 +35,26 @@ function Freethinkers () {
     }
 
     return (
-        <Container className="text-center text-white">
+        <Container>
             <MetaTags>
-                <title>Undoctrination - Freethinkers</title>
+                <title>1001 Nuggets - Authors</title>
             </MetaTags>
-            <h3 className="bg-theme py-3 rounded mb-3">Freethinkers</h3>
-            <input type="text" id="myInput" onKeyUp={searchFunction} placeholder="Search for thought names..." className="mb-3"/>
-            <Row id="myGroup">
-                {authorList.map((index) => (
-                    <Col xs={12} sm={6} md={4} key={index.name} className="text-center mb-3">
-                        <Link to={`/author/${index._id}`}>
-                            <Card bg={"theme"}>
-                                <Button variant={"theme"} className="block">
-                                    <Card.Body>
-                                        {index.name}
-                                    </Card.Body>
-                                </Button>
-                            </Card>
-                        </Link>
-                    </Col>
-                ))}
-            </Row>
+            <Card>
+                <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} Authors</Card.Header>
+                <Card.Header className="text-center py-3">
+                    <Card.Title>Authors</Card.Title>
+                </Card.Header>
+                <Card.Body>
+                    <input type="text" id="myInput" onKeyUp={searchFunction} placeholder="Search for thought names..." className="mb-3"/>
+                    <Row id="myGroup">
+                        {authorList.map((index) => (
+                            <Col xs={12} sm={6} md={4} lg={3} key={index.name} className="text-center mb-3">
+                                <Link to={`/author/${index._id}`} className="link-theme">{index.name}</Link>
+                            </Col>
+                        ))}
+                    </Row>
+                </Card.Body>
+            </Card>
         </Container>
     )
 }

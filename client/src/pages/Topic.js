@@ -3,7 +3,7 @@ import { Link, Redirect, useParams } from "react-router-dom";
 import { useQuery} from "@apollo/client";
 import MetaTags from "react-meta-tags";
 
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 
 import AuthorButton from "../components/AuthorButton";
 
@@ -15,36 +15,39 @@ function Topic () {
         variables: {topicId: topicId},
     });
 
-    if(!topicId || topicId === null || topicId === "undefined") return (<Redirect to={`/topicNavigation`}/>);
+    if(!topicId || topicId === null || topicId === "undefined") return (<Redirect to={`/topics`}/>);
 
     if(loading) return <p>Loading...</p>
 
-    console.log(data)
+    const topic = data.topicID;
 
-    let quoteList = data.topicID.quotes
+    console.log(topic);
 
     return (
-        <Container className="text-center text-white">
+        <Container>
             <MetaTags>
-                <title>Undoctrination - {data.topicID.name}</title>
+                <title>1001 Nuggets - {topic.name}</title>
             </MetaTags>
-            <h3 className="bg-theme py-3 rounded mb-3">
-                {data.topicID.name}
-            </h3>
-            <Row>
-            {quoteList.map((index) => (
-                <Col xs={12} md={6} className="mb-2" key={index.quoteText}>
-                    <Card className="bg-theme">
-                        <Link to={`/quote/${index._id}`}><Button variant={"theme"}>
-                            <Card.Body>"{index.quoteText}"</Card.Body>
-                        </Button></Link>
-                        <Card.Footer>
-                            <AuthorButton name={index.author}/>
-                        </Card.Footer>
-                    </Card>
-                </Col>
-            ))}
-            </Row>
+            <Card>
+                <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} <Link className="link-theme" to={`/topics`}>Topics</Link> {`>`} {topic.name}</Card.Header>
+                <Card.Body>
+                    <p>Quotes by {topic.name}</p>
+                    <Row>
+                        {topic.quotes.map((index) => (
+                            <Col xs={12} sm={6} md={4} key={index.QuoteText} className="mb-3">
+                                <Card className="card-height">
+                                    <Link to={`/quote/${index._id}`} className="text-black">
+                                        <Card.Body>
+                                            <Card.Text>"{index.quoteText}"</Card.Text>
+                                            <Card.Text><AuthorButton type={"link"} name={index.author}/></Card.Text>
+                                        </Card.Body>
+                                    </Link>
+                                </Card>
+                            </Col>
+                        ))}
+                    </Row>
+                </Card.Body>
+            </Card>
         </Container>
     )
 }

@@ -19,9 +19,11 @@ import PlatformSpecific from "./components/Platform/specific";
 import Home from "./pages/Main";
 import Author from "./pages/Author";
 import Topic from "./pages/Topic";
-import TopicNavigation from "./pages/TopicNavigation";
+import AuthorNav from "./pages/AuthorNav";
+import TopicNav from "./pages/TopicNav";
 import Quote from "./pages/Quote";
-import Freethinkers from "./pages/Freethinkers";
+import SearchResult from "./pages/SearchResult";
+import Scoreboard from "./pages/Scoreboard";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -45,7 +47,7 @@ const client = new ApolloClient({
 const StyledApp = styled.div``;
 
 function App() {
-  const [theme] = useState("default");
+  const [theme] = useState("no");
 
   return (
     <ApolloProvider client={client}>
@@ -67,17 +69,23 @@ function App() {
               <Route exact path="/quote/:quoteId">
                 <Quote/>
               </Route>
-              <Route exact path="/thoughts">
-                <TopicNavigation/>
+              <Route exact path="/topics">
+                <TopicNav/>
               </Route>
-              <Route exact path="/freethinkers">
-                <Freethinkers/>
+              <Route exact path="/authors">
+                <AuthorNav/>
               </Route>
               <Route exact path="/platforms">
                 <PlatformMain/>
               </Route>
               <Route exact path="/platforms/:type">
                 <PlatformSpecific/>
+              </Route>
+              <Route exact path="/search/:query">
+                <SearchResult/>
+              </Route>
+              <Route exact path="/score">
+                <Scoreboard/>
               </Route>
               <Route component={ErrorPage}/>
             </Switch>

@@ -18,7 +18,7 @@ const TopicButton = ({name}) => {
     if(!topic) return <span>Loading...</span>
 
     return (
-        <Link to={`/topic/${topic._id}`}><Button className="mx-1" variant={"theme"}>{name}</Button></Link>
+        <Link to={`/topic/${topic._id}`}><Button className="mx-1" variant={"weak"}>{name}</Button></Link>
     )
 }
 

@@ -6,13 +6,10 @@ import { Row, Col, Card, Button } from "react-bootstrap";
 
 import { QUERY_AUTHOR_ALL } from "../../utils/queries";
 
-const SpecificCard = (author) => {
-    let picPath = "/assets/images/portraits/" + author.author.thumbnail + ".png";
-    
+const SpecificCard = (author) => {    
     return (
         <Col xs={6} md={4} lg={3} className="mb-3">
-            <Card className="text-center text-white bg-theme card-main">
-                <Link to={`/author/${author.author._id}`}><Card.Img src={picPath}/></Link>
+            <Card className="text-center text-white card-main">
                 <Link to={`/author/${author.author._id}`} className="text-white btn btn-theme btn-block py-3">
                     <strong>{author.author.name}</strong>
                 </Link>
@@ -27,7 +24,7 @@ const AuthorCards = () => {
 
     let authorList = [];
     for(let index of data.authors){
-        if(index.FT !== "y") authorList.push(index)
+        authorList.push(index)
     }
     // console.log(authorList);
 

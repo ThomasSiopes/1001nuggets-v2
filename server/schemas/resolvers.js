@@ -1,5 +1,5 @@
 const { AuthenticationError } = require("apollo-server-express");
-const { Author, Topic, Quote, GenLink } = require("../models");
+const { Author, Topic, Quote, GenLink, Scoreboard } = require("../models");
 
 const resolvers = {
     Query: {
@@ -30,6 +30,15 @@ const resolvers = {
         genLinks: async () => {
             return GenLink.find();
         },
+        scoreboard: async () => {
+            return Scoreboard.find();
+        },
+    },
+
+    Mutation: {
+        modScoreboard: async() => {
+            return Scoreboard.find();
+        }
     }
 }
 

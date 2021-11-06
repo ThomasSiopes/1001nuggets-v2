@@ -38,6 +38,27 @@ const typeDefs = gql`
         link: String
     }
 
+    type Scoreboard {
+        questions: [Question]!
+        scores: [Score]!
+    }
+
+    type Question {
+        text: String
+        choices: [Option]!
+    }
+
+    type Score {
+        name: String
+        value: Int
+        score: Int
+    }
+
+    type Option {
+        name: String
+        value: Int
+    }
+
     type Query {
         authors: [Author]
         authorName(name: String): Author
@@ -48,6 +69,11 @@ const typeDefs = gql`
         quotes: [Quote]
         quote(quoteId: ID): Quote
         genLinks: [GenLink]
+        scoreboard: [Scoreboard]
+    }
+
+    type Mutation {
+        modScoreboard: Scoreboard
     }
 `;
 
