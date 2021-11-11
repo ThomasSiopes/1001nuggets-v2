@@ -38,7 +38,7 @@ function Author () {
                     <p>Quotes by {author.name}</p>
                     <Row>
                         {author.quotes.map((index) => (
-                            <Col xs={12} sm={6} md={4} key={index.quoteText} className="mb-3">
+                            <Col xs={12} md={6} lg={4} key={index.quoteText} className="mb-3">
                                 <Card>
                                     <Link to={`/quote/${index._id}`} className="text-black">
                                         <Card.Body>
@@ -50,7 +50,7 @@ function Author () {
                                     {index.topics.length > 0 && 
                                         <Card.Footer className="text-center">
                                             {index.topics.map((topic) => (
-                                                <TopicButton name={topic} key={index.quoteText + topic}/>
+                                                <TopicButton type={"button"} name={topic} key={index.quoteText + topic}/>
                                             ))}
                                         </Card.Footer>
                                     }

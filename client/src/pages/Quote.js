@@ -3,11 +3,13 @@ import { Link, Redirect, useParams } from "react-router-dom";
 import { useQuery} from "@apollo/client";
 import MetaTags from "react-meta-tags";
 
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, Carousel, Button } from "react-bootstrap";
 import { FaTwitter, FaFacebookF, FaReddit } from "react-icons/fa";
 
 import TopicButton from "../components/TopicButton";
 import AuthorButton from "../components/AuthorButton";
+import MoreAuthor from "../components/MoreAuthor";
+import MoreTopic from "../components/MoreTopic";
 
 import { QUERY_QUOTE_ID } from "../utils/queries";
 
@@ -36,7 +38,7 @@ function Quote () {
                 <Card.Header><Link to={`/`} className="link-theme">Home</Link> {`>`} <Link to={`/authors`} className="link-theme">Authors</Link> {`>`} <AuthorButton type={"link"} name={quote.author}/> {`>`} Quotes</Card.Header>
                 <Card.Body>
                     <Row>
-                        <Col xs={8}>
+                        <Col xs={12}>
                             <Card className="mb-3">
                                 <div id="quote-page">
                                     <Card.Body>
@@ -52,14 +54,32 @@ function Quote () {
                                 {quote.topics.length !== 0 && 
                                     <Card.Footer className="text-center py-3">
                                             {quote.topics.map((index) => (
-                                                <span key={index} className="mx-1"><TopicButton name={index}/></span>
+                                                <span key={index} className="mx-1"><TopicButton type={"button"} name={index}/></span>
                                             ))}
-                                </Card.Footer>
+                                    </Card.Footer>
                                 }
                             </Card>
                         </Col>
-                        <Col xs={4}>
-                            <p>More Quotes by Author and More Quotes by Topic</p>
+                        <Col xs={12}>
+                            <Row>
+                                <Col xs={12} md={6} className="mb-3">
+                                    <MoreAuthor parent={quote} name={quote.author}/>
+                                </Col>
+                                <Col xs={12} md={6} className="mb-3">
+                                    {quote.topics.length === 1 &&
+                                        <MoreTopic parent={quote} name={quote.topics[0]}/>
+                                    }
+                                    {quote.topics.length > 1 &&
+                                        <Carousel indicators={false} nextIcon={<Button variant={"light"}><strong>{`>`}</strong></Button>} prevIcon={<Button variant={"light"}><strong>{`<`}</strong></Button>}>
+                                            {quote.topics.map((index) => (
+                                                <Carousel.Item key={index}>
+                                                    <MoreTopic parent={quote} name={index}/>
+                                                </Carousel.Item>
+                                            ))}
+                                        </Carousel>
+                                    }
+                                </Col>
+                            </Row>
                         </Col>
                     </Row>
                 </Card.Body>

@@ -6,7 +6,7 @@ import { Container, Card, Col, Row } from "react-bootstrap";
 import { QUERY_AUTHOR_ALL, QUERY_TOPIC_ALL } from '../../utils/queries';
 
 const Results = ({type, input}) => {
-    let authList, topList, newList = [];
+    let authList = {authors: []}, topList = {topics: []}, newList = [];
 
     let {loading, data} = useQuery(QUERY_AUTHOR_ALL);
     authList = data;
@@ -18,11 +18,11 @@ const Results = ({type, input}) => {
 
     input = input.toUpperCase();
 
-    if(type === "author") {
+    if(type === "author" && authList) {
         for(let index of authList.authors) {
             if(index.name.toUpperCase().indexOf(input) > -1) newList.push(index);
         }
-    } else if(type === "topic") {
+    } else if(type === "topic" && topList) {
         for(let index of topList.topics) {
             if(index.name.toUpperCase().indexOf(input) > -1) newList.push(index);
         }
@@ -38,7 +38,7 @@ const Results = ({type, input}) => {
                         {newList.map((index) => (
                             <Col xs={12} sm={6} lg={4} xl={3} className="mb-2" key={index.name}>
                                 <Card>
-                                    <Link to={`/author/${index._id}`} className="btn btn-theme">
+                                    <Link to={`/${type}/${index._id}`} className="btn btn-theme">
                                             <Card.Body>
                                                 {index.name}
                                             </Card.Body>

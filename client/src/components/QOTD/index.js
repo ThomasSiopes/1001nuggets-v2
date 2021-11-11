@@ -1,0 +1,52 @@
+import React from "react";
+import { Link, Redirect, useParams } from "react-router-dom";
+import { useQuery} from "@apollo/client";
+
+import { Card } from "react-bootstrap";
+import { FaTwitter, FaFacebookF, FaReddit } from "react-icons/fa";
+
+import TopicButton from "../../components/TopicButton";
+import AuthorButton from "../../components/AuthorButton";
+
+import { QUERY_QUOTE_ID } from "../../utils/queries";
+
+const QOTD = ({input}) => {
+    const quoteId = input;
+    let { loading, data } = useQuery(QUERY_QUOTE_ID, {
+        variables: {quoteId: quoteId},
+    })
+
+    if(loading) {
+        return <div className="loadingPage">Loading...</div>;
+    }
+
+    if(!data) return (<Redirect to={`/404error`}/>);
+
+    const quote = data.quote;
+
+    return (
+        <Card className="mb-3">
+            <Card.Header className="text-center display-6">Quote of the Day</Card.Header>
+            <Link to={`/quote/${input}`} id="quote-page">
+                <Card.Body>
+                    <Card.Text className="display-6"><span className="quote-body text-black" id="main-quote">"{quote.quoteText}"</span></Card.Text>
+                    <Card.Text><strong><AuthorButton type={"link"} name={quote.author}/></strong></Card.Text>
+                </Card.Body>
+                <Card.Body className="text-center">
+                    <Link className="mx-2 share-button" to={`https://twitter.com/intent/tweet?url=${window.location.href}`} id="share-twitter"><FaTwitter/></Link>
+                    <Link className="mx-2 share-button" to={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`} id="share-facebook"><FaFacebookF/></Link>
+                    <Link className="mx-2 share-button" to={``} id="share-reddit"><FaReddit/></Link>
+                </Card.Body>
+            </Link>
+            {quote.topics.length !== 0 && 
+                <Card.Footer className="text-center py-3">
+                        {quote.topics.map((index) => (
+                            <span key={index} className="mx-1"><TopicButton type={"button"} name={index}/></span>
+                        ))}
+                </Card.Footer>
+            }
+        </Card>
+    )
+}
+
+export default QOTD;

@@ -34,7 +34,7 @@ function Topic () {
                     <p>Quotes by {topic.name}</p>
                     <Row>
                         {topic.quotes.map((index) => (
-                            <Col xs={12} sm={6} md={4} key={index.QuoteText} className="mb-3">
+                            <Col xs={12} md={6} lg={4} key={index.QuoteText} className="mb-3">
                                 <Card className="card-height">
                                     <Link to={`/quote/${index._id}`} className="text-black">
                                         <Card.Body>
