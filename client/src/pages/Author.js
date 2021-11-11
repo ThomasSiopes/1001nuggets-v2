@@ -50,7 +50,7 @@ function Author () {
                                     {index.topics.length > 0 && 
                                         <Card.Footer className="text-center">
                                             {index.topics.map((topic) => (
-                                                <TopicButton type={"button"} name={topic} key={index.quoteText + topic}/>
+                                                <TopicButton className="mb-2" type={"button"} name={topic} key={index.quoteText + topic}/>
                                             ))}
                                         </Card.Footer>
                                     }
