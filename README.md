@@ -1,4 +1,8 @@
 # To Do
-- Finish the home page
-    - Make the Quote of the day bigger
-    - Icons
+- Backend work
+    - Quote of the day
+        - Store ID in database
+        - Find out how to randomly select one ID every 24 hours
+    - Scoreboard game
+        - Find out how to make buttons work
+        - Mutations

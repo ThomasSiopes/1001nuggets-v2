@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Card, Row, Col } from "react-bootstrap";
+import { useQuery} from "@apollo/client";
 import MetaTags from "react-meta-tags";
 
 import QOTD from "../components/QOTD";
@@ -7,7 +8,17 @@ import RandomAuthors from "../components/RandomAuthors";
 import RandomTopics from "../components/RandomTopics";
 import RandomQuotes from "../components/RandomQuotes";
 
+import { QUERY_QUOTE_ALL } from "../utils/queries"
+
 function Main() {
+    let {loading, data} = useQuery(QUERY_QUOTE_ALL);
+
+    if(loading) return <p>Loading...</p>
+
+    const quotes = data.quotes;
+
+    let randomQuote = quotes[Math.floor(Math.random() * quotes.length)]
+
     return (
         <Container>
             <MetaTags>
@@ -15,7 +26,7 @@ function Main() {
             </MetaTags>
             <Row>
                 <Col xs={12}>
-                    <QOTD input={"61843282cb06fa1d8462708e"}/>
+                    <QOTD input={randomQuote._id}/>
                 </Col>
                 <Col xs={12} lg={5} className="mb-3">
                     <RandomQuotes/>

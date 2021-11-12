@@ -2,7 +2,7 @@ import React from "react";
 import { Link, Redirect, useParams } from "react-router-dom";
 import { useQuery} from "@apollo/client";
 
-import { Card } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
 import { FaTwitter, FaFacebookF, FaReddit } from "react-icons/fa";
 
 import TopicButton from "../../components/TopicButton";
@@ -12,6 +12,7 @@ import { QUERY_QUOTE_ID } from "../../utils/queries";
 
 const QOTD = ({input}) => {
     const quoteId = input;
+    console.log(quoteId)
     let { loading, data } = useQuery(QUERY_QUOTE_ID, {
         variables: {quoteId: quoteId},
     })
@@ -22,15 +23,19 @@ const QOTD = ({input}) => {
 
     if(!data) return (<Redirect to={`/404error`}/>);
 
+    console.log(data);
+
     const quote = data.quote;
 
-    return (
+    if(quote) return (
         <Card className="mb-3">
             <Card.Header className="text-center display-6">Quote of the Day</Card.Header>
             <Link to={`/quote/${input}`} id="quote-page">
                 <Card.Body>
-                    <Card.Text className="display-6"><span className="quote-body text-black" id="main-quote">"{quote.quoteText}"</span></Card.Text>
-                    <Card.Text><strong><AuthorButton type={"link"} name={quote.author}/></strong></Card.Text>
+                    <Container>
+                        <Card.Text className="display-6"><span className="quote-body text-black" id="main-quote">"{quote.quoteText}"</span></Card.Text>
+                        <Card.Text><strong><AuthorButton type={"link"} name={quote.author}/></strong></Card.Text>
+                    </Container>
                 </Card.Body>
                 <Card.Body className="text-center">
                     <Link className="mx-2 share-button" to={`https://twitter.com/intent/tweet?url=${window.location.href}`} id="share-twitter"><FaTwitter/></Link>
@@ -47,6 +52,7 @@ const QOTD = ({input}) => {
             }
         </Card>
     )
+    else return (<p>B.</p>)
 }
 
 export default QOTD;
