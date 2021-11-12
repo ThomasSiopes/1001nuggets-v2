@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Card, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { useQuery} from "@apollo/client";
 import MetaTags from "react-meta-tags";
 

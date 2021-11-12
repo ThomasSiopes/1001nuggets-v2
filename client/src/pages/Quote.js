@@ -54,7 +54,7 @@ function Quote () {
                                 {quote.topics.length !== 0 && 
                                     <Card.Footer className="text-center py-3">
                                             {quote.topics.map((index) => (
-                                                <span key={index} className="mx-1"><TopicButton type={"button"} name={index}/></span>
+                                                <TopicButton key={index} type={"button"} name={index}/>
                                             ))}
                                     </Card.Footer>
                                 }
@@ -62,23 +62,23 @@ function Quote () {
                         </Col>
                         <Col xs={12}>
                             <Row>
-                                <Col xs={12} md={6} className="mb-3">
-                                    <MoreAuthor parent={quote} name={quote.author}/>
-                                </Col>
-                                <Col xs={12} md={6} className="mb-3">
-                                    {quote.topics.length === 1 &&
-                                        <MoreTopic parent={quote} name={quote.topics[0]}/>
-                                    }
-                                    {quote.topics.length > 1 &&
-                                        <Carousel indicators={false} nextIcon={<Button variant={"light"}><strong>{`>`}</strong></Button>} prevIcon={<Button variant={"light"}><strong>{`<`}</strong></Button>}>
-                                            {quote.topics.map((index) => (
-                                                <Carousel.Item key={index}>
-                                                    <MoreTopic parent={quote} name={index}/>
-                                                </Carousel.Item>
-                                            ))}
-                                        </Carousel>
-                                    }
-                                </Col>
+                                <MoreAuthor parent={quote} name={quote.author}/>
+                                { quote.topics[0] &&
+                                    <Col className="mb-3">
+                                        {quote.topics.length === 1 &&
+                                            <MoreTopic parent={quote} name={quote.topics[0]}/>
+                                        }
+                                        {quote.topics.length > 1 &&
+                                            <Carousel indicators={false} nextIcon={<Button variant={"light"}><strong>{`>`}</strong></Button>} prevIcon={<Button variant={"light"}><strong>{`<`}</strong></Button>}>
+                                                {quote.topics.map((index) => (
+                                                    <Carousel.Item key={index}>
+                                                        <MoreTopic parent={quote} name={index}/>
+                                                    </Carousel.Item>
+                                                ))}
+                                            </Carousel>
+                                        }
+                                    </Col>
+                                }
                             </Row>
                         </Col>
                     </Row>

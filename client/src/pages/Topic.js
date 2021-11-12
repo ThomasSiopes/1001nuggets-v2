@@ -31,17 +31,19 @@ function Topic () {
             <Card>
                 <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} <Link className="link-theme" to={`/topics`}>Topics</Link> {`>`} {topic.name}</Card.Header>
                 <Card.Body>
-                    <p>Quotes by {topic.name}</p>
+                    <p>Quotes about {topic.name}</p>
                     <Row>
                         {topic.quotes.map((index) => (
-                            <Col xs={12} md={6} lg={4} key={index.QuoteText} className="mb-3">
+                            <Col xs={12} md={6} lg={4} key={index.quoteText} className="mb-3">
                                 <Card className="card-height">
                                     <Link to={`/quote/${index._id}`} className="text-black">
-                                        <Card.Body>
+                                        <Card.Body className="pb-0">
                                             <Card.Text>"{index.quoteText}"</Card.Text>
-                                            <Card.Text><AuthorButton type={"link"} name={index.author}/></Card.Text>
                                         </Card.Body>
                                     </Link>
+                                    <Card.Body>
+                                        <Card.Text><AuthorButton type={"link"} name={index.author}/></Card.Text>
+                                    </Card.Body>
                                 </Card>
                             </Col>
                         ))}

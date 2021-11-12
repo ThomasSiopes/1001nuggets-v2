@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 
-import { Button } from "react-bootstrap";
-
 import { QUERY_TOPIC_NAME } from "../../utils/queries";
 
 const TopicButton = ({type, name}) => {
@@ -19,7 +17,7 @@ const TopicButton = ({type, name}) => {
 
     if(type === "button") {
         return (
-            <Link to={`/topic/${topic._id}`}><Button className="mx-1" variant={"weak"}>{name}</Button></Link>
+            <Link to={`/topic/${topic._id}`} className="mx-1 mb-2 btn btn-weak">{name}</Link>
         )
     } else if(type === "link") {
         return (

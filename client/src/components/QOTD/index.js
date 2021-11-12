@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Redirect, useParams } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import { useQuery} from "@apollo/client";
 
 import { Card, Container } from "react-bootstrap";
@@ -30,10 +30,16 @@ const QOTD = ({input}) => {
     if(quote) return (
         <Card className="mb-3">
             <Card.Header className="text-center display-6">Quote of the Day</Card.Header>
-            <Link to={`/quote/${input}`} id="quote-page">
+            <div id="quote-page">
+                <Link to={`/quote/${input}`}>
+                    <Card.Body>
+                        <Container>
+                            <Card.Text className="display-6"><span className="quote-body text-black" id="main-quote">"{quote.quoteText}"</span></Card.Text>                    
+                        </Container>
+                    </Card.Body>
+                </Link>
                 <Card.Body>
                     <Container>
-                        <Card.Text className="display-6"><span className="quote-body text-black" id="main-quote">"{quote.quoteText}"</span></Card.Text>
                         <Card.Text><strong><AuthorButton type={"link"} name={quote.author}/></strong></Card.Text>
                     </Container>
                 </Card.Body>
@@ -42,7 +48,7 @@ const QOTD = ({input}) => {
                     <Link className="mx-2 share-button" to={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`} id="share-facebook"><FaFacebookF/></Link>
                     <Link className="mx-2 share-button" to={``} id="share-reddit"><FaReddit/></Link>
                 </Card.Body>
-            </Link>
+            </div>
             {quote.topics.length !== 0 && 
                 <Card.Footer className="text-center py-3">
                         {quote.topics.map((index) => (

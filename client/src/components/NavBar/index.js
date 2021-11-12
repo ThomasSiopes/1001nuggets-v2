@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Redirect } from "react-router-dom";
-import { Navbar, Nav, Row, Col, Container, Button, Form } from "react-bootstrap";
+import { Navbar, Nav, Container, Form } from "react-bootstrap";
 
 class NavBar extends React.Component {
     constructor(props) {
@@ -30,7 +30,7 @@ class NavBar extends React.Component {
                 <Navbar bg="red" variant="dark" expand="md" className="mb-3">
                     <Container>
                         {/* <Link className="navbar-brand" to={`/`}><strong>1001 Nuggets</strong></Link> */}
-                        <Link className="navbar-brand" to={`/`}><img id="nav-icon" className="me-3" src="/assets/images/thumbnails/background-copy.png"/></Link>
+                        <Link className="navbar-brand" to={`/`}><img id="nav-icon" className="me-3" src="/assets/images/thumbnails/background-copy.png" alt="Logo"/></Link>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav" className="text-center">
                             <Nav className="me-auto">
