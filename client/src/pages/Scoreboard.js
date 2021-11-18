@@ -1,23 +1,33 @@
-import React from "react";
-import { useQuery } from "@apollo/client";
-import { Container, Card, Row, Col, Button } from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Card, Button } from "react-bootstrap";
+import { useQuery, useMutation } from "@apollo/client";
 import MetaTags from "react-meta-tags";
 
-import { QUERY_SCOREBOARD } from "../utils/queries";
-
-function scoreIncrease(event) {
-    event.preventDefault();
-    console.log(this.key);
-}
+import {QUERY_QUOTE_ALL, GET_QOTD} from "../utils/queries";
+import { SET_QOTD } from "../utils/mutations";
 
 function Scoreboard() {
-    let { loading, data } = useQuery(QUERY_SCOREBOARD);
+    const queryQuotes = useQuery(QUERY_QUOTE_ALL);
+    const [setQOTD, {error}] = useMutation(SET_QOTD);
+    const getQOTD = useQuery(GET_QOTD);
 
-    if(loading) return <p>Loading...</p>
+    const randomize = (event) => {
+        event.preventDefault();
+        let quotes = queryQuotes.data.quotes;
+        console.log(quotes);
+        mutate(quotes)
+    }
 
-    let scoreboard = data.scoreboard[0]
+    const mutate = (quoteList) => {
+        let random = quoteList[Math.floor(Math.random() * quoteList.length)];
+        console.log(random);
 
-    console.log(scoreboard);
+        setQOTD({variables: { newID: random._id }});
+
+        console.log("Checking... ");
+        let newData = getQOTD.data.QOTD;
+        console.log(newData[0]);
+    }
 
     return (
         <Container>
@@ -26,23 +36,7 @@ function Scoreboard() {
             </MetaTags>
             <Card>
                 <Card.Body>
-                    <Row className="mb-3">
-                        {scoreboard.scores.map((index) => (
-                            <Col xs={3} key={index.name}>
-                                <p>{index.name} : {index.score}</p>
-                            </Col>
-                        ))}
-                    </Row>
-                    <Row>
-                        <Col xs={6}>
-                            {scoreboard.questions[0].text}
-                        </Col>
-                        <Col xs={6}>
-                            {scoreboard.questions[0].choices.map((index) => (
-                                <Button className="mx-1" key={index.name} onClick={scoreIncrease}>{index.name}</Button>
-                            ))}
-                        </Col>
-                    </Row>
+                    <Button onClick={randomize}>Randomize</Button>
                 </Card.Body>
             </Card>
         </Container>

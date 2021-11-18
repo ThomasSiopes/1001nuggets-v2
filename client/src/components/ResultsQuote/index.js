@@ -33,7 +33,7 @@ const ResultsQuote = ({input}) => {
                             <Col xs={12} md={6} xl={4} className="mb-3" key={index.name + index.quoteText}>
                                 <Card>
                                     <Link to={`/quote/${index._id}`} className="text-black">
-                                        <Card.Body><i>"{index.quoteText}"</i></Card.Body>
+                                        <Card.Body className="font-poppins"><i>" {index.quoteText} "</i></Card.Body>
                                     </Link>
                                     <Card.Footer>
                                         <AuthorButton key={index.author} type={"button"} name={index.author}></AuthorButton>

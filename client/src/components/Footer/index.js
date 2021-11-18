@@ -9,8 +9,7 @@ const FooterPage = () => {
                 <Row>
                     <Col xs={12} md={4} className="d-flex font-Lato">
                         <Container className="align-self-center">
-                            {/* <Link to={`/`} className="navbar-brand text-white footer-img"><img src="/assets/images/thumbnails/undoctrination_small.png" alt="Footer Icon"/></Link> */}
-                            Website Icon Goes Here
+                            <Link to={`/`} className="navbar-brand text-white"><img src="/assets/images/thumbnails/background-copy.png" id="footer-img" alt="Footer Icon"/></Link>
                         </Container>
                     </Col>
                     <Col xs={12} md={4} className="align-self-center mb-3">

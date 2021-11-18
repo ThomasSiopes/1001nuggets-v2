@@ -6,3 +6,7 @@
     - Scoreboard game
         - Find out how to make buttons work
         - Mutations
+
+- Frontend work
+    - Footer
+        - Description

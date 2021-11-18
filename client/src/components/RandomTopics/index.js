@@ -17,7 +17,7 @@ const RandomTopics = () => {
 
     let newList = [];
 
-    while (newList.length < 20) {
+    while (newList.length < 10) {
         let newElement = topics[Math.floor(Math.random() * topics.length)];
         if(!(newList.includes(newElement))) newList.push(newElement);
     }
@@ -28,7 +28,7 @@ const RandomTopics = () => {
             <Card.Body>
                 <Row>
                     {newList.map((index) => (
-                        <Col xs={12} md={6} className="mb-3" key={index.name}>
+                        <Col xs={12} xl={6} className="mb-3" key={index.name}>
                             <TopicButton type={"link"} name={index.name}/>
                         </Col>
                     ))}

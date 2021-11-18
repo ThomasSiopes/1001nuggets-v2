@@ -28,22 +28,6 @@ const scoreboard = new Schema({
         {
             type: question,
         }
-    ],
-    scores: [
-        {
-            name: {
-                type: String,
-                required: true,
-            },
-            value: {
-                type: Number,
-                required: true,
-            },
-            score: {
-                type: Number,
-                required: true,
-            }
-        }
     ]
 });
 

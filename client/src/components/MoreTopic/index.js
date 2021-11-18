@@ -22,7 +22,9 @@ const MoreAuthor = ({parent, name}) => {
     while(quoteList.length < 3 && !escape) {
         randomElement = topic.quotes[Math.floor(Math.random() * topic.quotes.length)]
         if(!(quoteList.includes(randomElement)) && randomElement !== parent) quoteList.push(randomElement);
-        if(topic.quotes.length < 3 & quoteList.length >= 1) escape = 1;
+        if(topic.quotes.length <= 3) {
+            if(quoteList.length === (topic.quotes.length-1)) escape = 1;
+        } 
     }
     
     return(

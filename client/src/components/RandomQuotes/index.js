@@ -33,7 +33,7 @@ const RandomAuthors = () => {
                             <Card.Header className="text-center">Random Quote</Card.Header>
                             <Link to={`/quote/${index._id}`}>
                                 <Card.Body className="pb-0">
-                                    <Card.Text className="text-black">"{index.quoteText}"</Card.Text>
+                                    <Card.Text className="text-black font-poppins"><i>" {index.quoteText} "</i></Card.Text>
                                 </Card.Body>
                             </Link>
                             <Card.Body className="pb-4"><Card.Text><strong><AuthorButton type={"link"} name={index.author}/></strong></Card.Text></Card.Body>

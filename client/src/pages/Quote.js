@@ -42,7 +42,7 @@ function Quote () {
                             <Card className="mb-3">
                                 <div id="quote-page">
                                     <Card.Body>
-                                        <Card.Text className="display-6"><span className="quote-body" id="main-quote">"{quote.quoteText}"</span></Card.Text>
+                                        <Card.Text className="display-6"><span className="quote-body font-poppins" id="main-quote">" {quote.quoteText} "</span></Card.Text>
                                         <Card.Text><strong><AuthorButton type={"link"} name={quote.author}/></strong></Card.Text>
                                     </Card.Body>
                                     <Card.Body className="text-center">

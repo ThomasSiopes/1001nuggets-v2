@@ -1,5 +1,5 @@
 const { AuthenticationError } = require("apollo-server-express");
-const { Author, Topic, Quote, GenLink, Scoreboard } = require("../models");
+const { Author, Topic, Quote, GenLink, Scoreboard, Score, QOTD } = require("../models");
 
 const resolvers = {
     Query: {
@@ -33,11 +33,36 @@ const resolvers = {
         scoreboard: async () => {
             return Scoreboard.find();
         },
+        scores: async () => {
+            return Score.find();
+        },
+        QOTD: async () => {
+            return QOTD.find();
+        }
     },
 
     Mutation: {
-        modScoreboard: async() => {
-            return Scoreboard.find();
+        modScore: async(parent, { value, score }) => {
+            return Score.findOneAndUpdate(
+                { value },
+                {
+                    $inc: { score }
+                },
+                {
+                    new: true,
+                    runValidators: true,
+                }
+            );
+        },
+        setQOTD: async(parent, { newID }) => {
+            try {
+                await QOTD.deleteMany();
+                await QOTD.create([{storedID: newID}])
+            } catch(err) {
+                console.error(err)
+                process.exit(1);
+            }
+            return QOTD.find();
         }
     }
 }

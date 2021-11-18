@@ -15,6 +15,8 @@ const AuthorButton = ({type, name}) => {
     
     let author = data.authorName;
 
+    if(!author) return null;
+    
     if(type === "button") {
         return (
             <Link to={`/author/${author._id}`}><Button variant={"theme"}>{name}</Button></Link>

@@ -39,8 +39,8 @@ const typeDefs = gql`
     }
 
     type Scoreboard {
+        _id: ID
         questions: [Question]!
-        scores: [Score]!
     }
 
     type Question {
@@ -59,6 +59,10 @@ const typeDefs = gql`
         value: Int
     }
 
+    type QOTD {
+        storedID: ID
+    }
+
     type Query {
         authors: [Author]
         authorName(name: String): Author
@@ -70,11 +74,15 @@ const typeDefs = gql`
         quote(quoteId: ID): Quote
         genLinks: [GenLink]
         scoreboard: [Scoreboard]
+        scores: [Score]
+        QOTD: [QOTD]
     }
 
     type Mutation {
-        modScoreboard: Scoreboard
+        modScore(value: Int!, score: Int!): Score
+        setQOTD(newID: ID!): [QOTD]
     }
+
 `;
 
 module.exports = typeDefs;

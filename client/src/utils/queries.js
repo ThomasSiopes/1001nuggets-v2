@@ -143,6 +143,7 @@ export const QUERY_LINKS = gql`
 export const QUERY_SCOREBOARD = gql`
     query getScoreboard {
         scoreboard {
+            _id
             questions {
                 text
                 choices {
@@ -150,11 +151,24 @@ export const QUERY_SCOREBOARD = gql`
                     value
                 }
             }
-            scores {
-                name
-                value
-                score
-            }
+        }
+    }
+`;
+
+export const QUERY_SCORES = gql`
+    query getScores {
+        scores {
+            name
+            value
+            score
+        }
+    }
+`;
+
+export const GET_QOTD = gql`
+    query getQOTD {
+        QOTD {
+            storedID
         }
     }
 `;

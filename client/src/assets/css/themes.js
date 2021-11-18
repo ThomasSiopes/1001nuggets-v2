@@ -79,6 +79,14 @@ export const GlobalStyles = createGlobalStyle`
         font-weight: 600;
     }
 
+    .font-poppins {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #footer-img {
+        width: 70%;
+    }
+
     .link-theme {
         color: ${(props) => props.theme.button.c1};
     }

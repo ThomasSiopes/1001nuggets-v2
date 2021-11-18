@@ -84,7 +84,7 @@ function App() {
               <Route exact path="/search/:query">
                 <SearchResult/>
               </Route>
-              <Route exact path="/score">
+              <Route exact path="/0504">
                 <Scoreboard/>
               </Route>
               <Route component={ErrorPage}/>
