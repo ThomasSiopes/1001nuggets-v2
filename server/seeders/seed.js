@@ -23,12 +23,14 @@ db.once("open", async () => {
         await Scoreboard.create(scoreboardSeeds);
         await Score.create(scoreSeeds);
         
+        let letsGo = false;
         for(let i = 0; i < quoteSeeds.length; i++) {
             const { _id, author, topics } = await Quote.create(quoteSeeds[i]);
 
-            if((Math.random() < 0.5) || (i === quoteSeeds.length-1)) {
+            if((Math.random() < 0.5) || ((i === quoteSeeds.length-1) && letsGo === false)) {
                 await QOTD.deleteMany({});
                 await QOTD.create([{storedID: _id}])
+                letsGo = true;
             }
 
             const currentAuthor = await Author.findOneAndUpdate(
