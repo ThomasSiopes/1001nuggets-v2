@@ -1,5 +1,5 @@
 const { AuthenticationError } = require("apollo-server-express");
-const { Author, Topic, Quote, GenLink, Scoreboard, Score, QOTD } = require("../models");
+const { Author, Topic, Quote, GenLink, Scoreboard, Score, QOTD, Nugget } = require("../models");
 
 const resolvers = {
     Query: {
@@ -20,6 +20,15 @@ const resolvers = {
         },
         topicID: async (parent, { topicId }) => {
             return Topic.findOne({ _id: topicId }).populate('quotes');
+        },
+        nuggets: async () => {
+            return Nugget.find().populate('quotes');
+        },
+        nuggetName: async (parent, { name }) => {
+            return Nugget.findOne({ name }).populate('quotes');
+        },
+        nuggetID: async (parent, { nuggetId }) => {
+            return Nugget.findOne({ _id: nuggetId }).populate('quotes');
         },
         quotes: async () => {
             return Quote.find();

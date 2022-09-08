@@ -34,7 +34,7 @@ const QOTD = ({input}) => {
                 <Link to={`/quote/${input}`}>
                     <Card.Body>
                         <Container>
-                            <Card.Text className="display-6"><span className="quote-body text-black font-poppins" id="main-quote">" {quote.quoteText} "</span></Card.Text>                    
+                            <Card.Text className="display-6"><span className="quote-body text-black font-poppins" id="main-quote">"{quote.quoteText}"</span></Card.Text>                    
                         </Container>
                     </Card.Body>
                 </Link>
@@ -44,9 +44,8 @@ const QOTD = ({input}) => {
                     </Container>
                 </Card.Body>
                 <Card.Body className="text-center">
-                    <Link className="mx-2 share-button" to={`https://twitter.com/intent/tweet?url=${window.location.href}`} id="share-twitter"><FaTwitter/></Link>
-                    <Link className="mx-2 share-button" to={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`} id="share-facebook"><FaFacebookF/></Link>
-                    <Link className="mx-2 share-button" to={``} id="share-reddit"><FaReddit/></Link>
+                    <a className="mx-2 share-button" href={`https://twitter.com/intent/tweet?url=${window.location.href}`} id="share-twitter"><FaTwitter/></a>
+                    <a className="mx-2 share-button" href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`} id="share-facebook"><FaFacebookF/></a>
                 </Card.Body>
             </div>
             {quote.topics.length !== 0 && 

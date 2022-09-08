@@ -25,6 +25,13 @@ const typeDefs = gql`
         quoteText: String
         author: String
         topics: [String]!
+        nuggets: [String]!
+    }
+
+    type Nugget {
+        _id: ID
+        name: String
+        quotes: [Quote]!
     }
 
     type Link {
@@ -70,6 +77,9 @@ const typeDefs = gql`
         topics: [Topic]
         topicName(name: String): Topic
         topicID(topicId: ID): Topic
+        nuggets: [Nugget]
+        nuggetName(name: String): Nugget
+        nuggetID(nuggetId: ID): Nugget
         quotes: [Quote]
         quote(quoteId: ID): Quote
         genLinks: [GenLink]

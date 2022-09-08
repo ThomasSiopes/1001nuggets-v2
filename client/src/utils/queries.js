@@ -115,6 +115,7 @@ export const QUERY_QUOTE_ALL = gql`
             quoteText
             author
             topics
+            nuggets
         }
     }
 `;
@@ -126,6 +127,7 @@ export const QUERY_QUOTE_ID = gql`
             quoteText
             author
             topics
+            nuggets
         }
     }
 `;
