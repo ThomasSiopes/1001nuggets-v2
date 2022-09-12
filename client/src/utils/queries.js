@@ -5,6 +5,7 @@ export const QUERY_AUTHOR_ALL = gql`
         authors {
             _id
             name
+            lastName
             quotes {
                 _id
                 quoteText
@@ -28,6 +29,7 @@ export const QUERY_AUTHOR_NAME = gql`
         authorName (name: $name){
             _id
             name
+            lastName
             quotes {
                 _id
                 quoteText
@@ -51,6 +53,7 @@ export const QUERY_AUTHOR_ID = gql`
         authorID (authorId: $authorId){
             _id
             name
+            lastName
             quotes {
                 _id
                 quoteText
@@ -74,6 +77,7 @@ export const QUERY_AUTHOR_REALID = gql`
         authorR (authorRealId: $authorRealId){
             _id
             name
+            lastName
             quotes {
                 _id
                 quoteText
@@ -195,6 +199,19 @@ export const QUERY_QUOTE_REALID = gql`
             topics
             realID
             collections
+        }
+    }
+`;
+
+export const QUERY_COLLECTION_ALL = gql`
+    query getAllCollections {
+        collections {
+            name
+            quotes {
+                _id
+                quoteText
+                realID
+            }
         }
     }
 `;

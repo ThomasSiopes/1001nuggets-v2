@@ -1,0 +1,12 @@
+Author Seeds:
+- add "realID" which is just the name but no spaces or special characters
+
+Collection Seeds: 
+- change "collectionName" to "realID"
+
+Topic Seeds: 
+- change "topicName" to "realID"
+
+Quote Seeds: 
+- Change "nuggets" to "collections"
+- realID is "[author's realID]number"

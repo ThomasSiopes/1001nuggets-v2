@@ -4,6 +4,7 @@ const typeDefs = gql`
     type Author {
         _id: ID
         name: String
+        lastName: String
         FT: String
         quotes: [Quote]!
         color: String

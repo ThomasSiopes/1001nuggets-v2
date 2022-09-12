@@ -24,7 +24,7 @@ import TopicNav from "./pages/TopicNav";
 import Quote from "./pages/Quote";
 import SearchResult from "./pages/SearchResult";
 import Scoreboard from "./pages/Scoreboard";
-import Collection from "./pages/Collection";
+import Collections from "./pages/Collections";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -89,7 +89,7 @@ function App() {
                 <Scoreboard/>
               </Route>
               <Route exact path="/collections">
-                <Collection/>
+                <Collections/>
               </Route>
               <Route component={ErrorPage}/>
             </Switch>
