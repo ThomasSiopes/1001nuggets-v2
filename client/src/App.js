@@ -66,7 +66,7 @@ function App() {
               <Route exact path="/topic/:topicId">
                 <Topic/>
               </Route>
-              <Route exact path="/quote/:quoteId">
+              <Route exact path="/quote/:quoteRealId">
                 <Quote/>
               </Route>
               <Route exact path="/topics">

@@ -28,10 +28,10 @@ const RandomAuthors = () => {
     return(
         <Carousel variant="dark" indicators={false} controls={true} nextIcon={<Button variant={"light"}><strong>{`>`}</strong></Button>} prevIcon={<Button variant={"light"}><strong>{`<`}</strong></Button>}>
             {randomQuotes.map((index) => (
-                <Carousel.Item key={"Carousel" + index._id}>
+                <Carousel.Item key={"Carousel" + index.realID}>
                         <Card>
                             <Card.Header className="text-center">Random Quote</Card.Header>
-                            <Link to={`/quote/${index._id}`}>
+                            <Link to={`/quote/${index.realID}`}>
                                 <Card.Body className="pb-0">
                                     <Card.Text className="text-black font-poppins"><i>" {index.quoteText} "</i></Card.Text>
                                 </Card.Body>

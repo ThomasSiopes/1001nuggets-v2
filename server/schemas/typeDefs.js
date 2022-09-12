@@ -7,8 +7,6 @@ const typeDefs = gql`
         FT: String
         quotes: [Quote]!
         color: String
-        darkColor: String
-        lightColor: String
         thumbnail: String
         links: [Link]!
         description: String
@@ -25,6 +23,7 @@ const typeDefs = gql`
         quoteText: String
         author: String
         topics: [String]!
+        realID: String
         nuggets: [String]!
     }
 
@@ -82,6 +81,7 @@ const typeDefs = gql`
         nuggetID(nuggetId: ID): Nugget
         quotes: [Quote]
         quote(quoteId: ID): Quote
+        quoteR(quoteRealId: String): Quote
         genLinks: [GenLink]
         scoreboard: [Scoreboard]
         scores: [Score]

@@ -4,22 +4,23 @@ import { useQuery} from "@apollo/client";
 import MetaTags from "react-meta-tags";
 
 import { Container, Row, Col, Card, Carousel, Button } from "react-bootstrap";
-import { FaTwitter, FaFacebookF, FaReddit } from "react-icons/fa";
+import { FaTwitter, FaFacebookF } from "react-icons/fa";
 
 import TopicButton from "../components/TopicButton";
 import AuthorButton from "../components/AuthorButton";
 import MoreAuthor from "../components/MoreAuthor";
 import MoreTopic from "../components/MoreTopic";
 
-import { QUERY_QUOTE_ID } from "../utils/queries";
+// import { QUERY_QUOTE_ID } from "../utils/queries";
+import { QUERY_QUOTE_REALID } from "../utils/queries";
 
 function Quote () {
-    const { quoteId } = useParams();
-    let { loading, data } = useQuery(QUERY_QUOTE_ID, {
-        variables: {quoteId: quoteId},
+    const { quoteRealId } = useParams();
+    let { loading, data } = useQuery(QUERY_QUOTE_REALID, {
+        variables: {quoteRealId: quoteRealId},
     })
 
-    if(!quoteId || quoteId === null || quoteId === "undefined") return (<Redirect to={`/`}/>);
+    if(!quoteRealId || quoteRealId === null || quoteRealId === "undefined") return (<Redirect to={`/`}/>);
 
     if(loading) {
         return <div className="loadingPage">Loading...</div>;
@@ -27,7 +28,8 @@ function Quote () {
 
     if(!data) return (<Redirect to={`/404error`}/>);
 
-    const quote = data.quote;
+    const quote = data.quoteR;
+    console.log(quote);
 
     return (
         <Container>
@@ -62,7 +64,7 @@ function Quote () {
                         <Col xs={12}>
                             <Row>
                                 <MoreAuthor parent={quote} name={quote.author}/>
-                                { quote.topics[0] &&
+                                {/* { quote.topics[0] &&
                                     <Col className="mb-3">
                                         {quote.topics.length === 1 &&
                                             <MoreTopic parent={quote} name={quote.topics[0]}/>
@@ -77,7 +79,7 @@ function Quote () {
                                             </Carousel>
                                         }
                                     </Col>
-                                }
+                                } */}
                             </Row>
                         </Col>
                     </Row>

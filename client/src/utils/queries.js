@@ -10,6 +10,7 @@ export const QUERY_AUTHOR_ALL = gql`
                 quoteText
                 author
                 topics
+                realID
             }
             thumbnail
             links {
@@ -31,6 +32,7 @@ export const QUERY_AUTHOR_NAME = gql`
                 quoteText
                 author
                 topics
+                realID
             }
             thumbnail
             links {
@@ -52,6 +54,7 @@ export const QUERY_AUTHOR_ID = gql`
                 quoteText
                 author
                 topics
+                realID
             }
             thumbnail
             links {
@@ -73,6 +76,7 @@ export const QUERY_TOPIC_ALL = gql`
                 quoteText
                 author
                 topics
+                realID
             }
         }
     }
@@ -88,6 +92,7 @@ export const QUERY_TOPIC_NAME = gql`
                 quoteText
                 author
                 topics
+                realID
             }
         }
     }
@@ -103,6 +108,7 @@ export const QUERY_TOPIC_ID = gql`
                 quoteText
                 author
                 topics
+                realID
             }
         }
     }
@@ -115,6 +121,7 @@ export const QUERY_QUOTE_ALL = gql`
             quoteText
             author
             topics
+            realID
             nuggets
         }
     }
@@ -127,6 +134,20 @@ export const QUERY_QUOTE_ID = gql`
             quoteText
             author
             topics
+            realID
+            nuggets
+        }
+    }
+`;
+
+export const QUERY_QUOTE_REALID = gql`
+    query getQuoteR($quoteRealId: String!) {
+        quoteR(quoteRealId: $quoteRealId) {
+            _id
+            quoteText
+            author
+            topics
+            realID
             nuggets
         }
     }

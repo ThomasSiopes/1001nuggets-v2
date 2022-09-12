@@ -31,7 +31,7 @@ const QOTD = ({input}) => {
         <Card className="mb-3">
             <Card.Header className="text-center display-6">Quote of the Day</Card.Header>
             <div id="quote-page">
-                <Link to={`/quote/${input}`}>
+                <Link to={`/quote/${quote.realID}`}>
                     <Card.Body>
                         <Container>
                             <Card.Text className="display-6"><span className="quote-body text-black font-poppins" id="main-quote">"{quote.quoteText}"</span></Card.Text>                    

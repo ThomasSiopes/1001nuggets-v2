@@ -15,6 +15,10 @@ const quoteSchema = new Schema({
             type: String,
         }
     ],
+    realID: {
+        type: String,
+        required: true
+    },
     nuggets: [
         {
             type: String,

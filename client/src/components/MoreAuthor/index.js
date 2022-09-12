@@ -17,9 +17,10 @@ const MoreAuthor = ({name, parent}) => {
     const author = data.authorName;
 
     let quoteList = [];
-    let escape = 0, randomElement;
+    let escape = 0, iterator = 10, randomElement;
 
-    while(quoteList.length < 3 && !escape) {
+    while(quoteList.length < 3 && !escape && iterator) {
+        iterator--
         randomElement = author.quotes[Math.floor(Math.random() * author.quotes.length)]
         if(!(quoteList.includes(randomElement)) && randomElement !== parent) quoteList.push(randomElement);
         if(author.quotes.length <= 3) {
@@ -36,7 +37,7 @@ const MoreAuthor = ({name, parent}) => {
                         <Card.Body>
                             {quoteList.map((index) => (
                                 <Card.Text key={index.quoteText}>
-                                    <Link to={`/quote/${index._id}`} className="link-theme"><strong>"{index.quoteText}"</strong></Link>
+                                    <Link to={`/quote/${index.realID}`} className="link-theme"><strong>"{index.quoteText}"</strong></Link>
                                 </Card.Text>
                             ))}
                         </Card.Body>
@@ -51,7 +52,7 @@ const MoreAuthor = ({name, parent}) => {
                     <Card.Body>
                         {quoteList.map((index) => (
                             <Card.Text key={index.quoteText}>
-                                <Link to={`/quote/${index._id}`} className="link-theme"><strong>"{index.quoteText}"</strong></Link>
+                                <Link to={`/quote/${index.realID}`} className="link-theme"><strong>"{index.quoteText}"</strong></Link>
                             </Card.Text>
                         ))}
                     </Card.Body>
