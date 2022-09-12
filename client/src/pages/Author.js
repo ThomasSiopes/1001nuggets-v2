@@ -17,9 +17,7 @@ function Author () {
 
     if(!authorRealId || authorRealId === null || authorRealId === "undefined") return (<Redirect to={`/authors`}/>);
 
-    if(loading) {
-        return <div className="loadingPage">Loading...</div>;
-    }
+    if(loading) return <div className="loadingPage">Loading...</div>;
 
     if(!data) return (<Redirect to={`/404error`}/>);
 

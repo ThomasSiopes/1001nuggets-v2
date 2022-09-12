@@ -37,6 +37,7 @@ class NavBar extends React.Component {
                                 <span className="hoverable me-1"><Link id="nav-home" className="nav-link" to={`/`}><strong>Home</strong></Link></span>
                                 <span className="hoverable me-1"><Link id="nav-authors" className="nav-link" to={`/authors`}><strong>Authors</strong></Link></span>
                                 <span className="hoverable me-1"><Link id="nav-topics" className="nav-link" to={`/topics`}><strong>Topics</strong></Link></span>
+                                <span className="hoverable me-1"><Link id="nav-collections" className="nav-link" to={`/collections`}><strong>Collections</strong></Link></span>
                             </Nav>
                             <Form onSubmit={this.handleSubmit}>
                                 <input type="text" id="searchTerm" placeholder="Search..." className="me-2 my-2" onChange={this.handleChange}></input>

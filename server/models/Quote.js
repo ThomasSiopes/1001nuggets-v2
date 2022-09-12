@@ -19,7 +19,7 @@ const quoteSchema = new Schema({
         type: String,
         required: true
     },
-    nuggets: [
+    collections: [
         {
             type: String,
         }

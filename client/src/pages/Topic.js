@@ -19,10 +19,29 @@ function Topic () {
 
     if(loading) return <p>Loading...</p>
 
+    if(!data) return (<Redirect to={`/404error`}/>);
+
     const topic = data.topicR;
 
+    let quoteList = [...topic.quotes]
+    let list1 
+    let list2 
+    let list3a
+    let list3b
     let quotePlural = "quotes"
-    if (topic.quotes.length == 1) quotePlural = "quote"
+    if(quoteList) {
+        if(quoteList.length === 1) quotePlural = "quote";
+        let result = [];
+        for(let i = 3; i > 0; --i) {
+            result.push(quoteList.splice(0, Math.ceil(quoteList.length / i)))
+        }
+        list1 = result[0];
+        list2 = result[2];
+        
+        let middleIndex = Math.ceil(result[1].length/2);
+        list3a = result[1].splice(0,middleIndex);
+        list3b = result[1].splice(-middleIndex);
+    }
 
     return (
         <Container>
@@ -34,20 +53,109 @@ function Topic () {
                 <Card.Body>
                     <p>Quotes about {topic.name} ( {topic.quotes.length} {quotePlural} )</p>
                     <Row>
-                        {topic.quotes.map((index) => (
-                            <Col xs={12} md={6} lg={4} key={index.quoteText} className="mb-3">
-                                <Card className="card-height">
-                                    <Link to={`/quote/${index.realID}`} className="text-black">
-                                        <Card.Body className="pb-0">
-                                            <Card.Text>"{index.quoteText}"</Card.Text>
-                                        </Card.Body>
-                                    </Link>
-                                    <Card.Body>
-                                        <Card.Text><AuthorButton type={"link"} name={index.author}/></Card.Text>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
-                        ))}
+                         {/* First Quote Column */}
+                         <Col xs={12} md={6} lg={4}>
+                            {list1 && 
+                                <Row>
+                                    {list1.map((index) => (
+                                        <Col xs={12} className="mb-3" key={index.quoteText}>
+                                            <Card>
+                                                <Link to={`/quote/${index.realID}`} className="text-black">
+                                                    <Card.Body>
+                                                        <Card.Text className="font-poppins">"{index.quoteText}"</Card.Text>
+                                                    </Card.Body>
+                                                </Link>
+                                            </Card>
+                                        </Col>
+                                    ))}
+                                </Row>
+                            }
+                            {
+                                list3a &&
+                                <Row className="d-xs-block d-lg-none">
+                                    {list3a.map((index) => (
+                                        <Col xs={12} className="mb-3" key={"false" + index.quoteText}>
+                                            <Card>
+                                                <Link to={`/quote/${index.realID}`} className="text-black">
+                                                    <Card.Body>
+                                                        <Card.Text className="font-poppins">"{index.quoteText}"</Card.Text>
+                                                    </Card.Body>
+                                                </Link>
+                                            </Card>
+                                        </Col>
+                                    ))}
+                                </Row>
+                            }
+                        </Col>
+
+                        {/* Middle Quote Column */}
+                        <Col lg={4} className="d-none d-lg-block">
+                            {list3a && 
+                                <Row>
+                                    {list3a.map((index) => (
+                                        <Col xs={12} className="mb-3" key={index.quoteText}>
+                                            <Card>
+                                                <Link to={`/quote/${index.realID}`} className="text-black">
+                                                    <Card.Body>
+                                                        <Card.Text className="font-poppins">"{index.quoteText}"</Card.Text>
+                                                    </Card.Body>
+                                                </Link>
+                                            </Card>
+                                        </Col>
+                                    ))}
+                                </Row>
+                            }
+                            {list3b && 
+                                <Row>
+                                    {list3b.map((index) => (
+                                        <Col xs={12} className="mb-3" key={index.quoteText}>
+                                            <Card>
+                                                <Link to={`/quote/${index.realID}`} className="text-black">
+                                                    <Card.Body>
+                                                        <Card.Text className="font-poppins">"{index.quoteText}"</Card.Text>
+                                                    </Card.Body>
+                                                </Link>
+                                            </Card>
+                                        </Col>
+                                    ))}
+                                </Row>
+                            }
+                        </Col>
+                        
+                        {/* Last Quote Column */}
+                        <Col xs={12} md={6} lg={4}>
+                            {
+                                list3b &&
+                                <Row className="d-xs-block d-lg-none">
+                                    {list3b.map((index) => (
+                                        <Col xs={12} className="mb-3" key={"false" + index.quoteText}>
+                                            <Card>
+                                                <Link to={`/quote/${index.realID}`} className="text-black">
+                                                    <Card.Body>
+                                                        <Card.Text className="font-poppins">"{index.quoteText}"</Card.Text>
+                                                    </Card.Body>
+                                                </Link>
+                                            </Card>
+                                        </Col>
+                                    ))}
+                                </Row>
+                            }
+                            {list2 && 
+                                <Row>
+                                    {list2.map((index) => (
+                                        <Col xs={12} className="mb-3" key={index.quoteText}>
+                                            <Card>
+                                                <Link to={`/quote/${index.realID}`} className="text-black">
+                                                    <Card.Body>
+                                                        <Card.Text className="font-poppins">"{index.quoteText}"</Card.Text>
+                                                    </Card.Body>
+                                                </Link>
+                                            </Card>
+                                        </Col>
+                                    ))}
+                                </Row>
+                            }
+                        </Col>
                     </Row>
                 </Card.Body>
             </Card>

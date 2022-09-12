@@ -168,7 +168,7 @@ export const QUERY_QUOTE_ALL = gql`
             author
             topics
             realID
-            nuggets
+            collections
         }
     }
 `;
@@ -181,7 +181,7 @@ export const QUERY_QUOTE_ID = gql`
             author
             topics
             realID
-            nuggets
+            collections
         }
     }
 `;
@@ -194,7 +194,7 @@ export const QUERY_QUOTE_REALID = gql`
             author
             topics
             realID
-            nuggets
+            collections
         }
     }
 `;

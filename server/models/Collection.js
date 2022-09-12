@@ -1,6 +1,6 @@
 const { Schema, model } = require("mongoose");
 
-const nuggetSchema = new Schema({
+const collectionSchema = new Schema({
     name: {
         type: String,
         required: true,
@@ -13,6 +13,6 @@ const nuggetSchema = new Schema({
     ],
 });
 
-const Nugget = model("Nugget", nuggetSchema);
+const Collection = model("Collection", collectionSchema);
 
-module.exports = Nugget;
+module.exports = Collection;

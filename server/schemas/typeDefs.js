@@ -26,10 +26,10 @@ const typeDefs = gql`
         author: String
         topics: [String]!
         realID: String
-        nuggets: [String]!
+        collections: [String]!
     }
 
-    type Nugget {
+    type Collection {
         _id: ID
         name: String
         quotes: [Quote]!
@@ -80,9 +80,9 @@ const typeDefs = gql`
         topicName(name: String): Topic
         topicID(topicId: ID): Topic
         topicR(topicRealId: String): Topic
-        nuggets: [Nugget]
-        nuggetName(name: String): Nugget
-        nuggetID(nuggetId: ID): Nugget
+        collections: [Collection]
+        collectionName(name: String): Collection
+        collectionID(collectionId: ID): Collection
         quotes: [Quote]
         quote(quoteId: ID): Quote
         quoteR(quoteRealId: String): Quote
