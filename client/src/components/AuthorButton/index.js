@@ -19,11 +19,11 @@ const AuthorButton = ({type, name}) => {
     
     if(type === "button") {
         return (
-            <Link to={`/author/${author._id}`}><Button variant={"theme"}>{name}</Button></Link>
+            <Link to={`/author/${author.realID}`}><Button variant={"theme"}>{name}</Button></Link>
         )
     } else if(type === "link") {
         return (
-            <Link to={`/author/${author._id}`} className="link-theme">{name}</Link>
+            <Link to={`/author/${author.realID}`} className="link-theme">{name}</Link>
         )
     } else return <span>Loading...</span>
 }

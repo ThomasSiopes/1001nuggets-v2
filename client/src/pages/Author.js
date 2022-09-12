@@ -7,15 +7,15 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 
 import TopicButton from "../components/TopicButton";
 
-import { QUERY_AUTHOR_ID } from "../utils/queries";
+import { QUERY_AUTHOR_REALID } from "../utils/queries";
 
 function Author () {
-    const { authorId } = useParams();
-    let { loading, data } = useQuery(QUERY_AUTHOR_ID, {
-        variables: {authorId: authorId },
+    const { authorRealId } = useParams();
+    let { loading, data } = useQuery(QUERY_AUTHOR_REALID, {
+        variables: {authorRealId: authorRealId },
     });
 
-    if(!authorId || authorId === null || authorId === "undefined") return (<Redirect to={`/authors`}/>);
+    if(!authorRealId || authorRealId === null || authorRealId === "undefined") return (<Redirect to={`/authors`}/>);
 
     if(loading) {
         return <div className="loadingPage">Loading...</div>;
@@ -23,7 +23,8 @@ function Author () {
 
     if(!data) return (<Redirect to={`/404error`}/>);
 
-    const author = data.authorID;
+    const author = data.authorR;
+
     let quoteList = [...author.quotes]
     let list1 
     let list2 

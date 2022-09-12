@@ -60,10 +60,10 @@ function App() {
               <Route exact path="/">
                 <Home/>
               </Route>
-              <Route exact path="/author/:authorId">
+              <Route exact path="/author/:authorRealId">
                 <Author/>
               </Route>
-              <Route exact path="/topic/:topicId">
+              <Route exact path="/topic/:topicRealId">
                 <Topic/>
               </Route>
               <Route exact path="/quote/:quoteRealId">

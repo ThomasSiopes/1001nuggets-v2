@@ -7,19 +7,19 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 
 import AuthorButton from "../components/AuthorButton";
 
-import { QUERY_TOPIC_ID } from "../utils/queries";
+import { QUERY_TOPIC_REALID } from "../utils/queries";
 
 function Topic () {
-    const { topicId } = useParams();
-    let {loading, data} = useQuery(QUERY_TOPIC_ID, {
-        variables: {topicId: topicId},
+    const { topicRealId } = useParams();
+    let {loading, data} = useQuery(QUERY_TOPIC_REALID, {
+        variables: {topicRealId: topicRealId},
     });
 
-    if(!topicId || topicId === null || topicId === "undefined") return (<Redirect to={`/topics`}/>);
+    if(!topicRealId || topicRealId === null || topicRealId === "undefined") return (<Redirect to={`/topics`}/>);
 
     if(loading) return <p>Loading...</p>
 
-    const topic = data.topicID;
+    const topic = data.topicR;
 
     let quotePlural = "quotes"
     if (topic.quotes.length == 1) quotePlural = "quote"

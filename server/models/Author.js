@@ -34,6 +34,10 @@ const authorSchema = new Schema({
     description: {
         type: String,
         required: false,
+    },
+    realID: {
+        type: String,
+        required: true
     }
 });
 

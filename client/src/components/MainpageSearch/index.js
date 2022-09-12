@@ -41,7 +41,7 @@ const MainPageSearch = () => {
             <Row id="myGroup" className="text-center">
                 {authorList.map((index) => (
                     <Col xs={12} key= {"search: " + index.name} className="my-1">
-                        <Link to={`/author/${index._id}`} className="link-theme">{index.name}</Link>
+                        <Link to={`/author/${index.realID}`} className="link-theme">{index.name}</Link>
                     </Col>
                 ))}
             </Row>

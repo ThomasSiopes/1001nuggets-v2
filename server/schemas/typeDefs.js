@@ -10,11 +10,13 @@ const typeDefs = gql`
         thumbnail: String
         links: [Link]!
         description: String
+        realID: String
     }
 
     type Topic {
         _id: ID
         name: String
+        realID: String
         quotes: [Quote]!
     }
 
@@ -73,9 +75,11 @@ const typeDefs = gql`
         authors: [Author]
         authorName(name: String): Author
         authorID(authorId: ID): Author
+        authorR(authorRealId: String): Author
         topics: [Topic]
         topicName(name: String): Topic
         topicID(topicId: ID): Topic
+        topicR(topicRealId: String): Topic
         nuggets: [Nugget]
         nuggetName(name: String): Nugget
         nuggetID(nuggetId: ID): Nugget

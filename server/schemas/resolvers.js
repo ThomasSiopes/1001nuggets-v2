@@ -12,6 +12,9 @@ const resolvers = {
         authorID: async (parent, { authorId }) => {
             return Author.findOne({ _id: authorId }).populate('quotes');
         },
+        authorR: async (parent, { authorRealId }) => {
+            return Author.findOne({ realID: authorRealId }).populate('quotes');
+        },
         topics: async () => {
             return Topic.find().populate('quotes');
         },
@@ -20,6 +23,9 @@ const resolvers = {
         },
         topicID: async (parent, { topicId }) => {
             return Topic.findOne({ _id: topicId }).populate('quotes');
+        },
+        topicR: async (parent, { topicRealId }) => {
+            return Topic.findOne({ realID: topicRealId }).populate('quotes');
         },
         nuggets: async () => {
             return Nugget.find().populate('quotes');

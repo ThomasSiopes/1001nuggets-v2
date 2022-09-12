@@ -52,7 +52,7 @@ function TopicNavigation () {
                     <Row id="myGroup">
                         {sortedList.map((index) => (
                             <Col xs={12} sm={6} md={4} lg={3} key={index.name} className="text-center mb-3">
-                                <Link to={`/topic/${index._id}`} className="link-theme">{index.name}</Link>
+                                <Link to={`/topic/${index.realID}`} className="link-theme">{index.name}</Link>
                             </Col>
                         ))}
                     </Row>

@@ -10,7 +10,7 @@ const SpecificCard = (author) => {
     return (
         <Col xs={6} md={4} lg={3} className="mb-3">
             <Card className="text-center text-white card-main">
-                <Link to={`/author/${author.author._id}`} className="text-white btn btn-theme btn-block py-3">
+                <Link to={`/author/${author.author.realID}`} className="text-white btn btn-theme btn-block py-3">
                     <strong>{author.author.name}</strong>
                 </Link>
             </Card>

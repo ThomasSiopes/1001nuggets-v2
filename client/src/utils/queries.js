@@ -18,6 +18,7 @@ export const QUERY_AUTHOR_ALL = gql`
                 link
             }
             description
+            realID
         }
     }
 `;
@@ -40,6 +41,7 @@ export const QUERY_AUTHOR_NAME = gql`
                 link
             }
             description
+            realID
         }
     }
 `;
@@ -62,6 +64,30 @@ export const QUERY_AUTHOR_ID = gql`
                 link
             }
             description
+            realID
+        }
+    }
+`;
+
+export const QUERY_AUTHOR_REALID = gql`
+    query getAuthorR($authorRealId: String!) {
+        authorR (authorRealId: $authorRealId){
+            _id
+            name
+            quotes {
+                _id
+                quoteText
+                author
+                topics
+                realID
+            }
+            thumbnail
+            links {
+                type
+                link
+            }
+            description
+            realID
         }
     }
 `;
@@ -71,6 +97,7 @@ export const QUERY_TOPIC_ALL = gql`
         topics {
             _id
             name
+            realID
             quotes {
                 _id
                 quoteText
@@ -87,6 +114,7 @@ export const QUERY_TOPIC_NAME = gql`
         topicName(name: $name) {
             _id
             name
+            realID
             quotes {
                 _id
                 quoteText
@@ -103,6 +131,24 @@ export const QUERY_TOPIC_ID = gql`
         topicID(topicId: $topicId) {
             _id
             name
+            realID
+            quotes {
+                _id
+                quoteText
+                author
+                topics
+                realID
+            }
+        }
+    }
+`;
+
+export const QUERY_TOPIC_REALID = gql`
+    query topicR($topicRealId: String!) {
+        topicR(topicRealId: $topicRealId) {
+            _id
+            name
+            realID
             quotes {
                 _id
                 quoteText

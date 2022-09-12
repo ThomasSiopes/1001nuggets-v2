@@ -38,7 +38,7 @@ const Results = ({type, input}) => {
                         {newList.map((index) => (
                             <Col xs={12} sm={6} lg={4} xl={3} className="mb-2" key={index.name}>
                                 <Card>
-                                    <Link to={`/${type}/${index._id}`} className="btn btn-theme">
+                                    <Link to={`/${type}/${index.realID}`} className="btn btn-theme">
                                             <Card.Body>
                                                 {index.name}
                                             </Card.Body>
