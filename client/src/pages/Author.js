@@ -29,7 +29,9 @@ function Author () {
     let list2 
     let list3a
     let list3b
+    let quotePlural = "quotes"
     if(quoteList) {
+        if(quoteList.length === 1) quotePlural = "quote";
         let result = [];
         for(let i = 3; i > 0; --i) {
             result.push(quoteList.splice(0, Math.ceil(quoteList.length / i)))
@@ -50,7 +52,7 @@ function Author () {
             <Card>
                 <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} <Link className="link-theme" to={`/authors`}>Authors</Link> {`>`} {author.name}</Card.Header>
                 <Card.Body>
-                    <p>Quotes by {author.name}</p>
+                    <p>Quotes by {author.name} ( {author.quotes.length} {quotePlural} )</p>
                     <Row>
                          {/* First Quote Column */}
                          <Col xs={12} md={6} lg={4}>

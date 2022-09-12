@@ -21,7 +21,8 @@ function Topic () {
 
     const topic = data.topicID;
 
-    console.log(topic);
+    let quotePlural = "quotes"
+    if (topic.quotes.length == 1) quotePlural = "quote"
 
     return (
         <Container>
@@ -31,7 +32,7 @@ function Topic () {
             <Card>
                 <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} <Link className="link-theme" to={`/topics`}>Topics</Link> {`>`} {topic.name}</Card.Header>
                 <Card.Body>
-                    <p>Quotes about {topic.name}</p>
+                    <p>Quotes about {topic.name} ( {topic.quotes.length} {quotePlural} )</p>
                     <Row>
                         {topic.quotes.map((index) => (
                             <Col xs={12} md={6} lg={4} key={index.quoteText} className="mb-3">
