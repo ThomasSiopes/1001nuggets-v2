@@ -5,7 +5,7 @@ import MetaTags from "react-meta-tags";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
 
-import TopicButton from "../components/TopicButton";
+import QuoteCard from "../components/QuoteCard";
 
 import { QUERY_AUTHOR_REALID } from "../utils/queries";
 
@@ -59,20 +59,7 @@ function Author () {
                                 <Row>
                                     {list1.map((index) => (
                                         <Col xs={12} className="mb-3" key={index.quoteText}>
-                                            <Card>
-                                                <Link to={`/quote/${index.realID}`} className="text-black">
-                                                    <Card.Body>
-                                                        <Card.Text className="font-poppins">"{index.quoteText}"</Card.Text>
-                                                    </Card.Body>
-                                                </Link>
-                                                {index.topics.length > 0 && 
-                                                    <Card.Footer className="text-center">
-                                                        {index.topics.map((topic) => (
-                                                            <TopicButton className="mb-2" type={"button"} name={topic} key={index.quoteText + topic}/>
-                                                        ))}
-                                                    </Card.Footer>
-                                                }
-                                            </Card>
+                                            <QuoteCard quote={index}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -82,20 +69,7 @@ function Author () {
                                 <Row className="d-xs-block d-lg-none">
                                     {list3a.map((index) => (
                                         <Col xs={12} className="mb-3" key={"false" + index.quoteText}>
-                                            <Card>
-                                                <Link to={`/quote/${index.realID}`} className="text-black">
-                                                    <Card.Body>
-                                                        <Card.Text className="font-poppins">"{index.quoteText}"</Card.Text>
-                                                    </Card.Body>
-                                                </Link>
-                                                {index.topics.length > 0 && 
-                                                    <Card.Footer className="text-center">
-                                                        {index.topics.map((topic) => (
-                                                            <TopicButton className="mb-2" type={"button"} name={topic} key={index.quoteText + topic}/>
-                                                        ))}
-                                                    </Card.Footer>
-                                                }
-                                            </Card>
+                                            <QuoteCard quote={index}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -108,20 +82,7 @@ function Author () {
                                 <Row>
                                     {list3a.map((index) => (
                                         <Col xs={12} className="mb-3" key={index.quoteText}>
-                                            <Card>
-                                                <Link to={`/quote/${index.realID}`} className="text-black">
-                                                    <Card.Body>
-                                                        <Card.Text className="font-poppins">"{index.quoteText}"</Card.Text>
-                                                    </Card.Body>
-                                                </Link>
-                                                {index.topics.length > 0 && 
-                                                    <Card.Footer className="text-center">
-                                                        {index.topics.map((topic) => (
-                                                            <TopicButton className="mb-2" type={"button"} name={topic} key={index.quoteText + topic}/>
-                                                        ))}
-                                                    </Card.Footer>
-                                                }
-                                            </Card>
+                                            <QuoteCard quote={index}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -130,20 +91,7 @@ function Author () {
                                 <Row>
                                     {list3b.map((index) => (
                                         <Col xs={12} className="mb-3" key={index.quoteText}>
-                                            <Card>
-                                                <Link to={`/quote/${index.realID}`} className="text-black">
-                                                    <Card.Body>
-                                                        <Card.Text className="font-poppins">"{index.quoteText}"</Card.Text>
-                                                    </Card.Body>
-                                                </Link>
-                                                {index.topics.length > 0 && 
-                                                    <Card.Footer className="text-center">
-                                                        {index.topics.map((topic) => (
-                                                            <TopicButton className="mb-2" type={"button"} name={topic} key={index.quoteText + topic}/>
-                                                        ))}
-                                                    </Card.Footer>
-                                                }
-                                            </Card>
+                                            <QuoteCard quote={index}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -157,20 +105,7 @@ function Author () {
                                 <Row className="d-xs-block d-lg-none">
                                     {list3b.map((index) => (
                                         <Col xs={12} className="mb-3" key={"false" + index.quoteText}>
-                                            <Card>
-                                                <Link to={`/quote/${index.realID}`} className="text-black">
-                                                    <Card.Body>
-                                                        <Card.Text className="font-poppins">"{index.quoteText}"</Card.Text>
-                                                    </Card.Body>
-                                                </Link>
-                                                {index.topics.length > 0 && 
-                                                    <Card.Footer className="text-center">
-                                                        {index.topics.map((topic) => (
-                                                            <TopicButton className="mb-2" type={"button"} name={topic} key={index.quoteText + topic}/>
-                                                        ))}
-                                                    </Card.Footer>
-                                                }
-                                            </Card>
+                                            <QuoteCard quote={index}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -179,20 +114,7 @@ function Author () {
                                 <Row>
                                     {list2.map((index) => (
                                         <Col xs={12} className="mb-3" key={index.quoteText}>
-                                            <Card>
-                                                <Link to={`/quote/${index.realID}`} className="text-black">
-                                                    <Card.Body>
-                                                        <Card.Text className="font-poppins">"{index.quoteText}"</Card.Text>
-                                                    </Card.Body>
-                                                </Link>
-                                                {index.topics.length > 0 && 
-                                                    <Card.Footer className="text-center">
-                                                        {index.topics.map((topic) => (
-                                                            <TopicButton className="mb-2" type={"button"} name={topic} key={index.quoteText + topic}/>
-                                                        ))}
-                                                    </Card.Footer>
-                                                }
-                                            </Card>
+                                            <QuoteCard quote={index}/>
                                         </Col>
                                     ))}
                                 </Row>

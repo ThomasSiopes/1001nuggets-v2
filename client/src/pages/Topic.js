@@ -5,7 +5,7 @@ import MetaTags from "react-meta-tags";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
 
-import AuthorButton from "../components/AuthorButton";
+import QuoteCard from "../components/QuoteCard";
 
 import { QUERY_TOPIC_REALID } from "../utils/queries";
 
@@ -59,13 +59,7 @@ function Topic () {
                                 <Row>
                                     {list1.map((index) => (
                                         <Col xs={12} className="mb-3" key={index.quoteText}>
-                                            <Card>
-                                                <Link to={`/quote/${index.realID}`} className="text-black">
-                                                    <Card.Body>
-                                                        <Card.Text className="font-poppins">"{index.quoteText}"</Card.Text>
-                                                    </Card.Body>
-                                                </Link>
-                                            </Card>
+                                            <QuoteCard quote={index}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -75,13 +69,7 @@ function Topic () {
                                 <Row className="d-xs-block d-lg-none">
                                     {list3a.map((index) => (
                                         <Col xs={12} className="mb-3" key={"false" + index.quoteText}>
-                                            <Card>
-                                                <Link to={`/quote/${index.realID}`} className="text-black">
-                                                    <Card.Body>
-                                                        <Card.Text className="font-poppins">"{index.quoteText}"</Card.Text>
-                                                    </Card.Body>
-                                                </Link>
-                                            </Card>
+                                            <QuoteCard quote={index}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -94,13 +82,7 @@ function Topic () {
                                 <Row>
                                     {list3a.map((index) => (
                                         <Col xs={12} className="mb-3" key={index.quoteText}>
-                                            <Card>
-                                                <Link to={`/quote/${index.realID}`} className="text-black">
-                                                    <Card.Body>
-                                                        <Card.Text className="font-poppins">"{index.quoteText}"</Card.Text>
-                                                    </Card.Body>
-                                                </Link>
-                                            </Card>
+                                            <QuoteCard quote={index}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -109,13 +91,7 @@ function Topic () {
                                 <Row>
                                     {list3b.map((index) => (
                                         <Col xs={12} className="mb-3" key={index.quoteText}>
-                                            <Card>
-                                                <Link to={`/quote/${index.realID}`} className="text-black">
-                                                    <Card.Body>
-                                                        <Card.Text className="font-poppins">"{index.quoteText}"</Card.Text>
-                                                    </Card.Body>
-                                                </Link>
-                                            </Card>
+                                            <QuoteCard quote={index}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -129,13 +105,7 @@ function Topic () {
                                 <Row className="d-xs-block d-lg-none">
                                     {list3b.map((index) => (
                                         <Col xs={12} className="mb-3" key={"false" + index.quoteText}>
-                                            <Card>
-                                                <Link to={`/quote/${index.realID}`} className="text-black">
-                                                    <Card.Body>
-                                                        <Card.Text className="font-poppins">"{index.quoteText}"</Card.Text>
-                                                    </Card.Body>
-                                                </Link>
-                                            </Card>
+                                            <QuoteCard quote={index}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -144,13 +114,7 @@ function Topic () {
                                 <Row>
                                     {list2.map((index) => (
                                         <Col xs={12} className="mb-3" key={index.quoteText}>
-                                            <Card>
-                                                <Link to={`/quote/${index.realID}`} className="text-black">
-                                                    <Card.Body>
-                                                        <Card.Text className="font-poppins">"{index.quoteText}"</Card.Text>
-                                                    </Card.Body>
-                                                </Link>
-                                            </Card>
+                                            <QuoteCard quote={index}/>
                                         </Col>
                                     ))}
                                 </Row>

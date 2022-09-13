@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container, Card, Button } from "react-bootstrap";
 import { useQuery, useMutation } from "@apollo/client";
 import MetaTags from "react-meta-tags";
@@ -8,7 +8,7 @@ import { SET_QOTD } from "../utils/mutations";
 
 function Scoreboard() {
     const queryQuotes = useQuery(QUERY_QUOTE_ALL);
-    const [setQOTD, {error}] = useMutation(SET_QOTD);
+    const [setQOTD] = useMutation(SET_QOTD);
     const getQOTD = useQuery(GET_QOTD);
 
     const randomize = (event) => {

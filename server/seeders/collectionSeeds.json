@@ -1,21 +1,21 @@
 [
 
-    {"name": "The Anti-Leader", "realID": "AntiLeader"},
+    {"name": "The Anti-Leader", "realID": "AntiLeader", "sortedName": "AntiLeader"},
      
-    {"name": "Business Management", "realID": "BusinessManagement"},
+    {"name": "Business Management", "realID": "BusinessManagement", "sortedName": "BusinessManagement"},
 
-    {"name": "Communication", "realID": "Communication"},
+    {"name": "Communication", "realID": "Communication", "sortedName": "Communication"},
 
-    {"name": "Dating & Courtship", "realID": "DatingCourtship"},
+    {"name": "Dating & Courtship", "realID": "DatingCourtship", "sortedName": "DatingCourtship"},
 
-    {"name": "Innovation", "realID": "Innovation"},
-    {"name": "Inspiration", "realID": "Inspiration"},
+    {"name": "Innovation", "realID": "Innovation", "sortedName": "Innovation"},
+    {"name": "Inspiration", "realID": "Inspiration", "sortedName": "Inspiration"},
 
-    {"name": "Picket Fences", "realID": "PicketFences"},   
+    {"name": "Picket Fences", "realID": "PicketFences", "sortedName": "PicketFences"},
 
-    {"name": "Religion", "realID": "Religion"},
+    {"name": "Religion", "realID": "Religion", "sortedName": "Religion"},
 
-    {"name": "Seniority", "realID": "Seniority"},
-    {"name": "Sports", "realID": "Sports"}
+    {"name": "Seniority", "realID": "Seniority", "sortedName": "Seniority"},
+    {"name": "Sports", "realID": "Sports", "sortedName": "Sports"}
 
 ]

@@ -51,7 +51,7 @@ export const GlobalStyles = createGlobalStyle`
         border: none;
     }
 
-    .btn-theme:hover {
+    .btn-theme:hover, .btn-theme:focus {
         color: #fff;
         background-color: ${(props) => props.theme.button.c2};
         border: none;
@@ -115,7 +115,7 @@ export const GlobalStyles = createGlobalStyle`
         max-width: 7%;
     }
 
-    .navbar-toggler:focus {
+    .navbar-toggler:focus, .btn-light:focus, .btn-check:focus, .btn-primary:focus {
         box-shadow: none;
     }
 

@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import MetaTags from "react-meta-tags";
 
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
+
+import QuoteCard from "../components/QuoteCard";
 
 import { QUERY_COLLECTION_ALL } from "../utils/queries";
 
@@ -13,6 +15,7 @@ function Collections () {
     if(loading) return <span>Loading...</span>
 
     const collectionList = data.collections;
+    console.log(collectionList)
     
     let sortedList = []
 
@@ -38,17 +41,13 @@ function Collections () {
                         <Col xs={12} md={6} xl={4} className="my-2" key={index.name}>
                             <Card bg="white">
                                 <Card.Header className="text-center">
-                                    <Card.Text>{index.name}</Card.Text>
+                                    <Card.Text>
+                                        {index.name} <Button className="btn-theme">See More</Button>
+                                    </Card.Text>
                                 </Card.Header>
                                 <Card.Body>
                                     {index.quotes.map((index2) => (
-                                        <Card className="my-2" key={index + index2.quoteText}>
-                                            <Link to={`/quote/${index2.realID}`} className="text-black">
-                                            <Card.Body>
-                                                <Card.Text>"{index2.quoteText}"</Card.Text>
-                                            </Card.Body>
-                                            </Link>
-                                        </Card>
+                                        <div className="mb-2"><QuoteCard quote={index2}/></div>
                                     ))
                                     }
                                 </Card.Body>

@@ -34,6 +34,7 @@ const typeDefs = gql`
     type Collection {
         _id: ID
         name: String
+        sortedName: String
         realID: String
         quotes: [Quote]!
     }

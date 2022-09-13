@@ -211,10 +211,13 @@ export const QUERY_COLLECTION_ALL = gql`
     query getAllCollections {
         collections {
             name
+            sortedName
             realID
             quotes {
                 _id
                 quoteText
+                topics
+                author
                 realID
             }
         }

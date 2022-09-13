@@ -29,12 +29,11 @@ class NavBar extends React.Component {
             return(
                 <Navbar bg="red" variant="dark" expand="md" className="mb-3">
                     <Container>
-                        {/* <Link className="navbar-brand" to={`/`}><strong>1001 Nuggets</strong></Link> */}
                         <Link className="navbar-brand" to={`/`}><img id="nav-icon" className="me-3 d-none d-md-block" src="/assets/images/thumbnails/background-copy.png" alt="Logo"/></Link>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav" className="text-center">
                             <Nav className="me-auto py-2">
-                                <span className="hoverable me-1"><Link id="nav-home" className="nav-link" to={`/`}><strong>Home</strong></Link></span>
+                                <span className="hoverable me-1 d-inline d-md-none"><Link id="nav-authors" className="nav-link" to={`/`}><strong>Home</strong></Link></span>
                                 <span className="hoverable me-1"><Link id="nav-authors" className="nav-link" to={`/authors`}><strong>Authors</strong></Link></span>
                                 <span className="hoverable me-1"><Link id="nav-topics" className="nav-link" to={`/topics`}><strong>Topics</strong></Link></span>
                                 <span className="hoverable me-1"><Link id="nav-collections" className="nav-link" to={`/collections`}><strong>Collections</strong></Link></span>

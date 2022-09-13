@@ -3,15 +3,14 @@ import { Link, Redirect, useParams } from "react-router-dom";
 import { useQuery} from "@apollo/client";
 import MetaTags from "react-meta-tags";
 
-import { Container, Row, Col, Card, Carousel, Button } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import { FaTwitter, FaFacebookF } from "react-icons/fa";
 
 import TopicButton from "../components/TopicButton";
 import AuthorButton from "../components/AuthorButton";
 import MoreAuthor from "../components/MoreAuthor";
-import MoreTopic from "../components/MoreTopic";
+// import MoreTopic from "../components/MoreTopic";
 
-// import { QUERY_QUOTE_ID } from "../utils/queries";
 import { QUERY_QUOTE_REALID } from "../utils/queries";
 
 function Quote () {
