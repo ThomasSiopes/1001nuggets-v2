@@ -115,6 +115,10 @@ export const GlobalStyles = createGlobalStyle`
         max-width: 7%;
     }
 
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
     .hoverable {
         border-top: 0.1rem solid;
         border-bottom: 0.1rem solid;
@@ -170,5 +174,10 @@ export const GlobalStyles = createGlobalStyle`
 
     #share-reddit:hover {
         color: #782c10 !important;
+    }
+
+    .subtext {
+        color: #777;
+        font-size: 14px;
     }
 `

@@ -13,6 +13,7 @@ function Freethinkers () {
     if(loading) return <span>Loading...</span>
 
     let authorList = [];
+
     for(let index of data.authors){
         authorList.push(index);
     }
@@ -48,8 +49,9 @@ function Freethinkers () {
                     <input type="text" id="myInput" onKeyUp={searchFunction} placeholder="Search for thought names..." className="mb-3"/>
                     <Row id="myGroup">
                         {authorList.map((index) => (
-                            <Col xs={12} sm={6} md={4} lg={3} key={index.name} className="text-center mb-3">
-                                <Link to={`/author/${index.realID}`} className="link-theme">{index.name}</Link>
+                            <Col xs={12} sm={6} md={4} lg={3} key={index.name} className="text-center mb-2">
+                                <span><Link to={`/author/${index.realID}`} className="link-theme">{index.name}</Link></span>
+                                <span className="subtext"> {`(`} {index.quotes.length} {index.quotes.length === 1 ? "quote" : "quotes"} {`)`}</span>
                             </Col>
                         ))}
                     </Row>

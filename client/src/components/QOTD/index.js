@@ -3,7 +3,7 @@ import { Link, Redirect } from "react-router-dom";
 import { useQuery} from "@apollo/client";
 
 import { Card, Container } from "react-bootstrap";
-import { FaTwitter, FaFacebookF, FaReddit } from "react-icons/fa";
+import { FaTwitter, FaFacebookF } from "react-icons/fa";
 
 import TopicButton from "../../components/TopicButton";
 import AuthorButton from "../../components/AuthorButton";
