@@ -101,6 +101,7 @@ export const QUERY_TOPIC_ALL = gql`
         topics {
             _id
             name
+            sortedName
             realID
             quotes {
                 _id
@@ -118,6 +119,7 @@ export const QUERY_TOPIC_NAME = gql`
         topicName(name: $name) {
             _id
             name
+            sortedName
             realID
             quotes {
                 _id
@@ -135,6 +137,7 @@ export const QUERY_TOPIC_ID = gql`
         topicID(topicId: $topicId) {
             _id
             name
+            sortedName
             realID
             quotes {
                 _id
@@ -152,6 +155,7 @@ export const QUERY_TOPIC_REALID = gql`
         topicR(topicRealId: $topicRealId) {
             _id
             name
+            sortedName
             realID
             quotes {
                 _id
@@ -207,6 +211,7 @@ export const QUERY_COLLECTION_ALL = gql`
     query getAllCollections {
         collections {
             name
+            realID
             quotes {
                 _id
                 quoteText

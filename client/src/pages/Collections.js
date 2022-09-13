@@ -13,7 +13,14 @@ function Collections () {
     if(loading) return <span>Loading...</span>
 
     const collectionList = data.collections;
-    console.log(collectionList);
+    
+    let sortedList = []
+
+    for(let index of collectionList) {
+        sortedList.push(index)
+    }
+
+    sortedList = sortedList.sort((a,b) => a.realID.localeCompare(b.realID));
 
     return (
         <Container>

@@ -17,6 +17,7 @@ const typeDefs = gql`
     type Topic {
         _id: ID
         name: String
+        sortedName: String
         realID: String
         quotes: [Quote]!
     }
@@ -33,6 +34,7 @@ const typeDefs = gql`
     type Collection {
         _id: ID
         name: String
+        realID: String
         quotes: [Quote]!
     }
 
