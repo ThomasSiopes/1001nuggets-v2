@@ -15,7 +15,7 @@ const QuoteCard = ({quote}) => {
                 </Card.Body>
             </Link>
             <Card.Body>
-                <Card.Text className="text-end">- <strong><AuthorButton type={"link"} name={quote.author}/></strong></Card.Text>
+                <Card.Text className="text-end me-2">- <strong><AuthorButton type={"link"} name={quote.author}/></strong></Card.Text>
             </Card.Body>
             {quote.topics.length > 0 && 
                 <Card.Footer className="text-center">
