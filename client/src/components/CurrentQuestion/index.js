@@ -5,7 +5,7 @@ import { Card, Row, Col, Button } from "react-bootstrap";
 import { QUERY_SCOREBOARD, QUERY_SCORES } from "../../utils/queries";
 import { MOD_SCORE } from "../../utils/mutations";
 
-import GlobalScores from "./globalScores";
+// import GlobalScores from "./globalScores";
 
 const CurrentQuestion = () => {    
     const queryScores = useQuery(QUERY_SCORES);

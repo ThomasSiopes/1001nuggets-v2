@@ -59,7 +59,7 @@ function Author () {
                                 <Row>
                                     {list1.map((index) => (
                                         <Col xs={12} className="mb-3" key={index.quoteText}>
-                                            <QuoteCard quote={index}/>
+                                            <QuoteCard quotes={author.quotes} quoteIndex={author.quotes.indexOf(index)}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -69,7 +69,7 @@ function Author () {
                                 <Row className="d-xs-block d-lg-none">
                                     {list3a.map((index) => (
                                         <Col xs={12} className="mb-3" key={"false" + index.quoteText}>
-                                            <QuoteCard quote={index}/>
+                                            <QuoteCard quotes={author.quotes} quoteIndex={author.quotes.indexOf(index)}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -82,7 +82,7 @@ function Author () {
                                 <Row>
                                     {list3a.map((index) => (
                                         <Col xs={12} className="mb-3" key={index.quoteText}>
-                                            <QuoteCard quote={index}/>
+                                            <QuoteCard quotes={author.quotes} quoteIndex={author.quotes.indexOf(index)}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -91,7 +91,7 @@ function Author () {
                                 <Row>
                                     {list3b.map((index) => (
                                         <Col xs={12} className="mb-3" key={index.quoteText}>
-                                            <QuoteCard quote={index}/>
+                                            <QuoteCard quotes={author.quotes} quoteIndex={author.quotes.indexOf(index)}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -105,7 +105,7 @@ function Author () {
                                 <Row className="d-xs-block d-lg-none">
                                     {list3b.map((index) => (
                                         <Col xs={12} className="mb-3" key={"false" + index.quoteText}>
-                                            <QuoteCard quote={index}/>
+                                            <QuoteCard quotes={author.quotes} quoteIndex={author.quotes.indexOf(index)}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -114,7 +114,7 @@ function Author () {
                                 <Row>
                                     {list2.map((index) => (
                                         <Col xs={12} className="mb-3" key={index.quoteText}>
-                                            <QuoteCard quote={index}/>
+                                            <QuoteCard quotes={author.quotes} quoteIndex={author.quotes.indexOf(index)}/>
                                         </Col>
                                     ))}
                                 </Row>
