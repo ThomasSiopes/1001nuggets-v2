@@ -24,7 +24,8 @@ import TopicNav from "./pages/TopicNav";
 import Quote from "./pages/Quote";
 import SearchResult from "./pages/SearchResult";
 import Scoreboard from "./pages/Scoreboard";
-import Collections from "./pages/Collections";
+import CollectionNav from "./pages/CollectionNav";
+import Collection from "./pages/Collection";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -70,11 +71,17 @@ function App() {
               <Route exact path="/quote/:quoteRealId">
                 <Quote/>
               </Route>
+              <Route exact path="/quote/:collectionRealId">
+                <Collection/>
+              </Route>
               <Route exact path="/topics">
                 <TopicNav/>
               </Route>
               <Route exact path="/authors">
                 <AuthorNav/>
+              </Route>
+              <Route exact path="/collections">
+                <CollectionNav/>
               </Route>
               <Route exact path="/platforms">
                 <PlatformMain/>
@@ -87,9 +94,6 @@ function App() {
               </Route>
               <Route exact path="/0504">
                 <Scoreboard/>
-              </Route>
-              <Route exact path="/collections">
-                <Collections/>
               </Route>
               <Route component={ErrorPage}/>
             </Switch>

@@ -48,7 +48,7 @@ function TopicNavigation () {
                     <Card.Title>Topics</Card.Title>
                 </Card.Header>
                 <Card.Body>
-                    <input type="text" id="myInput" onKeyUp={searchFunction} placeholder="Search for thought names..." className="mb-3"/>
+                    <input type="text" id="myInput" onKeyUp={searchFunction} placeholder="Search for topic names..." className="mb-3"/>
                     <Row id="myGroup">
                         {sortedList.map((index) => (
                             <Col xs={12} sm={6} md={4} lg={3} key={index.name} className="text-center mb-3">

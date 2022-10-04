@@ -5,20 +5,22 @@ import MetaTags from "react-meta-tags";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
 
-import { QUERY_AUTHOR_ALL } from "../utils/queries";
+import { QUERY_COLLECTION_ALL } from "../utils/queries";
 
-function Freethinkers () {
-    let { loading, data } = useQuery(QUERY_AUTHOR_ALL);
+function CollectionNavigation () {
+    let { loading, data } = useQuery(QUERY_COLLECTION_ALL);
 
     if(loading) return <span>Loading...</span>
 
-    let authorList = [];
+    const collectionList = data.collections;
 
-    for(let index of data.authors){
-        authorList.push(index);
+    let sortedList = []
+
+    for(let index of collectionList) {
+        sortedList.push(index)
     }
 
-    authorList = authorList.sort((a, b) => a.lastName.localeCompare(b.lastName));
+    sortedList = sortedList.sort((a,b) => a.name.localeCompare(b.name));
 
     const searchFunction = () => {
         let input, filter, group, elements, body, textValue;
@@ -38,19 +40,19 @@ function Freethinkers () {
     return (
         <Container>
             <MetaTags>
-                <title>1001 Nuggets - Authors</title>
+                <title>1001 Nuggets - Collections</title>
             </MetaTags>
             <Card>
-                <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} Authors</Card.Header>
+            <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} Collections</Card.Header>
                 <Card.Header className="text-center py-3">
-                    <Card.Title>Authors</Card.Title>
+                    <Card.Title>Collections</Card.Title>
                 </Card.Header>
                 <Card.Body>
-                    <input type="text" id="myInput" onKeyUp={searchFunction} placeholder="Search for author names..." className="mb-3"/>
+                    <input type="text" id="myInput" onKeyUp={searchFunction} placeholder="Search for collection names..." className="mb-3"/>
                     <Row id="myGroup">
-                        {authorList.map((index) => (
-                            <Col xs={12} sm={6} md={4} lg={3} key={index.name} className="text-center mb-2">
-                                <span><Link to={`/author/${index.realID}`} className="link-theme">{index.name}</Link></span>
+                        {sortedList.map((index) => (
+                            <Col xs={12} sm={6} md={4} lg={3} key={index.name} className="text-center mb-3">
+                                <span><Link to={`/Collection/${index.realID}`} className="link-theme">{index.name}</Link></span>
                                 <span className="subtext"> {`(`} {index.quotes.length} {index.quotes.length === 1 ? "quote" : "quotes"} {`)`}</span>
                             </Col>
                         ))}
@@ -61,4 +63,4 @@ function Freethinkers () {
     )
 }
 
-export default Freethinkers;
+export default CollectionNavigation;

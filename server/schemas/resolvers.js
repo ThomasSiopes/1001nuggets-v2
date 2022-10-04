@@ -36,6 +36,9 @@ const resolvers = {
         collectionID: async (parent, { collectionId }) => {
             return Collection.findOne({ _id: collectionId }).populate('quotes');
         },
+        collectionR: async (parent, { collectionRealId }) => {
+            return Collection.findOne({ realID: collectionRealId }).populate('quotes');
+        },
         quotes: async () => {
             return Quote.find();
         },

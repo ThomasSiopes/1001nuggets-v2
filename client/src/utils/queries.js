@@ -217,7 +217,65 @@ export const QUERY_COLLECTION_ALL = gql`
                 _id
                 quoteText
                 topics
+                collections
                 author
+                realID
+            }
+        }
+    }
+`;
+
+export const QUERY_COLLECTION_NAME = gql`
+    query collectionName($name: String!) {
+        collectionName(name: $name) {
+            _id
+            name
+            sortedName
+            realID
+            quotes {
+                _id
+                quoteText
+                author
+                topics
+                collections
+                realID
+            }
+        }
+    }
+`;
+
+export const QUERY_COLLECTION_ID = gql`
+    query collectionId($collectionId: ID!) {
+        collectionID(collectionId: $collectionId) {
+            _id
+            name
+            sortedName
+            realID
+            quotes {
+                _id
+                quoteText
+                author
+                topics
+                collections
+                realID
+            }
+        }
+    }
+`;
+
+export const QUERY_COLLECTION_REALID = gql`
+    query collectionR($collectionRealId: String!) {
+        collectionR(collectionRealId: $collectionRealId) {
+            _id
+            name
+            sortedName
+            realID
+            quotes {
+                _id
+                quoteText
+                author
+                topics
+                collections
                 realID
             }
         }
