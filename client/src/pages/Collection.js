@@ -49,9 +49,9 @@ function Collection () {
                 <title>1001 Nuggets - {collection.name}</title>
             </MetaTags>
             <Card>
-                <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} <Link className="link-theme" to={`/topics`}>Topics</Link> {`>`} {collection.name}</Card.Header>
+                <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} <Link className="link-theme" to={`/collections`}>Collections</Link> {`>`} {collection.name}</Card.Header>
                 <Card.Body>
-                    <p>Quotes about {collection.name} ( {collection.quotes.length} {quotePlural} )</p>
+                    <p>Quotes pertaining to {collection.name} ( {collection.quotes.length} {quotePlural} )</p>
                     <Row>
                          {/* First Quote Column */}
                          <Col xs={12} md={6} lg={4}>

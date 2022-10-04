@@ -71,7 +71,7 @@ function App() {
               <Route exact path="/quote/:quoteRealId">
                 <Quote/>
               </Route>
-              <Route exact path="/quote/:collectionRealId">
+              <Route exact path="/collection/:collectionRealId">
                 <Collection/>
               </Route>
               <Route exact path="/topics">

@@ -20,14 +20,10 @@ function QuoteCard({quotes, quoteIndex}) {
 
   const handleIncrease = () => {
     setIndex(currentQuote+1);
-    console.log("OG: " + quoteIndex);
-    console.log("Current: " + currentQuote);
   }
 
   const handleDecrease =() => {
     setIndex(currentQuote-1);
-    console.log("OG: " + quoteIndex);
-    console.log("Current: " + currentQuote);
   }
 
   if(quotes && quotes[quoteIndex] && quotes[currentQuote]) {
