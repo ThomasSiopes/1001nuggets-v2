@@ -31,7 +31,7 @@ function QuoteCard({quotes, quoteIndex}) {
     <>
       <Card>
         <Card.Body onClick={handleShow}>
-            <Card.Text className="font-poppins">"{quotes[quoteIndex].quoteText}"</Card.Text>
+            <Card.Text className="font-poppins" id="upward">"{quotes[quoteIndex].quoteText}"</Card.Text>
         </Card.Body>
       </Card>
 
@@ -45,7 +45,7 @@ function QuoteCard({quotes, quoteIndex}) {
         </Modal.Body>
         <Modal.Footer className="justify-content-center">
             {quotes[currentQuote-1] && 
-              <Button className="mb-2" variant={"light"} onClick={handleDecrease}><strong>{"←"}</strong></Button>
+              <Button className="mb-2" variant={"light"} onClick={handleDecrease} onKeyDown={handleDecrease}><strong>{"←"}</strong></Button>
             }
             {quotes[currentQuote].topics.length > 0 && 
                 <span>
@@ -55,7 +55,7 @@ function QuoteCard({quotes, quoteIndex}) {
                 </span>
             }
             {quotes[currentQuote+1] && 
-              <Button className="mb-2" variant={"light"} onClick={handleIncrease}><strong>{"→"}</strong></Button>
+              <Button className="mb-2" variant={"light"} onClick={handleIncrease} onKeyUp={handleIncrease}><strong>{"→"}</strong></Button>
             }
         </Modal.Footer>
       </Modal>
