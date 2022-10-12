@@ -115,7 +115,7 @@ export const GlobalStyles = createGlobalStyle`
         max-width: 7%;
     }
 
-    .navbar-toggler:focus, .btn-light:focus, .btn-check:focus, .btn-primary:focus {
+    .navbar-toggler:focus, .btn-light:focus, .btn-check:focus, .btn-primary:focus, .btn-weak:focus {
         box-shadow: none;
     }
 

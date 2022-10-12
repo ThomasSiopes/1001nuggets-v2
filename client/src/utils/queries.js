@@ -12,13 +12,8 @@ export const QUERY_AUTHOR_ALL = gql`
                 author
                 topics
                 realID
+                collections
             }
-            thumbnail
-            links {
-                type
-                link
-            }
-            description
             realID
         }
     }
@@ -36,13 +31,8 @@ export const QUERY_AUTHOR_NAME = gql`
                 author
                 topics
                 realID
+                collections
             }
-            thumbnail
-            links {
-                type
-                link
-            }
-            description
             realID
         }
     }
@@ -60,13 +50,8 @@ export const QUERY_AUTHOR_ID = gql`
                 author
                 topics
                 realID
+                collections
             }
-            thumbnail
-            links {
-                type
-                link
-            }
-            description
             realID
         }
     }
@@ -84,13 +69,8 @@ export const QUERY_AUTHOR_REALID = gql`
                 author
                 topics
                 realID
+                collections
             }
-            thumbnail
-            links {
-                type
-                link
-            }
-            description
             realID
         }
     }
@@ -109,6 +89,7 @@ export const QUERY_TOPIC_ALL = gql`
                 author
                 topics
                 realID
+                collections
             }
         }
     }
@@ -127,6 +108,7 @@ export const QUERY_TOPIC_NAME = gql`
                 author
                 topics
                 realID
+                collections
             }
         }
     }
@@ -145,6 +127,7 @@ export const QUERY_TOPIC_ID = gql`
                 author
                 topics
                 realID
+                collections
             }
         }
     }
@@ -163,6 +146,7 @@ export const QUERY_TOPIC_REALID = gql`
                 author
                 topics
                 realID
+                collections
             }
         }
     }

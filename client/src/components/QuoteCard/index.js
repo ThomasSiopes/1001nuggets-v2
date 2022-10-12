@@ -3,6 +3,7 @@ import { Button, Card, Modal, Container } from 'react-bootstrap';
 
 import TopicButton from "../TopicButton";
 import AuthorButton from "../AuthorButton";
+import CollectionButton from '../CollectionButton';
 
 function QuoteCard({quotes, quoteIndex}) {
   const [show, setShow] = useState(false);
@@ -58,6 +59,16 @@ function QuoteCard({quotes, quoteIndex}) {
               <Button className="mb-2" variant={"light"} onClick={handleIncrease} onKeyUp={handleIncrease}><strong>{"→"}</strong></Button>
             }
         </Modal.Footer>
+        {quotes[currentQuote].collections[0] &&
+          <Modal.Footer className="justify-content-center"> 
+              <span>Under Collection:</span>
+              <span>
+                  {quotes[currentQuote].collections.map((collection) => (
+                      <CollectionButton type={"button"} name={collection} key={quotes[currentQuote].quoteText + collection}/>
+                  ))}
+              </span>
+          </Modal.Footer>
+        }
       </Modal>
     </>
   )}
