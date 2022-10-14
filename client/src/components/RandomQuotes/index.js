@@ -26,7 +26,7 @@ const RandomAuthors = () => {
     
     return(
         <Card>
-            <Card.Header>Random Quotes</Card.Header>
+            <Card.Header className="text-center">Random Quotes</Card.Header>
             <Card.Body>
                 <Carousel variant="dark" indicators={false} controls={true} nextIcon={<Button variant={"light"}><strong>{`→`}</strong></Button>} prevIcon={<Button variant={"light"}><strong>{`←`}</strong></Button>}>
                     {randomQuotes.map((index) => (
