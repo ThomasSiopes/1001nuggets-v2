@@ -6,5 +6,6 @@ const Scoreboard = require("./Scoreboard");
 const Score = require("./Scores");
 const QOTD = require("./QOTD");
 const Collection = require("./Collection");
+const User = require("./User");
 
-module.exports = {Author, Topic, Quote, GenLink, Scoreboard, Score, QOTD, Collection};
+module.exports = {Author, Topic, Quote, GenLink, Scoreboard, Score, QOTD, Collection, User};

@@ -39,6 +39,18 @@ const typeDefs = gql`
         quotes: [Quote]!
     }
 
+    type User {
+        _id: ID
+        username: String
+        email: String
+        password: String
+    }
+
+    type Auth {
+        token: ID!
+        user: User
+    }
+
     type Link {
         type: String
         link: String
@@ -80,17 +92,25 @@ const typeDefs = gql`
         authorName(name: String): Author
         authorID(authorId: ID): Author
         authorR(authorRealId: String): Author
+        
         topics: [Topic]
         topicName(name: String): Topic
         topicID(topicId: ID): Topic
         topicR(topicRealId: String): Topic
+        
         collections: [Collection]
         collectionName(name: String): Collection
         collectionID(collectionId: ID): Collection
         collectionR(collectionRealId: String): Collection
+        
         quotes: [Quote]
         quote(quoteId: ID): Quote
         quoteR(quoteRealId: String): Quote
+        
+        users: [User]
+        user(username: String!): User
+        me: User
+
         genLinks: [GenLink]
         scoreboard: [Scoreboard]
         scores: [Score]
@@ -98,6 +118,9 @@ const typeDefs = gql`
     }
 
     type Mutation {
+        addUser(username: String!, email: String!, password: String!): Auth
+        login(email: String!, password: String!): Auth
+        
         modScore(value: Int!, score: Int!): Score
         setQOTD(newID: ID!): [QOTD]
     }

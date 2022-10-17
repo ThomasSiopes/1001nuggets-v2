@@ -1,8 +1,10 @@
 const { AuthenticationError } = require("apollo-server-express");
-const { Author, Topic, Quote, GenLink, Scoreboard, Score, QOTD, Collection } = require("../models");
+const { Author, Topic, Quote, GenLink, Scoreboard, Score, QOTD, Collection, User } = require("../models");
 
 const resolvers = {
     Query: {
+        
+        // authors
         authors: async() => {
             return Author.find().populate('quotes');
         },
@@ -15,6 +17,8 @@ const resolvers = {
         authorR: async (parent, { authorRealId }) => {
             return Author.findOne({ realID: authorRealId }).populate('quotes');
         },
+        
+        // topics
         topics: async () => {
             return Topic.find().populate('quotes');
         },
@@ -27,6 +31,8 @@ const resolvers = {
         topicR: async (parent, { topicRealId }) => {
             return Topic.findOne({ realID: topicRealId }).populate('quotes');
         },
+        
+        // collections
         collections: async () => {
             return Collection.find().populate('quotes');
         },
@@ -39,6 +45,8 @@ const resolvers = {
         collectionR: async (parent, { collectionRealId }) => {
             return Collection.findOne({ realID: collectionRealId }).populate('quotes');
         },
+        
+        // quotes
         quotes: async () => {
             return Quote.find();
         },
@@ -48,6 +56,22 @@ const resolvers = {
         quoteR: async (parent, { quoteRealId }) => {
             return Quote.findOne({ realID: quoteRealId })
         },
+
+        // user info
+        users: async () => {
+            return User.find()
+        },
+        user: async (parent, { username }) => {
+          return User.findOne({ username })
+        },
+        me: async (parent, args, context) => {
+          if (context.user) {
+            return User.findOne({ _id: context.user._id })
+          }
+          throw new AuthenticationError('You need to be logged in!');
+        },
+        
+        // misc
         genLinks: async () => {
             return GenLink.find();
         },
@@ -63,6 +87,31 @@ const resolvers = {
     },
 
     Mutation: {
+        // user info
+        addUser: async (parent, { username, email, password }) => {
+            const user = await User.create({ username, email, password });
+            const token = signToken(user);
+            return { token, user };
+        },
+        login: async (parent, { email, password }) => {
+          const user = await User.findOne({ email });
+        
+          if (!user) {
+            throw new AuthenticationError('No user found with this email address');
+          }
+        
+          const correctPw = await user.isCorrectPassword(password);
+        
+          if (!correctPw) {
+            throw new AuthenticationError('Incorrect credentials');
+          }
+        
+          const token = signToken(user);
+        
+          return { token, user };
+        },
+
+        // misc
         modScore: async(parent, { value, score }) => {
             return Score.findOneAndUpdate(
                 { value },
