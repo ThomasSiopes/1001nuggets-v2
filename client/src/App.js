@@ -23,9 +23,11 @@ import AuthorNav from "./pages/AuthorNav";
 import TopicNav from "./pages/TopicNav";
 import Quote from "./pages/Quote";
 import SearchResult from "./pages/SearchResult";
-import Scoreboard from "./pages/Scoreboard";
+//import Scoreboard from "./pages/Scoreboard";
 import CollectionNav from "./pages/CollectionNav";
 import Collection from "./pages/Collection";
+import SignUp from "./pages/SignUp";
+import Login from "./pages/Login";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -93,7 +95,10 @@ function App() {
                 <SearchResult/>
               </Route>
               <Route exact path="/0504">
-                <Scoreboard/>
+                <SignUp/>
+              </Route>
+              <Route exact path="/0505">
+                <Login/>
               </Route>
               <Route component={ErrorPage}/>
             </Switch>
