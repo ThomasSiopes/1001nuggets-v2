@@ -94,10 +94,10 @@ function App() {
               <Route exact path="/search/:query">
                 <SearchResult/>
               </Route>
-              <Route exact path="/0504">
+              <Route exact path="/signup">
                 <SignUp/>
               </Route>
-              <Route exact path="/0505">
+              <Route exact path="/login">
                 <Login/>
               </Route>
               <Route component={ErrorPage}/>
