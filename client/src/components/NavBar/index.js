@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, Redirect } from "react-router-dom";
 import { Navbar, Nav, Container, Form } from "react-bootstrap";
+import Auth from "../../utils/auth";
 
 class NavBar extends React.Component {
     constructor(props) {
@@ -8,14 +9,14 @@ class NavBar extends React.Component {
         this.state = { value: '', go: false };
         
         this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleSearch = this.handleSearch.bind(this);
     }
 
     handleChange(event) { 
         this.setState({value: event.target.value}); 
     }
     
-    handleSubmit(event) {
+    handleSearch(event) {
       event.preventDefault();
       this.setState({go: true});
     }
@@ -38,9 +39,13 @@ class NavBar extends React.Component {
                                 <span className="hoverable me-1"><Link id="nav-topics" className="nav-link" to={`/topics`}><strong>Topics</strong></Link></span>
                                 <span className="hoverable me-1"><Link id="nav-collections" className="nav-link" to={`/collections`}><strong>Collections</strong></Link></span>
                             </Nav>
-                            <Form onSubmit={this.handleSubmit}>
+                            <Form>
+                                <input className="mx-1" placeholder="Email" name="email" type="email"/>
+                                <input className="mx-1" placeholder="*****" name="password" type="password"/>
+                            </Form>
+                            <Form onSubmit={this.handleSearch}>
                                 <input type="text" id="searchTerm" placeholder="Search..." className="me-2 my-2" onChange={this.handleChange}></input>
-                                <input type="submit" value="Submit"></input>
+                                <input type="submit" className="btn btn-theme" value="Submit"></input>
                             </Form>
                         </Navbar.Collapse>
                     </Container>

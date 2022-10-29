@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
+import MetaTags from 'react-meta-tags';
+
+import { Container, Card, Button, Col, Row } from 'react-bootstrap';
+
 import { LOGIN_USER } from '../utils/mutations';
-import { Container } from 'react-bootstrap';
 
 import Auth from '../utils/auth';
 
@@ -43,44 +46,31 @@ const Login = (props) => {
 
   return (
     <Container>
-          <div>
-            <h4>Login</h4>
-            {data ? (
-              <p>Success! You may now head <Link to="/">back to the homepage.</Link></p>
-            ) : (
-              <form onSubmit={handleFormSubmit} className="d-flex flex-column align-center">
-                <input
-                  className="formInput"
-                  placeholder="Your email"
-                  name="email"
-                  type="email"
-                  value={formState.email}
-                  onChange={handleChange}
-                />
-                <input
-                  className="formInput"
-                  placeholder="******"
-                  name="password"
-                  type="password"
-                  value={formState.password}
-                  onChange={handleChange}
-                />
-                <button
-                  className="mainBtn"
-                  style={{ cursor: 'pointer' }}
-                  type="submit"
-                >
-                  Submit
-                </button>
-              </form>
-            )}
+      <MetaTags>
+          <title>1001 Nuggets - Sign Up</title>
+      </MetaTags>
+        <Card>
+          <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} Login</Card.Header>
+            <Card.Body>
+              {data ? (
+                <p>Success! You may now head <Link className="link-theme" to="/">back to the homepage.</Link></p>
+              ) : (
+                <form onSubmit={handleFormSubmit} className="d-flex flex-column align-center">
+                  <Row>
+                    <Col xs={12} md={6}><input className="formInput mb-2" placeholder="Your email" name="email" type="email" value={formState.email} onChange={handleChange}/></Col>
+                    <Col xs={12} md={6}><input className="formInput mb-2" placeholder="*****" name="password" type="password" value={formState.password} onChange={handleChange}/></Col>
+                    <Col xs={12} ><Button variant={"theme"} className="btn-block" type="submit">Submit</Button></Col>
+                  </Row>
+                </form>
+              )}
 
-            {error && (
-              <div className="my-3 p-3 bg-danger text-white">
-                {error.message}
-              </div>
-            )}
-          </div>
+              {error && (
+                <div className="my-3 p-3 bg-danger text-white">
+                  {error.message}
+                </div>
+              )}
+          </Card.Body>
+        </Card>
     </Container>
   );
 };

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Container } from 'react-bootstrap';
+import MetaTags from "react-meta-tags";
+
+import { Container, Card, Button, Col, Row } from 'react-bootstrap';
 
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../utils/mutations';
@@ -41,55 +43,32 @@ const Signup = () => {
 
   return (
     <Container>
-          <div>
-          <h4>Sign Up</h4>
-            {data ? (
-              <p>
-                Success! You may now head{' '}
-                <Link to="/">back to the homepage.</Link>
-              </p>
-            ) : (
-              <form onSubmit={handleFormSubmit} className="d-flex flex-column align-center">
-                <input
-                  className="formInput"
-                  placeholder="Your username"
-                  name="username"
-                  type="text"
-                  value={formState.name}
-                  onChange={handleChange}
-                />
-                <input
-                  className="formInput"
-                  placeholder="Your email"
-                  name="email"
-                  type="email"
-                  value={formState.email}
-                  onChange={handleChange}
-                />
-                <input
-                  className="formInput"
-                  placeholder="******"
-                  name="password"
-                  type="password"
-                  value={formState.password}
-                  onChange={handleChange}
-                />
-                <button
-                  className="mainBtn"
-                  style={{ cursor: 'pointer' }}
-                  type="submit"
-                >
-                  Submit
-                </button>
-              </form>
-            )}
+      <MetaTags>
+          <title>1001 Nuggets - Sign Up</title>
+      </MetaTags>
+          <Card>
+            <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} Create Account</Card.Header>
+              <Card.Body>
+                {data ? (
+                  <p>Success! You may now head <Link className="link-theme" to="/">back to the homepage.</Link></p>
+                ) : (
+                  <form onSubmit={handleFormSubmit}>
+                    <Row>
+                      <Col xs={12} md={6}><input className="formInput mb-2" placeholder="Your username" name="username" type="text" value={formState.name} onChange={handleChange}/></Col>
+                      <Col xs={12} md={6}><input className="formInput mb-2" placeholder="Your email" name="email" type="email" value={formState.email} onChange={handleChange}/></Col>
+                      <Col xs={12} md={6}><input className="formInput mb-2" placeholder="*****" name="password" type="password" value={formState.password} onChange={handleChange}/></Col>
+                      <Col xs={12} md={6}><Button variant={"theme"} className="btn-block" type="submit">Submit</Button></Col>
+                    </Row>
+                  </form>
+                )}
 
-            {error && (
-              <div className="my-3 p-3 bg-danger text-white">
-                {error.message}
-              </div>
-            )}
-          </div>
+                {error && (
+                  <div className="my-3 p-3 bg-danger text-white">
+                    {error.message}
+                  </div>
+                )}
+              </Card.Body>
+          </Card>
         </Container>
   );
 };
