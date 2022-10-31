@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Redirect } from "react-router-dom";
-import { Navbar, Nav, Container, Form } from "react-bootstrap";
+import { Navbar, Nav, Container, Form, Button } from "react-bootstrap";
 import Auth from "../../utils/auth";
 
 class NavBar extends React.Component {
@@ -38,11 +38,15 @@ class NavBar extends React.Component {
                                 <span className="hoverable me-1"><Link id="nav-authors" className="nav-link" to={`/authors`}><strong>Authors</strong></Link></span>
                                 <span className="hoverable me-1"><Link id="nav-topics" className="nav-link" to={`/topics`}><strong>Topics</strong></Link></span>
                                 <span className="hoverable me-1"><Link id="nav-collections" className="nav-link" to={`/collections`}><strong>Collections</strong></Link></span>
+                                {!(Auth.loggedIn()) && 
+                                    <span className="hoverable me-1"><Link id="nav-signup" className="nav-link" to={`/signup`}><strong>Sign Up</strong></Link></span>
+                                }
+                                {Auth.loggedIn() ?
+                                    <span className="hoverable me-1" id="nav-logout"><Button variant={"theme"} onClick={Auth.logout}><strong>Logout</strong></Button></span>
+                                    :
+                                    <span className="hoverable me-1"><Link id="nav-login" className="nav-link" to={`/login`}><strong>Login</strong></Link></span>
+                                }
                             </Nav>
-                            <Form>
-                                <input className="mx-1" placeholder="Email" name="email" type="email"/>
-                                <input className="mx-1" placeholder="*****" name="password" type="password"/>
-                            </Form>
                             <Form onSubmit={this.handleSearch}>
                                 <input type="text" id="searchTerm" placeholder="Search..." className="me-2 my-2" onChange={this.handleChange}></input>
                                 <input type="submit" className="btn btn-theme" value="Submit"></input>
