@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Card, Modal, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 import TopicButton from "../TopicButton";
 import AuthorButton from "../AuthorButton";
@@ -40,7 +41,9 @@ function QuoteCard({quotes, quoteIndex}) {
         <Modal.Header closeButton/>
         <Modal.Body className="quote-card">
             <Container className="font-poppins">
-                <h2>"{quotes[currentQuote].quoteText}"</h2>
+                <Link to={`/quote/${quotes[currentQuote].realID}`}>
+                  <h2 className="text-black">"{quotes[currentQuote].quoteText}"</h2>
+                </Link>
             </Container>
             <Container className="mt-3"><strong><AuthorButton type={"link"} name={quotes[currentQuote].author}/></strong></Container>
         </Modal.Body>

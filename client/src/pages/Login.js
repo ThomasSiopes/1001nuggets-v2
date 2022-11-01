@@ -50,7 +50,7 @@ const Login = (props) => {
           <title>1001 Nuggets - Sign Up</title>
       </MetaTags>
         <Card>
-          <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} Login</Card.Header>
+          <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} Login {`(`} <Link className="link-theme" to={`/signup`}>Create Account?</Link> {`)`}</Card.Header>
             <Card.Body>
               {data ? (
                 <p>Success! You may now head <Link className="link-theme" to="/">back to the homepage.</Link></p>
@@ -58,7 +58,7 @@ const Login = (props) => {
                 <form onSubmit={handleFormSubmit} className="d-flex flex-column align-center">
                   <Row>
                     <Col xs={12} md={6}><input className="formInput mb-2" placeholder="Your email" name="email" type="email" value={formState.email} onChange={handleChange}/></Col>
-                    <Col xs={12} md={6}><input className="formInput mb-2" placeholder="*****" name="password" type="password" value={formState.password} onChange={handleChange}/></Col>
+                    <Col xs={12} md={6}><input className="formInput mb-2" placeholder="Your password" name="password" type="password" value={formState.password} onChange={handleChange}/></Col>
                     <Col xs={12} ><Button variant={"theme"} className="btn-block" type="submit">Submit</Button></Col>
                   </Row>
                 </form>
