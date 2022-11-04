@@ -26,6 +26,7 @@ import SearchResult from "./pages/SearchResult";
 //import Scoreboard from "./pages/Scoreboard";
 import CollectionNav from "./pages/CollectionNav";
 import Collection from "./pages/Collection";
+import Profile from "./pages/Profile";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
 
@@ -93,6 +94,9 @@ function App() {
               </Route>
               <Route exact path="/search/:query">
                 <SearchResult/>
+              </Route>
+              <Route exact path="/profile">
+                <Profile/>
               </Route>
               <Route exact path="/signup">
                 <SignUp/>

@@ -57,7 +57,7 @@ const Signup = () => {
                       <Col xs={12} md={6}><input className="formInput mb-2" placeholder="Your username" name="username" type="text" value={formState.name} onChange={handleChange}/></Col>
                       <Col xs={12} md={6}><input className="formInput mb-2" placeholder="Your email" name="email" type="email" value={formState.email} onChange={handleChange}/></Col>
                       <Col xs={12} md={6}><input className="formInput mb-2" placeholder="Your password" name="password" type="password" value={formState.password} onChange={handleChange}/></Col>
-                      <Col xs={12} md={6}><Button variant={"theme"} className="btn-block" type="submit">Submit</Button></Col>
+                      <Col xs={12} md={6}><Button className="btn-block" variant={"theme"} type="submit">Submit</Button></Col>
                     </Row>
                   </form>
                 )}

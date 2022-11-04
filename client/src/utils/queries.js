@@ -266,6 +266,17 @@ export const QUERY_COLLECTION_REALID = gql`
     }
 `;
 
+export const QUERY_ACCOUNT_ME = gql`
+    query findMe {
+        me {
+            _id
+            username
+            email
+            password
+        }
+    }
+`
+
 export const QUERY_LINKS = gql`
     query getAllLinks {
         genLinks {
