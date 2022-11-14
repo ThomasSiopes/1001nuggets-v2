@@ -4,7 +4,8 @@ import { useQuery } from "@apollo/client";
 import Auth from "../utils/auth"
 import MetaTags from "react-meta-tags";
 
-import {Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import BookmarkedQuotes from "../components/ProfileWidgets";
 
 import { QUERY_ACCOUNT_ME } from "../utils/queries";
 
@@ -26,8 +27,7 @@ function Profile () {
                 <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} My Profile</Card.Header>
                 <Card.Body>
                     <Row>
-                        <Col>Comments</Col>
-                        <Col>Favorited Quotes</Col>
+                        <Col><BookmarkedQuotes input={myAccount.bookmarkedQuotes}/></Col>
                     </Row>
                 </Card.Body>
             </Card>

@@ -60,14 +60,14 @@ const resolvers = {
 
         // user info
         users: async () => {
-            return User.find()
+            return User.find().populate('bookmarked!uotes');
         },
         user: async (parent, { username }) => {
-          return User.findOne({ username })
+          return User.findOne({ username }).populate('bookmarkedQuotes')
         },
         me: async (parent, args, context) => {
           if (context.user) {
-            return User.findOne({ _id: context.user._id })
+            return User.findOne({ _id: context.user._id }).populate('bookmarkedQuotes');
           }
           throw new AuthenticationError('You need to be logged in!');
         },

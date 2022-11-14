@@ -10,6 +10,7 @@ import TopicButton from "../components/TopicButton";
 import AuthorButton from "../components/AuthorButton";
 import MoreAuthor from "../components/MoreAuthor";
 // import MoreTopic from "../components/MoreTopic";
+import Bookmarker from "../components/Bookmarker";
 
 import { QUERY_QUOTE_REALID } from "../utils/queries";
 
@@ -38,6 +39,7 @@ function Quote () {
             <Card>
                 <Card.Header><Link to={`/`} className="link-theme">Home</Link> {`>`} <Link to={`/authors`} className="link-theme">Authors</Link> {`>`} <AuthorButton type={"link"} name={quote.author}/> {`>`} Quotes</Card.Header>
                 <Card.Body>
+                    <Bookmarker/>
                     <Row>
                         <Col xs={12}>
                             <Card className="mb-3">
