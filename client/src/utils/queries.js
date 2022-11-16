@@ -273,6 +273,14 @@ export const QUERY_ACCOUNT_ME = gql`
             username
             email
             password
+            bookmarkedQuotes {
+                _id
+                quoteText
+                author
+                topics
+                collections
+                realID
+            }
         }
     }
 `

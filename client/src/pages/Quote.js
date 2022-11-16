@@ -29,7 +29,6 @@ function Quote () {
     if(!data) return (<Redirect to={`/404error`}/>);
 
     const quote = data.quoteR;
-    console.log(quote);
 
     return (
         <Container>
@@ -39,7 +38,7 @@ function Quote () {
             <Card>
                 <Card.Header><Link to={`/`} className="link-theme">Home</Link> {`>`} <Link to={`/authors`} className="link-theme">Authors</Link> {`>`} <AuthorButton type={"link"} name={quote.author}/> {`>`} Quotes</Card.Header>
                 <Card.Body>
-                    <Bookmarker/>
+                    <Bookmarker input={quote}/>
                     <Row>
                         <Col xs={12}>
                             <Card className="mb-3">
