@@ -15,8 +15,6 @@ const Bookmarker = ({input}) => {
 
     const me = data.me;
 
-    console.log(me);
-
     if(Auth.loggedIn()) {
         if(me.bookmarkedQuotes.includes(input)) return <Remover quoteList={me.bookmarkedQuotes}/>
         else return <Adder quoteList={me.bookmarkedQuotes}/>
@@ -26,10 +24,20 @@ const Bookmarker = ({input}) => {
 }
 
 const Adder = ({quoteList}) => {
+    let copylist = {...quoteList}
+
+    console.log("Copylist: ");
+    console.log(copylist);
+    
     return (<Button>O</Button>)
 }
 
 const Remover = ({quoteList}) => {
+    let copylist = {...quoteList}
+
+    console.log("Copylist: ");
+    console.log(copylist);
+    
     return (<Button>X</Button>)
 }
 
