@@ -83,6 +83,7 @@ export const QUERY_TOPIC_ALL = gql`
             name
             sortedName
             realID
+            similarTopics
             quotes {
                 _id
                 quoteText
@@ -102,6 +103,7 @@ export const QUERY_TOPIC_NAME = gql`
             name
             sortedName
             realID
+            similarTopics
             quotes {
                 _id
                 quoteText
@@ -121,6 +123,7 @@ export const QUERY_TOPIC_ID = gql`
             name
             sortedName
             realID
+            similarTopics
             quotes {
                 _id
                 quoteText

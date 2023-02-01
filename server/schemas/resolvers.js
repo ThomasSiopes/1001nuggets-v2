@@ -60,7 +60,7 @@ const resolvers = {
 
         // user info
         users: async () => {
-            return User.find().populate('bookmarked!uotes');
+            return User.find().populate('bookmarkedQuotes');
         },
         user: async (parent, { username }) => {
           return User.findOne({ username }).populate('bookmarkedQuotes')

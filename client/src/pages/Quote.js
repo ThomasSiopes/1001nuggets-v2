@@ -9,7 +9,6 @@ import { FaTwitter, FaFacebookF } from "react-icons/fa";
 import TopicButton from "../components/TopicButton";
 import AuthorButton from "../components/AuthorButton";
 import MoreAuthor from "../components/MoreAuthor";
-// import MoreTopic from "../components/MoreTopic";
 import Bookmarker from "../components/Bookmarker";
 
 import { QUERY_QUOTE_REALID } from "../utils/queries";
@@ -64,22 +63,18 @@ function Quote () {
                         <Col xs={12}>
                             <Row>
                                 <MoreAuthor parent={quote} name={quote.author}/>
-                                {/* { quote.topics[0] &&
-                                    <Col className="mb-3">
-                                        {quote.topics.length === 1 &&
-                                            <MoreTopic parent={quote} name={quote.topics[0]}/>
-                                        }
-                                        {quote.topics.length > 1 &&
-                                            <Carousel indicators={false} nextIcon={<Button variant={"light"}><strong>{`>`}</strong></Button>} prevIcon={<Button variant={"light"}><strong>{`<`}</strong></Button>}>
-                                                {quote.topics.map((index) => (
-                                                    <Carousel.Item key={index}>
-                                                        <MoreTopic parent={quote} name={index}/>
-                                                    </Carousel.Item>
-                                                ))}
-                                            </Carousel>
-                                        }
-                                    </Col>
-                                } */}
+                                {quote.topic.similartopics &&
+                                <Col xs={12} md={6} className="mb-3">
+                                    <Card>
+                                        <Card.Header>Similar Topics</Card.Header>
+                                        <Card.Body>
+                                            {quote.topic.similartopics.map((index) => (
+                                                <p><Link to={`/topics/${index.realID}`}>{index.name}</Link></p>
+                                            ))}
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+                                }
                             </Row>
                         </Col>
                     </Row>

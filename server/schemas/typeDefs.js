@@ -19,6 +19,7 @@ const typeDefs = gql`
         name: String
         sortedName: String
         realID: String
+        similarTopics: [String]!
         quotes: [Quote]!
     }
 

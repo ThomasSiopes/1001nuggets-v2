@@ -13,6 +13,11 @@ const topicSchema = new Schema({
         type: String,
         required: true
     },
+    similarTopics: [
+        {
+            type: String
+        },
+    ],
     quotes: [
         {
             type: Schema.Types.ObjectId,

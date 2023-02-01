@@ -8,7 +8,7 @@ import TopicButton from "../TopicButton";
 
 import { QUERY_QUOTE_ALL } from "../../utils/queries";
 
-const RandomAuthors = () => {
+const RandomQuotes = () => {
     const { loading, data } = useQuery(QUERY_QUOTE_ALL);
 
     if(loading) return <p>Loading...</p>
@@ -54,4 +54,4 @@ const RandomAuthors = () => {
     )
 }
 
-export default RandomAuthors;
+export default RandomQuotes;

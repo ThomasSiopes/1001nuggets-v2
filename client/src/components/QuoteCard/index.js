@@ -41,9 +41,7 @@ function QuoteCard({quotes, quoteIndex}) {
         <Modal.Header closeButton/>
         <Modal.Body className="quote-card">
             <Container className="font-poppins">
-                <Link to={`/quote/${quotes[currentQuote].realID}`}>
-                  <h2 className="text-black">"{quotes[currentQuote].quoteText}"</h2>
-                </Link>
+              <h2 className="text-black">"{quotes[currentQuote].quoteText}"</h2>
             </Container>
             <Container className="mt-3"><strong><AuthorButton type={"link"} name={quotes[currentQuote].author}/></strong></Container>
         </Modal.Body>
@@ -72,6 +70,9 @@ function QuoteCard({quotes, quoteIndex}) {
               </span>
           </Modal.Footer>
         }
+        <Modal.Footer className="justify-content-center">
+          <Link className="mb-1 btn btn-theme" to={`/quote/${quotes[currentQuote].realID}`}>See More</Link>
+        </Modal.Footer>
       </Modal>
     </>
   )}
