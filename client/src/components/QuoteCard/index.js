@@ -50,7 +50,7 @@ function QuoteCard({quotes, quoteIndex}) {
               <Button className="mb-2" variant={"light"} onClick={handleDecrease} onKeyDown={handleDecrease}><strong>{"←"}</strong></Button>
             }
             {quotes[currentQuote].topics.length > 0 && 
-                <span>
+                <span>Topics: 
                     {quotes[currentQuote].topics.map((topic) => (
                         <TopicButton type={"button"} name={topic} key={quotes[currentQuote].quoteText + topic}/>
                     ))}

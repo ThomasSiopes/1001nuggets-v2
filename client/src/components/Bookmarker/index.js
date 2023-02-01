@@ -17,8 +17,7 @@ const Bookmarker = ({input}) => {
     const me = data.me;
 
     if(Auth.loggedIn()) {
-        if(me.bookmarkedQuotes.includes(input)) return <Remover quoteList={me.bookmarkedQuotes}/>
-        else return <Adder quoteList={me.bookmarkedQuotes}/>
+        return(me.bookmarkedQuotes.includes(input) ? <Remover quoteList={me.bookmarkedQuotes}/> : <Adder quoteList={me.bookmarkedQuotes}/>)
     } else return (
         <span>You should not be seeing this if you're logged in.</span>
     )
