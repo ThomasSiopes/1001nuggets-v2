@@ -10,6 +10,7 @@ import TopicButton from "../components/TopicButton";
 import AuthorButton from "../components/AuthorButton";
 import MoreAuthor from "../components/MoreAuthor";
 import Bookmarker from "../components/Bookmarker";
+import SimilarTopics from "../components/SimilarTopics";
 
 import { QUERY_QUOTE_REALID } from "../utils/queries";
 
@@ -63,14 +64,12 @@ function Quote () {
                         <Col xs={12}>
                             <Row>
                                 <MoreAuthor parent={quote} name={quote.author}/>
-                                {quote.topic.similartopics &&
+                                {quote.topics[0] &&
                                 <Col xs={12} md={6} className="mb-3">
-                                    <Card>
+                                    <Card className="text-center">
                                         <Card.Header>Similar Topics</Card.Header>
                                         <Card.Body>
-                                            {quote.topic.similartopics.map((index) => (
-                                                <p><Link to={`/topics/${index.realID}`}>{index.name}</Link></p>
-                                            ))}
+                                            <SimilarTopics thisTopic={quote.topics[0]}/>
                                         </Card.Body>
                                     </Card>
                                 </Col>

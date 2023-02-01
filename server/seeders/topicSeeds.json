@@ -2,1516 +2,1819 @@
     {
       "name": "Academia",
       "sortedName": "Academia",
-      "realID": "Academia"
+      "realID": "Academia",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Accessories",
       "sortedName": "Accessories",
-      "realID": "Accessories"
+      "realID": "Accessories",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Accusation",
       "sortedName": "Accusation",
-      "realID": "Accusation"
+      "realID": "Accusation",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Adam & Eve",
       "sortedName": "AdamEve",
-      "realID": "Adam---Eve"
+      "realID": "Adam---Eve",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Adventure",
       "sortedName": "Adventure",
-      "realID": "Adventure"
+      "realID": "Adventure",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Advertising",
       "sortedName": "Advertising",
-      "realID": "Advertising"
+      "realID": "Advertising",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Advice",
       "sortedName": "Advice",
-      "realID": "Advice"
+      "realID": "Advice",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Age, Women",
       "sortedName": "AgeWomen",
-      "realID": "Age--Women"
+      "realID": "Age--Women",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Aging",
       "sortedName": "Aging",
-      "realID": "Aging"
+      "realID": "Aging",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Appeasing",
       "sortedName": "Appeasing",
-      "realID": "Appeasing"
+      "realID": "Appeasing",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Apprehension",
       "sortedName": "Apprehension",
-      "realID": "Apprehension"
+      "realID": "Apprehension",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Attitude",
       "sortedName": "Attitude",
-      "realID": "Attitude"
+      "realID": "Attitude",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Autocrats",
       "sortedName": "Autocrats",
-      "realID": "Autocrats"
+      "realID": "Autocrats",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Babies",
       "sortedName": "Babies",
-      "realID": "Babies"
+      "realID": "Babies",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Banks",
       "sortedName": "Banks",
-      "realID": "Banks"
+      "realID": "Banks",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Battle of the sexes",
       "sortedName": "Battleofthesexes",
-      "realID": "Battle-of-the-sexes"
+      "realID": "Battle-of-the-sexes",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Benevolence",
       "sortedName": "Benevolence",
-      "realID": "Benevolence"
+      "realID": "Benevolence",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "The Bible",
       "sortedName": "TheBible",
-      "realID": "The-Bible"
+      "realID": "The-Bible",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Bible-thumpers",
       "sortedName": "Biblethumpers",
-      "realID": "Bible-thumpers"
+      "realID": "Bible-thumpers",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Birthdays",
       "sortedName": "Birthdays",
-      "realID": "Birthdays"
+      "realID": "Birthdays",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Bigotry",
       "sortedName": "Bigotry",
-      "realID": "Bigotry"
+      "realID": "Bigotry",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Books",
       "sortedName": "Books",
-      "realID": "Books"
+      "realID": "Books",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Brainwashing, Religious",
       "sortedName": "BrainwashingReligious",
-      "realID": "Brainwashing--Religious"
+      "realID": "Brainwashing--Religious",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Brown-nosers",
       "sortedName": "Brownnosers",
-      "realID": "Brown-nosers"
+      "realID": "Brown-nosers",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Budgeting",
       "sortedName": "Budgeting",
-      "realID": "Budgeting"
+      "realID": "Budgeting",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Bullies",
       "sortedName": "Bullies",
-      "realID": "Bullies"
+      "realID": "Bullies",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Bureaucracy",
       "sortedName": "Bureaucracy",
-      "realID": "Bureaucracy"
+      "realID": "Bureaucracy",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Bureaucrats",
       "sortedName": "Bureaucrats",
-      "realID": "Bureaucrats"
+      "realID": "Bureaucrats",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Business",
       "sortedName": "Business",
-      "realID": "Business"
+      "realID": "Business",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Business Management",
       "sortedName": "BusinessManagement",
-      "realID": "Business-Management"
+      "realID": "Business-Management",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Business 101",
       "sortedName": "Business101",
-      "realID": "Business-101"
+      "realID": "Business-101",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Capitalism",
       "sortedName": "Capitalism",
-      "realID": "Capitalism"
+      "realID": "Capitalism",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Cautionary tales",
       "sortedName": "Cautionarytales",
-      "realID": "Cautionary-tales"
+      "realID": "Cautionary-tales",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Celebrities",
       "sortedName": "Celebrities",
-      "realID": "Celebrities"
+      "realID": "Celebrities",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Censorship",
       "sortedName": "Censorship",
-      "realID": "Censorship"
+      "realID": "Censorship",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Child psychology",
       "sortedName": "Childpsychology",
-      "realID": "Child-psychology"
+      "realID": "Child-psychology",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Children",
       "sortedName": "Children",
-      "realID": "Children"
+      "realID": "Children",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Christianity",
       "sortedName": "Christianity",
-      "realID": "Christianity"
+      "realID": "Christianity",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Church",
       "sortedName": "Church",
-      "realID": "Church"
+      "realID": "Church",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Civilization",
       "sortedName": "Civilization",
-      "realID": "Civilization"
+      "realID": "Civilization",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Closed minds",
       "sortedName": "Closedminds",
-      "realID": "Closed-minds"
+      "realID": "Closed-minds",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Committees",
       "sortedName": "Committees",
-      "realID": "Committees"
+      "realID": "Committees",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Communication",
       "sortedName": "Communication",
-      "realID": "Communication"
+      "realID": "Communication",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Complexity",
       "sortedName": "Complexity",
-      "realID": "Complexity"
+      "realID": "Complexity",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Composure",
       "sortedName": "Composure",
-      "realID": "Composure"
+      "realID": "Composure",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Conformity",
       "sortedName": "Conformity",
-      "realID": "Conformity"
+      "realID": "Conformity",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Consultants",
       "sortedName": "Consultants",
-      "realID": "Consultants"
+      "realID": "Consultants",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Contentment",
       "sortedName": "Contentment",
-      "realID": "Contentment"
+      "realID": "Contentment",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Correspondence",
       "sortedName": "Correspondence",
-      "realID": "Correspondence"
+      "realID": "Correspondence",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Couch potatoes",
       "sortedName": "Couchpotatoes",
-      "realID": "Couch-potatoes"
+      "realID": "Couch-potatoes",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Courage",
       "sortedName": "Courage",
-      "realID": "Courage"
+      "realID": "Courage",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Covetousness",
       "sortedName": "Covetousness",
-      "realID": "Covetousness"
+      "realID": "Covetousness",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Creativity",
       "sortedName": "Creativity",
-      "realID": "Creativity"
+      "realID": "Creativity",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Criticism",
       "sortedName": "Criticism",
-      "realID": "Criticism"
+      "realID": "Criticism",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Critics",
       "sortedName": "Critics",
-      "realID": "Critics"
+      "realID": "Critics",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Customer satisfaction",
       "sortedName": "Customersatisfaction",
-      "realID": "Customer-satisfaction"
+      "realID": "Customer-satisfaction",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Cynics",
       "sortedName": "Cynics",
-      "realID": "Cynics"
+      "realID": "Cynics",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Cynicism",
       "sortedName": "Cynicism",
-      "realID": "Cynicism"
+      "realID": "Cynicism",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Darkness",
       "sortedName": "Darkness",
-      "realID": "Darkness"
+      "realID": "Darkness",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Death",
       "sortedName": "Death",
-      "realID": "Death"
+      "realID": "Death",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Debt",
       "sortedName": "Debt",
-      "realID": "Debt"
+      "realID": "Debt",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Defeatism",
       "sortedName": "Defeatism",
-      "realID": "Defeatism"
+      "realID": "Defeatism",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Deflecting",
       "sortedName": "Deflecting",
-      "realID": "Deflecting"
+      "realID": "Deflecting",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Despair",
       "sortedName": "Despair",
-      "realID": "Despair"
+      "realID": "Despair",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Desperation",
       "sortedName": "Desperation",
-      "realID": "Desperation"
+      "realID": "Desperation",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Destiny",
       "sortedName": "Destiny",
-      "realID": "Destiny"
+      "realID": "Destiny",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Determination",
       "sortedName": "Determination",
-      "realID": "Determination"
+      "realID": "Determination",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Discontent",
       "sortedName": "Discontent",
-      "realID": "Discontent"
+      "realID": "Discontent",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Dogs",
       "sortedName": "Dogs",
-      "realID": "Dogs"
+      "realID": "Dogs",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Drinking",
       "sortedName": "Drinking",
-      "realID": "Drinking"
+      "realID": "Drinking",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Duty",
       "sortedName": "Duty",
-      "realID": "Duty"
+      "realID": "Duty",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "The Elderly",
       "sortedName": "TheElderly",
-      "realID": "The-Elderly"
+      "realID": "The-Elderly",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Economics",
       "sortedName": "Economics",
-      "realID": "Economics"
+      "realID": "Economics",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Economists",
       "sortedName": "Economists",
-      "realID": "Economists"
+      "realID": "Economists",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Elites",
       "sortedName": "Elites",
-      "realID": "Elites"
+      "realID": "Elites",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Employee relations",
       "sortedName": "Employeerelations",
-      "realID": "Employee-relations"
+      "realID": "Employee-relations",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Encouragement",
       "sortedName": "Encouragement",
-      "realID": "Encouragement"
+      "realID": "Encouragement",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Enthusiasm",
       "sortedName": "Enthusiasm",
-      "realID": "Enthusiasm"
+      "realID": "Enthusiasm",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "The Environment",
       "sortedName": "TheEnvironment",
-      "realID": "The-Environment"
+      "realID": "The-Environment",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Equity",
       "sortedName": "Equity",
-      "realID": "Equity"
+      "realID": "Equity",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Evil",
       "sortedName": "Evil",
-      "realID": "Evil"
+      "realID": "Evil",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Excellence",
       "sortedName": "Excellence",
-      "realID": "Excellence"
+      "realID": "Excellence",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Excuses",
       "sortedName": "Excuses",
-      "realID": "Excuses"
+      "realID": "Excuses",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Executives",
       "sortedName": "Executives",
-      "realID": "Executives"
+      "realID": "Executives",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Exercise",
       "sortedName": "Exercise",
-      "realID": "Exercise"
+      "realID": "Exercise",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Experience",
       "sortedName": "Experience",
-      "realID": "Experience"
+      "realID": "Experience",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Extremism",
       "sortedName": "Extremism",
-      "realID": "Extremism"
+      "realID": "Extremism",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Facts",
       "sortedName": "Facts",
-      "realID": "Facts"
+      "realID": "Facts",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Fallacy",
       "sortedName": "Fallacy",
-      "realID": "Fallacy"
+      "realID": "Fallacy",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Fame",
       "sortedName": "Fame",
-      "realID": "Fame"
+      "realID": "Fame",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Family first",
       "sortedName": "Familyfirst",
-      "realID": "Family-first"
+      "realID": "Family-first",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Fault-finding",
       "sortedName": "Faultfinding",
-      "realID": "Fault-finding"
+      "realID": "Fault-finding",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Fishing",
       "sortedName": "Fishing",
-      "realID": "Fishing"
+      "realID": "Fishing",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Fixation",
       "sortedName": "Fixation",
-      "realID": "Fixation"
+      "realID": "Fixation",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Focus",
       "sortedName": "Focus",
-      "realID": "Focus"
+      "realID": "Focus",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Food",
       "sortedName": "Food",
-      "realID": "Food"
+      "realID": "Food",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Forgiveness",
       "sortedName": "Forgiveness",
-      "realID": "Forgiveness"
+      "realID": "Forgiveness",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Foresight",
       "sortedName": "Foresight",
-      "realID": "Foresight"
+      "realID": "Foresight",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Freebies",
       "sortedName": "Freebies",
-      "realID": "Freebies"
+      "realID": "Freebies",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Friendship",
       "sortedName": "Friendship",
-      "realID": "Friendship"
+      "realID": "Friendship",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "The Future",
       "sortedName": "TheFuture",
-      "realID": "The-Future"
+      "realID": "The-Future",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Gambling",
       "sortedName": "Gambling",
-      "realID": "Gambling"
+      "realID": "Gambling",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Generations",
       "sortedName": "Generations",
-      "realID": "Generations"
+      "realID": "Generations",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Genius",
       "sortedName": "Genius",
-      "realID": "Genius"
+      "realID": "Genius",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Gentlemen",
       "sortedName": "Gentlemen",
-      "realID": "Gentlemen"
+      "realID": "Gentlemen",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Get moving",
       "sortedName": "Getmoving",
-      "realID": "Get-moving"
+      "realID": "Get-moving",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "God",
       "sortedName": "God",
-      "realID": "God"
+      "realID": "God",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Golf",
       "sortedName": "Golf",
-      "realID": "Golf"
+      "realID": "Golf",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Grandparents",
       "sortedName": "Grandparents",
-      "realID": "Grandparents"
+      "realID": "Grandparents",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Greed",
       "sortedName": "Greed",
-      "realID": "Greed"
+      "realID": "Greed",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Groups",
       "sortedName": "Groups",
-      "realID": "Groups"
+      "realID": "Groups",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Habit",
       "sortedName": "Habit",
-      "realID": "Habit"
+      "realID": "Habit",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Happiness",
       "sortedName": "Happiness",
-      "realID": "Happiness"
+      "realID": "Happiness",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Happiness, Pursuit of",
       "sortedName": "HappinessPursuitof",
-      "realID": "Happiness--Pursuit-of"
+      "realID": "Happiness--Pursuit-of",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Harshness",
       "sortedName": "Harshness",
-      "realID": "Harshness"
+      "realID": "Harshness",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Haste",
       "sortedName": "Haste",
-      "realID": "Haste"
+      "realID": "Haste",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "History",
       "sortedName": "History",
-      "realID": "History"
+      "realID": "History",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Hmmm?",
       "sortedName": "Hmmm",
-      "realID": "Hmmm-"
+      "realID": "Hmmm-",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Holy war",
       "sortedName": "Holywar",
-      "realID": "Holy-war"
+      "realID": "Holy-war",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Home",
       "sortedName": "Home",
-      "realID": "Home"
+      "realID": "Home",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Human nature ",
       "sortedName": "Humannature",
-      "realID": "Human-nature-"
+      "realID": "Human-nature-",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Humans",
       "sortedName": "Humans",
-      "realID": "Humans"
+      "realID": "Humans",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Husbands",
       "sortedName": "Husbands",
-      "realID": "Husbands"
+      "realID": "Husbands",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Hypocrisy",
       "sortedName": "Hypocrisy",
-      "realID": "Hypocrisy"
+      "realID": "Hypocrisy",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Ideas",
       "sortedName": "Ideas",
-      "realID": "Ideas"
+      "realID": "Ideas",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Ignoring the noise",
       "sortedName": "Ignoringthenoise",
-      "realID": "Ignoring-the-noise"
+      "realID": "Ignoring-the-noise",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Imbeciles",
       "sortedName": "Imbeciles",
-      "realID": "Imbeciles"
+      "realID": "Imbeciles",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Inadvertence",
       "sortedName": "Inadvertence",
-      "realID": "Inadvertence"
+      "realID": "Inadvertence",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Income",
       "sortedName": "Income",
-      "realID": "Income"
+      "realID": "Income",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Individuality",
       "sortedName": "Individuality",
-      "realID": "Individuality"
+      "realID": "Individuality",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Industry",
       "sortedName": "Industry",
-      "realID": "Industry"
+      "realID": "Industry",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Inflation",
       "sortedName": "Inflation",
-      "realID": "Inflation"
+      "realID": "Inflation",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Intellectuals",
       "sortedName": "Intellectuals",
-      "realID": "Intellectuals"
+      "realID": "Intellectuals",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Interpersonal relations",
       "sortedName": "Interpersonalrelations",
-      "realID": "Interpersonal-relations"
+      "realID": "Interpersonal-relations",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Investing",
       "sortedName": "Investing",
-      "realID": "Investing"
+      "realID": "Investing",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Jargon",
       "sortedName": "Jargon",
-      "realID": "Jargon"
+      "realID": "Jargon",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Journey vs. Destination",
       "sortedName": "JourneyvsDestination",
-      "realID": "Journey-vs--Destination"
+      "realID": "Journey-vs--Destination",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Judicious reticence",
       "sortedName": "Judiciousreticence",
-      "realID": "Judicious-reticence"
+      "realID": "Judicious-reticence",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Justice",
       "sortedName": "Justice",
-      "realID": "Justice"
+      "realID": "Justice",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Kisses",
       "sortedName": "Kisses",
-      "realID": "Kisses"
+      "realID": "Kisses",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Know-it-alls",
       "sortedName": "Knowitalls",
-      "realID": "Know-it-alls"
+      "realID": "Know-it-alls",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Knowledge",
       "sortedName": "Knowledge",
-      "realID": "Knowledge"
+      "realID": "Knowledge",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Labor",
       "sortedName": "Labor",
-      "realID": "Labor"
+      "realID": "Labor",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Laboring",
       "sortedName": "Laboring",
-      "realID": "Laboring"
+      "realID": "Laboring",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Laughter",
       "sortedName": "Laughter",
-      "realID": "Laughter"
+      "realID": "Laughter",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Leadership",
       "sortedName": "Leadership",
-      "realID": "Leadership"
+      "realID": "Leadership",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Leadership 101",
       "sortedName": "Leadership101",
-      "realID": "Leadership-101"
+      "realID": "Leadership-101",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Legacy",
       "sortedName": "Legacy",
-      "realID": "Legacy"
+      "realID": "Legacy",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Life",
       "sortedName": "Life",
-      "realID": "Life"
+      "realID": "Life",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Listening",
       "sortedName": "Listening",
-      "realID": "Listening"
+      "realID": "Listening",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Lying",
       "sortedName": "Lying",
-      "realID": "Lying"
+      "realID": "Lying",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Management",
       "sortedName": "Management",
-      "realID": "Management"
+      "realID": "Management",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Management 101",
       "sortedName": "Management101",
-      "realID": "Management-101"
+      "realID": "Management-101",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Manners",
       "sortedName": "Manners",
-      "realID": "Manners"
+      "realID": "Manners",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Marriage",
       "sortedName": "Marriage",
-      "realID": "Marriage"
+      "realID": "Marriage",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Maturity",
       "sortedName": "Maturity",
-      "realID": "Maturity"
+      "realID": "Maturity",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Megalomaniacs",
       "sortedName": "Megalomaniacs",
-      "realID": "Megalomaniacs"
+      "realID": "Megalomaniacs",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Memory",
       "sortedName": "Memory",
-      "realID": "Memory"
+      "realID": "Memory",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Men & Women",
       "sortedName": "MenWomen",
-      "realID": "Men---Women"
+      "realID": "Men---Women",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Men vs. Women",
       "sortedName": "MenvsWomen",
-      "realID": "Men-vs--Women"
+      "realID": "Men-vs--Women",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Middle class",
       "sortedName": "Middleclass",
-      "realID": "Middle-class"
+      "realID": "Middle-class",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "The Mind",
       "sortedName": "TheMind",
-      "realID": "The-Mind"
+      "realID": "The-Mind",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Miracles",
       "sortedName": "Miracles",
-      "realID": "Miracles"
+      "realID": "Miracles",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Misery",
       "sortedName": "Misery",
-      "realID": "Misery"
+      "realID": "Misery",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Moderation",
       "sortedName": "Moderation",
-      "realID": "Moderation"
+      "realID": "Moderation",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Modesty",
       "sortedName": "Modesty",
-      "realID": "Modesty"
+      "realID": "Modesty",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Money",
       "sortedName": "Money",
-      "realID": "Money"
+      "realID": "Money",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Monologues",
       "sortedName": "Monologues",
-      "realID": "Monologues"
+      "realID": "Monologues",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Morality",
       "sortedName": "Morality",
-      "realID": "Morality"
+      "realID": "Morality",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Mother-in-law",
       "sortedName": "Motherinlaw",
-      "realID": "Mother-in-law"
+      "realID": "Mother-in-law",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Motivation",
       "sortedName": "Motivation",
-      "realID": "Motivation"
+      "realID": "Motivation",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Muditā",
       "sortedName": "Mudit",
-      "realID": "Mudit-"
+      "realID": "Mudit-",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Nature",
       "sortedName": "Nature",
-      "realID": "Nature"
+      "realID": "Nature",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Nonconformity",
       "sortedName": "Nonconformity",
-      "realID": "Nonconformity"
+      "realID": "Nonconformity",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Normalcy",
       "sortedName": "Normalcy",
-      "realID": "Normalcy"
+      "realID": "Normalcy",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Obstinacy",
       "sortedName": "Obstinacy",
-      "realID": "Obstinacy"
+      "realID": "Obstinacy",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Old age",
       "sortedName": "Oldage",
-      "realID": "Old-age"
+      "realID": "Old-age",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Opera",
       "sortedName": "Opera",
-      "realID": "Opera"
+      "realID": "Opera",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Opinion",
       "sortedName": "Opinion",
-      "realID": "Opinion"
+      "realID": "Opinion",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Optimism vs. Pessimism",
       "sortedName": "OptimismvsPessimism",
-      "realID": "Optimism-vs--Pessimism"
+      "realID": "Optimism-vs--Pessimism",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Originality",
       "sortedName": "Originality",
-      "realID": "Originality"
+      "realID": "Originality",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Ostentation",
       "sortedName": "Ostentation",
-      "realID": "Ostentation"
+      "realID": "Ostentation",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Others",
       "sortedName": "Others",
-      "realID": "Others"
+      "realID": "Others",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Out with the old . . .",
       "sortedName": "Outwiththeold",
-      "realID": "Out-with-the-old------"
+      "realID": "Out-with-the-old------",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Outside-the-box thinking",
       "sortedName": "Outsidetheboxthinking",
-      "realID": "Outside-the-box-thinking"
+      "realID": "Outside-the-box-thinking",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Overcaution",
       "sortedName": "Overcaution",
-      "realID": "Overcaution"
+      "realID": "Overcaution",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Parenting",
       "sortedName": "Parenting",
-      "realID": "Parenting"
+      "realID": "Parenting",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Partisanship",
       "sortedName": "Partisanship",
-      "realID": "Partisanship"
+      "realID": "Partisanship",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "The Past",
       "sortedName": "ThePast",
-      "realID": "The-Past"
+      "realID": "The-Past",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Patience",
       "sortedName": "Patience",
-      "realID": "Patience"
+      "realID": "Patience",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Patriarchy",
       "sortedName": "Patriarchy",
-      "realID": "Patriarchy"
+      "realID": "Patriarchy",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Pedigree",
       "sortedName": "Pedigree",
-      "realID": "Pedigree"
+      "realID": "Pedigree",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Personnel development",
       "sortedName": "Personneldevelopment",
-      "realID": "Personnel-development"
+      "realID": "Personnel-development",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "In perspective",
       "sortedName": "Inperspective",
-      "realID": "In-perspective"
+      "realID": "In-perspective",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Perspectives",
       "sortedName": "Perspectives",
-      "realID": "Perspectives"
+      "realID": "Perspectives",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Pests",
       "sortedName": "Pests",
-      "realID": "Pests"
+      "realID": "Pests",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Photos",
       "sortedName": "Photos",
-      "realID": "Photos"
+      "realID": "Photos",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Pigheadedness",
       "sortedName": "Pigheadedness",
-      "realID": "Pigheadedness"
+      "realID": "Pigheadedness",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Pioneers",
       "sortedName": "Pioneers",
-      "realID": "Pioneers"
+      "realID": "Pioneers",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Plutocracy",
       "sortedName": "Plutocracy",
-      "realID": "Plutocracy"
+      "realID": "Plutocracy",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Politicians",
       "sortedName": "Politicians",
-      "realID": "Politicians"
+      "realID": "Politicians",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Politics",
       "sortedName": "Politics",
-      "realID": "Politics"
+      "realID": "Politics",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Pop culture",
       "sortedName": "Popculture",
-      "realID": "Pop-culture"
+      "realID": "Pop-culture",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Positive reinforcement",
       "sortedName": "Positivereinforcement",
-      "realID": "Positive-reinforcement"
+      "realID": "Positive-reinforcement",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Positivity",
       "sortedName": "Positivity",
-      "realID": "Positivity"
+      "realID": "Positivity",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Possibilities",
       "sortedName": "Possibilities",
-      "realID": "Possibilities"
+      "realID": "Possibilities",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Posterity",
       "sortedName": "Posterity",
-      "realID": "Posterity"
+      "realID": "Posterity",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Potential",
       "sortedName": "Potential",
-      "realID": "Potential"
+      "realID": "Potential",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Power",
       "sortedName": "Power",
-      "realID": "Power"
+      "realID": "Power",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Prejudice",
       "sortedName": "Prejudice",
-      "realID": "Prejudice"
+      "realID": "Prejudice",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Preparation",
       "sortedName": "Preparation",
-      "realID": "Preparation"
+      "realID": "Preparation",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "The Press",
       "sortedName": "ThePress",
-      "realID": "The-Press"
+      "realID": "The-Press",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Problems",
       "sortedName": "Problems",
-      "realID": "Problems"
+      "realID": "Problems",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Programs",
       "sortedName": "Programs",
-      "realID": "Programs"
+      "realID": "Programs",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Principles",
       "sortedName": "Principles",
-      "realID": "Principles"
+      "realID": "Principles",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Procrastination",
       "sortedName": "Procrastination",
-      "realID": "Procrastination"
+      "realID": "Procrastination",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Progress",
       "sortedName": "Progress",
-      "realID": "Progress"
+      "realID": "Progress",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "'Progress'",
       "sortedName": "Progress",
-      "realID": "-Progress-"
+      "realID": "-Progress-",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Psychology",
       "sortedName": "Psychology",
-      "realID": "Psychology"
+      "realID": "Psychology",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Public speaking",
       "sortedName": "Publicspeaking",
-      "realID": "Public-speaking"
+      "realID": "Public-speaking",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Quality",
       "sortedName": "Quality",
-      "realID": "Quality"
+      "realID": "Quality",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Quality control",
       "sortedName": "Qualitycontrol",
-      "realID": "Quality-control"
+      "realID": "Quality-control",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Questions",
       "sortedName": "Questions",
-      "realID": "Questions"
+      "realID": "Questions",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Quitting",
       "sortedName": "Quitting",
-      "realID": "Quitting"
+      "realID": "Quitting",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Readers",
       "sortedName": "Readers",
-      "realID": "Readers"
+      "realID": "Readers",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Rebellion",
       "sortedName": "Rebellion",
-      "realID": "Rebellion"
+      "realID": "Rebellion",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Recreation",
       "sortedName": "Recreation",
-      "realID": "Recreation"
+      "realID": "Recreation",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Reflection",
       "sortedName": "Reflection",
-      "realID": "Reflection"
+      "realID": "Reflection",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Religion",
       "sortedName": "Religion",
-      "realID": "Religion"
+      "realID": "Religion",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Reputation",
       "sortedName": "Reputation",
-      "realID": "Reputation"
+      "realID": "Reputation",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Resenvy",
       "sortedName": "Resenvy",
-      "realID": "Resenvy"
+      "realID": "Resenvy",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Restraint, Verbal",
       "sortedName": "RestraintVerbal",
-      "realID": "Restraint--Verbal"
+      "realID": "Restraint--Verbal",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Results",
       "sortedName": "Results",
-      "realID": "Results"
+      "realID": "Results",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Retirement",
       "sortedName": "Retirement",
-      "realID": "Retirement"
+      "realID": "Retirement",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Revisionist history",
       "sortedName": "Revisionisthistory",
-      "realID": "Revisionist-history"
+      "realID": "Revisionist-history",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Righteousness",
       "sortedName": "Righteousness",
-      "realID": "Righteousness"
+      "realID": "Righteousness",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Risk & Reward",
       "sortedName": "RiskReward",
-      "realID": "Risk---Reward"
+      "realID": "Risk---Reward",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Rumor",
       "sortedName": "Rumor",
-      "realID": "Rumor"
+      "realID": "Rumor",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Sacrifice",
       "sortedName": "Sacrifice",
-      "realID": "Sacrifice"
+      "realID": "Sacrifice",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Sarcasm",
       "sortedName": "Sarcasm",
-      "realID": "Sarcasm"
+      "realID": "Sarcasm",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Scapegoating",
       "sortedName": "Scapegoating",
-      "realID": "Scapegoating"
+      "realID": "Scapegoating",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Scaredy cats",
       "sortedName": "Scaredycats",
-      "realID": "Scaredy-cats"
+      "realID": "Scaredy-cats",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "School",
       "sortedName": "School",
-      "realID": "School"
+      "realID": "School",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Science, Religion and",
       "sortedName": "ScienceReligionand",
-      "realID": "Science--Religion-and"
+      "realID": "Science--Religion-and",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Secrets",
       "sortedName": "Secrets",
-      "realID": "Secrets"
+      "realID": "Secrets",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Self-improvement",
       "sortedName": "Selfimprovement",
-      "realID": "Self-improvement"
+      "realID": "Self-improvement",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Self-pity",
       "sortedName": "Selfpity",
-      "realID": "Self-pity"
+      "realID": "Self-pity",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Self-sufficiency",
       "sortedName": "Selfsufficiency",
-      "realID": "Self-sufficiency"
+      "realID": "Self-sufficiency",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Silence",
       "sortedName": "Silence",
-      "realID": "Silence"
+      "realID": "Silence",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Sleep",
       "sortedName": "Sleep",
-      "realID": "Sleep"
+      "realID": "Sleep",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Snowflakes",
       "sortedName": "Snowflakes",
-      "realID": "Snowflakes"
+      "realID": "Snowflakes",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Sociopaths",
       "sortedName": "Sociopaths",
-      "realID": "Sociopaths"
+      "realID": "Sociopaths",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Standards",
       "sortedName": "Standards",
-      "realID": "Standards"
+      "realID": "Standards",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Step it up",
       "sortedName": "Stepitup",
-      "realID": "Step-it-up"
+      "realID": "Step-it-up",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Stick-to-itiveness",
       "sortedName": "Sticktoitiveness",
-      "realID": "Stick-to-itiveness"
+      "realID": "Stick-to-itiveness",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Straw men",
       "sortedName": "Strawmen",
-      "realID": "Straw-men"
+      "realID": "Straw-men",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Stupidity",
       "sortedName": "Stupidity",
-      "realID": "Stupidity"
+      "realID": "Stupidity",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Success",
       "sortedName": "Success",
-      "realID": "Success"
+      "realID": "Success",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Suckers",
       "sortedName": "Suckers",
-      "realID": "Suckers"
+      "realID": "Suckers",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Sunday",
       "sortedName": "Sunday",
-      "realID": "Sunday"
+      "realID": "Sunday",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Surmounties",
       "sortedName": "Surmounties",
-      "realID": "Surmounties"
+      "realID": "Surmounties",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Swagger",
       "sortedName": "Swagger",
-      "realID": "Swagger"
+      "realID": "Swagger",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Talkers",
       "sortedName": "Talkers",
-      "realID": "Talkers"
+      "realID": "Talkers",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Talkers",
       "sortedName": "Talkers",
-      "realID": "Talkers"
+      "realID": "Talkers",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Teaching",
       "sortedName": "Teaching",
-      "realID": "Teaching"
+      "realID": "Teaching",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Technology",
       "sortedName": "Technology",
-      "realID": "Technology"
+      "realID": "Technology",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Teenagers",
       "sortedName": "Teenagers",
-      "realID": "Teenagers"
+      "realID": "Teenagers",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Television",
       "sortedName": "Television",
-      "realID": "Television"
+      "realID": "Television",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Temper",
       "sortedName": "Temper",
-      "realID": "Temper"
+      "realID": "Temper",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Temptation",
       "sortedName": "Temptation",
-      "realID": "Temptation"
+      "realID": "Temptation",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Ten-dollar words",
       "sortedName": "Tendollarwords",
-      "realID": "Ten-dollar-words"
+      "realID": "Ten-dollar-words",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Tenacity",
       "sortedName": "Tenacity",
-      "realID": "Tenacity"
+      "realID": "Tenacity",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Time",
       "sortedName": "Time",
-      "realID": "Time"
+      "realID": "Time",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "The Times",
       "sortedName": "TheTimes",
-      "realID": "The-Times"
+      "realID": "The-Times",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Time management",
       "sortedName": "Timemanagement",
-      "realID": "Time-management"
+      "realID": "Time-management",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Tradition",
       "sortedName": "Tradition",
-      "realID": "Tradition"
+      "realID": "Tradition",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Traditionalists",
       "sortedName": "Traditionalists",
-      "realID": "Traditionalists"
+      "realID": "Traditionalists",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Transparency",
       "sortedName": "Transparency",
-      "realID": "Transparency"
+      "realID": "Transparency",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Trust",
       "sortedName": "Trust",
-      "realID": "Trust"
+      "realID": "Trust",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Truth",
       "sortedName": "Truth",
-      "realID": "Truth"
+      "realID": "Truth",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Truth, Avoidance of",
       "sortedName": "TruthAvoidanceof",
-      "realID": "Truth--Avoidance-of"
+      "realID": "Truth--Avoidance-of",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Two steps forward, one step back",
       "sortedName": "Twostepsforwardonestepback",
-      "realID": "Two-steps-forward--one-step-back"
+      "realID": "Two-steps-forward--one-step-back",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Uncertainty",
       "sortedName": "Uncertainty",
-      "realID": "Uncertainty"
+      "realID": "Uncertainty",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Unfamiliarity",
       "sortedName": "Unfamiliarity",
-      "realID": "Unfamiliarity"
+      "realID": "Unfamiliarity",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Uselessness",
       "sortedName": "Uselessness",
-      "realID": "Uselessness"
+      "realID": "Uselessness",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Vanity",
       "sortedName": "Vanity",
-      "realID": "Vanity"
+      "realID": "Vanity",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Venturing",
       "sortedName": "Venturing",
-      "realID": "Venturing"
+      "realID": "Venturing",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Violence",
       "sortedName": "Violence",
-      "realID": "Violence"
+      "realID": "Violence",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Wealth",
       "sortedName": "Wealth",
-      "realID": "Wealth"
+      "realID": "Wealth",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Weeping",
       "sortedName": "Weeping",
-      "realID": "Weeping"
+      "realID": "Weeping",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Wives",
       "sortedName": "Wives",
-      "realID": "Wives"
+      "realID": "Wives",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Women & Men",
       "sortedName": "WomenMen",
-      "realID": "Women---Men"
+      "realID": "Women---Men",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Women & Women",
       "sortedName": "WomenWomen",
-      "realID": "Women---Women"
+      "realID": "Women---Women",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Women, Pursuit of",
       "sortedName": "WomenPursuitof",
-      "realID": "Women--Pursuit-of"
+      "realID": "Women--Pursuit-of",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Women vs. Men",
       "sortedName": "WomenvsMen",
-      "realID": "Women-vs--Men"
+      "realID": "Women-vs--Men",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Work first, play later",
       "sortedName": "Workfirstplaylater",
-      "realID": "Work-first--play-later"
+      "realID": "Work-first--play-later",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Wordplay",
       "sortedName": "Wordplay",
-      "realID": "Wordplay"
+      "realID": "Wordplay",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Worry",
       "sortedName": "Worry",
-      "realID": "Worry"
+      "realID": "Worry",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Writing",
       "sortedName": "Writing",
-      "realID": "Writing"
+      "realID": "Writing",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "You first",
       "sortedName": "Youfirst",
-      "realID": "You-first"
+      "realID": "You-first",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Youth",
       "sortedName": "Youth",
-      "realID": "Youth"
+      "realID": "Youth",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Zealots",
       "sortedName": "Zealots",
-      "realID": "Zealots"
+      "realID": "Zealots",
+      "similarTopics": ["Academia", "Accessories"]
     },
     {
       "name": "Zombies",
       "sortedName": "Zombies",
-      "realID": "Zombies"
+      "realID": "Zombies",
+      "similarTopics": ["Academia", "Accessories"]
     }
   ]
