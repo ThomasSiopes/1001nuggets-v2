@@ -111,6 +111,12 @@ const resolvers = {
         
           return { token, user };
         },
+        updateBookmarks: async (parent, { newList, me }) => {
+            const user = await User.findOne({me});
+            user.bookmarkedQuotes = newList;
+
+            return { token, user };
+        },
 
         // misc
         modScore: async(parent, { value, score }) => {

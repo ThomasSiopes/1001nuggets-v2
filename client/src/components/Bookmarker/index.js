@@ -5,6 +5,7 @@ import Auth from "../../utils/auth";
 import { Button } from "react-bootstrap";
 
 import { QUERY_ACCOUNT_ME } from "../../utils/queries";
+import { UPDATE_BOOKMARK } from "../../utils/mutations";
 
 const Bookmarker = ({input}) => {
     let {loading, data} = useQuery(QUERY_ACCOUNT_ME);
@@ -26,8 +27,7 @@ const Bookmarker = ({input}) => {
 const Adder = ({quoteList}) => {
     let copylist = {...quoteList}
 
-    console.log("Copylist: ");
-    console.log(copylist);
+    /// WIP
     
     return (<Button>O</Button>)
 }

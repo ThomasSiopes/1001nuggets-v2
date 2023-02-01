@@ -24,6 +24,18 @@ export const ADD_USER = gql`
   }
 `;
 
+export const UPDATE_BOOKMARK = gql`
+  mutation updateBookmark($newList: [String], $me: String) {
+    updateBookmark(newList: $newList, me: $me) {
+      token
+      user {
+        _id
+        username
+      }
+    }
+  }
+`
+
 export const MOD_SCORE = gql`
     mutation modScore($value: Int!, $score: Int!) {
         modScore(value: $value, score: $score) {

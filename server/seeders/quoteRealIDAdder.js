@@ -1,5 +1,5 @@
 fs = require('fs');
-var seed = 'quoteSeeds.json';
+var seed = 'zees.json';
 var m = JSON.parse(fs.readFileSync(seed).toString());
 var previousAuthor = null;
 var counter = 0;
