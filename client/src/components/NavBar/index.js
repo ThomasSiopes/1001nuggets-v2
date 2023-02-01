@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Redirect } from "react-router-dom";
-import { Navbar, Nav, NavDropdown, Container, Form, Button } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Container, Form } from "react-bootstrap";
 import Auth from "../../utils/auth";
 
 class NavBar extends React.Component {
@@ -50,22 +50,8 @@ class NavBar extends React.Component {
                                         <NavDropdown.Item href="/login">Login</NavDropdown.Item>
                                     </NavDropdown></strong>
                                 }
-                                {/* <NavDropdown className="hoverable me-1 font-weight-bold" title="Account" id="collasible-nav-dropdown">
-                                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                    <NavDropdown.Divider/>
-                                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                </NavDropdown> */}
-                                {/* {!(Auth.loggedIn()) && 
-                                    <span className="hoverable me-1"><Link id="nav-signup" className="nav-link" to={`/signup`}><strong>Sign Up</strong></Link></span>
-                                }
-                                {Auth.loggedIn() ?
-                                    <span className="hoverable me-1" id="nav-logout"><Button variant={"theme"} onClick={Auth.logout}><strong>Logout</strong></Button></span>
-                                    :
-                                    <span className="hoverable me-1"><Link id="nav-login" className="nav-link" to={`/login`}><strong>Login</strong></Link></span>
-                                } */}
                             </Nav>
-                            <Form onSubmit={this.handleSearch} className="d-flex align-items-center">
+                            <Form onSubmit={this.handleSearch} className="d-flex align-items-center justify-content-center">
                                 <input type="text" id="searchTerm" placeholder="Search..." className="me-2" onChange={this.handleChange}></input>
                                 <input type="submit" className="btn btn-theme" value="Submit"></input>
                             </Form>

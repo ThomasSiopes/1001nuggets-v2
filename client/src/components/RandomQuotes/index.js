@@ -3,8 +3,7 @@ import { useQuery } from "@apollo/client";
 
 import { Card, Button, Carousel } from "react-bootstrap";
 
-import AuthorButton from "../AuthorButton";
-import TopicButton from "../TopicButton";
+import QuoteCard from "../QuoteCard";
 
 import { QUERY_QUOTE_ALL } from "../../utils/queries";
 
@@ -31,21 +30,7 @@ const RandomQuotes = () => {
                 <Carousel variant="dark" indicators={false} controls={true} nextIcon={<Button variant={"light"}><strong>{`→`}</strong></Button>} prevIcon={<Button variant={"light"}><strong>{`←`}</strong></Button>}>
                     {randomQuotes.map((index) => (
                         <Carousel.Item key={"Carousel" + index.realID}>
-                            <Card>
-                                <Card.Body>
-                                    <Card.Text className="font-poppins">"{index.quoteText}"</Card.Text>
-                                    <strong><AuthorButton type={"link"} name={index.author}/></strong>
-                                </Card.Body>
-                                <Card.Footer className="text-center">
-                                    {index.topics.length > 0 && 
-                                        <span>
-                                            {index.topics.map((topic) => (
-                                                <TopicButton type={"button"} name={topic} key={index.quoteText + topic}/>
-                                            ))}
-                                        </span>
-                                    }
-                                </Card.Footer>
-                            </Card>
+                            <QuoteCard quotes={randomQuotes} quoteIndex={randomQuotes.indexOf(index)}/>
                         </Carousel.Item>
                     ))}
                 </Carousel>
