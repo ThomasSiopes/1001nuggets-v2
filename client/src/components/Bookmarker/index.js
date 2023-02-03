@@ -12,7 +12,7 @@ const Bookmarker = ({input}) => {
 
     if(loading) return <div>Loading...</div>
 
-    if(!data) return <span>It's cappin, data should be coming back rn</span>
+    // if(!data) return <span>It's cappin, data should be coming back rn</span>
 
     const me = data.me;
 
