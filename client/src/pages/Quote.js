@@ -2,6 +2,7 @@ import React from "react";
 import { Link, Redirect, useParams } from "react-router-dom";
 import { useQuery} from "@apollo/client";
 import MetaTags from "react-meta-tags";
+import Auth from "../utils/auth";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { FaTwitter, FaFacebookF } from "react-icons/fa";
@@ -13,6 +14,7 @@ import Bookmarker from "../components/Bookmarker";
 import SimilarTopics from "../components/SimilarTopics";
 
 import { QUERY_QUOTE_REALID } from "../utils/queries";
+import auth from "../utils/auth";
 
 function Quote () {
     const { quoteRealId } = useParams();
@@ -38,13 +40,13 @@ function Quote () {
             <Card>
                 <Card.Header><Link to={`/`} className="link-theme">Home</Link> {`>`} <Link to={`/authors`} className="link-theme">Authors</Link> {`>`} <AuthorButton type={"link"} name={quote.author}/> {`>`} Quotes</Card.Header>
                 <Card.Body>
-                    <Bookmarker input={quote}/>
+                    {Auth.loggedIn() && <Bookmarker input={quote}/>}
                     <Row>
                         <Col xs={12}>
                             <Card className="mb-3">
                                 <div id="quote-page">
                                     <Card.Body>
-                                        <Card.Text className="display-6"><span className="quote-body font-poppins" id="main-quote">"{quote.quoteText}"</span></Card.Text>
+                                        <Card.Text className="display-6"><span className="quote-body font-poppins" id="main-quote">{quote.quoteText}</span></Card.Text>
                                         <Card.Text><strong><AuthorButton type={"link"} name={quote.author}/></strong></Card.Text>
                                     </Card.Body>
                                     <Card.Body className="text-center">
@@ -61,7 +63,7 @@ function Quote () {
                                 }
                             </Card>
                         </Col>
-                        <Col xs={12}>
+                        {/* <Col xs={12}>
                             <Row>
                                 <MoreAuthor parent={quote} name={quote.author}/>
                                 {quote.topics[0] &&
@@ -75,7 +77,7 @@ function Quote () {
                                 </Col>
                                 }
                             </Row>
-                        </Col>
+                        </Col> */}
                     </Row>
                 </Card.Body>
             </Card>

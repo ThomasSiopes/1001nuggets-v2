@@ -4,9 +4,9 @@ import { useQuery} from "@apollo/client";
 import MetaTags from "react-meta-tags";
 
 import QOTD from "../components/QOTD";
-import RandomAuthors from "../components/RandomAuthors";
-import RandomTopics from "../components/RandomTopics";
-import RandomQuotes from "../components/RandomQuotes";
+// import RandomAuthors from "../components/RandomAuthors";
+// import RandomTopics from "../components/RandomTopics";
+// import RandomQuotes from "../components/RandomQuotes";
 
 import { GET_QOTD } from "../utils/queries";
 
@@ -26,7 +26,7 @@ function Main() {
                 <Col xs={12}>
                     <QOTD input={dailyQuote[0].storedID}/>
                 </Col>
-                <Col xs={12} lg={5} className="mb-3">
+                {/* <Col xs={12} lg={5} className="mb-3">
                     <RandomQuotes/>
                 </Col>
                 <Col xs={12} lg={7}>
@@ -38,7 +38,7 @@ function Main() {
                             <RandomTopics/>
                         </Col>
                     </Row>
-                </Col>
+                </Col> */}
             </Row>
         </Container>
     )

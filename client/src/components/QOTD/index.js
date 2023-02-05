@@ -34,7 +34,7 @@ const QOTD = ({input}) => {
                 <Link to={`/quote/${quote.realID}`}>
                     <Card.Body>
                         <Container>
-                            <Card.Text className="display-6"><span className="quote-body text-black font-poppins" id="main-quote">"{quote.quoteText}"</span></Card.Text>                    
+                            <Card.Text className="display-6"><span className="quote-body text-black font-poppins" id="main-quote">{quote.quoteText}</span></Card.Text>                    
                         </Container>
                     </Card.Body>
                 </Link>
