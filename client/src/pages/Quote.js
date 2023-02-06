@@ -9,12 +9,11 @@ import { FaTwitter, FaFacebookF } from "react-icons/fa";
 
 import TopicButton from "../components/TopicButton";
 import AuthorButton from "../components/AuthorButton";
-import MoreAuthor from "../components/MoreAuthor";
+// import MoreAuthor from "../components/MoreAuthor";
 import Bookmarker from "../components/Bookmarker";
-import SimilarTopics from "../components/SimilarTopics";
+// import SimilarTopics from "../components/SimilarTopics";
 
 import { QUERY_QUOTE_REALID } from "../utils/queries";
-import auth from "../utils/auth";
 
 function Quote () {
     const { quoteRealId } = useParams();

@@ -1,7 +1,7 @@
 import React from "react";
-import { Link, Redirect, useParams } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import { useQuery } from "@apollo/client";
-import Auth from "../utils/auth";
+// import Auth from "../utils/auth";
 import MetaTags from "react-meta-tags";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
