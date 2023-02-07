@@ -52,8 +52,11 @@ function TopicNavigation () {
                     <Row id="myGroup">
                         {sortedList.map((index) => (
                             <Col xs={12} sm={6} md={4} lg={3} key={index.name} className="text-center mb-3">
-                                <span><Link to={`/topic/${index.realID}`} className="link-theme">{index.name}</Link></span>
-                                <span className="subtext"> {`(`} {index.quotes.length} {index.quotes.length === 1 ? "quote" : "quotes"} {`)`}</span>
+                                <p>
+                                    <span><strong><Link to={`/topic/${index.realID}`} className="link-theme">{index.name}</Link></strong></span>
+                                    <span className="subtext"> {`(`} {index.quotes.length} {index.quotes.length === 1 ? "quote" : "quotes"} {`)`}</span>
+                                </p>
+                                <hr className="d-block d-sm-none"/>
                             </Col>
                         ))}
                     </Row>

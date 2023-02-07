@@ -1,8 +1,6 @@
 import React from "react";
 import { Link, Redirect } from "react-router-dom";
-import { Navbar, Nav, NavDropdown, Container, Form } from "react-bootstrap";
-
-import { FiSearch } from "react-icons/fi";
+import { Navbar, Nav, Container, Form } from "react-bootstrap";
 
 // import Auth from "../../utils/auth";
 

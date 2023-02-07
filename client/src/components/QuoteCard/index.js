@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Card, Modal, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-import { FiShare } from "react-icons/fi";
+import { FiShare, FiArrowLeft, FiArrowRight } from "react-icons/fi";
 
 import TopicButton from "../TopicButton";
 import AuthorButton from "../AuthorButton";
@@ -50,7 +50,7 @@ function QuoteCard({quotes, quoteIndex}) {
         </Modal.Body>
         <Modal.Footer className="justify-content-center">
             {quotes[currentQuote-1] && 
-              <Button className="mb-2" variant={"light"} onClick={handleDecrease} onKeyDown={handleDecrease}><strong>{"←"}</strong></Button>
+              <Button className="mb-2" variant={"light"} onClick={handleDecrease} onKeyDown={handleDecrease}><FiArrowLeft/></Button>
             }
             {quotes[currentQuote].topics.length > 0 && 
                 <span> 
@@ -60,7 +60,7 @@ function QuoteCard({quotes, quoteIndex}) {
                 </span>
             }
             {quotes[currentQuote+1] && 
-              <Button className="mb-2" variant={"light"} onClick={handleIncrease} onKeyUp={handleIncrease}><strong>{"→"}</strong></Button>
+              <Button className="mb-2" variant={"light"} onClick={handleIncrease} onKeyUp={handleIncrease}><FiArrowRight/></Button>
             }
         </Modal.Footer>
         {quotes[currentQuote].collections[0] &&

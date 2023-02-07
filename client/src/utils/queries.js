@@ -8,11 +8,6 @@ export const QUERY_AUTHOR_ALL = gql`
             lastName
             quotes {
                 _id
-                quoteText
-                author
-                topics
-                realID
-                collections
             }
             realID
         }
@@ -83,14 +78,8 @@ export const QUERY_TOPIC_ALL = gql`
             name
             sortedName
             realID
-            similarTopics
             quotes {
                 _id
-                quoteText
-                author
-                topics
-                realID
-                collections
             }
         }
     }

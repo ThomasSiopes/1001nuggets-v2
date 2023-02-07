@@ -28,9 +28,7 @@ function Author () {
     let list2 
     let list3a
     let list3b
-    let quotePlural = "quotes"
     if(quoteList) {
-        if(quoteList.length === 1) quotePlural = "quote";
         let result = [];
         for(let i = 3; i > 0; --i) {
             result.push(quoteList.splice(0, Math.ceil(quoteList.length / i)))
