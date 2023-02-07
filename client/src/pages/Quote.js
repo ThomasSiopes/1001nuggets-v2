@@ -2,16 +2,12 @@ import React from "react";
 import { Link, Redirect, useParams } from "react-router-dom";
 import { useQuery} from "@apollo/client";
 import MetaTags from "react-meta-tags";
-import Auth from "../utils/auth";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { FaTwitter, FaFacebookF } from "react-icons/fa";
 
 import TopicButton from "../components/TopicButton";
 import AuthorButton from "../components/AuthorButton";
-// import MoreAuthor from "../components/MoreAuthor";
-import Bookmarker from "../components/Bookmarker";
-// import SimilarTopics from "../components/SimilarTopics";
 
 import { QUERY_QUOTE_REALID } from "../utils/queries";
 
@@ -39,7 +35,6 @@ function Quote () {
             <Card>
                 <Card.Header><Link to={`/`} className="link-theme">Home</Link> {`>`} <Link to={`/authors`} className="link-theme">Authors</Link> {`>`} <AuthorButton type={"link"} name={quote.author}/> {`>`} Quotes</Card.Header>
                 <Card.Body>
-                    {Auth.loggedIn() && <Bookmarker input={quote}/>}
                     <Row>
                         <Col xs={12}>
                             <Card className="mb-3">
@@ -62,21 +57,6 @@ function Quote () {
                                 }
                             </Card>
                         </Col>
-                        {/* <Col xs={12}>
-                            <Row>
-                                <MoreAuthor parent={quote} name={quote.author}/>
-                                {quote.topics[0] &&
-                                <Col xs={12} md={6} className="mb-3">
-                                    <Card className="text-center">
-                                        <Card.Header>Similar Topics</Card.Header>
-                                        <Card.Body>
-                                            <SimilarTopics thisTopic={quote.topics[0]}/>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                                }
-                            </Row>
-                        </Col> */}
                     </Row>
                 </Card.Body>
             </Card>

@@ -51,7 +51,6 @@ function Topic () {
             <Card>
                 <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} <Link className="link-theme" to={`/topics`}>Topics</Link> {`>`} {topic.name}</Card.Header>
                 <Card.Body>
-                    <p>Quotes about {topic.name} ( {topic.quotes.length} {quotePlural} )</p>
                     <Row>
                          {/* First Quote Column */}
                          <Col xs={12} md={6} lg={4}>

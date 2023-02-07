@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Button, Card, Modal, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
+import { FiShare } from "react-icons/fi";
+
 import TopicButton from "../TopicButton";
 import AuthorButton from "../AuthorButton";
 import CollectionButton from '../CollectionButton';
@@ -34,6 +36,7 @@ function QuoteCard({quotes, quoteIndex}) {
       <Card>
         <Card.Body onClick={handleShow}>
             <Card.Text className="font-poppins" id="upward">{quotes[quoteIndex].quoteText}</Card.Text>
+            <AuthorButton type={"link"} name={quotes[quoteIndex].author}/>
         </Card.Body>
       </Card>
 
@@ -50,7 +53,7 @@ function QuoteCard({quotes, quoteIndex}) {
               <Button className="mb-2" variant={"light"} onClick={handleDecrease} onKeyDown={handleDecrease}><strong>{"←"}</strong></Button>
             }
             {quotes[currentQuote].topics.length > 0 && 
-                <span>Topics: 
+                <span> 
                     {quotes[currentQuote].topics.map((topic) => (
                         <TopicButton type={"button"} name={topic} key={quotes[currentQuote].quoteText + topic}/>
                     ))}
@@ -71,7 +74,7 @@ function QuoteCard({quotes, quoteIndex}) {
           </Modal.Footer>
         }
         <Modal.Footer className="justify-content-center">
-          <Link className="mb-1 btn btn-theme" to={`/quote/${quotes[currentQuote].realID}`}>See More</Link>
+          <Link className="mb-1 btn btn-theme" to={`/quote/${quotes[currentQuote].realID}`}>Share <FiShare/></Link>
         </Modal.Footer>
       </Modal>
     </>

@@ -1,7 +1,10 @@
 import React from "react";
 import { Link, Redirect } from "react-router-dom";
 import { Navbar, Nav, NavDropdown, Container, Form } from "react-bootstrap";
-import Auth from "../../utils/auth";
+
+import { FiSearch } from "react-icons/fi";
+
+// import Auth from "../../utils/auth";
 
 class NavBar extends React.Component {
     constructor(props) {
@@ -39,7 +42,7 @@ class NavBar extends React.Component {
                                 <span className="hoverable me-1"><Link id="nav-topics" className="nav-link" to={`/topics`}><strong>Topics</strong></Link></span>
                                 <span className="hoverable me-1"><Link id="nav-collections" className="nav-link" to={`/collections`}><strong>Collections</strong></Link></span>
                                 
-                                {Auth.loggedIn() ?
+                                {/* {Auth.loggedIn() ?
                                     <strong><NavDropdown className="hoverable me-1" title="Account ">
                                         <NavDropdown.Item href="/profile">Profile</NavDropdown.Item>
                                         <NavDropdown.Item onClick={Auth.logout}>Logout</NavDropdown.Item>
@@ -49,11 +52,11 @@ class NavBar extends React.Component {
                                         <NavDropdown.Item href="/signup">Sign Up</NavDropdown.Item>
                                         <NavDropdown.Item href="/login">Login</NavDropdown.Item>
                                     </NavDropdown></strong>
-                                }
+                                } */}
                             </Nav>
                             <Form onSubmit={this.handleSearch} className="d-flex align-items-center justify-content-center">
                                 <input type="text" id="searchTerm" placeholder="Search..." className="me-2" onChange={this.handleChange}></input>
-                                <input type="submit" className="btn btn-theme" value="Submit"></input>
+                                <input type="submit" className="btn btn-theme" value="Submit"/>
                             </Form>
                         </Navbar.Collapse>
                     </Container>

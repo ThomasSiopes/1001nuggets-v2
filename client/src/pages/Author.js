@@ -51,7 +51,6 @@ function Author () {
             <Card>
                 <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} <Link className="link-theme" to={`/authors`}>Authors</Link> {`>`} {author.name}</Card.Header>
                 <Card.Body>
-                    <p>Quotes by {author.name} ( {author.quotes.length} {quotePlural} )</p>
                     <Row>
                          {/* First Quote Column */}
                          <Col xs={12} md={6} lg={4}>
