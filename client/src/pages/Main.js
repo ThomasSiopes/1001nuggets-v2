@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { useQuery} from "@apollo/client";
 import MetaTags from "react-meta-tags";
 
@@ -22,23 +22,19 @@ function Main() {
             <MetaTags>
                 <title>1001 Nuggets</title>
             </MetaTags>
+            <div>
+                <QOTD input={dailyQuote[0].storedID}/>
+            </div>
             <Row>
-                <Col xs={12}>
-                    <QOTD input={dailyQuote[0].storedID}/>
+                <Col>
+                    <Button variant={"theme"} className="btn-block">Authors</Button>
                 </Col>
-                {/* <Col xs={12} lg={5} className="mb-3">
-                    <RandomQuotes/>
+                <Col>
+                    <Button variant={"theme"} className="btn-block">Topics</Button>
                 </Col>
-                <Col xs={12} lg={7}>
-                    <Row className="text-center">
-                        <Col xs={6}>
-                            <RandomAuthors/>
-                        </Col>
-                        <Col xs={6}>
-                            <RandomTopics/>
-                        </Col>
-                    </Row>
-                </Col> */}
+                <Col>
+                    <Button variant={"theme"} className="btn-block">Collections</Button>
+                </Col>
             </Row>
         </Container>
     )

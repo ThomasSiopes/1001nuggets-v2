@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 //Styles
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styled, { ThemeProvider } from "styled-components";
-import { defaultTheme, newTheme, GlobalStyles } from "./assets/css/themes";
+import { FaSun, FaMoon } from "react-icons/fa";
+import { lightTheme, darkTheme, GlobalStyles } from "./assets/css/themes";
 
 //Components
 import NavBar from "./components/NavBar";
@@ -23,7 +24,6 @@ import AuthorNav from "./pages/AuthorNav";
 import TopicNav from "./pages/TopicNav";
 import Quote from "./pages/Quote";
 import SearchResult from "./pages/SearchResult";
-//import Scoreboard from "./pages/Scoreboard";
 import CollectionNav from "./pages/CollectionNav";
 import Collection from "./pages/Collection";
 import Profile from "./pages/Profile";
@@ -52,14 +52,35 @@ const client = new ApolloClient({
 const StyledApp = styled.div``;
 
 function App() {
-  const [theme] = useState("no");
+  const [theme, setTheme] = useState("light");
+
+  const themeDark = () => {
+    setTheme("dark");
+  }
+
+  const themeLight = () => {
+    setTheme("light");
+  }
+
+  const handleChange = () => {
+    let currentTheme = document.getElementById("theme-switch");
+    if(currentTheme && currentTheme.checked) { themeDark() } else { themeLight() }
+  }
 
   return (
     <ApolloProvider client={client}>
       <Router>
-        <ThemeProvider theme={theme === "default" ? defaultTheme : newTheme}>
+        <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
           <GlobalStyles/>
           <NavBar/>
+          <div className="d-flex align-items-center">
+            <FaSun className="genText mx-2"/>
+            <label className="switch">
+              <input type="checkbox" id="theme-switch" onClick={() => handleChange()}/>
+              <span className="slider round"/>
+            </label>
+            <FaMoon className="genText mx-2"/>
+          </div>
           <StyledApp className="mainBody">
             <Switch>
               <Route exact path="/">
