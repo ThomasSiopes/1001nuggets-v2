@@ -4,6 +4,12 @@ export const lightTheme = {
     c1: "#262",
     c2: "#222",
     c3: "#ddd",
+    pic: "background",
+    card: {
+        bg: "#fff",
+        text: "#000",
+        quote: "#F8F8F5",
+    },
     button: {
         c1: "#373",
         c2: "#151",
@@ -17,7 +23,13 @@ export const lightTheme = {
 export const darkTheme = {
     c1: "#262",
     c2: "#222",
-    c3: "#222",
+    c3: "#111",
+    pic: "background-dark",
+    card: {
+        bg: "#2c2c2c",
+        text: "#fff",
+        quote: "#2c2c2c"
+    },
     button: {
         c1: "#373",
         c2: "#151",
@@ -85,6 +97,11 @@ export const GlobalStyles = createGlobalStyle`
         border-color: #ccc!important;
     }
 
+    .card, .modal-content, #quote-page {
+        background-color: ${(props) => props.theme.card.bg};
+        color: ${(props) => props.theme.card.text};
+    }
+
     .card-footer .btn {
         border-color: #fff;
     }
@@ -149,11 +166,11 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     #quote-page, .quote-card {
-        background-image: url("/assets/images/thumbnails/background.png");
+        background-image: url("/assets/images/thumbnails/${(props) => props.theme.pic}.png");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
-        background-color: #F8F8F5;
+        background-color: ${(props) => props.theme.card.quote};
     }
 
     .smaller-text {

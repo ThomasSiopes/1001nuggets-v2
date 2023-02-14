@@ -73,7 +73,7 @@ function App() {
         <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
           <GlobalStyles/>
           <NavBar/>
-          <div className="d-flex align-items-center">
+          <div className="d-flex align-items-center mb-2">
             <FaSun className="genText mx-2"/>
             <label className="switch">
               <input type="checkbox" id="theme-switch" onClick={() => handleChange()}/>

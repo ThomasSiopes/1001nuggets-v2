@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 const FooterPage = () => {
     return (
-        <Card id="footer-supreme" className="bg-theme text-center text-white mt-4 py-4">
+        <div id="footer-supreme" className="bg-theme text-center text-white mt-4 py-4">
             <Container>
                 <Row>
                     <Col xs={5} md={4} className="d-flex font-Lato">
@@ -26,7 +26,7 @@ const FooterPage = () => {
                     </Col>
                 </Row>
             </Container>
-        </Card>
+        </div>
     )
 }
 

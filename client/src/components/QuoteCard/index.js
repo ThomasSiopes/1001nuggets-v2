@@ -44,7 +44,7 @@ function QuoteCard({quotes, quoteIndex}) {
         <Modal.Header closeButton/>
         <Modal.Body className="quote-card">
             <Container className="font-poppins">
-              <h2 className="text-black">{quotes[currentQuote].quoteText}</h2>
+              <h2>{quotes[currentQuote].quoteText}</h2>
             </Container>
             <Container className="mt-3"><strong><AuthorButton type={"link"} name={quotes[currentQuote].author}/></strong></Container>
         </Modal.Body>
