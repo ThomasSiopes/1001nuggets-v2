@@ -14,6 +14,10 @@ export const lightTheme = {
         c1: "#373",
         c2: "#151",
     },
+    link: {
+        c1: "#373",
+        c2: "#151",
+    },
     weakButton: {
         c1: "#fff",
         c2: "#eee",
@@ -33,6 +37,10 @@ export const darkTheme = {
     button: {
         c1: "#373",
         c2: "#151",
+    },
+    link: {
+        c1: "#3A3",
+        c2: "#171",
     },
     weakButton: {
         c1: "#fff",
@@ -119,11 +127,11 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     .link-theme {
-        color: ${(props) => props.theme.button.c1};
+        color: ${(props) => props.theme.link.c1};
     }
 
     .link-theme:hover {
-        color: ${(props) => props.theme.button.c2};
+        color: ${(props) => props.theme.link.c2};
     }
 
     img {

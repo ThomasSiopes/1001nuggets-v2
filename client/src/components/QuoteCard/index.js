@@ -50,7 +50,7 @@ function QuoteCard({quotes, quoteIndex}) {
         </Modal.Body>
         <Modal.Footer className="justify-content-center">
             {quotes[currentQuote-1] && 
-              <Button className="mb-2" variant={"light"} onClick={handleDecrease} onKeyDown={handleDecrease}><FiArrowLeft/></Button>
+              <Button className="mb-2 b-none" variant={"light"} onClick={handleDecrease} onKeyDown={handleDecrease}><FiArrowLeft/></Button>
             }
             {quotes[currentQuote].topics.length > 0 && 
                 <span> 
@@ -60,7 +60,7 @@ function QuoteCard({quotes, quoteIndex}) {
                 </span>
             }
             {quotes[currentQuote+1] && 
-              <Button className="mb-2" variant={"light"} onClick={handleIncrease} onKeyUp={handleIncrease}><FiArrowRight/></Button>
+              <Button className="mb-2 b-none" variant={"light"} onClick={handleIncrease} onKeyUp={handleIncrease}><FiArrowRight/></Button>
             }
         </Modal.Footer>
         {quotes[currentQuote].collections[0] &&
