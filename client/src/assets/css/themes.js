@@ -220,6 +220,10 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 14px;
     }
 
+    .text-theme {
+        color: ${(props) => props.theme.card.text};
+    }
+
     // Switch
 
     .switch {

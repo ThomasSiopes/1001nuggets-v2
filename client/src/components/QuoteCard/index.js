@@ -41,7 +41,7 @@ function QuoteCard({quotes, quoteIndex}) {
       </Card>
 
       <Modal show={show} onHide={handleClose} aria-labelledby="contained-modal-title-vcenter" centered>
-        <Modal.Header closeButton/>
+        <Modal.Header className="text-theme" closeButton/>
         <Modal.Body className="quote-card">
             <Container className="font-poppins">
               <h2>{quotes[currentQuote].quoteText}</h2>

@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 //Styles
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from "react-bootstrap";
 import styled, { ThemeProvider } from "styled-components";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { lightTheme, darkTheme, GlobalStyles } from "./assets/css/themes";
@@ -73,14 +74,14 @@ function App() {
         <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
           <GlobalStyles/>
           <NavBar/>
-          <div className="d-flex align-items-center mb-2">
-            <FaSun className="genText mx-2"/>
+          <Container className="d-flex align-items-center mb-3">
+            <FaSun className="text-theme mx-2"/>
             <label className="switch">
               <input type="checkbox" id="theme-switch" onClick={() => handleChange()}/>
               <span className="slider round"/>
             </label>
-            <FaMoon className="genText mx-2"/>
-          </div>
+            <FaMoon className="text-theme mx-2"/>
+          </Container>
           <StyledApp className="mainBody">
             <Switch>
               <Route exact path="/">
