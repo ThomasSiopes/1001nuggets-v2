@@ -40,7 +40,7 @@ function Freethinkers () {
             <MetaTags>
                 <title>1001 Nuggets - Authors</title>
             </MetaTags>
-            <Row className="justify-content-center">
+            <Row className="justify-content-center navPage-body">
                 <Col>
                     <Card>
                         <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} Authors</Card.Header>
@@ -95,35 +95,35 @@ function Freethinkers () {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col xs={1} className="d-block d-lg-none">
-                    <Container>
-                        <p className="mb-1"><a href="#A">A</a></p>
-                        <p className="mb-1"><a href="#B">B</a></p>
-                        <p className="mb-1"><a href="#C">C</a></p>
-                        <p className="mb-1"><a href="#D">D</a></p>
-                        <p className="mb-1"><a href="#E">E</a></p>
-                        <p className="mb-1"><a href="#F">F</a></p>
-                        <p className="mb-1"><a href="#G">G</a></p>
-                        <p className="mb-1"><a href="#H">H</a></p>
-                        <p className="mb-1"><a href="#I">I</a></p>
-                        <p className="mb-1"><a href="#J">J</a></p>
-                        <p className="mb-1"><a href="#K">K</a></p>
-                        <p className="mb-1"><a href="#L">L</a></p>
-                        <p className="mb-1"><a href="#M">M</a></p>
-                        <p className="mb-1"><a href="#N">N</a></p>
-                        <p className="mb-1"><a href="#O">O</a></p>
-                        <p className="mb-1"><a href="#P">P</a></p>
-                        <p className="mb-1"><a href="#Q">Q</a></p>
-                        <p className="mb-1"><a href="#R">R</a></p>
-                        <p className="mb-1"><a href="#S">S</a></p>
-                        <p className="mb-1"><a href="#T">T</a></p>
-                        <p className="mb-1"><a href="#U">U</a></p>
-                        <p className="mb-1"><a href="#V">V</a></p>
-                        <p className="mb-1"><a href="#W">W</a></p>
-                        <p className="mb-1"><a href="#X">X</a></p>
-                        <p className="mb-1"><a href="#Y">Y</a></p>
-                        <p className="mb-1"><a href="#Z">Z</a></p>
-                    </Container>
+                <Col xs={1} className="d-block d-lg-none p-0 text-center">
+                    <div className="fitter py-2 px-1">
+                        <p className="mb-1"><a href="#A" className="text-white">A</a></p>
+                        <p className="mb-1"><a href="#B" className="text-white">B</a></p>
+                        <p className="mb-1"><a href="#C" className="text-white">C</a></p>
+                        <p className="mb-1"><a href="#D" className="text-white">D</a></p>
+                        <p className="mb-1"><a href="#E" className="text-white">E</a></p>
+                        <p className="mb-1"><a href="#F" className="text-white">F</a></p>
+                        <p className="mb-1"><a href="#G" className="text-white">G</a></p>
+                        <p className="mb-1"><a href="#H" className="text-white">H</a></p>
+                        <p className="mb-1"><a href="#I" className="text-white">I</a></p>
+                        <p className="mb-1"><a href="#J" className="text-white">J</a></p>
+                        <p className="mb-1"><a href="#K" className="text-white">K</a></p>
+                        <p className="mb-1"><a href="#L" className="text-white">L</a></p>
+                        <p className="mb-1"><a href="#M" className="text-white">M</a></p>
+                        <p className="mb-1"><a href="#N" className="text-white">N</a></p>
+                        <p className="mb-1"><a href="#O" className="text-white">O</a></p>
+                        <p className="mb-1"><a href="#P" className="text-white">P</a></p>
+                        <p className="mb-1"><a href="#Q" className="text-white">Q</a></p>
+                        <p className="mb-1"><a href="#R" className="text-white">R</a></p>
+                        <p className="mb-1"><a href="#S" className="text-white">S</a></p>
+                        <p className="mb-1"><a href="#T" className="text-white">T</a></p>
+                        <p className="mb-1"><a href="#U" className="text-white">U</a></p>
+                        <p className="mb-1"><a href="#V" className="text-white">V</a></p>
+                        <p className="mb-1"><a href="#W" className="text-white">W</a></p>
+                        <p className="mb-1"><a href="#X" className="text-white">X</a></p>
+                        <p className="mb-1"><a href="#Y" className="text-white">Y</a></p>
+                        <p className="mb-1"><a href="#Z" className="text-white">Z</a></p>
+                    </div>
                 </Col>
             </Row>
         </Container>

@@ -57,7 +57,7 @@ export const GlobalStyles = createGlobalStyle`
         text-decoration: none;
     }
 
-    #banner, .formInput {
+    #banner, .formInput, img, #myInput {
         width: 100%;
     }
 
@@ -118,6 +118,13 @@ export const GlobalStyles = createGlobalStyle`
         font-weight: 600;
     }
 
+    .fitter {
+        background: rgba(40,40,40,0.5);
+        border-radius: 25px;
+        position: fixed;
+        top: 10%;
+    }
+
     .font-poppins {
         font-family: 'Poppins', sans-serif;
     }
@@ -134,16 +141,8 @@ export const GlobalStyles = createGlobalStyle`
         color: ${(props) => props.theme.link.c2};
     }
 
-    img {
-        max-width: 100%;
-    }
-
     .mainBody {
         min-height: 67vh;
-    }
-
-    #myInput {
-        width: 100%;
     }
 
     .navbar, .footer {
@@ -156,6 +155,10 @@ export const GlobalStyles = createGlobalStyle`
 
     .navbar-toggler:focus, .btn-light:focus, .btn-check:focus, .btn-primary:focus, .btn-weak:focus {
         box-shadow: none;
+    }
+
+    .navPage-body {
+        max-width: 100%
     }
 
     .hoverable {
