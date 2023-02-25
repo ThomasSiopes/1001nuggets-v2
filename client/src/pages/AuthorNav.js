@@ -94,7 +94,10 @@ function Freethinkers () {
                                 {authorList.map((index) => (
                                     <Col xs={12} key={index.name} className="text-center mb-2">
                                         {index.firstLetter &&
-                                            <p id={index.lastName.charAt(0)}>{index.lastName.charAt(0)}</p>
+                                            <div>
+                                                <strong><p id={index.lastName.charAt(0)}>Authors under {index.lastName.charAt(0)}</p></strong>
+                                                <hr/>
+                                            </div>
                                         }
                                         <p>
                                             <span><strong><Link to={`/author/${index.realID}`} className="link-theme">{index.name}</Link></strong></span>
@@ -109,32 +112,32 @@ function Freethinkers () {
                 </Col>
                 <Col xs={1} className="d-block d-lg-none p-0 text-center">
                     <div className="fitter py-2 px-1">
-                        <p className="mb-1"><a href="#A" className="text-white">A</a></p>
-                        <p className="mb-1"><a href="#B" className="text-white">B</a></p>
-                        <p className="mb-1"><a href="#C" className="text-white">C</a></p>
-                        <p className="mb-1"><a href="#D" className="text-white">D</a></p>
-                        <p className="mb-1"><a href="#E" className="text-white">E</a></p>
-                        <p className="mb-1"><a href="#F" className="text-white">F</a></p>
-                        <p className="mb-1"><a href="#G" className="text-white">G</a></p>
-                        <p className="mb-1"><a href="#H" className="text-white">H</a></p>
-                        <p className="mb-1"><a href="#I" className="text-white">I</a></p>
-                        <p className="mb-1"><a href="#J" className="text-white">J</a></p>
-                        <p className="mb-1"><a href="#K" className="text-white">K</a></p>
-                        <p className="mb-1"><a href="#L" className="text-white">L</a></p>
-                        <p className="mb-1"><a href="#M" className="text-white">M</a></p>
-                        <p className="mb-1"><a href="#N" className="text-white">N</a></p>
-                        <p className="mb-1"><a href="#O" className="text-white">O</a></p>
-                        <p className="mb-1"><a href="#P" className="text-white">P</a></p>
-                        <p className="mb-1"><a href="#Q" className="text-white">Q</a></p>
-                        <p className="mb-1"><a href="#R" className="text-white">R</a></p>
-                        <p className="mb-1"><a href="#S" className="text-white">S</a></p>
-                        <p className="mb-1"><a href="#T" className="text-white">T</a></p>
-                        <p className="mb-1"><a href="#U" className="text-white">U</a></p>
-                        <p className="mb-1"><a href="#V" className="text-white">V</a></p>
-                        <p className="mb-1"><a href="#W" className="text-white">W</a></p>
-                        <p className="mb-1"><a href="#X" className="text-white">X</a></p>
-                        <p className="mb-1"><a href="#Y" className="text-white">Y</a></p>
-                        <p className="mb-1"><a href="#Z" className="text-white">Z</a></p>
+                        <p className="mb-0"><a href="#A" className="sidebar-text text-white">A</a></p>
+                        <p className="mb-0"><a href="#B" className="sidebar-text text-white">B</a></p>
+                        <p className="mb-0"><a href="#C" className="sidebar-text text-white">C</a></p>
+                        <p className="mb-0"><a href="#D" className="sidebar-text text-white">D</a></p>
+                        <p className="mb-0"><a href="#E" className="sidebar-text text-white">E</a></p>
+                        <p className="mb-0"><a href="#F" className="sidebar-text text-white">F</a></p>
+                        <p className="mb-0"><a href="#G" className="sidebar-text text-white">G</a></p>
+                        <p className="mb-0"><a href="#H" className="sidebar-text text-white">H</a></p>
+                        <p className="mb-0"><a href="#I" className="sidebar-text text-white">I</a></p>
+                        <p className="mb-0"><a href="#J" className="sidebar-text text-white">J</a></p>
+                        <p className="mb-0"><a href="#K" className="sidebar-text text-white">K</a></p>
+                        <p className="mb-0"><a href="#L" className="sidebar-text text-white">L</a></p>
+                        <p className="mb-0"><a href="#M" className="sidebar-text text-white">M</a></p>
+                        <p className="mb-0"><a href="#N" className="sidebar-text text-white">N</a></p>
+                        <p className="mb-0"><a href="#O" className="sidebar-text text-white">O</a></p>
+                        <p className="mb-0"><a href="#P" className="sidebar-text text-white">P</a></p>
+                        <p className="mb-0"><a href="#Q" className="sidebar-text text-white">Q</a></p>
+                        <p className="mb-0"><a href="#R" className="sidebar-text text-white">R</a></p>
+                        <p className="mb-0"><a href="#S" className="sidebar-text text-white">S</a></p>
+                        <p className="mb-0"><a href="#T" className="sidebar-text text-white">T</a></p>
+                        <p className="mb-0"><a href="#U" className="sidebar-text text-white">U</a></p>
+                        <p className="mb-0"><a href="#V" className="sidebar-text text-white">V</a></p>
+                        <p className="mb-0"><a href="#W" className="sidebar-text text-white">W</a></p>
+                        <p className="mb-0"><a href="#X" className="sidebar-text text-white">X</a></p>
+                        <p className="mb-0"><a href="#Y" className="sidebar-text text-white">Y</a></p>
+                        <p className="mb-0"><a href="#Z" className="sidebar-text text-white">Z</a></p>
                     </div>
                 </Col>
             </Row>

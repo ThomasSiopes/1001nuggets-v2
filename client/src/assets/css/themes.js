@@ -122,7 +122,7 @@ export const GlobalStyles = createGlobalStyle`
         background: rgba(40,40,40,0.5);
         border-radius: 25px;
         position: fixed;
-        top: 10%;
+        top: 15%;
     }
 
     .font-poppins {
@@ -216,6 +216,10 @@ export const GlobalStyles = createGlobalStyle`
 
     #share-reddit:hover {
         color: #782c10 !important;
+    }
+
+    .sidebar-text {
+        font-size: 10px;
     }
 
     .subtext {

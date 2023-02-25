@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { Container, Row, Col } from "react-bootstrap";
 import MetaTags from "react-meta-tags";
 
 // import RandomAuthors from "../components/RandomAuthors";
@@ -14,13 +15,13 @@ function Main() {
             </MetaTags>
             <Row>
                 <Col>
-                    <Button variant={"theme"} className="btn-block">Authors</Button>
+                    <Link to={`/authors`} className="btn btn-theme btn-block">Authors</Link>
                 </Col>
                 <Col>
-                    <Button variant={"theme"} className="btn-block">Topics</Button>
+                    <Link to={`/topics`} className="btn btn-theme btn-block">Topics</Link>
                 </Col>
                 <Col>
-                    <Button variant={"theme"} className="btn-block">Collections</Button>
+                    <Link to={`/collections`} className="btn btn-theme btn-block">Collections</Link>
                 </Col>
             </Row>
         </Container>
