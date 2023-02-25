@@ -12,13 +12,22 @@ function Freethinkers () {
 
     if(loading) return <span>Loading...</span>
 
-    let authorList = [];
-
-    for(let index of data.authors){
-        authorList.push(index);
-    }
+    let authorList = data.authors.map((item) => 
+        Object.assign({}, item, {selected:false})
+    )
 
     authorList = authorList.sort((a, b) => a.lastName.localeCompare(b.lastName));
+
+    for(let n = 0; n < authorList.length; ++n) {
+        authorList[n].firstLetter = false;
+        if(n===0) {
+            authorList[n].firstLetter = true;
+        } else {
+            if(authorList[n].lastName.charAt(0) !== authorList[n-1].lastName.charAt(0)) {
+                authorList[n].firstLetter = true;
+            }
+        }
+    }
 
     const searchFunction = () => {
         let input, filter, group, elements, body, textValue;
@@ -83,12 +92,15 @@ function Freethinkers () {
                             </Row>
                             <Row id="myGroup">
                                 {authorList.map((index) => (
-                                    <Col xs={12} sm={6} md={4} lg={3} key={index.name} className="text-center mb-2">
+                                    <Col xs={12} key={index.name} className="text-center mb-2">
+                                        {index.firstLetter &&
+                                            <p id={index.lastName.charAt(0)}>{index.lastName.charAt(0)}</p>
+                                        }
                                         <p>
                                             <span><strong><Link to={`/author/${index.realID}`} className="link-theme">{index.name}</Link></strong></span>
                                             <span className="subtext"> {`(`} {index.quotes.length} {index.quotes.length === 1 ? "quote" : "quotes"} {`)`}</span>
                                         </p>
-                                        <hr className="d-block d-sm-none"/>
+                                        <hr/>
                                     </Col>
                                 ))}
                             </Row>
