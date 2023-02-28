@@ -118,11 +118,17 @@ export const GlobalStyles = createGlobalStyle`
         font-weight: 600;
     }
 
+    .col-05 {
+        flex: 0 0 auto;
+        width: 4%;
+    }
+
     .fitter {
         background: rgba(40,40,40,0.5);
         border-radius: 25px;
         position: fixed;
-        top: 15%;
+        top: 17%;
+        line-height: 0.9rem;
     }
 
     .font-poppins {
@@ -219,7 +225,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     .sidebar-text {
-        font-size: 10px;
+        font-size: 0.6rem;
     }
 
     .subtext {

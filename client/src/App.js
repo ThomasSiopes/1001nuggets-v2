@@ -5,9 +5,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 //Styles
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container } from "react-bootstrap";
+// import { Container } from "react-bootstrap";
 import styled, { ThemeProvider } from "styled-components";
-import { FaSun, FaMoon } from "react-icons/fa";
+// import { FaSun, FaMoon } from "react-icons/fa";
 import { lightTheme, darkTheme, GlobalStyles } from "./assets/css/themes";
 
 //Components
@@ -53,20 +53,20 @@ const client = new ApolloClient({
 const StyledApp = styled.div``;
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme] = useState("light");
 
-  const themeDark = () => {
-    setTheme("dark");
-  }
+  // const themeDark = () => {
+  //   setTheme("dark");
+  // }
 
-  const themeLight = () => {
-    setTheme("light");
-  }
+  // const themeLight = () => {
+  //   setTheme("light");
+  // }
 
-  const handleChange = () => {
-    let currentTheme = document.getElementById("theme-switch");
-    if(currentTheme && currentTheme.checked) { themeDark() } else { themeLight() }
-  }
+  // const handleChange = () => {
+  //   let currentTheme = document.getElementById("theme-switch");
+  //   if(currentTheme && currentTheme.checked) { themeDark() } else { themeLight() }
+  // }
 
   return (
     <ApolloProvider client={client}>
@@ -74,14 +74,14 @@ function App() {
         <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
           <GlobalStyles/>
           <NavBar/>
-          <Container className="d-flex align-items-center mb-3">
+          {/* <Container className="d-flex align-items-center mb-3">
             <FaSun className="text-theme mx-2"/>
             <label className="switch">
               <input type="checkbox" id="theme-switch" onClick={() => handleChange()}/>
               <span className="slider round"/>
             </label>
             <FaMoon className="text-theme mx-2"/>
-          </Container>
+          </Container> */}
           <StyledApp className="mainBody">
             <Switch>
               <Route exact path="/">
