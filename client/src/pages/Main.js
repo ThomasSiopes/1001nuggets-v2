@@ -14,13 +14,13 @@ function Main() {
                 <title>1001 Nuggets</title>
             </MetaTags>
             <Row>
-                <Col>
+                <Col xs={12} md={4} className="mb-3">
                     <Link to={`/authors`} className="btn btn-theme btn-block">Authors</Link>
                 </Col>
-                <Col>
+                <Col xs={12} md={4} className="mb-3">
                     <Link to={`/topics`} className="btn btn-theme btn-block">Topics</Link>
                 </Col>
-                <Col>
+                <Col xs={12} md={4} className="mb-3">
                     <Link to={`/collections`} className="btn btn-theme btn-block">Collections</Link>
                 </Col>
             </Row>

@@ -66,10 +66,8 @@ function Freethinkers () {
                                                 <hr/>
                                             </div>
                                         }
-                                        <p>
-                                            <span><strong><Link to={`/author/${index.realID}`} className="link-theme">{index.name}</Link></strong></span>
-                                            <span className="subtext"> {`(`} {index.quotes.length} {index.quotes.length === 1 ? "quote" : "quotes"} {`)`}</span>
-                                        </p>
+                                        <p><strong><Link to={`/author/${index.realID}`} className="link-theme">{index.name}</Link></strong></p>
+                                        <p className="subtext"> {`(`} {index.quotes.length} {index.quotes.length === 1 ? "quote" : "quotes"} {`)`}</p>
                                         <hr/>
                                     </Col>
                                 ))}
