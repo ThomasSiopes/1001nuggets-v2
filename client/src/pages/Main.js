@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import MetaTags from "react-meta-tags";
 
 // import RandomAuthors from "../components/RandomAuthors";
@@ -13,17 +12,7 @@ function Main() {
             <MetaTags>
                 <title>1001 Nuggets</title>
             </MetaTags>
-            <Row>
-                <Col xs={12} md={4} className="mb-3">
-                    <Link to={`/authors`} className="btn btn-theme btn-block">Authors</Link>
-                </Col>
-                <Col xs={12} md={4} className="mb-3">
-                    <Link to={`/topics`} className="btn btn-theme btn-block">Topics</Link>
-                </Col>
-                <Col xs={12} md={4} className="mb-3">
-                    <Link to={`/collections`} className="btn btn-theme btn-block">Collections</Link>
-                </Col>
-            </Row>
+            <img src="assets/images/thumbnails/background-copy.png" alt="homepage"/>
         </Container>
     )
 }

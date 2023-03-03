@@ -31,6 +31,7 @@ const FooterPage = () => {
                 <strong><Link className="text-white mx-3" to={`/authors`}>Authors</Link></strong>
                 <strong><Link className="text-white mx-3" to={`/topics`}>Topics</Link></strong>
                 <strong><Link className="text-white mx-3" to={`/collections`}>Collections</Link></strong>
+                <p>Filler, mobile footer content goes here.</p>
             </Container>
         </div>
     )
