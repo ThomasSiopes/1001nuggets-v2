@@ -12,7 +12,7 @@ function Main() {
             <MetaTags>
                 <title>1001 Nuggets</title>
             </MetaTags>
-            <img src="assets/images/thumbnails/background-copy.png" alt="homepage"/>
+            <img className="my-5" src="assets/images/thumbnails/background-copy.png" alt="homepage"/>
         </Container>
     )
 }

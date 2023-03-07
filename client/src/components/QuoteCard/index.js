@@ -34,7 +34,7 @@ function QuoteCard({quotes, quoteIndex}) {
     return (
     <>
       <Card>
-        <Card.Body onClick={handleShow}>
+        <Card.Body className="quote-card" onClick={handleShow}>
             <Card.Text className="font-poppins" id="upward">{quotes[quoteIndex].quoteText}</Card.Text>
             <AuthorButton type={"link"} name={quotes[quoteIndex].author}/>
         </Card.Body>

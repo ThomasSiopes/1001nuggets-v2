@@ -7,7 +7,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 
 import { QUERY_AUTHOR_ALL } from "../utils/queries";
 
-function Freethinkers () {
+function Authors () {
     let { loading, data } = useQuery(QUERY_AUTHOR_ALL);
 
     if(loading) return <span>Loading...</span>
@@ -110,4 +110,4 @@ function Freethinkers () {
     )
 }
 
-export default Freethinkers;
+export default Authors;
