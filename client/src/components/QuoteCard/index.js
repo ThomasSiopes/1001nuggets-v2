@@ -48,7 +48,7 @@ function QuoteCard({quotes, quoteIndex}) {
             </Container>
             <Container className="mt-3"><strong><AuthorButton type={"link"} name={quotes[currentQuote].author}/></strong></Container>
         </Modal.Body>
-        <Modal.Footer className="justify-content-center">
+        <Modal.Footer className="justify-content-center align-items-center">
             {quotes[currentQuote-1] && 
               <Button className="mb-2 b-none" variant={"light"} onClick={handleDecrease} onKeyDown={handleDecrease}><FiArrowLeft/></Button>
             }

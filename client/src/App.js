@@ -21,15 +21,12 @@ import PlatformSpecific from "./components/Platform/specific";
 import Home from "./pages/Main";
 import Author from "./pages/Author";
 import Topic from "./pages/Topic";
-import AuthorNav from "./pages/AuthorNav";
-import TopicNav from "./pages/TopicNav";
 import Quote from "./pages/Quote";
-import SearchResult from "./pages/SearchResult";
-import CollectionNav from "./pages/CollectionNav";
 import Collection from "./pages/Collection";
-import Profile from "./pages/Profile";
-import SignUp from "./pages/SignUp";
-import Login from "./pages/Login";
+const AuthorNav = React.lazy(()=> import ("./pages/AuthorNav"));
+const TopicNav = React.lazy(() => import ("./pages/TopicNav"));
+const CollectionNav = React.lazy(() => import ("./pages/CollectionNav"));
+const SearchResult = React.lazy(() => import ("./pages/SearchResult"));
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -100,13 +97,19 @@ function App() {
                 <Collection/>
               </Route>
               <Route exact path="/topics">
-                <TopicNav/>
+                <React.Suspense fallback="Loading page...">
+                  <TopicNav/>
+                </React.Suspense>
               </Route>
               <Route exact path="/authors">
-                <AuthorNav/>
+                <React.Suspense fallback="Loading page...">
+                  <AuthorNav/>
+                </React.Suspense>
               </Route>
               <Route exact path="/collections">
-                <CollectionNav/>
+                <React.Suspense fallback="Loading page...">
+                  <CollectionNav/>
+                </React.Suspense>
               </Route>
               <Route exact path="/platforms">
                 <PlatformMain/>
@@ -115,16 +118,9 @@ function App() {
                 <PlatformSpecific/>
               </Route>
               <Route exact path="/search/:query">
-                <SearchResult/>
-              </Route>
-              <Route exact path="/profile">
-                <Profile/>
-              </Route>
-              <Route exact path="/signup">
-                <SignUp/>
-              </Route>
-              <Route exact path="/login">
-                <Login/>
+                <React.Suspense fallback="Loading results...">
+                  <SearchResult/>
+                </React.Suspense>
               </Route>
               <Route component={ErrorPage}/>
             </Switch>
