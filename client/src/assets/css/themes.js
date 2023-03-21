@@ -124,10 +124,11 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     .fitter {
-        background: rgba(40,40,40,0.5);
+        background: rgba(40,40,40,0.4);
         border-radius: 25px;
         position: fixed;
-        bottom: 13vh;
+        top: 15vh;
+        bottom: 15vh;
         line-height: 0.9rem;
     }
 
