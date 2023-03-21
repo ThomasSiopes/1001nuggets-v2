@@ -2,10 +2,6 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import MetaTags from "react-meta-tags";
 
-// import RandomAuthors from "../components/RandomAuthors";
-// import RandomTopics from "../components/RandomTopics";
-// import RandomQuotes from "../components/RandomQuotes";
-
 function Main() {
     return (
         <Container>
