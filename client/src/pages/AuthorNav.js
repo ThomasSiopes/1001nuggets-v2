@@ -52,7 +52,7 @@ function Authors () {
                 <title>1001 Nuggets - Authors</title>
             </MetaTags>
             <Row className="justify-content-center navPage-body">
-                <Col>
+                <Col className="pe-0">
                     <Card>
                         {/* <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} Authors</Card.Header> */}
                         <Card.Body>
@@ -78,33 +78,33 @@ function Authors () {
                     </Card>
                 </Col>
                 <div className="col-05 p-0 text-center">
-                    <Row className="fitter px-0 py-2 mx-0 align-items-center">
-                        <Col xs={12} className="p-0 mx-0"><a href="#A" className="sidebar-text text-white">A</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#B" className="sidebar-text text-white">B</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#C" className="sidebar-text text-white">C</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#D" className="sidebar-text text-white">D</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#E" className="sidebar-text text-white">E</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#F" className="sidebar-text text-white">F</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#G" className="sidebar-text text-white">G</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#H" className="sidebar-text text-white">H</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#I" className="sidebar-text text-white">I</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#J" className="sidebar-text text-white">J</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#K" className="sidebar-text text-white">K</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#L" className="sidebar-text text-white">L</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#M" className="sidebar-text text-white">M</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#N" className="sidebar-text text-white">N</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#O" className="sidebar-text text-white">O</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#P" className="sidebar-text text-white">P</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#Q" className="sidebar-text text-white">Q</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#R" className="sidebar-text text-white">R</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#S" className="sidebar-text text-white">S</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#T" className="sidebar-text text-white">T</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#U" className="sidebar-text text-white">U</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#V" className="sidebar-text text-white">V</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#W" className="sidebar-text text-white">W</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#X" className="sidebar-text text-white">X</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#Y" className="sidebar-text text-white">Y</a></Col>
-                        <Col xs={12} className="p-0 mx-0"><a href="#Z" className="sidebar-text text-white">Z</a></Col>
+                    <Row className="fitter px-0 py-2 mx-2 align-items-center justify-content-center">
+                        <Col xs={7} className="p-0 mx-0"><a href="#A" className="sidebar-text text-white">A</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#B" className="sidebar-text text-white">B</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#C" className="sidebar-text text-white">C</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#D" className="sidebar-text text-white">D</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#E" className="sidebar-text text-white">E</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#F" className="sidebar-text text-white">F</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#G" className="sidebar-text text-white">G</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#H" className="sidebar-text text-white">H</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#I" className="sidebar-text text-white">I</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#J" className="sidebar-text text-white">J</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#K" className="sidebar-text text-white">K</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#L" className="sidebar-text text-white">L</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#M" className="sidebar-text text-white">M</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#N" className="sidebar-text text-white">N</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#O" className="sidebar-text text-white">O</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#P" className="sidebar-text text-white">P</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#Q" className="sidebar-text text-white">Q</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#R" className="sidebar-text text-white">R</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#S" className="sidebar-text text-white">S</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#T" className="sidebar-text text-white">T</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#U" className="sidebar-text text-white">U</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#V" className="sidebar-text text-white">V</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#W" className="sidebar-text text-white">W</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#X" className="sidebar-text text-white">X</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#Y" className="sidebar-text text-white">Y</a></Col>
+                        <Col xs={7} className="p-0 mx-0"><a href="#Z" className="sidebar-text text-white">Z</a></Col>
                     </Row>
                 </div>
             </Row>

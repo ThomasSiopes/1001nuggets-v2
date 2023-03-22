@@ -14,7 +14,7 @@
 
 	{"quoteText": "If you want to be adored by your peers and have standing ovations wherever you go, live to be over ninety.", "author": "George Abbott", "topics": ["Old age"], "nuggets": ["Seniority"], "realID":"George-Abbott-0"},
 
-	{"quoteText": "The conventional definition of management is getting work done through people, but real management is developing people through work.", "author": "Agha Hasan Abedi", "topics": ["Personnel Development"], "nuggets": ["Business management"], "realID":"Agha-Hasan-Abedi-0"},
+	{"quoteText": "The conventional definition of management is getting work done through people, but real management is developing people through work.", "author": "Agha Hasan Abedi", "topics": ["Personnel development"], "nuggets": ["Business management"], "realID":"Agha-Hasan-Abedi-0"},
 
 	{"quoteText": "To get where you want to go, you can't only do what you like.", "author": "Peter Abrahams", "topics": ["Sacrifice"], "nuggets": ["Inspiration"], "realID":"Peter-Abrahams-0"},	
 	
@@ -101,6 +101,8 @@
 
 	{"quoteText": "Never play cat and mouse games if you're a mouse.", "author": "Don Addis", "topics": ["Bluffing"], "realID":"Don-Addis-0"},
 	{"quoteText": "There's no cure for the common scold.", "author": "Don Addis", "topics": ["Wordplay"], "realID":"Don-Addis-1"},
+
+	{"quoteText": "The right to bear arms is only slightly less ludicrous the right to arm bears.", "author": "Chris Addison", "topics": ["Gun control"], "realID":"Chris-Addison-1"},
 
 	{"quoteText": "I do not ask to be young again; all I want is to go on getting older.", "author": "Konrad Adenauer", "topics": ["Aging"], "realID":"Konrad-Adenauer-0"},
 	{"quoteText": "An infallible method of conciliating a tiger is to allow oneself to be devoured.", "author": "Konrad Adenauer", "topics": ["Appeasing"], "realID":"Konrad-Adenauer-1"},
@@ -208,7 +210,7 @@
 	{"quoteText": "Cancel Culture is a tool used by a cult to silence anyone who questions their orthodoxy.", "author": "Ayaan Hirsi Ali", "topics": ["Cancel culture"], "realID":"Ayaan-Hirsi-Ali-0"},
 	{"quoteText": "Critical Race Theory is an absolutist ideology.  It is racist to its core.  It weaponizes grievance narratives to seize power and wealth.  It preaches the dismantling and destruction of the United States.", "author": "Ayaan Hirsi Ali", "topics": ["CRT"], "realID":"Ayaan-Hirsi-Ali-1"},
 
-	{"quoteText": "I don't trust someone who is nice to me but rude to the waiter, because they would treat me the same way if I were in that position.", "author": "Muhammad Ali", "topics": ["Brown-nosers"], "realID":"Muhammad-Ali-0"},
+	{"quoteText": "I don't trust someone who is nice to me but rude to the waiter, because they would treat me the same way if I were in that position.", "author": "Muhammad Ali", "topics": ["Duplicity"], "realID":"Muhammad-Ali-0"},
 	{"quoteText": "The man who views the world at fifty the same as he did at twenty has wasted thirty years of his life.", "author": "Muhammad Ali", "topics": ["Closed minds"], "realID":"Muhammad-Ali-1"},
 	{"quoteText": "The will must be stronger than the skill.", "author": "Muhammad Ali", "topics": ["Determination"], "realID":"Muhammad-Ali-2"},
 	{"quoteText": "Silence is golden when you can't think of a good answer.", "author": "Muhammad Ali", "topics": ["Silence"], "realID":"Muhammad-Ali-3"},	
@@ -286,7 +288,7 @@
 
 	{"quoteText": "The facts of life are very stubborn things.", "author": "Cleveland Amory", "topics": ["Nature"], "realID":"Cleveland-Amory-0"},
 
-	{"quoteText": "Business is the art of extracting money from another man's pockets without resorting to violence.", "author": "Max Amsterdam", "topics": ["Business 101"], "realID":"Max-Amsterdam-0"},
+	{"quoteText": "Business is the art of extracting money from another man's pockets without resorting to violence.", "author": "Max Amsterdam", "topics": ["Business"], "realID":"Max-Amsterdam-0"},
 
 	{"quoteText": "Adventure is just bad planning.", "author": "Roald Amundsen", "topics": ["Adventure"], "realID":"Roald-Amundsen-0"},
 
@@ -947,6 +949,8 @@
 	{"quoteText":"\"Plain English.\" Everybody loves it, demands it - from the other fellow.","author":"Jacques Barzun","topics":["Language"],"realID":"Jacques-Barzun-0"},
 	{"quoteText":"Teaching is not a lost art, but the regard for it is a lost tradition.","author":"Jacques Barzun","topics":["Learning"],"realID":"Jacques-Barzun-1"},
 
+	{"quoteText":"The divorced were never truly married.","author":"J. Lendall Basford","topics":["Divorce"],"realID":"J--Lendall-Basford-0"},
+
 	{"quoteText":"If you want your kids to listen to you, don't yell at them. Whisper. Make them lean in. My kids taught me that. And I do it with adults now.","author":"Mario Batali","topics":["Children"],"realID":"Mario-Batali-0"},
 
 	{"quoteText":"Research is the process of going up alleys to see if they are blind.","author":"Marston Bates","topics":["Research"],"realID":"Marston-Bates-0"},
@@ -1000,6 +1004,7 @@
 	{"quoteText":"The role of a retired person is no longer to possess one.","author":"Simone de Beauvoir","topics":["Retirement"],"realID":"Simone-de-Beauvoir-6"},
 	{"quoteText":"One is not born a woman - one becomes one.","author":"Simone de Beauvoir","topics":["Womanhood"],"realID":"Simone-de-Beauvoir-7"},
 	{"quoteText":"To catch a husband is an art; to hold him is a job.","author":"Simone de Beauvoir","topics":["Husbands"],"realID":"Simone-de-Beauvoir-8"},
+	{"quoteText":"The oppressor would not be so strong if he do not have accomplices among the oppressed.","author":"Simone de Beauvoir","topics":["Sheep"],"realID":"Simone-de-Beauvoir-9"},
 
 	{"quoteText":"He did not seem to care which way he travelled providing he was in the driver's seat.","author":"Maxwell Aitken Beaverbrook","topics":["Megalomaniacs"],"realID":"Maxwell-Aitken-Beaverbrook-0"},
 
@@ -1011,8 +1016,8 @@
 	{"quoteText":"You got to have an enemy to fight . . . and you must silence all dissenting voices. That what Hitler did.","author":"Glenn Beck","topics":["Censorship"],"realID":"Glenn-Beck-1"},
 	{"quoteText":"When you choose the path, you choose the destination.","author":"Glenn Beck","topics":["Direction"],"realID":"Glenn-Beck-2"},
 	{"quoteText":"What is the point of competing for a trophy if everyone gets a trophy.","author":"Glenn Beck","topics":["\"Equalizing\""],"realID":"Glenn-Beck-3"},
-	{"quoteText":"To restore America we need less Marx and more Madison.","author":"Glenn Beck","topics":["From the right"],"realID":"Glenn-Beck-4"},
-	{"quoteText":"Gun-free zones don't deter criminals - they help them by providing a guarantee that they will not face any armed resistance.","author":"Glenn Beck","topics":["From the right"],"realID":"Glenn-Beck-5"},
+	{"quoteText":"To restore America we need less Marx and more Madison.","author":"Glenn Beck","topics":[""],"realID":"Glenn-Beck-4"},
+	{"quoteText":"Gun-free zones don't deter criminals - they help them by providing a guarantee that they will not face any armed resistance.","author":"Glenn Beck","topics":["Gun control"],"realID":"Glenn-Beck-5"},
 	{"quoteText":"If you don't find a leader, perhaps it is because you were meant to lead.","author":"Glenn Beck","topics":["Leadership"],"realID":"Glenn-Beck-6"},
 	{"quoteText":"Political correctness doesn't change us, it shuts us up.","author":"Glenn Beck","topics":["Political correctness"],"realID":"Glenn-Beck-7"},
 	{"quoteText":"Sometimes the hardest part of the journey is believing you're worthy of the trip.","author":"Glenn Beck","topics":["Self-esteem"],"realID":"Glenn-Beck-8"},
@@ -1078,8 +1083,6 @@
 	{"quoteText":"When people go to work, they shouldn't have to leave their hearts at home.","author":"Betty Bender","topics":["The Rat Race"],"realID":"Betty-Bender-1"},
 
 	{"quoteText":"Is truth determined by a majority vote, only for a new \"truth\" to be \"discovered\" by a new majority tomorrow?","author":"Pope Benedict XVI","topics":["Public opinion"],"realID":"Pope-Benedict-XVI-0"},
-
-	{"quoteText":"Eagles may soar, but weasels don't get sucked into jet engines.","author":"John Benfield","topics":["Blue collars"],"realID":"John-Benfield-0"},
 
 	{"quoteText":"When you have a Ph.D. you call them hypotheses, not guesses.","author":"Gregory Benford","topics":["PhDs"],"realID":"Gregory-Benford-0"},
 	
@@ -1224,7 +1227,7 @@
 	{"quoteText":"Black cities are being kept impoverished by Democrats to use them for votes.","author":"Claston Bernard","topics":["\"Blue dots\""],"realID":"Claston-Bernard-0"},
 	{"quoteText":"Vote your values, vote your interest and not your color.","author":"Claston Bernard","topics":["Identity politics"],"realID":"Claston-Bernard-1"},
 	{"quoteText":"Fear is not a virtue.","author":"Claston Bernard","topics":["Scaredy cats"],"realID":"Claston-Bernard-2"},
-	{"quoteText":"You can always tell a person led by hatred. They are controlled by propaganda and are too lazy to seek out the facts.","author":"Claston Bernard","topics":["Zombies"],"realID":"Claston-Bernard-3"},
+	{"quoteText":"You can always tell a person led by hatred. They are controlled by propaganda and are too lazy to seek out the facts.","author":"Claston Bernard","topics":["Toolbags"],"realID":"Claston-Bernard-3"},
 
 	{"quoteText":"Give someone half a page in a newspaper and they think they own the world.","author":"Jeffrey Bernard","topics":["Editorial & Commentary"],"realID":"Jeffrey-Bernard-0"},
 
@@ -1300,9 +1303,9 @@
 	{"quoteText":"For every prohibition you create you also create an underground.","author":"Jello Biafra","topics":["Legislation"],"realID":"Jello-Biafra-0"},
 	{"quoteText":"Don't hate the media, become the media.","author":"Jello Biafra","topics":["Mass communication"],"realID":"Jello-Biafra-1"},
 
-	{"quoteText":"Blessed are those who can give without remembering and take without forgetting.","author":"Elizabeth Asquith Bibesco","topics":["Benevolence"],"realID":"Elizabeth-Asquith-Bibesco-0"},
-	{"quoteText":"To be on a pedestal is to be in a corner.","author":"Elizabeth Bibesco","topics":["Fame"],"realID":"Elizabeth-Bibesco-0"},
-	{"quoteText":"Of what help is anyone who can only be approached with the right word?","author":"Elizabeth Bibesco","topics":["Snowflakes"],"realID":"Elizabeth-Bibesco-1"},
+	{"quoteText":"Blessed are those who can give without remembering and take without forgetting.","author":"Elizabeth Bibesco","topics":["Benevolence"],"realID":"Elizabeth-Bibesco-0"},
+	{"quoteText":"To be on a pedestal is to be in a corner.","author":"Elizabeth Bibesco","topics":["Fame"],"realID":"Elizabeth-Bibesco-1"},
+	{"quoteText":"Of what help is anyone who can only be approached with the right word?","author":"Elizabeth Bibesco","topics":["Snowflakes"],"realID":"Elizabeth-Bibesco-2"},
 
 	{"quoteText":"Obeying orders just to obey is the mark of a person who has ceased to think.","author":"Ilsa J. Bick","topics":["Obedience"],"realID":"Ilsa-J--Bick-0"},
 
@@ -1478,7 +1481,7 @@
 
 	{"quoteText":"It is only possible to live happily ever after on a day-to-day basis.","author":"Margaret Bonnano","topics":["Marriage"],"realID":"Margaret-Bonnano-0"},
 
-	{"quoteText":"Of all the riches that we hug, of all the pleasures we enjoy, we can carry no more out of this world than out of a dream.","author":"John S. Bonnell","topics":["Can't take it with you"],"realID":"John-S--Bonnell-0"},
+	{"quoteText":"Of all the riches that we hug, of all the pleasures we enjoy, we can carry no more out of this world than out of a dream.","author":"John S. Bonnell","topics":["Materialism"],"realID":"John-S--Bonnell-0"},
 
 	{"quoteText":"There is never any justification for things being complex when they could be simple.","author":"Edward de Bono","topics":["Complexity"],"realID":"Edward-de-Bono-0"},
 	{"quoteText":"Creativity involves breaking out of established patterns in order to look at things in a different way.","author":"Edward de Bono","topics":["Creativity"],"realID":"Edward-de-Bono-1"},
@@ -2488,7 +2491,7 @@
 	{"quoteText":"I don't think my wife likes me very much, when I had a heart attack she wrote for an ambulance.","author":"Frank Carson","topics":["Wives"],"realID":"Frank-Carson-1"},
 	
 	{"quoteText":"I know a man who gave up smoking, drinking, sex, and rich food. He was healthy right up to the day he killed himself.","author":"Johnny Carson","topics":["Abstinence"],"realID":"Johnny-Carson-0"},
-	{"quoteText":"People will pay more to be entertained than educated.","author":"Johnny Carson","topics":["Bread & Circuses"],"realID":"Johnny-Carson-1"},
+	{"quoteText":"People will pay more to be entertained than educated.","author":"Johnny Carson","topics":["Entertainment"],"realID":"Johnny-Carson-1"},
 	{"quoteText":"If life were fair, Elvis would be alive and all the impersonators would be dead.","author":"Johnny Carson","topics":["M/F"],"realID":"Johnny-Carson-2"},
 	{"quoteText":"The only thing money gives you is the freedom of not worrying about money.","author":"Johnny Carson","topics":["Money"],"realID":"Johnny-Carson-3"},
 	{"quoteText":"Never use a big word when a little filthy one will do.","author":"Johnny Carson","topics":["Wordplay"],"realID":"Johnny-Carson-4"},
@@ -2643,7 +2646,7 @@
 	{"quoteText":"In action, be primitive; in foresight, a strategist.","author":"René Char","topics":["Foresight"],"realID":"Ren--Char-1"},
 	
 	{"quoteText":"We are not human beings having a spiritual experience; we are spiritual beings having a human experience.","author":"Pierre Teilhard de Chardin","topics":["Life"],"realID":"Pierre-Teilhard-de-Chardin-0"},
-	{"quoteText":"It is our duty as men and women to proceed as though the limits of our capabilities do not exist.","author":"Pierre Teilhard de Chardin","topics":["Capabilities"],"realID":"Pierre-Teilhard-de-Chardin-1"},
+	{"quoteText":"It is our duty as men and women to proceed as though the limits of our capabilities do not exist.","author":"Pierre Teilhard de Chardin","topics":["Ability"],"realID":"Pierre-Teilhard-de-Chardin-1"},
 	
 	{"quoteText":"Nature does not like males; they are meant to kill each other.","author":"Jacques Chardonne","topics":["Men"],"realID":"Jacques-Chardonne-0"},
 	
@@ -2721,6 +2724,7 @@
 	{"quoteText":"The modern world is filled with men who hold dogmas so strongly that they do not even know that they are dogmas.","author":"G. K. Chesterton","topics":["Washed brains"],"realID":"G--K--Chesterton-35"},
 	{"quoteText":"If a thing is worth doing, it is worth doing badly.","author":"G. K. Chesterton","topics":["Wordplay"],"realID":"G--K--Chesterton-36"},
 	{"quoteText":"Psychoanalysis is confession without absolution.","author":"G. K. Chesterton","topics":["Psychology"],"realID":"G--K--Chesterton-37"},
+	{"quoteText":"I regard golf as an expensive way of playing marbles.","author":"G. K. Chesterton","topics":["Golf"],"realID":"G--K--Chesterton-38"},
 	
 	{"quoteText":"If you wait for the perfect moment when all is safe and assured, it may never arrive.","author":"Maurice Chevalier","topics":["Deferring"],"realID":"Maurice-Chevalier-0"},
 	{"quoteText":"A comfortable old age is the reward of a well-spent youth.","author":"Maurice Chevalier","topics":["Longevity"],"realID":"Maurice-Chevalier-1"},
@@ -2924,7 +2928,8 @@
 	{"quoteText":"You must underwrite the honest mistakes of your subordinates if you wish to develop their initiative and experience.","author":"Gen. Bruce Clarke","topics":["Management 101"],"realID":"Gen--Bruce-Clarke-6"},
 	
 	{"quoteText":"I look at the progressive policies that have marginalized black dads. They push them to the side and say, \"You're not needed.\" Uncle Sam is going to be the dad: he's going to provide for the kids; he's going to feed the kids.","author":"David A. Clarke, Jr.","topics":["Dads matter"],"realID":"David-A--Clarke--Jr--0"},
-	{"quoteText":"The Democrats take the black vote for granted so they don't have to appeal to anything.","author":"David A. Clarke, Jr.","topics":["Identity politics"],"realID":"David-A--Clarke--Jr--1"},
+	{"quoteText":"The armed citizen made America free, and the armed citizen will keep America free.","author":"David A. Clarke, Jr.","topics":["Gun control"],"realID":"David-A--Clarke--Jr--1"},
+	{"quoteText":"The Democrats take the black vote for granted so they don't have to appeal to anything.","author":"David A. Clarke, Jr.","topics":["Identity politics"],"realID":"David-A--Clarke--Jr--2"},
 	
 	{"quoteText":"Whoever is in control of the hell in your life, is your devil.","author":"John Henrik Clarke","topics":["Enemies"],"realID":"John-Henrik-Clarke-0"},
 	{"quoteText":"The assassin killed the dreamer but not the dream.","author":"John Henrik Clarke","topics":["Assassination"],"realID":"John-Henrik-Clarke-1"},
@@ -3093,6 +3098,7 @@
 	{"quoteText":"When I hear a report on the MSM and they say \"unnamed sources,\" they might as well say instead the next 20 seconds is a fictional story.","author":"Miles Commodore","topics":["Straw men"],"realID":"Miles-Commodore-8"},
 	{"quoteText":"The absence of good dads is a larger problem for Black Americans than bad White cops.","author":"Miles Commodore","topics":["Dads matter"],"realID":"Miles-Commodore-9"},
 	{"quoteText":"If you see someone with an American flag on their shirt, in their yard, or flying from their vehicle, you can almost be certain they are not a Democrat.","author":"Miles Commodore","topics":["America-bashers"],"realID":"Miles-Commodore-10"},
+	{"quoteText":"The insane gun violence in Chicago is caused by poor gun laws in Indiana?  Who knew?  If that's true, why isn't gun violence higher in Indiana?","author":"Miles Commodore","topics":["Gun control"],"realID":"Miles-Commodore-11"},
 	
 	{"quoteText":"Nothing ever goes away.","author":"Barry Commoner","topics":["Avoidance"],"realID":"Barry-Commoner-0"},
 	
@@ -3277,7 +3283,7 @@
 	{"quoteText":"Little progress can be made by merely attempting to repress what is evil; our great hope lies in developing what is good.","author":"Calvin Coolidge","topics":["Quality"],"realID":"Calvin-Coolidge-10"},
 	{"quoteText":"If you don't say anything, you won't be called on to repeat it.","author":"Calvin Coolidge","topics":["Shhh"],"realID":"Calvin-Coolidge-11"},
 	{"quoteText":"I have never been hurt by anything I didn't say.","author":"Calvin Coolidge","topics":["Silence"],"realID":"Calvin-Coolidge-12"},
-	{"quoteText":"I sometimes wish that people would put a little more emphasis upon the observance of the law than they do upon its enforcement.","author":"Calvin Coolidge","topics":["From the right"],"realID":"Calvin-Coolidge-13"},
+	{"quoteText":"I sometimes wish that people would put a little more emphasis upon the observance of the law than they do upon its enforcement.","author":"Calvin Coolidge","topics":["Law & Order"],"realID":"Calvin-Coolidge-13"},
 	{"quoteText":"If you see ten troubles coming down the road, you can be sure that nine will run into the ditch before they reach you.","author":"Calvin Coolidge","topics":["Troubles"],"realID":"Calvin-Coolidge-14"},
 	
 	{"quoteText":"Life affords no greater responsibility, no greater privilege, than the raising of the next generation.","author":"C. Everett Coop","topics":["Posterity"],"realID":"C--Everett-Coop-0"},
@@ -3938,6 +3944,7 @@
 	
 	{"quoteText":"Isn't it messed up how you can guess, with 90% accuracy, someone's political stance based on whether they're proud to wave the flag of this country?","author":"Jordan Dixon-Hamilton","topics":["America-bashers"],"realID":"Jordan-Dixon-Hamilton-0"},
 	{"quoteText":"When a white person kills a black person it's automatically a hate crime, yet when a black person kills a white person it's merely a \"random attack.\"","author":"Jordan Dixon-Hamilton","topics":["Neoracism"],"realID":"Jordan-Dixon-Hamilton-1"},
+	{"quoteText":"The Democrats want to steal your elections and then take your guns so you can't do anything about it.","author":"Jordan Dixon-Hamilton","topics":["Gun control"],"realID":"Jordan-Dixon-Hamilton-2"},
 	
 	{"quoteText":"You know how dumb the average guy is? Well, by definition, half of them are even dumber than that.","author":"J. R. Dobbs","topics":["Ignorance"],"realID":"J--R--Dobbs-0"},
 	
@@ -3968,7 +3975,7 @@
 	
 	{"quoteText":"The only effective answer to organized greed is organized labor.","author":"Thomas Donahue","topics":["Unions"],"realID":"Thomas-Donahue-0"},
 	
-	{"quoteText":"I'd rather work for someone who's good at their job but doesn't like me, than someone who likes me but is a ninny.","author":"Sam Donaldson","topics":["Brown-nosers"],"realID":"Sam-Donaldson-0"},
+	{"quoteText":"I'd rather work for someone who's good at their job but doesn't like me, than someone who likes me but is a ninny.","author":"Sam Donaldson","topics":["Bosses"],"realID":"Sam-Donaldson-0"},
 	{"quoteText":"The questions don't do the damage. Only the answers do.","author":"Sam Donaldson","topics":["Explanation"],"realID":"Sam-Donaldson-1"},
 	
 	{"quoteText":"Fashion's job is to combat the tedium of routine existence.","author":"Carrie Donovan","topics":["Fashion"],"realID":"Carrie-Donovan-0"},
@@ -4154,6 +4161,7 @@
 	{"quoteText":"People hate the rich so much, yet they play the lottery every day. Envy is a disease.","author":"Xaviaer DuRousseau","topics":["Covetousness"],"realID":"Xaviaer-DuRousseau-1"},
 	{"quoteText":"Your comfort zone is the graveyard of your dreams.","author":"Xaviaer DuRousseau","topics":["Security"],"realID":"Xaviaer-DuRousseau-2"},
 	{"quoteText":"By continuing to lower the standards for people of color, you are literally stripping away their push/opportunity to elevate. That is oppression.","author":"Xaviaer DuRousseau","topics":["Bigotry of low expectations"],"realID":"Xaviaer-DuRousseau-3"},
+	{"quoteText":"Simple logic: keeping guns in the hands of good people will make the bad people with guns a lot less bold.","author":"Xaviaer DuRousseau","topics":["Gun control"],"realID":"Xaviaer-DuRousseau-4"},
 	
 	{"quoteText":"No one can go on being a rebel too long without turning into an autocrat.","author":"Lawrence Durrell","topics":["Out with the old . . ."],"realID":"Lawrence-Durrell-0"},
 	
@@ -4365,7 +4373,7 @@
 	{"quoteText":"Critical Race Theory means those who do not consider America \"systemically racist\" can be theoretically criticized as racist.","author":"Larry Elder","topics":["CRT"],"realID":"Larry-Elder-0"},
 	{"quoteText":"Doing what you want to do is easy. Doing what you have to do is hard.","author":"Larry Elder","topics":["Duty"],"realID":"Larry-Elder-1"},
 	{"quoteText":"Most people work for the private sector, which cannot exist without profit.","author":"Larry Elder","topics":["Economics 101"],"realID":"Larry-Elder-2"},
-	{"quoteText":"Good motives aside, white condescension does more damage than good. White condescension says to a black child, \"The rules used by other ethnic groups don't apply to you. Forget about work hard, get an education, possess good values. No, for you, we'll alter the rules by lowering the standards and expecting less.\" Expect less, get less.","author":"Larry Elder","topics":["Bigotry of low expectations"],"realID":"Larry-Elder-3"},
+	{"quoteText":"White condescension says to a black child, \"The rules used by other ethnic groups don't apply to you. Forget about work hard, get an education, possess good values. No, for you, we'll alter the rules by lowering the standards and expecting less.\" Expect less, get less.","author":"Larry Elder","topics":["Bigotry of low expectations"],"realID":"Larry-Elder-3"},
 	{"quoteText":"I wrote a column this week in which I refer to Thomas Sowell about the fact that he was once on the left. And when I asked him what changed him, he said \"evidence.\"","author":"Larry Elder","topics":["Thomas Sowell"],"realID":"Larry-Elder-4"},
 	{"quoteText":"The number one problem facing this country is the absence of involved, responsible fathers.","author":"Larry Elder","topics":["Dads matter"],"realID":"Larry-Elder-5"},
 	
@@ -4727,7 +4735,7 @@
 	
 	{"quoteText":"We paid the price to get here. We'll pay the price to stay.","author":"Eddie Fitzpatrick","topics":["Slogans, Actual"],"realID":"Eddie-Fitzpatrick-0"},
 	
-	{"quoteText":"If people talk behind your back, it only means you're two steps ahead","author":"Fannie Flagg","topics":["Back-biting"],"realID":"Fannie-Flagg-0"},
+	{"quoteText":"If people talk behind your back, it only means you're two steps ahead.","author":"Fannie Flagg","topics":["Back-biting"],"realID":"Fannie-Flagg-0"},
 	
 	{"quoteText":"There's a saying among prospectors: \"Go out looking for one thing, and that's all you'll ever find.\"","author":"Robert J. Flaherty","topics":["Confirmation bias"],"realID":"Robert-J--Flaherty-0"},
 	
@@ -4750,6 +4758,8 @@
 	
 	{"quoteText":"No study is possible on the battlefield; one does there simply what one can in order to apply what one knows.","author":"Ferdinand Foch","topics":["Immersion"],"realID":"Ferdinand-Foch-0"},
 	{"quoteText":"Inaction leads to surprise, and surprise to defeat, which is after all, only a form of surprise.","author":"Ferdinand Foch","topics":["Inaction"],"realID":"Ferdinand-Foch-1"},
+
+	{"quoteText":"It would be refreshing to have a politician try to defend guns without any reference to the Second Amendment, but on the merits of guns.","author":"Jonathan Safran Foer","topics":["Gun control"],"realID":"Jonathan-Safran-Foer-1"},
 	
 	{"quoteText":"Mountain syndrome . . . when you're on the mountain you don't see it.","author":"Pierre Foglia","topics":["Hiding in plain sight"],"realID":"Pierre-Foglia-0"},
 	
@@ -4817,51 +4827,51 @@
 	{"quoteText":"Money is really only important if you don't have any.","author":"Harrison Ford","topics":["Money"],"realID":"Harrison-Ford-1"},
 	{"quoteText":"You know you're getting old when all the names in your black book have M. D. after them.","author":"Harrison Ford","topics":["Old age"],"realID":"Harrison-Ford-2"},
 	
-	{"quoteText":"One of the greatest discoveries a man makes, one of his greatest surprises, is to find he can do what he was afraid he couldn't do.","author":"Henry Ford","topics":["Apprehension, Disproven"],"realID":"Henry-Ford-0"},
-	{"quoteText":"Whether you think you can or whether you think you can't, you're right!","author":"Henry Ford","topics":["Attitude"],"realID":"Henry-Ford-1"},
-	{"quoteText":"One who fears failure limits his activities.","author":"Henry Ford","topics":["Atychiphobia"],"realID":"Henry-Ford-2"},
-	{"quoteText":"Most people spend more time and energy going around problems than in trying to solve them.","author":"Henry Ford","topics":["Dodging"],"realID":"Henry-Ford-3"},
-	{"quoteText":"To do for the world more than the world does for you - that is success.","author":"Henry Ford","topics":["Benevolence"],"realID":"Henry-Ford-4"},
-	{"quoteText":"There is one rule for industrialists and that is: Make the best quality of goods possible at the lowest cost possible, paying the highest wages possible.","author":"Henry Ford","topics":["Business 101"],"realID":"Henry-Ford-5"},
-	{"quoteText":"Capital punishment is as fundamentally wrong as a cure for crime as charity is wrong as a cure for poverty.","author":"Henry Ford","topics":["Capital punishment"],"realID":"Henry-Ford-6"},
-	{"quoteText":"Time and money spent in helping men to do more for themselves is far better than mere giving.","author":"Henry Ford","topics":["Charity"],"realID":"Henry-Ford-7"},
-	{"quoteText":"The only thing you can give a man without hurting him is an opportunity.","author":"Henry Ford","topics":["Opportunity"],"realID":"Henry-Ford-8"},
-	{"quoteText":"It is not the employer who pays the wages . . . It is the customer who pays the wages.","author":"Henry Ford","topics":["Consumers"],"realID":"Henry-Ford-9"},
-	{"quoteText":"A business absolutely devoted to service will have only one worry about profits. They will be embarrassingly large.","author":"Henry Ford","topics":["Customer service"],"realID":"Henry-Ford-10"},
-	{"quoteText":"The one aim of international financiers is a world control by the creation of inextinguishable debts.","author":"Henry Ford","topics":["Debt"],"realID":"Henry-Ford-11"},
-	{"quoteText":"Why should I clutter my mind with general information when I have men around me who can supply any knowledge I need?","author":"Henry Ford","topics":["Delegating"],"realID":"Henry-Ford-12"},
-	{"quoteText":"Any man who thinks he can be happy and prosperous by letting the government take care of him better take a closer look at the American Indian.","author":"Henry Ford","topics":["Dependency"],"realID":"Henry-Ford-13"},
-	{"quoteText":"Happy are the kings whose thrones are founded on their people's hearts.","author":"Henry Ford","topics":["Employee relations"],"realID":"Henry-Ford-14"},
-	{"quoteText":"Nothing is particularly hard if you divide it into small jobs.","author":"Henry Ford","topics":["Efficiency"],"realID":"Henry-Ford-15"},
-	{"quoteText":"Sometimes it is the men \"higher up\" who most need revamping - and they themselves are the last to recognize it.","author":"Henry Ford","topics":["Executives"],"realID":"Henry-Ford-16"},
-	{"quoteText":"You take all the experience and judgment of men over fifty out of the world and there wouldn't be enough left to run it.","author":"Henry Ford","topics":["Age & Wisdom"],"realID":"Henry-Ford-17"},
-	{"quoteText":"Most people get ahead during the time that others waste.","author":"Henry Ford","topics":["Focus"],"realID":"Henry-Ford-18"},
-	{"quoteText":"When I can't handle events, I let them handle themselves.","author":"Henry Ford","topics":["Futility"],"realID":"Henry-Ford-19"},
-	{"quoteText":"Everybody wants to be someplace he ain't. As soon as he gets there, he wants to go right back","author":"Henry Ford","topics":["Grass is always greener . . ."],"realID":"Henry-Ford-20"},
-	{"quoteText":"Wealth, like happiness, is never attained when sought after directly. It comes as a by-product of providing a useful service.","author":"Henry Ford","topics":["Purpose"],"realID":"Henry-Ford-21"},
-	{"quoteText":"Nobody can think straight who does not work. Idleness warps the mind.","author":"Henry Ford","topics":["Idleness"],"realID":"Henry-Ford-22"},
-	{"quoteText":"You can't build a reputation on what you are going to do.","author":"Henry Ford","topics":["\"To do\" lists"],"realID":"Henry-Ford-23"},
-	{"quoteText":"There will never be a system invented which will do away with the necessity for work.","author":"Henry Ford","topics":["Labor"],"realID":"Henry-Ford-24"},
-	{"quoteText":"The question \"Who ought to be boss?\" is like asking \"Who ought to be the tenor in the quartet?\" Obviously, the man who can sing tenor.","author":"Henry Ford","topics":["Bosses"],"realID":"Henry-Ford-25"},
-	{"quoteText":"Money doesn't change men, it merely unmasks them.","author":"Henry Ford","topics":["Money"],"realID":"Henry-Ford-26"},
-	{"quoteText":"The simple, rude and primitive force of perseverance is the uncrowned queen of the world of will.","author":"Henry Ford","topics":["Perseverance"],"realID":"Henry-Ford-27"},
-	{"quoteText":"One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn't do.","author":"Henry Ford","topics":["Personnel development"],"realID":"Henry-Ford-28"},
-	{"quoteText":"Anyone who stops learning is old, whether at twenty or eighty.","author":"Henry Ford","topics":["Set minds"],"realID":"Henry-Ford-29"},
-	{"quoteText":"There is no man living who isn't capable of doing more than he thinks he can do.","author":"Henry Ford","topics":["Potential"],"realID":"Henry-Ford-30"},
-	{"quoteText":"Before everything else, getting ready is the secret of success.","author":"Henry Ford","topics":["Preparation"],"realID":"Henry-Ford-31"},
-	{"quoteText":"There are no big problems, there are just a lot of little problems.","author":"Henry Ford","topics":["Problems"],"realID":"Henry-Ford-32"},
-	{"quoteText":"Quality means doing it right when no one is looking.","author":"Henry Ford","topics":["Professionalism"],"realID":"Henry-Ford-33"},
-	{"quoteText":"If I had asked people what they wanted, they would have said faster horses.","author":"Henry Ford","topics":["Public opinion"],"realID":"Henry-Ford-34"},
-	{"quoteText":"Paying attention to simple little things that most men neglect makes a few men rich.","author":"Henry Ford","topics":["Excellence"],"realID":"Henry-Ford-35"},
-	{"quoteText":"A market is never saturated with a good product, but it is very quickly saturated with a bad one.","author":"Henry Ford","topics":["Quality"],"realID":"Henry-Ford-36"},
-	{"quoteText":"Time waste differs from material waste in that there can be no salvage.","author":"Henry Ford","topics":["Idleness"],"realID":"Henry-Ford-37"},
-	{"quoteText":"If you think of standardization as the best that you know today, but which is to be improved tomorrow; you get somewhere.","author":"Henry Ford","topics":["Standardization"],"realID":"Henry-Ford-38"},
-	{"quoteText":"If everyone is moving forward together, then success takes care of itself.","author":"Henry Ford","topics":["Teamwork"],"realID":"Henry-Ford-39"},
-	{"quoteText":"It has been my observation that most people who get ahead do so during the time that other people waste.","author":"Henry Ford","topics":["Time management"],"realID":"Henry-Ford-40"},
-	{"quoteText":"Failure is simply the opportunity to begin again, this time more intelligently.","author":"Henry Ford","topics":["Trial & Error"],"realID":"Henry-Ford-41"},
-	{"quoteText":"Even a mistake may turn out to be the one thing necessary to a worthwhile achievement.","author":"Henry Ford","topics":["Trial & Error"],"realID":"Henry-Ford-42"},
-	{"quoteText":"You can't learn in school what the world is going to do next year.","author":"Henry Ford","topics":["Vision"],"realID":"Henry-Ford-43"},
-	{"quoteText":"I am looking for a lot of men who have an infinite capacity to not know what can't be done.","author":"Henry Ford","topics":["Visionaries"],"realID":"Henry-Ford-44"},
+
+	{"quoteText":"Whether you think you can or whether you think you can't, you're right!","author":"Henry Ford","topics":["Attitude"],"realID":"Henry-Ford-0"},
+	{"quoteText":"One who fears failure limits his activities.","author":"Henry Ford","topics":["Atychiphobia"],"realID":"Henry-Ford-1"},
+	{"quoteText":"Most people spend more time and energy going around problems than in trying to solve them.","author":"Henry Ford","topics":["Dodging"],"realID":"Henry-Ford-2"},
+	{"quoteText":"To do for the world more than the world does for you - that is success.","author":"Henry Ford","topics":["Benevolence"],"realID":"Henry-Ford-3"},
+	{"quoteText":"There is one rule for industrialists and that is: Make the best quality of goods possible at the lowest cost possible, paying the highest wages possible.","author":"Henry Ford","topics":["Business 101"],"realID":"Henry-Ford-4"},
+	{"quoteText":"Capital punishment is as fundamentally wrong as a cure for crime as charity is wrong as a cure for poverty.","author":"Henry Ford","topics":["Capital punishment"],"realID":"Henry-Ford-5"},
+	{"quoteText":"Time and money spent in helping men to do more for themselves is far better than mere giving.","author":"Henry Ford","topics":["Charity"],"realID":"Henry-Ford-6"},
+	{"quoteText":"The only thing you can give a man without hurting him is an opportunity.","author":"Henry Ford","topics":["Opportunity"],"realID":"Henry-Ford-7"},
+	{"quoteText":"It is not the employer who pays the wages . . . It is the customer who pays the wages.","author":"Henry Ford","topics":["Consumers"],"realID":"Henry-Ford-8"},
+	{"quoteText":"A business absolutely devoted to service will have only one worry about profits. They will be embarrassingly large.","author":"Henry Ford","topics":["Customer service"],"realID":"Henry-Ford-9"},
+	{"quoteText":"The one aim of international financiers is a world control by the creation of inextinguishable debts.","author":"Henry Ford","topics":["Debt"],"realID":"Henry-Ford-10"},
+	{"quoteText":"Why should I clutter my mind with general information when I have men around me who can supply any knowledge I need?","author":"Henry Ford","topics":["Delegating"],"realID":"Henry-Ford-11"},
+	{"quoteText":"Any man who thinks he can be happy and prosperous by letting the government take care of him better take a closer look at the American Indian.","author":"Henry Ford","topics":["Dependency"],"realID":"Henry-Ford-12"},
+	{"quoteText":"Happy are the kings whose thrones are founded on their people's hearts.","author":"Henry Ford","topics":["Employee relations"],"realID":"Henry-Ford-13"},
+	{"quoteText":"Nothing is particularly hard if you divide it into small jobs.","author":"Henry Ford","topics":["Efficiency"],"realID":"Henry-Ford-14"},
+	{"quoteText":"Sometimes it is the men \"higher up\" who most need revamping - and they themselves are the last to recognize it.","author":"Henry Ford","topics":["Executives"],"realID":"Henry-Ford-15"},
+	{"quoteText":"You take all the experience and judgment of men over fifty out of the world and there wouldn't be enough left to run it.","author":"Henry Ford","topics":["Age & Wisdom"],"realID":"Henry-Ford-16"},
+	{"quoteText":"Most people get ahead during the time that others waste.","author":"Henry Ford","topics":["Focus"],"realID":"Henry-Ford-17"},
+	{"quoteText":"When I can't handle events, I let them handle themselves.","author":"Henry Ford","topics":["Futility"],"realID":"Henry-Ford-18"},
+	{"quoteText":"Everybody wants to be someplace he ain't. As soon as he gets there, he wants to go right back","author":"Henry Ford","topics":["Grass is always greener . . ."],"realID":"Henry-Ford-19"},
+	{"quoteText":"Wealth, like happiness, is never attained when sought after directly. It comes as a by-product of providing a useful service.","author":"Henry Ford","topics":["Purpose"],"realID":"Henry-Ford-20"},
+	{"quoteText":"Nobody can think straight who does not work. Idleness warps the mind.","author":"Henry Ford","topics":["Idleness"],"realID":"Henry-Ford-21"},
+	{"quoteText":"You can't build a reputation on what you are going to do.","author":"Henry Ford","topics":["\"To do\" lists"],"realID":"Henry-Ford-22"},
+	{"quoteText":"There will never be a system invented which will do away with the necessity for work.","author":"Henry Ford","topics":["Labor"],"realID":"Henry-Ford-23"},
+	{"quoteText":"The question \"Who ought to be boss?\" is like asking \"Who ought to be the tenor in the quartet?\" Obviously, the man who can sing tenor.","author":"Henry Ford","topics":["Bosses"],"realID":"Henry-Ford-24"},
+	{"quoteText":"Money doesn't change men, it merely unmasks them.","author":"Henry Ford","topics":["Money"],"realID":"Henry-Ford-25"},
+	{"quoteText":"The simple, rude and primitive force of perseverance is the uncrowned queen of the world of will.","author":"Henry Ford","topics":["Perseverance"],"realID":"Henry-Ford-26"},
+	{"quoteText":"One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn't do.","author":"Henry Ford","topics":["Personnel development"],"realID":"Henry-Ford-27"},
+	{"quoteText":"Anyone who stops learning is old, whether at twenty or eighty.","author":"Henry Ford","topics":["Set minds"],"realID":"Henry-Ford-28"},
+	{"quoteText":"There is no man living who isn't capable of doing more than he thinks he can do.","author":"Henry Ford","topics":["Potential"],"realID":"Henry-Ford-29"},
+	{"quoteText":"Before everything else, getting ready is the secret of success.","author":"Henry Ford","topics":["Preparation"],"realID":"Henry-Ford-30"},
+	{"quoteText":"There are no big problems, there are just a lot of little problems.","author":"Henry Ford","topics":["Problems"],"realID":"Henry-Ford-31"},
+	{"quoteText":"Quality means doing it right when no one is looking.","author":"Henry Ford","topics":["Professionalism"],"realID":"Henry-Ford-32"},
+	{"quoteText":"If I had asked people what they wanted, they would have said faster horses.","author":"Henry Ford","topics":["Public opinion"],"realID":"Henry-Ford-33"},
+	{"quoteText":"Paying attention to simple little things that most men neglect makes a few men rich.","author":"Henry Ford","topics":["Excellence"],"realID":"Henry-Ford-34"},
+	{"quoteText":"A market is never saturated with a good product, but it is very quickly saturated with a bad one.","author":"Henry Ford","topics":["Quality"],"realID":"Henry-Ford-35"},
+	{"quoteText":"Time waste differs from material waste in that there can be no salvage.","author":"Henry Ford","topics":["Idleness"],"realID":"Henry-Ford-36"},
+	{"quoteText":"If you think of standardization as the best that you know today, but which is to be improved tomorrow; you get somewhere.","author":"Henry Ford","topics":["Standardization"],"realID":"Henry-Ford-37"},
+	{"quoteText":"If everyone is moving forward together, then success takes care of itself.","author":"Henry Ford","topics":["Teamwork"],"realID":"Henry-Ford-38"},
+	{"quoteText":"It has been my observation that most people who get ahead do so during the time that other people waste.","author":"Henry Ford","topics":["Time management"],"realID":"Henry-Ford-39"},
+	{"quoteText":"Failure is simply the opportunity to begin again, this time more intelligently.","author":"Henry Ford","topics":["Trial & Error"],"realID":"Henry-Ford-40"},
+	{"quoteText":"Even a mistake may turn out to be the one thing necessary to a worthwhile achievement.","author":"Henry Ford","topics":["Trial & Error"],"realID":"Henry-Ford-41"},
+	{"quoteText":"You can't learn in school what the world is going to do next year.","author":"Henry Ford","topics":["Vision"],"realID":"Henry-Ford-42"},
+	{"quoteText":"I am looking for a lot of men who have an infinite capacity to not know what can't be done.","author":"Henry Ford","topics":["Visionaries"],"realID":"Henry-Ford-43"},
 	
 	{"quoteText":"I have the body of a man half my age. Unfortunately, he's in terrible shape.","author":"George Foreman","topics":["Physique"],"realID":"George-Foreman-0"},
 	{"quoteText":"The question isn't at what age I want to retire, it's at what income.","author":"George Foreman","topics":["Retirement"],"realID":"George-Foreman-1"},
@@ -5183,6 +5193,9 @@
 	{"quoteText":"More die in the United States of too much food than of too little.","author":"John Kenneth Galbraith","topics":["Overindulgence"],"realID":"John-Kenneth-Galbraith-20"},
 	{"quoteText":"In the affluent society, no sharp distinction can be made between luxuries and necessaries.","author":"John Kenneth Galbraith","topics":["The privileged"],"realID":"John-Kenneth-Galbraith-21"},
 	{"quoteText":"All successful revolutions are the kicking in of a rotten door.","author":"John Kenneth Galbraith","topics":["Revolution"],"realID":"John-Kenneth-Galbraith-22"},
+
+	{"quoteText":"By denying scientific principles, one may maintain any paradox.","author":"Galileo Galilei","topics":["\"Science\""],"realID":"Galileo-Galilei-0"},
+	{"quoteText":"It is surely harmful to souls to make it a heresy to believe what is proved.","author":"Galileo Galilei","topics":["\"Science\""],"realID":"Galileo-Galilei-1"},
 	
 	{"quoteText":"The bigger the crowd the more people show up for it.","author":"Gallagher","topics":["Crowds"],"realID":"Gallagher-0"},
 	{"quoteText":"If \"con\" is the opposite of \"pro\" is Congress the opposite of progress?","author":"Gallagher","topics":["Congress"],"realID":"Gallagher-1"},
@@ -5317,9 +5330,7 @@
 	{"quoteText":"The days are too short even for love; how can there be enough time for quarreling?","author":"Margaret Scott Gatty","topics":["Arguing"],"realID":"Margaret-Scott-Gatty-0"},
 	
 	{"quoteText":"If you warn 100 men of possible forthcoming bad news, 80 will immediately dislike you. And if you are so unfortunate to be right, the other 20 will as well.","author":"Anthony Gaubis","topics":["Truth, Unwelcome"],"realID":"Anthony-Gaubis-0"},
-	
-	{"quoteText":"In general, smart people are not brave and brave people are not smart.","author":"Charles De Gaulle","topics":["Bravery"],"realID":"Charles-De-Gaulle-0"},
-	
+		
 	{"quoteText":"Graveyards are full of indispensable men.","author":"Charles de Gaulle","topics":["Egotists"],"realID":"Charles-de-Gaulle-0"},
 	{"quoteText":"Deliberation is the work of many men. Action, of one alone.","author":"Charles de Gaulle","topics":["Implementation"],"realID":"Charles-de-Gaulle-1"},
 	{"quoteText":"Men are of no importance. What counts is who commands.","author":"Charles de Gaulle","topics":["Management"],"realID":"Charles-de-Gaulle-2"},
@@ -5328,6 +5339,7 @@
 	{"quoteText":"Silence is the ultimate weapon of power.","author":"Charles de Gaulle","topics":["Silence"],"realID":"Charles-de-Gaulle-5"},
 	{"quoteText":"In order to become the master, the politician poses as the servant.","author":"Charles de Gaulle","topics":["\"Statesmen\""],"realID":"Charles-de-Gaulle-6"},
 	{"quoteText":"People get the history they deserve.","author":"Charles de Gaulle","topics":["Galatians 6:7"],"realID":"Charles-de-Gaulle-7"},
+	{"quoteText":"In general, smart people are not brave and brave people are not smart.","author":"Charles de Gaulle","topics":["Bravery"],"realID":"Charles-De-Gaulle-8"},	
 	
 	{"quoteText":"Few people have the courage to be cowardly in front of witnesses.","author":"Theophile Gautier","topics":["Courage"],"realID":"Theophile-Gautier-0"},
 	
@@ -5807,7 +5819,7 @@
 	
 	{"quoteText":"Every one minute you spend planning will save you at least three minutes in execution.","author":"Crawford Greenwalt","topics":["Preparation"],"realID":"Crawford-Greenwalt-0"},
 	
-	{"quoteText":"The most threatened group in human societies . . . is the unmated male: the unmated male is more likely to wind up in prison or in an asylum or dead than his mated counterpart. He is less likely to be promoted at work and he is considered a poor credit risk.","author":"Germaine Greer","topics":["Bachelors"],"realID":"Germaine-Greer-0"},
+	{"quoteText":"The unmated male is more likely to wind up in prison or in an asylum or dead than his mated counterpart. He is less likely to be promoted at work and he is considered a poor credit risk.","author":"Germaine Greer","topics":["Bachelors"],"realID":"Germaine-Greer-0"},
 	{"quoteText":"Energy is the power that drives every human being. It is not lost by exertion but maintained, by it,.","author":"Germaine Greer","topics":["Exertion"],"realID":"Germaine-Greer-1"},
 	{"quoteText":"The management of fertility is one of the most important functions of adulthood.","author":"Germaine Greer","topics":["Birth control"],"realID":"Germaine-Greer-2"},
 	{"quoteText":"Women must learn to lighten up if we are to survive.","author":"Germaine Greer","topics":["Women"],"realID":"Germaine-Greer-3"},
@@ -5881,6 +5893,7 @@
 	{"quoteText":"Freedom is largely a matter of seeing that there are alternatives.","author":"Ursula K. Le Guin","topics":["Freedom"],"realID":"Ursula-K--Le-Guin-1"},
 	{"quoteText":"Past events exist, after all, only in memory, which is a form of imagination.","author":"Ursula K. Le Guin","topics":["Memory"],"realID":"Ursula-K--Le-Guin-2"},
 	{"quoteText":"To oppose something is to maintain it.","author":"Ursula K. Le Guin","topics":["Protest"],"realID":"Ursula-K--Le-Guin-3"},
+	{"quoteText":"Injustice makes the rules and courage breaks them.","author":"Ursula K. Le Guin","topics":["Disobedience"],"realID":"Ursula-K--Le-Guin-4"},
 	
 	{"quoteText":"A politician is a fellow who will lay down your life for his country.","author":"Texas Guinan","topics":["Politicians"],"realID":"Texas-Guinan-0"},
 	
@@ -6436,10 +6449,9 @@
 	
 	{"quoteText":"The gap in our economy is between what we have and what we think we ought to have - and that is a moral problem, not an economic one.","author":"Paul T. Heyne","topics":["Entitlement"],"realID":"Paul-T--Heyne-0"},
 	
-	{"quoteText":"I don't mean to sound bitter, cold, or cruel, but I am, so that's how it comes out.","author":"Bill Hicks","topics":["Callousness"],"realID":"Bill-Hicks-0"},
-	{"quoteText":"Children are smarter than any of us . . . I don't know one child with a full-time job and children.","author":"Bill Hicks","topics":["Children"],"realID":"Bill-Hicks-1"},
-	{"quoteText":"You can devise a one-word argument to defeat the Bible: dinosaurs.","author":"Bill Hicks","topics":["Evolution"],"realID":"Bill-Hicks-2"},
-	{"quoteText":"I'll show you politics in America.  Here it is right here.  \"I think the puppet on the right shares my belief.\"  \"I think the puppet on the left is more to my liking.\"  \"Hey, wait a minute, there's one guy holding out both puppets.\"","author":"Bill Hicks","topics":["Special interest"],"realID":"Bill-Hicks-3"},
+	{"quoteText":"Children are smarter than any of us . . . I don't know one child with a full-time job and children.","author":"Bill Hicks","topics":["Children"],"realID":"Bill-Hicks-0"},
+	{"quoteText":"You can devise a one-word argument to defeat the Bible: dinosaurs.","author":"Bill Hicks","topics":["Evolution"],"realID":"Bill-Hicks-1"},
+	{"quoteText":"I'll show you politics in America.  Here it is right here.  \"I think the puppet on the right shares my belief.\"  \"I think the puppet on the left is more to my liking.\"  \"Hey, wait a minute, there's one guy holding out both puppets.\"","author":"Bill Hicks","topics":["Special interest"],"realID":"Bill-Hicks-2"},
 	
 	{"quoteText":"Worrying is using your imagination to create something you don't want.","author":"Esther Hicks","topics":["The Boogeyman"],"realID":"Esther-Hicks-0"},
 	
@@ -6554,7 +6566,7 @@
 	
 	{"quoteText":"Faith must have adequate evidence, else it is mere superstition.","author":"A. A. Hodge","topics":["Faith"],"realID":"A--A--Hodge-0"},
 	
-	{"quoteText":"You know Spirit Halloween pops up into random shopping malls every September?  That is BLM during an election year.","author":"The Hodge Twins","topics":["BLM"],"realID":"The-Hodge-Twins-0"},
+	{"quoteText":"You know how Spirit Halloween pops up into random shopping malls every September?  That is BLM during an election year.","author":"The Hodge Twins","topics":["BLM"],"realID":"The-Hodge-Twins-0"},
 	{"quoteText":"Black people are the only demographic of people in America that vote at a 90% clip for one political party: Democrat.  Our community - the black community - suffers from groupthink.","author":"The Hodge Twins","topics":["Identity politics"],"realID":"The-Hodge-Twins-1"},
 	{"quoteText":"You have a right to protest.  This is America, but you don't have the right to block traffic on the freeway.","author":"The Hodge Twins","topics":["\"Peaceful protest\""],"realID":"The-Hodge-Twins-2"},
 	
@@ -6604,7 +6616,7 @@
 	{"quoteText":"The passion to get ahead is sometimes born of the fear lest we be left behind.","author":"Eric Hoffer","topics":["Ambition"],"realID":"Eric-Hoffer-36"},
 	{"quoteText":"It is not love of self but hatred of self which is at the root of the troubles that afflict our world.","author":"Eric Hoffer","topics":["Self-loathing"],"realID":"Eric-Hoffer-37"},
 	{"quoteText":"There would be no society if living together depending upon understanding each other.","author":"Eric Hoffer","topics":["Tolerance"],"realID":"Eric-Hoffer-38"},
-	{"quoteText":"People who bite the hand that feeds them usually lick the boot that kicks them.","author":"Eric Hoffer","topics":["Brown-nosers"],"realID":"Eric-Hoffer-39"},
+	{"quoteText":"People who bite the hand that feeds them usually lick the boot that kicks them.","author":"Eric Hoffer","topics":["Duplicity"],"realID":"Eric-Hoffer-39"},
 	{"quoteText":"To most of us nothing is so invisible as an unpleasant truth.","author":"Eric Hoffer","topics":["Truth, Unwelcome"],"realID":"Eric-Hoffer-40"},
 	{"quoteText":"Power corrupts the few, while weakness corrupts the many.","author":"Eric Hoffer","topics":["Weakness"],"realID":"Eric-Hoffer-41"},
 	{"quoteText":"We cannot win the weak by sharing our wealth with them.  They feel our generosity as oppression.","author":"Eric Hoffer","topics":["The welfare state"],"realID":"Eric-Hoffer-42"},
@@ -6963,6 +6975,8 @@
 	{"quoteText":"The beauty of having a low income is that there is not enough money to buy what you don't really need.","author":"Ray Inman","topics":["Income"],"realID":"Ray-Inman-0"},
 	
 	{"quoteText":"If you are seeking creative ideas, go out walking. Angels whisper to a man when he goes for a walk.","author":"Raymond Inmon","topics":["Walking"],"realID":"Raymond-Inmon-0"},
+
+	{"quoteText":"Understanding the long, sordid history of gun control in America is key to understanding the dangers of disarming.","author":"Niger Innis","topics":["Gun control"],"realID":"Niger-Innis-0"},
 	
 	{"quoteText":"There are more dead people than living, and their numbers are increasing.","author":"Eugène Ionèsco","topics":["Death"],"realID":"Eugene-Ionesco-0"},
 	{"quoteText":"You can only predict things after they have happened.","author":"Eugène Ionèsco","topics":["Hindsight"],"realID":"Eugene-Ionesco-1"},
@@ -7248,6 +7262,8 @@
 	{"quoteText":"If you have tried to do something and failed, you are vastly better off than if you had tried nothing and succeeded.","author":"Lloyd Jones","topics":["Venturing"],"realID":"Lloyd-Jones-0"},
 	
 	{"quoteText":"Ours is the age that is proud of machines that think and suspicious of men who try to.","author":"H. Mumford Jones","topics":["Technology"],"realID":"H--Mumford-Jones-0"},
+
+	{"quoteText":"Because criminals carry guns, we decent law-abiding citizens should also have guns.  Otherwise, they will win and the decent people will lose.","author":"James Earl Jones","topics":["Gun control"],"realID":"James-Earl-Jones-0"},
 	
 	{"quoteText":"I think of lotteries as a tax on the mathematically challenged.","author":"Roger Jones","topics":["Lottery"],"realID":"Roger-Jones-0"},
 	
@@ -7541,7 +7557,8 @@
 	{"quoteText":"The worst barbarity of war is that it forces men collectively to commit acts against which individually they would revolt with their whole being. (1916)","author":"Ellen Key","topics":["War"],"realID":"Ellen-Key-1"},
 	
 	{"quoteText":"Preferential affirmative action patronizes American blacks, women, and others by presuming that they cannot succeed on their own.","author":"Alan Keyes","topics":["Bigotry of low expectations"],"realID":"Alan-Keyes-0"},
-	{"quoteText":"Anything the government gives you is just another link in the chains that destroy your liberty.","author":"Alan Keyes","topics":["Tyranny, Incremental"],"realID":"Alan-Keyes-1"},
+	{"quoteText":"The gun control mentality is ruthlessly absurd . . . you end up with a situation in which the law-abiding folks can't defend themselves, and the crooks have all the guns.","author":"Alan Keyes","topics":["Gun control"],"realID":"Alan-Keyes-1"},
+	{"quoteText":"Anything the government gives you is just another link in the chains that destroy your liberty.","author":"Alan Keyes","topics":["Tyranny, Incremental"],"realID":"Alan-Keyes-2"},
 	
 	{"quoteText":"To be upset over what you don't have is to waste what you do have.","author":"Ken Keyes, Jr.","topics":["Ingratitude"],"realID":"Ken-Keyes--Jr--0"},
 	{"quoteText":"A loving person lives in a loving world.  A hostile person lives in a hostile world: everyone you meet is your mirror.","author":"Ken Keyes, Jr.","topics":["Reflection"],"realID":"Ken-Keyes--Jr--1"},
@@ -7878,6 +7895,7 @@
 	{"quoteText":"Be kind whenever possible. It is always possible.","author":"The 14th Dalai Lama","topics":["Kindness"],"realID":"The-14th-Dalai-Lama-3"},
 	{"quoteText":"There must be a way of promoting human values without involving religion, based on common sense, experience and recent scientific findings.","author":"The 14th Dalai Lama","topics":["Morality"],"realID":"The-14th-Dalai-Lama-4"},
 	{"quoteText":"Sleep is the best meditation.","author":"The 14th Dalai Lama","topics":["Sleep"],"realID":"The-14th-Dalai-Lama-5"},
+	{"quoteText":"If someone has a gun and is trying to kill you . . . it would be reasonable to shoot back with your own gun.","author":"The 14th Dalai Lama","topics":["Gun control"],"realID":"The-14th-Dalai-Lama-6"},
 	
 	{"quoteText":"Life is what happens to us while we are making other plans.","author":"Thomas La Mance","topics":["Life"],"realID":"Thomas-La-Mance-0"},
 	
@@ -8026,9 +8044,8 @@
 	
 	{"quoteText":"Egotism is the anesthetic that dulls the pain of stupidity.","author":"Frank Leahy","topics":["Ego"],"realID":"Frank-Leahy-0"},
 	
-	{"quoteText":"Racism isn't born, folks, it's taught. I have a two-year-old son. You know what he hates? Naps! End of list.","author":"Dennis Leary","topics":["Bigotry"],"realID":"Dennis-Leary-0"},
-	
-	{"quoteText":"Not eating meat is a decision, eating meat is an instinct.","author":"Denis Leary","topics":["Vegetarians"],"realID":"Denis-Leary-0"},
+	{"quoteText":"Racism isn't born, folks, it's taught. I have a two-year-old son. You know what he hates? Naps! End of list.","author":"Denis Leary","topics":["Bigotry"],"realID":"Dennis-Leary-0"},	
+	{"quoteText":"Not eating meat is a decision, eating meat is an instinct.","author":"Denis Leary","topics":["Vegetarians"],"realID":"Denis-Leary-1"},
 	
 	{"quoteText":"Civilization is unbearable but it is less unbearable at the top.","author":"Timothy Leary","topics":["Ivory towers"],"realID":"Timothy-Leary-0"},
 	
@@ -8630,6 +8647,7 @@
 	{"quoteText":"The media's the most powerful entity on earth. They have the power to make the innocent guilty and to make the guilty innocent, and that's power. Because they control the minds of the masses.","author":"Malcolm X","topics":["The Media"],"realID":"Malcolm-X-2"},
 	
 	{"quoteText":"Since when did the American Dream become the American Guarantee?","author":"Michelle Malkin","topics":["Entitlement"],"realID":"Michelle-Malkin-0"},
+	{"quoteText":"Who would have guessed that the shots heard 'round the world 225 years ago would fall on deaf ears in a nation now more sympathetic to the gun-grabbing Redcoat than the gun-bearing rebel?","author":"Michelle Malkin","topics":["Gun control"],"realID":"Michelle-Malkin-1"},
 	
 	{"quoteText":"Children seldom misquote you. They more often repeat word-for-word what you shouldn't have said.","author":"Mae Maloo","topics":["Children"],"realID":"Mae-Maloo-0"},
 		
@@ -9498,6 +9516,7 @@
 	{"quoteText":"Do you people really hate capitalism or do you hate seeing people doing better than you in a capitalist system?","author":"Anthony Mitchell","topics":["Socialists"],"realID":"Anthony-Mitchell-9"},
 	{"quoteText":"So help me understand: black people are burning down their communities in support of rapists, drug abusers and criminals?","author":"Anthony Mitchell","topics":["Thug culture"],"realID":"Anthony-Mitchell-10"},
 	{"quoteText":"Can someone explain to me why releasing prisoners is a top priority for Democrats?","author":"Anthony Mitchell","topics":["Thug-hugging"],"realID":"Anthony-Mitchell-11"},
+	{"quoteText":"The Second Amendment was put in place in case people started saying stupid stuff like \"defund the police.\"","author":"Anthony Mitchell","topics":["Gun control"],"realID":"Anthony-Mitchell-12"},
 	
 	{"quoteText":"All anybody needs to know about prizes is that Mozart never won one.","author":"Henry Mitchell","topics":["\"Honors\""],"realID":"Henry-Mitchell-0"},
 	
@@ -9559,6 +9578,7 @@
 	{"quoteText":"Critical Race Theory is nothing more than racist critics spreading their theories.","author":"Dr. Willie Montague","topics":["CRT"],"realID":"Dr--Willie-Montague-1"},
 	{"quoteText":"Sacrificing individual freedoms for the \"common good\" is a core principle of Communism - in case you didn't know.","author":"Dr. Willie Montague","topics":["\"The greater good\""],"realID":"Dr--Willie-Montague-2"},
 	{"quoteText":"I don't care what you're affiliated with, if the only time the community knows your name is when it's time for you to be re-elected, you've failed as a representative.","author":"Dr. Willie Montague","topics":["\"Statesmen\""],"realID":"Dr--Willie-Montague-3"},
+	{"quoteText":"To stop drunk drivers from killing sober drivers, just ban all sober drivers from driving.  Plot twist: that's how gun control works.","author":"Dr. Willie Montague","topics":["Gun control"],"realID":"Dr--Willie-Montague-4"},
 	
 	{"quoteText":"Mass communication, radio, and especially television, have attempted, not without success, to annihilate every possibility of solitude and reflection.","author":"Eugenio Montale","topics":["Television"],"realID":"Eugenio-Montale-0"},
 	
@@ -9694,7 +9714,7 @@
 	
 	{"quoteText":"Ideas are great arrows, but there has to be a bow.","author":"Bill D. Moyers","topics":["Implementation"],"realID":"Bill-D--Moyers-0"},
 	
-	{"quoteText":"The single most exciting thing you encounter in government is competence, because it is so rare.","author":"Daniel Patrick Moynihan","topics":["Bureaucracy"],"realID":"Daniel-Patrick-Moynihan-0"},
+	{"quoteText":"The single most exciting thing you encounter in government is competence, because it is so rare.","author":"Daniel Patrick Moynihan","topics":["Government"],"realID":"Daniel-Patrick-Moynihan-0"},
 	
 	{"quoteText":"When you can finally afford the rings you want, you'd rather no one noticed your hands.","author":"Lois Muehl","topics":["Old age"],"realID":"Lois-Muehl-0"},
 	
@@ -9738,7 +9758,7 @@
 	
 	{"quoteText":"A real individual is . . . a man who would hate to be anybody but himself.","author":"Henry A. Murray","topics":["Individuality"],"realID":"Henry-A--Murray-0"},
 
-	{"quoteText":"Show me a man who is a good loser and I'll show you a man who is playing golf with his boss.","author":"Jim Murray","topics":["Brown-nosers"],"realID":"Jim-Murray-0"},
+	{"quoteText":"Show me a man who is a good loser and I'll show you a man who is playing golf with his boss.","author":"Jim Murray","topics":["Bosses"],"realID":"Jim-Murray-0"},
 	{"quoteText":"If you cannot get people to listen to you any other way, tell them it's confidential.","author":"Jim Murray","topics":["Nosiness"],"realID":"Jim-Murray-1"},		
 	{"quoteText":"Any country with \"democratic\" in the title isn't.","author":"Jim Murray","topics":["Democracy"],"realID":"Jim-Murray-2"},
 	
@@ -9974,6 +9994,8 @@
 	
 	{"quoteText":"In proportion as you give the State power to do things for you, you give it power to do things to you.","author":"Albert Jay Nock","topics":["Big government"],"realID":"Albert-Jay-Nock-0"},
 	{"quoteText":"The mind is like the stomach. It is not how much you put into it that counts, but how much it digests.","author":"Albert Jay Nock","topics":["The Mind"],"realID":"Albert-Jay-Nock-1"},
+
+	{"quoteText":"Mass shootings also account for a statistical zero compared to other gun-related deaths.  That's like banning airplanes because they crash rarely.","author":"Colion Noir","topics":["Gun control"],"realID":"Colion-Noir-0"},
 	
 	{"quoteText":"If children live with approval, they learn to like themselves.","author":"Dorothy Law Nolte","topics":["Positive energy"],"realID":"Dorothy-Law-Nolte-0"},
 
@@ -10099,7 +10121,7 @@
 	{"quoteText":"Man's the bad child of the universe.","author":"J. Robert Oppenheimer","topics":["Humans"],"realID":"J--Robert-Oppenheimer-2"},
 	{"quoteText":"The optimist thinks this is the best of all possible worlds. The pessimist fears it is true.","author":"J. Robert Oppenheimer","topics":["Pessimism"],"realID":"J--Robert-Oppenheimer-3"},
 	
-	{"quoteText":"Be a pianist, not a piano.","author":"A. R. Orage","topics":["Backbone"],"realID":"A--R--Orage-0"},
+	{"quoteText":"Be a pianist, not a piano.","author":"A. R. Orage","topics":["Toolbags"],"realID":"A--R--Orage-0"},
 	
 	{"quoteText":"My wife never lies about her age. She just tells everyone she's as old as I am. Then she lies about my age.","author":"Robert Orben","topics":["Age & Women"],"realID":"Robert-Orben-0"},
 	{"quoteText":"There are days when it takes all you've got just to keep up with the losers.","author":"Robert Orben","topics":["Some days . . ."],"realID":"Robert-Orben-1"},
@@ -10159,7 +10181,7 @@
 	{"quoteText":"I like to think of anything stupid I've done as a \"learning experience.\" It makes me feel less stupid.","author":"P. J. O'Rourke","topics":["Stupidity"],"realID":"P--J--O-Rourke-30"},
 	{"quoteText":"You know your children are growing up when they stop asking you where they came from and refuse to tell you where they're going.","author":"P. J. O'Rourke","topics":["Teenagers"],"realID":"P--J--O-Rourke-31"},
 	
-	{"quoteText":"If people have to choose between freedom and sandwiches they will take sandwiches.","author":"John Boyd Orr","topics":["Bread & Circuses"],"realID":"John-Boyd-Orr-0"},
+	{"quoteText":"If people have to choose between freedom and sandwiches they will take sandwiches.","author":"John Boyd Orr","topics":["Freedom"],"realID":"John-Boyd-Orr-0"},
 	{"quoteText":"Some wars have been due to the lust of rulers for power and glory, or to revenge to wipe out the humiliation of a former defeat.","author":"John Boyd Orr","topics":["War"],"realID":"John-Boyd-Orr-1"},
 	
 	{"quoteText":"What does he who looks at a grain of sand know about the desert?","author":"Erik Orsenna","topics":["Generalization"],"realID":"Erik-Orsenna-0"},
@@ -10413,6 +10435,7 @@
 	{"quoteText":"I'm tired of people coming to America and trying to turn it into the country they fled.","author":"CJ Pearson","topics":["Immigration"],"realID":"CJ-Pearson-5"},
 	{"quoteText":"Stop using so-called \"police brutality\" as an excuse to commit crimes and your own person acts of violence.","author":"CJ Pearson","topics":["\"Anti-fascists\""],"realID":"CJ-Pearson-6"},
 	{"quoteText":"AOC is wearing a Tax The Rich dress at a $33,000/person event, exclusively attended by Hollywood elites. She understands irony almost as well as she does economics.","author":"CJ Pearson","topics":["Sandernistas"],"realID":"CJ-Pearson-7"},
+	{"quoteText":"Chicago has some of the strictest gun laws in the country.  And, despite this, thousands are gunned down in your city each year.","author":"CJ Pearson","topics":["Gun control"],"realID":"CJ-Pearson-8"},
 	
 	{"quoteText":"Belief compelled through fear is not belief, it is blind and forced obedience.","author":"Carlton Pearson","topics":["Fear-mongering"],"realID":"Carlton-Pearson-0"},
 	
@@ -10438,8 +10461,6 @@
 	{"quoteText":"Science doesn't care, by and large, what the answers are. It's only interested in getting the right answer.","author":"Scott Pelley","topics":["Science"],"realID":"Scott-Pelley-0"},
 	
 	{"quoteText":"We must realize that we are not each other's enemies and that the true enemy is currently enjoying our divisiveness.","author":"Guillermo Gomez Pena","topics":["Disunity"],"realID":"Guillermo-Gomez-Pena-0"},
-	
-	{"quoteText":"Just about the time you think you can make both ends meet, somebody moves the ends.","author":"Pansy Penner","topics":["Budgeting"],"realID":"Pansy-Penner-0"},
 	
 	{"quoteText":"The ultimate test of a relationship is to disagree but to hold hands.","author":"Alexandria Penney","topics":["Quarreling"],"realID":"Alexandria-Penney-0"},
 	
@@ -10947,7 +10968,7 @@
 	
 	{"quoteText":"The man who wastes today lamenting yesterday will waste tomorrow lamenting today.","author":"Philip M. Raskin","topics":["Regret"],"realID":"Philip-M--Raskin-0"},
 	
-	{"quoteText":"A computer lets you make more mistakes faster than any other invention with the possible exceptions of handguns and Tequila.","author":"Mitch Ratcliffe","topics":["Computers"],"realID":"Mitch-Ratcliffe-0"},
+	{"quoteText":"A computer lets you make more mistakes faster than any other invention with the possible exceptions of handguns and tequila.","author":"Mitch Ratcliffe","topics":["Computers"],"realID":"Mitch-Ratcliffe-0"},
 	
 	{"quoteText":"Don't taunt the alligator until after you've crossed the creek.","author":"Dan Rather","topics":["Cockiness"],"realID":"Dan-Rather-0"},
 	{"quoteText":"Once the herd starts moving in one direction, it's very hard to turn it, even slightly.","author":"Dan Rather","topics":["Direction"],"realID":"Dan-Rather-1"},
@@ -11148,8 +11169,9 @@
 	{"quoteText":"Partisanship is our great curse. We too readily assume that everything has two sides and that it is our duty to be on one or the other.","author":"James Harvey Robinson","topics":["Controversy"],"realID":"James-Harvey-Robinson-0"},
 	
 	{"quoteText":"Let's stop talking about the false narrative of \"systematic racism\" and start doing something about real problem of systematic fatherlessness.","author":"Mark Robinson","topics":["Dads matter"],"realID":"Mark-Robinson-0"},
-	{"quoteText":"Funny, the same people who want to \"defund\" the police over the deaths of \"9 unarmed black men\" didn't want us \"jumping to conclusions\" following the deaths of 2,996 people by \"9 radical Islamic terrorist.\"","author":"Mark Robinson","topics":["From the right"],"realID":"Mark-Robinson-1"},
+	{"quoteText":"Funny, the same people who want to \"defund\" the police over the deaths of \"9 unarmed black men\" didn't want us \"jumping to conclusions\" following the deaths of 2,996 people by \"19 radical Islamic terrorists.\"","author":"Mark Robinson","topics":["From the right"],"realID":"Mark-Robinson-1"},
 	{"quoteText":"True \"social justice\" is earning your keep and keeping what you earn.","author":"Mark Robinson","topics":["\"Social justice\""],"realID":"Mark-Robinson-2"},
+	{"quoteText":"Those who blame guns for evil understand neither guns nor evil.","author":"Mark Robinson","topics":["Gun control"],"realID":"Mark-Robinson-3"},
 	
 	{"quoteText":"If you don't think every day is a good day, just try missing one.","author":"Cavett Robert","topics":["In perspective"],"realID":"Cavett-Robert-0"},
 	{"quoteText":"Character is the ability to carry out a good resolution long after the excitement of the moment has passed.","author":"Cavett Robert","topics":["Stick-to-itiveness"],"realID":"Cavett-Robert-1"},
@@ -12174,7 +12196,7 @@
 	{"quoteText":"Growth demands a temporary surrender of security.","author":"Gail Sheehy","topics":["Growth"],"realID":"Gail-Sheehy-1"},
 	
 	{"quoteText":"Hearing nuns' confessions is like being stoned to death with popcorn.","author":"Fulton Sheen","topics":["Clergy"],"realID":"Fulton-Sheen-0"},
-	{"quoteText":"The proud man counts his newspaper clippings - the humble man his blessings.","author":"Fulton Sheen","topics":["Blessings"],"realID":"Fulton-Sheen-1"},
+	{"quoteText":"The proud man counts his newspaper clippings; the humble man, his blessings.","author":"Fulton Sheen","topics":["Blessings"],"realID":"Fulton-Sheen-1"},
 	{"quoteText":"The big print giveth and the fine print taketh away.","author":"Fulton Sheen","topics":["Disclaimers"],"realID":"Fulton-Sheen-2"},
 	{"quoteText":"Civilization is always in danger when those who have never learned to obey are given the right to command.","author":"Fulton Sheen","topics":["Elites"],"realID":"Fulton-Sheen-3"},
 	{"quoteText":"The most bored people in life are not the underprivileged but the overprivileged.","author":"Fulton Sheen","topics":["Wealth"],"realID":"Fulton-Sheen-4"},
@@ -12502,6 +12524,7 @@
 	{"quoteText":"In the welfare state there are no reciprocal obligations. You are simply subsidizing whatever people choose to do whether it's decent or indecent. And I don't think that people who have purpose removed from their lives behave better.","author":"Dr. Thomas Sowell","topics":["The welfare state"],"realID":"Dr--Thomas-Sowell-68"},
 	{"quoteText":"The welfare state is the oldest con game in the world. First you take people's money away quietly and then you give some of it back to them flamboyantly.","author":"Dr. Thomas Sowell","topics":["The welfare state"],"realID":"Dr--Thomas-Sowell-69"},
 	{"quoteText":"The welfare state has always been judged by its good intentions, rather than its bad results.","author":"Dr. Thomas Sowell","topics":["The welfare state"],"realID":"Dr--Thomas-Sowell-70"},
+	{"quoteText":"Do countries with strong gun control laws have lower murder rates?  Only if you cherry-pick the data.","author":"Dr. Thomas Sowell","topics":["Gun control"],"realID":"Dr--Thomas-Sowell-71"},
 	
 	{"quoteText":"The great thing about democracy is that it gives every voter a chance to do something stupid.","author":"Art Spander","topics":["Democracy"],"realID":"Art-Spander-0"},
 	{"quoteText":"The longer you stay in one place, the greater your chances of disillusionment.","author":"Art Spander","topics":["Inertia"],"realID":"Art-Spander-1"},
@@ -12549,7 +12572,7 @@
 	{"quoteText":"Blind faith in your leaders, or in anything, will get you killed.","author":"Bruce Springsteen","topics":["Blind faith"],"realID":"Bruce-Springsteen-2"},
 	
 	{"quoteText":"I find many fact-check stories to be completely predictable based on the political nature of the claim of the speaker. These sites discredit themselves more each day.","author":"Delano Squires","topics":["\"Fact-checking\""],"realID":"Delano-Squires-0"},
-	{"quoteText":"Black children are capable of diligence and mastery in every subject, but the \"educators\" who claim to advocate on their behalf think they need lowered standards to be successful. Shameful.","author":"Delano Squires","topics":["Bigotry of low expectations"],"realID":"Delano-Squires-1"},
+	{"quoteText":"Black children are capable of diligence and mastery in every subject, but the \"educators\" who claim to advocate on their behalf think they need lowered standards to be successful.","author":"Delano Squires","topics":["Bigotry of low expectations"],"realID":"Delano-Squires-1"},
 	{"quoteText":"It is impossible to achieve equality when one group is consistently held to lower standards of performance than anyone else. This ideology is spreading throughout K-12 education under the guise of \"antiracism\" and I'm glad @1776Unites is doing something about it.","author":"Delano Squires","topics":["Bigotry of low expectations"],"realID":"Delano-Squires-2"},
 	{"quoteText":"Any culture that rewards those promoting violence among its men, the disrespect and degradation of its women, and drug abuse among its youth is going to be in world of trouble.","author":"Delano Squires","topics":["Thug culture"],"realID":"Delano-Squires-3"},
 	
@@ -12963,7 +12986,7 @@
 	
 	{"quoteText":"I always like to quote Albert Einstein because nobody dares contradict him.","author":"Studs Terkel","topics":["Quotation"],"realID":"Studs-Terkel-0"},
 	
-	{"quoteText":"Critical Race Theory is designed to introduce the \"race card\" to public school children.","author":"Leo Terrell","topics":["BLM"],"realID":"Leo-Terrell-0"},
+	{"quoteText":"Critical Race Theory is designed to introduce the \"race card\" to public school children.","author":"Leo Terrell","topics":["CRT"],"realID":"Leo-Terrell-0"},
 	{"quoteText":"There is no systemic racial discrimination in Chicago, Los Angeles, Seattle or Atlanta. Just looting, arson, murders and bad Democratic leadership.","author":"Leo Terrell","topics":["\"Blue dots\""],"realID":"Leo-Terrell-1"},
 	{"quoteText":"Al Sharpton wants the African American community to believe that the government and the boogeyman and the white guy are all against them. Why? So he can be a profiteer.","author":"Leo Terrell","topics":["Race-hustlers"],"realID":"Leo-Terrell-2"},
 	
@@ -13197,11 +13220,11 @@
 	{"quoteText":"Without passion, you don't have energy; without energy, you have nothing.","author":"Donald Trump","topics":["Passion"],"realID":"Donald-Trump-6"},
 	{"quoteText":"Show me someone without an ego, and I'll show you a loser.","author":"Donald Trump","topics":["Ego"],"realID":"Donald-Trump-7"},
 	
-	{"quoteText":"Nineteen of the twenty most violent cities in America are run by Democrats.","author":"Donald Trump Jr.","topics":["\"Blue dots\""],"realID":"Donald-Trump-Jr--0"},
-	{"quoteText":"Liberals love the First Amendment until you say something they don't agree with.","author":"Donald Trump Jr.","topics":["\"Free speech\""],"realID":"Donald-Trump-Jr--1"},
-	{"quoteText":"If I had a bowl of Skittles and I told you that just three would kill you, would you take a handful? That's our Syrian refugee problem.","author":"Donald Trump Jr.","topics":["Border security"],"realID":"Donald-Trump-Jr--2"},
-	{"quoteText":"They don't report the news anymore; they make up the news.","author":"Donald Trump Jr.","topics":["The News"],"realID":"Donald-Trump-Jr--3"},
-	{"quoteText":"70 million pissed off Republicans and not one city burned to the ground.","author":"Donald Trump Jr.","topics":["From the right"],"realID":"Donald-Trump-Jr--4"},
+	{"quoteText":"Nineteen of the twenty most violent cities in America are run by Democrats.","author":"Donald Trump, Jr.","topics":["\"Blue dots\""],"realID":"Donald-Trump-Jr--0"},
+	{"quoteText":"Liberals love the First Amendment until you say something they don't agree with.","author":"Donald Trump, Jr.","topics":["\"Free speech\""],"realID":"Donald-Trump-Jr--1"},
+	{"quoteText":"If I had a bowl of Skittles and I told you that just three would kill you, would you take a handful? That's our Syrian refugee problem.","author":"Donald Trump, Jr.","topics":["Border security"],"realID":"Donald-Trump-Jr--2"},
+	{"quoteText":"They don't report the news anymore; they make up the news.","author":"Donald Trump, Jr.","topics":["The News"],"realID":"Donald-Trump-Jr--3"},
+	{"quoteText":"70 million pissed off Republicans and not one city burned to the ground.","author":"Donald Trump, Jr.","topics":["From the right"],"realID":"Donald-Trump-Jr--4"},
 	
 	{"quoteText":"Gorgeous hair is the best revenge.","author":"Ivana Trump","topics":["Grooming"],"realID":"Ivana-Trump-0"},
 	
@@ -13317,7 +13340,7 @@
 	
 	{"quoteText":"Sometimes I think if there was a third sex, men wouldn't get so much as a glance from me.","author":"Amanda Vail","topics":["Women & Men"],"realID":"Amanda-Vail-0"},
 	
-	{"quoteText":"Real difficulties can be overcome, it is only the imaginary ones that are unconquerable.","author":"Theodore N. Vail","topics":["The Boogeyman"],"realID":"Theodore-N--Vail-0"},
+	{"quoteText":"Real difficulties can be overcome, it is only the imaginary ones that are unconquerable.","author":"Theodore N. Vail","topics":["Problems"],"realID":"Theodore-N--Vail-0"},
 	{"quoteText":"Those who feel discouraged by hard conditions should remember that most successful men have started under discouraging conditions.","author":"Theodore N. Vail","topics":["Surmounties"],"realID":"Theodore-N--Vail-1"},
 	
 	{"quoteText":"There is no material difference between telling a room full of white men they're racist because they're white and telling a room full of black men they're thugs because they're black. Both actions are evil and unconscionable.","author":"Chloé S. Valdary","topics":["CRT"],"realID":"Chlo--S--Valdary-0"},
@@ -13482,6 +13505,8 @@
 	{"quoteText":"If you don't live it, you don't believe it.","author":"Marion E. Wade","topics":["Louder than words"],"realID":"Marion-E--Wade-0"},
 
 	{"quoteText":"By the time a man realizes that maybe his father was right, he usually has a son who thinks he's wrong.","author":"Charles Wadsworth","topics":["Generations"],"realID":"Charles-Wadsworth-0"},
+
+	{"quoteText":"I just think in the grand scheme of the rights that we have; the right of assembly, free speech, I mean, owning a gun does not, it does not tally on the same level as those other Constitutional rights.","author":"Alex Wagner","topics":["Gun control"],"realID":"Alex-Wagner-0"},
 	
 	{"quoteText":"All my life, I always wanted to be somebody. Now I see that I should have been more specific.","author":"Jane Wagner","topics":["Careful what you wish for"],"realID":"Jane-Wagner-0"},
 	{"quoteText":"I personally think we developed language because of our deep inner need to complain.","author":"Jane Wagner","topics":["Language"],"realID":"Jane-Wagner-1"},
@@ -14446,7 +14471,7 @@
 	{"quoteText":"Those who wait until all the lights are on green before starting will never leave home.","author":"Zig Ziglar","topics":["Apprehension"],"realID":"Zig-Ziglar-1"},
 	{"quoteText":"You can't fly with the eagles if you continue to scratch with the turkeys.","author":"Zig Ziglar","topics":["Association"],"realID":"Zig-Ziglar-2"},
 	{"quoteText":"Your attitude, not your aptitude, will determine your altitude.","author":"Zig Ziglar","topics":["Attitude"],"realID":"Zig-Ziglar-3"},
-	{"quoteText":"Every obnoxious act is a cry for help.","author":"Zig Ziglar","realID":"Zig-Ziglar-4"},
+	{"quoteText":"Every obnoxious act is a cry for help.","author":"Zig Ziglar","topics":["Clowns"],"realID":"Zig-Ziglar-4"},
 	{"quoteText":"Every choice you make has an end result.","author":"Zig Ziglar","topics":["Consequences"],"realID":"Zig-Ziglar-5"},
 	{"quoteText":"Remember, the only taste of success some people have is when they take a bite out of you.","author":"Zig Ziglar","topics":["Critics"],"realID":"Zig-Ziglar-6"},
 	{"quoteText":"People often say that motivation doesn't last. Well, neither does bathing - that's why we recommend it daily.","author":"Zig Ziglar","topics":["Motivation"],"realID":"Zig-Ziglar-7"},
@@ -14465,7 +14490,7 @@
 	{"quoteText":"Money will buy you a bed but not a good night's sleeps, a house but not a home, a companion but not a friend.","author":"Zig Ziglar","topics":["Money"],"realID":"Zig-Ziglar-20"},
 	{"quoteText":"The best way to raise positive children in a negative world is to have positive parents who love them unconditionally and serve as excellent role models.","author":"Zig Ziglar","topics":["Positive energy"],"realID":"Zig-Ziglar-21"},
 	{"quoteText":"If you're sincere, praise is effective. If you're insincere, it's manipulative.","author":"Zig Ziglar","topics":["Praise"],"realID":"Zig-Ziglar-22"},
-	{"quoteText":"When you are tough on yourself, life is going to be infinitely easier on you.","author":"Zig Ziglar","topics":["Preparation","Thyself"],"realID":"Zig-Ziglar-23"},
+	{"quoteText":"When you are tough on yourself, life is going to be infinitely easier on you.","author":"Zig Ziglar","topics":["Thyself"],"realID":"Zig-Ziglar-23"},
 	{"quoteText":"If there were no problems, most of us would be unemployed.","author":"Zig Ziglar","topics":["Problems"],"realID":"Zig-Ziglar-24"},
 	{"quoteText":"If you learn from defeat, you haven't really lost.","author":"Zig Ziglar","topics":["Setbacks"],"realID":"Zig-Ziglar-25"},
 	{"quoteText":"The price of success is much lower than the price of failure.","author":"Zig Ziglar","topics":["Success"],"realID":"Zig-Ziglar-26"},
@@ -14482,8 +14507,6 @@
 	{"quoteText":"Clutter is the disease of American writing. We are a society strangling in unnecessary words, circular constructions, pompous frills and meaningless jargon.","author":"William K. Zinsser","topics":["Writing"],"realID":"William-K--Zinsser-1"},
 	
 	{"quoteText":"There's nothing like being a dad. Though shoveling money down a bottomless hole comes close.","author":"Myra Zirkle","topics":["Fatherhood"],"realID":"Myra-Zirkle-0"},
-	
-	{"quoteText":"If you wish to strengthen a lie, mix a little truth in with it.","author":"Zohar","topics":["Half-truth"],"realID":"Zohar-0"},
 	
 	{"quoteText":"We don't want a memory that tells us the truth, we want a memory that makes us happy.","author":"Koos van Zomeren","topics":["Reminiscing"],"realID":"Koos-van-Zomeren-0"},
 	

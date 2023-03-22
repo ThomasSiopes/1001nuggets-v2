@@ -130,6 +130,7 @@ export const GlobalStyles = createGlobalStyle`
         top: 15vh;
         bottom: 15vh;
         line-height: 0.9rem;
+        max-width: 26px;
     }
 
     .font-poppins {
