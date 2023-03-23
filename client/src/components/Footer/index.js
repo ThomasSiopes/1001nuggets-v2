@@ -20,7 +20,7 @@ const FooterPage = () => {
                         <hr></hr>
                         <i>
                             <p><Link className="text-white" to={`/`}>Home</Link></p>
-                            <p><Link className="text-white" to={`/authors`}>Authors</Link></p>
+                            {/* <p><Link className="text-white" to={`/authors`}>Authors</Link></p> */}
                             <p><Link className="text-white" to={`/topics`}>Topics</Link></p>
                             <p><Link className="text-white" to={`/collections`}>Collections</Link></p>
                         </i>
@@ -28,7 +28,7 @@ const FooterPage = () => {
                 </Row>
             </Container>
             <Container className="d-block d-md-none my-">
-                <strong><Link className="text-white mx-3" to={`/authors`}>Authors</Link></strong>
+                {/* <strong><Link className="text-white mx-3" to={`/authors`}>Authors</Link></strong> */}
                 <strong><Link className="text-white mx-3" to={`/topics`}>Topics</Link></strong>
                 <strong><Link className="text-white mx-3" to={`/collections`}>Collections</Link></strong>
                 <p>Filler, mobile footer content goes here.</p>

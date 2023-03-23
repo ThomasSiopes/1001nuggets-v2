@@ -35,7 +35,7 @@ class NavBar extends React.Component {
                         {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
                         <Navbar id="basic-navbar-nav" className="text-center">
                             <Nav className="mx-auto ms-md-0 me-md-auto py-2">
-                                <span className="hoverable me-1"><Link id="nav-authors" className="nav-link" to={`/authors`}><strong>Authors</strong></Link></span>
+                                {/* <span className="hoverable me-1"><Link id="nav-authors" className="nav-link" to={`/authors`}><strong>Authors</strong></Link></span> */}
                                 <span className="hoverable me-1"><Link id="nav-topics" className="nav-link" to={`/topics`}><strong>Topics</strong></Link></span>
                                 <span className="hoverable me-1"><Link id="nav-collections" className="nav-link" to={`/collections`}><strong>Collections</strong></Link></span>
                                 

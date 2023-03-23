@@ -18,12 +18,12 @@ import PlatformMain from "./components/Platform/main";
 import PlatformSpecific from "./components/Platform/specific";
 
 //Pages
-import Home from "./pages/Main";
-import Author from "./pages/Author";
-import Topic from "./pages/Topic";
-import Quote from "./pages/Quote";
-import Collection from "./pages/Collection";
-const AuthorNav = React.lazy(()=> import ("./pages/AuthorNav"));
+const Home = React.lazy(() => import ("./pages/Main"));
+const Author = React.lazy(() => import ("./pages/Author"));
+const Topic = React.lazy(() => import ("./pages/Topic"));
+const Quote = React.lazy(() => import ("./pages/Quote"));
+const Collection = React.lazy(() => import ("./pages/Collection"));
+// const AuthorNav = React.lazy(()=> import ("./pages/AuthorNav"));
 const TopicNav = React.lazy(() => import ("./pages/TopicNav"));
 const CollectionNav = React.lazy(() => import ("./pages/CollectionNav"));
 const SearchResult = React.lazy(() => import ("./pages/SearchResult"));
@@ -82,30 +82,40 @@ function App() {
           <StyledApp className="mainBody">
             <Switch>
               <Route exact path="/">
-                <Home/>
+                <React.Suspense fallback="Loading page...">
+                  <Home/>
+                </React.Suspense>
               </Route>
               <Route exact path="/author/:authorRealId">
-                <Author/>
+                <React.Suspense fallback="Loading page...">
+                  <Author/>
+                </React.Suspense>
               </Route>
               <Route exact path="/topic/:topicRealId">
-                <Topic/>
+                <React.Suspense fallback="Loading page...">
+                  <Topic/>
+                </React.Suspense>
               </Route>
               <Route exact path="/quote/:quoteRealId">
-                <Quote/>
+                <React.Suspense fallback="Loading page...">
+                  <Quote/>
+                </React.Suspense>
               </Route>
               <Route exact path="/collection/:collectionRealId">
-                <Collection/>
+                <React.Suspense fallback="Loading page...">
+                  <Collection/>
+                </React.Suspense>
               </Route>
               <Route exact path="/topics">
                 <React.Suspense fallback="Loading page...">
                   <TopicNav/>
                 </React.Suspense>
               </Route>
-              <Route exact path="/authors">
+              {/* <Route exact path="/authors">
                 <React.Suspense fallback="Loading page...">
                   <AuthorNav/>
                 </React.Suspense>
-              </Route>
+              </Route> */}
               <Route exact path="/collections">
                 <React.Suspense fallback="Loading page...">
                   <CollectionNav/>

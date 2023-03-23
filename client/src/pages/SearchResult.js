@@ -3,7 +3,7 @@ import { Link, Redirect, useParams } from 'react-router-dom';
 import { Container, Card } from "react-bootstrap";
 import MetaTags from "react-meta-tags";
 
-import Results from "../components/Results";
+// import Results from "../components/Results";
 import ResultsQuote from "../components/ResultsQuote";
 
 function SearchResults() {
@@ -21,8 +21,8 @@ function SearchResults() {
             <Card>
                 <Card.Header><Link to={`/`} className="link-theme">Home</Link> {`>`} Search Results for "{query}"</Card.Header>
                 <Card.Body>
-                    <Results type="author" input={query}></Results>
-                    <Results type="topic" input={query}></Results>
+                    {/* <Results type="author" input={query}></Results>
+                    <Results type="topic" input={query}></Results> */}
                     <ResultsQuote input={query}></ResultsQuote>
                 </Card.Body>
             </Card>
