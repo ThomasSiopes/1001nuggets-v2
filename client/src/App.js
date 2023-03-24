@@ -14,8 +14,6 @@ import { lightTheme, darkTheme, GlobalStyles } from "./assets/css/themes";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import ErrorPage from "./components/ErrorPage";
-import PlatformMain from "./components/Platform/main";
-import PlatformSpecific from "./components/Platform/specific";
 
 //Pages
 const Home = React.lazy(() => import ("./pages/Main"));
@@ -120,12 +118,6 @@ function App() {
                 <React.Suspense fallback="Loading page...">
                   <CollectionNav/>
                 </React.Suspense>
-              </Route>
-              <Route exact path="/platforms">
-                <PlatformMain/>
-              </Route>
-              <Route exact path="/platforms/:type">
-                <PlatformSpecific/>
               </Route>
               <Route exact path="/search/:query">
                 <React.Suspense fallback="Loading results...">

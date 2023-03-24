@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Redirect, useParams } from 'react-router-dom';
+import { Redirect, useParams } from 'react-router-dom';
 import { Container, Card } from "react-bootstrap";
 import MetaTags from "react-meta-tags";
 
@@ -19,7 +19,7 @@ function SearchResults() {
                 </MetaTags>
             </div>
             <Card>
-                <Card.Header><Link to={`/`} className="link-theme">Home</Link> {`>`} Search Results for "{query}"</Card.Header>
+                {/* <Card.Header><Link to={`/`} className="link-theme">Home</Link> {`>`} Search Results for "{query}"</Card.Header> */}
                 <Card.Body>
                     {/* <Results type="author" input={query}></Results>
                     <Results type="topic" input={query}></Results> */}
