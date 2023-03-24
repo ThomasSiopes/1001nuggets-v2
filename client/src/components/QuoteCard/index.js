@@ -36,7 +36,7 @@ function QuoteCard({quotes, quoteIndex}) {
       <Card>
         <Card.Body className="quote-card" onClick={handleShow}>
             <Card.Text className="font-poppins" id="upward">{quotes[quoteIndex].quoteText}</Card.Text>
-            <AuthorButton type={"link"} name={quotes[quoteIndex].author}/>
+            {quotes[quoteIndex].author ? <AuthorButton type={"link"} name={quotes[quoteIndex].author}/> : <p><strong>Anonymous</strong></p>}
         </Card.Body>
       </Card>
 
@@ -46,7 +46,11 @@ function QuoteCard({quotes, quoteIndex}) {
             <Container className="font-poppins">
               <h2>{quotes[currentQuote].quoteText}</h2>
             </Container>
-            <Container className="mt-3"><strong><AuthorButton type={"link"} name={quotes[currentQuote].author}/></strong></Container>
+            <Container className="mt-3">
+              <strong>
+                {quotes[currentQuote].author ? <AuthorButton type={"link"} name={quotes[currentQuote].author}/> : <p>Anonymous</p>}
+              </strong>
+            </Container>
         </Modal.Body>
         <Modal.Footer className="justify-content-center align-items-center">
             {quotes[currentQuote-1] && 
