@@ -23,7 +23,19 @@ function Topic () {
 
     const topic = data.topicR;
 
+    console.log(topic.quotes);
+    
     let quoteList = [...topic.quotes]
+
+    for(let n = 0; n < quoteList.length; ++n) {
+        if(quoteList[n].author === null) {
+            quoteList.splice(Math.floor(Math.random() * n),0,quoteList[n]);
+            n++;
+            quoteList.splice(n,1);
+            n--;
+        }
+    }
+
     let list1 
     let list2 
     let list3a

@@ -11,7 +11,6 @@ import CollectionButton from '../CollectionButton';
 function QuoteCard({quotes, quoteIndex}) {
   const [show, setShow] = useState(false);
   const [currentQuote, setIndex] = useState(quoteIndex);
-  console.log(currentQuote)
 
   const handleClose = () => {
     setShow(false);
@@ -36,7 +35,7 @@ function QuoteCard({quotes, quoteIndex}) {
       <Card>
         <Card.Body className="quote-card" onClick={handleShow}>
             <Card.Text className="font-poppins" id="upward">{quotes[quoteIndex].quoteText}</Card.Text>
-            {quotes[quoteIndex].author ? <AuthorButton type={"link"} name={quotes[quoteIndex].author}/> : <p>Anonymous</p>}
+            {quotes[quoteIndex].author && <AuthorButton type={"link"} name={quotes[quoteIndex].author}/>}
         </Card.Body>
       </Card>
 
@@ -48,7 +47,7 @@ function QuoteCard({quotes, quoteIndex}) {
             </Container>
             <Container className="mt-3">
               <strong>
-                {quotes[currentQuote].author ? <AuthorButton type={"link"} name={quotes[currentQuote].author}/> : <p>Anonymous</p>}
+                {quotes[currentQuote].author && <AuthorButton type={"link"} name={quotes[currentQuote].author}/>}
               </strong>
             </Container>
         </Modal.Body>
