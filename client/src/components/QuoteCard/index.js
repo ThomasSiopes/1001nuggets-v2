@@ -36,7 +36,7 @@ function QuoteCard({quotes, quoteIndex}) {
       <Card>
         <Card.Body className="quote-card" onClick={handleShow}>
             <Card.Text className="font-poppins" id="upward">{quotes[quoteIndex].quoteText}</Card.Text>
-            {quotes[quoteIndex].author ? <AuthorButton type={"link"} name={quotes[quoteIndex].author}/> : <p><strong>Anonymous</strong></p>}
+            {quotes[quoteIndex].author ? <AuthorButton type={"link"} name={quotes[quoteIndex].author}/> : <p>Anonymous</p>}
         </Card.Body>
       </Card>
 

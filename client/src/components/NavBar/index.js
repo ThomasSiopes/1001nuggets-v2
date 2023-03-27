@@ -51,7 +51,7 @@ class NavBar extends React.Component {
                                     </NavDropdown></strong>
                                 } */}
                             </Nav>
-                            <Form onSubmit={this.handleSearch} className="d-none d-md-flex align-items-center justify-content-center">
+                            <Form onSubmit={this.handleSearch} className="d-block align-items-center justify-content-center">
                                 <input type="text" id="searchTerm" placeholder="Search..." className="me-2" onChange={this.handleChange}></input>
                                 <input type="submit" className="btn btn-theme" value="Submit"/>
                             </Form>

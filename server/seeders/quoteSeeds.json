@@ -1,8 +1,7 @@
 [
-	
 	{"quoteText": "It took me seventeen years to get three thousand hits in baseball.  I did it in one afternoon on the golf course.", "author": "Hank Aaron", "topics": ["Golf"], "nuggets": ["Sport"], "realID":"Hank-Aaron-0"},
 	
-	{"quoteText": "The missionaries go forth to Christianize the savages - as if the savages weren't dangerous enough already.", "author": "Edward Abbey", "topics": ["Christianity"], "nuggets": ["Religion"], "realID":"Edward-Abbey-0"},
+	{"quoteText": "The missionaries go forth to Christianize the savages - as if the savages weren't dangerous enough already.", "author": "Edward Abbey", "topics": ["Missionaries"], "nuggets": ["Religion"], "realID":"Edward-Abbey-0"},
 	{"quoteText": "If you feel that you're not ready to die, never fear, nature will give you complete and adequate assistance when the time comes.", "author": "Edward Abbey", "topics": ["Death"], "realID":"Edward-Abbey-1"},
 	{"quoteText": "When a man's best friend is his dog, that dog has a problem.", "author": "Edward Abbey", "topics": ["Dogs"], "realID":"Edward-Abbey-2"},
 	{"quoteText": "Growth for the sake of growth is the ideology of the cancer cell. ", "author": "Edward Abbey", "topics": ["Greed"], "realID":"Edward-Abbey-3"},	
@@ -62,7 +61,8 @@
 	{"quoteText": "Accustomed as I am to public speaking, I know the futility of it.", "author": "Franklin P. Adams", "topics": ["Public speaking"], "realID":"Franklin-P--Adams-3"},
 	{"quoteText": "Seeing ourselves as others see us would probably confirm our worst suspicions about them.", "author": "Franklin P. Adams", "topics": ["Others"], "realID":"Franklin-P--Adams-4"},
 	{"quoteText": "While the work or play is on . . . don't constantly feel you ought to be doing the other.", "author": "Franklin P. Adams", "topics": ["Recreation"], "realID":"Franklin-P--Adams-5"},
-	{"quoteText": "Nothing is more responsible for the good old days than a bad memory.", "author": "Franklin P. Adams", "topics": ["Revisionist History"], "realID":"Franklin-P--Adams-6"},
+	{"quoteText": "Nothing is more responsible for the good old days than a bad memory.", "author": "Franklin P. Adams", "topics": ["Revisionist history"], "realID":"Franklin-P--Adams-6"},
+	{"quoteText": "Originality is the art of concealing your source.", "author": "Franklin P. Adams", "topics": ["Plagiarism"], "realID":"Franklin-P--Adams-7"},
 
 	{"quoteText": "If it is free, it's advice.  If you pay for it, it's counseling.  If you can use either one, it's a miracle.", "author": "Jack Adams", "topics": ["Advice"], "realID":"Jack-Adams-0"},
 	
@@ -101,6 +101,7 @@
 
 	{"quoteText": "Never play cat and mouse games if you're a mouse.", "author": "Don Addis", "topics": ["Bluffing"], "realID":"Don-Addis-0"},
 	{"quoteText": "There's no cure for the common scold.", "author": "Don Addis", "topics": ["Wordplay"], "realID":"Don-Addis-1"},
+	{"quoteText": "You will never see a cat obedience school.", "author": "Don Addis", "topics": ["Cats"], "realID":"Don-Addis-2"},
 
 	{"quoteText": "The right to bear arms is only slightly less ludicrous the right to arm bears.", "author": "Chris Addison", "topics": ["Gun control"], "realID":"Chris-Addison-1"},
 
@@ -238,6 +239,7 @@
 	{"quoteText": "Most of us spend the first six days of each week sowing wild oats; then we go to church on Sunday and pray for a crop failure.", "author": "Fred Allen", "topics": ["Church"], "nuggets": ["Religion"], "realID":"Fred-Allen-11"},
 	{"quoteText": "All the poor man had left was his imagination. Television has taken that away from him.", "author": "Fred Allen", "topics": ["Television"], "realID":"Fred-Allen-12"},
 	{"quoteText": "A psychiatrist is the next man you start talking to after you start talking to yourself.", "author": "Fred Allen", "topics": ["Psychology"], "realID":"Fred-Allen-13"},
+	{"quoteText": "She used to be a schoolteacher, but now she has no class.", "author": "Fred Allen", "topics": ["Teachers"], "realID":"Fred-Allen-14"},
 
 	{"quoteText": "Winning is the science of being totally prepared.", "author": "George Allen", "topics": ["Preparation"], "realID":"George-Allen-0"},
 	{"quoteText": "Leisure time is that five or six hours when you sleep at night.", "author": "George Allen", "topics": ["Sleep"], "realID":"George-Allen-1"},
@@ -298,6 +300,8 @@
 
 	{"quoteText": "I love being a great-grandparent, but what I hate is being the mother of a grandparent.", "author": "Janet Anderson", "topics": ["Grandparents"], "nuggets": ["Seniority"], "realID":"Janet-Anderson-0"},
 
+	{"quoteText": "Why is it when you send something by ship it's cargo, and when you send it by car, it's shipment?", "author": "Larry Anderson", "topics": ["Linguistics"], "nuggets": [""], "realID":"Larry-Anderson-0"},
+
 	{"quoteText": "Everyone has a gift for something, even if it is the gift of being a good friend.", "author": "Marian Anderson", "topics": ["Friendship"], "realID":"Marian-Anderson-0"},
 	{"quoteText": "Leadership should be born out of the understanding of the needs of those who would be affected by it.", "author": "Marian Anderson", "topics": ["Leadership 101"], "nuggets": ["Business management"], "realID":"Marian-Anderson-1"},
 	{"quoteText": "Where there is money, there is fighting.", "author": "Marian Anderson", "topics": ["Money"], "realID":"Marian-Anderson-2"},
@@ -320,6 +324,8 @@
 	{"quoteText": "Happiness, it is said, is seldom found by those who seek it, and never by those who seek it for themselves.", "author": "F. Emerson Andrews", "topics": ["Happiness, Pursuit of"], "realID":"F--Emerson-Andrews-0"},
 
 	{"quoteText": "Success is terrifying.  Like happiness, it is often appreciated in retrospect.  It's only later that you place it in perspective.  Years from now, I'll look back and say, \"God, wasn't it wonderful?\"", "author": "Julie Andrews", "topics": ["Success"], "realID":"Julie-Andrews-0"},
+
+	{"quoteText": "I continue to be amazed when I see Christian women defending a bible that denigrates women.", "author": "Seth Andrews", "topics": ["Misogyny, Religious"], "realID":"Seth-Andrews-0"},
 
 	{"quoteText": "If you don't like something, change it. If you can't change it, change your attitude.", "author": "Maya Angelou", "topics": ["Attitude"], "realID":"Maya-Angelou-0"},
 	{"quoteText": "Children's talent to endure stems from their ignorance of alternatives.", "author": "Maya Angelou", "topics": ["Child psychology"], "nuggets": ["Picket Fences"], "realID":"Maya-Angelou-1"},
@@ -481,7 +487,7 @@
 	{"quoteText": "It makes me upset, if not angry, when people assume that there can be no morality without a religious framework.", "author": "Jane Asher", "topics": ["Morality"], "realID":"Jane-Asher-0"},
 
 	{"quoteText": "Properly read, the Bible is the most potent force for atheism ever conceived.", "author": "Isaac Asimov", "topics": ["The Bible"], "realID":"Isaac-Asimov-0"},
-	{"quoteText": "To surrender to ignorance and call it God has always been premature, and it remains premature today.", "author": "Isaac Asimov", "topics": ["Religious brainwashing"], "nuggets": ["Religion"], "realID":"Isaac-Asimov-1"},
+	{"quoteText": "To surrender to ignorance and call it God has always been premature, and it remains premature today.", "author": "Isaac Asimov", "topics": ["Religion & Ignorance"], "nuggets": ["Religion"], "realID":"Isaac-Asimov-1"},
 	{"quoteText": "In life, unlike chess, the game continues after checkmate.", "author": "Isaac Asimov", "topics": ["Despair"], "realID":"Isaac-Asimov-2"},
 	{"quoteText": "The first law of dietetics seems to be: if it tastes good, it's bad for you.", "author": "Isaac Asimov", "topics": ["Food"], "realID":"Isaac-Asimov-3"},
 	{"quoteText": "Nothing interferes with my concentration. You could put on an orgy in my office and I wouldn't look up.  Well, maybe once.", "author": "Isaac Asimov", "topics": ["Focus"], "realID":"Isaac-Asimov-4"},
@@ -493,6 +499,8 @@
 	{"quoteText": "Violence is the last refuge of the incompetent.", "author": "Isaac Asimov", "topics": ["Violence"], "realID":"Isaac-Asimov-10"},
 	{"quoteText": "To succeed, planning alone is insufficient.  One must improvise as well.", "author": "Isaac Asimov", "topics": ["Adaptation"], "realID":"Isaac-Asimov-11"},
 	{"quoteText": "Self-education is, I firmly believe, the only kind of education there is.", "author": "Isaac Asimov", "topics": ["Education"], "realID":"Isaac-Asimov-12"},
+	{"quoteText": "I'll believe anything, no matter how wild and ridiculous, if there is evidence for it. The wilder and more ridiculous something is, however, the firmer and more solid the evidence will have to be.", "author": "Isaac Asimov", "topics": ["Evidence"], "realID":"Isaac-Asimov-13"},
+	{"quoteText": "Creationists make it sound as though a \"theory\" is something you dreamt up after being drunk all night.", "author": "Isaac Asimov", "topics": ["Creation"], "realID":"Isaac-Asimov-14"},
 
 	{"quoteText": "Don't mistake personality for character.", "author": "Wilma Askinas", "topics": ["Charisma"], "realID":"Wilma-Askinas-0"},
 
@@ -625,7 +633,7 @@
 	{"quoteText":"Avoid problems, and you'll never be the one who overcame them.","author":"Richard Bach","topics":["Avoidance"],"realID":"Richard-Bach-0"},
 	{"quoteText":"You are never given a dream without also being given the power to make it come true.","author":"Richard Bach","topics":["Capabilities"],"realID":"Richard-Bach-1"},
 	{"quoteText":"No one does anything uncharacteristic of who they are.","author":"Richard Bach","topics":["Character"],"realID":"Richard-Bach-2"},
-	{"quoteText":"Argue for your limitations, and sure enough they're yours.","author":"Richard Bach","topics":["Limitation"],"realID":"Richard-Bach-3"},
+	{"quoteText":"Argue for your limitations, and sure enough they're yours.","author":"Richard Bach","topics":["Limitations"],"realID":"Richard-Bach-3"},
 	{"quoteText":"Here is the test to find whether your mission on earth is finished: If you're alive, it isn't.","author":"Richard Bach","topics":["Living"],"realID":"Richard-Bach-4"},
 	{"quoteText":"If your happiness depends on what somebody else does, I guess you do have a problem.","author":"Richard Bach","topics":["Others"],"realID":"Richard-Bach-5"},
 	{"quoteText":"Bad things are not the worst thing that can happen to us. Nothing is the worst thing that can happen to us.","author":"Richard Bach","topics":["Problems"],"realID":"Richard-Bach-6"},
@@ -707,6 +715,7 @@
 	{"quoteText":"The price one pays for pursuing any profession or calling is an intimate knowledge of its ugly side.","author":"James A. Baldwin","topics":["Professions"],"realID":"James-A--Baldwin-10"},
 	{"quoteText":"You think your pain and your heartbreak are unprecedented in the history of the world, but then you read.","author":"James A. Baldwin","topics":["Suffering"],"realID":"James-A--Baldwin-11"},
 	{"quoteText":"Once you realize that you can do something, it would be difficult to live with yourself if you didn't do it.","author":"James A. Baldwin","topics":["Regret, Avertable"],"realID":"James-A--Baldwin-12"},
+	{"quoteText":"Anyone who has ever struggled with poverty knows how extremely expensive it is to be poor.","author":"James A. Baldwin","topics":["Poverty"],"realID":"James-A--Baldwin-13"},
 
 	{"quoteText":"Silence never won rights. They are not handed down from above; they are forced by pressures from below.","author":"Roger Nash Baldwin","topics":["Fighting back"],"realID":"Roger-Nash-Baldwin-0"},
 
@@ -789,6 +798,7 @@
 	{"quoteText":"Nothing is ever achieved without giving something up.","author":"Dr. Judith M. Bardwick","topics":["Trade-off"],"realID":"Dr--Judith-M--Bardwick-1"},
 
 	{"quoteText":"If the only way you can accept an assertion is by faith, then you are conceding that it can't be taken on its own merits.","author":"Dan Barker","topics":["Doctrine"],"realID":"Dan-Barker-0"},
+	{"quoteText":"Scientists do not join hands every Sunday and sing \"Yes gravity is real! I know gravity is real! I will have faith!\"  If they did, we would think they were pretty insecure about the concept.","author":"Dan Barker","topics":["Religion & Science"],"realID":"Dan-Barker-0"},
 
 	{"quoteText":"Charles Darwin didn't start out as an evolutionist. But gradually . . . over time . . .","author":"Irwin Barker","topics":["Evolution"],"realID":"Irwin-Barker-0"},
 
@@ -1066,7 +1076,9 @@
 
 	{"quoteText":"I have never turned over a fig leaf yet that didn't have a price tag on the other side.","author":"Saul Bellow","topics":["Lust"],"realID":"Saul-Bellow-0"},
 	{"quoteText":"The part can never be well unless the whole is well.","author":"Saul Bellow","topics":["Unity"],"realID":"Saul-Bellow-1"},
-	{"quoteText":"She was what we used to call a suicide blonde - dyed by her own hand. ","author":"Saul Bellow","topics":["Cosmetics"],"realID":"Saul-Bellow-2"},
+	{"quoteText":"She was what we used to call a suicide blonde - dyed by her own hand.","author":"Saul Bellow","topics":["Cosmetics"],"realID":"Saul-Bellow-2"},
+
+	{"quoteText":"Don't count your chickens before they cross the road.","author":"Charles A. Belov","topics":["Wordplay"],"realID":"Charles-A--Belov-0"},
 
 	{"quoteText":"Behind every argument is someone's ignorance.","author":"Robert Benchley","topics":["Arguing"],"realID":"Robert-Benchley-0"},
 	{"quoteText":"There are several ways in which to apportion the family income, all of them unsatisfactory.","author":"Robert Benchley","topics":["Budgeting"],"realID":"Robert-Benchley-1"},
@@ -1093,6 +1105,7 @@
 	{"quoteText":"Choice depends on the freedom to choose and if you are shackled with debt you don't have the freedom to choose.","author":"Tony Benn","topics":["Debt"],"realID":"Tony-Benn-0"},
 	{"quoteText":"Every generation has to fight the same battles again and again.","author":"Tony Benn","topics":["Generations"],"realID":"Tony-Benn-1"},
 	{"quoteText":"If I rescued a child from drowning the press would no doubt headline the story \"Benn grabs child.\"","author":"Tony Benn","topics":["The Press"],"realID":"Tony-Benn-2"},
+	{"quoteText":"A quotation is what a speaker wants to say, unlike a sound bite which is all that an interviewer allows you to say.","author":"Tony Benn","topics":["Quotation"],"realID":"Tony-Benn-3"},
 
 	{"quoteText":"Children always assume that the sexual lives of their parents come to a grinding halt at their conception.","author":"Alan Bennett","topics":["Sex"],"realID":"Alan-Bennett-0"},
 	{"quoteText":"I'm here. But I'm not all there.","author":"Alan Bennett","topics":["Losing it"],"realID":"Alan-Bennett-1"},
@@ -1118,6 +1131,7 @@
 	{"quoteText":"The trouble with a budget is that it's hard to fill up one hole without digging another.","author":"Dan Bennett","topics":["Budgeting"],"realID":"Dan-Bennett-0"},
 	{"quoteText":"Probably nothing in the world arouses more false hopes than the first four hours of a diet.","author":"Dan Bennett","topics":["Diets"],"realID":"Dan-Bennett-1"},
 	{"quoteText":"There's nothing wrong with the younger generation that becoming taxpayers won't cure.","author":"Dan Bennett","topics":["The Young"],"realID":"Dan-Bennett-2"},
+	{"quoteText":"Middle age is having a choice between two temptations and you choosing the one that'll get you home earlier.","author":"Dan Bennett","topics":["Middle age"],"realID":"Dan-Bennett-3"},
 
 	{"quoteText":"Never marry a man who hates his mother because he'll end up hating you.","author":"Jill Bennett","topics":["Men"],"realID":"Jill-Bennett-0"},
 
@@ -1217,6 +1231,7 @@
 	{"quoteText":"They now have a teenager doll. You wind it up and it resents you for it.","author":"Milton Berle","topics":["Teenagers"],"realID":"Milton-Berle-11"},
 	{"quoteText":"A good wife always forgives her husband when she's wrong.","author":"Milton Berle","topics":["Wives"],"realID":"Milton-Berle-12"},
 	{"quoteText":"You can lead a man to Congress, but you can't make him think.","author":"Milton Berle","topics":["Wordplay"],"realID":"Milton-Berle-13"},
+	{"quoteText":"Two reasons to go into the teaching profession:  July & August.","author":"Milton Berle","topics":["Teachers"],"realID":"Milton-Berle-14"},
 
 	{"quoteText":"Life is ten percent what you make it and ninety percent how you take it.","author":"Irving Berlin","topics":["Attitude"],"realID":"Irving-Berlin-0"},
 	{"quoteText":"There's an element of truth in every idea that lasts long enough to be called corny.","author":"Irving Berlin","topics":["Clichés"],"realID":"Irving-Berlin-1"},
@@ -1258,6 +1273,7 @@
 	{"quoteText":"You can observe a lot by just watching.","author":"Yogi Berra","topics":["Observation"],"realID":"Yogi-Berra-7"},
 	{"quoteText":"In theory there is no difference between theory and practice. In practice there is.","author":"Yogi Berra","topics":["Theory vs. Practice"],"realID":"Yogi-Berra-8"},
 	{"quoteText":"The towels were so thick there I could hardly close my suitcase.","author":"Yogi Berra","topics":["Travel"],"realID":"Yogi-Berra-9"},
+	{"quoteText":"I want to thank all the people who made this meeting necessary.","author":"Yogi Berra","topics":["Meetings"],"realID":"Yogi-Berra-10"},
 
 	{"quoteText":"Don't let the same dog bite you twice.","author":"Chuck Berry","topics":["Fool me once . . ."],"realID":"Chuck-Berry-0"},
 
@@ -1320,13 +1336,17 @@
 
 	{"quoteText":"It is easy to be popular. It is not easy to be just.","author":"Rose Bird","topics":["Justice"],"realID":"Rose-Bird-0"},
 
-	{"quoteText":"A jury can do justice where a judge who has to follow the law sometimes may not.","author":"Lord Birkett","topics":["The Judiciary"],"realID":"Lord-Birkett-0"},
+	{"quoteText":"A jury can do justice where a judge who has to follow the law sometimes may not.","author":"William Norman Birkett","topics":["The Judiciary"],"realID":"William-Norman-Birkett-0"},
+	{"quoteText":"I do not object to people looking at their watches when I'm speaking.  But I strongly object to when they start shaking them to make certain that they are still going.","author":"William Norman Birkett","topics":["Public speaking"],"realID":"William-Norman-Birkett-1"},
+
+	{"quoteText":"Is this true or only clever?","author":"Augusdtine Birrell","topics":["Cleverness"],"realID":"Augusdtine-Birrell-0"},
 
 	{"quoteText":"Watching your daughter being collected by her date feels like handing over a million-dollar Stradivarius to a gorilla.","author":"Jim Bishop","topics":["Daughters"],"realID":"Jim-Bishop-0"},
 	{"quoteText":"Golf is played by twenty million mature American men whose wives think they are out having fun.","author":"Jim Bishop","topics":["Golf"],"realID":"Jim-Bishop-1"},
 	{"quoteText":"Nobody understands anyone who's eighteen, including those who are eighteen.","author":"Jim Bishop","topics":["Teenagers"],"realID":"Jim-Bishop-2"},
 
 	{"quoteText":"My doctor is wonderful. Once in 1955, when I couldn't afford an operation, he touched up the X-rays.","author":"Joey Bishop","topics":["Doctors"],"realID":"Joey-Bishop-0"},
+	{"quoteText":"Today you can go to a gas station and find the cash register open and the toilets locked.","author":"Joey Bishop","topics":["The Times"],"realID":"Joey-Bishop-1"},
 
 	{"quoteText":"I don't know any parent that look into the eyes of a newborn baby and say, \"How can we screw this kid up?\"","author":"Russell Bishop","topics":["Parenting"],"realID":"Russell-Bishop-0"},
 
@@ -1529,6 +1549,7 @@
 	{"quoteText":"A dress that zips up the back will bring a husband and wife together.","author":"James H. Boren","topics":["Fashion"],"realID":"James-H--Boren-1"},
 	{"quoteText":"It is hard to look up to a leader who keeps his ear to the ground.","author":"James H. Boren","topics":["\"Leaders\""],"realID":"James-H--Boren-2"},
 	{"quoteText":"Most educators would continue to lecture on navigation while the ship is going down.","author":"James H. Boren","topics":["Theory vs. Practice"],"realID":"James-H--Boren-3"},
+	{"quoteText":"I've got what it takes to take what you've got.","author":"James H. Boren","topics":["Self-confidence"],"realID":"James-H--Boren-4"},
 
 	{"quoteText":"Laughter is the shortest distance between two people.","author":"Victor Borge","topics":["Laughter"],"realID":"Victor-Borge-0"},
 	{"quoteText":"Ah Mozart! He was happily married - but his wife wasn't.","author":"Victor Borge","topics":["Marriage"],"realID":"Victor-Borge-1"},
@@ -1629,6 +1650,8 @@
 
 	{"quoteText":"In war there is no second prize for runner-up.","author":"Gen. Omar Bradley","topics":["War"],"realID":"Gen--Omar-Bradley-0"},
 
+	{"quoteText":"I always did think that cleverness was the art of hiding ignorance.","author":"Shelland Bradley","topics":["Cleverness"],"realID":"Shelland-Bradley-0"},
+
 	{"quoteText":"Should we stop teaching children to read, since what they might read could be harmful to them?","author":"Toby Bradshaw","topics":["Censorship"],"realID":"Toby-Bradshaw-0"},
 
 	{"quoteText":"Striving for excellence motivates you; striving for perfection is demoralizing.","author":"Harriet Braiker","topics":["Perfection"],"realID":"Harriet-Braiker-0"},
@@ -1707,6 +1730,8 @@
 	{"quoteText":"Old age takes away from us what we have inherited and gives us what we have earned.","author":"Gerald Brenan","topics":["Old age"],"realID":"Gerald-Brenan-6"},
 
 	{"quoteText":"Someday is not a day of the week.","author":"Denise Brennan-Nelson","topics":["Procrastination"],"realID":"Denise-Brennan-Nelson-0"},
+
+	{"quoteText":"I tell vegetarians \"Hey, vegetables are living things too.  They're just easier to catch.\"","author":"Kevin Brennan","topics":["Vegetarians"],"realID":"Kevin-Brennan-0"},
 
 	{"quoteText":"Misers aren't fun to live with, but they make wonderful ancestors.","author":"David Brenner","topics":["Misers"],"realID":"David-Brenner-0"},
 
@@ -1833,7 +1858,7 @@
 
 	{"quoteText":"Sweat is the cologne of accomplishment.","author":"Heywood Broun","topics":["Exertion"],"realID":"Heywood-Broun-0"},
 	{"quoteText":"Appeasers believe that if you keep on throwing steaks to a tiger, the tiger will become a vegetarian.","author":"Heywood Broun","topics":["Appeasing"],"realID":"Heywood-Broun-1"},
-	{"quoteText":"Nobody talks so constantly about God as those who insist that there is no God.","author":"Heywood Broun","topics":["Atheism"],"realID":"Heywood-Broun-2"},
+	{"quoteText":"Nobody talks so constantly about God as those who insist that there is no God.","author":"Heywood Broun","topics":["Atheists"],"realID":"Heywood-Broun-2"},
 	{"quoteText":"Almost nobody means precisely what he says when he makes the declaration, \"I'm in favor of free speech.\"","author":"Heywood Broun","topics":["Free speech"],"realID":"Heywood-Broun-3"},
 
 	{"quoteText":"The expedient thing and the right thing are seldom the same thing.","author":"Charles Brower","topics":["Right & Wrong"],"realID":"Charles-Brower-0"},
@@ -2070,6 +2095,7 @@
 	{"quoteText":"Sometimes you just have to pee in the sink.","author":"Charles Bukowski","topics":["Some days . . ."],"realID":"Charles-Bukowski-4"},
 	{"quoteText":"If you're losing your soul and you know it, then you've still got a soul left to lose.","author":"Charles Bukowski","topics":["Self-awareness"],"realID":"Charles-Bukowski-5"},
 	{"quoteText":"There is nothing as boring as the truth.","author":"Charles Bukowski","topics":["Truth"],"realID":"Charles-Bukowski-6"},
+	{"quoteText":"Beware those who only take instructions from their God, for they have failed completely to live their own lives.","author":"Charles Bukowski","topics":["Zealots, Religious"],"realID":"Charles-Bukowski-7"},
 
 	{"quoteText":"If you don't have good stories to tell on your deathbed, what good was living?","author":"Sandra Bullock","topics":["Living"],"realID":"Sandra-Bullock-0"},
 
@@ -2139,6 +2165,7 @@
 	{"quoteText":"I must be getting absent-minded. Whenever I complain that things aren't what they used to be, I always forget to include myself.","author":"George Burns","topics":["Old age"],"realID":"George-Burns-16"},
 	{"quoteText":"I look better, feel better, make love better, and I'll tell you something else . . . I never lied better.","author":"George Burns","topics":["Old age"],"realID":"George-Burns-17"},
 	{"quoteText":"I was always taught to respect my elders and I've now reached the age when I don't have anybody to respect.","author":"George Burns","topics":["Old age"],"realID":"George-Burns-18"},
+	{"quoteText":"It isn't premarital sex if you have no intention of getting married.","author":"George Burns","topics":["Sex"],"realID":"George-Burns-19"},
 
 	{"quoteText":"Don't worry about yourself. Take care of those who work for you and you'll float to greatness on their achievements.","author":"H. S. M. Burns","topics":["Management 101"],"realID":"H--S--M--Burns-0"},
 	{"quoteText":"A good manager is a man who isn't worried about his own career but rather the careers of those who work for him.","author":"H. S. M. Burns","topics":["Leadership 101"],"realID":"H--S--M--Burns-1"},
@@ -2157,6 +2184,8 @@
 	{"quoteText":"Silence is only frightening to people who are compulsively verbalizing.","author":"William S. Burroughs","topics":["Social anxiety"],"realID":"William-S--Burroughs-2"},
 
 	{"quoteText":"PR cannot overcome things that shouldn't have been done.","author":"Harold Burson","topics":["Spin doctors"],"realID":"Harold-Burson-0"},
+
+	{"quoteText":"What a lovely surprise to finally discover how unlonely being alone can be.","author":"Ellen Burstyn","topics":["Solitude"],"realID":"Ellen-Burstyn-0"},
 
 	{"quoteText":"Children really brighten up a household. They never turn the lights off.","author":"Ralph Bus","topics":["Children"],"realID":"Ralph-Bus-0"},
 
@@ -2242,6 +2271,8 @@
 	{"quoteText":"You never reach the promised land. You can march towards it.","author":"James Callaghan","topics":["Journey vs. Destination"],"realID":"James-Callaghan-1"},
 	
 	{"quoteText":"When a conservative doesn't like a radio show, he changes the station. When a liberal doesn't like a radio station, he demands it be taken off the air.","author":"Gerry Callahan","topics":["Cancel culture"],"realID":"Gerry-Callahan-0"},
+
+	{"quoteText":"This is a feminist bookstore. There is no humor section.","author":"John Callahan","topics":["Feminism"],"realID":"John-Callahan-0"},
 	
 	{"quoteText":"When my enemies stop hissing, I shall know I am slipping.","author":"Maria Callas","topics":["Enemies with benefits"],"realID":"Maria-Callas-0"},
 	
@@ -2307,9 +2338,13 @@
 	{"quoteText":"Physical activity is one of the most powerful, yet underutilized tools for personal development, balance and creativity.","author":"Colleen Cannon","topics":["Exercise"],"realID":"Colleen-Cannon-0"},
 	
 	{"quoteText":"Christmas is a holiday that persecutes the lonely, the frayed and the rejected.","author":"Jimmy Cannon","topics":["Christmas"],"realID":"Jimmy-Cannon-0"},
+
+	{"quoteText":"The trouble with referees is that they just don't care which side wins.","author":"Tom Canterbury","topics":["Officiating"],"realID":"Tom-Canterbury-0"},
 	
 	{"quoteText":"Marriage is an attempt to solve problems together which you didn't even have when you were on your own.","author":"Eddie Cantor","topics":["Marriage"],"realID":"Eddie-Cantor-0"},
 	{"quoteText":"A wedding is a funeral where you smell your own flowers.","author":"Eddie Cantor","topics":["Marriage"],"realID":"Eddie-Cantor-1"},
+
+	{"quoteText":"Yesterday I did nothing and today I'm finishing what I did yesterday.","author":"Flora Cantwell","topics":["R & R"],"realID":"Flora-Cantwell-0"},
 	
 	{"quoteText":"Children can stand vast amounts of sternness . . . It is injustice, inequity, and inconsistency that kill them.","author":"Robert Capon","topics":["Discipline"],"realID":"Robert-Capon-0"},
 	
@@ -2379,7 +2414,7 @@
 	{"quoteText":"Here's a bumper sticker I'd like to see: \"We are the proud parents of a child whose self-esteem is sufficient that he doesn't need us promoting his minor scholastic achievements on the back of our car.\"","author":"George Carlin","topics":["\"Other parents\""],"realID":"George-Carlin-41"},
 	{"quoteText":"Religion is like a pair of shoes . . . Find one that fits for you, but don't make me wear your shoes.","author":"George Carlin","topics":["Outreach, Religious"],"realID":"George-Carlin-42"},
 	{"quoteText":"If your kid needs a role model and you ain't it, you're both f*ucked.","author":"George Carlin","topics":["Parenting, Poor"],"realID":"George-Carlin-43"},
-	{"quoteText":"Some people see the cup as half empty. Some people see the cup as half full. I see the cup as too large.","author":"George Carlin","topics":["Perception"],"realID":"George-Carlin-44"},
+	{"quoteText":"Some people see the cup as half empty. Some people see the cup as half full. I see the cup as too large.","author":"George Carlin","topics":["Optimism vs. Pessimism"],"realID":"George-Carlin-44"},
 	{"quoteText":"Political correctness is America's newest form of intolerance, and it is especially pernicious because it comes disguised as tolerance.","author":"George Carlin","topics":["Political correctness"],"realID":"George-Carlin-45"},
 	{"quoteText":"Political correctness is fascism pretending to be manners.","author":"George Carlin","topics":["Political correctness"],"realID":"George-Carlin-46"},
 	{"quoteText":"Isn't making a smoking section in a restaurant like making a peeing section in a swimming pool?","author":"George Carlin","topics":["Smoking"],"realID":"George-Carlin-47"},
@@ -2391,6 +2426,8 @@
 	{"quoteText":"If you have selfish, ignorant citizens, you're gonna get selfish, ignorant leaders.","author":"George Carlin","topics":["Elections"],"realID":"George-Carlin-53"},
 	{"quoteText":"I don't believe there's any problem in this country, no matter how tough it is, that Americans, when they roll up their sleeves, can't completely ignore.","author":"George Carlin","topics":["America"],"realID":"George-Carlin-54"},
 	{"quoteText":"Some people have no idea what they're doing, and a lot of them are really good at it.","author":"George Carlin","topics":["Incompetence"],"realID":"George-Carlin-55"},
+	{"quoteText":"If God had intended us not to masturbate, He would have made our arms shorter.","author":"George Carlin","topics":["Masturbation"],"realID":"George-Carlin-56"},
+	{"quoteText":"I'm a visionary; I'm ahead of my time.  Trouble is, I'm only about an hour and a half ahead.","author":"George Carlin","topics":["Visionaries"],"realID":"George-Carlin-57"},
 	
 	{"quoteText":"If you treat a sick child like an adult and a sick adult like a child, everything usually works out pretty well.","author":"Ruth Carlisle","topics":["Parenting"],"realID":"Ruth-Carlisle-0"},
 	
@@ -2434,7 +2471,7 @@
 	{"quoteText":"There are always three speeches for every one you actually give. The one you practiced, the one you gave, and the one you wish you gave.","author":"Dale Carnegie","topics":["Public speaking"],"realID":"Dale-Carnegie-23"},
 	{"quoteText":"Speakers who talk about what life has taught them never fail to keep the attention of their listeners.","author":"Dale Carnegie","topics":["Public speaking"],"realID":"Dale-Carnegie-24"},
 	{"quoteText":"Knowledge isn't power until it is applied.","author":"Dale Carnegie","topics":["Knowledge"],"realID":"Dale-Carnegie-25"},
-	{"quoteText":"The 'sure thing' boat never gets far from shore.","author":"Dale Carnegie","topics":["Security"],"realID":"Dale-Carnegie-26"},
+	{"quoteText":"The \"sure thing\" boat never gets far from shore.","author":"Dale Carnegie","topics":["Security"],"realID":"Dale-Carnegie-26"},
 	{"quoteText":"Feeling sorry for yourself and your present condition is not only a waste of energy but the worst habit you could possibly have.","author":"Dale Carnegie","topics":["Self-pity"],"realID":"Dale-Carnegie-27"},
 	{"quoteText":"The expression a woman wears on her face is far more important than the clothes she wears on her back.","author":"Dale Carnegie","topics":["Womanhood"],"realID":"Dale-Carnegie-28"},
 	{"quoteText":"Our fatigue is often caused not by work, but by worry, frustration and resentment.","author":"Dale Carnegie","topics":["Fatigue"],"realID":"Dale-Carnegie-29"},
@@ -2448,6 +2485,7 @@
 	{"quoteText":"As an American citizen, I'm not asking for any special treatment - the only thing I ask and want is to be treated just like an illegal alien.","author":"Howie Carr","topics":["Immigration"],"realID":"Howie-Carr-0"},
 	
 	{"quoteText":"I used to buy lottery tickets every week until I realized you could watch it on TV for nothing.","author":"Jimmy Carr","topics":["Lottery"],"realID":"Jimmy-Carr-0"},
+	{"quoteText":"I think the idea that death is not the end . . . is limiting.  Thoughts like that prevent you from making the most of the time that you have.","author":"Jimmy Carr","topics":["The Afterlife"],"realID":"Jimmy-Carr-1"},
 	
 	{"quoteText":"You have not had thirty year's experience . . . you have had one year's experience thirty times.","author":"J. L. Carr","topics":["Seniority"],"realID":"J--L--Carr-0"},
 	
@@ -2509,6 +2547,8 @@
 	{"quoteText":"At my age, getting a second doctor's opinion is kind of like switching slot machines.","author":"Jimmy Carter","topics":["Doctors"],"realID":"Jimmy-Carter-2"},
 	
 	{"quoteText":"The times are not as bad as they seem; they couldn't be.","author":"John Franklin Carter","topics":["The Times"],"realID":"John-Franklin-Carter-0"},
+
+	{"quoteText":"The distinction between contribution and commitment: Take the matter of bacon and eggs.  The chicken makes a contribution. The pig makes a commitment.","author":"John Mack Carter","topics":["Commitment"],"realID":"John-Mack-Carter-0"},
 	
 	{"quoteText":"Marriage ain't easy but nothing that's worth much ever is.","author":"Lillian Carter","topics":["Marriage"],"realID":"Lillian-Carter-0"},
 	
@@ -2527,6 +2567,8 @@
 	
 	{"quoteText":"Ninety-nine percent of the failures come from people who have the habit of making excuses.","author":"George Washington Carver","topics":["Excuses"],"realID":"George-Washington-Carver-0"},
 	{"quoteText":"When you do the common things in life in an uncommon way, you will command the attention of the world.","author":"George Washington Carver","topics":["Outside-the-box thinking"],"realID":"George-Washington-Carver-1"},
+
+	{"quoteText":"I'm thirty years old, but I read at the thirty-four-year-old level.","author":"Dana Carvey","topics":["Reading"],"realID":"Dana-Carvey-0"},
 	
 	{"quoteText":"My experience has been that the people who talk the loudest about morality are the people who possess the least amount of it.","author":"James Carville","topics":["Moralists"],"realID":"James-Carville-0"},
 	
@@ -2577,6 +2619,7 @@
 	
 	{"quoteText":"A pat on the back, though only a few vertebrae removed from a kick in the pants, is miles ahead in results.","author":"Bennett Cerf","topics":["Encouragement"],"realID":"Bennett-Cerf-0"},
 	{"quoteText":"Middle age is when your old classmates are so gray and wrinkled and bald they don't recognize you.","author":"Bennett Cerf","topics":["Middle age"],"realID":"Bennett-Cerf-1"},
+	{"quoteText":"Good manners: the noise you don't make when you're eating soup.","author":"Bennett Cerf","topics":["Refinement"],"realID":"Bennett-Cerf-2"},
 	
 	{"quoteText":"A year in the internet business is like a dog year.","author":"Vinton Cerf","topics":["The Internet"],"realID":"Vinton-Cerf-0"},
 	
@@ -2837,6 +2880,7 @@
 	{"quoteText":"It is a mistake to look too far ahead. Only one link in the chain of destiny can be handled at a time.","author":"Winston Churchill","topics":["Destiny"],"realID":"Winston-Churchill-52"},
 	{"quoteText":"Quotations when engraved upon the memory give you good thoughts.","author":"Winston Churchill","topics":["Quotation"],"realID":"Winston-Churchill-53"},
 	{"quoteText":"It is a good thing for an uneducated man to read books of quotations.","author":"Winston Churchill","topics":["Quotation"],"realID":"Winston-Churchill-54"},
+	{"quoteText":"If this is a blessing, it is certainly very well disguised.","author":"Winston Churchill","topics":["Blessings"],"realID":"Winston-Churchill-55"},
 	
 	{"quoteText":"It's always wise to raise questions about the most obvious and simple assumptions.","author":"C. West Churchman","topics":["Skepticism, Healthy"],"realID":"C--West-Churchman-0"},
 	
@@ -2909,7 +2953,7 @@
 	
 	{"quoteText":"A right is not what someone gives you; it's what no one can take away from you.","author":"Ramsey Clark","topics":["Rights"],"realID":"Ramsey-Clark-0"},
 	
-	{"quoteText":"One of the great tragedies of mankind is that morality has been hijacked by religion. So now people assume that religion and morality have a necessary connection. But the basis of morality is really very simple and doesn't require religion at all.","author":"Arthur C. Clarke","topics":["Morality"],"realID":"Arthur-C--Clarke-0"},
+	{"quoteText":"One of the great tragedies of mankind is that morality has been hijacked by religion . . . But the basis of morality is really very simple and doesn't require religion at all.","author":"Arthur C. Clarke","topics":["Morality"],"realID":"Arthur-C--Clarke-0"},
 	{"quoteText":"Human judges can show mercy. But against the laws of nature, there is no appeal.","author":"Arthur C. Clarke","topics":["Nature"],"realID":"Arthur-C--Clarke-1"},
 	{"quoteText":"Sometimes I think we're alone in the universe, and sometimes I think we're not. In either case the idea is quite staggering.","author":"Arthur C. Clarke","topics":["The Universe"],"realID":"Arthur-C--Clarke-2"},
 	{"quoteText":"If an elderly but distinguished scientist says that something is possible he is almost certainly right, but if he says that it is impossible he is very probably wrong.","author":"Arthur C. Clarke","topics":["'The impossible'"],"realID":"Arthur-C--Clarke-3"},
@@ -3008,6 +3052,8 @@
 	{"quoteText":"Every nation makes decisions based on self-interest and defends them on the basis of morality.","author":"William Sloane Coffin","topics":["\"Morality\""],"realID":"William-Sloane-Coffin-0"},
 	
 	{"quoteText":"Focus on what you are moving toward rather than what you are leaving behind.","author":"Alan Cohen","topics":["Forethought"],"realID":"Alan-Cohen-0"},
+
+	{"quoteText":"Gods are fragile things, they may be killed by a whiff of science or a dose of common sense.","author":"Chapman Cohen","topics":["Evolution, Religious"],"realID":"Chapman-Cohen-0"},
 	
 	{"quoteText":"Generally, the theories we believe we call facts, and the theories we disbelieve we call theories.","author":"Felix Cohen","topics":["Cognitive bias"],"realID":"Felix-Cohen-0"},
 	
@@ -3293,6 +3339,8 @@
 	{"quoteText":"It is a lawyer's duty to represent a guilty man, but not to free him.","author":"Grant B. Cooper","topics":["Lawyers"],"realID":"Grant-B--Cooper-0"},
 	
 	{"quoteText":"The best way to get people to think out of the box is not to create the box in the first place.","author":"Martin Cooper","topics":["R & D"],"realID":"Martin-Cooper-0"},
+
+	{"quoteText":"Most republics in modern history have mixed democracy and oligarchy - in which power rests with a small number of people, typically the wealthiest - but nevertheless refer to themselves as \"democracies.\"","author":"Scott Cooper","topics":["Plutocracy"],"realID":"Scott-Cooper-0"},
 	
 	{"quoteText":"I went window shopping today! I bought four windows.","author":"Tommy Cooper","topics":["Shopping"],"realID":"Tommy-Cooper-0"},
 	
@@ -3612,6 +3660,7 @@
 	{"quoteText":"I told my psychiatrist that everyone hates me. He said I was being ridiculous - everyone hasn't met me yet.","author":"Rodney Dangerfield","topics":["Psychology"],"realID":"Rodney-Dangerfield-9"},
 	{"quoteText":"I haven't spoken to my wife in years. I didn't want to interrupt her.","author":"Rodney Dangerfield","topics":["Wives"],"realID":"Rodney-Dangerfield-10"},
 	{"quoteText":"I told my psychiatrist, \"Doc, I keep thinking I'm a dog.\" He told me to get off his couch.","author":"Rodney Dangerfield","topics":["Psychology"],"realID":"Rodney-Dangerfield-11"},
+	{"quoteText":"I walked in on my wife and the milkman, the first thing she says is, \"Don't tell the butcher!\"","author":"Rodney Dangerfield","topics":["Infidelity"],"realID":"Rodney-Dangerfield-12"},
 	
 	{"quoteText":"Entertainment is, in fact, the biggest cause of boredom in the modern world. The more man is entertained, the more bored he grows.","author":"Anthony Daniels","topics":["Entertainment"],"realID":"Anthony-Daniels-0"},
 	
@@ -3650,11 +3699,13 @@
 	
 	{"quoteText":"When you subsidize poverty and failure, you get more of both.","author":"James Dale Davidson","topics":["The welfare state"],"realID":"James-Dale-Davidson-0"},
 	
+	{"quoteText":"Dogmatic rigidity means that every new discovery and every novel idea is likely to pose a threat to religion.","author":"Paul Davies","topics":["Dogma"],"realID":"Paul-Davies-0"},
+
+	{"quoteText":"Motivation is like food for the brain. You cannot get enough in one sitting. It needs continual and regular top ups.","author":"Peter Davies","topics":["Motivation"],"realID":"Peter-Davies-0"},
+
 	{"quoteText":"Fanaticism is overcompensation for doubt.","author":"Robertson Davies","topics":["Fanatacism"],"realID":"Robertson-Davies-0"},
 	{"quoteText":"The world is full of people whose notion of a satisfactory future is, in fact, a return to the idealized past.","author":"Robertson Davies","topics":["Traditionalists"],"realID":"Robertson-Davies-1"},
-	
-	{"quoteText":"Motivation is like food for the brain. You cannot get enough in one sitting. It needs continual and regular top ups.","author":"Peter Davies","topics":["Motivation"],"realID":"Peter-Davies-0"},
-	
+		
 	{"quoteText":"If I had to do my life over, I would change every single thing I have done.","author":"Roy Davies","topics":["In retrospect"],"realID":"Roy-Davies-0"},
 	
 	{"quoteText":"The church used to absolve sinners; today it has the gall to absolve sins.","author":"Nicola Gomez Davila","topics":["Sin"],"realID":"Nicola-Gomez-Davila-0"},
@@ -3695,13 +3746,15 @@
 	
 	{"quoteText":"You believe that all humanity came from Adam and Eve, and humans have not evolved at all since. So, tell me: between the two of them, which was black, which was white, and which was Asian?","author":"Richard Dawkins","topics":["Adam & Eve"],"realID":"Richard-Dawkins-0"},
 	{"quoteText":"We are all atheists about most of the gods that societies have ever believed in. Some of us just go one god further.","author":"Richard Dawkins","topics":["Atheism"],"realID":"Richard-Dawkins-1"},
-	{"quoteText":"I am against religion because it teaches us to be satisfied with not understanding the world.","author":"Richard Dawkins","topics":["Doctrine, Religious"],"realID":"Richard-Dawkins-2"},
+	{"quoteText":"I am against religion because it teaches us to be satisfied with not understanding the world.","author":"Richard Dawkins","topics":["Religion & Ignorance"],"realID":"Richard-Dawkins-2"},
 	{"quoteText":"Religious faith not only lacks evidence, its independence from evidence is its pride and joy, shouted from the rooftops.","author":"Richard Dawkins","topics":["Dogma"],"realID":"Richard-Dawkins-3"},
 	{"quoteText":"Today, the theory of evolution is about as much open to doubt as the theory that the earth goes round the sun.","author":"Richard Dawkins","topics":["Evolution"],"realID":"Richard-Dawkins-4"},
 	{"quoteText":"I can't think of many people who deserve to go to hell, but people who teach its existence to vulnerable children are prime candidates.","author":"Richard Dawkins","topics":["Indoctrination camps"],"realID":"Richard-Dawkins-5"},
 	{"quoteText":"It is a remarkable coincidence that almost everyone has the same religion as their parents and it always just so happens, they're the right religion.","author":"Richard Dawkins","topics":["Indoctrination"],"realID":"Richard-Dawkins-6"},
 	{"quoteText":"Faith is the great cop-out, the great excuse to evade the need to think and evaluate evidence.","author":"Richard Dawkins","topics":["Faith"],"realID":"Richard-Dawkins-7"},
 	{"quoteText":"By all means let's be open-minded, but not so open-minded that our brains drop out.","author":"Richard Dawkins","topics":["Open minds"],"realID":"Richard-Dawkins-8"},
+	{"quoteText":"We should always be open-minded, but the only good reason to believe that something exists is if there is real evidence that it does.","author":"Richard Dawkins","topics":["Evidence"],"realID":"Richard-Dawkins-9"},
+	{"quoteText":"Faith is the great cop-out, the great excuse to evade the need to think and evaluate evidence. Faith is belief in spite of, even perhaps because of, the lack of evidence.","author":"Richard Dawkins","topics":["Faith"],"realID":"Richard-Dawkins-10"},
 	
 	{"quoteText":"The mother-in-law came round last week. It was absolutely pouring down. So I opened the door and I saw her there and I said, \"Mother, don't just stand there in the rain. Go home.\"","author":"Les Dawson","topics":["Mother-in-law"],"realID":"Les-Dawson-0"},
 	{"quoteText":"My wife is a sex object. Every time I ask for sex, she objects.","author":"Les Dawson","topics":["Sex"],"realID":"Les-Dawson-1"},
@@ -3793,6 +3846,7 @@
 	
 	{"quoteText":"Some children are raised in such an ideological prison that they willingly become their own jailers.","author":"Daniel Dennett","topics":["Indoctrination"],"realID":"Daniel-Dennett-0"},
 	{"quoteText":"I think religion for many people is some sort of moral Viagra.","author":"Daniel Dennett","topics":["Religion"],"realID":"Daniel-Dennett-1"},
+	{"quoteText":"There's simply no polite way to tell people they've dedicated their lives to an illusion.","author":"Daniel Dennett","topics":["Hypnotics"],"realID":"Daniel-Dennett-2"},
 	
 	{"quoteText":"Money is color-blind, race-blind, sex-blind, degree-blind and couldn't care less who brought you up or in what circumstances.","author":"Felix Dennis","topics":["Capitalism"],"realID":"Felix-Dennis-0"},
 	
@@ -3882,6 +3936,9 @@
 	{"quoteText":"Aim for brevity while avoiding jargon.","author":"Edsger Dijkstra","topics":["Communication"],"realID":"Edsger-Dijkstra-0"},
 	{"quoteText":"Simplicity is prerequisite for reliability.","author":"Edsger Dijkstra","topics":["Simplicity"],"realID":"Edsger-Dijkstra-1"},
 	{"quoteText":"The question of whether computers can think is just like the question of whether submarines can swim.","author":"Edsger Dijkstra","topics":["Computers"],"realID":"Edsger-Dijkstra-2"},
+
+	{"quoteText":"Faith is the excuse people give for believing something when they don't have evidence.","author":"Matt Dillahunty","topics":["Faith"],"realID":"Matt-Dillahunty-0"},
+	{"quoteText":"Religion convinces you you're poisoned, when you're not, and then offers you the homeopathic remedy.","author":"Matt Dillahunty","topics":["Fear-mongering, Religious"],"realID":"Matt-Dillahunty-0"},
 	
 	{"quoteText":"You can't test courage cautiously.","author":"Annie Dillard","topics":["Courage"],"realID":"Annie-Dillard-0"},
 	{"quoteText":"How we spend our days is, of course, how we spend our lives.","author":"Annie Dillard","topics":["Routine"],"realID":"Annie-Dillard-1"},
@@ -4086,7 +4143,7 @@
 	
 	{"quoteText":"What is forgiven is usually well-remembered.","author":"Louis Dudek","topics":["Grudges"],"realID":"Louis-Dudek-0"},
 
-	{"quoteText":"A dead atheist is someone who is all dressed up with no place to go.","author":"James Duffecy","topics":["Atheism"],"realID":"James-Duffecy-0"},
+	{"quoteText":"A dead atheist is someone who is all dressed up with no place to go.","author":"James Duffecy","topics":["Atheists"],"realID":"James-Duffecy-0"},
 	
 	{"quoteText":"I have too much respect for the idea of God to make it responsible for such an absurd world.","author":"Georges Duhamel","topics":["Atheism"],"realID":"Georges-Duhamel-0"},
 	{"quoteText":"We do not know the true value of our moments until they have undergone the test of memory.","author":"Georges Duhamel","topics":["Reminiscing"],"realID":"Georges-Duhamel-1"},
@@ -4156,6 +4213,8 @@
 	
 	
 	{"quoteText":"My wife has a slight impediment in her speech. Every now and then she stops to breathe.","author":"Jimmy Durante","topics":["Wives"],"realID":"Jimmy-Durante-0"},
+
+	{"quoteText":"I never questioned the integrity of an umpire - their eyesight . . . yes.","author":"Leo Durocher","topics":["Officiating"],"realID":"Leo-Durocher-0"},
 	
 	{"quoteText":"If I had a dollar for every person telling me that I was right about BLM's financial fraud, I'd have enough money to buy a mansion next door to BLM's new $6 million home. Those donations sure did end racism.","author":"Xaviaer DuRousseau","topics":["BLM"],"realID":"Xaviaer-DuRousseau-0"},
 	{"quoteText":"People hate the rich so much, yet they play the lottery every day. Envy is a disease.","author":"Xaviaer DuRousseau","topics":["Covetousness"],"realID":"Xaviaer-DuRousseau-1"},
@@ -4460,7 +4519,7 @@
 	
 	{"quoteText":"Man's fear of ideas is probably the greatest dike holding back human knowledge and happiness.","author":"Morris L. Ernst","topics":["Closed minds"],"realID":"Morris-L--Ernst-0"},
 	
-	{"quoteText":"Most people have some sort of religion - at least they know what church they're staying away from.","author":"John Erskine","topics":["Church"],"realID":"John-Erskine-0"},
+	{"quoteText":"Most people have some sort of religion - at least they know what church they're staying away from.","author":"John Erskine","topics":["Organized religion"],"realID":"John-Erskine-0"},
 	{"quoteText":"There is a difference between beauty and charm. A beautiful woman is one I notice. A charming woman is one who notices me.","author":"John Erskine","topics":["Charm"],"realID":"John-Erskine-1"},
 	
 	{"quoteText":"Millions long for immortality who do not know what to do with themselves on a rainy Sunday afternoon.","author":"Susan Ertz","topics":["The Afterlife"],"realID":"Susan-Ertz-0"},
@@ -4971,9 +5030,9 @@
 	{"quoteText":"I feel bad that I don't feel worse.","author":"Michael Frayn","topics":["Guilt"],"realID":"Michael-Frayn-0"},
 	
 	{"quoteText":"Marrying a woman for her beauty makes no more sense than eating a bird for its singing. But it's a common mistake nonetheless.","author":"Charles Frazier","topics":["Beauty"],"realID":"Charles-Frazier-0"},
-	
-	{"quoteText":"I'm ready for anything. That's probably why it never happens.","author":"Kinky Friedman","topics":["Preparation"],"realID":"Kinky-Friedman-0"},
-	
+		
+	{"quoteText":"People don't need religion, religion needs people. They're just corporations and they need your money to thrive. ","author":"Don Freeman","topics":["Religious entrepreneurship"],"realID":"Don-Freeman-0"},
+
 	{"quoteText":"Jealousy is a good indication that you are doing things the right way. People never get jealous of losers.","author":"Morgan Freeman","topics":["Jealousy"],"realID":"Morgan-Freeman-0"},
 	{"quoteText":"The best way to guarantee a loss is to quit.","author":"Morgan Freeman","topics":["Quitting"],"realID":"Morgan-Freeman-1"},
 	{"quoteText":"Oppression isn't hearing a word that offends you. Oppression is being told you can't say certain words because you'll offend someone else.","author":"Morgan Freeman","topics":["Political correctness"],"realID":"Morgan-Freeman-2"},
@@ -5014,6 +5073,7 @@
 	
 	{"quoteText":"An editor's job is to take something great and make it good.","author":"Kinky Friedman","topics":["Editors"],"realID":"Kinky-Friedman-0"},
 	{"quoteText":"Money can buy you a fine dog, but only love can make him wag his tail.","author":"Kinky Friedman","topics":["Dogs"],"realID":"Kinky-Friedman-1"},
+	{"quoteText":"I'm ready for anything. That's probably why it never happens.","author":"Kinky Friedman","topics":["Preparation"],"realID":"Kinky-Friedman-2"},
 	
 	{"quoteText":"The scientific name for an animal that doesn't either run from or fight its enemies is lunch.","author":"Michael Friedman","topics":["Sheep"],"realID":"Michael-Friedman-0"},
 	
@@ -5031,6 +5091,7 @@
 	{"quoteText":"The corporation cannot be ethical, its only responsibility is to make a profit.","author":"Milton Friedman","topics":["Corporations"],"realID":"Milton-Freidman-11"},
 	
 	{"quoteText":"Communism was a great system for making people equally poor - in fact, there was no better system in the world for that than communism.","author":"Thomas Friedman","topics":["Communism"],"realID":"Thomas-Friedman-0"},
+	{"quoteText":"No two countries that both have a McDonald's have ever fought a war against each other.","author":"Thomas Friedman","topics":["War"],"realID":"Thomas-Friedman-1"},
 	
 	{"quoteText":"Confront issues and challenges - not each other.","author":"Suzanne Mayo Frindt","topics":["Challenge"],"realID":"Suzanne-Mayo-Frindt-0"},
 	
@@ -5070,17 +5131,16 @@
 	{"quoteText":"A jury consists of twelve average persons chosen to decide who has the better lawyer.","author":"Robert Frost","topics":["The Judiciary"],"realID":"Robert-Frost-6"},
 	{"quoteText":"Isn't it funny that anything the Supreme Court says is right?","author":"Robert Frost","topics":["The Judiciary"],"realID":"Robert-Frost-7"},
 	{"quoteText":"In three words I can sum up everything I've learned about life: It goes on.","author":"Robert Frost","topics":["Life"],"realID":"Robert-Frost-8"},
-	{"quoteText":"Having one child makes you a parent; having two you are a referee .","author":"Robert Frost","topics":["Multiples"],"realID":"Robert-Frost-9"},
-	{"quoteText":"The world is full of willing people; some willing to work, the rest willing to let them.","author":"Robert Frost","topics":["Noncontributors"],"realID":"Robert-Frost-10"},
-	{"quoteText":"The brain is a wonderful organ; it starts working the moment you get up in the morning and does not stop until you get into the office.","author":"Robert Frost","topics":["The office"],"realID":"Robert-Frost-11"},
-	{"quoteText":"Many a rich father wishes he knew how to give his sons the hardships that made him rich.","author":"Robert Frost","topics":["Parenting"],"realID":"Robert-Frost-12"},
-	{"quoteText":"By working faithfully eight hours a day, you may eventually get to be boss and work twelve hours a day.","author":"Robert Frost","topics":["Professional development"],"realID":"Robert-Frost-13"},
-	{"quoteText":"There's nothing I'm afraid of like scared people.","author":"Robert Frost","topics":["Scaredy cats"],"realID":"Robert-Frost-14"},
-	{"quoteText":"The father is always a Republican toward his son, and his mother's always a Democrat.","author":"Robert Frost","topics":["Sons"],"realID":"Robert-Frost-15"},
-	{"quoteText":"The best way out is always through.","author":"Robert Frost","topics":["Stick-to-itiveness"],"realID":"Robert-Frost-16"},
-	{"quoteText":"A diplomat is a man who always remembers a woman's birthday but never remembers her age.","author":"Robert Frost","topics":["Diplomacy"],"realID":"Robert-Frost-17"},
-	{"quoteText":"Thinking isn't to agree or disagree. That is voting.","author":"Robert Frost","topics":["Thinking"],"realID":"Robert-Frost-18"},
-	{"quoteText":"The reason why worry kills more people than work is that more people worry than work.","author":"Robert Frost","topics":["Worry"],"realID":"Robert-Frost-19"},
+	{"quoteText":"The world is full of willing people; some willing to work, the rest willing to let them.","author":"Robert Frost","topics":["Noncontributors"],"realID":"Robert-Frost-9"},
+	{"quoteText":"The brain is a wonderful organ; it starts working the moment you get up in the morning and does not stop until you get into the office.","author":"Robert Frost","topics":["The office"],"realID":"Robert-Frost-10"},
+	{"quoteText":"Many a rich father wishes he knew how to give his sons the hardships that made him rich.","author":"Robert Frost","topics":["Parenting"],"realID":"Robert-Frost-11"},
+	{"quoteText":"By working faithfully eight hours a day, you may eventually get to be boss and work twelve hours a day.","author":"Robert Frost","topics":["Professional development"],"realID":"Robert-Frost-12"},
+	{"quoteText":"There's nothing I'm afraid of like scared people.","author":"Robert Frost","topics":["Scaredy cats"],"realID":"Robert-Frost-13"},
+	{"quoteText":"The father is always a Republican toward his son, and his mother's always a Democrat.","author":"Robert Frost","topics":["Sons"],"realID":"Robert-Frost-14"},
+	{"quoteText":"The best way out is always through.","author":"Robert Frost","topics":["Stick-to-itiveness"],"realID":"Robert-Frost-15"},
+	{"quoteText":"A diplomat is a man who always remembers a woman's birthday but never remembers her age.","author":"Robert Frost","topics":["Diplomacy"],"realID":"Robert-Frost-16"},
+	{"quoteText":"Thinking isn't to agree or disagree. That is voting.","author":"Robert Frost","topics":["Thinking"],"realID":"Robert-Frost-17"},
+	{"quoteText":"The reason why worry kills more people than work is that more people worry than work.","author":"Robert Frost","topics":["Worry"],"realID":"Robert-Frost-18"},
 	
 	{"quoteText":"There's no ceiling on effort.","author":"Harvey C. Fruehauf","topics":["Effort"],"realID":"Harvey-C--Fruehauf-0"},
 	
@@ -5282,6 +5342,9 @@
 	{"quoteText":"Constantly choosing the lesser of two evils is still choosing evil.","author":"Jerry Garcia","topics":["Lesser evil"],"realID":"Jerry-Garcia-2"},
 	
 	{"quoteText":"A civilized society is one that learns to live with its contradictions.","author":"Michel Garcia","topics":["Civilization"],"realID":"Michel-Garcia-0"},
+
+	{"quoteText":"Every injustice that has ever been fastened upon women in a Christian country has been \"authorized by the Bible\" and riveted and perpetuated by the pulpit.","author":"Helen H. Gardener","topics":["Misogyny, Religious"],"realID":"Helen-H--Gardener-0"},
+	{"quoteText":"This religion and the Bible require of woman everything, and give her nothing. They ask her support and her love, and repay her with contempt and oppression.","author":"Helen H. Gardener","topics":["Misogyny, Religious"],"realID":"Helen-H--Gardener-1"},
 	
 	{"quoteText":"Do you know what happens when you give a procrastinator a good idea?  Nothing!","author":"Donald Gardner","topics":["Procrastination"],"realID":"Donald-Gardner-0"},
 	
@@ -5360,6 +5423,8 @@
 	
 	{"quoteText":"Drinking coffee prevents you from sleeping. On the other hand, sleeping prevents you from drinking coffee.","author":"Philippe Geluck","topics":["Coffee"],"realID":"Philippe-Geluck-0"},
 	{"quoteText":"When you are dead, you do not know you are dead . . . The same applies when you are stupid.","author":"Philippe Geluck","topics":["Stupidity"],"realID":"Philippe-Geluck-1"},
+
+	{"quoteText":"If I have seen further than others, it is because I am surrounded by dwarfs.","author":"Murray Gell-Mann","topics":["Wordplay"],"realID":"Murray-Gell-Mann-0"},
 	
 	{"quoteText":"I don't believe in just ordering people to do things. You have to sort of grab an oar and row with them.","author":"Harold S. Geneen","topics":["Example"],"realID":"Harold-S--Geneen-0"},
 	{"quoteText":"It is an immutable law in business that words are words, explanations are explanations, promises are promises - but only performance is reality.","author":"Harold S. Geneen","topics":["Implementation"],"realID":"Harold-S--Geneen-1"},
@@ -5391,11 +5456,16 @@
 	{"quoteText":"A diploma proves only that you know how to look up an answer.","author":"David Gerrold","topics":["Scholarship"],"realID":"David-Gerrold-4"},
 	{"quoteText":"Adolescence is that time in your life when you discover your ability to be depressed.","author":"David Gerrold","topics":["Teenagers"],"realID":"David-Gerrold-5"},
 	
-	{"quoteText":"It's a strange myth that atheists have nothing to live for. It's the opposite. We have nothing to die for. We have everything to live for.","author":"Ricky Gervais","topics":["Atheism"],"realID":"Ricky-Gervais-0"},
+	{"quoteText":"It's a strange myth that atheists have nothing to live for. It's the opposite. We have nothing to die for. We have everything to live for.","author":"Ricky Gervais","topics":["Atheists"],"realID":"Ricky-Gervais-0"},
 	{"quoteText":"It's almost as if The Bible was written by racist, sexist, homophobic, violent, sexually frustrated men, instead of a loving God. Weird.","author":"Ricky Gervais","topics":["The Good Book"],"realID":"Ricky-Gervais-1"},
 	{"quoteText":"Spirituality really lost its way when it became a stick to beat people with: \"Do this or you'll burn in hell.\"","author":"Ricky Gervais","topics":["Fear-mongering, Religious"],"realID":"Ricky-Gervais-2"},
 	{"quoteText":"I see atheists are fighting and killing each other again, over who doesn't believe in any God the most. Oh, no. Wait. That never happens.","author":"Ricky Gervais","topics":["Holy war"],"realID":"Ricky-Gervais-3"},
 	{"quoteText":"Just because you're offended, doesn't mean you're right.","author":"Ricky Gervais","topics":["Snowflakes"],"realID":"Ricky-Gervais-4"},
+	{"quoteText":"A Christian telling an atheist they're going to hell is as scary as a child telling an adult they're not getting any presents from Santa.","author":"Ricky Gervais","topics":["Atheism"],"realID":"Ricky-Gervais-5"},
+	{"quoteText":"Blasphemy: a law to protect an all-powerful, supernatural deity from getting its feelings hurt.","author":"Ricky Gervais","topics":["Blasphemy"],"realID":"Ricky-Gervais-6"},
+	{"quoteText":"If we took any holy book and destroyed it, in a thousands year's time that wouldn't come back just as it was.  Whereas. . . every science book . . . would all be back 'cause all the same tests would be the same result.","author":"Ricky Gervais","topics":["Religion & Science"],"realID":"Ricky-Gervais-7"},
+	{"quoteText":"I don't think young earth creationists should be allowed to use fossil fuels.","author":"Ricky Gervais","topics":["Creation"],"realID":"Ricky-Gervais-8"},
+	{"quoteText":"Everyone has the right to believe anything they want. And everyone else has the right to find it f*cking ridiculous.","author":"Ricky Gervais","topics":["Belief"],"realID":"Ricky-Gervais-9"},
 	
 	{"quoteText":"No one can possibly achieve any real and lasting success . . . in business by being a conformist.","author":"J. Paul Getty","topics":["Originality"],"realID":"J--Paul-Getty-0"},
 	{"quoteText":"A man may fail many times but he isn't a failure until he begins to blame somebody else.","author":"J. Paul Getty","topics":["Blame"],"realID":"J--Paul-Getty-1"},
@@ -5553,6 +5623,7 @@
 	{"quoteText":"Temptation usually comes in through a door that has deliberately been left open.","author":"Arnold H. Glasow","topics":["Temptation"],"realID":"Arnold-H--Glasow-20"},
 	{"quoteText":"If we knew the other fellow's troubles, we might hesitate to criticize. We might admire his courage for carrying on.","author":"Arnold H. Glasow","topics":["Empathy"],"realID":"Arnold-H--Glasow-21"},
 	{"quoteText":"Expecting something for nothing is the most popular form of hope.","author":"Arnold H. Glasow","topics":["Entitlement"],"realID":"Arnold-H--Glasow-22"},
+	{"quoteText":"The trouble with ignorance is that it picks up confidence as it goes along.","author":"Arnold H. Glasow","topics":["Ignorance"],"realID":"Arnold-H--Glasow-23"},
 	
 	{"quoteText":"The second day of a diet is always easier than the first. By the second day you're off it.","author":"Jackie Gleason","topics":["Diets"],"realID":"Jackie-Gleason-0"},
 	{"quoteText":"Thin people are beautiful but fat people are adorable.","author":"Jackie Gleason","topics":["Obesity"],"realID":"Jackie-Gleason-1"},
@@ -5644,6 +5715,7 @@
 	{"quoteText":"When someone does something good, applaud!  You will make two people happy.","author":"Samuel Goldwyn","topics":["Recognition"],"realID":"Samuel-Goldwyn-4"},
 	{"quoteText":"I'm exhausted from not talking.","author":"Samuel Goldwyn","topics":["Restraint, Verbal"],"realID":"Samuel-Goldwyn-5"},
 	{"quoteText":"Television has raised writing to a new low.","author":"Samuel Goldwyn","topics":["Television"],"realID":"Samuel-Goldwyn-6"},
+	{"quoteText":"I paid too much for it, but it was worth it.","author":"Samuel Goldwyn","topics":["Hmmm?"],"realID":"Samuel-Goldwyn-7"},
 	
 	{"quoteText":"The people we get along with, trust, feel simpatico with, are the strongest links in our networks.","author":"Daniel Goleman","topics":["Networks"],"realID":"Daniel-Goleman-0"},
 	
@@ -5792,10 +5864,14 @@
 	{"quoteText":"Leadership cannot really be taught, it can only be learned.","author":"Harold S. Green","topics":["Leadership"],"realID":"Harold-S--Green-0"},
 	
 	{"quoteText":"To be number one, you must train like you are number two.","author":"Maurice Green","topics":["Practice"],"realID":"Maurice-Green-0"},
+
+	{"quoteText":"I studied every page of this book, and I didn't find enough love to fill a salt shaker.","author":"Ruth Hurmence Green","topics":["The Bible"],"realID":"Ruth-Hurmence-Green-0"},
+	{"quoteText":"There was a time when religion ruled the world.  It is known as the Dark Ages.","author":"Ruth Hurmence Green","topics":["Religion & Ignorance"],"realID":"Ruth-Hurmence-Green-1"},
 	
 	{"quoteText":"All profoundly original art looks ugly at first.","author":"Clement Greenberg","topics":["Originality"],"realID":"Clement-Greenberg-0"},
 	
 	{"quoteText":"There is, incidentally, no way of talking about cats that enables one to come off as a sane person.","author":"Dan Greenburg","topics":["Cats"],"realID":"Dan-Greenburg-0"},
+	{"quoteText":"Love is the self-delusion we manufacture to justify the trouble we take to have sex..","author":"Dan Greenburg","topics":["Love"],"realID":"Dan-Greenburg-1"},
 	
 	{"quoteText":"Have you ever known a happy and fulfilled activist?","author":"Chad Felix Green","topics":["Activists"],"realID":"Chad-Felix-Green-0"},
 	
@@ -5907,12 +5983,15 @@
 	{"quoteText":"You can pretend to be serious; you can't pretend to be witty.","author":"Sacha Guitry","topics":["Wit"],"realID":"Sacha-Guitry-3"},
 	{"quoteText":"The best way to turn a woman's head is to tell her she has a beautiful profile.","author":"Sacha Guitry","topics":["Women"],"realID":"Sacha-Guitry-4"},
 	{"quoteText":"Women want what they like, men like what they want.","author":"Sacha Guitry","topics":["Women vs. Men"],"realID":"Sacha-Guitry-5"},
+
+	{"quoteText":"I am treated as evil by people who claim that they are being oppressed because they are not allowed to force me to practice what they do.","author":"D. Dale Gulledge","topics":["Activists"],"realID":"D--Dale-Gulledge-0"},
 	
 	{"quoteText":"Poor are poor, because rich are rich.","author":"B. J. Gupta","topics":["The poor"],"realID":"B--J--Gupta-0"},
 	
 	{"quoteText":"Not only is life a bitch, it has puppies.","author":"Adrienne E. Gusoff","topics":["Life"],"realID":"Adrienne-E--Gusoff-0"},
 	{"quoteText":"Any woman who thinks the way to a man's heart is through his stomach is aiming about ten inches too high.","author":"Adrienne E. Gusoff","topics":["Men"],"realID":"Adrienne-E--Gusoff-1"},
 	{"quoteText":"Girls just want to have funds.","author":"Adrienne E. Gusoff","topics":["Wordplay"],"realID":"Adrienne-E--Gusoff-2"},
+	{"quoteText":"The world is round. It has no point.","author":"Adrienne E. Gusoff","topics":["The World"],"realID":"Adrienne-E--Gusoff-3"},
 	
 	{"quoteText":"A funny thing about tolerant people?  They're really only tolerant when you agree with them.","author":"Greg Gutfeld","topics":["\"Free speech\""],"realID":"Greg-Gutfeld-0"},
 	{"quoteText":"If you're a Republican and rich, that's evil. But if you're a Democrat and rich, that's great.","author":"Greg Gutfeld","topics":["Sandernistas"],"realID":"Greg-Gutfeld-1"},
@@ -5993,6 +6072,8 @@
 	{"quoteText":"We did not change as we grew older; we just became more clearly ourselves.","author":"Lynn Hall","topics":["Maturity"],"realID":"Lynn-Hall-0"},
 	
 	{"quoteText":"We do not necessarily improve with age.  For better or worse we become more like ourselves.","author":"Peter Gavin Hall","topics":["Aging"],"realID":"Peter-Gavin-Hall-0"},
+
+	{"quoteText":"Why do they (Americans) have guns?  Because it makes them f*cking happy, that's why.  And it's important to keep Americans happy because they have guns.","author":"Rich Hall","topics":["Guns"],"realID":"Rich-Hall-0"},
 	
 	{"quoteText":"The good should be grateful to the bad - for providing the world with a basis for comparison.","author":"Sven Halla","topics":["Good & Evil"],"realID":"Sven-Halla-0"},
 	
@@ -6102,7 +6183,10 @@
 	
 	{"quoteText":"Faith is - by definition - a process that bypasses any need for evidence","author":"Sam Harris","topics":["Faith"],"realID":"Sam-Harris-0"},
 	{"quoteText":"Becoming a part of a movement doesn't help anybody think clearly.","author":"Sam Harris","topics":["Movements"],"realID":"Sam-Harris-1"},
-	{"quoteText":"If someone doesn't value evidence, what evidence are you going to provide to prove that they should value it?  If someone doesn't value logic, what logical argument could you provide to show the importance of logic?","author":"Sam Harris","topics":["Zombies"],"realID":"Sam-Harris-2"},
+	{"quoteText":"If someone doesn't value evidence, what evidence are you going to provide to prove that they should value it?","author":"Sam Harris","topics":["Evidence"],"realID":"Sam-Harris-2"},
+	{"quoteText":"People who harbor strong convictions without evidence belong at the margins of our societies, not in our halls of power.","author":"Sam Harris","topics":["Belief"],"realID":"Sam-Harris-3"},
+	{"quoteText":"Faith is a conversation-stopper.","author":"Sam Harris","topics":["Faith"],"realID":"Sam-Harris-4"},
+	{"quoteText":"I challenge you to think of a question upon which we had a scientific answer, however inadequate, but for which now the best answer is a religious one.","author":"Sam Harris","topics":["Religion & Science"],"realID":"Sam-Harris-5"},
 	
 	{"quoteText":"Never take the advice of someone who has not had your kind of trouble.","author":"Sydney J. Harris","topics":["Consider the source"],"realID":"Sydney-J--Harris-0"},
 	{"quoteText":"The best things you can give children, next to good habits, are good memories.","author":"Sydney J. Harris","topics":["Child rearing"],"realID":"Sydney-J--Harris-1"},
@@ -6198,8 +6282,6 @@
 	
 	{"quoteText":"It is not enough to stare up the steps; we must step up the stairs.","author":"Václav Havel","topics":["Hesitation"],"realID":"V-clav-Havel-0"},
 	
-	{"quoteText":"You can only make others better by being good yourself.","author":"Hugh R. Haweis","topics":["Example"],"realID":"Hugh-R--Haweis-0"},
-	
 	{"quoteText":"Intelligence is the ability to adapt to change.","author":"Stephen Hawking","topics":["Adaptability"],"realID":"Stephen-Hawking-0"},
 	{"quoteText":"Even people who claim everything is predestined . . . look before they cross the road.","author":"Stephen Hawking","topics":["Idealism"],"realID":"Stephen-Hawking-1"},
 	{"quoteText":"I am discounting reports of UFOs.  Why would they appear only to cranks and weirdos?","author":"Stephen Hawking","topics":["Tales"],"realID":"Stephen-Hawking-2"},
@@ -6226,6 +6308,8 @@
 	{"quoteText":"One has to grow up with good talk in order to form the habit of it.","author":"Helen Hayes","topics":["Communication"],"realID":"Helen-Hayes-0"},
 	
 	{"quoteText":"Capital punishment: The income tax.","author":"Jeff Hayes","topics":["Taxation"],"realID":"Jeff-Hayes-0"},
+
+	{"quoteText":"If we are going to teach creation science as an alternative to evolution, then we should also teach the stork theory as an alternative to biological reproduction.","author":"Judith Hayes","topics":["Creation"],"realID":"Judith-Hayes-0"},
 
 	{"quoteText":"Back of every achievement is a proud wife and a surprised mother-in-law.","author":"Brooks Hays","topics":["Mother-in-law"],"realID":"Brooks-Hays-0"},	
 
@@ -6383,7 +6467,7 @@
 	{"quoteText":"The concept of progress acts as a protective mechanism to shield us from the terrors of the future.","author":"Frank Herbert","topics":["Progress"],"realID":"Frank-Herbert-2"},
 	{"quoteText":"If you rely only on your eyes, your other senses weaken.","author":"Frank Herbert","topics":["Observation"],"realID":"Frank-Herbert-3"},
 	
-	{"quoteText":"English is a funny language.  A fat chance and a slim chance are the same thing.","author":"Jack Herbert","topics":["Language"],"realID":"Jack-Herbert-0"},
+	{"quoteText":"English is a funny language.  A fat chance and a slim chance are the same thing.","author":"Jack Herbert","topics":["Linguistics"],"realID":"Jack-Herbert-0"},
 	
 	{"quoteText":"Modesty: the gentle art of enhancing your charm by pretending not to be aware of it.","author":"Oliver Herford","topics":["False modesty"],"realID":"Oliver-Herford-0"},
 	{"quoteText":"Many are called but few get up.","author":"Oliver Herford","topics":["Noncontributors"],"realID":"Oliver-Herford-1"},
@@ -6391,10 +6475,13 @@
 	{"quoteText":"There is always room at the top - after the investigation.","author":"Oliver Herford","topics":["Scandal"],"realID":"Oliver-Herford-3"},
 	{"quoteText":"If some people got their rights, they would complain of being deprived of their wrongs.","author":"Oliver Herford","topics":["Squeaky wheels"],"realID":"Oliver-Herford-4"},
 	{"quoteText":"A woman's mind is cleaner than a man's; she changes it more often.","author":"Oliver Herford","topics":["Women"],"realID":"Oliver-Herford-5"},
+	{"quoteText":"The dawn is a term for the early morning used by poets and other people who don't have to get up.","author":"Oliver Herford","topics":["\"Culture\""],"realID":"Oliver-Herford-6"},
 	
 	{"quoteText":"Be yourself.  No one can ever tell you you're doing it wrong.","author":"James Leo Herlihy","topics":["Individuality"],"realID":"James-Leo-Herlihy-0"},
 	
 	{"quoteText":"Socialists and progressives confuse compassion and compulsion.","author":"S. J. Hermann","topics":["\"Progressives\""],"realID":"S--J--Hermann-0"},
+
+	{"quoteText":"I have no idea what the mind of a lowlife scoundrel is like, but I know what the mind of an honest man is like; it is terrifying.","author":"Abel Hermant","topics":["The Mind"],"realID":"Abel-Hermant-0"},
 	
 	{"quoteText":"Those who mistake their good luck for their merit are inevitably bound for disaster.","author":"J. Christopher Herold","topics":["Luck"],"realID":"J--Christopher-Herold-0"},
 	
@@ -6452,6 +6539,7 @@
 	{"quoteText":"Children are smarter than any of us . . . I don't know one child with a full-time job and children.","author":"Bill Hicks","topics":["Children"],"realID":"Bill-Hicks-0"},
 	{"quoteText":"You can devise a one-word argument to defeat the Bible: dinosaurs.","author":"Bill Hicks","topics":["Evolution"],"realID":"Bill-Hicks-1"},
 	{"quoteText":"I'll show you politics in America.  Here it is right here.  \"I think the puppet on the right shares my belief.\"  \"I think the puppet on the left is more to my liking.\"  \"Hey, wait a minute, there's one guy holding out both puppets.\"","author":"Bill Hicks","topics":["Special interest"],"realID":"Bill-Hicks-2"},
+	{"quoteText":"Eternal suffering awaits anyone who questions God's infinite love.","author":"Bill Hicks","topics":["Fear-mongering, Religious"],"realID":"Bill-Hicks-3"},
 	
 	{"quoteText":"Worrying is using your imagination to create something you don't want.","author":"Esther Hicks","topics":["The Boogeyman"],"realID":"Esther-Hicks-0"},
 	
@@ -6549,6 +6637,8 @@
 	{"quoteText":"Those who are determined to be \"offended\" will discover a provocation somewhere.  We cannot possibly adjust enough to please the fanatics, and it's degrading to make the attempt.","author":"Christopher Hitchens","topics":["Snowflakes"],"realID":"Christopher-Hitchens-3"},
 	{"quoteText":"What can be asserted without evidence can also be dismissed without evidence.","author":"Christopher Hitchens","topics":["Theory"],"realID":"Christopher-Hitchens-4"},
 	{"quoteText":"The person who is certain, and who claims divine warrant for his certainty, belongs now to the infancy of our species.","author":"Christopher Hitchens","topics":["Certainty"],"realID":"Christopher-Hitchens-5"},
+	{"quoteText":"Religion comes from the period of human prehistory where nobody . . . had the smallest idea what was going on.","author":"Christopher Hitchens","topics":["Religion & Ignorance"],"realID":"Christopher-Hitchens-6"},
+	{"quoteText":"Human decency is not derived from religion. It precedes it.","author":"Christopher Hitchens","topics":["Morality"],"realID":"Christopher-Hitchens-7"},
 	
 	{"quoteText":"A liberal will defend to the death your right to agree with her.  Disagree with her, and she will call the police.","author":"Peter Hitchens","topics":["Liberals"],"realID":"Peter-Hitchens-0"},
 	
@@ -6632,6 +6722,8 @@
 	{"quoteText":"We are the people our parents warned us against.","author":"Nicholas von Hoffman","topics":["Generations"],"realID":"Nicholas-von-Hoffman-0"},
 	
 	{"quoteText":"The ability to simplify means to eliminate the unnecessary so that the necessary may speak.","author":"Hans Hofmann","topics":["Simplicity"],"realID":"Hans-Hofmann-0"},
+
+	{"quoteText":"Demand money with the threat of violence and you'll get arrested.  Do it with the threat of eternal damnation and it's tax deductible.","author":"Steve Hofstetter","topics":["Organized religion"],"realID":"Steve-Hofstetter-0"},
 	
 	{"quoteText":"Political correctness . . . causes us to lie silently instead of saying what we think.","author":"Hal Holbrook","topics":["Political correctness"],"realID":"Hal-Holbrook-0"},
 	
@@ -6648,6 +6740,8 @@
 	{"quoteText":"Every time Democrats pass a stimulus package, over 80% goes to their pet projects and to themselves via foreign aid money laundering.  Stimulus payments are just hush money for the recipients to keep quiet about the theft.","author":"Will Holliday","topics":["\"Foreign aid\""],"realID":"Will-Holliday-0"},
 	
 	{"quoteText":"Any damn fool can write a plan.  It's the execution that gets you all screwed up.","author":"James F. Hollingsworth","topics":["Armchair QBs"],"realID":"James-F--Hollingsworth-0"},
+
+	{"quoteText":"We can debate with one another as to whether this or that alleged claim genuinely emanated from God, but who can honestly adjudicate in such an Olympian debate?","author":"Richard Holloway","topics":["Religion"],"realID":"Richard-Holloway-0"},
 	
 	{"quoteText":"Speech is conveniently located midway between thought and action, where it often substitutes for both.","author":"John Andrew Holmes","topics":["Blah, blah, blah"],"realID":"John-Andrew-Holmes-0"},
 	{"quoteText":"A child enters your home and for the next twenty years makes so much noise that you can hardly stand it.  The child departs, leaving the house so silent that you think you are going mad.","author":"John Andrew Holmes","topics":["Empty nests"],"realID":"John-Andrew-Holmes-1"},
@@ -6695,6 +6789,8 @@
 	{"quoteText":"If you burn your neighbor's house down, it doesn't make your house look any better.","author":"Lou Holtz","topics":["Slander"],"realID":"Lou-Holtz-8"},
 	
 	{"quoteText":"I don't follow precedent, I establish it.","author":"Fanny Ellen Holtzman","topics":["Precedence"],"realID":"Fanny-Ellen-Holtzman-0"},
+
+	{"quoteText":"Belief is the uncritical acceptance of something you can't prove.","author":"Hans Holzer","topics":["Belief"],"realID":"Hans-Holzer-0"},
 	
 	{"quoteText":"To really enjoy the better things in life, one must first have experienced the things they are better than.","author":"Oskar Homolka","topics":["Hard knocks"],"realID":"Oskar-Homolka-0"},
 	
@@ -6702,6 +6798,7 @@
 	
 	{"quoteText":"If I do not speak in a language that can be understood there is little chance for a dialogue.","author":"Bell Hooks","topics":["Communication"],"realID":"Bell-Hooks-0"},
 	{"quoteText":"Sadly, children's passion for thinking often ends when they encounter a world that seeks to educate them for conformity and obedience only.","author":"Bell Hooks","topics":["Indoctrination camps"],"realID":"Bell-Hooks-1"},
+	{"quoteText":"Sometimes people try to destroy you, precisely because they recognize your power - not because they don't see it, but because they see it and they don't want it to exist.","author":"Bell Hooks","topics":["The Rat Race"],"realID":"Bell-Hooks-1"},
 	
 	{"quoteText":"No amount of law enforcement can solve a problem that goes back to the family.","author":"J. Edgar Hoover","topics":["Disfunction, Family"],"realID":"J--Edgar-Hoover-0"},
 	{"quoteText":"The thousands of criminals I have seen in forty years of law enforcement have had one thing in common: every single one was a liar.","author":"J. Edgar Hoover","topics":["Lying"],"realID":"J--Edgar-Hoover-1"},
@@ -6856,6 +6953,8 @@
 	{"quoteText":"You know you have forgiven someone when he or she has harmless passages through your mind.","author":"Karyl Huntley","topics":["Forgiveness"],"realID":"Karyl-Huntley-0"},
 	
 	{"quoteText":"Inertia can develop its own momentum.","author":"Douglas Hurd","topics":["Beginning"],"realID":"Douglas-Hurd-0"},
+
+	{"quoteText":"If people don't want to come, nothing will stop them","author":"Sol Hurok","topics":["Hmmm?"],"realID":"Sol-Hurok-0"},
 	
 	{"quoteText":"I'm not happy when I'm writing, but I'm more unhappy when I'm not.","author":"Fannie Hurst","topics":["Writing"],"realID":"Fannie-Hurst-0"},
 	{"quoteText":"It takes a clever man to turn cynic and a wise man to be clever enough not to.","author":"Fannie Hurst","topics":["Cynicism"],"realID":"Fannie-Hurst-1"},
@@ -6867,6 +6966,7 @@
 	
 	{"quoteText":"It's no use talking unless people understand what you say.","author":"Zora Neale Hurston","topics":["Communication"],"realID":"Zora-Neale-Hurston-0"},
 	{"quoteText":"There are years that ask questions and years that answer.","author":"Zora Neale Hurston","topics":["Maturity"],"realID":"Zora-Neale-Hurston-1"},
+	{"quoteText":"Gods always behave like the people who make them.","author":"Zora Neale Hurston","topics":["Religion"],"realID":"Zora-Neale-Hurston-2"},
 	
 	{"quoteText":"There are two kinds of directors - allies and judges.","author":"John Hurt","topics":["Management"],"realID":"John-Hurt-0"},
 	
@@ -6881,6 +6981,8 @@
 	{"quoteText":"Vegetarianism is harmless enough, though it is apt to fill a man with wind and self-righteousness.","author":"Sir Robert Hutchison","topics":["Vegetarians"],"realID":"Sir-Robert-Hutchinson-0"},
 	
 	{"quoteText":"To be told we are loved is not enough.  We must feel loved.","author":"Lauren Hutton","topics":["Love"],"realID":"Lauren-Hutton-0"},
+
+	{"quoteText":"Desperation, not necessity, is the Mother of invention.","author":"Thomas L. Hutzler","topics":["Desperation"],"realID":"Thomas-L--Hutzler-0"},
 	
 	{"quoteText":"People always get what they ask for; the only trouble is that they never know, until they get it, what it actually is that they have asked for","author":"Aldous Huxley","topics":[""],"realID":"Aldous-Huxley-0"},
 	{"quoteText":"The end cannot justify the means, for the simple and obvious reason that the means employed determine the nature of the ends produced.","author":"Aldous Huxley","topics":["Ends vs. Means"],"realID":"Aldous-Huxley-1"},
@@ -6934,6 +7036,8 @@
 	{"quoteText":"When future historians look back on our way of curing inflation, they'll probably compare it to bloodletting in the Middle Ages.","author":"Lee Iacocca","topics":["Schizonomics"],"realID":"Lee-Iacocca-12"},
 	{"quoteText":"If we wait until we've satisfied all the uncertainties, it may be too late.","author":"Lee Iacocca","topics":["Uncertainty"],"realID":"Lee-Iacocca-13"},
 	{"quoteText":"Write the way you talk. If you don't talk that way, don't write that way.","author":"Lee Iacocca","topics":["Writing"],"realID":"Lee-Iacocca-14"},
+
+	{"quoteText":"It is better to be the widow of a hero than the wife of a coward.","author":"Dolores Ibarruri","topics":["Cowardice"],"realID":"Dolores-Ibarruri-0"},
 	
 	{"quoteText":"The key to success for Sony, and to everything in business, science and technology is never to follow others.","author":"Masaru Ibuka","topics":["R & D"],"realID":"Masaru-Ibuka-0"},
 	
@@ -7128,6 +7232,7 @@
 	{"quoteText":"T'ain't worthwhile to wear a day all out before it comes.","author":"Sarah Orne Jewett","topics":["Anticipation"],"realID":"Sarah-Orne-Jewett-0"},
 	
 	{"quoteText":"Atheism is a religion like not collecting stamps is a hobby.","author":"Penn Jillette","topics":["Atheism"],"realID":"Penn-Jillette-0"},
+	{"quoteText":"The only ones with true morality are us, the atheists. We are doing good because it is good and we are doing right because it is right and not for reward or punishment.","author":"Penn Jillette","topics":["Atheists"],"realID":"Penn-Jillette-1"},
 	
 	{"quoteText":"Running for money doesn't make you run fast. It makes you run first.","author":"Ben Jipcho","topics":["Incentive"],"realID":"Ben-Jipcho-0"},
 	
@@ -7144,6 +7249,8 @@
 	{"quoteText":"Birds born in a cage think flying is an illness.","author":"Alejandro Jodorowsky","topics":["Captives"],"realID":"Alejandro-Jodorowsky-0"},
 	
 	{"quoteText":"They say that these are not the best of times, but they're the only times I've ever known.","author":"Billy Joel","topics":["The Times"],"realID":"Billy-Joel-0"},
+
+	{"quoteText":"Organized religion doesn't seem to work. It turns people into really hateful lemmings and it's not really compassionate.","author":"Elton John","topics":["Organized religion"],"realID":"Elton-John-0"},
 	
 	{"quoteText":"It is easier for a father to have children than for children to have a real father.","author":"Pope John XXIII","topics":["Fathers"],"realID":"Pope-John-XXIII-0"},
 	
@@ -7454,6 +7561,7 @@
 	{"quoteText":"Ambition never comes to an end.","author":"Yoshida Kenko","topics":["Ambition"],"realID":"Yoshida-Kenko-0"},
 	
 	{"quoteText":"The biggest sin is sitting on your ass.","author":"Florynce Kennedy","topics":["Laziness"],"realID":"Florynce-Kennedy-0"},
+	{"quoteText":"Oppressed people are frequently very oppressive when first liberated.  They know but two positions: somebody's foot on their neck or their foot on somebody's neck.","author":"Florynce Kennedy","topics":["Out with the old . . ."],"realID":"Florynce-Kennedy-1"},
 	
 	{"quoteText":"If you bungle raising your children, I don't think whatever else you do well matters very much.","author":"Jacqueline Kennedy","topics":["Parenting"],"realID":"Jacqueline-Kennedy-0"},
 	
@@ -7761,6 +7869,8 @@
 	{"quoteText":"Everything can be filed under \"miscellaneous.\"","author":"Ron Koolman","topics":["In perspective"],"realID":"Ron-Koolman-0"},
 	
 	{"quoteText":"The trouble with being poor is that it takes up all your time.","author":"Willem de Kooning","topics":["The poor"],"realID":"Willem-de-Kooning-0"},
+
+	{"quoteText":"There's sometimes a weird benefit to having an alcoholic, violent father.  He really motivated me in that I never wanted to be anything like him.","author":"Dean Koontz","topics":["Alcohol"],"realID":"Dean-Koontz-0"},
 	
 	{"quoteText":"At a time when we are pleading with foreign governments to stop the export of cocaine, it is the height of hypocrisy for the United States to export tobacco.","author":"C. Everett Koop","topics":["Smoking"],"realID":"C--Everett-Koop-0"},
 	
@@ -7861,7 +7971,7 @@
 
 	{"quoteText":"\"Rights\" are granted; \"duties\" are enforced. To speak of rights and duties is to think in terms of authority.","author":"Laurence Labadie","topics":["Rights"],"realID":"Laurence-Labadie-0"},
 
-	{"quoteText":"Snakes and ladders: the game of organized religions.","author":"Yahia Lababidi","topics":["Religion"],"realID":"Yahia-Lababidi-0"},
+	{"quoteText":"Snakes and ladders: the game of organized religions.","author":"Yahia Lababidi","topics":["Organized religion"],"realID":"Yahia-Lababidi-0"},
 	{"quoteText":"A good listener helps us overhear ourselves.","author":"Yahia Lababidi","topics":["Listening"],"realID":"Yahia-Lababidi-1"},
 	
 	{"quoteText":"The only time you run out of chances is when you stop taking them.","author":"Patti LaBelle","topics":["Venturing"],"realID":"Patti-LaBelle-0"},
@@ -7900,7 +8010,9 @@
 	{"quoteText":"Life is what happens to us while we are making other plans.","author":"Thomas La Mance","topics":["Life"],"realID":"Thomas-La-Mance-0"},
 	
 	{"quoteText":"A year from now you may wish you had started today.","author":"Karen Lamb","topics":["Regret, Avertable"],"realID":"Karen-Lamb-0"},
-	
+
+	{"quoteText":"You can safely assume that you've created God in your own image when it turns out that God hates all the same people you do.","author":"Anne Lamott","topics":["God"],"realID":"Anne Lamott-0"},	
+
 	{"quoteText":"Nobody got anywhere in this world by simply being content.","author":"Louis L'Amour","topics":["Complacency"],"realID":"Louis-L-Amour-0"},
 	
 	{"quoteText":"The important thing about power is to make sure you don't have to use it.","author":"Edwin H. Land","topics":["Power"],"realID":"Edwin-H--Land-0"},
@@ -8001,6 +8113,8 @@
 	{"quoteText":"Leaders don't force people to follow, they invite them on a journey.","author":"Charles S. Lauer","topics":["Leadership"],"realID":"Charles-S--Lauer-0"},
 	
 	{"quoteText":"Women like men who don't need them.","author":"Ronald Lavallee","topics":["Women & Men"],"realID":"Ronald-Lavallee-0"},
+
+	{"quoteText":"Anything based on faith, no matter how ludicrous, can be made to be consistent with the available evidence, given a little patience and ingenuity.","author":"Stephen Law","topics":["Faith"],"realID":"Stephen-Law-0"},
 	
 	{"quoteText":"When you're through learning, you're through.","author":"Vernon Law","topics":["Closed minds"],"realID":"Vernon-Law-0"},
 	{"quoteText":"Experience is the worst teacher; it gives the test before presenting the lesson.","author":"Vernon Law","topics":["Experience"],"realID":"Vernon-Law-1"},
@@ -8020,6 +8134,8 @@
 	{"quoteText":"Life is ours to be spent, not to be saved.","author":"D. H. Lawrence","topics":["Your life is now"],"realID":"D--H--Lawrence-4"},
 	
 	{"quoteText":"A neurotic is the person who builds a castle in the sky; a psychotic is the person who lives in it; and a psychiatrist is the person who collects the rent.","author":"Jerome Lawrence","topics":["Psychology"],"realID":"Jerome-Lawrence-0"},
+
+	{"quoteText":"I come from a long line of alcoholics - my family tree has a car wrapped around it.","author":"Mike Lawrence","topics":["Alcohol"],"realID":"Mike-Lawrence-0"},
 	
 	{"quoteText":"The grass isn't greener on the other side. There is no other side. The grass is green where you water it.","author":"Ian Lawton","topics":["Galatians 6:7"],"realID":"Ian-Lawton-0"},
 	
@@ -8105,6 +8221,9 @@
 	{"quoteText":"It is easy to hang puppets. The strings are already there.","author":"Stanislaw Lec","topics":["Toolbags"],"realID":"Stanislaw-Lec-31"},
 	
 	{"quoteText":"A committee is an animal with four back legs.","author":"John le Carre","topics":["Committees"],"realID":"John-le-Carre-0"},
+
+	{"quoteText":"When religion grows more and more fanatical, while it's bad for everyone forced to live under its dictates, it's inevitably women who suffer the most.","author":"Adam Lee","topics":["Misogyny, Religious"],"realID":"Adam-Lee-0"},
+	{"quoteText":"It's a safe bet that, the more respect someone claims to have for God, the less they're likely to have for women.","author":"Adam Lee","topics":["Misogyny, Religious"],"realID":"Adam-Lee-1"},
 	
 	{"quoteText":"If you think a thing is impossible, you'll make it impossible.","author":"Bruce Lee","topics":["Attitude"],"realID":"Bruce-Lee-0"},
 	{"quoteText":"In great attempts it is glorious even to fail.","author":"Bruce Lee","topics":["Endeavor"],"realID":"Bruce-Lee-1"},
@@ -8184,6 +8303,7 @@
 	{"quoteText":"According to a recent survey, men say the first thing they notice about women is their eyes. And women say the first thing they notice about men is they're a bunch of liars.","author":"Jay Leno","topics":["Men & Women"],"realID":"Jay-Leno-2"},
 	{"quoteText":"For the first time ever, overweight people outnumber average people in America. Doesn't that make overweight the average then?","author":"Jay Leno","topics":["Obesity"],"realID":"Jay-Leno-3"},
 	{"quoteText":"With high-definition TV, everything looks bigger and wider. Kind of like going to your 25th high school reunion.","author":"Jay Leno","topics":["Television"],"realID":"Jay-Leno-4"},
+	{"quoteText":"We pick politicians by how they look on TV and Miss America on where she stands on the issues.","author":"Jay Leno","topics":["The Times"],"realID":"Jay-Leno-5"},
 	
 	{"quoteText":"When race is a career, seeing racism is job security.","author":"Gregory Lent","topics":["Race-hustlers"],"realID":"Gregory-Lent-0"},
 	
@@ -8195,6 +8315,8 @@
 	{"quoteText":"My most important piece of advice to all you would-be writers: When you write, try to leave out all the parts readers skip.","author":"Elmore Leonard","topics":["Writing"],"realID":"Elmore-Leonard-1"},
 	
 	{"quoteText":"Preventing the new generation from changing in any deep way is what most societies require of their educators.","author":"George Leonard","topics":["Education"],"realID":"George-Leonard-0"},
+
+	{"quoteText":"Hamlet is a terrific play, but there are way too many quotations in it.","author":"Hugh Leonard","topics":["Quotation"],"realID":"Hugh-Leonard-0"},
 	
 	{"quoteText":"It takes a long time to grow an old friend.","author":"John Leonard","topics":["Friends"],"realID":"John-Leonard-0"},
 	
@@ -8220,6 +8342,7 @@
 	{"quoteText":"Everyone has a purpose in life. Perhaps yours is watching television.","author":"David Letterman","topics":["Couch potatoes"],"realID":"David-Letterman-3"},
 	{"quoteText":"I was once involved in a same-sex marriage. There was the same sex over and over and over.","author":"David Letterman","topics":["Sex"],"realID":"David-Letterman-4"},
 	{"quoteText":"USA Today has come out with a new survey - apparently, three out of every four people make up seventy-five percent of the population.","author":"David Letterman","topics":["Statistics"],"realID":"David-Letterman-5"},
+	{"quoteText":"It's been so busy at the Post Office this Christmas, they've had to add three million \"This Window Closed\" signs.","author":"David Letterman","topics":["U.S.P.S."],"realID":"David-Letterman-6"},
 	
 	{"quoteText":"A man may fall many times, but he won't be a failure until he says that someone pushed him.","author":"Elmer G. Letterman","topics":["Deflecting"],"realID":"Elmer-G--Letterman-0"},
 	{"quoteText":"Luck is what happens when preparation meets opportunity.","author":"Elmer G. Letterman","topics":["Preparation"],"realID":"Elmer-G--Letterman-1"},
@@ -8256,6 +8379,7 @@
 	
 	{"quoteText":"If you were going to die soon and had only one phone call you could make, who would you call and what would you say? And why are you waiting?","author":"Stephen Levine","realID":"Stephen-Levine-0"},
 	{"quoteText":"Our suffering is caused by holding on to how things might have been, should have been, could have been.","author":"Stephen Levine","topics":["Woulda, coulda, shoulda"],"realID":"Stephen-Levine-1"},
+	{"quoteText":"Who you really are never dies, but who you appear to be can't keep up appearance forever.","author":"Stephen Levine","topics":["Facades"],"realID":"Stephen-Levine-2"},
 	
 	{"quoteText":"Education - one of the few things a fellow is willing to pay for and not get.","author":"Leonard L. Levinson","topics":["Education"],"realID":"Leonard-L--Levinson-0"},
 	{"quoteText":"The past is the tomorrow that got away.","author":"Leonard L. Levinson","topics":["The Past"],"realID":"Leonard-L--Levinson-1"},
@@ -8263,9 +8387,7 @@
 	{"quoteText":"Sex is the formula by which one and one make three.","author":"Leonard L. Levinson","topics":["Sex"],"realID":"Leonard-L--Levinson-3"},
 	
 	{"quoteText":"Nowhere does power give itself up willingly.","author":"Nan Levinson","topics":["Power"],"realID":"Nan-Levinson-0"},
-	
-	{"quoteText":"Who you really are never dies, but who you appear to be can't keep up appearance forever.","author":"Stephen Levine","topics":["Facades"],"realID":"Stephen-Levine-0"},
-	
+		
 	{"quoteText":"People don't buy a quarter-inch drill. They buy a quarter-inch hole. You've got to study the hole, not the drill. The drill is just a solution for it.","author":"Theodore Levitt","topics":["Market research"],"realID":"Theodore-Levitt-0"},
 	{"quoteText":"Creativity is thinking up new things. Innovation is doing new things.","author":"Theodore Levitt","topics":["Innovation"],"realID":"Theodore-Levitt-1"},
 	{"quoteText":"Mobs do not get things done; they destroy things.","author":"Theodore Levitt","topics":["Crowds"],"realID":"Theodore-Levitt-2"},
@@ -8834,18 +8956,16 @@
 	{"quoteText":"The invention of the teenager was a mistake. Once you identify a period of life in which people get to stay out late but don't have to pay taxes - naturally, nobody wants to live any other way.","author":"Judith Martin","topics":["Teenagers"],"realID":"Judith-Martin-7"},
 	{"quoteText":"Chaperons don't enforce morality; they force immorality to be discreet.","author":"Judith Martin","topics":["Moralists"],"realID":"Judith-Martin-8"},
 	
-	{"quoteText":"A day without sunshine is like, you know, night.","author":"Steve Martin","realID":"Steve-Martin-0"},
+	{"quoteText":"I believe that sex is one of the most beautiful, natural, wholesome things that money can buy.","author":"Steve Martin","topics":["Sex"],"realID":"Steve-Martin-0"},
 	{"quoteText":"First the doctor told me the good news: I was going to have a disease named after me.","author":"Steve Martin","topics":["Doctors"],"realID":"Steve-Martin-1"},
-	{"quoteText":"For sincere advice and the correct time, call any number at random at three a.m.","author":"Steve Martin","realID":"Steve-Martin-2"},
-	{"quoteText":"Boy, those French: they have a different word for everything!","author":"Steve Martin","realID":"Steve-Martin-3"},
-	{"quoteText":"Thankfully, perseverance is a good substitute for talent.","author":"Steve Martin","topics":["Perseverance"],"realID":"Steve-Martin-4"},
-	{"quoteText":"You know that look women get when they want sex? Me neither.","author":"Steve Martin","topics":["Lust"],"realID":"Steve-Martin-5"},
+	{"quoteText":"Thankfully, perseverance is a good substitute for talent.","author":"Steve Martin","topics":["Perseverance"],"realID":"Steve-Martin-2"},
+	{"quoteText":"You know that look women get when they want sex? Me neither.","author":"Steve Martin","topics":["Lust"],"realID":"Steve-Martin-3"},
 	
 	{"quoteText":"Mediocre people fit amiably into organizations, whereas brilliant people will probably be disruptive by introducing new ideas and questioning accepted attitudes.","author":"Pierre Martineau","topics":["Organizations"],"realID":"Pierre-Martineau-0"},
 	
 	{"quoteText":"I don't think there's ever a silver bullet to any problem. There are always several answers and solutions to a problem.","author":"Susana Martinez","topics":["Problems"],"realID":"Susana-Martinez-0"},
 	
-	{"quoteText":"I was born at a very early age.","author":"Groucho Marx","realID":"Groucho-Marx-0"},
+	{"quoteText":"I'm not a vegetarian, but I eat animals who are.","author":"Groucho Marx","topics":["Vegetarians"],"realID":"Groucho-Marx-0"},
 	{"quoteText":"I never forget a face, but in your case I'll make an exception.","author":"Groucho Marx","topics":["Faces"],"realID":"Groucho-Marx-1"},
 	{"quoteText":"I don't care to belong to a club that accepts people like me as members.","author":"Groucho Marx","topics":["Groups"],"realID":"Groucho-Marx-2"},
 	{"quoteText":"I have had a perfectly wonderful evening, but this wasn't it.","author":"Groucho Marx","realID":"Groucho-Marx-3"},
@@ -9353,6 +9473,7 @@
 	{"quoteText":"The only really happy folk are married women and single men.","author":"H. L. Mencken","topics":["Women & Men"],"realID":"H--L--Mencken-60"},
 	{"quoteText":"Women don't like timid men.","author":"H. L. Mencken","topics":["Timidity"],"realID":"H--L--Mencken-61"},
 	{"quoteText":"A man's women folk, whatever their outward show of respect for his merit and authority, always regard him secretly as an ass, and with something akin to pity.","author":"H. L. Mencken","topics":["Women & Men"],"realID":"H--L--Mencken-62"},
+	{"quoteText":"There are no institutions in America – there are only fashions.","author":"H. L. Mencken","topics":["America"],"realID":"H--L--Mencken-63"},
 	
 	{"quoteText":"Statistics: the only crystal ball approved by God.","author":"Xiao Li Meng","topics":["Statistics"],"realID":"Xiao-Li-Meng-0"},
 	
@@ -9364,6 +9485,8 @@
 	{"quoteText":"What's done to children, they will do to society.","author":"Dr. Karl Menninger","topics":["Child rearing"],"realID":"Dr--Karl-Menninger-3"},
 	
 	{"quoteText":"You'll never prove you're too good for a job by not doing your best.","author":"Ethel Merman","topics":["Effort"],"realID":"Ethel-Merman-0"},
+
+	{"quoteText":"On my first day in New York a guy asked me if I knew where Central Park was. When I told him I didn't he said, \"Do you mind if I mug you here?\"","author":"Paul Merton","topics":["Robbery"],"realID":"Paul-Merton-0"},
 	
 	{"quoteText":"Most institutions demand unqualified faith; but the institution of science makes skepticism a virtue.","author":"Robert K. Merton","topics":["Science"],"realID":"Robert-K--Merton-0"},
 	
@@ -9409,6 +9532,8 @@
 	
 	{"quoteText":"You can't drown your troubles . . . because troubles can swim.","author":"Margaret Millar","topics":["Drinking"],"realID":"Margaret-Millar-0"},
 	{"quoteText":"Most conversations are simply monologues delivered in the presence of a witness.","author":"Margaret Millar","topics":["Monologues"],"realID":"Margaret-Millar-1"},
+
+	{"quoteText":"No trumpets sound when the important decisions of our life are made.","author":"Agnes de Mille","topics":["Crossroads"],"realID":"Agnes-de-Mille-0"},
 	
 	{"quoteText":"Marriage does not unite two people; it entangles them.","author":"Abraham Miller","topics":["Marriage"],"realID":"Abraham-Miller-0"},
 	
@@ -9438,6 +9563,12 @@
 	{"quoteText":"After seven years of marriage, I'm sure of two things -- first, never wallpaper together, and second, you'll need two bathrooms - both for her.","author":"Dennis Miller","topics":["Wives"],"realID":"Dennis-Miller-14"},
 	{"quoteText":"You know you're a workaholic when you're making a phone call from home, you hit \"9\" to get out.","author":"Dennis Miller","topics":["Workaholics"],"realID":"Dennis-Miller-15"},
 	{"quoteText":"Two wrongs may not make a right, but a thousand wrongs make a writer.","author":"Dennis Miller","topics":["Writers"],"realID":"Dennis-Miller-16"},
+	{"quoteText":"It's ironic that the only people in America unwilling to push the envelope are postal employees.","author":"Dennis Miller","topics":["U.S.P.S."],"realID":"Dennis-Miller-17"},
+	{"quoteText":"I think teachers should take on students on a contingency basis, where they earn an eventual percentage of the child's adult earnings.  This would certainly light a fire under the teacher's ass to stress the basics.","author":"Dennis Miller","topics":["Teachers"],"realID":"Dennis-Miller-18"},
+	{"quoteText":"We are simultaneously the most hated, loved, feared and admired nation on this planet.  In short, we are Frank Sinatra.","author":"Dennis Miller","topics":["America"],"realID":"Dennis-Miller-19"},
+	{"quoteText":"Hybrid technology . . . It sounds like a cute idea but I always get the feeling I'm getting screwed by OPEC and Enron at the same time.","author":"Dennis Miller","topics":["The Environment"],"realID":"Dennis-Miller-20"},
+	{"quoteText":"We've got better security at Borders bookstores now than we do at our actual borders . . . I don't have anything against Mexican people . . . but for Christ's sakes sign the guest book on the way in.","author":"Dennis Miller","topics":["Border security"],"realID":"Dennis-Miller-21"},
+	{"quoteText":"If you're a smoker and you tell me that you didn't know cigarettes were bad for you, well you're lying through the hole in your trachea, my friend.","author":"Dennis Miller","topics":["Smoking"],"realID":"Dennis-Miller-22"},
 	
 	{"quoteText":"Often the difference between a successful marriage and a mediocre one consists of leaving about three or four things a day unsaid.","author":"Harlan Miller","topics":["Marriage"],"realID":"Harlan-Miller-0"},
 	
@@ -9494,6 +9625,8 @@
 	{"quoteText":"All machines have an innate sense of irresponsibility.","author":"Milroy's Law","topics":["Technology"],"realID":"Milroy-s-Law-0"},
 	
 	{"quoteText":"A perfect example of minority rule is a baby in the house.","author":"Milwaukee Journal","topics":["Babies"],"realID":"Milwaukee-Journal-0"},
+
+	{"quoteText":"Science adjusts its views based on what's observed. Faith is the denial of observation so that belief can be preserved.","author":"Tim Minchin","topics":["Faith"],"realID":"Tim-Minchin-0"},
 	
 	{"quoteText":"Our most beloved products were developed by hunch, guesswork and fanaticism, by creators who were eccentric - or even stark raving mad.","author":"Jack Mingo","topics":["Pioneers"],"realID":"Jack-Mingo-0"},
 	
@@ -9573,6 +9706,7 @@
 	{"quoteText":"By virtue of being born to humanity, every human being has a right to the development and fulfillment of his potentialities as a human being.","author":"Ashley Montagu","topics":["Potential"],"realID":"Ashley-Montagu-0"},
 	{"quoteText":"The idea is to die young as late as possible.","author":"Ashley Montagu","topics":["Death"],"realID":"Ashley-Montagu-1"},
 	{"quoteText":"The principal contributor to loneliness in this country is television. What happens is that the family \"gets together\" alone.","author":"Ashley Montagu","topics":["Television"],"realID":"Ashley-Montagu-2"},
+	{"quoteText":"Science has proof without any certainty.  Creationists have certainty without any proof.","author":"Ashley Montagu","topics":["Creation"],"realID":"Ashley-Montagu-3"},
 	
 	{"quoteText":"The Constitution doesn't need to be rewritten - it needs to be re-read.","author":"Dr. Willie Montague","topics":["The Constitution"],"realID":"Dr--Willie-Montague-0"},
 	{"quoteText":"Critical Race Theory is nothing more than racist critics spreading their theories.","author":"Dr. Willie Montague","topics":["CRT"],"realID":"Dr--Willie-Montague-1"},
@@ -9622,7 +9756,7 @@
 	
 	{"quoteText":"You can't be brave if you've only had wonderful things happen to you.","author":"Mary Tyler Moore","topics":["Velvet cushions"],"realID":"Mary-Tyler-Moore-0"},
 	
-	{"quoteText":"Reckless youth makes rueful age.","author":"Thomas Moore","topics":["Youth"],"realID":"Thomas-Moore-0"},
+	{"quoteText":"Reckless youth makes rueful age.","author":"Thomas Moore","topics":["Early years"],"realID":"Thomas-Moore-0"},
 	
 	{"quoteText":"We spend priority time with problem people when we should be spending it with potential people.","author":"Waylon Moore","topics":["Personnel development"],"realID":"Waylon-Moore-0"},
 	
@@ -9755,6 +9889,8 @@
 	{"quoteText":"So, if we lie to the government, it's a felony. But if they lie to us, it's politics.","author":"Bill Murray","topics":["Government"],"realID":"Bill-Murray-1"},
 	
 	{"quoteText":"We tried to provide more for the poor and produced more poor instead. We tried to remove the barriers to escape poverty and inadvertently built a trap.","author":"Charles Murray","topics":["The welfare state"],"realID":"Charles-Murray-0"},
+
+	{"quoteText":"Anyone can repress a woman, but you need \"dictated\" scriptures to feel you're really right in repressing her.","author":"Douglas Murray","topics":["Misogyny, Religious"],"realID":"Douglas-Murray-0"},
 	
 	{"quoteText":"A real individual is . . . a man who would hate to be anybody but himself.","author":"Henry A. Murray","topics":["Individuality"],"realID":"Henry-A--Murray-0"},
 
@@ -9959,6 +10095,8 @@
 	{"quoteText":"People with goals succeed because they know where they are going.","author":"Earl Nightingale","topics":["Goals"],"realID":"Earl-Nightingale-1"},
 	{"quoteText":"Our attitude toward life determines life's attitude toward us.","author":"Earl Nightingale","topics":["Attitude"],"realID":"Earl-Nightingale-2"},
 	{"quoteText":"The biggest mistake that you can make is to believe that you are working for somebody else.","author":"Earl Nightingale","topics":["Work"],"realID":"Earl-Nightingale-3"},
+
+	{"quoteText":"The belittlement of women is a central point of the desert religions.","author":"James Nimmo","topics":["Misogyny, Religious"],"realID":"James-Nimmo-0"},
 	
 	{"quoteText":"You should not give anybody the power to decide what is right and wrong in your creativity.","author":"Anaïs Nin","topics":["Critics"],"realID":"Ana-s-Nin-0"},
 	{"quoteText":"If a person continues to see only giants, it means he is still looking at the world through the eyes of a child.","author":"Anaïs Nin","topics":["Immaturity"],"realID":"Ana-s-Nin-1"},
@@ -10009,6 +10147,8 @@
 	{"quoteText":"If ambition doesn't hurt you, you haven't got it.","author":"Kathleen Norris","topics":["Aspiration"],"realID":"Kathleen-Norris-3"},
 	
 	{"quoteText":"Don't tolerate me as different. Accept me as part of the spectrum of normalcy.","author":"Ann Northrop","topics":["Normalcy"],"realID":"Ann-Northrop-0"},
+
+	{"quoteText":"The notion that religious medical facilities could legally allow women to die from treatable conditions inside their doors cannot be permitted.","author":"Nancy Northrop","topics":["Misogyny, Religious"],"realID":"Nancy-Northrop-0"},
 	
 	{"quoteText":"Nothing is ever gained by winning an argument and losing a customer.","author":"C. F. Norton","topics":["Customer relations"],"realID":"C--F--Norton-0"},
 	
@@ -10563,6 +10703,9 @@
 	{"quoteText":"It's strange that men should take up crime when there are so many legal ways to be dishonest.","author":"Laurence J. Peter","topics":["Elite deviance"],"realID":"Laurence-J--Peter-19"},
 	{"quoteText":"The cave-dweller's wife complained that he hadn't dragged her anywhere in months.","author":"Laurence J. Peter","topics":["Wives"],"realID":"Laurence-J--Peter-20"},
 	{"quoteText":"Every girl should use what Mother Nature gave her before Father Time takes it away.","author":"Laurence J. Peter","topics":["Beauty"],"realID":"Laurence-J--Peter-21"},
+	{"quoteText":"Everyone is in awe of the lion tamer in a cage with half a dozen lions - everyone but a school bus driver.","author":"Laurence J. Peter","topics":["Children"],"realID":"Laurence-J--Peter-22"},
+	{"quoteText":"America is a land taxation that was founded to avoid taxation.","author":"Laurence J. Peter","topics":["America"],"realID":"Laurence-J--Peter-23"},
+	{"quoteText":"Originality is the fine art of remembering what you hear but forgetting where you heard it.","author":"Laurence J. Peter","topics":["Originality"],"realID":"Laurence-J--Peter-24"},
 	
 	{"quoteText":"Formula for success: underpromise and overdeliver","author":"Tom Peters","topics":["Underpromise, overdeliver"],"realID":"Tom-Peters-0"},
 	{"quoteText":"If you're not confused, you're not paying attention.","author":"Tom Peters","topics":["Inattention"],"realID":"Tom-Peters-1"},
@@ -10584,14 +10727,31 @@
 	{"quoteText":"You're going to pay a price for every bloody thing you do and everything you don't do.","author":"Dr. Jordan B. Peterson","topics":["Regret, Avertable"],"realID":"Dr--Jordan-B--Peterson-1"},
 	{"quoteText":"If you fulfill your obligations every day, you don't need to worry about the future.","author":"Dr. Jordan B. Peterson","topics":["Duty"],"realID":"Dr--Jordan-B--Peterson-2"},
 	{"quoteText":"Winning at everything might only mean that you're not doing anything new or difficult. You might be winning but you're not growing.","author":"Dr. Jordan B. Peterson","topics":["Mediocrity"],"realID":"Dr--Jordan-B--Peterson-3"},
-	{"quoteText":"You don't get to choose not to pay a price, you only get to choose which price you pay.","author":"Dr. Jordan B. Peterson","topics":["Sacrifice"],"realID":"Dr--Jordan-B--Peterson-4"},
+	{"quoteText":"You don't get to choose not to pay a price, you only get to choose which price you pay.","author":"Dr. Jordan B. Peterson","topics":["Sacrifice", "Consequences"],"realID":"Dr--Jordan-B--Peterson-4"},
 	{"quoteText":"Kindness is the excuse that social justice warriors use when they want to exercise control over what other people think and say.","author":"Dr. Jordan B. Peterson","topics":["\"Social justice\""],"realID":"Dr--Jordan-B--Peterson-5"},
 	{"quoteText":"Suffering is a characteristic of life. You can't take it personally.","author":"Dr. Jordan B. Peterson","topics":["Suffering"],"realID":"Dr--Jordan-B--Peterson-6"},
 	{"quoteText":"People who don't have their own houses in order should be very careful before they go about reorganizing the world.","author":"Dr. Jordan B. Peterson","topics":["Reformers"],"realID":"Dr--Jordan-B--Peterson-7"},
 	{"quoteText":"You can neither remember nor forget what you do not understand.","author":"Dr. Jordan B. Peterson","topics":["Understanding, Lack of"],"realID":"Dr--Jordan-B--Peterson-8"},
 	{"quoteText":"Not everyone who is failing is a victim.","author":"Dr. Jordan B. Peterson","topics":["Victimhood"],"realID":"Dr--Jordan-B--Peterson-9"},
-	{"quoteText":"If you think tough men are dangerous, wait until you see what weak men are capable of.","author":"Dr. Jordan B. Peterson","topics":["Weaklings"],"realID":"Dr--Jordan-B--Peterson-10"},
-	{"quoteText":"Children in father absent homes are four times as likely to be poor.","author":"Dr. Jordan B. Peterson","topics":["Dads matter"],"realID":"Dr--Jordan-B--Peterson-11"},
+	{"quoteText":"If you think tough men are dangerous, wait until you see what weak men are capable of.","author":"Dr. Jordan B. Peterson","topics":["Weaklings", "Toolbags"],"realID":"Dr--Jordan-B--Peterson-10"},
+	{"quoteText":"Children in father-absent homes are four times as likely to be poor.","author":"Dr. Jordan B. Peterson","topics":["Dads matter"],"realID":"Dr--Jordan-B--Peterson-11"},
+	{"quoteText":"It is far better to render beings in your care competent than to protect them.","author":"Dr. Jordan B. Peterson","topics":["Leadership 101"],"realID":"Dr--Jordan-B--Peterson-12"},
+	{"quoteText":"The worst thing you can do for someone anxious is to overprotect them.  It makes them worse.","author":"Dr. Jordan B. Peterson","topics":["Anxiety"],"realID":"Dr--Jordan-B--Peterson-13"},
+	{"quoteText":"Can you imagine yourself in 10 years if, instead of avoiding the things you know you should do, you actually did them every single day?  That's powerful.","author":"Dr. Jordan B. Peterson","topics":["Regret, Avertable"],"realID":"Dr--Jordan-B--Peterson-14"},
+	{"quoteText":"It is an act of responsibility to discipline a child.","author":"Dr. Jordan B. Peterson","topics":["Child rearing"],"realID":"Dr--Jordan-B--Peterson-15"},
+	{"quoteText":"If you fulfill your obligations everyday you don't need to worry about the future.","author":"Dr. Jordan B. Peterson","topics":["Duty"],"realID":"Dr--Jordan-B--Peterson-16"},
+	{"quoteText":"Don't ever underestimate the destructive power of sins of omission.","author":"Dr. Jordan B. Peterson","topics":["Duty, Neglected"],"realID":"Dr--Jordan-B--Peterson-17"},
+	{"quoteText":"The worst decision of all is none.","author":"Dr. Jordan B. Peterson","topics":["Indecision"],"realID":"Dr--Jordan-B--Peterson-18"},
+	{"quoteText":"Worthlessness is the default condition.","author":"Dr. Jordan B. Peterson","topics":["Inferiority"],"realID":"Dr--Jordan-B--Peterson-19"},
+	{"quoteText":"Don't use language instrumentally.","author":"Dr. Jordan B. Peterson","topics":["Language"],"realID":"Dr--Jordan-B--Peterson-20"},
+	{"quoteText":"Women have been making men self-conscious since the beginning of time.","author":"Dr. Jordan B. Peterson","topics":["Women & Men"],"realID":"Dr--Jordan-B--Peterson-21"},
+	{"quoteText":"Tyranny grows slowly, and asks us to retreat in comparatively tiny steps. But each retreat increases the possibility of the next retreat.","author":"Dr. Jordan B. Peterson","topics":["Tyranny, Incremental"],"realID":"Dr--Jordan-B--Peterson-22"},
+	{"quoteText":"That which you most need to find will be found where you least wish to look.","author":"Dr. Jordan B. Peterson","topics":["Truth, Unwelcome"],"realID":"Dr--Jordan-B--Peterson-23"},
+	{"quoteText":"People organize their brains with conversation.","author":"Dr. Jordan B. Peterson","topics":["Talking"],"realID":"Dr--Jordan-B--Peterson-24"},
+	{"quoteText":"Something better might be attained in the future by giving up something of value in the present.","author":"Dr. Jordan B. Peterson","topics":["Sacrifice"],"realID":"Dr--Jordan-B--Peterson-25"},
+	{"quoteText":"Question for parents: do you want to make your children safe, or strong?","author":"Dr. Jordan B. Peterson","topics":["Overparenting"],"realID":"Dr--Jordan-B--Peterson-26"},
+	{"quoteText":"If you look at older people and you ask them what they regret in their lives, it's not the opportunities they took, but the opportunities they could have taken and didn't.","author":"Dr. Jordan B. Peterson","topics":["Opportunity, Missed"],"realID":"Dr--Jordan-B--Peterson-27"},
+	{"quoteText":"When you love someone, it's not despite their limitations.  It's because of their limitations.","author":"Dr. Jordan B. Peterson","topics":["Limitations"],"realID":"Dr--Jordan-B--Peterson-28"},
 	
 	{"quoteText":"You don't die of a broken heart; you only wish you did.","author":"Marilyn Peterson","topics":["Heartbreak"],"realID":"Marilyn-Peterson-0"},
 	
@@ -10622,6 +10782,7 @@
 	{"quoteText":"Whatever happened to the good ole days, when children worked in factories?","author":"Emo Philips","topics":["Children"],"realID":"Emo-Philips-0"},
 	{"quoteText":"I go from stool to stool in singles bars hoping to get lucky, but there's never any gum under any of them.","author":"Emo Philips","topics":["Nightlife"],"realID":"Emo-Philips-1"},
 	{"quoteText":"Some mornings, it's just not worth chewing through the leather straps.","author":"Emo Philips","topics":["Some days . . ."],"realID":"Emo-Philips-2"},
+	{"quoteText":"I ran three miles today.  Finally I said, \"Lady, take your purse!\"","author":"Emo Philips","topics":["Robbery"],"realID":"Emo-Philips-3"},
 	
 	{"quoteText":"You know you're old when you notice how young the derelicts are getting.","author":"Jeanne Phillips","topics":["Old age"],"realID":"Jeanne-Phillips-0"},
 	
@@ -10826,6 +10987,7 @@
 	{"quoteText":"When I was young there was no respect for the young, and now that I am old there is no respect for the old.","author":"J. B. Priestley","topics":["The Times"],"realID":"J--B--Priestley-1"},	
 	{"quoteText":"Like its politicians and its wars, society has the teenagers it deserves.","author":"J. B. Priestley","topics":["Teenagers"],"realID":"J--B--Priestley-2"},
 	{"quoteText":"A loving wife will do anything for her husband except stop criticizing him and trying to improve him.","author":"J. B. Priestley","topics":["Wives"],"realID":"J--B--Priestley-3"},
+	{"quoteText":"We pay when old for the excesses of youth.","author":"J. B. Priestley","topics":["Early years"],"realID":"J--B--Priestley-3"},
 	
 	{"quoteText":"I want to be what I was when I wanted to be what I am now.","author":"Ray Prince","topics":["Careful what you wish for"],"realID":"Ray-Prince-0"},
 	
@@ -11027,6 +11189,8 @@
 	{"quoteText":"Courage is not the absence of fear, but rather the judgment that something else is more important than fear.","author":"Ambrose Redmoon","topics":["Courage"],"realID":"Ambrose-Redmoon-0"},
 	
 	{"quoteText":"One of the greatest delusions in the world is the hope that the evils in this world are to be cured by legislation.","author":"Thomas B. Reed","topics":["Big government"],"realID":"Thomas-B--Reed-0"},
+
+	{"quoteText":"The simple act of paying attention can take you a long way.","author":"Keanu Reeves","topics":["Attentiveness"],"realID":"Keanu-Reeves-0"},
 	
 	{"quoteText":"The key to successful aging is to pay as little attention to it as possible.","author":"Judith Regan","topics":["Aging"],"realID":"Judith-Regan-0"},
 	
@@ -11175,7 +11339,7 @@
 	
 	{"quoteText":"If you don't think every day is a good day, just try missing one.","author":"Cavett Robert","topics":["In perspective"],"realID":"Cavett-Robert-0"},
 	{"quoteText":"Character is the ability to carry out a good resolution long after the excitement of the moment has passed.","author":"Cavett Robert","topics":["Stick-to-itiveness"],"realID":"Cavett-Robert-1"},
-	{"quoteText":"Any person who selects a goal in life which can be fully achieved, has already defined his own limitations","author":"Cavett Robert","topics":["Limitation"],"realID":"Cavett-Robert-2"},
+	{"quoteText":"Any person who selects a goal in life which can be fully achieved, has already defined his own limitations","author":"Cavett Robert","topics":["Limitations"],"realID":"Cavett-Robert-2"},
 	
 	{"quoteText":"If you don't go after what you want, you'll never have it. If you don't ask, the answer is always no.","author":"Nora Roberts","topics":["Why not?"],"realID":"Nora-Roberts-0"},
 	
@@ -11324,6 +11488,7 @@
 	{"quoteText":"Plans get you into things, but you got to work your way out.","author":"Will Rogers","topics":["Work"],"realID":"Will-Rogers-63"},
 	{"quoteText":"Worrying is like paying on a debt that may never come due.","author":"Will Rogers","topics":["Worry"],"realID":"Will-Rogers-64"},
 	{"quoteText":"When you are dissatisfied and would like to go back to youth, think of algebra.","author":"Will Rogers","topics":["Youth"],"realID":"Will-Rogers-65"},
+	{"quoteText":"Showgirls are so beautiful, it is sad to think that twenty years from now they will all be five years older.","author":"Will Rogers","topics":["Age & Women"],"realID":"Will-Rogers-66"},
 	
 	{"quoteText":"The walls we build around us to keep sadness out also keeps out the joy.","author":"Jim Rohn","topics":["Sadness"],"realID":"Jim-Rohn-0"},
 	{"quoteText":"Give whatever you are doing and whoever you are with the gift of your attention.","author":"Jim Rohn","topics":["Attention"],"realID":"Jim-Rohn-1"},
@@ -11643,7 +11808,7 @@
 	{"quoteText":"A happy life must be, to a great extent a quiet life, for it is only in an atmosphere of quiet that true joy can live.","author":"Bertrand Russell","topics":["The quiet life"],"realID":"Bertrand-Russell-46"},
 	{"quoteText":"The time you enjoy wasting is not wasted time.","author":"Bertrand Russell","topics":["R & R"],"realID":"Bertrand-Russell-47"},
 	{"quoteText":"There are two motives for reading a book: one, that you enjoy it; the other, that you can boast about it.","author":"Bertrand Russell","topics":["Reading"],"realID":"Bertrand-Russell-48"},
-	{"quoteText":"It is not what the man of science believes that distinguishes him, but how and why he believes it. His beliefs are . . . based on evidence, not on authority or intuition.","author":"Bertrand Russell","topics":["Science"],"realID":"Bertrand-Russell-49"},
+	{"quoteText":"It is not what the man of science believes that distinguishes him, but how and why he believes it. His beliefs are . . . based on evidence, not on authority or intuition.","author":"Bertrand Russell","topics":["Evidence"],"realID":"Bertrand-Russell-49"},
 	{"quoteText":"The degree of one's emotion varies inversely with one's knowledge of the facts.","author":"Bertrand Russell","topics":["Hypersensitivity"],"realID":"Bertrand-Russell-50"},
 	{"quoteText":"Civilized people cannot fully satisfy their sexual instinct without love.","author":"Bertrand Russell","topics":["Sex"],"realID":"Bertrand-Russell-51"},
 	{"quoteText":"It seems that sin is geographical.","author":"Bertrand Russell","topics":["Sin"],"realID":"Bertrand-Russell-52"},
@@ -11655,6 +11820,9 @@
 	{"quoteText":"The average man's opinions are much less foolish than they would be if he thought for himself.","author":"Bertrand Russell","topics":["Washed brains","Hypnotics"],"realID":"Bertrand-Russell-58"},
 	{"quoteText":"War does not determine who is right - only who is left.","author":"Bertrand Russell","topics":["War"],"realID":"Bertrand-Russell-59"},
 	{"quoteText":"The wise thinks about his troubles only when there is some purpose in doing so; at other times, he thinks about other things.","author":"Bertrand Russell","topics":["Troubles"],"realID":"Bertrand-Russell-60"},
+	{"quoteText":"If today was a fish, I'd throw it back.","author":"Bertrand Russell","topics":["Some days . . ."],"realID":"Bertrand-Russell-61"},
+	{"quoteText":"Where there is evidence, no one speaks of \"faith\" . . . We only speak of faith when we wish to substitute emotion for evidence.","author":"Bertrand Russell","topics":["Faith"],"realID":"Bertrand-Russell-62"},
+	{"quoteText":"So far as I can remember there is not one word in the Gospels in praise of intelligence.","author":"Bertrand Russell","topics":["Religion & Ignorance"],"realID":"Bertrand-Russell-63"},
 	
 	{"quoteText":"Confidence means being able to laugh at yourself.","author":"Bill Russell","topics":["Humility"],"realID":"Bill-Russell-0"},
 	
@@ -11695,7 +11863,7 @@
 	{"quoteText":"The right to do something does not mean that doing it is right.","author":"William Safire","topics":["Rights"],"realID":"William-Safire-0"},
 	{"quoteText":"Never use a long word when a diminutive one will do.","author":"William Safire","topics":["Sesquipedalianism"],"realID":"William-Safire-1"},
 	
-	{"quoteText":"Extraordinary claims require extraordinary evidence.","author":"Carl Sagan","realID":"Carl-Sagan-0"},
+	{"quoteText":"Extraordinary claims require extraordinary evidence.","author":"Carl Sagan","topics":["Evidence"],"realID":"Carl-Sagan-0"},
 	{"quoteText":"There is a lurking fear that some things are \"not meant\" to be known, that some inquiries are too dangerous for human being to make.","author":"Carl Sagan","topics":["The unknown"],"realID":"Carl-Sagan-1"},
 	{"quoteText":"You can't convince a believer of anything; for their belief is not based on evidence, it's based on a deep-seated need to believe.","author":"Carl Sagan","topics":["Belief"],"realID":"Carl-Sagan-2"},
 	{"quoteText":"The visions we offer our children shape the future. It matters what those visions are. Often they become self-fulfilling prophecies.","author":"Carl Sagan","topics":["Child rearing"],"realID":"Carl-Sagan-3"},
@@ -11760,6 +11928,8 @@
 	{"quoteText":"Advancement is to be won by qualifying for advancement, not by seeking it.","author":"Herbert Louis Samuel","topics":["Promotion"],"realID":"Herbert-Louis-Samuel-1"},
 	{"quoteText":"The world is like a mirror: frown at it, and it frowns at you; smile and it smiles, too.","author":"Herbert Louis Samuel","topics":["Reciprocity"],"realID":"Herbert-Louis-Samuel-2"},
 	{"quoteText":"An autobiography is the story of how a man thinks he lived.","author":"Herbert Louis Samuel","topics":["Autobiography"],"realID":"Herbert-Louis-Samuel-3"},
+
+	{"quoteText":"The United States is like the guy at the party who gives cocaine to everybody and still nobody likes him.","author":"Jim Samuels","topics":["America"],"realID":"Jim-Samuels-0"},
 	
 	{"quoteText":"Academic pedigree alone is no guarantor of useful knowledge and wisdom.","author":"Robert J. Samuelson","topics":["Credentialism"],"realID":"Robert-J--Samuelson-0"},
 	
@@ -11821,6 +11991,7 @@
 	
 	{"quoteText":"I suppose real old age begins when one looks backward rather than forward.","author":"May Sarton","topics":["Old age"],"realID":"May-Sarton-0"},
 	{"quoteText":"Most people have to talk so they won't hear.","author":"May Sarton","topics":["Social anxiety"],"realID":"May-Sarton-1"},
+	{"quoteText":"Loneliness is the poverty of self; solitude is the richness of self.","author":"May Sarton","topics":["Solitude"],"realID":"May-Sarton-2"},
 	
 	{"quoteText":"One always dies too soon or too late.","author":"Jean-Paul Sartre","topics":["Death"],"realID":"Jean-Paul-Sartre-0"},
 	{"quoteText":"It is only in our decisions that we are important.","author":"Jean-Paul Sartre","topics":["Decisiveness"],"realID":"Jean-Paul-Sartre-1"},
@@ -12413,6 +12584,8 @@
 	{"quoteText":"Far more, and far more hideous, crimes have been committed in the name of obedience than have ever been committed in the name of rebellion.","author":"C. P. Snow","topics":["Obedience"],"realID":"C--P--Snow-2"},
 	
 	{"quoteText":"To the world you may be just one person, but to one person you may be the world.","author":"Brandi Snyder","topics":["Reverence"],"realID":"Brandi-Snyder-0"},
+
+	{"quoteText":"History does not repeat, but it does instruct","author":"Timothy Snyder","topics":["History"],"realID":"Timothy-Snyder-0"},
 	
 	{"quoteText":"The attempt to silence a man is the greatest honor you can bestow on him. It means that you recognize his superiority to yourself.","author":"Joseph Sobran","topics":["Censorship"],"realID":"Joseph-Sobran-0"},
 	{"quoteText":"The Constitution poses no threat to our current form of government.","author":"Joseph Sobran","topics":["The Constitution"],"realID":"Joseph-Sobran-1"},
@@ -12423,6 +12596,8 @@
 	
 	{"quoteText":"Memories of past experiences may be even sweeter than these experiences were in reality.","author":"Ralph W. Sockman","topics":["Reminiscing"],"realID":"Ralph-W--Sockman-0"},
 	{"quoteText":"The test of courage comes when we are in the minority. The test of tolerance comes when we are in the majority.","author":"Ralph W. Sockman","topics":["Tolerance"],"realID":"Ralph-W--Sockman-1"},
+
+	{"quoteText":"Blasphemy is the crime of not taking someone's beliefs as seriously as they do.","author":"Jasper Sole","topics":["Blasphemy"],"realID":"Jasper-Sole-0"},
 	
 	{"quoteText":"Everything you add to the truth subtracts from the truth.","author":"Aleksandr Solzhenitsyn","topics":["Embellishment"],"realID":"Aleksandr-Solzhenitsyn-0"},
 	{"quoteText":"Can a man who is warm understand one who is freezing?","author":"Aleksandr Solzhenitsyn","topics":["Ivory towers"],"realID":"Aleksandr-Solzhenitsyn-1"},
@@ -12650,6 +12825,8 @@
 	{"quoteText":"A pedestal is as much a prison as any small, confined space.","author":"Gloria Steinem","topics":["Fame"],"realID":"Gloria-Steinem-6"},
 	{"quoteText":"The first problem for all of us, men and women, is not to learn, but to unlearn.","author":"Gloria Steinem","topics":["Weeds"],"realID":"Gloria-Steinem-7"},
 	{"quoteText":"Rich people plan for three generations. Poor people plan for Saturday night.","author":"Gloria Steinem","topics":["Wealth"],"realID":"Gloria-Steinem-8"},
+	{"quoteText":"If men could get pregnant, abortion would be a sacrament.","author":"Gloria Steinem","topics":["Misogyny, Religious"],"realID":"Gloria-Steinem-9"},
+	{"quoteText":"It's an incredible con job when you think about it, to believe something now in exchange for something after death. Even corporations with their reward systems don't try to make it posthumous.","author":"Gloria Steinem","topics":["The Afterlife"],"realID":"Gloria-Steinem-10"},
 	
 	{"quoteText":"Anxiety is fear of one's self.","author":"Wilhelm Stekel","topics":["Anxiety"],"realID":"Wilhelm-Stekel-0"},
 	
@@ -13091,6 +13268,8 @@
 	{"quoteText":"The years come to my door and knock and walk away sighing.","author":"Richard Tillinghast","topics":["Time"],"realID":"Richard-Tillinghast-0"},
 	
 	{"quoteText":"It's just as easy to live well when you're poor as when you're rich - but when you're poor, it's much cheaper.","author":"Andrew Tobias","topics":["The poor"],"realID":"Andrew-Tobias-0"},
+
+	{"quoteText":"No woman should accept any religion that assigns her a role that is at best secondary to men.","author":"Sheila Tobias","topics":["Misogyny, Religious"],"realID":"Sheila-Tobias-0"},
 	
 	{"quoteText":"You don't have power if you surrender all your principles - you have office.","author":"Ron Todd","topics":["Selling out"],"realID":"Ron-Todd-0"},
 	
@@ -13135,6 +13314,8 @@
 	{"quoteText":"You can't change the people around you, but you can change the people around you.","author":"Maj Toure","topics":["Association"],"realID":"Maj-Toure-0"},
 	
 	{"quoteText":"Women should campaign so that they are granted the right to ugliness like men.","author":"Michael Tournier","topics":["Ugliness"],"realID":"Michael-Tournier-0"},
+
+	{"quoteText":"Nothing makes us so lonely as our secrets.","author":"Paul Tournier","topics":["Secrets"],"realID":"Paul-Tournier-0"},
 	
 	{"quoteText":"Top management is supposed to be a tree full of owls . . . hooting when management heads into the wrong part of the forest. I'm still unpersuaded they even know where the forest is.","author":"Robert Townsend","topics":["Executives"],"realID":"Robert-Townsend-0"},
 	{"quoteText":"True leadership must be for the benefit of the followers, not the enrichment of the leaders.","author":"Robert Townsend","topics":["Leadership 101"],"realID":"Robert-Townsend-1"},
@@ -13289,6 +13470,7 @@
 	
 	{"quoteText":"The good thing about science is that it's true whether or not you believe in it.","author":"Neil deGrasse Tyson","topics":["Science"],"realID":"Neil-deGrasse-Tyson-0"},
 	{"quoteText":"Knowing how to think empowers you far beyond those who know only what to think.","author":"Neil deGrasse Tyson","topics":["Hypnotics"],"realID":"Neil-deGrasse-Tyson-1"},
+	{"quoteText":"If pundits tell you something is true, and you don't have the critical thinking skills to evaluate their statements, then you are putty in their hands, as they shape your world view to their will.","author":"Neil deGrasse Tyson","topics":["Toolbags"],"realID":"Neil-deGrasse-Tyson-2"},
 
 	{"quoteText":"Lord give us the wisdom to utter words that are gentle and tender, for tomorrow we may have to eat them.","author":"Morris K. Udall","topics":["Words"],"realID":"Morris-K--Udall-0"},
 
@@ -13414,6 +13596,7 @@
 	{"quoteText":"A statesman is any politician it's considered safe to name a school after.","author":"Bill Vaughan","topics":["\"Statesmen\""],"realID":"Bill-Vaughan-16"},
 	{"quoteText":"Suburbia is where the developer bulldozes out the trees, then names the streets after them.","author":"Bill Vaughan","topics":["The suburbs"],"realID":"Bill-Vaughan-17"},
 	{"quoteText":"People are judged by what they stand in line for.","author":"Bill Vaughan","topics":["Taste"],"realID":"Bill-Vaughan-18"},
+	{"quoteText":"The tax collector must love poor people, he's creating so many of them.","author":"Bill Vaughan","topics":["Taxation"],"realID":"Bill-Vaughan-18"},
 	
 	{"quoteText":"There are more men than women in mental hospitals - which just goes to show who's driving who crazy.","author":"Peter Veale","topics":["Women"],"realID":"Peter-Veale-0"},
 	
@@ -13489,7 +13672,7 @@
 	{"quoteText":"The worship of the state is the worship of force.","author":"Ludwig von Mises","topics":["Lemmings"],"realID":"Ludwig-von-Mises-12"},
 	
 	{"quoteText":"We are what we pretend to be, so we must be careful about what we pretend to be.","author":"Kurt Vonnegut","topics":["Appearance"],"realID":"Kurt-Vonnegut-0"},
-	{"quoteText":"Say what you will about the sweet miracle of unquestioning faith, I consider a capacity for it terrifying and absolutely vile.","author":"Kurt Vonnegut","topics":["Dogma"],"realID":"Kurt-Vonnegut-1"},
+	{"quoteText":"Say what you will about the sweet miracle of unquestioning faith, I consider a capacity for it terrifying and absolutely vile.","author":"Kurt Vonnegut","topics":["Blind faith"],"realID":"Kurt-Vonnegut-1"},
 	{"quoteText":"Another flaw in the human character is that everybody wants to build and nobody wants to do maintenance.","author":"Kurt Vonnegut","topics":["Glory hounds"],"realID":"Kurt-Vonnegut-2"},
 	{"quoteText":"A flaw in the human character is that everybody wants to build and nobody wants to do maintenance.","author":"Kurt Vonnegut","topics":["Instant gratification"],"realID":"Kurt-Vonnegut-3"},
 	{"quoteText":"True terror is to wake up one morning and discover that your high school class is running the country.","author":"Kurt Vonnegut","topics":["Middle age"],"realID":"Kurt-Vonnegut-4"},
@@ -13661,6 +13844,7 @@
 	{"quoteText":"It is a common mistake to think of failure as the enemy of success. Failure is a teacher - a harsh one - but the best.","author":"Thomas J. Watson, Sr.","topics":["Failure"],"realID":"Thomas-J--Watson--Sr--0"},
 	{"quoteText":"If you want to increase your success rate, double your failure rate.","author":"Thomas J. Watson, Sr.","topics":["Risk & Reward"],"realID":"Thomas-J--Watson--Sr--1"},
 	{"quoteText":"Clothes don't make the man . . . but they go a long way toward making a businessman.","author":"Thomas J. Watson, Sr.","topics":["Clothes"],"realID":"Thomas-J--Watson--Sr--2"},
+	{"quoteText":"Whenever an individual or a business decides that success has been attained, progress stops.","author":"Thomas J. Watson, Sr.","topics":["Complacency"],"realID":"Thomas-J--Watson--Sr--3"},
 	
 	{"quoteText":"They kill good trees to put out bad newspapers.","author":"James G. Watt","topics":["The Press"],"realID":"James-G--Watt-0"},
 	
@@ -13668,7 +13852,7 @@
 	
 	{"quoteText":"Biden's like the reverse Robin Hood, he's robbing the poor to pay the rich.","author":"Jesse Watters","topics":["\"Foreign aid\""],"realID":"Jesse-Watters-0"},
 	
-	{"quoteText":"We don't devote enough scientific research to finding a cure for jerks.","author":"Bill Watterson","realID":"Bill-Watterson-0"},
+	{"quoteText":"We don't devote enough scientific research to finding a cure for jerks.","author":"Bill Watterson","topics":["Clowns"],"realID":"Bill-Watterson-0"},
 	{"quoteText":"The problem with the future is that it keeps turning into the present.","author":"Bill Watterson","topics":["The Future"],"realID":"Bill-Watterson-1"},
 	{"quoteText":"It's surprising how hard we'll work when the work is done just for ourselves.","author":"Bill Watterson","topics":["Hobbies"],"realID":"Bill-Watterson-2"},
 	{"quoteText":"I know the world isn't fair, but why isn't it ever unfair in my favor?","author":"Bill Watterson","topics":["The World"],"realID":"Bill-Watterson-3"},
@@ -13691,6 +13875,8 @@
 	{"quoteText":"From now on, I'll connect the dots my own way.","author":"Bill Watterson","topics":["Nonconformity"],"realID":"Bill-Watterson-20"},
 	{"quoteText":"There's never enough time to do all the nothing you want.","author":"Bill Watterson","topics":["R & R"],"realID":"Bill-Watterson-21"},
 	{"quoteText":"It's only work if somebody makes you do it.","author":"Bill Watterson","topics":["Work"],"realID":"Bill-Watterson-22"},
+	{"quoteText":"The mind is like a car battery - it recharges by running.","author":"Bill Watterson","topics":["The Mind"],"realID":"Bill-Watterson-23"},
+	{"quoteText":"Letting your mind play is the best way to solve problems.","author":"Bill Watterson","topics":["Outside-the-box thinking"],"realID":"Bill-Watterson-24"},
 	
 	{"quoteText":"Just saying \"no\" prevents teenage pregnancy the way \"Have a nice day\" cures chronic depression.","author":"Faye Wattleton","topics":["Slogans"],"realID":"Faye-Wattleton-0"},
 	
@@ -13715,6 +13901,7 @@
 	{"quoteText":"One needs more rest if one doesn't sleep.","author":"Evelyn Waugh","topics":["R & R"],"realID":"Evelyn-Waugh-2"},
 	{"quoteText":"Manners are especially the need of the plain. The pretty can get away with anything.","author":"Evelyn Waugh","topics":["Beauty"],"realID":"Evelyn-Waugh-3"},
 	{"quoteText":"Only when one has lost all curiosity about the future has one reached the age to write an autobiography.","author":"Evelyn Waugh","topics":["Autobiography"],"realID":"Evelyn-Waugh-4"},
+	{"quoteText":"Punctuality is the virtue of the bored.","author":"Evelyn Waugh","topics":["Punctuality"],"realID":"Evelyn-Waugh-5"},
 	
 	{"quoteText":"A general may succeed for some time in persuading his superiors that he is a good commander. He will never persuade his army that he is a good commander unless he has the real qualities of one.","author":"Gen. Archibald Wavell","topics":["Leadership"],"realID":"Gen--Archibald-Wavell-0"},
 	{"quoteText":"No amount of study or learning will make a man a leader unless he has the natural qualities of one.","author":"Gen. Archibald Wavell","topics":["Leadership"],"realID":"Gen--Archibald-Wavell-1"},
@@ -13782,6 +13969,7 @@
 	{"quoteText":"The best preparation for work is not thinking about work, talking about work or studying for work. It is work.","author":"William F. Weld","topics":["Work"],"realID":"William-F--Weld-1"},
 	
 	{"quoteText":"Hell is not other people, hell is no other people.","author":"Fay Weldon","topics":["Loneliness"],"realID":"Fay-Weldon-0"},
+	{"quoteText":"If you do nothing unexpected, nothing unexpected happens.","author":"Fay Weldon","topics":["Outside-the-box thinking"],"realID":"Fay-Weldon-1"},
 	
 	{"quoteText":"There are good days and there are bad days, and this is one of them.","author":"Lawrence Welk","topics":["Some days . . ."],"realID":"Lawrence-Welk-0"},
 	
@@ -14027,6 +14215,8 @@
 	{"quoteText":"Disparagement of television is second only to watching television as an American pastime.","author":"George F. Will","topics":["Television"],"realID":"George-F--Will-17"},
 	
 	{"quoteText":"The first act of love is always the giving of attention.","author":"Dallas Willard","topics":["Love"],"realID":"Dallas-Willard-0"},
+
+	{"quoteText":"We teach about how to drive in school, but not how to manage finances.","author":"Andy Williams","topics":["Financial literacy"],"realID":"Andy-Williams-0"},
 	
 	{"quoteText":"If you want to achieve anything in life, it is not enough to merely wish for it. You must develop that kind of 4:30 AM discipline that distinguishes you from others.","author":"Armstrong Williams","topics":["Early birds"],"realID":"Armstrong-Williams-0"},
 	{"quoteText":"It is extremely ironic that we see proponents of socialism and communism doing exactly what they oppose: benefitting from the fruits of their labor. Hypocrisy.","author":"Armstrong Williams","topics":["Sandernistas"],"realID":"Armstrong-Williams-1"},
@@ -14101,7 +14291,8 @@
 	
 	{"quoteText":"If you can make a woman laugh you can do anything with her.","author":"Nicol Williamson","topics":["Women, Pursuit of"],"realID":"Nicol-Williamson-0"},
 	
-	{"quoteText":"On the one hand, we'll never experience childbirth. On the other hand, we can open all our own jars.","author":"Bruce Willis","topics":["Men"],"realID":"Bruce-Willis-0"},
+	{"quoteText":"On the one hand, we'll never experience childbirth. On the other hand, we can open all our own jars.","author":"Bruce Willis","topics":["Women & Men"],"realID":"Bruce-Willis-0"},
+	{"quoteText":"Organized religions . . . were all very important when we didn't know why the sun moved, why weather changed, why hurricanes occurred, or volcanoes happened.","author":"Bruce Willis","topics":["Religion & Ignorance"],"realID":"Bruce-Willis-1"},
 	
 	{"quoteText":"Although today there are many trial marriages, there is no such thing as a trial child.","author":"Gary Wills","topics":["Children"],"realID":"Gary-Wills-0"},
 	{"quoteText":"Only the winners decide what were war crimes.","author":"Gary Wills","topics":["War"],"realID":"Gary-Wills-1"},
@@ -14184,6 +14375,7 @@
 	{"quoteText":"Nothing recedes like success.","author":"Walter Winchell","topics":["15 minutes of fame"],"realID":"Walter-Winchell-2"},
 	{"quoteText":"The same thing happened today that happened yesterday, only to different people.","author":"Walter Winchell","topics":["The News"],"realID":"Walter-Winchell-3"},
 	{"quoteText":"Gossip is the art of saying nothing in a way that leaves practically nothing unsaid.","author":"Walter Winchell","topics":["Gossip"],"realID":"Walter-Winchell-4"},
+	{"quoteText":"Today's gossip is tomorrow's headline.","author":"Walter Winchell","topics":["The News"],"realID":"Walter-Winchell-5"},
 	
 	{"quoteText":"You can never be too rich or too thin.","author":"Duchess of Windsor","topics":["Physique"],"realID":"Duchess-of-Windsor-0"},
 	
@@ -14341,6 +14533,7 @@
 	{"quoteText":"Babies don't need vacations, but I still see them at the beach.","author":"Steven Wright","topics":["Vacation"],"realID":"Steven-Wright-20"},
 	{"quoteText":"Everywhere is within walking distance if you have time.","author":"Steven Wright","topics":["Walking"],"realID":"Steven-Wright-21"},
 	{"quoteText":"A friend of mine has a trophy wife, but apparently it wasn't first place.","author":"Steven Wright","topics":["Wives"],"realID":"Steven-Wright-22"},
+	{"quoteText":"You never really learn to swear until you learn to drive.","author":"Steven Wright","topics":["Driving"],"realID":"Steven-Wright-23"},
 	
 	{"quoteText":"When two men in a business always agree, one of them is unnecessary.","author":"William Wrigley, Jr.","topics":["Sycophants"],"realID":"William-Wrigley--Jr--0"},
 	
@@ -14541,6 +14734,9 @@
 	{"quoteText":"A lot of people don't want to fix their problems, because then they can't complain about them.","author":"Zuby","topics":["Professional victims"],"realID":"Zuby-28"},
 	{"quoteText":"Pretending to be a good person has become more important than actually being a good person.","author":"Zuby","topics":["Sanctimony"],"realID":"Zuby-29"},
 	
-	{"quoteText":"Before you build a better mousetrap, it helps to know if there are any mice out there.","author":"Mortimer B. Zuckerman","topics":["Market research"],"realID":"Mortimer-B--Zuckerman-0"}
+	{"quoteText":"Before you build a better mousetrap, it helps to know if there are any mice out there.","author":"Mortimer B. Zuckerman","topics":["Market research"],"realID":"Mortimer-B--Zuckerman-0"},
+
+	{"quoteText":"This is a test quote with no author... - Anonymous", "topics":["Ability"], "realID":"Anonymous-0"},
+	{"quoteText":"This is second a test quote with no author... - Anonymous", "topics":["Ability"], "realID":"Anonymous-1"}
 		
   ]
