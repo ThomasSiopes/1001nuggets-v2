@@ -9,6 +9,18 @@ import QuoteCard from "../components/QuoteCard";
 
 import { QUERY_TOPIC_REALID } from "../utils/queries";
 
+function shuffle(array) {
+    let currentIndex = array.length,  randomIndex;
+
+    while (currentIndex !== 0) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+    }
+
+    return array;
+}
+
 function Topic () {
     const { topicRealId } = useParams();
     let {loading, data} = useQuery(QUERY_TOPIC_REALID, {
@@ -27,14 +39,7 @@ function Topic () {
     
     let quoteList = [...topic.quotes]
 
-    for(let n = 0; n < quoteList.length; ++n) {
-        if(quoteList[n].author === null) {
-            quoteList.splice(Math.floor(Math.random() * n),0,quoteList[n]);
-            n++;
-            quoteList.splice(n,1);
-            n--;
-        }
-    }
+    quoteList = shuffle(quoteList);
 
     let list1 
     let list2 

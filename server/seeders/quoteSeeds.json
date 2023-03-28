@@ -1,7 +1,21 @@
 [
-	{"quoteText": "It took me seventeen years to get three thousand hits in baseball.  I did it in one afternoon on the golf course.", "author": "Hank Aaron", "topics": ["Golf"], "nuggets": ["Sport"], "realID":"Hank-Aaron-0"},
+
+	{"quoteText": "Socrates was a Greek philosopher who went around giving people good advice.  They poisoned him. (Anonymous)", "topics": ["Advice"], "realID":"Advice-0"},	
+	{"quoteText": "Do not condemn a good idea simply because you don't like the source. (Anonymous)", "topics": ["Cognitive bias"], "realID":"CognitiveBias-0"},
+	{"quoteText": "Leadership has been defined as the ability to hide your panic from others. (Anonymous)", "topics": ["Composure"], "realID":"Composure-0"},	
+	{"quoteText": "A word of encouragement during a failure is worth more than an hour of praise after success. (Anonymous)", "topics": ["Encouragement"], "realID":"Encouragement-0"},
+	{"quoteText": "Enthusiasm is contagious - and so is the lack of it. (Anonymous)", "topics": ["Enthusiasm"], "realID":"Enthusiasm-0"},
+	{"quoteText": "A flatterer is one who says things to your face that he wouldn't say behind your back. (Anonymous)", "topics": ["Flattery"], "realID":"Flattery-0"},
+	{"quoteText": "Nothing gets you into deeper debt than trying to keep up with people who are already there. (Anonymous)", "topics": ["Keeping up with the Joneses"], "realID":"Joneses-0"},
+	{"quoteText": "So many of us live expensively to impress others living expensively to impress us. (Anonymous)", "topics": ["Keeping up with the Joneses"], "realID":"Joneses-1"},	
+	{"quoteText": "If you get too far in front of your troops, you start looking like the enemy. (Anonymous)", "topics": ["Leadership 101"], "realID":"LeadershipOne-0"},
+	{"quoteText": "Every survival kit should include a sense of humor. (Anonymous)", "topics": ["Lighten up, loosen up"], "realID":"LightenUpLoosenUp-0"},		
+	{"quoteText": "There are two kinds of leaders - those interested in the flock and those interested in the fleece. (Anonymous)", "topics": ["Managers vs. Leaders"], "realID":"ManagerVsLeader-0"},
+	{"quoteText": "Words that soak into your ears are whispered . . . not yelled. (Anonymous)", "topics": ["Persuasion"], "realID":"Persuasion-0"},
 	
-	{"quoteText": "The missionaries go forth to Christianize the savages - as if the savages weren't dangerous enough already.", "author": "Edward Abbey", "topics": ["Missionaries"], "nuggets": ["Religion"], "realID":"Edward-Abbey-0"},
+	{"quoteText": "It took me seventeen years to get three thousand hits in baseball.  I did it in one afternoon on the golf course.", "author": "Hank Aaron", "topics": ["Golf"], "collections": ["Sport"], "realID":"Hank-Aaron-0"},
+	
+	{"quoteText": "The missionaries go forth to Christianize the savages - as if the savages weren't dangerous enough already.", "author": "Edward Abbey", "topics": ["Missionaries"], "collections": ["Religion"], "realID":"Edward-Abbey-0"},
 	{"quoteText": "If you feel that you're not ready to die, never fear, nature will give you complete and adequate assistance when the time comes.", "author": "Edward Abbey", "topics": ["Death"], "realID":"Edward-Abbey-1"},
 	{"quoteText": "When a man's best friend is his dog, that dog has a problem.", "author": "Edward Abbey", "topics": ["Dogs"], "realID":"Edward-Abbey-2"},
 	{"quoteText": "Growth for the sake of growth is the ideology of the cancer cell. ", "author": "Edward Abbey", "topics": ["Greed"], "realID":"Edward-Abbey-3"},	
@@ -11,13 +25,13 @@
 	{"quoteText": "Whatever we cannot understand easily we call God; this saves wear and tear on the brain tissues.", "author": "Edward Abbey", "topics": ["Religion"], "realID":"Edward-Abbey-7"},
 	{"quoteText": "A patriot must always be ready to defend his country against the government.", "author": "Edward Abbey", "topics": ["Patriotism"], "realID":"Edward-Abbey-8"},
 
-	{"quoteText": "If you want to be adored by your peers and have standing ovations wherever you go, live to be over ninety.", "author": "George Abbott", "topics": ["Old age"], "nuggets": ["Seniority"], "realID":"George-Abbott-0"},
+	{"quoteText": "If you want to be adored by your peers and have standing ovations wherever you go, live to be over ninety.", "author": "George Abbott", "topics": ["Old age"], "collections": ["Seniority"], "realID":"George-Abbott-0"},
 
-	{"quoteText": "The conventional definition of management is getting work done through people, but real management is developing people through work.", "author": "Agha Hasan Abedi", "topics": ["Personnel development"], "nuggets": ["Business management"], "realID":"Agha-Hasan-Abedi-0"},
+	{"quoteText": "The conventional definition of management is getting work done through people, but real management is developing people through work.", "author": "Agha Hasan Abedi", "topics": ["Personnel development"], "collections": ["Business management"], "realID":"Agha-Hasan-Abedi-0"},
 
-	{"quoteText": "To get where you want to go, you can't only do what you like.", "author": "Peter Abrahams", "topics": ["Sacrifice"], "nuggets": ["Inspiration"], "realID":"Peter-Abrahams-0"},	
+	{"quoteText": "To get where you want to go, you can't only do what you like.", "author": "Peter Abrahams", "topics": ["Sacrifice"], "collections": ["Inspiration"], "realID":"Peter-Abrahams-0"},	
 	
-	{"quoteText": "If the people who make the decisions are the people who will also bear the consequences of those decisions, perhaps better decisions will result.", "author": "John Abrams", "topics": ["Management 101"], "nuggets": ["Business management"], "realID":"John-Abrams-0"},
+	{"quoteText": "If the people who make the decisions are the people who will also bear the consequences of those decisions, perhaps better decisions will result.", "author": "John Abrams", "topics": ["Management 101"], "collections": ["Business management"], "realID":"John-Abrams-0"},
 
 	{"quoteText": "We have done almost everything in pairs since Noah, except govern.  And the world has suffered for it.", "author": "Bella Abzug", "topics": ["Patriarchy"], "realID":"Bella-Abzug-0"},
 
@@ -40,9 +54,9 @@
 
 	{"quoteText": "I don't want to get to the end of my life and find that I lived just the length of it.  I want to have lived the width of it as well.", "author": "Diane Ackerman", "topics": ["Journey vs. Destination"], "realID":"Diane-Ackerman-0"},
 
-	{"quoteText": "My health is good; it's my age that's bad.", "author": "Roy Acuff", "topics": ["Old age"], "nuggets": ["Seniority"], "realID":"Roy-Acuff-0"},
+	{"quoteText": "My health is good; it's my age that's bad.", "author": "Roy Acuff", "topics": ["Old age"], "collections": ["Seniority"], "realID":"Roy-Acuff-0"},
 
-	{"quoteText": "Don't stay away from church because there are so my hypocrites.  There's always room for one more.", "author": "A.R. Adams", "topics": ["Church"], "nuggets": ["Religion"], "realID":"A-R--Adams-0"},
+	{"quoteText": "Don't stay away from church because there are so my hypocrites.  There's always room for one more.", "author": "A.R. Adams", "topics": ["Church"], "collections": ["Religion"], "realID":"A-R--Adams-0"},
 
 	{"quoteText": "There is nothing worse than a brilliant image of a fuzzy concept.", "author": "Ansel Adams", "topics": ["Facades"], "realID":"Ansel-Adams-0"},
 
@@ -50,7 +64,7 @@
 	{"quoteText": "Human beings, who are almost unique in having the ability to learn from experience of others, are also remarkable for their apparent disinclination to do so.", "author": "Douglas Adams", "topics": ["Humans"], "realID":"Douglas-Adams-1"},
 	{"quoteText": "You live and learn.  At any rate, you live.", "author": "Douglas Adams", "topics": ["Life"], "realID":"Douglas-Adams-2"},
 	{"quoteText": "Anyone who is capable of getting themselves into a position of power should on no account be allowed to do the job.", "author": "Douglas Adams", "topics": ["Megalomaniacs"], "realID":"Douglas-Adams-3"},
-	{"quoteText": "We are stuck with technology when what we really want is just stuff that works.", "author": "Douglas Adams", "topics": ["\"Progress\""], "nuggets": ["Seniority"], "realID":"Douglas-Adams-4"},
+	{"quoteText": "We are stuck with technology when what we really want is just stuff that works.", "author": "Douglas Adams", "topics": ["\"Progress\""], "collections": ["Seniority"], "realID":"Douglas-Adams-4"},
 	{"quoteText": "Being offended by things is the world's big hobby at the moment.  It's almost taken over from wearing goatee beards.", "author": "Douglas Adams", "topics": ["Snowflakes"], "realID":"Douglas-Adams-5"},
 	{"quoteText": "Technology is a word that describes something that doesn't work yet.", "author": "Douglas Adams", "topics": ["Technology"], "realID":"Douglas-Adams-6"},
 	{"quoteText": "If somebody thinks they're a hedgehog, presumably you just give 'em a mirror and a few pictures of hedgehogs and tell them to sort it out for themselves.", "author": "Douglas Adams", "topics": ["Neurosis"], "realID":"Douglas-Adams-7"},
@@ -69,14 +83,14 @@
 	{"quoteText": "If it weren't for the fact that the TV set and the refrigerator are so far apart, some of us wouldn't get any exercise at all.", "author": "Joey Adams", "topics": ["Couch potatoes"], "realID":"Joey-Adams-0"},
 	{"quoteText": "A genius is one who can do anything except make a living.", "author": "Joey Adams", "topics": ["Genius"], "realID":"Joey-Adams-1"},
 	{"quoteText": "The most popular labor-saving device today is still a husband with money.", "author": "Joey Adams", "topics": ["Husbands"], "realID":"Joey-Adams-2"},
-	{"quoteText": "Never let a fool kiss you, or a kiss fool you.", "author": "Joey Adams", "topics": ["Kisses"], "nuggets": ["Kisses"], "realID":"Joey-Adams-3"},
+	{"quoteText": "Never let a fool kiss you, or a kiss fool you.", "author": "Joey Adams", "topics": ["Kisses"], "collections": ["Kisses"], "realID":"Joey-Adams-3"},
 	{"quoteText": "Smack your child every day. If you don't know why - he does.", "author": "Joey Adams", "topics": ["Parenting"], "realID":"Joey-Adams-4"},
 	{"quoteText": "A psychiatrist is a fellow who asks you a lot of expensive questions your wife asks for nothing.", "author": "Joey Adams", "topics": ["Psychology"], "realID":"Joey-Adams-5"},
 	{"quoteText": "Do not worry about avoiding temptation.  As you grow older it will avoid you.", "author": "Joey Adams", "topics": ["Temptation"], "realID":"Joey-Adams-6"},	
-	{"quoteText": "People are still willing to do an honest day's work.  The trouble is they want a week's pay for it.", "author": "Joey Adams", "topics": ["The Times"], "nuggets": ["Seniority"], "realID":"Joey-Adams-7"},
+	{"quoteText": "People are still willing to do an honest day's work.  The trouble is they want a week's pay for it.", "author": "Joey Adams", "topics": ["The Times"], "collections": ["Seniority"], "realID":"Joey-Adams-7"},
 	{"quoteText": "Marriage is give and take.  You'd better give it to her or she'll take it anyway.", "author": "Joey Adams", "topics": ["Wives"], "realID":"Joey-Adams-8"},
 
-	{"quoteText": "Consultants have credibility because they are not dumb enough to work at your company.", "author": "Scott Adams", "topics": ["Consultants"], "nuggets": ["Business management"], "realID":"Scott-Adams-0"},
+	{"quoteText": "Consultants have credibility because they are not dumb enough to work at your company.", "author": "Scott Adams", "topics": ["Consultants"], "collections": ["Business management"], "realID":"Scott-Adams-0"},
 	{"quoteText": "Executives can get away with having a clean desk.  For the rest of us, it looks like you're not working hard enough.", "author": "Scott Adams", "topics": ["Executives"], "realID":"Scott-Adams-1"},
 	{"quoteText": "I'm suspicious of anyone who has a strong opinion on a complicated issue.", "author": "Scott Adams", "topics": ["Extremism"], "realID":"Scott-Adams-2"},
 	{"quoteText": "Nothing inspires forgiveness quite like revenge.", "author": "Scott Adams", "topics": ["Forgiveness"], "realID":"Scott-Adams-3"},
@@ -93,7 +107,7 @@
 	{"quoteText": "Early to bed and early to rise is a bad rule for anyone who wishes to become acquainted with our most prominent and influential people.", "author": "George Ade", "topics": ["Elites"], "realID":"George-Ade-1"},
 	{"quoteText": "A people so primitive that they did not know how to get money except by working for it.", "author": "George Ade", "topics": ["Middle class"], "realID":"George-Ade-2"},
 	{"quoteText": "Nothing is improbable until it moves into the past tense.", "author": "George Ade", "topics": ["Possibilities"], "realID":"George-Ade-3"},
-	{"quoteText": "To insure peace of mind, ignore the rules and regulations.", "author": "George Ade", "topics": ["Outside-the-box thinking"], "nuggets": ["Innovation"], "realID":"George-Ade-4"},
+	{"quoteText": "To insure peace of mind, ignore the rules and regulations.", "author": "George Ade", "topics": ["Outside-the-box thinking"], "collections": ["Innovation"], "realID":"George-Ade-4"},
 	{"quoteText": "He had been kicked in the head by a mule when young, and believed everything he read in the Sunday papers.", "author": "George Ade", "topics": ["Readers"], "realID":"George-Ade-5"},
 	{"quoteText": "The wealthy have nothing left except money.", "author": "George Ade", "topics": ["Wealth"], "realID":"George-Ade-6"},
 
@@ -113,7 +127,7 @@
 	{"quoteText": "God designed the stomach to eject what is bad for it, but not the human brain.", "author": "Konrad Adenauer", "topics": ["The Mind"], "realID":"Konrad-Adenauer-5"},
 	{"quoteText": "We all live under the same sky, but we do not all have the same horizon.", "author": "Konrad Adenauer", "topics": ["Perspectives"], "realID":"Konrad-Adenauer-6"},
 
-	{"quoteText": "Managing only for profit is like playing tennis with your eye on the scoreboard and not on the ball.", "author": "Ichak Adizes", "topics": ["Greed"], "nuggets": ["Business management"], "realID":"Ichak-Adizes-0"},
+	{"quoteText": "Managing only for profit is like playing tennis with your eye on the scoreboard and not on the ball.", "author": "Ichak Adizes", "topics": ["Greed"], "collections": ["Business management"], "realID":"Ichak-Adizes-0"},
 
 	{"quoteText": "Man knows more than he understands.", "author": "Alfred Adler", "topics": ["Knowledge"], "realID":"Alfred-Adler-0"},
 	{"quoteText": "The only normal people are the ones you don't know very well.", "author": "Alfred Adler", "topics": ["Normalcy"], "realID":"Alfred-Adler-1"},
@@ -125,7 +139,7 @@
 
 	{"quoteText": "The office of the public teacher is an unenviable and thankless one.", "author": "Felix Adler", "topics": ["Teachers"], "realID":"Felix-Adler-0"},
 
-	{"quoteText": "Tradition is what you resort to when you don't have the time and money to do it right.", "author": "Kurt Herbert Adler", "topics": ["Standards"], "nuggets": ["Innovation"], "realID":"Kurt-Herbert-Adler-0"},
+	{"quoteText": "Tradition is what you resort to when you don't have the time and money to do it right.", "author": "Kurt Herbert Adler", "topics": ["Standards"], "collections": ["Innovation"], "realID":"Kurt-Herbert-Adler-0"},
 
 	{"quoteText": "The telephone book is full of facts, but it doesn't contain a single idea.", "author": "Mortimer J. Adler", "topics": ["Facts"], "realID":"Mortimer-J--Adler-0"},
 
@@ -169,17 +183,17 @@
 
 	{"quoteText": "Nothing is more dangerous than an idea, when you have only one idea.", "author": "Alain", "topics": ["Zealots"], "realID":"Alain-0"},
 
-	{"quoteText": "If you look confident you can pull off anything - even if you have no clue what you're doing.", "author": "Jessica Alba", "topics": ["Swagger"], "nuggets": ["Inspiration"], "realID":"Jessica-Alba-0"},
+	{"quoteText": "If you look confident you can pull off anything - even if you have no clue what you're doing.", "author": "Jessica Alba", "topics": ["Swagger"], "collections": ["Inspiration"], "realID":"Jessica-Alba-0"},
 
 	{"quoteText": "Nobody hears old people complain because people think that's all old people do.", "author": "Edward Albee", "topics": ["The elderly"], "realID":"Edward-Albee-0"},
-	{"quoteText": "If you're willing to fail interestingly, you tend to succeed interestingly.", "author": "Edward Albee", "topics": ["Risk & Reward"], "nuggets": ["Inspiration"], "realID":"Edward-Albee-1"},
-	{"quoteText": "Sometimes it's necessary to go a long distance out of the way in order to come back a short distance correctly.", "author": "Edward Albee", "topics": ["Two steps forward, one step back"], "nuggets": ["Innovation"], "realID":"Edward-Albee-2"},
+	{"quoteText": "If you're willing to fail interestingly, you tend to succeed interestingly.", "author": "Edward Albee", "topics": ["Risk & Reward"], "collections": ["Inspiration"], "realID":"Edward-Albee-1"},
+	{"quoteText": "Sometimes it's necessary to go a long distance out of the way in order to come back a short distance correctly.", "author": "Edward Albee", "topics": ["Two steps forward, one step back"], "collections": ["Innovation"], "realID":"Edward-Albee-2"},
 
 	{"quoteText": "Prosperity depends more on wanting what you have than having what you want.", "author": "Geoffrey F. Albert", "topics": ["Contentment"], "realID":"Geoffrey-F--Albert-0"},
 
-	{"quoteText": "If you're not serving the customer, you'd better be serving someone who is.", "author": "Karl Albrecht", "topics": ["Customer satisfaction"], "nuggets": ["Business management"], "realID":"Karl-Albrecht-0"},
+	{"quoteText": "If you're not serving the customer, you'd better be serving someone who is.", "author": "Karl Albrecht", "topics": ["Customer satisfaction"], "collections": ["Business management"], "realID":"Karl-Albrecht-0"},
 
-	{"quoteText": "A positive attitude may not solve all your problems, but it will annoy enough people to make it worth the effort.", "author": "Herm Albright", "topics": ["Positivity"], "nuggets": ["Inspiration"], "realID":"Herm-Albright-0"},
+	{"quoteText": "A positive attitude may not solve all your problems, but it will annoy enough people to make it worth the effort.", "author": "Herm Albright", "topics": ["Positivity"], "collections": ["Inspiration"], "realID":"Herm-Albright-0"},
 
 	{"quoteText": "Your reputation is your resume.", "author": "Madeleine Albright", "topics": ["Reputation"], "realID":"Madeleine-Albright-0"},
 	{"quoteText": "There is a special place in hell for women who do not help other women.", "author": "Madeleine Albright", "topics": ["Women & Women"], "realID":"Madeleine-Albright-1"},
@@ -200,7 +214,7 @@
 	{"quoteText": "The sad truth is that excellence makes people nervous.", "author": "Shana Alexander", "topics": ["Excellence"], "realID":"Shana-Alexander-0"},
 	{"quoteText": "Trying to squash a rumor is like trying to unring a bell.", "author": "Shana Alexander", "topics": ["Rumor"], "realID":"Shana-Alexander-1"},
 
-	{"quoteText": "Responsibility for the execution of work must be accompanied by the authority to control and direct the means for doing the work.", "author": "L. P. Alford", "topics": ["Management 101"], "nuggets": ["Business management"], "realID":"L--P--Alford-0"},
+	{"quoteText": "Responsibility for the execution of work must be accompanied by the authority to control and direct the means for doing the work.", "author": "L. P. Alford", "topics": ["Management 101"], "collections": ["Business management"], "realID":"L--P--Alford-0"},
 
 	{"quoteText": "If a problem is too difficult to solve, one cannot claim that it is solved by pointing at all the efforts made to solve it.", "author": "Hannes Alfvén", "topics": ["Defeatism"], "realID":"Hannes-Alfven-0"},
 
@@ -216,7 +230,7 @@
 	{"quoteText": "The will must be stronger than the skill.", "author": "Muhammad Ali", "topics": ["Determination"], "realID":"Muhammad-Ali-2"},
 	{"quoteText": "Silence is golden when you can't think of a good answer.", "author": "Muhammad Ali", "topics": ["Silence"], "realID":"Muhammad-Ali-3"},	
 	{"quoteText": "If they can make penicillin out of moldy bread, they can sure make something out of you.", "author": "Muhammad Ali", "topics": ["Potential"], "realID":"Muhammad-Ali-4"},
-	{"quoteText": "Inside of a ring or out, ain't nothing wrong with going down.  It's staying down that's wrong.", "author": "Muhammad Ali", "topics": ["Quitting"], "nuggets": ["Inspiration"], "realID":"Muhammad-Ali-5"},
+	{"quoteText": "Inside of a ring or out, ain't nothing wrong with going down.  It's staying down that's wrong.", "author": "Muhammad Ali", "topics": ["Quitting"], "collections": ["Inspiration"], "realID":"Muhammad-Ali-5"},
 	{"quoteText": "People will know you're serious when you produce.", "author": "Muhammad Ali", "topics": ["Results"], "realID":"Muhammad-Ali-6"},
 	{"quoteText": "I hated every minute of training, but I said, \"Don't quit.  Suffer now and live the rest of your life as a champion.\"", "author": "Muhammad Ali", "topics": ["Work first, play later"], "realID":"Muhammad-Ali-7"},
 
@@ -231,19 +245,19 @@
 	{"quoteText": "A committee is a group of the unprepared, appointed by the unwilling to do the unnecessary.", "author": "Fred Allen", "topics": ["Committees"], "realID":"Fred-Allen-3"},
 	{"quoteText": "If criticism had any real power to harm, the skunk would have been extinct by now.", "author": "Fred Allen", "topics": ["Criticism"], "realID":"Fred-Allen-4"},
 	{"quoteText": "I'd rather have a full bottle in front of me than a full-frontal lobotomy.", "author": "Fred Allen", "topics": ["Alcohol"], "realID":"Fred-Allen-5"},
-	{"quoteText": "Treat employees like partners, and they act like partners.", "author": "Fred Allen", "topics": ["Employee relations"], "nuggets": ["Business management"], "realID":"Fred-Allen-6"},
+	{"quoteText": "Treat employees like partners, and they act like partners.", "author": "Fred Allen", "topics": ["Employee relations"], "collections": ["Business management"], "realID":"Fred-Allen-6"},
 	{"quoteText": "A celebrity is a person who works hard all his life to become known, then wears dark glasses to avoid being recognized.", "author": "Fred Allen", "topics": ["Celebrities"], "realID":"Fred-Allen-7"},
-	{"quoteText": "I always have trouble remembering three things: faces, names, and - I can't remember what the third thing is.", "author": "Fred Allen", "topics": ["Memory"], "nuggets": ["Seniority"], "realID":"Fred-Allen-8"},
+	{"quoteText": "I always have trouble remembering three things: faces, names, and - I can't remember what the third thing is.", "author": "Fred Allen", "topics": ["Memory"], "collections": ["Seniority"], "realID":"Fred-Allen-8"},
 	{"quoteText": "I like long walks, especially when they are taken by people who annoy me.", "author": "Fred Allen", "topics": ["Pests"], "realID":"Fred-Allen-9"},
 	{"quoteText": "To a newspaperman, a human being is an item with the skin wrapped around it.", "author": "Fred Allen", "topics": ["The Press"], "realID":"Fred-Allen-10"},
-	{"quoteText": "Most of us spend the first six days of each week sowing wild oats; then we go to church on Sunday and pray for a crop failure.", "author": "Fred Allen", "topics": ["Church"], "nuggets": ["Religion"], "realID":"Fred-Allen-11"},
+	{"quoteText": "Most of us spend the first six days of each week sowing wild oats; then we go to church on Sunday and pray for a crop failure.", "author": "Fred Allen", "topics": ["Church"], "collections": ["Religion"], "realID":"Fred-Allen-11"},
 	{"quoteText": "All the poor man had left was his imagination. Television has taken that away from him.", "author": "Fred Allen", "topics": ["Television"], "realID":"Fred-Allen-12"},
 	{"quoteText": "A psychiatrist is the next man you start talking to after you start talking to yourself.", "author": "Fred Allen", "topics": ["Psychology"], "realID":"Fred-Allen-13"},
 	{"quoteText": "She used to be a schoolteacher, but now she has no class.", "author": "Fred Allen", "topics": ["Teachers"], "realID":"Fred-Allen-14"},
 
 	{"quoteText": "Winning is the science of being totally prepared.", "author": "George Allen", "topics": ["Preparation"], "realID":"George-Allen-0"},
 	{"quoteText": "Leisure time is that five or six hours when you sleep at night.", "author": "George Allen", "topics": ["Sleep"], "realID":"George-Allen-1"},
-	{"quoteText": "People of mediocre ability sometimes achieve outstanding success because they don't know when to quit.", "author": "George Allen", "topics": ["Sedulity"], "nuggets": ["Inspiration"], "realID":"George-Allen-2"},
+	{"quoteText": "People of mediocre ability sometimes achieve outstanding success because they don't know when to quit.", "author": "George Allen", "topics": ["Sedulity"], "collections": ["Inspiration"], "realID":"George-Allen-2"},
 
 	{"quoteText": "When I was born I was so surprised I didn't talk for a year and a half.", "author": "Gracie Allen", "topics": ["Babies"], "realID":"Gracie-Allen-0"},
 	{"quoteText": "My husband will never chase another woman.  Hes too fine, too decent, too old.", "author": "Gracie Allen", "topics": ["Husbands"], "realID":"Gracie-Allen-1"},
@@ -255,18 +269,18 @@
 
 	{"quoteText": "Money is attracted to great ideas.", "author": "Robert G. Allen", "topics": ["Investing"], "realID":"Robert-G--Allen-0"},
 	{"quoteText": "Many an optimist has become rich by buying out a pessimist.", "author": "Robert G. Allen", "topics": ["Optimism vs. Pessimism"], "realID":"Robert-G--Allen-1"},
-	{"quoteText": "Everything you want is just outside your comfort zone.", "author": "Robert G. Allen", "topics": ["Venturing"], "nuggets": ["Inspiration"], "realID":"Robert-G--Allen-2"},
+	{"quoteText": "Everything you want is just outside your comfort zone.", "author": "Robert G. Allen", "topics": ["Venturing"], "collections": ["Inspiration"], "realID":"Robert-G--Allen-2"},
 
 	{"quoteText": "In case you're worried about what's going to become of the younger generation, it's going to grow up and start worrying about the younger generation.", "author": "Roger Allen", "topics": ["Generations"], "realID":"Roger-Allen-0"},
 
-	{"quoteText": "If there is a God, the phrase that must disgust Him is \"holy war.\"", "author": "Steve Allen", "topics": ["Holy war"], "nuggets": ["Religion"], "realID":"Steve-Allen-0"},
+	{"quoteText": "If there is a God, the phrase that must disgust Him is \"holy war.\"", "author": "Steve Allen", "topics": ["Holy war"], "collections": ["Religion"], "realID":"Steve-Allen-0"},
 	{"quoteText": "One of the nice things about problems is that a good many of them do not exist except in our imaginations.", "author": "Steve Allen", "topics": ["Problems"], "realID":"Steve-Allen-1"},
 
 	{"quoteText": "Transparency of information breeds self-correcting behaviors.", "author": "Adm. Thad W. Allen", "topics": ["Transparency"], "realID":"Adm--Thad-W--Allen-0"},
 
 	{"quoteText": "Wonder who decides what we are allowed to tweet?", "author": "Tim Allen", "topics": ["Censorship"], "realID":"Tim-Allen-0"},
 
-	{"quoteText": "For women the best aphrodisiacs are words.  The G-spot is in the ears.  He who looks for it below there is wasting his time.", "author": "Isabel Allende", "topics": ["Women, Pursuit of"], "nuggets": ["Dating & Courtship"], "realID":"Isabel-Allende-0"},
+	{"quoteText": "For women the best aphrodisiacs are words.  The G-spot is in the ears.  He who looks for it below there is wasting his time.", "author": "Isabel Allende", "topics": ["Women, Pursuit of"], "collections": ["Dating & Courtship"], "realID":"Isabel-Allende-0"},
 
 	{"quoteText": "It is human nature that rules the world, not governments and regimes.", "author": "Svetlana Alliluyeva", "topics": ["Human nature"], "realID":"Svetlana-Alliluyeva-0"},
 
@@ -276,7 +290,7 @@
 
 	{"quoteText": "Just as you began to feel that you could make good use of time, there was no time left to you.", "author": "Lisa Alther", "topics": ["Time"], "realID":"Lisa-Alther-0"},
 
-	{"quoteText": "To play it safe is not to play.", "author": "Robert Altman", "topics": ["Overcaution"], "nuggets": ["Inspiration"], "realID":"Robert-Altman-0"},
+	{"quoteText": "To play it safe is not to play.", "author": "Robert Altman", "topics": ["Overcaution"], "collections": ["Inspiration"], "realID":"Robert-Altman-0"},
 
 	{"quoteText": "The bad news is time flies.  The good news is you're the pilot.", "author": "Michael Altshuler", "topics": ["Time management"], "realID":"Michael-Altshuler-0"},
 
@@ -284,7 +298,7 @@
 
 	{"quoteText": "When was the last time anyone chanted \"USA\" at any Democrat anything?", "author": "Mary Alvarez", "topics": ["America-bashers"], "realID":"Mary-Alvarez-0"},
 
-	{"quoteText": "Politics is the gentle art of getting votes from the poor and campaign funds from the rich, by promising to protect each from the other.", "author": "Oscar Ameringer", "topics": ["Politics"], "nuggets": ["Government"], "realID":"Oscar-Ameringer-0"},
+	{"quoteText": "Politics is the gentle art of getting votes from the poor and campaign funds from the rich, by promising to protect each from the other.", "author": "Oscar Ameringer", "topics": ["Politics"], "collections": ["Government"], "realID":"Oscar-Ameringer-0"},
 
 	{"quoteText": "Money doesn't mind if we say it's evil.", "author": "Martin Amis", "topics": ["Money"], "realID":"Martin-Amis-0"},
 
@@ -294,32 +308,32 @@
 
 	{"quoteText": "Adventure is just bad planning.", "author": "Roald Amundsen", "topics": ["Adventure"], "realID":"Roald-Amundsen-0"},
 
-	{"quoteText": "It is ten times harder to command the ear than to catch the eye.", "author": "Duncan Maxwell Anderson", "topics": ["Communication"], "nuggets": ["Communication"], "realID":"Duncan-Maxwell-Anderson-0"},
+	{"quoteText": "It is ten times harder to command the ear than to catch the eye.", "author": "Duncan Maxwell Anderson", "topics": ["Communication"], "collections": ["Communication"], "realID":"Duncan-Maxwell-Anderson-0"},
 
 	{"quoteText": "A lot of pop music is about stealing pocket money from children.", "author": "Ian Anderson", "topics": ["Pop culture"], "realID":"Ian-Anderson-0"},
 
-	{"quoteText": "I love being a great-grandparent, but what I hate is being the mother of a grandparent.", "author": "Janet Anderson", "topics": ["Grandparents"], "nuggets": ["Seniority"], "realID":"Janet-Anderson-0"},
+	{"quoteText": "I love being a great-grandparent, but what I hate is being the mother of a grandparent.", "author": "Janet Anderson", "topics": ["Grandparents"], "collections": ["Seniority"], "realID":"Janet-Anderson-0"},
 
-	{"quoteText": "Why is it when you send something by ship it's cargo, and when you send it by car, it's shipment?", "author": "Larry Anderson", "topics": ["Linguistics"], "nuggets": [""], "realID":"Larry-Anderson-0"},
+	{"quoteText": "Why is it when you send something by ship it's cargo, and when you send it by car, it's shipment?", "author": "Larry Anderson", "topics": ["Linguistics"], "realID":"Larry-Anderson-0"},
 
 	{"quoteText": "Everyone has a gift for something, even if it is the gift of being a good friend.", "author": "Marian Anderson", "topics": ["Friendship"], "realID":"Marian-Anderson-0"},
-	{"quoteText": "Leadership should be born out of the understanding of the needs of those who would be affected by it.", "author": "Marian Anderson", "topics": ["Leadership 101"], "nuggets": ["Business management"], "realID":"Marian-Anderson-1"},
+	{"quoteText": "Leadership should be born out of the understanding of the needs of those who would be affected by it.", "author": "Marian Anderson", "topics": ["Leadership 101"], "collections": ["Business management"], "realID":"Marian-Anderson-1"},
 	{"quoteText": "Where there is money, there is fighting.", "author": "Marian Anderson", "topics": ["Money"], "realID":"Marian-Anderson-2"},
 
 	{"quoteText": "Change is good . . . you go first.", "author": "Mac Anderson and Tom Feltenstein", "topics": ["You first"], "realID":"Mac-Anderson-and-Tom-Feltenstein-0"},
 
 	{"quoteText": "A person has to be busy to stay alive.", "author": "Maxwell Anderson", "topics": ["Industry"], "realID":"Maxwell-Anderson-0"},
 
-	{"quoteText": "In every marriage more than a week old, there are grounds for divorce.  The trick is to find and continue to find grounds for marriage.", "author": "Robert Anderson", "topics": ["Marriage"], "nuggets": ["Picket Fences"], "realID":"Robert-Anderson-0"},
+	{"quoteText": "In every marriage more than a week old, there are grounds for divorce.  The trick is to find and continue to find grounds for marriage.", "author": "Robert Anderson", "topics": ["Marriage"], "collections": ["Picket Fences"], "realID":"Robert-Anderson-0"},
 
-	{"quoteText": "You don't become a leader because you say you are.", "author": "Sparky Anderson", "topics": ["Autocrats"], "nuggets": ["The Anti-Leader"], "realID":"Sparky-Anderson-0"},
+	{"quoteText": "You don't become a leader because you say you are.", "author": "Sparky Anderson", "topics": ["Autocrats"], "collections": ["The Anti-Leader"], "realID":"Sparky-Anderson-0"},
 	{"quoteText": "I've got my faults but living in the past is not one of them. There's no future in it.", "author": "Sparky Anderson", "topics": ["The Past"], "realID":"Sparky-Anderson-1"},
 
 	{"quoteText": "When preparing to travel . . . take half the clothes and twice the money.", "author": "Susan Heller Anderson", "topics": ["Travel"], "realID":"Susan-Heller-Anderson-0"},
 
 	{"quoteText": "What can you say when your husband says \"you can't expect me to remember your birthday when you never look any older.\"", "author": "Toni Anderson", "topics": ["Birthdays"], "realID":"Toni-Anderson-0"},
 
-	{"quoteText": "If everything seems under control, you're just not going fast enough.", "author": "Mario Andretti", "topics": ["Step it up"], "nuggets": ["Inspiration"], "realID":"Mario-Andretti-0"},
+	{"quoteText": "If everything seems under control, you're just not going fast enough.", "author": "Mario Andretti", "topics": ["Step it up"], "collections": ["Inspiration"], "realID":"Mario-Andretti-0"},
 
 	{"quoteText": "Happiness, it is said, is seldom found by those who seek it, and never by those who seek it for themselves.", "author": "F. Emerson Andrews", "topics": ["Happiness, Pursuit of"], "realID":"F--Emerson-Andrews-0"},
 
@@ -328,13 +342,13 @@
 	{"quoteText": "I continue to be amazed when I see Christian women defending a bible that denigrates women.", "author": "Seth Andrews", "topics": ["Misogyny, Religious"], "realID":"Seth-Andrews-0"},
 
 	{"quoteText": "If you don't like something, change it. If you can't change it, change your attitude.", "author": "Maya Angelou", "topics": ["Attitude"], "realID":"Maya-Angelou-0"},
-	{"quoteText": "Children's talent to endure stems from their ignorance of alternatives.", "author": "Maya Angelou", "topics": ["Child psychology"], "nuggets": ["Picket Fences"], "realID":"Maya-Angelou-1"},
+	{"quoteText": "Children's talent to endure stems from their ignorance of alternatives.", "author": "Maya Angelou", "topics": ["Child psychology"], "collections": ["Picket Fences"], "realID":"Maya-Angelou-1"},
 	{"quoteText": "The needs of a society determine its ethics.", "author": "Maya Angelou", "topics": ["Civilization"], "realID":"Maya-Angelou-2"},
 	{"quoteText": "If you're always trying to be normal, you will never know how amazing you can be.", "author": "Maya Angelou", "topics": ["Conformity"], "realID":"Maya-Angelou-3"},
 	{"quoteText": "There is nothing so pitiful as a young cynic because he has gone from knowing nothing to believing nothing.", "author": "Maya Angelou", "topics": ["Cynicism"], "realID":"Maya-Angelou-4"},
-	{"quoteText": "If you have only one smile in you, give it to the people you love.  Don't be surly at home, then go out in the street and start grinning \"Good morning\" at total strangers.", "author": "Maya Angelou", "topics": ["Family first"], "nuggets": ["Picket Fences"], "realID":"Maya-Angelou-5"},
+	{"quoteText": "If you have only one smile in you, give it to the people you love.  Don't be surly at home, then go out in the street and start grinning \"Good morning\" at total strangers.", "author": "Maya Angelou", "topics": ["Family first"], "collections": ["Picket Fences"], "realID":"Maya-Angelou-5"},
 	{"quoteText": "There is no greater agony than bearing an untold story inside you.", "author": "Maya Angelou", "topics": ["Giddyup"], "realID":"Maya-Angelou-6"},
-	{"quoteText": "Nothing will work unless you do.", "author": "Maya Angelou", "topics": ["Giddyup"], "nuggets": ["Inspiration"], "realID":"Maya-Angelou-7"},
+	{"quoteText": "Nothing will work unless you do.", "author": "Maya Angelou", "topics": ["Giddyup"], "collections": ["Inspiration"], "realID":"Maya-Angelou-7"},
 	{"quoteText": "You can never leave home.  You take it with you wherever you go.", "author": "Maya Angelou", "topics": ["Home"], "realID":"Maya-Angelou-8"},
 	{"quoteText": "People will forget what you said, people will forget what you did, but people will never forget how you made them feel.", "author": "Maya Angelou", "topics": ["Interpersonal relations"], "realID":"Maya-Angelou-9"},
 	{"quoteText": "Be certain that you do not die without having done something wonderful for humanity.", "author": "Maya Angelou", "topics": ["Benevolence"], "realID":"Maya-Angelou-10"},
@@ -375,7 +389,7 @@
 
 	{"quoteText": "Girls are born knowing everything they need to know; boys have to learn it.", "author": "E. J. Applewhite", "topics": ["Women vs. Men"], "realID":"E--J--Applewhite-0"},
 
-	{"quoteText": "Forget about yourself and just think of your people.  It's always the people who make things happen.", "author": "Corazon Aquino", "topics": ["Leadership 101"], "nuggets": ["Business management"], "realID":"Corazon-Aquino-0"},
+	{"quoteText": "Forget about yourself and just think of your people.  It's always the people who make things happen.", "author": "Corazon Aquino", "topics": ["Leadership 101"], "collections": ["Business management"], "realID":"Corazon-Aquino-0"},
 	{"quoteText": "One must be frank to be relevant.", "author": "Corazon Aquino", "topics": ["Honesty"], "realID":"Corazon-Aquino-1"},
 
 	{"quoteText": "Geniuses are like ocean liners: they should never meet.", "author": "Luis Aragon", "topics": ["Genius"], "realID":"Luis-Aragon-0"},
@@ -397,7 +411,7 @@
 
 	{"quoteText": "Credit is a wonderful gimmick that lets you start at the bottom and dig yourself into a hole.", "author": "Edgar Argo", "topics": ["Debt"], "realID":"Edgar-Argo-0"},
 
-	{"quoteText": "Managers who are skilled communicators may also be good at covering up real problems.", "author": "Chris Argyris", "topics": ["Management"], "nuggets": ["Business management"], "realID":"Chris-Argyris-0"},
+	{"quoteText": "Managers who are skilled communicators may also be good at covering up real problems.", "author": "Chris Argyris", "topics": ["Management"], "collections": ["Business management"], "realID":"Chris-Argyris-0"},
 
 	{"quoteText": "Is there an audit being done of what exactly BLM has done with all the money they've received in donations?  If not, why?", "author": "Zeek Arkham", "topics": ["BLM"], "realID":"Zeek-Arkham-0"},
 	{"quoteText": "Serious question: seeing how Black Lives Matter is fighting for segregation at almost every level, and Dr. Martin Luther King, Jr. fought for desegregation, how do you think he'd fit in with them if he were alive today?", "author": "Zeek Arkham", "topics": ["BLM"], "realID":"Zeek-Arkham-1"},
@@ -418,13 +432,13 @@
 	{"quoteText": "Failure to hit the bullseye is never the fault of the target.", "author": "Gilbert Arland", "topics": ["Blame, Misplaced"], "realID":"Gilbert-Arland-0"},
 
 	{"quoteText": "Economics: The science of telling you things you've known all your life, but in a language you can't understand.", "author": "Dick Armey", "topics": ["Economics"], "realID":"Dick-Armey-0"},
-	{"quoteText": "Three groups spend other people's money: children, thieves and politicians - all three need supervision.", "author": "Dick Armey", "topics": ["Politicians"], "nuggets": ["Government"], "realID":"Dick-Armey-1"},
+	{"quoteText": "Three groups spend other people's money: children, thieves and politicians - all three need supervision.", "author": "Dick Armey", "topics": ["Politicians"], "collections": ["Government"], "realID":"Dick-Armey-1"},
 
 	{"quoteText": "The young man who wants to marry happily should pick out a good mother and marry one of her daughters - any one will do.", "author": "J. Ogden Armour", "topics": ["Mother-in-law"], "realID":"J--Ogden-Armour-0"},
 
 	{"quoteText": "Until Eve arrived, this was a man's world.", "author": "Richard Armour", "topics": ["Girl power"], "realID": "Richard-Armour-0"},
 	{"quoteText": "That money talks I'll not deny, I heard it once, it said \"Goodbye.\"", "author": "Richard Armour", "topics": ["Money"], "realID": "Richard-Armour-1"},
-	{"quoteText": "Politics, it seems to me, for years, or all too long, has been concerned with right or left instead of right and wrong.", "author": "Richard Armour", "topics": ["Partisanship"], "nuggets": ["Government"], "realID": "Richard-Armour-2"},
+	{"quoteText": "Politics, it seems to me, for years, or all too long, has been concerned with right or left instead of right and wrong.", "author": "Richard Armour", "topics": ["Partisanship"], "collections": ["Government"], "realID": "Richard-Armour-2"},
 	{"quoteText": "Retired is being tired twice, I've thought, first tired of working, then tired of not.", "author": "Richard Armour", "topics": ["Retirement"], "realID": "Richard-Armour-3"},
 	{"quoteText": "Adolescence is when children start trying to bring up their parents.", "author": "Richard Armour", "topics": ["Teenagers"], "realID": "Richard-Armour-4"},
 	{"quoteText": "If there is any sin more deadly than envy, it is being pleased at being envied.", "author": "Richard Armour", "topics": ["Vanity"], "realID": "Richard-Armour-5"},
@@ -447,11 +461,11 @@
 	{"quoteText": "Racism is the snobbery of the poor.", "author": "Raymond Aron", "topics": ["Bigotry"], "realID":"Raymond-Aron-0"},
 
 
-	{"quoteText": "You are only young once, after that you have to think of another excuse.", "author": "Billy Arthur", "topics": ["Aging"], "nuggets": ["Seniority"], "realID":"Billy-Arthur-0"},
+	{"quoteText": "You are only young once, after that you have to think of another excuse.", "author": "Billy Arthur", "topics": ["Aging"], "collections": ["Seniority"], "realID":"Billy-Arthur-0"},
 
 	{"quoteText": "Modesty often hides lucid mediocrity.", "author": "José Artur", "topics": ["Modesty"], "realID":"Jose-Artur-0"},
 
-	{"quoteText": "The lash may force men to physical labor, it cannot force them to spiritual creativity.", "author": "Sholem Asch", "topics": ["Harshness"], "nuggets": ["Business management"], "realID":"Sholem-Asch-0"},
+	{"quoteText": "The lash may force men to physical labor, it cannot force them to spiritual creativity.", "author": "Sholem Asch", "topics": ["Harshness"], "collections": ["Business management"], "realID":"Sholem-Asch-0"},
 	{"quoteText": "To dream of the person you would like to be is to waste the person you are.", "author": "Sholem Asch", "topics": ["Discontent"], "realID":"Sholem-Asch-1"},
 
 	{"quoteText": "Nothing is as strong in human beings as the craving to believe in something that is obviously wrong.", "author": "Joel Aschenbach", "topics": ["Fallacy"], "realID":"Joel-Aschenbach-0"},
@@ -462,24 +476,24 @@
 
 	{"quoteText": "Most people live and die with their music still unplayed.  They never dare to try.", "author": "Mary Kay Ash", "topics": ["Life, Unlived"], "realID":"Mary-Kay-Ash-0"},
 	{"quoteText": "If you think you can, you can.  And if you think you can't, you're right.", "author": "Mary Kay Ash", "topics": ["Attitude"], "realID":"Mary-Kay-Ash-1"},
-	{"quoteText": "If you're good to your staff when things are going well, they'll rally when times go bad.", "author": "Mary Kay Ash", "topics": ["Employee relations"], "nuggets": ["Business management"], "realID":"Mary-Kay-Ash-2"},
-	{"quoteText": "We treat our people like royalty. If you honor and serve the people who work for you, they will honor and serve you.", "author": "Mary Kay Ash", "topics": ["Employee relations"], "nuggets": ["Business management"], "realID":"Mary-Kay-Ash-3"},
-	{"quoteText": "Everyone has an invisible sign hanging from their neck saying, \"Make me feel important.\" Never forget this message when working with people.", "author": "Mary Kay Ash", "topics": ["Encouragement"], "nuggets": ["Business management"], "realID":"Mary-Kay-Ash-4"},
-	{"quoteText": "No matter how busy you are, you must take time to make the other person feel important.", "author": "Mary Kay Ash", "topics": ["Encouragement"], "nuggets": ["Business management"], "realID":"Mary-Kay-Ash-5"},
+	{"quoteText": "If you're good to your staff when things are going well, they'll rally when times go bad.", "author": "Mary Kay Ash", "topics": ["Employee relations"], "collections": ["Business management"], "realID":"Mary-Kay-Ash-2"},
+	{"quoteText": "We treat our people like royalty. If you honor and serve the people who work for you, they will honor and serve you.", "author": "Mary Kay Ash", "topics": ["Employee relations"], "collections": ["Business management"], "realID":"Mary-Kay-Ash-3"},
+	{"quoteText": "Everyone has an invisible sign hanging from their neck saying, \"Make me feel important.\" Never forget this message when working with people.", "author": "Mary Kay Ash", "topics": ["Encouragement"], "collections": ["Business management"], "realID":"Mary-Kay-Ash-4"},
+	{"quoteText": "No matter how busy you are, you must take time to make the other person feel important.", "author": "Mary Kay Ash", "topics": ["Encouragement"], "collections": ["Business management"], "realID":"Mary-Kay-Ash-5"},
 	{"quoteText": "God does not ask your ability, or your inability.  He asks only your availability.", "author": "Mary Kay Ash", "topics": ["God"], "realID":"Mary-Kay-Ash-6"},
 	{"quoteText": "A mediocre idea that generates enthusiasm will go further than a great idea that inspires no one.", "author": "Mary Kay Ash", "topics": ["Ideas"], "realID":"Mary-Kay-Ash-7"},
 	{"quoteText": "The speed of the leader is the speed of the gang.", "author": "Mary Kay Ash", "topics": ["Leadership"], "realID":"Mary-Kay-Ash-8"},
-	{"quoteText": "Listen long enough and the person will generally come up with an adequate solution.", "author": "Mary Kay Ash", "topics": ["Listening"], "nuggets": ["Business management"], "realID":"Mary-Kay-Ash-9"},
+	{"quoteText": "Listen long enough and the person will generally come up with an adequate solution.", "author": "Mary Kay Ash", "topics": ["Listening"], "collections": ["Business management"], "realID":"Mary-Kay-Ash-9"},
 	{"quoteText": "I don't think a manager can work with a person day in and day out and not develop some sort of personal relationship.", "author": "Mary Kay Ash", "topics": ["Management"], "realID":"Mary-Kay-Ash-10"},
 	{"quoteText": "Dare to risk public criticism.", "author": "Mary Kay Ash", "topics": ["Nonconformity"], "realID":"Mary-Kay-Ash-11"},
-	{"quoteText": "People will support that which they help to create.", "author": "Mary Kay Ash", "topics": ["Personnel development"], "nuggets": ["Business management"], "realID":"Mary-Kay-Ash-12"},
-	{"quoteText": "There are two things that people want more than sex and money - recognition and praise.", "author": "Mary Kay Ash", "topics": ["Recognition"], "nuggets": ["Business management"], "realID":"Mary-Kay-Ash-13"},
+	{"quoteText": "People will support that which they help to create.", "author": "Mary Kay Ash", "topics": ["Personnel development"], "collections": ["Business management"], "realID":"Mary-Kay-Ash-12"},
+	{"quoteText": "There are two things that people want more than sex and money - recognition and praise.", "author": "Mary Kay Ash", "topics": ["Recognition"], "collections": ["Business management"], "realID":"Mary-Kay-Ash-13"},
 	{"quoteText": "Everyone wants to be appreciated, so if you appreciate someone, don't keep it a secret.", "author": "Mary Kay Ash", "topics": ["Positive reinforcement"], "realID":"Mary-Kay-Ash-14"},
 	{"quoteText": "Those who are blessed with the most talent don't necessarily outperform everyone else.  It's the people with follow-through who excel.", "author": "Mary Kay Ash", "topics": ["Stick-to-itiveness"], "realID":"Mary-Kay-Ash-15"},
 	{"quoteText": "When you come to a roadblock, take a detour.", "author": "Mary Kay Ash", "topics": ["Obstacles"], "realID":"Mary-Kay-Ash-16"},
 	{"quoteText": "Sandwich every bit of criticism between two heavy layers of praise.", "author": "Mary Kay Ash", "topics": ["Criticism, Constructive"], "realID":"Mary-Kay-Ash-17"},
 
-	{"quoteText": "The worst mistake a boss can make is not to say \"well done.\"", "author": "John Ashcroft", "topics": ["Recognition"], "nuggets": ["Business management"], "realID":"John-Ashcroft-0"},
+	{"quoteText": "The worst mistake a boss can make is not to say \"well done.\"", "author": "John Ashcroft", "topics": ["Recognition"], "collections": ["Business management"], "realID":"John-Ashcroft-0"},
 
 	{"quoteText": "One important key to success is self-confidence.  An important to key to self-confidence is preparation.", "author": "Arthur Ashe", "topics": ["Preparation"], "realID":"Arthur-Ashe-0"},
 	{"quoteText": "Trust has to be earned and should come only after the passage of time.", "author": "Arthur Ashe", "topics": ["Trust"], "realID":"Arthur-Ashe-1"},
@@ -487,7 +501,7 @@
 	{"quoteText": "It makes me upset, if not angry, when people assume that there can be no morality without a religious framework.", "author": "Jane Asher", "topics": ["Morality"], "realID":"Jane-Asher-0"},
 
 	{"quoteText": "Properly read, the Bible is the most potent force for atheism ever conceived.", "author": "Isaac Asimov", "topics": ["The Bible"], "realID":"Isaac-Asimov-0"},
-	{"quoteText": "To surrender to ignorance and call it God has always been premature, and it remains premature today.", "author": "Isaac Asimov", "topics": ["Religion & Ignorance"], "nuggets": ["Religion"], "realID":"Isaac-Asimov-1"},
+	{"quoteText": "To surrender to ignorance and call it God has always been premature, and it remains premature today.", "author": "Isaac Asimov", "topics": ["Religion & Ignorance"], "collections": ["Religion"], "realID":"Isaac-Asimov-1"},
 	{"quoteText": "In life, unlike chess, the game continues after checkmate.", "author": "Isaac Asimov", "topics": ["Despair"], "realID":"Isaac-Asimov-2"},
 	{"quoteText": "The first law of dietetics seems to be: if it tastes good, it's bad for you.", "author": "Isaac Asimov", "topics": ["Food"], "realID":"Isaac-Asimov-3"},
 	{"quoteText": "Nothing interferes with my concentration. You could put on an orgy in my office and I wouldn't look up.  Well, maybe once.", "author": "Isaac Asimov", "topics": ["Focus"], "realID":"Isaac-Asimov-4"},
@@ -510,15 +524,15 @@
 
 	{"quoteText": "Money is something you got to make in case you don't die.", "author": "Max Asnas", "topics": ["Income"], "realID":"Max-Asnas-0"},
 
-	{"quoteText": "Youth would be an ideal state if it came a little later in life.", "author": "Herbert Henry Asquith", "topics": ["Youth"], "nuggets": ["Seniority"], "realID":"Herbert-Henry-Asquith-0"},
+	{"quoteText": "Youth would be an ideal state if it came a little later in life.", "author": "Herbert Henry Asquith", "topics": ["Youth"], "collections": ["Seniority"], "realID":"Herbert-Henry-Asquith-0"},
 
 	{"quoteText": "The capacity to suffer varies more than anything that I have observed in human nature.", "author": "Margot Asquith", "topics": ["Sacrifice"], "realID":"Margot-Asquith-0"},
 
 	{"quoteText": "Without forgiveness life is governed by an endless cycle of resentment and retaliation.", "author": "Roberto Assagioli", "topics": ["Forgiveness"], "realID":"Roberto-Assagioli-0"},
 	{"quoteText": "I am one individual on a small planet in a little solar system in one of the galaxies.", "author": "Roberto Assagioli", "topics": ["In perspective"], "realID":"Roberto-Assagioli-1"},
 
-	{"quoteText": "The hardest job kids face today is learning good manners without seeing any.", "author": "Fred Astaire", "topics": ["Manners"], "nuggets": ["Seniority"], "realID":"Fred-Astaire-0"},
-	{"quoteText": "Old age is like everything else.  To make a success of it, you've got to start young.", "author": "Fred Astaire", "topics": ["Old age"], "nuggets": ["Seniority"], "realID":"Fred-Astaire-1"},
+	{"quoteText": "The hardest job kids face today is learning good manners without seeing any.", "author": "Fred Astaire", "topics": ["Manners"], "collections": ["Seniority"], "realID":"Fred-Astaire-0"},
+	{"quoteText": "Old age is like everything else.  To make a success of it, you've got to start young.", "author": "Fred Astaire", "topics": ["Old age"], "collections": ["Seniority"], "realID":"Fred-Astaire-1"},
 
 	{"quoteText": "Power is the ability to do good things for others.", "author": "Brooke Astor", "topics": ["Benevolence"], "realID":"Brooke-Astor-0"},
 
@@ -531,7 +545,7 @@
 	{"quoteText": "The main dangers in this life are the people who want to change everything - or nothing.", "author": "Nancy Lady Astor", "topics": ["Traditionalists"], "realID":"Nancy-Lady-Astor-6"},
 	{"quoteText": "The only thing I like about rich people is their money.", "author": "Nancy Lady Astor", "topics": ["Wealth"], "realID":"Nancy-Lady-Astor-7"},
 
-	{"quoteText": "Why is there never a headline that says \"Government program ends as its intended goal has been reached\"?", "author": "Oleg Atbashian", "topics": ["Programs"], "nuggets": ["Government"], "realID":"Oleg-Atbashian-0"},
+	{"quoteText": "Why is there never a headline that says \"Government program ends as its intended goal has been reached\"?", "author": "Oleg Atbashian", "topics": ["Programs"], "collections": ["Government"], "realID":"Oleg-Atbashian-0"},
 
 	{"quoteText": "The perfect bureaucrat everywhere is the man who manages to make no decisions and escape all responsibility.", "author": "Brooks Atkinson", "topics": ["Bureaucrats"], "realID":"Brooks-Atkinson-0"},
 	{"quoteText": "I have no objection to churches so long as they do not interfere with God's work.", "author": "Brooks Atkinson", "topics": ["Church"], "realID":"Brooks-Atkinson-1"},
@@ -586,13 +600,13 @@
 	{"quoteText": "If you can afford to advertise, you don't need to.", "author": "Norman R. Augustine", "topics": ["Advertising"], "realID":"Norman-R--Augustine-0"},
 	{"quoteText": "The consultant . . . offers the advantage of generally having had no firsthand experience in the matters of interest, thereby assuring a clear mind uncluttered by any of the facts.", "author": "Norman R. Augustine", "topics": ["Consultants"], "realID":"Norman-R--Augustine-1"},
 	{"quoteText": "If stock market experts were so expert, they would be buying stock, not selling advice.", "author": "Norman R. Augustine", "topics": ["Wall Street"], "realID":"Norman-R--Augustine-2"},
-	{"quoteText": "The more one produces, the less one gets.", "author": "Norman R. Augustine", "topics": ["Laboring"], "nuggets": ["Blue collars"], "realID":"Norman-R--Augustine-3"},
+	{"quoteText": "The more one produces, the less one gets.", "author": "Norman R. Augustine", "topics": ["Laboring"], "collections": ["Blue collars"], "realID":"Norman-R--Augustine-3"},
 	{"quoteText": "One often hears the remark \"he talks too much.\"  But when did anyone last hear the criticism \"he listens too much\"?", "author": "Norman R. Augustine", "topics": ["Listening"], "realID":"Norman-R--Augustine-4"},
 	{"quoteText": "Motivation will almost always beat mere talent.", "author": "Norman R. Augustine", "topics": ["Motivation"], "realID":"Norman-R--Augustine-5"},
-	{"quoteText": "It costs a lot to build bad products.", "author": "Norman R. Augustine", "topics": ["Quality control"], "nuggets": ["Business management"], "realID":"Norman-R--Augustine-6"},
+	{"quoteText": "It costs a lot to build bad products.", "author": "Norman R. Augustine", "topics": ["Quality control"], "collections": ["Business management"], "realID":"Norman-R--Augustine-6"},
 	{"quoteText": "The more time you spend talking about what you have been doing, the less time you have to spend doing what you have been talking about.", "author": "Norman R. Augustine", "topics": ["Talkers"], "realID":"Norman-R--Augustine-7"},
 
-	{"quoteText": "To listen to some devout people, one would imagine that God never laughs.", "author": "Sri Aurobindo", "topics": ["Bible-thumpers"], "nuggets": ["Religion"], "realID":"Sri-Aurobindo-0"},
+	{"quoteText": "To listen to some devout people, one would imagine that God never laughs.", "author": "Sri Aurobindo", "topics": ["Bible-thumpers"], "collections": ["Religion"], "realID":"Sri-Aurobindo-0"},
 
 	{"quoteText": "Once the government becomes the supplier of people's needs, there is no limit to the needs that will be claimed as a basic right.", "author": "Lawrence Auster", "topics": ["Big government"], "realID":"Lawrence-Auster-0"},
 
@@ -600,7 +614,7 @@
 
 	{"quoteText": "To rejoice in the prosperity of another is to partake of it.", "author": "William Austin", "topics": ["Muditā"], "realID":"William-Austin-0"},
 
-	{"quoteText": "I hope Arabs and Jews will settle their differences in a truly Christian spirit.", "author": "Warren R. Austin", "topics": ["Hmmm?"], "nuggets": ["Religion"], "realID":"Warren-R--Austin-0"},
+	{"quoteText": "I hope Arabs and Jews will settle their differences in a truly Christian spirit.", "author": "Warren R. Austin", "topics": ["Hmmm?"], "collections": ["Religion"], "realID":"Warren-R--Austin-0"},
 
 	{"quoteText": "There is no such thing as inaccuracy in a photograph.  All photographs are accurate. None of them is the truth.", "author": "Richard Avedon", "topics": ["Photos"], "realID":"Richard-Avedon-0"},
 
@@ -8006,6 +8020,7 @@
 	{"quoteText":"There must be a way of promoting human values without involving religion, based on common sense, experience and recent scientific findings.","author":"The 14th Dalai Lama","topics":["Morality"],"realID":"The-14th-Dalai-Lama-4"},
 	{"quoteText":"Sleep is the best meditation.","author":"The 14th Dalai Lama","topics":["Sleep"],"realID":"The-14th-Dalai-Lama-5"},
 	{"quoteText":"If someone has a gun and is trying to kill you . . . it would be reasonable to shoot back with your own gun.","author":"The 14th Dalai Lama","topics":["Gun control"],"realID":"The-14th-Dalai-Lama-6"},
+	{"quoteText":"Religious belief is not a precondition either of ethical conduct or of happiness.","author":"The 14th Dalai Lama","topics":["Religion"],"realID":"The-14th-Dalai-Lama-7"},
 	
 	{"quoteText":"Life is what happens to us while we are making other plans.","author":"Thomas La Mance","topics":["Life"],"realID":"Thomas-La-Mance-0"},
 	
@@ -8542,6 +8557,8 @@
 	{"quoteText":"Television is the literature of the illiterate.","author":"Lee Loevinger","topics":["Television"],"realID":"Lee-Loevinger-0"},
 	
 	{"quoteText":"Between two products, equal in function, quality and price, the better looking will outsell the other.","author":"Raymond Loewy","topics":["Appearance"],"realID":"Raymond-Loewy-0"},
+
+	{"quoteText":"Zealous conviction is a dangerous substitute for an open mind.","author":"Elizabeth Loftus","topics":["Fanatacism"],"realID":"Elizabeth-Loftus-0"},
 	
 	{"quoteText":"Creativity can solve almost any problem.","author":"George Lois","topics":["Creativity"],"realID":"George-Lois-0"},
 	
@@ -14734,9 +14751,6 @@
 	{"quoteText":"A lot of people don't want to fix their problems, because then they can't complain about them.","author":"Zuby","topics":["Professional victims"],"realID":"Zuby-28"},
 	{"quoteText":"Pretending to be a good person has become more important than actually being a good person.","author":"Zuby","topics":["Sanctimony"],"realID":"Zuby-29"},
 	
-	{"quoteText":"Before you build a better mousetrap, it helps to know if there are any mice out there.","author":"Mortimer B. Zuckerman","topics":["Market research"],"realID":"Mortimer-B--Zuckerman-0"},
-
-	{"quoteText":"This is a test quote with no author... - Anonymous", "topics":["Ability"], "realID":"Anonymous-0"},
-	{"quoteText":"This is second a test quote with no author... - Anonymous", "topics":["Ability"], "realID":"Anonymous-1"}
+	{"quoteText":"Before you build a better mousetrap, it helps to know if there are any mice out there.","author":"Mortimer B. Zuckerman","topics":["Market research"],"realID":"Mortimer-B--Zuckerman-0"}
 		
   ]
