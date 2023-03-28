@@ -127,8 +127,8 @@ export const GlobalStyles = createGlobalStyle`
         background: rgba(40,40,40,0.4);
         border-radius: 25px;
         position: fixed;
-        top: 15vh;
-        bottom: 15vh;
+        top: 16vh;
+        bottom: 16vh;
         line-height: 0.9rem;
         max-width: 26px;
     }
