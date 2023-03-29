@@ -1,18 +1,53 @@
 [
 
-	{"quoteText": "Socrates was a Greek philosopher who went around giving people good advice.  They poisoned him. (Anonymous)", "topics": ["Advice"], "realID":"Advice-0"},	
+	{"quoteText": "Hearing two eyewitness accounts of the same incident makes you begin to wonder about history. (Anonymous)", "topics": ["\"Account balance\""], "realID":"AccountBalance-0"},
+	{"quoteText": "A clear conscience laughs at false accusations. (Anonymous)", "topics": ["Accusation"], "realID":"Accusation-0"},
+	{"quoteText": "Socrates was a Greek philosopher who went around giving people good advice.  They poisoned him. (Anonymous)", "topics": ["Advice"], "realID":"Advice-0"},
+	{"quoteText": "What Mother Nature giveth, Father Time taketh away. (Anonymous)", "topics": ["Aging"], "realID":"Aging-0"},
+	{"quoteText": "Age doesn't always bring wisdom.  Sometimes age comes alone. (Anonymous)", "topics": ["Aging"], "realID":"Aging-1"},
+	{"quoteText": "A true friend remembers your birthday but not your age. (Anonymous)", "topics": ["Aging"], "realID":"Aging-2"},
+	{"quoteText": "Do not regret growing older.  It is a privilege denied to many. (Anonymous)", "topics": ["Aging"], "realID":"Aging-3"},
+	{"quoteText": "Time flies even when you aren't having fun. (Anonymous)", "topics": ["Aging"], "realID":"Aging-4"},
+	{"quoteText": "Age withers only the outside. (Anonymous)", "topics": ["Aging"], "realID":"Aging-5"},
+	{"quoteText": "It takes about ten years to get used to how old you are. (Anonymous)", "topics": ["Aging"], "realID":"Aging-6"},
+	{"quoteText": "Never gauge a man's horsepower from the size of his exhaust. (Anonymous)", "topics": ["Blowhards"], "realID":"Blowhards-0"},
 	{"quoteText": "Do not condemn a good idea simply because you don't like the source. (Anonymous)", "topics": ["Cognitive bias"], "realID":"CognitiveBias-0"},
 	{"quoteText": "Leadership has been defined as the ability to hide your panic from others. (Anonymous)", "topics": ["Composure"], "realID":"Composure-0"},	
 	{"quoteText": "A word of encouragement during a failure is worth more than an hour of praise after success. (Anonymous)", "topics": ["Encouragement"], "realID":"Encouragement-0"},
 	{"quoteText": "Enthusiasm is contagious - and so is the lack of it. (Anonymous)", "topics": ["Enthusiasm"], "realID":"Enthusiasm-0"},
 	{"quoteText": "A flatterer is one who says things to your face that he wouldn't say behind your back. (Anonymous)", "topics": ["Flattery"], "realID":"Flattery-0"},
+	{"quoteText": "The \"The good old days\" happened so long ago that we forget how awful they really were. (Anonymous)", "topics": ["\"The good old days\""], "realID":"GoodOldDays-0"},	
+	{"quoteText": "In the good old days, they also used to speak about the good old days. (Anonymous)", "topics": ["\"The good old days\""], "realID":"GoodOldDays-1"},	
 	{"quoteText": "Nothing gets you into deeper debt than trying to keep up with people who are already there. (Anonymous)", "topics": ["Keeping up with the Joneses"], "realID":"Joneses-0"},
 	{"quoteText": "So many of us live expensively to impress others living expensively to impress us. (Anonymous)", "topics": ["Keeping up with the Joneses"], "realID":"Joneses-1"},	
+	{"quoteText": "It's so difficult to save money when your neighbors keep buying things you can't afford. (Anonymous)", "topics": ["Keeping up with the Joneses"], "realID":"Joneses-2"},	
 	{"quoteText": "If you get too far in front of your troops, you start looking like the enemy. (Anonymous)", "topics": ["Leadership 101"], "realID":"LeadershipOne-0"},
-	{"quoteText": "Every survival kit should include a sense of humor. (Anonymous)", "topics": ["Lighten up, loosen up"], "realID":"LightenUpLoosenUp-0"},		
+	{"quoteText": "Every survival kit should include a sense of humor. (Anonymous)", "topics": ["Lighten up, loosen up"], "realID":"LightenUpLoosenUp-0"},
+	{"quoteText": "We drive on a parkway and park in a driveway. (Anonymous)", "topics": ["Linguistics"], "realID":"Linguistics-0"},
+	{"quoteText": "\"Overlook\" and \"oversee\" mean the opposite. (Anonymous)", "topics": ["Linguistics"], "realID":"Linguistics-1"},		
+	{"quoteText": "Seen it all, done it all, can't remember most of it. (Anonymous)", "topics": ["Losing it"], "realID":"LosingIt-0"},
+	{"quoteText": "It's hard to be nostalgic when you can't remember anything. (Anonymous)", "topics": ["Losing it"], "realID":"LosingIt-1"},
 	{"quoteText": "There are two kinds of leaders - those interested in the flock and those interested in the fleece. (Anonymous)", "topics": ["Managers vs. Leaders"], "realID":"ManagerVsLeader-0"},
+	{"quoteText": "Anything which parents have not learned from experience they can now learn from their children. (Anonymous)", "topics": ["Parenthood"], "realID":"Parenthood-0"},
+	{"quoteText": "Dimples come from your parents; wrinkles, from your children. (Anonymous)", "topics": ["Parenthood"], "realID":"Parenthood-1"},
 	{"quoteText": "Words that soak into your ears are whispered . . . not yelled. (Anonymous)", "topics": ["Persuasion"], "realID":"Persuasion-0"},
+	{"quoteText": "The older a man gets, the farther he had to walk to school as a boy. (Anonymous)", "topics": ["Revisionist history"], "realID":"RevisionistHistory-0"},
+	{"quoteText": "Nostalgia is the longing to go back to the good old days when you were neither good nor old. (Anonymous)", "topics": ["Revisionist history"], "realID":"RevisionistHistory-1"},
+	{"quoteText": "Who puts the \"thin ice\" sign in the middle of the thin ice? (Anonymous)", "topics": ["Signs"], "realID":"Signs-0"},
+	{"quoteText": "No Exit: A sign indicating the most convenient way out of a building. (Anonymous)", "topics": ["Signs"], "realID":"Signs-1"},
+	{"quoteText": "Nobody ever puts out a sign that says NICE DOG. (Anonymous)", "topics": ["Signs"], "realID":"Signs-2"},
+	{"quoteText": "So long as man does the classifying, he will likely remain the highest animal. (Anonymous)", "topics": ["Specie bias"], "realID":"SpecieBias-0"},	
+	{"quoteText": "Teenagers express their burning desire to be different by dressing exactly alike. (Anonymous)", "topics": ["Teenagers"], "realID":"Teenagers-0"},
+	{"quoteText": "There's nothing wrong with teenagers that reasoning with them wont aggravate. (Anonymous)", "topics": ["Teenagers"], "realID":"Teenagers-1"},
+	{"quoteText": "Because teens are too old to do kid things and not old enough to do adult things, they do things that no one else does. (Anonymous)", "topics": ["Teenagers"], "realID":"Teenagers-2"},
+	{"quoteText": "Teenagers are always ready to give adults the full benefit of their inexperience. (Anonymous)", "topics": ["Teenagers"], "realID":"Teenagers-3"},
+	{"quoteText": "No one knows as much at eighty as he thinks he knows at eighteen. (Anonymous)", "topics": ["Teenagers"], "realID":"Teenagers-4"},
+	{"quoteText": "It never occurs to a boy eighteen that he will someday be a dumb as his father. (Anonymous)", "topics": ["Teenagers"], "realID":"Teenagers-5"},
+	{"quoteText": "There's always a lot to be thankful for if you take time to look at it.  For example, I am sitting here thinking how nice it is that wrinkles don't hurt. (Anonymous)", "topics": ["Wrinkles"], "realID":"Wrinkles-0"},
+	{"quoteText": "Wrinkles - the service stripes of life. (Anonymous)", "topics": ["Wrinkles"], "realID":"Wrinkles-1"},	
 	
+	{"quoteText":"If the enemy is within range, so are you.","author":"","topics":["Military adages"],"realID":"Military-expression-0"},
+
 	{"quoteText": "It took me seventeen years to get three thousand hits in baseball.  I did it in one afternoon on the golf course.", "author": "Hank Aaron", "topics": ["Golf"], "collections": ["Sport"], "realID":"Hank-Aaron-0"},
 	
 	{"quoteText": "The missionaries go forth to Christianize the savages - as if the savages weren't dangerous enough already.", "author": "Edward Abbey", "topics": ["Missionaries"], "collections": ["Religion"], "realID":"Edward-Abbey-0"},
@@ -75,7 +110,7 @@
 	{"quoteText": "Accustomed as I am to public speaking, I know the futility of it.", "author": "Franklin P. Adams", "topics": ["Public speaking"], "realID":"Franklin-P--Adams-3"},
 	{"quoteText": "Seeing ourselves as others see us would probably confirm our worst suspicions about them.", "author": "Franklin P. Adams", "topics": ["Others"], "realID":"Franklin-P--Adams-4"},
 	{"quoteText": "While the work or play is on . . . don't constantly feel you ought to be doing the other.", "author": "Franklin P. Adams", "topics": ["Recreation"], "realID":"Franklin-P--Adams-5"},
-	{"quoteText": "Nothing is more responsible for the good old days than a bad memory.", "author": "Franklin P. Adams", "topics": ["Revisionist history"], "realID":"Franklin-P--Adams-6"},
+	{"quoteText": "Nothing is more responsible for the good old days than a bad memory.", "author": "Franklin P. Adams", "topics": ["\"The good old days\""], "realID":"Franklin-P--Adams-6"},
 	{"quoteText": "Originality is the art of concealing your source.", "author": "Franklin P. Adams", "topics": ["Plagiarism"], "realID":"Franklin-P--Adams-7"},
 
 	{"quoteText": "If it is free, it's advice.  If you pay for it, it's counseling.  If you can use either one, it's a miracle.", "author": "Jack Adams", "topics": ["Advice"], "realID":"Jack-Adams-0"},
@@ -478,7 +513,7 @@
 	{"quoteText": "If you think you can, you can.  And if you think you can't, you're right.", "author": "Mary Kay Ash", "topics": ["Attitude"], "realID":"Mary-Kay-Ash-1"},
 	{"quoteText": "If you're good to your staff when things are going well, they'll rally when times go bad.", "author": "Mary Kay Ash", "topics": ["Employee relations"], "collections": ["Business management"], "realID":"Mary-Kay-Ash-2"},
 	{"quoteText": "We treat our people like royalty. If you honor and serve the people who work for you, they will honor and serve you.", "author": "Mary Kay Ash", "topics": ["Employee relations"], "collections": ["Business management"], "realID":"Mary-Kay-Ash-3"},
-	{"quoteText": "Everyone has an invisible sign hanging from their neck saying, \"Make me feel important.\" Never forget this message when working with people.", "author": "Mary Kay Ash", "topics": ["Encouragement"], "collections": ["Business management"], "realID":"Mary-Kay-Ash-4"},
+	{"quoteText": "Everyone has an invisible sign hanging from their neck saying, \"Make me feel important.\" Never forget this message when working with people.", "author": "Mary Kay Ash", "topics": ["Signs"], "collections": ["Business management"], "realID":"Mary-Kay-Ash-4"},
 	{"quoteText": "No matter how busy you are, you must take time to make the other person feel important.", "author": "Mary Kay Ash", "topics": ["Encouragement"], "collections": ["Business management"], "realID":"Mary-Kay-Ash-5"},
 	{"quoteText": "God does not ask your ability, or your inability.  He asks only your availability.", "author": "Mary Kay Ash", "topics": ["God"], "realID":"Mary-Kay-Ash-6"},
 	{"quoteText": "A mediocre idea that generates enthusiasm will go further than a great idea that inspires no one.", "author": "Mary Kay Ash", "topics": ["Ideas"], "realID":"Mary-Kay-Ash-7"},
@@ -552,7 +587,7 @@
 	{"quoteText": "People everywhere enjoy believing things that they know are not true.  It spares them the ordeal of thinking for themselves and taking responsibility for what they know.", "author": "Brooks Atkinson", "topics": ["Falsehood"], "realID":"Brooks-Atkinson-2"},
 	{"quoteText": "Don't condescend to unskilled labor.  Try it for half a day first.", "author": "Brooks Atkinson", "topics": ["Labor"], "realID":"Brooks-Atkinson-3"},
 	{"quoteText": "The evil that men do lives on the front pages of greedy newspapers but the good is oft interred apathetically inside.", "author": "Brooks Atkinson", "topics": ["The Press"], "realID":"Brooks-Atkinson-4"},
-	{"quoteText": "In every age, \"the good old days\" were a myth.  No one ever thought they were good at the time.", "author": "Brooks Atkinson", "topics": ["Revisionist history"], "realID":"Brooks-Atkinson-5"},
+	{"quoteText": "In every age, \"the good old days\" were a myth.  No one ever thought they were good at the time.", "author": "Brooks Atkinson", "topics": ["\"The good old days\""], "realID":"Brooks-Atkinson-5"},
 	{"quoteText": "For every age has consisted of crises that seemed intolerable to the people who lived through them.", "author": "Brooks Atkinson", "topics": ["The Times"], "realID":"Brooks-Atkinson-6"},
 
 	{"quoteText": "If you don't run your own life, somebody else will.", "author": "John Atkinson", "topics": ["Self-sufficiency"], "realID":"John-Atkinson-0"},
@@ -3677,6 +3712,8 @@
 	{"quoteText":"I walked in on my wife and the milkman, the first thing she says is, \"Don't tell the butcher!\"","author":"Rodney Dangerfield","topics":["Infidelity"],"realID":"Rodney-Dangerfield-12"},
 	
 	{"quoteText":"Entertainment is, in fact, the biggest cause of boredom in the modern world. The more man is entertained, the more bored he grows.","author":"Anthony Daniels","topics":["Entertainment"],"realID":"Anthony-Daniels-0"},
+
+	{"quoteText":"He scolds most that can hurt least.","author":"Danish proverb","topics":["Blowhards"],"realID":"Danish-proverb-0"},
 	
 	{"quoteText":"Even the holiest of words are only words.","author":"Deng Ming-Dao","topics":["Sermons"],"realID":"Deng-Ming-Dao-0"},
 	
@@ -4515,6 +4552,15 @@
 	{"quoteText":"When you come in late for work, everybody notices; when you work late, nobody notices.","author":"Raymond F. Elsner","topics":["The office"],"realID":"Raymond-F--Elsner-0"},
 	
 	{"quoteText":"If you don't like something, change it; if you can't change it, change the way you think about it.","author":"Mary Engelbreit","topics":["Attitude"],"realID":"Mary-Engelbreit-0"},
+
+	{"quoteText":"He who kills the lion when absent, fears a mouse when present.","author":"English proverb","topics":["Hypothetical heroes"],"realID":"English-proverb-0"},
+	{"quoteText":"Dogs that bark at a distance never bite.","author":"English proverb","topics":["Blowhards"],"realID":"English-proverb-1"},
+	{"quoteText":"The absent are always wrong.","author":"English proverb","topics":["Absence"],"realID":"English-proverb-2"},
+	{"quoteText":"Gluttony kills more than the sword.","author":"English proverb","topics":["Overindulgence"],"realID":"English-proverb-3"},
+	{"quoteText":"To be a man of the church is not always to be a man of God.","author":"English proverb","topics":["Clergy"],"realID":"English-proverb-4"},
+	{"quoteText":"The best throw of the dice is to throw them away.","author":"English proverb","topics":["Gambling"],"realID":"English-proverb-5"},
+	{"quoteText":"He who pays the piper calls the tune.","author":"English proverb","topics":["Business 101"],"realID":"English-proverb-6"},
+	{"quoteText":"Gold goes in at any gate except heaven's.","author":"English proverb","topics":["Wealth"],"realID":"English-proverb-7"},
 	
 	{"quoteText":"The big cities of America are becoming Third World Countries.","author":"Nora Ephron","topics":["Cities"],"realID":"Nora-Ephron-0"},
 	{"quoteText":"If pregnancy were a book, they would cut the last two chapters.","author":"Nora Ephron","topics":["Pregnancy"],"realID":"Nora-Ephron-1"},
@@ -5460,6 +5506,8 @@
 	{"quoteText":"There is ultimately only one reason to create a business of your own, and that is to sell it.","author":"Michael Gerber","topics":["Business 101"],"realID":"Michael-Gerber-0"},
 	
 	{"quoteText":"The matter does not appear to me now as it appears to have appeared to me then.","author":"Eugene C. Gerhart","topics":["Maturity"],"realID":"Eugene-C--Gerhart-0"},
+
+	{"quoteText":"The husband's mother is the wife's devil.","author":"German proverb","topics":["Mother-in-law"],"realID":"German-proverb-0"},
 	
 	{"quoteText":"I nearly always find, when I ask a vegetarian if he is a socialist, or a socialist if he is a vegetarian, that the answer is in the affirmative.","author":"Katharine Fullerton Gerould","topics":["Vegetarians"],"realID":"Katharine-Fullerton-Gerould-0"},
 	
@@ -7074,8 +7122,6 @@
 	{"quoteText":"Dear Black Hollywood: How about y'all give us a movie about Thomas Sowell.","author":"T. B. Impact","topics":["Thomas Sowell"],"realID":"T-B--Impact-0"},
 	{"quoteText":"I'm so sick of these celebrities and athletes selling people oppression pills.","author":"T. B. Impact","topics":["Troll models"],"realID":"T-B--Impact-1"},
 	
-	{"quoteText":"If the enemy is within range, so are you.","author":"Infantry Journal","topics":["Disputes"],"realID":"Infantry-Journal-0"},
-	
 	{"quoteText":"A nation is a society united by a delusion about its ancestry and by a common hatred of its neighbors.","author":"William R. Inge","topics":["Ethnocentrism"],"realID":"William-R--Inge-0"},
 	{"quoteText":"The enemies of freedom do not argue; they shout and they shoot.","author":"William R. Inge","topics":["Tyranny"],"realID":"William-R--Inge-1"},
 	{"quoteText":"The happiest people seem to be those who have no particular cause for being happy except that they are so.","author":"William R. Inge","topics":["Good nature"],"realID":"William-R--Inge-2"},
@@ -7111,6 +7157,9 @@
 	{"quoteText":"Most of us spend our lives as if we had another one in the bank.","author":"Ben Irwin","topics":["Deferring"],"realID":"Ben-Irwin-0"},
 	
 	{"quoteText":"Statistics show that those who contract the habit of eating, very few survive.","author":"Wallace Irwin","topics":["Diet"],"realID":"Wallace-Irwin-0"},
+
+	{"quoteText":"Brave as lions in peace, timid as deer in the war.","author":"Italian proverb","topics":["Hypothetical heroes"],"realID":"Italian-proverb-0"},
+	{"quoteText":"Many are brave when the enemy flees.","author":"Italian proverb","topics":["Blowhards"],"realID":"Italian-proverb-1"},
 	
 	{"quoteText":"When there's a deep seated conflict between management and labor, it's because of autocratic management practices.","author":"F. Kenneth Iverson","topics":["Autocrats"],"realID":"F--Kenneth-Iverson-0"},
 	{"quoteText":"Don't study the idea to death with experts and committees. Get on with it and see if it works.","author":"F. Kenneth Iverson","topics":["Implementation"],"realID":"F--Kenneth-Iverson-1"},
@@ -7186,6 +7235,8 @@
 	{"quoteText":"It's pretty hard to get what you want when you're busy doing and being what you don't want.","author":"Cheryl Janecky","topics":["Conformity"],"realID":"Cheryl-Janecky-0"},
 	
 	{"quoteText":"With publicity comes humiliation.","author":"Tama Janowitz","topics":["Publicity"],"realID":"Tama-Janowitz-0"},
+
+	{"quoteText":"Even a sheet of paper has two sides.","author":"Japanese proverb","topics":["\"Account balance\""],"realID":"Japanese-proverb-0"},
 	
 	{"quoteText":"The world often continues to allow evil because it isn't angry enough.","author":"Bede Jarrett","topics":["Complacency"],"realID":"Bede-Jarrett-0"},
 	
@@ -8230,7 +8281,7 @@
 	{"quoteText":"Some like to understand what they believe in. Others like to believe in what they understand.","author":"Stanislaw Lec","topics":["Cognitive bias"],"realID":"Stanislaw-Lec-25"},
 	{"quoteText":"When reasons are weak, attitudes stiffen.","author":"Stanislaw Lec","topics":["Pigheadedness"],"realID":"Stanislaw-Lec-26"},
 	{"quoteText":"The window to the world can be covered by a newspaper.","author":"Stanislaw Lec","topics":["The Press"],"realID":"Stanislaw-Lec-27"},
-	{"quoteText":"I prefer the sign \"No Entry\" to the one that says \"No Exit.\"","author":"Stanislaw Lec","topics":["Escape"],"realID":"Stanislaw-Lec-28"},
+	{"quoteText":"I prefer the sign \"No Entry\" to the one that says \"No Exit.\"","author":"Stanislaw Lec","topics":["Signs"],"realID":"Stanislaw-Lec-28"},
 	{"quoteText":"Sometimes you have to be silent to be heard.","author":"Stanislaw Lec","topics":["Scorn"],"realID":"Stanislaw-Lec-29"},
 	{"quoteText":"Suppose you succeed in breaking the wall with your head. And what, then, will you do in the next cell?","author":"Stanislaw Lec","topics":["Drama"],"realID":"Stanislaw-Lec-30"},
 	{"quoteText":"It is easy to hang puppets. The strings are already there.","author":"Stanislaw Lec","topics":["Toolbags"],"realID":"Stanislaw-Lec-31"},
@@ -10079,7 +10130,7 @@
 	{"quoteText":"If you don't make the time to work on creating the life you want, you're eventually going to be forced to spend a lot of time dealing with a life you don't want.","author":"Kevin Ngo","topics":["Self-improvement"],"realID":"Kevin-Ngo-0"},
 	{"quoteText":"Rewards go to those who get things done, not to those with the best excuses.","author":"Kevin Ngo","topics":["Doers"],"realID":"Kevin-Ngo-1"},
 	
-	{"quoteText":"If you're yearning for the good old days, just turn off the air-conditioning.","author":"Griff Niblack","topics":["The good old days"],"realID":"Griff-Niblack-0"},
+	{"quoteText":"If you're yearning for the good old days, just turn off the air-conditioning.","author":"Griff Niblack","topics":["\"The good old days\""],"realID":"Griff-Niblack-0"},
 	
 	{"quoteText":"When you get right down to the root of the meaning of the word succeed, you find that it simply means to follow through.","author":"F. W. Nichol","topics":["Stick-to-itiveness"],"realID":"F--W--Nichol-0"},
 	
@@ -10764,11 +10815,11 @@
 	{"quoteText":"Women have been making men self-conscious since the beginning of time.","author":"Dr. Jordan B. Peterson","topics":["Women & Men"],"realID":"Dr--Jordan-B--Peterson-21"},
 	{"quoteText":"Tyranny grows slowly, and asks us to retreat in comparatively tiny steps. But each retreat increases the possibility of the next retreat.","author":"Dr. Jordan B. Peterson","topics":["Tyranny, Incremental"],"realID":"Dr--Jordan-B--Peterson-22"},
 	{"quoteText":"That which you most need to find will be found where you least wish to look.","author":"Dr. Jordan B. Peterson","topics":["Truth, Unwelcome"],"realID":"Dr--Jordan-B--Peterson-23"},
-	{"quoteText":"People organize their brains with conversation.","author":"Dr. Jordan B. Peterson","topics":["Talking"],"realID":"Dr--Jordan-B--Peterson-24"},
-	{"quoteText":"Something better might be attained in the future by giving up something of value in the present.","author":"Dr. Jordan B. Peterson","topics":["Sacrifice"],"realID":"Dr--Jordan-B--Peterson-25"},
-	{"quoteText":"Question for parents: do you want to make your children safe, or strong?","author":"Dr. Jordan B. Peterson","topics":["Overparenting"],"realID":"Dr--Jordan-B--Peterson-26"},
-	{"quoteText":"If you look at older people and you ask them what they regret in their lives, it's not the opportunities they took, but the opportunities they could have taken and didn't.","author":"Dr. Jordan B. Peterson","topics":["Opportunity, Missed"],"realID":"Dr--Jordan-B--Peterson-27"},
-	{"quoteText":"When you love someone, it's not despite their limitations.  It's because of their limitations.","author":"Dr. Jordan B. Peterson","topics":["Limitations"],"realID":"Dr--Jordan-B--Peterson-28"},
+	{"quoteText":"When you love someone, it's not despite their limitations.  It's because of their limitations.","author":"Dr. Jordan B. Peterson","topics":["Limitations"],"realID":"Dr--Jordan-B--Peterson-24"},
+	{"quoteText":"If you look at older people and you ask them what they regret in their lives, it's not the opportunities they took, but the opportunities they could have taken and didn't.","author":"Dr. Jordan B. Peterson","topics":["Opportunity, Missed"],"realID":"Dr--Jordan-B--Peterson-25"},
+	{"quoteText":"People organize their brains with conversation.","author":"Dr. Jordan B. Peterson","topics":["Talking"],"realID":"Dr--Jordan-B--Peterson-26"},
+	{"quoteText":"Something better might be attained in the future by giving up something of value in the present.","author":"Dr. Jordan B. Peterson","topics":["Sacrifice"],"realID":"Dr--Jordan-B--Peterson-27"},
+	{"quoteText":"Question for parents: do you want to make your children safe, or strong?","author":"Dr. Jordan B. Peterson","topics":["Overparenting"],"realID":"Dr--Jordan-B--Peterson-28"},
 	
 	{"quoteText":"You don't die of a broken heart; you only wish you did.","author":"Marilyn Peterson","topics":["Heartbreak"],"realID":"Marilyn-Peterson-0"},
 	
@@ -11034,7 +11085,7 @@
 	
 	{"quoteText":"Look at those cows and remember that the greatest scientists in the world have never discovered how to make grass into milk.","author":"Michael Pupin","topics":["Nature"],"realID":"Michael-Pupin-0"},
 	
-	{"quoteText":"All children wear the sign: \"I want to be important now.\" Many of our juvenile delinquency problems arise because nobody reads the sign.","author":"Dan Pursuit","topics":["Child rearing"],"realID":"Dan-Pursuit-0"},
+	{"quoteText":"All children wear the sign: \"I want to be important now.\" Many of our juvenile delinquency problems arise because nobody reads the sign.","author":"Dan Pursuit","topics":["Signs"],"realID":"Dan-Pursuit-0"},
 	
 	{"quoteText":"The entire sum of existence is the magic of being needed by just one person.","author":"Vi Putnam","topics":["Reverence"],"realID":"Vi-Putnam-0"},
 	
@@ -11458,7 +11509,7 @@
 	{"quoteText":"It isn't what we don't know that gives us trouble, it's what we know that ain't so.","author":"Will Rogers","topics":["Falsehood"],"realID":"Will-Rogers-16"},
 	{"quoteText":"An onion can make people cry but there's never been a vegetable that can make people laugh.","author":"Will Rogers","topics":["Food"],"realID":"Will-Rogers-17"},
 	{"quoteText":"The best way out of a difficulty is through it.","author":"Will Rogers","topics":["Motion"],"realID":"Will-Rogers-18"},
-	{"quoteText":"Things aren't what they used to be and probably never were.","author":"Will Rogers","topics":["The good old days"],"realID":"Will-Rogers-19"},
+	{"quoteText":"Things aren't what they used to be and probably never were.","author":"Will Rogers","topics":["\"The good old days\""],"realID":"Will-Rogers-19"},
 	{"quoteText":"The only time people dislike gossip is when you gossip about them.","author":"Will Rogers","topics":["Gossip"],"realID":"Will-Rogers-20"},
 	{"quoteText":"I bet after seeing us, George Washington would sue us for calling him \"father.\"","author":"Will Rogers","topics":["America"],"realID":"Will-Rogers-21"},
 	{"quoteText":"More people should work for their dinner instead of dressing for it.","author":"Will Rogers","topics":["High society"],"realID":"Will-Rogers-22"},
@@ -12720,6 +12771,8 @@
 	
 	{"quoteText":"The great thing about democracy is that it gives every voter a chance to do something stupid.","author":"Art Spander","topics":["Democracy"],"realID":"Art-Spander-0"},
 	{"quoteText":"The longer you stay in one place, the greater your chances of disillusionment.","author":"Art Spander","topics":["Inertia"],"realID":"Art-Spander-1"},
+
+	{"quoteText":"The mother-in-law does not remember she was a daughter-in-law.","author":"Spanish proverb","topics":["Mother-in-law"],"realID":"Spanish-proverb-0"},
 	
 	{"quoteText":"Be on the alert to recognize your prime at whatever time of your life it may occur.","author":"Muriel Spark","topics":["Lifespan"],"realID":"Muriel-Spark-0"},
 	{"quoteText":"It is impossible to persuade a man who does not disagree, but smiles.","author":"Muriel Spark","topics":["Persuasion"],"realID":"Muriel-Spark-1"},

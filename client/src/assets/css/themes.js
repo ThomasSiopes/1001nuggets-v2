@@ -57,7 +57,7 @@ export const GlobalStyles = createGlobalStyle`
         text-decoration: none;
     }
 
-    #banner, .formInput, img, #myInput {
+    #banner, .formInput, img, #myInput, .w-100 {
         width: 100%;
     }
 
