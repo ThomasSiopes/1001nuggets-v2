@@ -27,11 +27,11 @@ function QuoteCard({quotes, quoteIndex}) {
   };
 
   const handleIncrease = () => {
-    setIndex(currentQuote+1);
+    if(quotes[currentQuote+1]) setIndex(currentQuote+1);
   }
 
   const handleDecrease =() => {
-    setIndex(currentQuote-1);
+    if(quotes[currentQuote-1]) setIndex(currentQuote-1);
   }
 
   if(quotes && quotes[quoteIndex] && quotes[currentQuote]) {
@@ -48,7 +48,7 @@ function QuoteCard({quotes, quoteIndex}) {
         
         <Modal.Header className="text-theme" closeButton/>
 
-        {/* <Modal.Body className="quote-card">
+        <Modal.Body className="quote-card" onSwipedLeft={handleIncrease} onSwipedRight={handleDecrease}>
             <Container className="font-poppins">
               <h2>{quotes[currentQuote].quoteText}</h2>
             </Container>
@@ -60,9 +60,9 @@ function QuoteCard({quotes, quoteIndex}) {
         </Modal.Body>
 
         <Modal.Footer className="justify-content-center align-items-center">
-            {quotes[currentQuote-1] && 
+            {/* {quotes[currentQuote-1] && 
               <Button className="mb-2 b-none" variant={"light"} onClick={handleDecrease} onKeyDown={handleDecrease}><FiArrowLeft/></Button>
-            }
+            } */}
             {quotes[currentQuote].topics.length > 0 && 
                 <span> 
                     {quotes[currentQuote].topics.map((topic) => (
@@ -70,9 +70,9 @@ function QuoteCard({quotes, quoteIndex}) {
                     ))}
                 </span>
             }
-            {quotes[currentQuote+1] && 
+            {/* {quotes[currentQuote+1] && 
               <Button className="mb-2 b-none" variant={"light"} onClick={handleIncrease} onKeyUp={handleIncrease}><FiArrowRight/></Button>
-            }
+            } */}
         </Modal.Footer>
         {quotes[currentQuote].collections[0] &&
           <Modal.Footer className="justify-content-center"> 
@@ -86,12 +86,7 @@ function QuoteCard({quotes, quoteIndex}) {
         }
         <Modal.Footer className="justify-content-center">
           <Link className="mb-1 btn btn-theme" to={`/quote/${quotes[currentQuote].realID}`}>Share <FiShare/></Link>
-        </Modal.Footer> */}
-        <Carousel activeIndex={quoteIndex}>
-          <Carousel.Item>
-            
-          </Carousel.Item>
-        </Carousel>
+        </Modal.Footer>
       </Modal>
     </div>
   )}
