@@ -42,7 +42,7 @@ function Topic () {
     quoteList = shuffle(quoteList);
 
     let list1 
-    let list2 
+    let list2
     let list3a
     let list3b
     if(quoteList) {
