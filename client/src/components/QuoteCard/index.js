@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Card, Modal, Container, Carousel } from 'react-bootstrap';
+import { Button, Card, Modal, Container } from 'react-bootstrap';
 import { useSwipeable } from 'react-swipeable'
 import { Link } from 'react-router-dom';
 
@@ -14,7 +14,6 @@ function QuoteCard({quotes, quoteIndex}) {
   const [currentQuote, setIndex] = useState(quoteIndex);
 
   const handlers = useSwipeable({
-    onSwiped: (eventData) => alert("User Swiped!", eventData),
     onSwipedLeft: () => handleIncrease(),
     onSwipedRight: () => handleDecrease()
   });
@@ -29,11 +28,13 @@ function QuoteCard({quotes, quoteIndex}) {
   };
 
   const handleIncrease = () => {
-    setIndex(currentQuote+1);
+    if(quotes[currentQuote+1]) setIndex(currentQuote+1);
+    else handleClose();
   }
 
   const handleDecrease =() => {
-    setIndex(currentQuote-1);
+    if(quotes[currentQuote-1]) setIndex(currentQuote-1);
+    else handleClose();
   }
 
   if(quotes && quotes[quoteIndex] && quotes[currentQuote]) {
