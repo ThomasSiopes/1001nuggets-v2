@@ -14,7 +14,9 @@ function QuoteCard({quotes, quoteIndex}) {
   const [currentQuote, setIndex] = useState(quoteIndex);
 
   const handlers = useSwipeable({
-    onSwiped: (eventData) => alert("User Swiped!", eventData)
+    onSwiped: (eventData) => alert("User Swiped!", eventData),
+    onSwipedLeft: handleIncrease,
+    onSwipedRight: handleDecrease
   });
 
   const handleClose = () => {
@@ -27,16 +29,16 @@ function QuoteCard({quotes, quoteIndex}) {
   };
 
   const handleIncrease = () => {
-    if(quotes[currentQuote+1]) setIndex(currentQuote+1);
+    setIndex(currentQuote+1);
   }
 
   const handleDecrease =() => {
-    if(quotes[currentQuote-1]) setIndex(currentQuote-1);
+    setIndex(currentQuote-1);
   }
 
   if(quotes && quotes[quoteIndex] && quotes[currentQuote]) {
     return (
-    <div {...handlers}>
+    <div>
       <Card>
         <Card.Body className="quote-card" onClick={handleShow}>
             <Card.Text className="font-poppins" id="upward">{quotes[quoteIndex].quoteText}</Card.Text>
@@ -44,11 +46,11 @@ function QuoteCard({quotes, quoteIndex}) {
         </Card.Body>
       </Card>
 
-      <Modal show={show} onHide={handleClose} aria-labelledby="contained-modal-title-vcenter" centered>
+      <Modal show={show} onHide={handleClose} aria-labelledby="contained-modal-title-vcenter" centered {...handlers}>
         
         <Modal.Header className="text-theme" closeButton/>
 
-        <Modal.Body className="quote-card" onSwipedLeft={handleIncrease} onSwipedRight={handleDecrease}>
+        <Modal.Body className="quote-card">
             <Container className="font-poppins">
               <h2>{quotes[currentQuote].quoteText}</h2>
             </Container>
