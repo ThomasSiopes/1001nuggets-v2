@@ -34,12 +34,8 @@ function Topic () {
     if(!data) return (<Redirect to={`/404error`}/>);
 
     const topic = data.topicR;
-
-    console.log(topic.quotes);
     
-    let quoteList = [...topic.quotes]
-
-    quoteList = shuffle(quoteList);
+    let quoteList = [...topic.quotes];
 
     let list1 
     let list2
@@ -73,7 +69,7 @@ function Topic () {
                                 <Row>
                                     {list1.map((index) => (
                                         <Col xs={12} className="mb-3" key={index.quoteText}>
-                                            <QuoteCard quotes={quoteList} quoteIndex={quoteList.indexOf(index)}/>
+                                            <QuoteCard quotes={topic.quotes} quoteIndex={topic.quotes.indexOf(index)}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -83,7 +79,7 @@ function Topic () {
                                 <Row className="d-xs-block d-lg-none">
                                     {list3a.map((index) => (
                                         <Col xs={12} className="mb-3" key={"false" + index.quoteText}>
-                                            <QuoteCard quotes={quoteList} quoteIndex={quoteList.indexOf(index)}/>
+                                            <QuoteCard quotes={topic.quotes} quoteIndex={topic.quotes.indexOf(index)}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -96,7 +92,7 @@ function Topic () {
                                 <Row>
                                     {list3a.map((index) => (
                                         <Col xs={12} className="mb-3" key={index.quoteText}>
-                                            <QuoteCard quotes={quoteList} quoteIndex={quoteList.indexOf(index)}/>
+                                            <QuoteCard quotes={topic.quotes} quoteIndex={topic.quotes.indexOf(index)}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -105,7 +101,7 @@ function Topic () {
                                 <Row>
                                     {list3b.map((index) => (
                                         <Col xs={12} className="mb-3" key={index.quoteText}>
-                                            <QuoteCard quotes={quoteList} quoteIndex={quoteList.indexOf(index)}/>
+                                            <QuoteCard quotes={topic.quotes} quoteIndex={topic.quotes.indexOf(index)}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -119,7 +115,7 @@ function Topic () {
                                 <Row className="d-xs-block d-lg-none">
                                     {list3b.map((index) => (
                                         <Col xs={12} className="mb-3" key={"false" + index.quoteText}>
-                                            <QuoteCard quotes={quoteList} quoteIndex={quoteList.indexOf(index)}/>
+                                            <QuoteCard quotes={topic.quotes} quoteIndex={topic.quotes.indexOf(index)}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -128,7 +124,7 @@ function Topic () {
                                 <Row>
                                     {list2.map((index) => (
                                         <Col xs={12} className="mb-3" key={index.quoteText}>
-                                            <QuoteCard quotes={quoteList} quoteIndex={quoteList.indexOf(index)}/>
+                                            <QuoteCard quotes={topic.quotes} quoteIndex={topic.quotes.indexOf(index)}/>
                                         </Col>
                                     ))}
                                 </Row>
