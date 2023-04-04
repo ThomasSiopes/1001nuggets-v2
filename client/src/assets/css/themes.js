@@ -123,6 +123,24 @@ export const GlobalStyles = createGlobalStyle`
         width: 4%;
     }
 
+    .floating-side-button-left, .floating-side-button-right {
+        font-size: 2rem;
+        opacity: 0.15;
+    }
+
+    .floating-side-button-left:hover, .floating-side-button-right:hover {
+        opacity: 0.6;
+        transition: all 0.5s ease;
+    }
+
+    .floating-side-button-left {
+        float: left;
+    }
+
+    .floating-side-button-right {
+        float: right;
+    }
+
     .fitter {
         background: rgba(40,40,40,0.4);
         border-radius: 25px;
@@ -239,60 +257,9 @@ export const GlobalStyles = createGlobalStyle`
         color: ${(props) => props.theme.card.text};
     }
 
-    // Switch
-
-    .switch {
-        position: relative;
-        display: inline-block;
-        width: 60px;
-        height: 34px;
-    }
-      
-    .switch input { 
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
-    
-    .slider {
-      position: absolute;
-      cursor: pointer;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #ccc;
-      -webkit-transition: .4s;
-      transition: .4s;
-    }
-    
-    .slider:before {
-      position: absolute;
-      content: "";
-      height: 26px;
-      width: 26px;
-      left: 4px;
-      bottom: 4px;
-      background-color: white;
-      -webkit-transition: .4s;
-      transition: .4s;
-    }
-    
-    input:focus + .slider {
-      box-shadow: 0 0 1px #2196F3;
-    }
-    
-    input:checked + .slider:before {
-      -webkit-transform: translateX(26px);
-      -ms-transform: translateX(26px);
-      transform: translateX(26px);
-    }
-
-    .slider.round {
-        border-radius: 34px;
-    }
-      
-    .slider.round:before {
-        border-radius: 50%;
+    .wrapper {
+        position: absolute;
+        top: 40%;
+        width: 90%;
     }
 `

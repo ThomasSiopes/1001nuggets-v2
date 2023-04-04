@@ -30,10 +30,7 @@ const resolvers = {
             return Topic.findOne({ _id: topicId }).populate('quotes');
         },
         topicR: async (parent, { topicRealId }) => {
-            let tempInt = Topic.findOne({ realID: topicRealId }).populate('quotes');
-            console.log("tempInt: ");
-            console.log(tempInt);
-            return tempInt;
+            return Topic.findOne({ realID: topicRealId }).populate('quotes');;
         },
         
         // collections
