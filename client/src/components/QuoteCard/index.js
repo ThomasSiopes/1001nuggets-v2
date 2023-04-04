@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Card, Modal, Container, Row, Col } from 'react-bootstrap';
+import { Button, Card, Modal, Container } from 'react-bootstrap';
 import { useSwipeable } from 'react-swipeable'
 import { Link } from 'react-router-dom';
 
@@ -53,14 +53,12 @@ function QuoteCard({quotes, quoteIndex}) {
         <Modal.Header className="text-theme" closeButton/>
 
         <Modal.Body className="quote-card" {...handlers}>
-              <div className="wrapper">
                 {quotes[currentQuote-1] && 
                   <Button className="floating-side-button-left p-0 b-none" variant={"transparent"} onClick={handleDecrease} onKeyDown={handleDecrease}><MdKeyboardArrowLeft/></Button>
                 }
                 {quotes[currentQuote+1] && 
                   <Button className="floating-side-button-right p-0 b-none" variant={"transparent"} onClick={handleIncrease} onKeyUp={handleIncrease}><MdKeyboardArrowRight/></Button>
                 }
-              </div>
               <Container className="font-poppins">
                 <h2>{quotes[currentQuote].quoteText}</h2>
               </Container>

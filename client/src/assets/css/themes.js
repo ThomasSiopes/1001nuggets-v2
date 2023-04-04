@@ -124,8 +124,10 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     .floating-side-button-left, .floating-side-button-right {
-        font-size: 2rem;
-        opacity: 0.15;
+        font-size: 3rem;
+        opacity: 0.1;
+        top:5%;
+        position: absolute;
     }
 
     .floating-side-button-left:hover, .floating-side-button-right:hover {
@@ -138,6 +140,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     .floating-side-button-right {
+        left: 80%;
         float: right;
     }
 
@@ -257,9 +260,7 @@ export const GlobalStyles = createGlobalStyle`
         color: ${(props) => props.theme.card.text};
     }
 
-    .wrapper {
-        position: absolute;
-        top: 40%;
-        width: 90%;
-    }
+    // .wrapper {
+    //     position: absolute;
+    // }
 `

@@ -47,7 +47,7 @@ function Author () {
                 <title>1001 Nuggets - {author.name}</title>
             </MetaTags>
             <Card>
-                <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} <Link className="link-theme" to={`/authors`}>Authors</Link> {`>`} {author.name}</Card.Header>
+                <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} Authors {`>`} {author.name}</Card.Header>
                 <Card.Body>
                     <Row>
                          {/* First Quote Column */}
