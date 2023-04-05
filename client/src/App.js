@@ -12,7 +12,7 @@ import { lightTheme, darkTheme, GlobalStyles } from "./assets/css/themes";
 
 //Components
 import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import ErrorPage from "./components/ErrorPage";
 
 //Pages
@@ -127,7 +127,7 @@ function App() {
               <Route component={ErrorPage}/>
             </Switch>
           </StyledApp>
-          <Footer/>
+          {/* <Footer/> */}
         </ThemeProvider>
       </Router>
     </ApolloProvider>

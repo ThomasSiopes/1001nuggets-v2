@@ -140,7 +140,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     .floating-side-button-right {
-        left: 80%;
+        left: 85%;
         float: right;
     }
 

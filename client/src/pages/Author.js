@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Redirect, useParams } from "react-router-dom";
+import { Redirect, useParams } from "react-router-dom";
 import { useQuery} from "@apollo/client";
 import MetaTags from "react-meta-tags";
 
@@ -47,7 +47,7 @@ function Author () {
                 <title>1001 Nuggets - {author.name}</title>
             </MetaTags>
             <Card>
-                <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} Authors {`>`} {author.name}</Card.Header>
+                <Card.Header>Home {`>`} Authors {`>`} {author.name}</Card.Header>
                 <Card.Body>
                     <Row>
                          {/* First Quote Column */}

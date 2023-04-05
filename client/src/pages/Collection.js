@@ -9,18 +9,6 @@ import QuoteCard from "../components/QuoteCard";
 
 import { QUERY_COLLECTION_REALID } from "../utils/queries";
 
-function shuffle(array) {
-    let currentIndex = array.length,  randomIndex;
-
-    while (currentIndex !== 0) {
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex--;
-    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
-    }
-
-    return array;
-}
-
 function Collection () {
     const { collectionRealId } = useParams();
     let {loading, data} = useQuery(QUERY_COLLECTION_REALID, {
@@ -36,8 +24,6 @@ function Collection () {
     const collection = data.collectionR;
 
     let quoteList = [...collection.quotes]
-
-    quoteList = shuffle(quoteList);
 
     let list1 
     let list2 
@@ -62,7 +48,7 @@ function Collection () {
                 <title>1001 Nuggets - {collection.name}</title>
             </MetaTags>
             <Card>
-                <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} <Link className="link-theme" to={`/collections`}>Collections</Link> {`>`} {collection.name}</Card.Header>
+                <Card.Header>Home {`>`} <Link className="link-theme" to={`/collections`}>Collections</Link> {`>`} {collection.name}</Card.Header>
                 <Card.Body>
                     <Row>
                          {/* First Quote Column */}

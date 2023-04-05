@@ -9,18 +9,6 @@ import QuoteCard from "../components/QuoteCard";
 
 import { QUERY_TOPIC_REALID } from "../utils/queries";
 
-// function shuffle(array) {
-//     let currentIndex = array.length,  randomIndex;
-
-//     while (currentIndex !== 0) {
-//         randomIndex = Math.floor(Math.random() * currentIndex);
-//         currentIndex--;
-//     [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
-//     }
-
-//     return array;
-// }
-
 function Topic () {
     const { topicRealId } = useParams();
     let {loading, data} = useQuery(QUERY_TOPIC_REALID, {
@@ -60,7 +48,7 @@ function Topic () {
                 <title>1001 Nuggets - {topic.name}</title>
             </MetaTags>
             <Card>
-                <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} <Link className="link-theme" to={`/topics`}>Topics</Link> {`>`} {topic.name}</Card.Header>
+                <Card.Header>Home {`>`} <Link className="link-theme" to={`/topics`}>Topics</Link> {`>`} {topic.name}</Card.Header>
                 <Card.Body>
                     <Row>
                          {/* First Quote Column */}

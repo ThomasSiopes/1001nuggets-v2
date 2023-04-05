@@ -4,11 +4,11 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const FooterPage = () => {
     return (
-        <div id="footer-supreme" className="bg-theme text-center text-white mt-4 py-4">
+        <div id="footer-supreme" className="bg-theme text-center text-white mt-4 py-2">
             <Container className="d-none d-md-block">
                 <Row>
                     <Col xs={5} md={4} className="d-flex font-Lato">
-                        <Container className="align-self-center">
+                        <Container className="align-self-center py-2">
                             <Link to={`/`} className="navbar-brand text-white"><img src="/assets/images/thumbnails/background-copy.png" id="footer-img" alt="Footer Icon"/></Link>
                         </Container>
                     </Col>
@@ -19,8 +19,6 @@ const FooterPage = () => {
                         <p className="d-none d-md-block mx-auto text-center align-self-center">Site</p>
                         <hr></hr>
                         <i>
-                            <p><Link className="text-white" to={`/`}>Home</Link></p>
-                            {/* <p><Link className="text-white" to={`/authors`}>Authors</Link></p> */}
                             <p><Link className="text-white" to={`/topics`}>Topics</Link></p>
                             <p><Link className="text-white" to={`/collections`}>Collections</Link></p>
                         </i>
@@ -31,7 +29,6 @@ const FooterPage = () => {
                 {/* <strong><Link className="text-white mx-3" to={`/authors`}>Authors</Link></strong> */}
                 <strong><Link className="text-white mx-3" to={`/topics`}>Topics</Link></strong>
                 <strong><Link className="text-white mx-3" to={`/collections`}>Collections</Link></strong>
-                <p>Filler, mobile footer content goes here.</p>
             </Container>
         </div>
     )
