@@ -31,6 +31,7 @@ function QuoteCard({quotes, quoteIndex}) {
   const handleShow = () => {
     setShow(true);
     setIndex(quoteIndex);
+    console.log(quoteIndex);
   };
 
   const handleSelect = (selectedIndex, e) => {
@@ -58,7 +59,7 @@ function QuoteCard({quotes, quoteIndex}) {
   //   else handleClose();
   // }
 
-  if(quotes && quotes[quoteIndex] && (quotes[currentQuote] || currentQuote === "special")) {
+  if(quotes) {
     return (
     <div>
       <Card>
@@ -122,7 +123,7 @@ function QuoteCard({quotes, quoteIndex}) {
         } */}
         <Carousel activeIndex={currentQuote} indicators={false} interval={null} onSelect={handleSelect} touch={true} wrap={false} prevIcon={<MdKeyboardArrowLeft/>} nextIcon={<MdKeyboardArrowRight/>}>
           {quotes.map((index) => (
-            <Carousel.Item>
+            <Carousel.Item key={index.quoteText}>
               <Container className="quote-card py-4">
                 <Container className="font-poppins">
                   <h2>{index.quoteText}</h2>
@@ -158,7 +159,7 @@ function QuoteCard({quotes, quoteIndex}) {
             </Carousel.Item>
           ))}
           <Carousel.Item>
-              <div className="text-center py-5">
+              <div className="text-center quote-card py-5">
                 <Button variant={"theme"} className="text-center" href="https://www.amazon.com">See more on Amazon</Button>
               </div>
           </Carousel.Item>
