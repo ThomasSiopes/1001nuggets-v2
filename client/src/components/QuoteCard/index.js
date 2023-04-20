@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Button, Card, Modal, Container } from 'react-bootstrap';
-import { useSwipeable } from 'react-swipeable'
+import { Button, Card, Modal, Container, Carousel } from 'react-bootstrap';
+// import { useSwipeable } from 'react-swipeable'
 import { Link } from 'react-router-dom';
 
 import { FiShare } from "react-icons/fi";
@@ -10,19 +10,19 @@ import TopicButton from "../TopicButton";
 import AuthorButton from "../AuthorButton";
 import CollectionButton from '../CollectionButton';
 
-let normIndex;
+// let normIndex;
 
 function QuoteCard({quotes, quoteIndex}) {
   const [show, setShow] = useState(false);
   const [currentQuote, setIndex] = useState(quoteIndex);
 
-  const handlers = useSwipeable({
-    onSwipedLeft: () => handleIncrease(),
-    onSwipedRight: () => {
-      if(currentQuote === "special") handleDecreaseSpecial()
-      else handleDecrease()
-    }
-  });
+  // const handlers = useSwipeable({
+  //   onSwipedLeft: () => handleIncrease(),
+  //   onSwipedRight: () => {
+  //     if(currentQuote === "special") handleDecreaseSpecial()
+  //     else handleDecrease()
+  //   }
+  // });
 
   const handleClose = () => {
     setShow(false);
@@ -33,26 +33,30 @@ function QuoteCard({quotes, quoteIndex}) {
     setIndex(quoteIndex);
   };
 
-  const handleIncrease = () => {
-    if(quotes[currentQuote+1]) setIndex(currentQuote+1); 
-    else {
-      if(currentQuote === "special") handleClose();
-      else {
-        normIndex = currentQuote;
-        setIndex("special");
-      }
-    }
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
   }
 
-  const handleDecrease = () => {
-    if(quotes[currentQuote-1]) setIndex(currentQuote-1);
-    else handleClose();
-  }
+  // const handleIncrease = () => {
+  //   if(quotes[currentQuote+1]) setIndex(currentQuote+1); 
+  //   else {
+  //     if(currentQuote === "special") handleClose();
+  //     else {
+  //       normIndex = currentQuote;
+  //       setIndex("special");
+  //     }
+  //   }
+  // }
 
-  const handleDecreaseSpecial = () => {
-    if(normIndex) setIndex(normIndex);
-    else handleClose();
-  }
+  // const handleDecrease = () => {
+  //   if(quotes[currentQuote-1]) setIndex(currentQuote-1);
+  //   else handleClose();
+  // }
+
+  // const handleDecreaseSpecial = () => {
+  //   if(normIndex) setIndex(normIndex);
+  //   else handleClose();
+  // }
 
   if(quotes && quotes[quoteIndex] && (quotes[currentQuote] || currentQuote === "special")) {
     return (
@@ -66,7 +70,7 @@ function QuoteCard({quotes, quoteIndex}) {
 
       <Modal show={show} onHide={handleClose} aria-labelledby="contained-modal-title-vcenter" centered>
         <Modal.Header className="text-theme" closeButton/>
-        {currentQuote === "special" ?
+        {/* {currentQuote === "special" ?
           <span>
             <Modal.Body className="quote-card py-5" {...handlers}>
               <Button className="floating-side-button-left p-0 b-none" variant={"transparent"} onClick={handleDecreaseSpecial} onKeyDown={handleDecreaseSpecial}><MdKeyboardArrowLeft/></Button>
@@ -115,7 +119,50 @@ function QuoteCard({quotes, quoteIndex}) {
             <Link className="mb-1 btn btn-theme" to={`/quote/${quotes[currentQuote].realID}`}>Share <FiShare/></Link>
           </Modal.Footer>
         </span>
-        }
+        } */}
+        <Carousel activeIndex={currentQuote} indicators={false} interval={null} onSelect={handleSelect} touch={true} wrap={false} prevIcon={<MdKeyboardArrowLeft/>} nextIcon={<MdKeyboardArrowRight/>}>
+          {quotes.map((index) => (
+            <Carousel.Item>
+              <Container className="quote-card py-4">
+                <Container className="font-poppins">
+                  <h2>{index.quoteText}</h2>
+                </Container>
+                <Container className="mt-3">
+                  <strong>
+                    {index.author && <AuthorButton type={"link"} name={index.author}/>}
+                  </strong>
+                </Container>
+              </Container>
+              <Modal.Footer className="justify-content-center align-items-center">
+                {index.topics.length > 0 && 
+                  <span> 
+                      {index.topics.map((topic) => (
+                          <TopicButton type={"button"} name={topic} key={index.quoteText + topic}/>
+                      ))}
+                  </span>
+                }
+              </Modal.Footer>
+              {index.collections[0] &&
+              <Modal.Footer className="justify-content-center"> 
+                <span>Under Collection:</span>
+                <span>
+                    {index.collections.map((collection) => (
+                        <CollectionButton type={"button"} name={collection} key={index.quoteText + collection}/>
+                    ))}
+                </span>
+              </Modal.Footer>
+              }
+              <Modal.Footer className="justify-content-center">
+                <Link className="mb-1 btn btn-theme" to={`/quote/${index.realID}`}>Share <FiShare/></Link>
+              </Modal.Footer>
+            </Carousel.Item>
+          ))}
+          <Carousel.Item>
+              <div className="text-center py-5">
+                <Button variant={"theme"} className="text-center" href="https://www.amazon.com">See more on Amazon</Button>
+              </div>
+          </Carousel.Item>
+        </Carousel>
       </Modal>
     </div>
   )}
