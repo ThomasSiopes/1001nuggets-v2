@@ -47,7 +47,7 @@ class NavBar extends React.Component {
                             <Row className="w-100">
                                 <Nav className="col-xs-12 col-md-4 col-lg-3 justify-content-center">
                                     <span className="hoverable me-1"><Link id="nav-topics" className="nav-link" to={`/topics`}><strong>Topics</strong></Link></span>
-                                    <span className="hoverable me-1"><Link id="nav-collections" className="nav-link" to={`/collections`}><strong>Collections</strong></Link></span>
+                                    {/* <span className="hoverable me-1"><Link id="nav-collections" className="nav-link" to={`/collections`}><strong>Collections</strong></Link></span> */}
                                 </Nav>
                                 <Col xs={2} lg={4} className="d-none d-md-flex"/>
                                 <Col xs={12} md={6} lg={5} className="align-items-center justify-content-center">

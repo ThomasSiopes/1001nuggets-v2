@@ -51,14 +51,12 @@ function QuoteCard({quotes, quoteIndex}) {
                   </strong>
                 </Container>
               </Container>
-              {index.topics && <Modal.Footer className="justify-content-center align-items-center">
-                {index.topics.length > 0 && 
+              {index.topics && index.topics.length > 0 && <Modal.Footer className="justify-content-center align-items-center"> 
                   <span> 
                       {index.topics.map((topic) => (
                           <TopicButton type={"button"} name={topic} theme={"theme"} key={index.quoteText + topic}/>
                       ))}
                   </span>
-                }
               </Modal.Footer>}
               {/* {index.collections[0] &&
               <Modal.Footer className="justify-content-center"> 
@@ -70,14 +68,12 @@ function QuoteCard({quotes, quoteIndex}) {
                 </span>
               </Modal.Footer>
               } */}
-              {index.nuggets && <Modal.Footer className="justify-content-center bg-theme">
-                {index.nuggets.length > 0 &&  
+              {index.nuggets && index.nuggets.length > 0 && <Modal.Footer className="justify-content-center bg-theme">
                   <span>
                       {index.nuggets.map((related) => (
                         <TopicButton type={"button"} name={related} theme={"weak"} key={index.quoteText + related}/>
                       ))}
                   </span>
-                }
               </Modal.Footer>}
               <Modal.Footer className="justify-content-center">
                 <Link className="mb-1 btn btn-theme" to={`/quote/${index.realID}`}>Share <FiShare/></Link>
