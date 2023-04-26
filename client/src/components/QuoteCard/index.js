@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Button, Card, Modal, Container, Carousel } from 'react-bootstrap';
-// import { useSwipeable } from 'react-swipeable'
 import { Link } from 'react-router-dom';
 
 import { FiShare } from "react-icons/fi";
@@ -8,21 +7,10 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 import TopicButton from "../TopicButton";
 import AuthorButton from "../AuthorButton";
-import CollectionButton from '../CollectionButton';
-
-// let normIndex;
 
 function QuoteCard({quotes, quoteIndex}) {
   const [show, setShow] = useState(false);
   const [currentQuote, setIndex] = useState(quoteIndex);
-
-  // const handlers = useSwipeable({
-  //   onSwipedLeft: () => handleIncrease(),
-  //   onSwipedRight: () => {
-  //     if(currentQuote === "special") handleDecreaseSpecial()
-  //     else handleDecrease()
-  //   }
-  // });
 
   const handleClose = () => {
     setShow(false);
@@ -38,27 +26,6 @@ function QuoteCard({quotes, quoteIndex}) {
     setIndex(selectedIndex);
   }
 
-  // const handleIncrease = () => {
-  //   if(quotes[currentQuote+1]) setIndex(currentQuote+1); 
-  //   else {
-  //     if(currentQuote === "special") handleClose();
-  //     else {
-  //       normIndex = currentQuote;
-  //       setIndex("special");
-  //     }
-  //   }
-  // }
-
-  // const handleDecrease = () => {
-  //   if(quotes[currentQuote-1]) setIndex(currentQuote-1);
-  //   else handleClose();
-  // }
-
-  // const handleDecreaseSpecial = () => {
-  //   if(normIndex) setIndex(normIndex);
-  //   else handleClose();
-  // }
-
   if(quotes) {
     return (
     <div>
@@ -71,57 +38,7 @@ function QuoteCard({quotes, quoteIndex}) {
 
       <Modal show={show} onHide={handleClose} aria-labelledby="contained-modal-title-vcenter" centered>
         <Modal.Header className="text-theme" closeButton/>
-        {/* {currentQuote === "special" ?
-          <span>
-            <Modal.Body className="quote-card py-5" {...handlers}>
-              <Button className="floating-side-button-left p-0 b-none" variant={"transparent"} onClick={handleDecreaseSpecial} onKeyDown={handleDecreaseSpecial}><MdKeyboardArrowLeft/></Button>
-              <div className="text-center">
-              <Button variant={"theme"} className="text-center" href="https://www.amazon.com">See more on Amazon</Button>
-              </div>
-            </Modal.Body>
-          </span>
-          :
-          <span>
-            <Modal.Body className="quote-card" {...handlers}>
-                  {quotes[currentQuote-1] && 
-                    <Button className="floating-side-button-left p-0 b-none" variant={"transparent"} onClick={handleDecrease} onKeyDown={handleDecrease}><MdKeyboardArrowLeft/></Button>
-                  }
-                    <Button className="floating-side-button-right p-0 b-none" variant={"transparent"} onClick={handleIncrease} onKeyUp={handleIncrease}><MdKeyboardArrowRight/></Button>
-                <Container className="font-poppins">
-                  <h2>{quotes[currentQuote].quoteText}</h2>
-                </Container>
-                <Container className="mt-3">
-                  <strong>
-                    {quotes[currentQuote].author && <AuthorButton type={"link"} name={quotes[currentQuote].author}/>}
-                  </strong>
-                </Container>
-          </Modal.Body>
-
-          <Modal.Footer className="justify-content-center align-items-center">
-              {quotes[currentQuote].topics.length > 0 && 
-                  <span> 
-                      {quotes[currentQuote].topics.map((topic) => (
-                          <TopicButton type={"button"} name={topic} key={quotes[currentQuote].quoteText + topic}/>
-                      ))}
-                  </span>
-              }
-          </Modal.Footer>
-          {quotes[currentQuote].collections[0] &&
-            <Modal.Footer className="justify-content-center"> 
-                <span>Under Collection:</span>
-                <span>
-                    {quotes[currentQuote].collections.map((collection) => (
-                        <CollectionButton type={"button"} name={collection} key={quotes[currentQuote].quoteText + collection}/>
-                    ))}
-                </span>
-            </Modal.Footer>
-          }
-          <Modal.Footer className="justify-content-center">
-            <Link className="mb-1 btn btn-theme" to={`/quote/${quotes[currentQuote].realID}`}>Share <FiShare/></Link>
-          </Modal.Footer>
-        </span>
-        } */}
-        <Carousel activeIndex={currentQuote} indicators={false} interval={null} onSelect={handleSelect} touch={true} wrap={false} prevIcon={<MdKeyboardArrowLeft/>} nextIcon={<MdKeyboardArrowRight/>}>
+        <Carousel activeIndex={currentQuote} indicators={false} interval={null} onSelect={handleSelect} touch={true} wrap={false} prevIcon={<MdKeyboardArrowLeft stroke={"black"} fill={"black"}/>} nextIcon={<MdKeyboardArrowRight stroke={"black"} fill={"black"}/>}>
           {quotes.map((index) => (
             <Carousel.Item key={index.quoteText}>
               <Container className="quote-card py-4">
@@ -134,16 +51,16 @@ function QuoteCard({quotes, quoteIndex}) {
                   </strong>
                 </Container>
               </Container>
-              <Modal.Footer className="justify-content-center align-items-center">
+              {index.topics && <Modal.Footer className="justify-content-center align-items-center">
                 {index.topics.length > 0 && 
                   <span> 
                       {index.topics.map((topic) => (
-                          <TopicButton type={"button"} name={topic} key={index.quoteText + topic}/>
+                          <TopicButton type={"button"} name={topic} theme={"theme"} key={index.quoteText + topic}/>
                       ))}
                   </span>
                 }
-              </Modal.Footer>
-              {index.collections[0] &&
+              </Modal.Footer>}
+              {/* {index.collections[0] &&
               <Modal.Footer className="justify-content-center"> 
                 <span>Under Collection:</span>
                 <span>
@@ -152,7 +69,16 @@ function QuoteCard({quotes, quoteIndex}) {
                     ))}
                 </span>
               </Modal.Footer>
-              }
+              } */}
+              {index.nuggets && <Modal.Footer className="justify-content-center bg-theme">
+                {index.nuggets.length > 0 &&  
+                  <span>
+                      {index.nuggets.map((related) => (
+                        <TopicButton type={"button"} name={related} theme={"weak"} key={index.quoteText + related}/>
+                      ))}
+                  </span>
+                }
+              </Modal.Footer>}
               <Modal.Footer className="justify-content-center">
                 <Link className="mb-1 btn btn-theme" to={`/quote/${index.realID}`}>Share <FiShare/></Link>
               </Modal.Footer>

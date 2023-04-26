@@ -30,6 +30,7 @@ const typeDefs = gql`
         topics: [String]!
         realID: String
         collections: [String]!
+        nuggets: [String]!
     }
 
     type Collection {

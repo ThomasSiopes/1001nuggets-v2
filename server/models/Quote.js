@@ -23,6 +23,11 @@ const quoteSchema = new Schema({
         {
             type: String,
         }
+    ],
+    nuggets: [
+        {
+            type: String,
+        }
     ]
 });
 

@@ -99,7 +99,7 @@ export const QUERY_TOPIC_NAME = gql`
                 author
                 topics
                 realID
-                collections
+                nuggets
             }
         }
     }
@@ -119,7 +119,7 @@ export const QUERY_TOPIC_ID = gql`
                 author
                 topics
                 realID
-                collections
+                nuggets
             }
         }
     }
@@ -138,7 +138,7 @@ export const QUERY_TOPIC_REALID = gql`
                 author
                 topics
                 realID
-                collections
+                nuggets
             }
         }
     }
