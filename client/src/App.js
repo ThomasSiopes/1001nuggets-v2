@@ -16,7 +16,7 @@ import NavBar from "./components/NavBar";
 import ErrorPage from "./components/ErrorPage";
 
 //Pages
-const Home = React.lazy(() => import ("./pages/Main"));
+// const Home = React.lazy(() => import ("./pages/Main"));
 const Author = React.lazy(() => import ("./pages/Author"));
 const Topic = React.lazy(() => import ("./pages/Topic"));
 const Quote = React.lazy(() => import ("./pages/Quote"));
@@ -81,7 +81,7 @@ function App() {
             <Switch>
               <Route exact path="/">
                 <React.Suspense fallback="Loading page...">
-                  <Home/>
+                  <TopicNav/>
                 </React.Suspense>
               </Route>
               <Route exact path="/author/:authorRealId">

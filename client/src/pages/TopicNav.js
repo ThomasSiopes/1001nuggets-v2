@@ -78,7 +78,7 @@ function Topics () {
                     </Card>
                 </Col>
                 <div className="col-05 p-0 text-center">
-                    <Row className="fitter px-0 py-2 mx-2 align-items-center justify-content-center">
+                    <Row className="fitter px-0 py-4 mx-2 align-items-center justify-content-center">
                         <Col xs={7} className="p-0 mx-0"><a href="#A" className="sidebar-text text-white">A</a></Col>
                         <Col xs={7} className="p-0 mx-0"><a href="#B" className="sidebar-text text-white">B</a></Col>
                         <Col xs={7} className="p-0 mx-0"><a href="#C" className="sidebar-text text-white">C</a></Col>
