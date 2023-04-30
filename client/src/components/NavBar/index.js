@@ -29,36 +29,16 @@ class NavBar extends React.Component {
             return(
                 <Navbar variant="dark" expand="md" className="py-3 mb-3">
                     <Container>
-                        <Link className="navbar-brand" to={`/`}><img id="nav-icon" className="" src="/assets/images/thumbnails/background-copy.png" alt="Logo"/></Link>
-                        {/* <Row className="w-100 align-items-center">
-                            <Col xs={2}>
-                                
-                            </Col>
-                            <Col>
-                                <span className="text-white">Topics</span>
-                            </Col>
-                            <Col>
-                                <span className="text-white">Nuggets</span>
-                            </Col>
-                            <Col> 
-                                <span className="text-white">Some People</span>
-                            </Col>
-                            <Col>
-                                <Form className="ms-auto" onSubmit={this.handleSearch}>
-                                    <input type="text" id="searchTerm" placeholder="Search..." className="me-2" onChange={this.handleChange}></input>
-                                    <input type="submit" className="btn btn-theme" value="Submit"/>
-                                </Form>
-                            </Col>
-                        </Row> */}
+                        <Link className="navbar-brand me-0 p-0" to={`/`}><img id="nav-icon" src="/assets/images/thumbnails/background-copy.png" alt="Logo"/></Link>
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-                        <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className="me-auto">
+                        <Navbar.Collapse id="basic-navbar-nav" className="mx-2">
+                            <Nav className="me-auto text-center">
                                 <Nav.Link>Topics</Nav.Link>
                                 <Nav.Link>Nuggets</Nav.Link>
                                 <Nav.Link>People</Nav.Link>
                             </Nav>
                             <Nav className="ms-auto">
-                                <Form onSubmit={this.handleSearch}>
+                                <Form className="text-center mt-2" onSubmit={this.handleSearch}>
                                     <input type="text" id="searchTerm" placeholder="Search..." className="me-2" onChange={this.handleChange}></input>
                                     <input type="submit" className="btn btn-theme" value="Submit"/>
                                 </Form>

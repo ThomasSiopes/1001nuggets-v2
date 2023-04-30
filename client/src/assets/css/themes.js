@@ -147,12 +147,11 @@ export const GlobalStyles = createGlobalStyle`
     .fitter {
         background: rgba(40,40,40,0.4);
         border-radius: 25px;
-        position: fixed;
-        top: 16vh;
-        bottom: 16vh;
-        line-height: 0.9rem;
+        position: sticky;
+        top: 13vh;
         max-width: 26px;
-        min-height:80%;
+        max-height: 90vh;
+        min-height: 74vh;
     }
 
     .font-poppins {
