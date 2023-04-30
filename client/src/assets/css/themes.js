@@ -135,7 +135,7 @@ export const GlobalStyles = createGlobalStyle`
         transition: all 0.5s ease;
     }
 
-    .floating-side-button-left {
+    .floating-side-button-left, .float-left {
         float: left;
     }
 
@@ -152,6 +152,7 @@ export const GlobalStyles = createGlobalStyle`
         bottom: 16vh;
         line-height: 0.9rem;
         max-width: 26px;
+        min-height:80%;
     }
 
     .font-poppins {
@@ -248,7 +249,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     .sidebar-text {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
 
     .subtext {
