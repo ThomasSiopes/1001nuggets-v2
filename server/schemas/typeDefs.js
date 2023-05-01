@@ -31,6 +31,7 @@ const typeDefs = gql`
         realID: String
         collections: [String]!
         nuggets: [String]!
+        somePeople: Boolean
     }
 
     type Collection {

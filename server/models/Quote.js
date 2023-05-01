@@ -28,7 +28,11 @@ const quoteSchema = new Schema({
         {
             type: String,
         }
-    ]
+    ],
+    somePeople: {
+        type: Boolean,
+        required: false
+    }
 });
 
 const Quote = model("Quote", quoteSchema);

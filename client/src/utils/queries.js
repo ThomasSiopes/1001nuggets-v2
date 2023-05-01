@@ -100,6 +100,7 @@ export const QUERY_TOPIC_NAME = gql`
                 topics
                 realID
                 nuggets
+                somePeople
             }
         }
     }
@@ -120,6 +121,7 @@ export const QUERY_TOPIC_ID = gql`
                 topics
                 realID
                 nuggets
+                somePeople
             }
         }
     }
@@ -139,6 +141,7 @@ export const QUERY_TOPIC_REALID = gql`
                 topics
                 realID
                 nuggets
+                somePeople
             }
         }
     }
@@ -153,6 +156,8 @@ export const QUERY_QUOTE_ALL = gql`
             topics
             realID
             collections
+            nuggets
+            somePeople
         }
     }
 `;
@@ -166,6 +171,8 @@ export const QUERY_QUOTE_ID = gql`
             topics
             realID
             collections
+            nuggets
+            somePeople
         }
     }
 `;
@@ -179,6 +186,8 @@ export const QUERY_QUOTE_REALID = gql`
             topics
             realID
             collections
+            nuggets
+            somePeople
         }
     }
 `;
