@@ -8,7 +8,7 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import TopicButton from "../TopicButton";
 import AuthorButton from "../AuthorButton";
 
-function QuoteCard({quotes, quoteIndex}) {
+function QuoteCard({quotes, quoteIndex, indexOrder}) {
   const [show, setShow] = useState(false);
   const [currentQuote, setIndex] = useState(quoteIndex);
 
@@ -17,8 +17,8 @@ function QuoteCard({quotes, quoteIndex}) {
     setIndex(quoteIndex);
   };
   const handleShow = () => {
-    setShow(true);
     setIndex(quoteIndex);
+    setShow(true);
     console.log(quoteIndex);
   };
 
@@ -39,44 +39,27 @@ function QuoteCard({quotes, quoteIndex}) {
       <Modal show={show} onHide={handleClose} aria-labelledby="contained-modal-title-vcenter" centered>
         <Modal.Header className="text-theme" closeButton/>
         <Carousel activeIndex={currentQuote} indicators={false} interval={null} onSelect={handleSelect} touch={true} wrap={false} prevIcon={<MdKeyboardArrowLeft stroke={"black"} fill={"black"}/>} nextIcon={<MdKeyboardArrowRight stroke={"black"} fill={"black"}/>}>
-          {quotes.map((index) => (
-            <Carousel.Item key={index.quoteText}>
+          {indexOrder.map((index) => (
+            <Carousel.Item key={quotes[index].quoteText}>
               <Container className="quote-card py-4">
                 <Container className="font-poppins">
-                  <h2>{index.quoteText}</h2>
+                  <h2>{quotes[index].quoteText}</h2>
                 </Container>
                 <Container className="mt-3">
                   <strong>
-                    {index.author && <AuthorButton type={"link"} name={index.author}/>}
+                    {quotes[index].author && <AuthorButton type={"link"} name={quotes[index].author}/>}
                   </strong>
                 </Container>
               </Container>
-              {index.topics && index.topics.length > 0 && <Modal.Footer className="justify-content-center align-items-center"> 
+              {quotes[index].topics && quotes[index].topics.length > 0 && <Modal.Footer className="justify-content-center align-items-center"> 
                   <span> 
-                      {index.topics.map((topic) => (
-                          <TopicButton type={"button"} name={topic} theme={"theme"} key={index.quoteText + topic}/>
-                      ))}
-                  </span>
-              </Modal.Footer>}
-              {/* {index.collections[0] &&
-              <Modal.Footer className="justify-content-center"> 
-                <span>Under Collection:</span>
-                <span>
-                    {index.collections.map((collection) => (
-                        <CollectionButton type={"button"} name={collection} key={index.quoteText + collection}/>
-                    ))}
-                </span>
-              </Modal.Footer>
-              } */}
-              {index.nuggets && index.nuggets.length > 0 && <Modal.Footer className="justify-content-center bg-theme">
-                  <span>
-                      {index.nuggets.map((related) => (
-                        <TopicButton type={"button"} name={related} theme={"weak"} key={index.quoteText + related}/>
+                      {quotes[index].topics.map((topic) => (
+                          <TopicButton type={"button"} name={topic} theme={"theme"} key={quotes[index].quoteText + topic}/>
                       ))}
                   </span>
               </Modal.Footer>}
               <Modal.Footer className="justify-content-center">
-                <Link className="mb-1 btn btn-theme" to={`/quote/${index.realID}`}>Share <FiShare/></Link>
+                <Link className="mb-1 btn btn-theme" to={`/quote/${quotes[index].realID}`}>Share <FiShare/></Link>
               </Modal.Footer>
             </Carousel.Item>
           ))}

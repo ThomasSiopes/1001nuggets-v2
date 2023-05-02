@@ -1,6 +1,5 @@
 const { AuthenticationError } = require("apollo-server-express");
 const { Author, Topic, Quote, GenLink, Scoreboard, Score, QOTD, Collection, User } = require("../models");
-const { signToken } = require("../utils/auth");
 
 const resolvers = {
     Query: {
@@ -83,62 +82,6 @@ const resolvers = {
             return Score.find();
         },
         QOTD: async () => {
-            return QOTD.find();
-        }
-    },
-
-    Mutation: {
-        // user info
-        addUser: async (parent, { username, email, password }) => {
-            const user = await User.create({ username, email, password });
-            const token = signToken(user);
-            return { token, user };
-        },
-        login: async (parent, { email, password }) => {
-          const user = await User.findOne({ email });
-        
-          if (!user) {
-            throw new AuthenticationError('No user found with this email address');
-          }
-        
-          const correctPw = await user.isCorrectPassword(password);
-        
-          if (!correctPw) {
-            throw new AuthenticationError('Incorrect credentials');
-          }
-        
-          const token = signToken(user);
-        
-          return { token, user };
-        },
-        updateBookmarks: async (parent, { newList, me }) => {
-            const user = await User.findOne({me});
-            user.bookmarkedQuotes = newList;
-
-            return { token, user };
-        },
-
-        // misc
-        modScore: async(parent, { value, score }) => {
-            return Score.findOneAndUpdate(
-                { value },
-                {
-                    $inc: { score }
-                },
-                {
-                    new: true,
-                    runValidators: true,
-                }
-            );
-        },
-        setQOTD: async(parent, { newID }) => {
-            try {
-                await QOTD.deleteMany();
-                await QOTD.create([{storedID: newID}])
-            } catch(err) {
-                console.error(err)
-                process.exit(1);
-            }
             return QOTD.find();
         }
     }

@@ -33,9 +33,9 @@ class NavBar extends React.Component {
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav" className="mx-2">
                             <Nav className="me-auto text-center">
-                                <Nav.Link>Topics</Nav.Link>
-                                <Nav.Link>Nuggets</Nav.Link>
-                                <Nav.Link>People</Nav.Link>
+                                <Nav.Link href="/topics">Topics</Nav.Link>
+                                <Nav.Link href="/">Nuggets</Nav.Link>
+                                <Nav.Link href="/somePeople">People</Nav.Link>
                             </Nav>
                             <Nav className="ms-auto">
                                 <Form className="text-center mt-2" onSubmit={this.handleSearch}>

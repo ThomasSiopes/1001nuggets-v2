@@ -24,6 +24,7 @@ const Collection = React.lazy(() => import ("./pages/Collection"));
 // const AuthorNav = React.lazy(()=> import ("./pages/AuthorNav"));
 const TopicNav = React.lazy(() => import ("./pages/TopicNav"));
 const CollectionNav = React.lazy(() => import ("./pages/CollectionNav"));
+const SomePeople = React.lazy(() => import ("./pages/SomePeople"));
 const SearchResult = React.lazy(() => import ("./pages/SearchResult"));
 
 const httpLink = createHttpLink({
@@ -117,6 +118,11 @@ function App() {
               <Route exact path="/collections">
                 <React.Suspense fallback="Loading page...">
                   <CollectionNav/>
+                </React.Suspense>
+              </Route>
+              <Route exact path="/somepeople">
+                <React.Suspense fallback="Loading page...">
+                  <SomePeople/>
                 </React.Suspense>
               </Route>
               <Route exact path="/search/:query">

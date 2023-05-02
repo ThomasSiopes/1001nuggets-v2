@@ -120,16 +120,6 @@ const typeDefs = gql`
         scores: [Score]
         QOTD: [QOTD]
     }
-
-    type Mutation {
-        addUser(username: String!, email: String!, password: String!): Auth
-        login(email: String!, password: String!): Auth
-        updateBookmarks(newList: [String], me: String!): Auth
-        
-        modScore(value: Int!, score: Int!): Score
-        setQOTD(newID: ID!): [QOTD]
-    }
-
 `;
 
 module.exports = typeDefs;
