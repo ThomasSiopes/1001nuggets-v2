@@ -31,7 +31,7 @@ function Topic () {
         indexList.push(i);
     }
 
-    if(!indexList || indexList == []) return <p>Loading...</p>
+    if(!indexList || indexList === []) return <p>Loading...</p>
 
     indexList = shuffle(indexList);
 

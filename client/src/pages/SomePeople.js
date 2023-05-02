@@ -21,11 +21,11 @@ function SomePeople () {
 
     let indexList = [];
 
-    for(let n = 0; n < quoteList; ++n) {
+    for(let n = 0; n < quoteList.length; ++n) {
         if(quoteList[n].somePeople) indexList.push(n);
     }
 
-    if(!indexList || indexList == []) return <p>Loading...</p>
+    if(!indexList || indexList === []) return <p>Loading...</p>
 
     indexList = shuffle(indexList);
 

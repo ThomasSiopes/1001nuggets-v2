@@ -2,7 +2,7 @@ function shuffle(array) {
     let currentIndex = array.length;
     let randInt;
 
-    while(currentIndex != 0) {
+    while(currentIndex !== 0) {
         randInt = Math.floor(Math.random() * currentIndex);
         --currentIndex;
 
