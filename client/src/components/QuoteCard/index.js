@@ -17,13 +17,11 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
     setIndex(quoteIndex);
   };
   const handleShow = () => {
-    setIndex(quoteIndex);
+    setIndex(indexOrder.indexOf(quoteIndex));
     setShow(true);
-    console.log("Quote Index: " + quoteIndex);
   };
 
   const handleSelect = (selectedIndex, e) => {
-    console.log("Selected Index: " + selectedIndex);
     setIndex(selectedIndex);
   }
 
