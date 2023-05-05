@@ -263,4 +263,8 @@ export const GlobalStyles = createGlobalStyle`
     // .wrapper {
     //     position: absolute;
     // }
+
+    .quote-card h2 {
+        font-size: 1.5rem;
+    }
 `

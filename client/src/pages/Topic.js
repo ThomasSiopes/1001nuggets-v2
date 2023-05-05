@@ -28,7 +28,7 @@ function Topic () {
     let indexList = [];
 
     for(let i = 0; i < topic.quotes.length; ++i) {
-        indexList.push(i);
+        if(!(topic.quotes[i].somePeople)) indexList.push(i);
     }
 
     if(!indexList || indexList === []) return <p>Loading...</p>

@@ -59,6 +59,13 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
                       ))}
                   </span>
               </Modal.Footer>}
+              {quotes[index].relatedTopics && quotes[index].relatedTopics.length > 0 && <Modal.Footer className="justify-content-center align-items-center"> 
+                  <span> 
+                      {quotes[index].relatedTopics.map((related) => (
+                          <TopicButton type={"button"} name={related} theme={"theme"} key={quotes[index].quoteText + related}/>
+                      ))}
+                  </span>
+              </Modal.Footer>}
               <Modal.Footer className="justify-content-center">
                 <Link className="mb-1 btn btn-theme" to={`/quote/${quotes[index].realID}`}>Share <FiShare/></Link>
               </Modal.Footer>
