@@ -162,6 +162,21 @@ export const QUERY_QUOTE_ALL = gql`
     }
 `;
 
+export const QUERY_QUOTE_SP = gql`
+    query getQuoteSP {
+        quoteSP {
+            _id
+            quoteText
+            author
+            topics
+            realID
+            collections
+            nuggets
+            somePeople
+        }
+    }
+`;
+
 export const QUERY_QUOTE_ID = gql`
     query getQuote($quoteId: ID!) {
         quote(quoteId: $quoteId) {

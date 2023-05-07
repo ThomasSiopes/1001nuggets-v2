@@ -108,6 +108,7 @@ const typeDefs = gql`
         collectionR(collectionRealId: String): Collection
         
         quotes: [Quote]
+        quoteSP: [Quote]
         quote(quoteId: ID): Quote
         quoteR(quoteRealId: String): Quote
         

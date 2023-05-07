@@ -7,22 +7,22 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 
 import QuoteCard from "../components/QuoteCard";
 
-import { QUERY_QUOTE_ALL } from "../utils/queries";
+import { QUERY_QUOTE_SP } from "../utils/queries";
 import shuffle from "../utils/shuffle";
 
 function SomePeople () {
-    let {loading, data} = useQuery(QUERY_QUOTE_ALL);
+    let {loading, data} = useQuery(QUERY_QUOTE_SP);
 
     if(loading) return <p>Loading...</p>
 
     if(!data) return (<Redirect to={`/404error`}/>);
 
-    const quoteList = data.quotes;
+    const quoteList = data.quoteSP;
 
     let indexList = [];
 
     for(let n = 0; n < quoteList.length; ++n) {
-        if(quoteList[n].somePeople) indexList.push(n);
+        indexList.push(n);
     }
 
     if(!indexList || indexList === []) return <p>Loading...</p>

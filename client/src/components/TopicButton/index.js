@@ -18,7 +18,7 @@ const TopicButton = ({type, name, theme}) => {
 
     if(type === "button") {
         return (
-            <Button to={`/topic/${topic.realID}`} className="mx-1 mb-2" variant={theme}>{name}</Button>
+            <Button href={`/topic/${topic.realID}`} className="mx-1 mb-2" variant={theme}>{name}</Button>
         )
     } else if(type === "link") {
         return (

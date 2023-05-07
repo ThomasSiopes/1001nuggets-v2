@@ -50,6 +50,9 @@ const resolvers = {
         quotes: async () => {
             return Quote.find();
         },
+        quoteSP: async (parent, { somePeople }) => {
+            return Quote.find({somePeople: true})
+        },
         quote: async (parent, { quoteId }) => {
             return Quote.findOne({ _id: quoteId })
         },
