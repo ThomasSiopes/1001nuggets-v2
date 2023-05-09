@@ -51,14 +51,14 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
                 </Container>
               </Container>
               {quotes[index].topics && quotes[index].topics.length > 0 && <Modal.Footer className="justify-content-center align-items-center"> 
-                  <span> 
+                  <span className="text-center"> 
                       {quotes[index].topics.map((topic) => (
                           <TopicButton type={"button"} name={topic} theme={"theme"} key={quotes[index].quoteText + topic}/>
                       ))}
                   </span>
               </Modal.Footer>}
               {quotes[index].relatedTopics && quotes[index].relatedTopics.length > 0 && <Modal.Footer className="justify-content-center align-items-center"> 
-                  <span> 
+                  <span className="text-center"> 
                       {quotes[index].relatedTopics.map((related) => (
                           <TopicButton type={"button"} name={related} theme={"theme"} key={quotes[index].quoteText + related}/>
                       ))}

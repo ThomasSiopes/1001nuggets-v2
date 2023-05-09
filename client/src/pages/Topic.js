@@ -23,7 +23,6 @@ function Topic () {
     if(!data) return (<Redirect to={`/404error`}/>);
 
     const topic = data.topicR;
-    console.log(topic.quotes);
 
     let indexList = [];
 

@@ -51,7 +51,7 @@ function Quote () {
                                 {quote.topics.length !== 0 && 
                                     <Card.Footer className="text-center py-3">
                                             {quote.topics.map((index) => (
-                                                <TopicButton key={index} type={"button"} name={index}/>
+                                                <TopicButton key={index} type={"button"} theme={"theme"} name={index}/>
                                             ))}
                                     </Card.Footer>
                                 }

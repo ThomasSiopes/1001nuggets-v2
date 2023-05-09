@@ -51,33 +51,12 @@ const StyledApp = styled.div``;
 function App() {
   const [theme] = useState("light");
 
-  // const themeDark = () => {
-  //   setTheme("dark");
-  // }
-
-  // const themeLight = () => {
-  //   setTheme("light");
-  // }
-
-  // const handleChange = () => {
-  //   let currentTheme = document.getElementById("theme-switch");
-  //   if(currentTheme && currentTheme.checked) { themeDark() } else { themeLight() }
-  // }
-
   return (
     <ApolloProvider client={client}>
       <Router>
         <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
           <GlobalStyles/>
           <NavBar/>
-          {/* <Container className="d-flex align-items-center mb-3">
-            <FaSun className="text-theme mx-2"/>
-            <label className="switch">
-              <input type="checkbox" id="theme-switch" onClick={() => handleChange()}/>
-              <span className="slider round"/>
-            </label>
-            <FaMoon className="text-theme mx-2"/>
-          </Container> */}
           <StyledApp className="mainBody">
             <Switch>
               <Route exact path="/">
