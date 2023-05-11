@@ -1,1 +1,4 @@
-[]
+[
+    {"name":"Collection1", "topics":["Ability", "Absence"], "realID":"Collection1"},
+    {"name":"Collection2", "topics":["Abstinence", "Academia"], "realID":"Collection2"}
+]

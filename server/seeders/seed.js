@@ -61,7 +61,7 @@ db.once("open", async () => {
                     { name: collections[n] },
                     {
                         $addToSet: {
-                            quotes: _id,
+                            topics: _id,
                         },
                     }
                 );

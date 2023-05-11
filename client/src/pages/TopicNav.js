@@ -54,7 +54,6 @@ function Topics () {
             <Row className="justify-content-center navPage-body">
                 <Col>
                     <Card>
-                        {/* <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} Topics</Card.Header> */}
                         <Card.Body>
                             <Row className="d-none d-md-block">
                                 <Col><input type="text" id="myInput" onKeyUp={searchFunction} placeholder="Search for topic names..." className="mb-3"/></Col>

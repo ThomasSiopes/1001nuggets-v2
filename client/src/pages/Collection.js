@@ -4,8 +4,7 @@ import { useQuery} from "@apollo/client";
 import MetaTags from "react-meta-tags";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
-
-import QuoteCard from "../components/QuoteCard";
+import TopicButton from "../components/TopicButton";
 
 import { QUERY_COLLECTION_REALID } from "../utils/queries";
 
@@ -23,106 +22,61 @@ function Collection () {
 
     const collection = data.collectionR;
 
-    let quoteList = [...collection.quotes]
-
-    let list1 
-    let list2 
-    let list3a
-    let list3b
-    if(quoteList) {
-        let result = [];
-        for(let i = 3; i > 0; --i) {
-            result.push(quoteList.splice(0, Math.ceil(quoteList.length / i)))
-        }
-        list1 = result[0];
-        list2 = result[2];
-        
-        let middleIndex = Math.ceil(result[1].length/2);
-        list3a = result[1].splice(0,middleIndex);
-        list3b = result[1].splice(-middleIndex);
-    }
+    console.log(collection)
 
     return (
         <Container>
             <MetaTags>
                 <title>1001 Nuggets - {collection.name}</title>
             </MetaTags>
-            <Card>
-                <Card.Header>Home {`>`} <Link className="link-theme" to={`/collections`}>Collections</Link> {`>`} {collection.name}</Card.Header>
-                <Card.Body>
-                    <Row>
-                         {/* First Quote Column */}
-                         <Col xs={12} md={6} lg={4}>
-                            {list1 && 
-                                <Row>
-                                    {list1.map((index) => (
-                                        <Col xs={12} className="mb-3" key={index.quoteText}>
-                                            <QuoteCard quotes={collection.quotes} quoteIndex={collection.quotes.indexOf(index)}/>
-                                        </Col>
-                                    ))}
-                                </Row>
-                            }
-                            {
-                                list3a &&
-                                <Row className="d-xs-block d-lg-none">
-                                    {list3a.map((index) => (
-                                        <Col xs={12} className="mb-3" key={"false" + index.quoteText}>
-                                            <QuoteCard quotes={collection.quotes} quoteIndex={collection.quotes.indexOf(index)}/>
-                                        </Col>
-                                    ))}
-                                </Row>
-                            }
-                        </Col>
-
-                        {/* Middle Quote Column */}
-                        <Col lg={4} className="d-none d-lg-block">
-                            {list3a && 
-                                <Row>
-                                    {list3a.map((index) => (
-                                        <Col xs={12} className="mb-3" key={index.quoteText}>
-                                            <QuoteCard quotes={collection.quotes} quoteIndex={collection.quotes.indexOf(index)}/>
-                                        </Col>
-                                    ))}
-                                </Row>
-                            }
-                            {list3b && 
-                                <Row>
-                                    {list3b.map((index) => (
-                                        <Col xs={12} className="mb-3" key={index.quoteText}>
-                                            <QuoteCard quotes={collection.quotes} quoteIndex={collection.quotes.indexOf(index)}/>
-                                        </Col>
-                                    ))}
-                                </Row>
-                            }
-                        </Col>
-                        
-                        {/* Last Quote Column */}
-                        <Col xs={12} md={6} lg={4}>
-                            {
-                                list3b &&
-                                <Row className="d-xs-block d-lg-none">
-                                    {list3b.map((index) => (
-                                        <Col xs={12} className="mb-3" key={"false" + index.quoteText}>
-                                            <QuoteCard quotes={collection.quotes} quoteIndex={collection.quotes.indexOf(index)}/>
-                                        </Col>
-                                    ))}
-                                </Row>
-                            }
-                            {list2 && 
-                                <Row>
-                                    {list2.map((index) => (
-                                        <Col xs={12} className="mb-3" key={index.quoteText}>
-                                            <QuoteCard quotes={collection.quotes} quoteIndex={collection.quotes.indexOf(index)}/>
-                                        </Col>
-                                    ))}
-                                </Row>
-                            }
-                        </Col>
+            <Row className="justify-content-center navPage-body">
+                <Col>
+                    <Card>
+                        <Card.Header>Home {`>`} <Link to={`/collections`} className="link-theme">Collections</Link> {`>`} {collection.name}</Card.Header>
+                        <Card.Body>
+                            <Row id="myGroup">
+                                {collection.topics.map((index) => (
+                                    <Col xs={12} key={index} className="text-center mb-2">
+                                        <TopicButton type={"link"} name={index} theme={"theme"}/>
+                                    </Col>
+                                ))}
+                            </Row>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <div className="col-05 p-0 text-center">
+                    <Row className="fitter px-0 py-3 ms-0 align-items-center justify-content-center">
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#A" className="text-white">A</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#B" className="text-white">B</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#C" className="text-white">C</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#D" className="text-white">D</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#E" className="text-white">E</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#F" className="text-white">F</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#G" className="text-white">G</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#H" className="text-white">H</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#I" className="text-white">I</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#J" className="text-white">J</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#K" className="text-white">K</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#L" className="text-white">L</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#M" className="text-white">M</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#N" className="text-white">N</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#O" className="text-white">O</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#P" className="text-white">P</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#Q" className="text-white">Q</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#R" className="text-white">R</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#S" className="text-white">S</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#T" className="text-white">T</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#U" className="text-white">U</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#V" className="text-white">V</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#W" className="text-white">W</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#X" className="text-white">X</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#Y" className="text-white">Y</a></div>
+                        <div className="p-0 mx-0 float-left sidebar-text"><a href="#Z" className="text-white">Z</a></div>
                     </Row>
-                </Card.Body>
-            </Card>
+                </div>
+            </Row>
         </Container>
-    )
+    );
 }
 
 export default Collection;

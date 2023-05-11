@@ -16,16 +16,15 @@ import NavBar from "./components/NavBar";
 import ErrorPage from "./components/ErrorPage";
 
 //Pages
-// const Home = React.lazy(() => import ("./pages/Main"));
 const Author = React.lazy(() => import ("./pages/Author"));
 const Topic = React.lazy(() => import ("./pages/Topic"));
 const Quote = React.lazy(() => import ("./pages/Quote"));
-const Collection = React.lazy(() => import ("./pages/Collection"));
-// const AuthorNav = React.lazy(()=> import ("./pages/AuthorNav"));
 const TopicNav = React.lazy(() => import ("./pages/TopicNav"));
 const CollectionNav = React.lazy(() => import ("./pages/CollectionNav"));
+const Collection = React.lazy(() => import ("./pages/Collection"));
 const SomePeople = React.lazy(() => import ("./pages/SomePeople"));
 const SearchResult = React.lazy(() => import ("./pages/SearchResult"));
+
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -89,11 +88,6 @@ function App() {
                   <TopicNav/>
                 </React.Suspense>
               </Route>
-              {/* <Route exact path="/authors">
-                <React.Suspense fallback="Loading page...">
-                  <AuthorNav/>
-                </React.Suspense>
-              </Route> */}
               <Route exact path="/collections">
                 <React.Suspense fallback="Loading page...">
                   <CollectionNav/>

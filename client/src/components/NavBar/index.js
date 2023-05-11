@@ -34,7 +34,7 @@ class NavBar extends React.Component {
                         <Navbar.Collapse id="basic-navbar-nav" className="mx-2">
                             <Nav className="me-auto text-center">
                                 <Nav.Link href="/topics">Topics</Nav.Link>
-                                <Nav.Link href="/">Nuggets</Nav.Link>
+                                <Nav.Link href="/collections">Collections</Nav.Link>
                                 <Nav.Link href="/somePeople">People</Nav.Link>
                             </Nav>
                             <Nav className="ms-auto">

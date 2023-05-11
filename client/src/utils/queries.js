@@ -26,7 +26,6 @@ export const QUERY_AUTHOR_NAME = gql`
                 author
                 topics
                 realID
-                collections
             }
             realID
         }
@@ -45,7 +44,6 @@ export const QUERY_AUTHOR_ID = gql`
                 author
                 topics
                 realID
-                collections
             }
             realID
         }
@@ -64,7 +62,6 @@ export const QUERY_AUTHOR_REALID = gql`
                 author
                 topics
                 realID
-                collections
             }
             realID
         }
@@ -155,7 +152,6 @@ export const QUERY_QUOTE_ALL = gql`
             author
             topics
             realID
-            collections
             nuggets
             somePeople
         }
@@ -170,7 +166,6 @@ export const QUERY_QUOTE_SP = gql`
             author
             topics
             realID
-            collections
             nuggets
             somePeople
         }
@@ -185,7 +180,6 @@ export const QUERY_QUOTE_ID = gql`
             author
             topics
             realID
-            collections
             nuggets
             somePeople
         }
@@ -200,7 +194,6 @@ export const QUERY_QUOTE_REALID = gql`
             author
             topics
             realID
-            collections
             nuggets
             somePeople
         }
@@ -211,16 +204,8 @@ export const QUERY_COLLECTION_ALL = gql`
     query getAllCollections {
         collections {
             name
-            sortedName
             realID
-            quotes {
-                _id
-                quoteText
-                topics
-                collections
-                author
-                realID
-            }
+            topics
         }
     }
 `;
@@ -230,16 +215,8 @@ export const QUERY_COLLECTION_NAME = gql`
         collectionName(name: $name) {
             _id
             name
-            sortedName
             realID
-            quotes {
-                _id
-                quoteText
-                author
-                topics
-                collections
-                realID
-            }
+            topics
         }
     }
 `;
@@ -249,16 +226,8 @@ export const QUERY_COLLECTION_ID = gql`
         collectionID(collectionId: $collectionId) {
             _id
             name
-            sortedName
             realID
-            quotes {
-                _id
-                quoteText
-                author
-                topics
-                collections
-                realID
-            }
+            topics
         }
     }
 `;
@@ -268,38 +237,11 @@ export const QUERY_COLLECTION_REALID = gql`
         collectionR(collectionRealId: $collectionRealId) {
             _id
             name
-            sortedName
             realID
-            quotes {
-                _id
-                quoteText
-                author
-                topics
-                collections
-                realID
-            }
+            topics
         }
     }
 `;
-
-export const QUERY_ACCOUNT_ME = gql`
-    query findMe {
-        me {
-            _id
-            username
-            email
-            password
-            bookmarkedQuotes {
-                _id
-                quoteText
-                author
-                topics
-                collections
-                realID
-            }
-        }
-    }
-`
 
 export const QUERY_LINKS = gql`
     query getAllLinks {
@@ -307,39 +249,6 @@ export const QUERY_LINKS = gql`
             type
             text
             link
-        }
-    }
-`;
-
-export const QUERY_SCOREBOARD = gql`
-    query getScoreboard {
-        scoreboard {
-            _id
-            questions {
-                text
-                choices {
-                    name
-                    value
-                }
-            }
-        }
-    }
-`;
-
-export const QUERY_SCORES = gql`
-    query getScores {
-        scores {
-            name
-            value
-            score
-        }
-    }
-`;
-
-export const GET_QOTD = gql`
-    query getQOTD {
-        QOTD {
-            storedID
         }
     }
 `;
