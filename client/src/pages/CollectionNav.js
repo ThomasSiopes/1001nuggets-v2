@@ -19,11 +19,12 @@ function Collections() {
                 <title>1001 Nuggets - Collections</title>
             </MetaTags>
             <Card>
+                <Card.Header>Home {`>`} Collections</Card.Header>
                 <Card.Body>
                     <Row>
                         {collectionList.map((index) => (
                             <Col xs={12} sm={6} md={4} className="mb-3" key={index.name}>
-                                <Button variant={"theme"} className="btn-block" href={`/collection/${index.realID}`}>{index.name}</Button>
+                                <Button variant={"theme"} className="btn-block py-5" href={`/collection/${index.realID}`}>{index.name}</Button>
                             </Col>
                         ))}
                     </Row>

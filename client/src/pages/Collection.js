@@ -20,9 +20,12 @@ function Collection () {
 
     if(!data) return (<Redirect to={`/404error`}/>);
 
-    const collection = data.collectionR;
-
-    console.log(collection)
+    const collection = data.collectionR
+    let topicList = []
+    for(let n = 0; n < collection.topics.length; ++n) {
+        if(n == 0 || (n > 0 && collection.topics[n].charAt(0) !== collection.topics[n-1].charAt(0))) topicList.push({"name":collection.topics[n], "firstLetter":true})
+        else topicList.push({"name":collection.topics[n], "firstLetter":false})
+    }
 
     return (
         <Container>
@@ -35,9 +38,16 @@ function Collection () {
                         <Card.Header>Home {`>`} <Link to={`/collections`} className="link-theme">Collections</Link> {`>`} {collection.name}</Card.Header>
                         <Card.Body>
                             <Row id="myGroup">
-                                {collection.topics.map((index) => (
-                                    <Col xs={12} key={index} className="text-center mb-2">
-                                        <TopicButton type={"link"} name={index} theme={"theme"}/>
+                                {topicList.map((index) => (
+                                    <Col xs={12} key={index.name} className="text-center mb-2">
+                                        {index.firstLetter &&
+                                            <div>
+                                                <strong><p id={index.name.charAt(0)}>{index.name.charAt(0)}</p></strong>
+                                                <hr/>
+                                            </div>
+                                        }
+                                        <strong><TopicButton type={"link"} name={index.name} theme={"theme"}/></strong>
+                                        <hr/>
                                     </Col>
                                 ))}
                             </Row>
