@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import { Container } from "react-bootstrap";
 import styled, { ThemeProvider } from "styled-components";
 // import { FaSun, FaMoon } from "react-icons/fa";
-import { lightTheme, darkTheme, GlobalStyles } from "./assets/css/themes";
+import { lightTheme, redTheme, blueTheme, GlobalStyles } from "./assets/css/themes";
 
 //Components
 import NavBar from "./components/NavBar";
@@ -53,7 +53,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+        <ThemeProvider theme={theme === "light" ? blueTheme : lightTheme}>
           <GlobalStyles/>
           <NavBar/>
           <StyledApp className="mainBody">

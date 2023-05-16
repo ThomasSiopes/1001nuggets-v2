@@ -24,6 +24,54 @@ export const lightTheme = {
     },
 }
 
+export const redTheme = {
+    c1: "#622",
+    c2: "#222",
+    c3: "#ffefdb",
+    pic: "background",
+    card: {
+        bg: "#fff",
+        text: "#000",
+        quote: "#F8F8F5",
+    },
+    button: {
+        c1: "#733",
+        c2: "#511",
+    },
+    link: {
+        c1: "#733",
+        c2: "#511",
+    },
+    weakButton: {
+        c1: "#fff",
+        c2: "#eee",
+    },
+}
+
+export const blueTheme = {
+    c1: "#339",
+    c2: "#222",
+    c3: "#eee",
+    pic: "background",
+    card: {
+        bg: "#fff",
+        text: "#000",
+        quote: "#F8F8F5",
+    },
+    button: {
+        c1: "#44A",
+        c2: "#228",
+    },
+    link: {
+        c1: "#44A",
+        c2: "#228",
+    },
+    weakButton: {
+        c1: "#fff",
+        c2: "#eee",
+    },
+}
+
 export const darkTheme = {
     c1: "#262",
     c2: "#222",

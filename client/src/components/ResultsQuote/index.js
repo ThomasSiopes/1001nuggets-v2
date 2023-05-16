@@ -7,17 +7,25 @@ import QuoteCard from "../QuoteCard";
 import { QUERY_QUOTE_ALL } from '../../utils/queries';
 
 const ResultsQuote = ({input}) => {
-    let quoteList, newList = [];
+    let quoteList, newList = [], listOrder=[];
 
     let {loading, data} = useQuery(QUERY_QUOTE_ALL);
+
+    if(loading) return <p>Loading...</p>
+
     quoteList = data;
+
+    console.log("Results: ");
+    console.log(quoteList);
 
     input = input.toUpperCase();
     
-    if(loading) return <p>Loading...</p>
-
+    let counter = 0;
     for(let index of quoteList.quotes) {
-        if(index.quoteText.toUpperCase().indexOf(input) > -1) newList.push(index);
+        if(index.quoteText.toUpperCase().indexOf(input) > -1) {
+            newList.push(index);
+            listOrder.push(counter++)
+        }
     }
 
     return (newList[0] ?
@@ -28,7 +36,7 @@ const ResultsQuote = ({input}) => {
                 <Row className="text-center">
                     {newList.map((index) => (
                         <Col xs={12} md={6} xl={4} className="mb-3" key={index.name + index.quoteText}>
-                            <QuoteCard quotes={newList} quoteIndex={newList.indexOf(index)}/>
+                            <QuoteCard quotes={newList} quoteIndex={newList.indexOf(index)} indexOrder={listOrder}/>
                         </Col>
                     ))}
                 </Row>

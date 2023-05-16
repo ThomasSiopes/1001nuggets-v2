@@ -23,7 +23,7 @@ function Collection () {
     const collection = data.collectionR
     let topicList = []
     for(let n = 0; n < collection.topics.length; ++n) {
-        if(n == 0 || (n > 0 && collection.topics[n].charAt(0) !== collection.topics[n-1].charAt(0))) topicList.push({"name":collection.topics[n], "firstLetter":true})
+        if(n === 0 || (n > 0 && collection.topics[n].charAt(0) !== collection.topics[n-1].charAt(0))) topicList.push({"name":collection.topics[n], "firstLetter":true})
         else topicList.push({"name":collection.topics[n], "firstLetter":false})
     }
 
