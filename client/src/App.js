@@ -53,7 +53,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <ThemeProvider theme={theme === "light" ? blueTheme : lightTheme}>
+        <ThemeProvider theme={theme === "light" ? lightTheme : lightTheme}>
           <GlobalStyles/>
           <NavBar/>
           <StyledApp className="mainBody">

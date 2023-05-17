@@ -166,6 +166,11 @@ export const GlobalStyles = createGlobalStyle`
         font-weight: 600;
     }
 
+    .carousel-control-prev, .carousel-control-next {
+        top: 1rem;
+        bottom: auto;
+    }
+
     .col-05 {
         flex: 0 0 auto;
         width: 4%;
