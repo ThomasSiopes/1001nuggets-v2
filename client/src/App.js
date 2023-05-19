@@ -5,15 +5,12 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 //Styles
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import { Container } from "react-bootstrap";
 import styled, { ThemeProvider } from "styled-components";
-// import { FaSun, FaMoon } from "react-icons/fa";
 import { lightTheme, redTheme, blueTheme, GlobalStyles } from "./assets/css/themes";
 
 //Components
-import NavBar from "./components/NavBar";
-// import Footer from "./components/Footer";
 import ErrorPage from "./components/ErrorPage";
+const NavBar = React.lazy(() => import("./components/NavBar"));
 
 //Pages
 const Author = React.lazy(() => import ("./pages/Author"));
@@ -55,7 +52,7 @@ function App() {
       <Router>
         <ThemeProvider theme={theme === "light" ? lightTheme : lightTheme}>
           <GlobalStyles/>
-          <NavBar/>
+          <React.Suspense fallback="Loading navbar..."><NavBar/></React.Suspense>
           <StyledApp className="mainBody">
             <Switch>
               <Route exact path="/">
