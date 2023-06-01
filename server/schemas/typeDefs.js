@@ -41,53 +41,9 @@ const typeDefs = gql`
         topics: [String]!
     }
 
-    type User {
-        _id: ID
-        username: String
-        email: String
-        password: String
-        bookmarkedQuotes: [Quote]!
-    }
-
-    type Auth {
-        token: ID!
-        user: User
-    }
-
     type Link {
         type: String
         link: String
-    }
-
-    type GenLink {
-        type: String
-        text: String
-        link: String
-    }
-
-    type Scoreboard {
-        _id: ID
-        questions: [Question]!
-    }
-
-    type Question {
-        text: String
-        choices: [Option]!
-    }
-
-    type Score {
-        name: String
-        value: Int
-        score: Int
-    }
-
-    type Option {
-        name: String
-        value: Int
-    }
-
-    type QOTD {
-        storedID: ID
     }
 
     type Query {
@@ -100,6 +56,7 @@ const typeDefs = gql`
         topicName(name: String): Topic
         topicID(topicId: ID): Topic
         topicR(topicRealId: String): Topic
+        topicLetter(letter: String): [Topic]
         
         collections: [Collection]
         collectionName(name: String): Collection
@@ -110,15 +67,6 @@ const typeDefs = gql`
         quoteSP: [Quote]
         quote(quoteId: ID): Quote
         quoteR(quoteRealId: String): Quote
-        
-        users: [User]
-        user(username: String!): User
-        me: User
-
-        genLinks: [GenLink]
-        scoreboard: [Scoreboard]
-        scores: [Score]
-        QOTD: [QOTD]
     }
 `;
 

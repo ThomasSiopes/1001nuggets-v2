@@ -31,6 +31,10 @@ const resolvers = {
         topicR: async (parent, { topicRealId }) => {
             return Topic.findOne({ realID: topicRealId }).populate('quotes');;
         },
+
+        topicLetter: async (parent, { letter }) => {
+            return Topic.find({sortedName: {$regex: '^' + letter, $options: 'i'}})
+        },
         
         // collections
         collections: async () => {
@@ -59,34 +63,6 @@ const resolvers = {
         quoteR: async (parent, { quoteRealId }) => {
             return Quote.findOne({ realID: quoteRealId })
         },
-
-        // user info
-        users: async () => {
-            return User.find().populate('bookmarkedQuotes');
-        },
-        user: async (parent, { username }) => {
-          return User.findOne({ username }).populate('bookmarkedQuotes')
-        },
-        me: async (parent, args, context) => {
-          if (context.user) {
-            return User.findOne({ _id: context.user._id }).populate('bookmarkedQuotes');
-          }
-          throw new AuthenticationError('You need to be logged in!');
-        },
-        
-        // misc
-        genLinks: async () => {
-            return GenLink.find();
-        },
-        scoreboard: async () => {
-            return Scoreboard.find();
-        },
-        scores: async () => {
-            return Score.find();
-        },
-        QOTD: async () => {
-            return QOTD.find();
-        }
     }
 }
 

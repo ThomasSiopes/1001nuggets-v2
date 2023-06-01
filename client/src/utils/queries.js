@@ -144,6 +144,17 @@ export const QUERY_TOPIC_REALID = gql`
     }
 `;
 
+export const QUERY_TOPIC_LETTER = gql`
+    query topicLetter($letter: String!) {
+        topicLetter(letter: $letter) {
+          _id
+          name
+          realID
+          sortedName
+        }
+    }
+`;
+
 export const QUERY_QUOTE_ALL = gql`
     query getAllQuotes {
         quotes {
