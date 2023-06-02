@@ -13,13 +13,21 @@ function TopicNavInst({letter}) {
 
     console.log(data)
 
+    let sortedList = data.topicLetter.map((item) => Object.assign({}, item, {selected:false}))
+    
+    sortedList = sortedList.sort(function(a,b) {
+        if(a.sortedName < b.sortedName) return -1;
+        if(a.sortedName > b.sortedName) return 1;
+        return 0;
+    });
+
     return(
         <div className="text-center mb-2">
             <div>
                 <strong id={letter}>{letter.toUpperCase()}</strong>
                 <hr/>
             </div>
-            {data.topicLetter.map((index) => (
+            {sortedList.map((index) => (
                 <div key={letter + index.name}>
                     <p><strong><Link to={`/topic/${index.realID}`} className="link-theme">{index.name}</Link></strong></p>
                     <hr/>
