@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 //Styles
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styled, { ThemeProvider } from "styled-components";
-import { lightTheme, redTheme, blueTheme, GlobalStyles } from "./assets/css/themes";
+import { lightTheme,  GlobalStyles } from "./assets/css/themes";
 
 //Components
 import ErrorPage from "./components/ErrorPage";

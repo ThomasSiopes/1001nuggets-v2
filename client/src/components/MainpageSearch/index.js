@@ -14,7 +14,6 @@ const MainPageSearch = () => {
     for(let index of data.authors){
         authorList.push(index)
     }
-    // console.log(authorList);
 
     authorList = authorList.sort((a, b) => a.name.localeCompare(b.name));
 
@@ -24,8 +23,6 @@ const MainPageSearch = () => {
         filter = input.value.toUpperCase();
         group = document.getElementById("myGroup");
         elements = group.getElementsByTagName('div');
-
-        console.log(elements)
 
         for (let i = 0; i < elements.length; i++) {
             a = elements[i].getElementsByTagName("a")[0];

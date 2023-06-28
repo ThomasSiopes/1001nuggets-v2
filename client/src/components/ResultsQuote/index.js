@@ -15,9 +15,6 @@ const ResultsQuote = ({input}) => {
 
     quoteList = data;
 
-    console.log("Results: ");
-    console.log(quoteList);
-
     input = input.toUpperCase();
     
     let counter = 0;

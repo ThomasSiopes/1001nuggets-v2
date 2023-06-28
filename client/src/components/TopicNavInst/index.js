@@ -11,8 +11,6 @@ function TopicNavInst({letter}) {
 
     if(!data) return <span>...</span>;
 
-    console.log(data)
-
     let sortedList = data.topicLetter.map((item) => Object.assign({}, item, {selected:false}))
     
     sortedList = sortedList.sort(function(a,b) {

@@ -35,19 +35,6 @@ function Topics () {
                                 <Col><input type="text" id="myInput" onKeyUp={searchFunction} placeholder="Search for topic names..." className="mb-3"/></Col>
                             </Row>
                             <Row id="myGroup">
-                                {/* {topicList.map((index) => (
-                                    <Col xs={12} key={index.name} className="text-center mb-2">
-                                        {index.firstLetter &&
-                                            <div>
-                                                <strong><p id={index.sortedName.charAt(0)}>{index.sortedName.charAt(0)}</p></strong>
-                                                <hr/>
-                                            </div>
-                                        }
-                                        <p><strong><Link to={`/topic/${index.realID}`} className="link-theme">{index.name}</Link></strong></p>
-                                        <p className="subtext"> {`(`} {index.quotes.length} {index.quotes.length === 1 ? "quote" : "quotes"} {`)`}</p>
-                                        <hr/>
-                                    </Col>
-                                ))} */}
                                 {alphabet.map((index) => (
                                     <TopicNavInst key={index} letter={index}/>
                                 ))
