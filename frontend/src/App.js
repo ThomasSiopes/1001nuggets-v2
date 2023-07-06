@@ -11,7 +11,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const NavBar = React.lazy(() => import("./components/NavBar"));
 
 //Pages
-const Main = React.lazy(() => import("./pages/main"));
 const Author = React.lazy(() => import ("./pages/Author"));
 const Topic = React.lazy(() => import ("./pages/Topic"));
 const Quote = React.lazy(() => import ("./pages/Quote"));
@@ -43,14 +42,14 @@ function App () {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <React.Suspense fallback="Loading navbar..."><NavBar/></React.Suspense>
+        <NavBar/>
         <Routes>
-          <Route exact path="/" element={<Main/>}/>
+          <Route exact path="/" element={<TopicNav/>}/>
           <Route exact path="/topics" element={<TopicNav/>}/>
           <Route exact path="/topic/:topicRealId" element={<Topic/>}/>
 
           <Route exact path="/author/:authorRealId" element={<Author/>}/>
-          {/* <Route exact path="/somepeople" element={<SomePeople/>}/> */}
+          <Route exact path="/somepeople" element={<SomePeople/>}/>
 
           <Route exact path="/quote/:quoteRealId" element={<Quote/>}/>
 

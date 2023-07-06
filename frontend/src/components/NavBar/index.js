@@ -23,14 +23,13 @@ class NavBar extends React.Component {
     render() {
         if(this.state.go) {
             this.setState({go: false});
-            // return <Redirect to={`/search/${this.state.value}`}/>
             return redirect(`/search/${this.state.value}`)
         }
         else {        
             return(
                 <Navbar variant="dark" expand="md" className="py-3 mb-3">
                     <Container>
-                        <Link className="navbar-brand me-0 p-0" to={`/`}><img id="nav-icon" src="/assets/images/thumbnails/background-copy.png" alt="Logo"/></Link>
+                        <Link className="navbar-brand me-0 p-0" to={`/`}><img id="nav-icon" src="/icon100opTrans.png" alt="Logo"/></Link>
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav" className="mx-2">
                             <Nav className="me-auto text-center">

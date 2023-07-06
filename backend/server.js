@@ -14,16 +14,24 @@ const server = new ApolloServer({
     resolvers
 });
 
+async function middleWare() {
+    await server.start();
+
+    server.applyMiddleware({ app });
+}
+
+middleWare();
+
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static("build"));
+app.use(express.static("public"));
 
 if(process.env.NODE_ENV === "production") {
-    app.use(express.static(path.join(_dirname, "../frontend/build")));
+    app.use(express.static(path.join(__dirname, "../frontend/build")));
 }
 
 app.get("*", (req, res) => {
-    res.sendFile(path.join(_dirname, "../frontend/build/index.html"));
+    res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
 });
 
 db.once("open", () => {

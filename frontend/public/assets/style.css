@@ -1,0 +1,219 @@
+.navbar {
+    background-color: #262!important;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+#banner, .formInput, img, #myInput {
+    width: 100%!important;
+}
+
+.bg-theme {
+    background-color: #262!important;
+}
+
+body { 
+    background-color: #ddd!important;
+}
+
+.btn-block {
+    display: block!important;
+    width: 100%!important;
+    min-height: 100%!important;
+}
+
+.btn:focus {
+    box-shadow: none!important;
+}
+
+.btn-theme {
+    color: #fff!important;
+    background-color: #373!important;
+    border: none!important;
+}
+
+.btn-theme:hover, .btn-theme:focus {
+    color: #fff!important;
+    background-color: #151!important;
+    border: none!important;
+}
+
+.btn-weak {
+    color: #000!important;
+    background-color: #fff!important;
+    border: 0.1rem solid!important;
+    border-color: #ccc!important;
+}
+
+.btn-weak:hover {
+    color: #000!important;
+    background-color: #eee!important;
+    border: 0.1rem solid!important;
+    border-color: #ccc!important;
+}
+
+.card, .modal-content, #quote-page {
+    background-color: #fff!important;
+    color: #000!important;
+}
+
+.card-footer .btn {
+    border-color: #fff!important;
+}
+
+.card-title {
+    font-weight: 600!important;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    top: 1rem!important;
+    bottom: auto!important;
+}
+
+.col-05 {
+    flex: 0 0 auto!important;
+    width: 4%!important;
+}
+
+.floating-side-button-left, .floating-side-button-right {
+    font-size: 3rem!important;
+    opacity: 0.1!important;
+    top:5%!important;
+    position: absolute!important;
+}
+
+.floating-side-button-left:hover, .floating-side-button-right:hover {
+    opacity: 0.6!important;
+    transition: all 0.5s ease!important;
+}
+
+.floating-side-button-left, .float-left {
+    float: left!important;
+}
+
+.floating-side-button-right {
+    left: 85%!important;
+    float: right!important;
+}
+
+.fitter {
+    background: rgba(40,40,40,0.4)!important;
+    border-radius: 25px!important;
+    position: sticky!important;
+    top: 13vh!important;
+    max-width: 26px!important;
+    max-height: 90vh!important;
+    min-height: 74vh!important;
+}
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif!important;
+}
+
+#footer-img {
+    width: 70%!important;
+}
+
+.link-theme {
+    color: #373!important;
+}
+
+.link-theme:hover {
+    color: #151!important;
+}
+
+.mainBody {
+    min-height: 67vh!important;
+}
+
+.navbar, .footer {
+    width: 100%!important;
+}
+
+.navbar-brand {
+    max-width: 7%!important;
+}
+
+.navbar-toggler:focus, .btn-light:focus, .btn-check:focus, .btn-primary:focus, .btn-weak:focus {
+    box-shadow: none!important;
+}
+
+.navPage-body {
+    max-width: 100%
+}
+
+.hoverable {
+    border-top: 0.1rem solid!important;
+    border-bottom: 0.1rem solid!important;
+    border-color: #262!important;
+}
+
+.hoverable:hover {
+    border-color: white!important;
+    transition: all 0.7s ease!important;
+}
+
+.quote-body, .quote-preview {
+    font-weight: 500!important;
+}
+
+#quote-page, .quote-card {
+    background-image: url("/assets/images/thumbnails/${(props) => props.theme.pic}.png")!important;
+    background-size: contain!important;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+    background-color: #f8f8f5!important;
+}
+
+.smaller-text {
+    font-size: 14px!important;
+    font-weight: 650!important;
+}
+
+.share-button {
+    font-size: 1.8rem!important;
+    transition: all 0.4s ease!important;
+}
+
+#share-twitter {
+    color: #1DA1F2 !important;
+}
+
+#share-twitter:hover {
+    color: #0d476b !important;
+}
+
+#share-facebook {
+    color: #4867AA !important;
+}
+
+#share-facebook:hover {
+    color: #1c315e !important;
+}
+
+#share-reddit {
+    color: #fc5011 !important;
+}
+
+#share-reddit:hover {
+    color: #782c10 !important;
+}
+
+.sidebar-text {
+    font-size: 0.5rem!important;
+}
+
+.subtext {
+    color: #777!important;
+    font-size: 14px!important;
+}
+
+.text-theme {
+    color: #000!important;
+}
+
+.quote-card h2 {
+    font-size: 1.5rem!important;
+}
