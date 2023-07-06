@@ -2,23 +2,24 @@ import React from "react";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import { ApolloClient, ApolloProvider, createHttpLink, InMemoryCache } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
+import "./assets/style.css";
 
 //Styles
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Components
 // import ErrorPage from "./components/ErrorPage";
-const NavBar = React.lazy(() => import("./components/NavBar"));
+import NavBar from "./components/NavBar";
 
 //Pages
-const Author = React.lazy(() => import ("./pages/Author"));
-const Topic = React.lazy(() => import ("./pages/Topic"));
-const Quote = React.lazy(() => import ("./pages/Quote"));
-const TopicNav = React.lazy(() => import ("./pages/TopicNav"));
+import Author from "./pages/Author";
+import Topic from "./pages/Topic";
+import Quote from "./pages/Quote";
+import TopicNav from "./pages/TopicNav";
 // const CollectionNav = React.lazy(() => import ("./pages/CollectionNav"));
 // const Collection = React.lazy(() => import ("./pages/Collection"));
-const SomePeople = React.lazy(() => import ("./pages/SomePeople"));
-const SearchResult = React.lazy(() => import ("./pages/SearchResult"));
+import SomePeople from "./pages/SomePeople";
+import SearchResult from "./pages/SearchResult";
 
 const clientInfo = {
   httpLink: createHttpLink({uri:"/graphql"}),
