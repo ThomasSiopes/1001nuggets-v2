@@ -30,8 +30,8 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
     <div>
       <Card>
         <Card.Body className="quote-card" onClick={handleShow}>
-            <Card.Text className="font-poppins" id="upward">{quotes[quoteIndex].quoteText}</Card.Text>
-            {quotes[quoteIndex].author && <AuthorButton type={"link"} name={quotes[quoteIndex].author}/>}
+            <strong><Card.Text className="font-poppins">{quotes[quoteIndex].quoteText}</Card.Text></strong>
+            <p className="text-end mb-0">{quotes[quoteIndex].author && <AuthorButton type={"link"} name={quotes[quoteIndex].author}/>}</p>
         </Card.Body>
       </Card>
 
@@ -42,9 +42,11 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
             <Carousel.Item key={quotes[index].quoteText}>
               <Container className="quote-card py-4">
                 <Container className="font-poppins">
-                  <h2>{quotes[index].quoteText}</h2>
+                  <strong>
+                    <h2>{quotes[index].quoteText}</h2>
+                  </strong>
                 </Container>
-                <Container className="mt-3">
+                <Container className="mt-3 text-end">
                   <strong>
                     {quotes[index].author && <AuthorButton type={"link"} name={quotes[index].author}/>}
                   </strong>
@@ -53,14 +55,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
               {quotes[index].topics && quotes[index].topics.length > 0 && <Modal.Footer className="justify-content-center align-items-center"> 
                   <span className="text-center"> 
                       {quotes[index].topics.map((topic) => (
-                          <TopicButton type={"button"} name={topic} theme={"theme"} key={quotes[index].quoteText + topic}/>
-                      ))}
-                  </span>
-              </Modal.Footer>}
-              {quotes[index].relatedTopics && quotes[index].relatedTopics.length > 0 && <Modal.Footer className="justify-content-center align-items-center"> 
-                  <span className="text-center"> 
-                      {quotes[index].relatedTopics.map((related) => (
-                          <TopicButton type={"button"} name={related} theme={"theme"} key={quotes[index].quoteText + related}/>
+                          <TopicButton type={"button"} name={topic} theme={"weak"} key={quotes[index].quoteText + topic}/>
                       ))}
                   </span>
               </Modal.Footer>}

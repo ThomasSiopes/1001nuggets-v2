@@ -124,6 +124,14 @@ body {
     color: #151!important;
 }
 
+.link-weak {
+    color: white!important;
+}
+
+.link-weak:hover {
+    color: #ccc!important;
+}
+
 .mainBody {
     min-height: 67vh!important;
 }
@@ -160,11 +168,13 @@ body {
 }
 
 #quote-page, .quote-card {
-    /* background-image: url("/assets/images/thumbnails/${(props) => props.theme.pic}.png")!important; */
+    background-image: url("../../public/assets/images/image0.jpeg")!important;
     background-size: contain!important;
     background-position: center!important;
     background-repeat: no-repeat!important;
-    background-color: #f8f8f5!important;
+    /* background-color: #f8f8f5!important; */
+    background-color: #000!important;
+    color: white!important;
 }
 
 .smaller-text {
