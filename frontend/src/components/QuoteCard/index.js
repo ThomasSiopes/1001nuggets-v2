@@ -30,8 +30,14 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
     <div>
       <Card>
         <Card.Body className="quote-card" onClick={handleShow}>
-            <strong><Card.Text className="font-poppins">{quotes[quoteIndex].quoteText}</Card.Text></strong>
-            <p className="text-end mb-0">{quotes[quoteIndex].author && <AuthorButton type={"link"} name={quotes[quoteIndex].author}/>}</p>
+            <strong>
+              <Card.Text className="font-poppins text-center">{quotes[quoteIndex].quoteText}</Card.Text>
+            </strong>
+            <p className="text-end mb-0">
+              <strong>
+                {quotes[quoteIndex].author && <AuthorButton type={"link"} name={quotes[quoteIndex].author}/>}
+              </strong>
+            </p>
         </Card.Body>
       </Card>
 
@@ -43,12 +49,12 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
               <Container className="quote-card py-4">
                 <Container className="font-poppins">
                   <strong>
-                    <h2>{quotes[index].quoteText}</h2>
+                    <p className="quote-modal-text text-center">{quotes[index].quoteText}</p>
                   </strong>
                 </Container>
-                <Container className="mt-3 text-end">
+                <Container className="mt-3 pe-4 text-end">
                   <strong>
-                    {quotes[index].author && <AuthorButton type={"link"} name={quotes[index].author}/>}
+                    {quotes[quoteIndex].author && <AuthorButton type={"link"} name={quotes[index].author}/>}
                   </strong>
                 </Container>
               </Container>

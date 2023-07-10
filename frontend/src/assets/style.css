@@ -224,6 +224,6 @@ body {
     color: #000!important;
 }
 
-.quote-card h2 {
+.quote-card h2, .quote-modal-text {
     font-size: 1.5rem!important;
 }
