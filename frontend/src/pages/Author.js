@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { redirect, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 
@@ -55,6 +56,9 @@ function Author () {
             {/* <MetaTags>
                 <title>1001 Nuggets - {author.name}</title>
             </MetaTags> */}
+            <Helmet>
+                <title>1001 Nuggets - {author.name}</title>
+            </Helmet>
             <Card>
                 <Card.Header>Home {`>`} Authors {`>`} {author.name}</Card.Header>
                 <Card.Body>

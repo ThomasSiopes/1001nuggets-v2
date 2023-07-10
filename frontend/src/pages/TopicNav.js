@@ -1,4 +1,5 @@
 import React from "react";
+import {Helmet} from "react-helmet"
 
 import { Container, Row, Col, Card } from "react-bootstrap";
 import TopicNavInst from "../components/TopicNavInst";
@@ -26,6 +27,9 @@ function Topics () {
             {/* <MetaTags>
                 <title>1001 Nuggets - Topics</title>
             </MetaTags> */}
+            <Helmet>
+                <title>1001 Nuggets - Topics</title>
+            </Helmet>
             <Row className="justify-content-center navPage-body">
                 <Col>
                     <Card>

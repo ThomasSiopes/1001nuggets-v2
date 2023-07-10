@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { redirect } from "react-router-dom";
 import { useQuery} from "@apollo/client";
 // import MetaTags from "react-meta-tags";
@@ -51,6 +52,9 @@ function SomePeople () {
             {/* <MetaTags>
                 <title>1001 Nuggets - Some People</title>
             </MetaTags> */}
+            <Helmet>
+                <title>1001 Nuggets - Some People</title>
+            </Helmet>
             <Card>
                 <Card.Header>Home {`>`} Some People</Card.Header>
                 <Card.Body>

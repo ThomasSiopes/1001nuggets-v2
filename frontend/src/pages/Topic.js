@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link, redirect, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 
@@ -55,6 +56,9 @@ function Topic () {
             {/* <MetaTags>
                 <title>1001 Nuggets - {topic.name}</title>
             </MetaTags> */}
+            <Helmet>
+                <title>1001 Nuggets - {topic.name}</title>
+            </Helmet>
             <Card>
                 <Card.Header>Home {`>`} <Link className="link-theme" to={`/topics`}>Topics</Link> {`>`} {topic.name}</Card.Header>
                 <Card.Body>

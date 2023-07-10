@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { redirect, useParams } from "react-router-dom";
 import { useQuery} from "@apollo/client";
 
@@ -31,6 +32,15 @@ function Quote () {
             {/* <MetaTags>
                 <title>1001 Nuggets - {quote.author} - {quote.quoteText}</title>
             </MetaTags> */}
+            <Helmet>
+                <title>1001 Nuggets - {quote.quoteText}</title>
+                <meta name="twitter:card" content="summary"></meta>
+                <meta name="twitter:site" content="1001 Nuggets"></meta>
+                <meta property="og:url" content={window.location.href} />
+                <meta property="og:title" content="1001 Nuggets" />
+                <meta property="og:description" content={quote.quoteText}/>
+                {/* <meta property="og:image" content="http://graphics8.nytimes.com/images/2011/12/08/technology/bits-newtwitter/bits-newtwitter-tmagArticle.jpg" /> */}
+            </Helmet>
             <Card>
                 <Card.Header>Home {`>`} Authors {`>`} <AuthorButton type={"link"} name={quote.author}/> {`>`} Quotes</Card.Header>
                 <Card.Body>
@@ -39,8 +49,8 @@ function Quote () {
                             <Card className="mb-3">
                                 <div id="quote-page">
                                     <Card.Body>
-                                        <Card.Text className="display-6"><span className="quote-body font-poppins" id="main-quote">{quote.quoteText}</span></Card.Text>
-                                        <Card.Text><strong><AuthorButton type={"link"} name={quote.author}/></strong></Card.Text>
+                                        <Card.Text className="display-6 text-center"><span className="quote-body font-poppins" id="main-quote">{quote.quoteText}</span></Card.Text>
+                                        <Card.Text className="text-end pe-2"><strong><AuthorButton type={"link"} name={quote.author}/></strong></Card.Text>
                                     </Card.Body>
                                     <Card.Body className="text-center">
                                         <a className="mx-2 share-button" href={`https://twitter.com/intent/tweet?url=${window.location.href}`} id="share-twitter"><FaTwitter/></a>

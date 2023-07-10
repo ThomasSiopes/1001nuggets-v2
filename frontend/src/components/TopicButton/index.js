@@ -11,8 +11,6 @@ const TopicButton = ({type, name, theme}) => {
     })
 
     if(loading) return <span>Loading...</span>
-
-    console.log(data);
     
     let topic = data.topicName;
 
