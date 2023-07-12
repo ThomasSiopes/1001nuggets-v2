@@ -2,7 +2,6 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { redirect, useParams } from 'react-router-dom';
 import { Container, Card } from "react-bootstrap";
-// import MetaTags from "react-meta-tags";
 
 import ResultsQuote from "../components/ResultsQuote";
 

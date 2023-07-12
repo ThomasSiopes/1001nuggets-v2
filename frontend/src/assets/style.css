@@ -15,7 +15,7 @@ a {
 }
 
 body { 
-    background-color: #ddd!important;
+    background-color: #efefef!important;
 }
 
 .btn-block {
@@ -168,12 +168,12 @@ body {
 }
 
 #quote-page, .quote-card {
-    background-image: url("../../public/assets/images/image0.jpeg")!important;
+    background-image: url("../../public/assets/images/image0.png")!important;
     background-size: contain!important;
     background-position: center!important;
     background-repeat: no-repeat!important;
     /* background-color: #f8f8f5!important; */
-    background-color: #000!important;
+    background-color: #222!important;
     color: white!important;
 }
 
@@ -203,14 +203,6 @@ body {
     color: #1c315e !important;
 }
 
-#share-reddit {
-    color: #fc5011 !important;
-}
-
-#share-reddit:hover {
-    color: #782c10 !important;
-}
-
 .sidebar-text {
     font-size: 0.5rem!important;
 }
@@ -226,4 +218,8 @@ body {
 
 .quote-card h2, .quote-modal-text {
     font-size: 1.5rem!important;
+}
+
+.quote-modal-text, .quote-card .card-text {
+    text-shadow: 0 0 #000, 0 0 10px #000!important;
 }
