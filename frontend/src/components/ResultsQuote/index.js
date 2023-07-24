@@ -9,6 +9,8 @@ import { QUERY_QUOTE_ALL } from '../../utils/queries';
 const ResultsQuote = ({input}) => {
     let quoteList, newList = [], listOrder=[];
 
+    console.log("input: " + input);
+
     let {loading, data} = useQuery(QUERY_QUOTE_ALL);
 
     if(loading) return <p>Loading...</p>

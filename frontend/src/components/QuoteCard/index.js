@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Button, Card, Modal, Container, Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import FontSizeChanger  from "react-font-size-changer";
 
 import { FiShare } from "react-icons/fi";
+import { FaSearchPlus, FaSearchMinus } from "react-icons/fa";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 import TopicButton from "../TopicButton";
@@ -11,11 +13,13 @@ import AuthorButton from "../AuthorButton";
 function QuoteCard({quotes, quoteIndex, indexOrder}) {
   const [show, setShow] = useState(false);
   const [currentQuote, setIndex] = useState(quoteIndex);
+  const [fontSize, setFont] = useState(24);
 
   const handleClose = () => {
     setShow(false);
     setIndex(quoteIndex);
   };
+
   const handleShow = () => {
     setIndex(indexOrder.indexOf(quoteIndex));
     setShow(true);
@@ -23,6 +27,14 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
+  }
+
+  const handleFontResize = () => {
+    let slider = document.getElementById("myRange");
+    let targets = document.getElementsByClassName("targetText");
+    setFont(slider.value);
+    for(let index of targets) index.style.fontSize = fontSize + "px"
+    
   }
 
   if(quotes) {
@@ -43,21 +55,38 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
 
       <Modal show={show} onHide={handleClose} aria-labelledby="contained-modal-title-vcenter" centered>
         <Modal.Header className="text-theme" closeButton/>
+        {/* <FontSizeChanger
+          targets={[".quote-modal-text", ".carousel .quote-card .link-theme"]}
+          customButtons={{
+            up: <FaSearchPlus/>,
+            down: <FaSearchMinus/>
+          }}
+          options ={{
+            stepSize: 1,
+            range: 7
+          }}
+        /> */}
+        {/* Slider */}
+        <input type="range" className="mx-2 slider" min="20" max="50" value={fontSize} id="myRange" onChange={handleFontResize}/>
+
         <Carousel activeIndex={currentQuote} indicators={false} interval={null} onSelect={handleSelect} touch={true} wrap={false} prevIcon={<MdKeyboardArrowLeft stroke={"black"} fill={"black"}/>} nextIcon={<MdKeyboardArrowRight stroke={"black"} fill={"black"}/>}>
           {indexOrder.map((index) => (
             <Carousel.Item key={quotes[index].quoteText}>
               <Container className="quote-card py-4">
+                {/* Quote */}
                 <Container className="font-poppins">
-                  <strong>
-                    <p className="quote-modal-text text-center">{quotes[index].quoteText}</p>
-                  </strong>
+                  <strong><p className="quote-modal-text text-center targetText">{quotes[index].quoteText}</p></strong>
                 </Container>
+
+                {/* Author */}
                 <Container className="mt-3 pe-4 text-end">
                   <strong>
                     {quotes[quoteIndex].author && <AuthorButton type={"link"} name={quotes[index].author}/>}
                   </strong>
                 </Container>
               </Container>
+
+              {/* Topic */}
               {quotes[index].topics && quotes[index].topics.length > 0 && <Modal.Footer className="justify-content-center align-items-center"> 
                   <span className="text-center"> 
                       {quotes[index].topics.map((topic) => (

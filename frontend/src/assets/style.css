@@ -217,7 +217,7 @@ body {
 }
 
 .quote-card h2, .quote-modal-text {
-    font-size: 1.5rem!important;
+    font-size: 1.5rem;
 }
 
 .quote-modal-text, .quote-card .card-text {

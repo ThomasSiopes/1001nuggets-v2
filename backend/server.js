@@ -11,7 +11,12 @@ const app = express();
 
 const server = new ApolloServer({
     typeDefs,
-    resolvers
+    resolvers,
+    playground: {
+        settings: {
+          'editor.theme': 'light',
+        }
+    },
 });
 
 async function middleWare() {
@@ -37,6 +42,6 @@ app.get("*", (req, res) => {
 db.once("open", () => {
     app.listen(PORT, ()=> {
         console.log(`API server running on port ${PORT}...`);
-        console.log(`Playground at http://localhost:${PORT}${server.graphqlPath}`);
+        console.log(`Playground at http://127.0.0.1:${PORT}${server.graphqlPath}`);
     })
 })

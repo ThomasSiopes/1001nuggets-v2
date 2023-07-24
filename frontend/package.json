@@ -2,7 +2,7 @@
   "name": "1001nuggets-update",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001",
+  "proxy": "http://127.0.0.1:3001",
   "dependencies": {
     "@apollo/client": "^3.7.16",
     "@emotion/react": "^11.11.1",
@@ -14,6 +14,7 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
+    "react-font-size-changer": "^0.2.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.10.1",
     "react-router-dom": "^6.14.0",
