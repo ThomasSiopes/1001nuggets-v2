@@ -16,7 +16,7 @@ function Author () {
         variables: {authorRealId: authorRealId },
     });
 
-    if(!authorRealId || authorRealId === null || authorRealId === "undefined") return redirect(`/404error`);
+    if(!authorRealId || authorRealId === null || authorRealId === "undefined") return redirect(`/404error`); 
 
     if(loading) return <div className="loadingPage">Loading...</div>;
 

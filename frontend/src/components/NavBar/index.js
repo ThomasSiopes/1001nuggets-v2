@@ -1,20 +1,16 @@
-import React, { useState } from "react";
-import { Link, redirect } from "react-router-dom";
+import React, { useRef } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { Navbar, Container, Form, Nav } from "react-bootstrap";
 
 function NavBar() {
-    const [value, setValue] = useState('');
+    const value = useRef('');
 
     const handleChange = () => {
-        let searchBar = document.getElementById("searchTerm")
-        setValue(searchBar.value)
-        console.log(searchBar.value);
-        console.log(value);
+        let searchBar = document.getElementById("searchTerm");
+        value.current = searchBar.value;
     }
 
-    const handleSearch =() => {
-        redirect(`/search/${value}`)
-    }
+    const navigate = useNavigate();
 
     return(
         <Navbar variant="dark" expand="md" className="py-3 mb-3">
@@ -28,7 +24,7 @@ function NavBar() {
                         <Nav.Link href="/somePeople">People</Nav.Link>
                     </Nav>
                     <Nav className="ms-auto">
-                        <Form className="text-center mt-2" onSubmit={handleSearch}>
+                        <Form className="text-center mt-2" onSubmit={() => navigate('search/' + value.current)}>
                             <input type="text" id="searchTerm" placeholder="Search..." className="me-2" onChange={handleChange}></input>
                             <input type="submit" className="btn btn-theme" value="Submit"/>
                         </Form>

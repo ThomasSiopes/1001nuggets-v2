@@ -62,6 +62,9 @@ const resolvers = {
         quoteR: async (parent, { quoteRealId }) => {
             return Quote.findOne({ realID: quoteRealId })
         },
+        quoteResult: async (parent, { input }) => {
+            return Quote.find({quoteText: {$regex: "^.*" + input + ".*$", $options: 'i'}})
+        }
     }
 }
 

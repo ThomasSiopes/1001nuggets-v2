@@ -4,38 +4,32 @@ import { Container, Col, Row } from "react-bootstrap";
 
 import QuoteCard from "../QuoteCard";
 
-import { QUERY_QUOTE_ALL } from '../../utils/queries';
+import { QUERY_QUOTE_RESULT } from '../../utils/queries';
 
 const ResultsQuote = ({input}) => {
-    let quoteList, newList = [], listOrder=[];
+    let quoteList, listOrder=[];
 
-    console.log("input: " + input);
-
-    let {loading, data} = useQuery(QUERY_QUOTE_ALL);
+    let {loading, data} = useQuery(QUERY_QUOTE_RESULT, {
+        variables: {input: input},
+    })
 
     if(loading) return <p>Loading...</p>
 
-    quoteList = data;
+    quoteList = data.quoteResult;
 
-    input = input.toUpperCase();
-    
-    let counter = 0;
-    for(let index of quoteList.quotes) {
-        if(index.quoteText.toUpperCase().indexOf(input) > -1) {
-            newList.push(index);
-            listOrder.push(counter++)
-        }
+    for(let n = 0; n < quoteList.length; ++n) {
+        listOrder.push(n);
     }
 
-    return (newList[0] ?
+    return (quoteList[0] ?
         <Container className="mb-2">
             <div>
                 <h5>Results under quotes . . .</h5>
                 <hr></hr>
                 <Row className="text-center">
-                    {newList.map((index) => (
+                    {quoteList.map((index) => (
                         <Col xs={12} md={6} xl={4} className="mb-3" key={index.name + index.quoteText}>
-                            <QuoteCard quotes={newList} quoteIndex={newList.indexOf(index)} indexOrder={listOrder}/>
+                            <QuoteCard quotes={quoteList} quoteIndex={quoteList.indexOf(index)} indexOrder={listOrder}/>
                         </Col>
                     ))}
                 </Row>

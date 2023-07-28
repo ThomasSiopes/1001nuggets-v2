@@ -52,6 +52,7 @@ const typeDefs = gql`
         
         quotes: [Quote]
         quoteSP: [Quote]
+        quoteResult(input: String): [Quote]
         quote(quoteId: ID): Quote
         quoteR(quoteRealId: String): Quote
     }
