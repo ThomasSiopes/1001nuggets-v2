@@ -5,10 +5,10 @@ import { useQuery } from "@apollo/client";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
 
-import QuoteCard from "../components/QuoteCard";
-
 import { QUERY_AUTHOR_REALID } from "../utils/queries";
 import shuffle from "../utils/shuffle";
+
+const QuoteCard = React.lazy(() => import("../components/QuoteCard"));
 
 function Author () {
     const { authorRealId } = useParams();

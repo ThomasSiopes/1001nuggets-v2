@@ -2,7 +2,7 @@ import React from "react";
 import {Helmet} from "react-helmet"
 
 import { Container, Row, Col, Card } from "react-bootstrap";
-import TopicNavInst from "../components/TopicNavInst";
+const TopicNavInst = React.lazy(() => import("../components/TopicNavInst"));
 
 function Topics () {
     const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];

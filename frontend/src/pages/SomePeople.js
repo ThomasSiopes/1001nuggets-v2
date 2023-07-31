@@ -2,14 +2,13 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { redirect } from "react-router-dom";
 import { useQuery} from "@apollo/client";
-// import MetaTags from "react-meta-tags";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
 
-import QuoteCard from "../components/QuoteCard";
-
 import { QUERY_QUOTE_SP } from "../utils/queries";
 import shuffle from "../utils/shuffle";
+
+const QuoteCard = React.lazy(() => import("../components/QuoteCard"));
 
 function SomePeople () {
     let {loading, data} = useQuery(QUERY_QUOTE_SP);

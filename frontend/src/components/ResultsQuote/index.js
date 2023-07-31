@@ -2,9 +2,9 @@ import React from 'react';
 import { useQuery } from '@apollo/client';
 import { Container, Col, Row } from "react-bootstrap";
 
-import QuoteCard from "../QuoteCard";
-
 import { QUERY_QUOTE_RESULT } from '../../utils/queries';
+
+const QuoteCard = React.lazy(() => import("../QuoteCard"));
 
 const ResultsQuote = ({input}) => {
     let quoteList, listOrder=[];

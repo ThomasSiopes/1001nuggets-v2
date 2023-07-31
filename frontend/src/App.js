@@ -9,17 +9,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Components
 // import ErrorPage from "./components/ErrorPage";
-import NavBar from "./components/NavBar";
+const NavBar = React.lazy(() => import("./components/NavBar"));
 
 //Pages
-import Author from "./pages/Author";
-import Topic from "./pages/Topic";
-import Quote from "./pages/Quote";
-import TopicNav from "./pages/TopicNav";
+const Author = React.lazy(() => import("./pages/Author"));
+const Topic = React.lazy(() => import("./pages/Topic"));
+const Quote = React.lazy(() => import("./pages/Quote"));
+const TopicNav = React.lazy(() => import("./pages/TopicNav"));
 // const CollectionNav = React.lazy(() => import ("./pages/CollectionNav"));
 // const Collection = React.lazy(() => import ("./pages/Collection"));
-import SomePeople from "./pages/SomePeople";
-import SearchResult from "./pages/SearchResult";
+const SomePeople = React.lazy(() => import("./pages/SomePeople"));
+const SearchResult = React.lazy(() => import("./pages/SearchResult"));
 
 const clientInfo = {
   httpLink: createHttpLink({uri:"/graphql"}),
@@ -43,19 +43,19 @@ function App () {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <NavBar/>
-        <Routes>
-          <Route exact path="/" element={<TopicNav/>}/>
-          <Route exact path="/topics" element={<TopicNav/>}/>
-          <Route exact path="/topic/:topicRealId" element={<Topic/>}/>
+        <React.Suspense fallback={<div>Loading...</div>}><NavBar/></React.Suspense>
+          <Routes>
+            <Route exact path="/" element={<React.Suspense><TopicNav/></React.Suspense>}/>
+            <Route exact path="/topics" element={<React.Suspense><TopicNav/></React.Suspense>}/>
+            <Route exact path="/topic/:topicRealId" element={<React.Suspense><Topic/></React.Suspense>}/>
 
-          <Route exact path="/author/:authorRealId" element={<Author/>}/>
-          <Route exact path="/somepeople" element={<SomePeople/>}/>
+            <Route exact path="/author/:authorRealId" element={<React.Suspense><Author/></React.Suspense>}/>
+            <Route exact path="/somepeople" element={<React.Suspense><SomePeople/></React.Suspense>}/>
 
-          <Route exact path="/quote/:quoteRealId" element={<Quote/>}/>
+            <Route exact path="/quote/:quoteRealId" element={<React.Suspense><Quote/></React.Suspense>}/>
 
-          <Route exact path="/search/:query" element={<SearchResult/>}/>
-        </Routes>
+            <Route exact path="/search/:query" element={<React.Suspense><SearchResult/></React.Suspense>}/>
+          </Routes>
       </Router>
     </ApolloProvider>
   )
