@@ -2,9 +2,9 @@ import React from "react";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import { ApolloClient, ApolloProvider, createHttpLink, InMemoryCache } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
-import "./assets/style.css";
 
 //Styles
+import "./assets/style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Components
@@ -12,6 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const NavBar = React.lazy(() => import("./components/NavBar"));
 
 //Pages
+const Home = React.lazy(() => import("./pages/Home"))
 const Author = React.lazy(() => import("./pages/Author"));
 const Topic = React.lazy(() => import("./pages/Topic"));
 const Quote = React.lazy(() => import("./pages/Quote"));
@@ -45,7 +46,7 @@ function App () {
       <Router>
         <React.Suspense fallback={<div>Loading...</div>}><NavBar/></React.Suspense>
           <Routes>
-            <Route exact path="/" element={<React.Suspense><TopicNav/></React.Suspense>}/>
+            <Route exact path="/" element={<React.Suspense><Home/></React.Suspense>}/>
             <Route exact path="/topics" element={<React.Suspense><TopicNav/></React.Suspense>}/>
             <Route exact path="/topic/:topicRealId" element={<React.Suspense><Topic/></React.Suspense>}/>
 

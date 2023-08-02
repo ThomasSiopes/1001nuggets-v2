@@ -25,7 +25,7 @@ function NavBar() {
                     </Nav>
                     <Nav className="ms-auto">
                         <Form className="text-center mt-2" onSubmit={() => navigate('search/' + value.current)}>
-                            <input type="text" id="searchTerm" placeholder="Search..." className="me-2" onChange={handleChange}></input>
+                            <input type="text" id="searchTerm" placeholder="Search..." className="me-2 rounded" onChange={handleChange}></input>
                             <input type="submit" className="btn btn-theme" value="Submit"/>
                         </Form>
                     </Nav>
