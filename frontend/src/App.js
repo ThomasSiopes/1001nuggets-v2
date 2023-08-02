@@ -51,7 +51,7 @@ function App () {
             <Route exact path="/topic/:topicRealId" element={<React.Suspense><Topic/></React.Suspense>}/>
 
             <Route exact path="/author/:authorRealId" element={<React.Suspense><Author/></React.Suspense>}/>
-            <Route exact path="/somepeople" element={<React.Suspense><SomePeople/></React.Suspense>}/>
+            <Route exact path="/some-people" element={<React.Suspense><SomePeople/></React.Suspense>}/>
 
             <Route exact path="/quote/:quoteRealId" element={<React.Suspense><Quote/></React.Suspense>}/>
 

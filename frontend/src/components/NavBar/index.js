@@ -21,7 +21,7 @@ function NavBar() {
                     <Nav className="me-auto text-center">
                         <Nav.Link href="/topics">Topics</Nav.Link>
                         <Nav.Link href="/collections">Collections</Nav.Link>
-                        <Nav.Link href="/somePeople">People</Nav.Link>
+                        <Nav.Link href="/some-people">People</Nav.Link>
                     </Nav>
                     <Nav className="ms-auto">
                         <Form className="text-center mt-2" onSubmit={() => navigate('search/' + value.current)}>
