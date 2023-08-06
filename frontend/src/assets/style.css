@@ -14,6 +14,12 @@ a {
     background-color: #262!important;
 }
 
+.bg-nugget {
+    background-image: url("../../public/assets/images/gold_pile.jpg")!important;
+    background-size: 100% auto;
+    background-repeat: repeat;
+}
+
 body { 
     background-color: #efefef!important;
 }
@@ -173,6 +179,10 @@ body {
 .hoverable:hover {
     border-color: white!important;
     transition: all 0.7s ease!important;
+}
+
+html {
+    min-height:100%;
 }
 
 .quote-body, .quote-preview {
