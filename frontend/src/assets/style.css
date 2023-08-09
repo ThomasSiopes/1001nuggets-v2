@@ -131,7 +131,8 @@ body {
 }
 
 .link-theme {
-    color: #BBD!important;
+    /* color: #BBD!important; */
+    color: #494;
 }
 
 .link-theme:hover {
