@@ -20,8 +20,8 @@ function Home () {
             </Helmet>
             <Container className="text-center">
                 <Card>
-                    <Card.Header>
-                        <h1 className="font-victor-libre">1001 NUGGETS</h1>
+                    <Card.Header className="bg-theme">
+                        <h1 className="font-victor-libre text-white">1001 NUGGETS</h1>
                     </Card.Header>
                     <Card.Body className="px-5">
                         <Form onSubmit={() => navigate('search/' + value.current)}>
