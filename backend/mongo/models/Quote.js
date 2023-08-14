@@ -19,6 +19,16 @@ const quote = new Schema({
         type: String,
         required: true
     },
+    relatedTopics: [
+        {
+            type: String,
+        }
+    ],
+    collections: [
+        {
+            type: String,
+        }
+    ],
     somePeople: {
         type: Boolean,
         required: false

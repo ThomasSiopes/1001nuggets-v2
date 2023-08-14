@@ -24,13 +24,16 @@ const typeDefs = gql`
         topics: [String]!
         realID: String
         somePeople: Boolean
+        relatedTopics: [String]!
+        collections: [String]!
     }
 
     type Collection {
         _id: ID
         name: String
+        sortedName: String
         realID: String
-        topics: [String]!
+        quotes: [Quote]!
     }
 
     type Query {

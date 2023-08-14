@@ -12,6 +12,8 @@ a {
 
 .bg-nugget {
     background-image: url("../../public/assets/images/gold_pile.jpg")!important;
+    /* background-image: url("../../public/assets/images/gold_pile2.jpg")!important; */
+    /* https://creativemarket.com/Good_Studio/7192782-Gold-nuggets-seamless-pattern */
     background-size: 100% auto;
     background-repeat: repeat;
 }
