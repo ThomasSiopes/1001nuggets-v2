@@ -133,8 +133,8 @@ body {
 }
 
 .link-theme {
-    /* color: #BBD!important; */
-    color: #494;
+    color: #77A!important;
+    /* color: #494; */
 }
 
 .link-theme:hover {
@@ -158,7 +158,7 @@ body {
 }
 
 .navbar-brand {
-    max-width: 7%!important;
+    max-width: 8%!important;
 }
 
 .navbar-toggler:focus, .btn-light:focus, .btn-check:focus, .btn-primary:focus, .btn-weak:focus {
@@ -241,6 +241,6 @@ html {
     font-size: 1.5rem;
 }
 
-.quote-modal-text, .quote-card .card-text {
+.quote-modal-text, .quote-card .card-text, .quote-card .link-theme {
     text-shadow: 0 0 #000, 0 0 10px #000!important;
 }
