@@ -141,11 +141,11 @@ body {
     color: #99C!important;
 }
 
-.link-weak {
-    color: white!important;
+.link-weak, .quote-card .link-theme {
+    color: rgb(248, 247, 247)!important;
 }
 
-.link-weak:hover {
+.link-weak:hover, .quote-card .linktheme:hover {
     color: #ccc!important;
 }
 
@@ -189,13 +189,15 @@ html {
 }
 
 #quote-page, .quote-card {
+    background-color: #222!important;
+    color: white!important;
+}
+
+#quote-page, .quote-card {
     background-image: url("../../public/assets/images/image0.png")!important;
     background-size: contain!important;
     background-position: center!important;
     background-repeat: no-repeat!important;
-    /* background-color: #f8f8f5!important; */
-    background-color: #222!important;
-    color: white!important;
 }
 
 .smaller-text {

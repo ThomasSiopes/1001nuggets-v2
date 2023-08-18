@@ -34,6 +34,28 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
     for(let index of targets) index.style.fontSize = fontSize.current + "px";
   }
 
+  document.addEventListener("DOMContentLoaded", function() {
+  let lazyBackgrounds = [].slice.call(document.querySelectorAll(".quote-card"));
+  console.log("LB: ")
+  console.log(lazyBackgrounds)
+  
+    if ("IntersectionObserver" in window) {
+      console.log("Yo!")
+      let lazyBackgroundObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            lazyBackgroundObserver.unobserve(entry.target);
+          }
+        });
+      });
+  
+      lazyBackgrounds.forEach(function(lazyBackground) {
+        lazyBackgroundObserver.observe(lazyBackground);
+      });
+    }
+  });
+
   if(quotes) {
     return (
     <div>
