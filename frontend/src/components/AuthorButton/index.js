@@ -13,7 +13,7 @@ const AuthorButton = ({type, name}) => {
 
     if(loading) return <span>Loading...</span>
 
-    if(!data || data.authorName == null) return <strong><span>{name}</span></strong>
+    if(!data || data.authorName == null) return <span>{name}</span>
     
     let author = data.authorName;
     
