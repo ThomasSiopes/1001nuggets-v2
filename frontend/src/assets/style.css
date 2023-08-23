@@ -6,7 +6,7 @@ a {
     width: 100%!important;
 }
 
-.bg-theme, .navbar {
+.bg-theme {
     background-color: #445!important;
 }
 
@@ -20,6 +20,10 @@ a {
 
 body { 
     background-color: #efefef!important;
+}
+
+.border-none {
+    border: none!important;
 }
 
 .btn-block {
@@ -158,7 +162,7 @@ body {
 }
 
 .navbar-brand {
-    max-width: 8%!important;
+    max-width: 10%!important;
 }
 
 .navbar-toggler:focus, .btn-light:focus, .btn-check:focus, .btn-primary:focus, .btn-weak:focus {

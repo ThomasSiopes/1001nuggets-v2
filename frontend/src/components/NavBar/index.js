@@ -13,7 +13,7 @@ function NavBar() {
     const navigate = useNavigate();
 
     return(
-        <Navbar variant="dark" expand="md" className="py-3 mb-3">
+        <Navbar variant="light" bg={"light"} expand="md" className="py-3 mb-3">
             <Container>
                 <Link className="navbar-brand me-0 p-0" to={`/`}><img id="nav-icon" src="/icon1001trans.png" alt="Logo"/></Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>

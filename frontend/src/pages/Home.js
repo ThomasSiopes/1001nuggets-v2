@@ -19,7 +19,7 @@ function Home () {
                 <title>1001 Nuggets</title>
             </Helmet>
             <Container className="text-center">
-                <Card>
+                <Card className="border-none">
                     <Card.Header className="bg-theme">
                         <h1 className="font-victor-libre text-white">1001 NUGGETS</h1>
                     </Card.Header>
