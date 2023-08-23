@@ -162,7 +162,7 @@ body {
 }
 
 .navbar-brand {
-    max-width: 10%!important;
+    max-width: 15%!important;
 }
 
 .navbar-toggler:focus, .btn-light:focus, .btn-check:focus, .btn-primary:focus, .btn-weak:focus {
