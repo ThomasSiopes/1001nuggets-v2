@@ -169,6 +169,11 @@ body {
     box-shadow: none!important;
 }
 
+.navbar-toggler {
+    background-color: #334!important;
+    text-decoration-color: white!important;
+}
+
 .navPage-body {
     max-width: 100%
 }
@@ -199,7 +204,7 @@ html {
 }
 
 #quote-page, .quote-card {
-    background-image: url("../../public/assets/images/image1.png")!important;
+    background-image: url("../../public/image5black.png")!important;
     background-size: contain!important;
     background-position: center!important;
     background-repeat: no-repeat!important;

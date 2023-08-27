@@ -15,7 +15,7 @@ function NavBar() {
     return(
         <Navbar variant="light" bg={"light"} expand="md" className="py-3 mb-3">
             <Container>
-                <Link className="navbar-brand me-0 p-0" to={`/`}><img id="nav-icon" src="/image4trans.png" alt="Logo"/></Link>
+                <Link className="navbar-brand me-0 p-0" to={`/`}><img id="nav-icon" src="/image5trans.png" alt="Logo"/></Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav" className="mx-2">
                     <Nav className="me-auto text-center">
