@@ -6,6 +6,7 @@ import { FiShare } from "react-icons/fi";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 import TopicButton from "../TopicButton";
+import CollectionButton from "../CollectionButton";
 import AuthorButton from "../AuthorButton";
 
 function QuoteCard({quotes, quoteIndex, indexOrder}) {
@@ -96,10 +97,25 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
               </Container>
 
               {/* Topic */}
-              {quotes[index].topics && quotes[index].topics.length > 0 && <Modal.Footer className="justify-content-center align-items-center"> 
-                  <span className="text-center"> 
+              {quotes[index].topics && quotes[index].topics.length > 0 && <Modal.Footer className="justify-content-center align-items-center text-center"> 
+                  <div className="width100"> 
                       {quotes[index].topics.map((topic) => (
                           <TopicButton type={"button"} name={topic} theme={"weak"} key={quotes[index].quoteText + topic}/>
+                      ))}
+                  </div>
+                    <p>Related Topics:</p>
+                    {quotes[index].relatedTopics && <span>
+                        {quotes[index].relatedTopics.map((related) => (
+                            <TopicButton type={"button"} name={related} theme={"weak"} key={quotes[index].quoteText + "related" + related}/>
+                        ))}
+                    </span>}
+              </Modal.Footer>}
+
+              {/* Collection */}
+              {quotes[index].collections && quotes[index].collections.length > 0 && <Modal.Footer className="justify-content-center align-items-center">
+                  <span className="text-center">
+                      {quotes[index].collections.map((collection) => (
+                          <CollectionButton type={"button"} name={collection} theme={"weak"} key={quotes[index].quotesText + collection}/>
                       ))}
                   </span>
               </Modal.Footer>}

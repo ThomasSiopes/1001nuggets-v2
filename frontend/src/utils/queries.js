@@ -23,9 +23,11 @@ export const QUERY_AUTHOR_NAME = gql`
             quotes {
                 _id
                 quoteText
+                collections
                 author
                 topics
                 realID
+                relatedTopics
             }
             realID
         }
@@ -41,9 +43,11 @@ export const QUERY_AUTHOR_ID = gql`
             quotes {
                 _id
                 quoteText
+                collections
                 author
                 topics
                 realID
+                relatedTopics
             }
             realID
         }
@@ -59,9 +63,11 @@ export const QUERY_AUTHOR_REALID = gql`
             quotes {
                 _id
                 quoteText
+                collections
                 author
                 topics
                 realID
+                relatedTopics
             }
             realID
         }
@@ -77,6 +83,7 @@ export const QUERY_TOPIC_ALL = gql`
             realID
             quotes {
                 _id
+                relatedTopics
             }
         }
     }
@@ -92,10 +99,12 @@ export const QUERY_TOPIC_NAME = gql`
             quotes {
                 _id
                 quoteText
+                collections
                 author
                 topics
                 realID
                 somePeople
+                relatedTopics
             }
         }
     }
@@ -111,10 +120,12 @@ export const QUERY_TOPIC_ID = gql`
             quotes {
                 _id
                 quoteText
+                collections
                 author
                 topics
                 realID
                 somePeople
+                relatedTopics
             }
         }
     }
@@ -130,10 +141,12 @@ export const QUERY_TOPIC_REALID = gql`
             quotes {
                 _id
                 quoteText
+                collections
                 author
                 topics
                 realID
                 somePeople
+                relatedTopics
             }
         }
     }
@@ -155,10 +168,12 @@ export const QUERY_QUOTE_ALL = gql`
         quotes {
             _id
             quoteText
+            collections
             author
             topics
             realID
             somePeople
+            relatedTopics
         }
     }
 `;
@@ -168,10 +183,12 @@ export const QUERY_QUOTE_SP = gql`
         quoteSP {
             _id
             quoteText
+            collections
             author
             topics
             realID
             somePeople
+            relatedTopics
         }
     }
 `;
@@ -181,9 +198,11 @@ export const QUERY_QUOTE_RESULT = gql`
         quoteResult(input: $input) {
             _id
             quoteText
+            collections
             author
             topics
             realID
+            relatedTopics
         }
     }
 `
@@ -193,10 +212,12 @@ export const QUERY_QUOTE_ID = gql`
         quote(quoteId: $quoteId) {
             _id
             quoteText
+            collections
             author
             topics
             realID
             somePeople
+            relatedTopics
         }
     }
 `;
@@ -206,10 +227,12 @@ export const QUERY_QUOTE_REALID = gql`
         quoteR(quoteRealId: $quoteRealId) {
             _id
             quoteText
+            collections
             author
             topics
             realID
             somePeople
+            relatedTopics
         }
     }
 `;
@@ -219,7 +242,7 @@ export const QUERY_COLLECTION_ALL = gql`
         collections {
             name
             realID
-            topics
+            sortedName
         }
     }
 `;
@@ -230,7 +253,7 @@ export const QUERY_COLLECTION_NAME = gql`
             _id
             name
             realID
-            topics
+            sortedName
         }
     }
 `;
@@ -241,7 +264,7 @@ export const QUERY_COLLECTION_ID = gql`
             _id
             name
             realID
-            topics
+            sortedName
         }
     }
 `;
@@ -252,7 +275,7 @@ export const QUERY_COLLECTION_REALID = gql`
             _id
             name
             realID
-            topics
+            sortedName
         }
     }
 `;

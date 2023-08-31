@@ -2,7 +2,7 @@ a {
     text-decoration: none!important;
 }
 
-#banner, .formInput, img, #myInput {
+#banner, .formInput, img, #myInput, .navbar, .footer, .width100 {
     width: 100%!important;
 }
 
@@ -155,10 +155,6 @@ body {
 
 .mainBody {
     min-height: 67vh!important;
-}
-
-.navbar, .footer {
-    width: 100%!important;
 }
 
 .navbar-brand {
