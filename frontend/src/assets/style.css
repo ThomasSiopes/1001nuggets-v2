@@ -48,6 +48,21 @@ body {
     border: none!important;
 }
 
+.btn-small {
+    color: #000!important;
+    background-color: #ccc!important;
+    border: 0.1rem solid!important;
+    border-color: #ccc!important;
+    font-size: 0.7rem!important;
+}
+
+.btn-small:hover, .btn-small:focus {
+    color: #000!important;
+    background-color: #aaa!important;
+    border: 0.1rem solid!important;
+    border-color: #ccc!important;
+}
+
 .btn-weak {
     color: #000!important;
     background-color: #fff!important;
