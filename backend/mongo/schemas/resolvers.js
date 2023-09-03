@@ -48,6 +48,9 @@ const resolvers = {
         collectionR: async (parent, { collectionRealId }) => {
             return Collection.findOne({ realID: collectionRealId }).populate('quotes');
         },
+        collectionLetter: async (parent, { letter }) => {
+            return Collection.find({sortedName: {$regex: '^' + letter, $options: 'i'}})
+        },
         
         // quotes
         quotes: async () => {

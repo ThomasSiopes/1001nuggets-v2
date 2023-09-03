@@ -2,7 +2,7 @@ import React from "react";
 import {Helmet} from "react-helmet"
 
 import { Container, Row, Col, Card } from "react-bootstrap";
-const TopicNavInst = React.lazy(() => import("../components/TopicNavInst"));
+const CollectionNavInst = React.lazy(() => import("../components/CollectionNavInst"));
 
 function Topics () {
     const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
@@ -24,11 +24,8 @@ function Topics () {
 
     return (
         <Container>
-            {/* <MetaTags>
-                <title>1001 Nuggets - Topics</title>
-            </MetaTags> */}
             <Helmet>
-                <title>1001 Nuggets - Topics</title>
+                <title>1001 Nuggets - Collections</title>
             </Helmet>
             <Row className="justify-content-center navPage-body">
                 <Col>
@@ -39,7 +36,7 @@ function Topics () {
                             </Row>
                             <Row id="myGroup">
                                 {alphabet.map((index) => (
-                                    <TopicNavInst key={index} letter={index}/>
+                                    <CollectionNavInst key={index} letter={index}/>
                                 ))
                                 }
                             </Row>

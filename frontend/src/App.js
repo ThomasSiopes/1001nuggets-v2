@@ -17,8 +17,8 @@ const Author = React.lazy(() => import("./pages/Author"));
 const Topic = React.lazy(() => import("./pages/Topic"));
 const Quote = React.lazy(() => import("./pages/Quote"));
 const TopicNav = React.lazy(() => import("./pages/TopicNav"));
-// const CollectionNav = React.lazy(() => import ("./pages/CollectionNav"));
-// const Collection = React.lazy(() => import ("./pages/Collection"));
+const CollectionNav = React.lazy(() => import ("./pages/CollectionNav"));
+const Collection = React.lazy(() => import ("./pages/Collection"));
 const SomePeople = React.lazy(() => import("./pages/SomePeople"));
 const SearchResult = React.lazy(() => import("./pages/SearchResult"));
 
@@ -49,6 +49,9 @@ function App () {
             <Route exact path="/" element={<React.Suspense><Home/></React.Suspense>}/>
             <Route exact path="/topics" element={<React.Suspense><TopicNav/></React.Suspense>}/>
             <Route exact path="/topic/:topicRealId" element={<React.Suspense><Topic/></React.Suspense>}/>
+
+            <Route exact path="/collections" element={<React.Suspense><CollectionNav/></React.Suspense>}/>
+            <Route exact path="/collection/:collectionRealId" element={<React.Suspense><Collection/></React.Suspense>}/>
 
             <Route exact path="/author/:authorRealId" element={<React.Suspense><Author/></React.Suspense>}/>
             <Route exact path="/some-people" element={<React.Suspense><SomePeople/></React.Suspense>}/>

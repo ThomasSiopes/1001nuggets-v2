@@ -159,6 +159,9 @@ export const QUERY_TOPIC_LETTER = gql`
           name
           realID
           sortedName
+          quotes {
+            _id
+          }
         }
     }
 `;
@@ -276,6 +279,30 @@ export const QUERY_COLLECTION_REALID = gql`
             name
             realID
             sortedName
+            quotes {
+                _id
+                quoteText
+                collections
+                author
+                topics
+                realID
+                somePeople
+                relatedTopics
+            }
+        }
+    }
+`;
+
+export const QUERY_COLLECTION_LETTER = gql`
+    query collectionLetter($letter: String!) {
+        collectionLetter(letter: $letter) {
+          _id
+          name
+          realID
+          sortedName
+          quotes {
+            _id
+          }
         }
     }
 `;

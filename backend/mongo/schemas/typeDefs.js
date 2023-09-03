@@ -52,6 +52,7 @@ const typeDefs = gql`
         collectionName(name: String): Collection
         collectionID(collectionId: ID): Collection
         collectionR(collectionRealId: String): Collection
+        collectionLetter(letter: String): [Collection]
         
         quotes: [Quote]
         quoteSP: [Quote]
