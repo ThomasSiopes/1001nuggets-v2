@@ -180,11 +180,6 @@ body {
     box-shadow: none!important;
 }
 
-.navbar-toggler {
-    background-color: #334!important;
-    text-decoration-color: white!important;
-}
-
 .navPage-body {
     max-width: 100%
 }

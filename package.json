@@ -12,7 +12,8 @@
     "install": "cd backend && npm i && cd ../frontend && npm i",
     "test": "echo \"Error: no test specified\" && exit 1",
     "seed": "cd backend && npm run seed",
-    "build": "cd frontend && npm run build"
+    "build": "cd frontend && npm run build",
+    "rt": "cd backend/mongo/seeders && node relatedTopicCode.js"
   },
   "author": "Tom Siopes",
   "license": "ISC",
