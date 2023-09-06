@@ -6,6 +6,7 @@ import { useQuery } from "@apollo/client";
 import { Container, Row, Col, Card } from "react-bootstrap";
 
 import { QUERY_COLLECTION_REALID } from "../utils/queries";
+import shuffleSortedName from "../utils/shuffleSortedName";
 import shuffle from "../utils/shuffle";
 
 const QuoteCard = React.lazy(() => import("../components/QuoteCard"));
@@ -22,12 +23,14 @@ function COLLECTION () {
 
     if(!data) return redirect(`/404error`);
 
-    const collection = data.collectionR;
-
+    const collection = data.collectionR
+    
+    let quoteList = collection.quotes.map((item) => Object.assign({}, item, {selected:false}));
+    let sortedList = shuffleSortedName(quoteList);
     let indexList = [];
 
-    for(let i = 0; i < collection.quotes.length; ++i) {
-        if(!(collection.quotes[i].somePeople)) indexList.push(i);
+    for(let n = 0; ((n < collection.quotes.length) && (n < 9)); ++n) {
+        indexList.push(n)
     }
 
     if(!indexList || indexList === []) return <p>Loading...</p>
@@ -59,7 +62,7 @@ function COLLECTION () {
             <Card>
                 <Card.Header>Home {`>`} <Link className="link-theme" to={`/collections`}>Collections</Link> {`>`} {collection.name}</Card.Header>
                 <Card.Body>
-                    <Row>
+                <Row>
                          {/* First Quote Column */}
                          <Col xs={12} md={6} lg={4}>
                             {list1 && 
