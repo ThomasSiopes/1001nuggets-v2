@@ -6,10 +6,39 @@ import { useQuery } from "@apollo/client";
 import { Container, Row, Col, Card } from "react-bootstrap";
 
 import { QUERY_COLLECTION_REALID } from "../utils/queries";
-import shuffleSortedName from "../utils/shuffleSortedName";
-import shuffle from "../utils/shuffle";
 
 const QuoteCard = React.lazy(() => import("../components/QuoteCard"));
+
+function shuffleSortedName(array) {
+    console.log(array.sort(function(a, b) { 
+        return a.topics[0].localeCompare(b.topics[0]);
+        // var nameA = a.topics[0];
+        // var nameB = b.topics[0];
+        // var checkA = false;
+        // var checkB = false;
+
+        // if((nameA.charAt(0) === "\"") || (nameA.charAt(0) === "'")) {
+        //     checkA = true;
+        // }
+
+        // if((nameB.charAt(0) === "\"") || (nameB.charAt(0) === "'")) { 
+        //     checkB = true;
+        // }
+        
+        // if(checkA && checkB) {
+        //     return (nameA.charAt(1) - nameB.charAt(1))} 
+        // else if(checkA) {
+        //     return (nameA.charAt(1) - nameB.charAt(0))} 
+        // else if(checkB) {
+        //     return (nameA.charAt(0) - nameB.charAt(1))}
+        // else { 
+        //     return (nameA.charAt(0) - nameB.charAt(0))
+        // }
+    }))
+    console.log("How the array be sorted: ")
+    console.log(array);
+    return array;
+}
 
 function COLLECTION () {
     const { collectionRealId } = useParams();
@@ -27,32 +56,9 @@ function COLLECTION () {
     
     let quoteList = collection.quotes.map((item) => Object.assign({}, item, {selected:false}));
     let sortedList = shuffleSortedName(quoteList);
-    let indexList = [];
 
-    for(let n = 0; ((n < collection.quotes.length) && (n < 9)); ++n) {
-        indexList.push(n)
-    }
-
-    if(!indexList || indexList === []) return <p>Loading...</p>
-
-    indexList = shuffle(indexList);
-
-    let list1;
-    let list2;
-    let list3a;
-    let list3b;
-    if(collection.quotes) {
-        let result = [];
-        for(let n = 3; n > 0; --n) {
-            result.push(indexList.splice(0,Math.ceil(indexList.length / n)));
-        }
-        list1 = result[0];
-        list2 = result[2];
-
-        let middleIndex = Math.ceil(result[1].length/2);
-        list3a = result[1].splice(0,middleIndex);
-        list3b = result[1].splice(-middleIndex);
-    }
+    let indexOrder = []
+    for(let i = 0; i < sortedList.length; ++i) indexOrder.push(i);
 
     return (
         <Container>
@@ -62,74 +68,12 @@ function COLLECTION () {
             <Card>
                 <Card.Header>Home {`>`} <Link className="link-theme" to={`/collections`}>Collections</Link> {`>`} {collection.name}</Card.Header>
                 <Card.Body>
-                <Row>
-                         {/* First Quote Column */}
-                         <Col xs={12} md={6} lg={4}>
-                            {list1 && 
-                                <Row>
-                                    {list1.map((index) => (
-                                        <Col xs={12} className="mb-3" key={collection.quotes[index].quoteText}>
-                                            <QuoteCard quotes={collection.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
-                                        </Col>
-                                    ))}
-                                </Row>
-                            }
-                            {
-                                list3a &&
-                                <Row className="d-xs-block d-lg-none">
-                                    {list3a.map((index) => (
-                                        <Col xs={12} className="mb-3" key={"false" + collection.quotes[index].quoteText}>
-                                            <QuoteCard quotes={collection.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
-                                        </Col>
-                                    ))}
-                                </Row>
-                            }
-                        </Col>
-
-                        {/* Middle Quote Column */}
-                        <Col lg={4} className="d-none d-lg-block">
-                            {list3a && 
-                                <Row>
-                                    {list3a.map((index) => (
-                                        <Col xs={12} className="mb-3" key={collection.quotes[index].quoteText}>
-                                            <QuoteCard quotes={collection.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
-                                        </Col>
-                                    ))}
-                                </Row>
-                            }
-                            {list3b && 
-                                <Row>
-                                    {list3b.map((index) => (
-                                        <Col xs={12} className="mb-3" key={collection.quotes[index].quoteText}>
-                                            <QuoteCard quotes={collection.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
-                                        </Col>
-                                    ))}
-                                </Row>
-                            }
-                        </Col>
-                        
-                        {/* Last Quote Column */}
-                        <Col xs={12} md={6} lg={4}>
-                            {
-                                list3b &&
-                                <Row className="d-xs-block d-lg-none">
-                                    {list3b.map((index) => (
-                                        <Col xs={12} className="mb-3" key={"false" + collection.quotes[index].quoteText}>
-                                            <QuoteCard quotes={collection.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
-                                        </Col>
-                                    ))}
-                                </Row>
-                            }
-                            {list2 && 
-                                <Row>
-                                    {list2.map((index) => (
-                                        <Col xs={12} className="mb-3" key={collection.quotes[index].quoteText}>
-                                            <QuoteCard quotes={collection.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
-                                        </Col>
-                                    ))}
-                                </Row>
-                            }
-                        </Col>
+                    <Row>
+                        {sortedList.map((index) => (
+                            <Col xs={12} className="mb-3" key={index.quoteText}>
+                                <QuoteCard quotes={sortedList} quoteIndex={sortedList.indexOf(index)} indexOrder={indexOrder}/>
+                            </Col>
+                        ))}
                     </Row>
                 </Card.Body>
             </Card>
