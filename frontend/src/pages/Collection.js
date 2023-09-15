@@ -70,7 +70,7 @@ function COLLECTION () {
                 <Card.Body>
                     <Row>
                         {sortedList.map((index) => (
-                            <Col xs={12} className="mb-3" key={index.quoteText}>
+                            <Col xs={12} md={6} xl={4} className="mb-3" key={index.quoteText}>
                                 <QuoteCard quotes={sortedList} quoteIndex={sortedList.indexOf(index)} indexOrder={indexOrder}/>
                             </Col>
                         ))}
