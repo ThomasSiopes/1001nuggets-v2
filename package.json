@@ -10,7 +10,6 @@
     "start": "node backend/server.js",
     "dev": "concurrently \"cd backend && npm run watch\" \"cd frontend && npm start\"",
     "install": "cd backend && npm i && cd ../frontend && npm i",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "seed": "cd backend && npm run seed",
     "build": "cd frontend && npm run build",
     "rt": "cd backend/mongo/seeders && node relatedTopicCode.js"
