@@ -1,2 +1,3 @@
 /mongo/seeders
 /node_modules
+/.env
