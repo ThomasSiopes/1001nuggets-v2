@@ -32,7 +32,12 @@ const quote = new Schema({
     somePeople: {
         type: Boolean,
         required: false
-    }
+    },
+    censors: [
+        {
+            type: String,
+        }
+    ]
 });
 
 const Quote = model("Quote", quote);

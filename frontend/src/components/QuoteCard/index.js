@@ -8,6 +8,7 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import TopicButton from "../TopicButton";
 import CollectionButton from "../CollectionButton";
 import AuthorButton from "../AuthorButton";
+import QuoteCardText from '../QuoteCardText';
 
 function QuoteCard({quotes, quoteIndex, indexOrder}) {
   const [show, setShow] = useState(false);
@@ -26,6 +27,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
+    console.log("Selected index: " + selectedIndex);
   }
 
   const handleFontResize = () => {
@@ -41,7 +43,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
       <Card>
         <Card.Body className="quote-card" onClick={handleShow}>
             <strong>
-              <Card.Text className="font-poppins text-center">{quotes[quoteIndex].quoteText}</Card.Text>
+              <QuoteCardText type={null} quotes={quotes} index={quoteIndex}/>
             </strong>
             <p className="text-end mb-0">
               <strong>

@@ -28,6 +28,7 @@ export const QUERY_AUTHOR_NAME = gql`
                 topics
                 realID
                 relatedTopics
+                censors
             }
             realID
         }
@@ -48,6 +49,7 @@ export const QUERY_AUTHOR_ID = gql`
                 topics
                 realID
                 relatedTopics
+                censors
             }
             realID
         }
@@ -68,6 +70,7 @@ export const QUERY_AUTHOR_REALID = gql`
                 topics
                 realID
                 relatedTopics
+                censors
             }
             realID
         }
@@ -105,6 +108,7 @@ export const QUERY_TOPIC_NAME = gql`
                 realID
                 somePeople
                 relatedTopics
+                censors
             }
         }
     }
@@ -126,6 +130,7 @@ export const QUERY_TOPIC_ID = gql`
                 realID
                 somePeople
                 relatedTopics
+                censors
             }
         }
     }
@@ -147,6 +152,7 @@ export const QUERY_TOPIC_REALID = gql`
                 realID
                 somePeople
                 relatedTopics
+                censors
             }
         }
     }
@@ -177,6 +183,7 @@ export const QUERY_QUOTE_ALL = gql`
             realID
             somePeople
             relatedTopics
+            censors
         }
     }
 `;
@@ -192,6 +199,7 @@ export const QUERY_QUOTE_SP = gql`
             realID
             somePeople
             relatedTopics
+            censors
         }
     }
 `;
@@ -206,6 +214,7 @@ export const QUERY_QUOTE_RESULT = gql`
             topics
             realID
             relatedTopics
+            censors
         }
     }
 `
@@ -221,6 +230,7 @@ export const QUERY_QUOTE_ID = gql`
             realID
             somePeople
             relatedTopics
+            censors
         }
     }
 `;
@@ -236,6 +246,7 @@ export const QUERY_QUOTE_REALID = gql`
             realID
             somePeople
             relatedTopics
+            censors
         }
     }
 `;
@@ -288,6 +299,7 @@ export const QUERY_COLLECTION_REALID = gql`
                 realID
                 somePeople
                 relatedTopics
+                censors
             }
         }
     }

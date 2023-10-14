@@ -26,6 +26,7 @@ const typeDefs = gql`
         somePeople: Boolean
         relatedTopics: [String]!
         collections: [String]!
+        censors: [String]!
     }
 
     type Collection {
