@@ -64,9 +64,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
             <Carousel.Item key={quotes[index].quoteText}>
               <Container className="quote-card py-4">
                 {/* Quote */}
-                <Container className="font-poppins">
-                  <strong><p className="quote-modal-text text-center targetText">{quotes[index].quoteText}</p></strong>
-                </Container>
+                <QuoteCardText type={"modal"} quotes={quotes} index={index}/>
 
                 {/* Author */}
                 <Container className="mt-3 pe-4 text-end">

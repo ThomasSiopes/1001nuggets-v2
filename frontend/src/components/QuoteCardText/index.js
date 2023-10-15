@@ -3,18 +3,18 @@ import { Card, Container } from "react-bootstrap"
 
 function QuoteCardText({type, quotes, index}) {
     let split = 0
+    let censors = ["bullshit", "bullshitting", "shit", "shitting", "shitty", "fuck", "fucking", "fucked", "n*gger"];
+
     if(quotes[index]) split = quotes[index].quoteText.split(/(\s+)/);
     if(split) {
         for(let i = 0; i < split.length; ++i) {
             let check = false;
-            if(quotes[index].censors) {
-                for(let n = 0; n < quotes[index].censors.length; ++n) {
-                    if(split[i].toUpperCase().replace(/[^\w]/g, "") === quotes[index].censors[n].toUpperCase().replace(/[^\w]/g, "")) check = true;
-                }
+            for(let n = 0; n < censors.length; ++n) {
+                if(split[i].toUpperCase().replace(/[^\w]/g, "") === censors[n].toUpperCase().replace(/[^\w]/g, "")) check = true;
             }
 
-            if(check) split[i] = <span className="censor">{split[i]}</span>
-            else split[i] = <span>{split[i]}</span>
+            if(check) split[i] = <span className="censor" key={"split" + split[i] + i}>{split[i]}</span>
+            else split[i] = <span key={"split" + split[i] + i}>{split[i]}</span>
         }
     }
 
