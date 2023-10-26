@@ -11,9 +11,7 @@ a {
 }
 
 .bg-nugget {
-    /* background-image: url("../../public/assets/images/gold_pile.jpg")!important; */
     background-image: url("../../public/assets/images/gold_pile2.jpg")!important;
-    /* https://creativemarket.com/Good_Studio/7192782-Gold-nuggets-seamless-pattern */
     background-size: 100% auto;
     background-repeat: repeat;
 }
@@ -222,7 +220,7 @@ html {
 }
 
 #quote-page, .quote-card {
-    background-image: url("../../public/image5black.png")!important;
+    background-image: url("../../public/N_Icon_Monochrome_Pale.png")!important;
     background-size: contain!important;
     background-position: center!important;
     background-repeat: no-repeat!important;

@@ -39,7 +39,6 @@ function Quote () {
                 <meta property="og:url" content={window.location.href} />
                 <meta property="og:title" content="1001 Nuggets" />
                 <meta property="og:description" content={quote.quoteText}/>
-                {/* <meta property="og:image" content="http://graphics8.nytimes.com/images/2011/12/08/technology/bits-newtwitter/bits-newtwitter-tmagArticle.jpg" /> */}
             </Helmet>
             <Card>
                 <Card.Header>Home {`>`} Authors {`>`} <AuthorButton type={"link"} name={quote.author}/> {`>`} Quotes</Card.Header>
