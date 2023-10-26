@@ -25,7 +25,7 @@ function SomePeople () {
         indexList.push(n);
     }
 
-    if(!indexList || indexList === []) return <p>Loading...</p>
+    if(!indexList) return <p>Loading...</p>
 
     indexList = shuffle(indexList);
 
