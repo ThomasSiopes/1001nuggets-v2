@@ -30,7 +30,7 @@ function Topic () {
         if(!(topic.quotes[i].somePeople)) indexList.push(i);
     }
 
-    if(!indexList || indexList === []) return <p>Loading...</p>
+    if(!indexList) return <p>Loading...</p>
 
     indexList = shuffle(indexList);
 
@@ -59,9 +59,9 @@ function Topic () {
             <Helmet>
                 <title>1001 Nuggets - {topic.name}</title>
             </Helmet>
-            <Card>
-                <Card.Header>Home {`>`} <Link className="link-theme" to={`/topics`}>Topics</Link> {`>`} {topic.name}</Card.Header>
-                <Card.Body>
+            <Card bg={"transparent"} border={"none"}>
+                <Card.Header className="bg-light">Home {`>`} <Link className="link-theme" to={`/topics`}>Topics</Link> {`>`} {topic.name}</Card.Header>
+                <Card.Body bg={"transparent"}>
                     <Row>
                          {/* First Quote Column */}
                          <Col xs={12} md={6} lg={4}>
