@@ -41,7 +41,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
     return (
     <div>
       <Card>
-        <Card.Body className="quote-card" onClick={handleShow}>
+        <Card.Body className="quote-card rounded" onClick={handleShow}>
             <strong>
               <QuoteCardText type={null} quotes={quotes} index={quoteIndex}/>
             </strong>
