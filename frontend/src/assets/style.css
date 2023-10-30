@@ -220,7 +220,7 @@ html {
 }
 
 #quote-page, .quote-card {
-    background-image: url("../../public/N_Icon2_TransparentDark.png")!important;
+    background-image: url("../assets/images/N_Icon2_TransparentDark.png")!important;
     background-size: contain!important;
     background-position: center!important;
     background-repeat: no-repeat!important;

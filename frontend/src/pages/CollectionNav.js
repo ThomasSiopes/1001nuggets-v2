@@ -7,21 +7,6 @@ const CollectionNavInst = React.lazy(() => import("../components/CollectionNavIn
 function Topics () {
     const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
-    const searchFunction = () => {
-        let input, filter, group, elements, body, textValue;
-        input = document.getElementById("myInput");
-        filter = input.value.toUpperCase();
-        group = document.getElementById("myGroup");
-        elements = group.getElementsByClassName("col-12")
-
-        for(let i = 0; i < elements.length; ++i) {
-            body = elements[i].getElementsByTagName("a")[0];
-            textValue = body.textContent || body.innerText;
-            if(textValue.toUpperCase().indexOf(filter) > -1) elements[i].style.display="";
-            else elements[i].style.display="none";
-        }
-    }
-
     return (
         <Container>
             <Helmet>
@@ -31,9 +16,6 @@ function Topics () {
                 <Col>
                     <Card>
                         <Card.Body>
-                            <Row className="d-none d-md-block">
-                                <Col><input type="text" id="myInput" onKeyUp={searchFunction} placeholder="Search for topic names..." className="mb-3"/></Col>
-                            </Row>
                             <Row id="myGroup">
                                 {alphabet.map((index) => (
                                     <CollectionNavInst key={index} letter={index}/>

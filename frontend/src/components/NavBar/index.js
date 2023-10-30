@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Navbar, Container, Form, Nav } from "react-bootstrap";
 
+import iconImage from "../../assets/images/N_Icon2_Transparent.png"
+
 function NavBar() {
     const value = useRef('');
 
@@ -15,7 +17,7 @@ function NavBar() {
     return(
         <Navbar variant="light" bg={"light"} expand="md" className="py-3 mb-3">
             <Container>
-                <Link className="navbar-brand me-0 p-0" to={`/`}><img id="nav-icon" src="/N_icon2_transparent.png" alt="Logo"/></Link>
+                <Link className="navbar-brand me-0 p-0" to={`/`}><img id="nav-icon" src={iconImage} alt="Logo"/></Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav" className="mx-2">
                     <Nav className="me-auto text-center">

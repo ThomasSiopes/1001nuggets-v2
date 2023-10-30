@@ -53,14 +53,11 @@ function Topic () {
 
     return (
         <Container>
-            {/* <MetaTags>
-                <title>1001 Nuggets - {topic.name}</title>
-            </MetaTags> */}
             <Helmet>
                 <title>1001 Nuggets - {topic.name}</title>
             </Helmet>
             <Card bg={"transparent"} border={"none"}>
-                <Card.Header className="bg-light">Home {`>`} <Link className="link-theme" to={`/topics`}>Topics</Link> {`>`} {topic.name}</Card.Header>
+                <Card.Header className="bg-light rounded">Home {`>`} <Link className="link-theme" to={`/topics`}>Topics</Link> {`>`} {topic.name}</Card.Header>
                 <Card.Body bg={"transparent"}>
                     <Row>
                          {/* First Quote Column */}
