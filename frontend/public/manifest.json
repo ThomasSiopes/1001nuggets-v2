@@ -4,7 +4,17 @@
   "icons": [
     {
       "src": "assets/images/N_Icon2.png",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "sizes": "512x512 192x192 64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/N_Icon512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/N_Icon192.png",
+      "sizes": "192x192",
       "type": "image/png"
     }
   ],
