@@ -13,9 +13,6 @@ function SearchResults() {
     return (
         <Container className="auttopBody">
             <div className="wrapper">
-                {/* <MetaTags>
-                    <title>1001 Nuggets - {query}</title>
-                </MetaTags> */}
                 <Helmet>
                     <title>1001 Nuggets - {query}</title>
                 </Helmet>
