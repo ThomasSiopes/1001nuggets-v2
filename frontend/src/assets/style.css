@@ -265,6 +265,10 @@ html {
     color: #000!important;
 }
 
+.width80 .modal-dialog {
+    max-width: 90%!important;
+}
+
 .quote-card h2, .quote-modal-text {
     font-size: 1.5rem;
 }

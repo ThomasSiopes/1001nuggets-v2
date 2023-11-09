@@ -1,6 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
+
+import TopicComponent from "../TopicComponent";
 
 import { QUERY_TOPIC_LETTER } from "../../utils/queries";
 
@@ -27,7 +29,8 @@ function TopicNavInst({letter}) {
             </div>
             {sortedList.map((index) => (
                 <div key={letter + index.name}>
-                    <p><strong><Link to={`/topic/${index.realID}`} className="link-theme">{index.name}</Link></strong></p>
+                    {/* <p><strong><Link to={`/topic/${index.realID}`} className="link-theme">{index.name}</Link></strong></p> */}
+                    <TopicComponent name={index.name} realID={index.realID}/>
                     <p>({index.quotes.length} quotes)</p>
                     <hr/>
                 </div>

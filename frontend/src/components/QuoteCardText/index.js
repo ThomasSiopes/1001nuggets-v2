@@ -3,7 +3,7 @@ import { Card, Container } from "react-bootstrap"
 
 function QuoteCardText({type, quotes, index}) {
     let split = 0
-    let censors = ["bullshit", "bullshitting", "shit", "shitting", "shitty", "fuck", "fucking", "fucked", "n*gger"];
+    let censors = ["bullshit", "bullshitting", "shit", "shitting", "shitty", "fuck", "fucking", "fucked", "n*gger","nigger"];
 
     if(quotes[index]) split = quotes[index].quoteText.split(/(\s+)/);
     if(split) {
