@@ -1,17 +1,26 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Helmet } from "react-helmet";
-import { useNavigate } from "react-router-dom";
-import { Card, Container, Form, Button } from "react-bootstrap"
+import { useQuery } from "@apollo/client";
+import { Card, Container, Button, Col, Row, Form, Modal } from "react-bootstrap"
+
+import { QUERY_QUOTE_RESULT } from "../utils/queries";
+
+const QuoteCard = React.lazy(() => import("../components/QuoteCard"));
 
 function Home () {    
+    const [show, setShow] = useState(false);
     const value = useRef('');
 
-    const handleChange = () => {
+    const handleChange = () => {        
         let searchBar = document.getElementById("searchHome");
         value.current = searchBar.value;
     }
 
-    const navigate = useNavigate();
+    const handleClose = () => setShow(false);
+    const handleShow = (event) => {
+        event.preventDefault();
+        setShow(true);
+    }
 
     return (
         <div>
@@ -24,8 +33,13 @@ function Home () {
                         <h1 className="font-victor-libre text-white">1001 NUGGETS</h1>
                     </Card.Header>
                     <Card.Body className="px-5">
-                        <Form onSubmit={() => navigate('search/' + value.current)}>
-                            <input type="text" placeholder="Search 1001 Nuggets quotes..." id="searchHome" className="formInput rounded text-center" onChange={handleChange}></input>
+                        <Form className="row" onSubmit={handleShow}>
+                            <Col xs={8} className="align-items-center d-flex px-1">
+                                <input type="text" placeholder="Search 1001 Nuggets..." id="searchHome" className="formInput rounded text-center" onChange={handleChange}></input>
+                            </Col>
+                            <Col xs={4} className="px-1">
+                                <input className="btn btn-theme btn-block" type="submit" value="Search" readOnly/>
+                            </Col>
                         </Form>
                     </Card.Body>
                     <Card.Footer className="px-5">
@@ -35,7 +49,51 @@ function Home () {
                     </Card.Footer>
                 </Card>
             </Container>
+            <Modal show={show} onHide={handleClose} backdrop="static" keyboard={false} className="width80">
+                <Modal.Header>
+                    <p onClick={handleClose} className="link-theme"><strong>Done</strong></p>
+                </Modal.Header>
+                <Modal.Body>
+                    <Results input={value.current}/>
+                </Modal.Body>
+            </Modal>
         </div>
+    )
+}
+
+function Results({input}) {
+    let quoteList, listOrder=[];
+
+    let {loading, data} = useQuery(QUERY_QUOTE_RESULT, {
+        variables: {input: input},
+    })
+
+    if(loading) return <p>Loading...</p>
+
+    quoteList = data.quoteResult;
+
+    for(let n = 0; n < quoteList.length; ++n) {
+        listOrder.push(n);
+    }
+
+    return (quoteList[0] ?
+        <Container className="mb-2">
+            <div>
+                <h5>Results under quotes . . .</h5>
+                <hr></hr>
+                <Row className="text-center">
+                    {quoteList.map((index) => (
+                        <Col xs={12} md={6} xl={4} className="mb-3" key={index.name + index.quoteText}>
+                            <QuoteCard quotes={quoteList} quoteIndex={quoteList.indexOf(index)} indexOrder={listOrder}/>
+                        </Col>
+                    ))}
+                </Row>
+            </div>
+        </Container>
+        :
+        <Container>
+            <h5>No results under quotes...</h5>
+        </Container>    
     )
 }
 

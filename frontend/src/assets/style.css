@@ -191,7 +191,7 @@ body {
     box-shadow: none!important;
 }
 
-.navPage-body {
+.navPage-body, .max-width-100 {
     max-width: 100%
 }
 

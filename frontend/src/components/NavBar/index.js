@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useQuery } from "@apollo/client";
 import { Link } from "react-router-dom";
-import { Navbar, Container, Form, Nav, Modal, Col, Row } from "react-bootstrap";
+import { Navbar, Container, Nav, Modal, Col, Row, Form } from "react-bootstrap";
 
 import iconImage from "../../assets/images/N_Icon2_Transparent.png"
 import { QUERY_QUOTE_RESULT } from '../../utils/queries';
@@ -18,7 +18,10 @@ function NavBar() {
     }
 
     const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const handleShow = (event) => {
+        event.preventDefault();
+        setShow(true);
+    }
 
     return(
         <Navbar variant="light" bg={"light"} expand="md" className="py-3 mb-3">
@@ -32,9 +35,13 @@ function NavBar() {
                         <Nav.Link href="/some-people">People</Nav.Link>
                     </Nav>
                     <Nav className="ms-auto">
-                        <Form className="text-center mt-2">
-                            <input type="text" id="searchTerm" placeholder="Search..." className="me-2 rounded" onChange={handleChange}></input>
-                            <input className="btn btn-theme" onClick={handleShow} value="Search"/>
+                        <Form className="row text-center mx-auto mt-2 max-width-100" onSubmit={handleShow}>
+                            <Col xs={8} className="align-items-center d-flex px-1">
+                                <input type="text" id="searchTerm" placeholder="Search..." className="rounded width100 text-center" onChange={handleChange}></input>
+                            </Col>
+                            <Col xs={4} className="px-1">
+                                <input className="btn btn-theme btn-block max-width-100" type="submit" value="Search" readOnly/>
+                            </Col>
                         </Form>
                     </Nav>
                 </Navbar.Collapse>
