@@ -9,11 +9,14 @@ const QuoteCard = React.lazy(() => import("../components/QuoteCard"));
 
 function Home () {    
     const [show, setShow] = useState(false);
+    const [buttonDisabled, setAbility] = useState(true)
     const value = useRef('');
 
     const handleChange = () => {        
         let searchBar = document.getElementById("searchHome");
         value.current = searchBar.value;
+        if(value.current) setAbility(false)
+        else setAbility(true)
     }
 
     const handleClose = () => setShow(false);
@@ -38,7 +41,7 @@ function Home () {
                                 <input type="text" placeholder="Search 1001 Nuggets..." id="searchHome" className="formInput rounded text-center" onChange={handleChange}></input>
                             </Col>
                             <Col xs={4} className="px-1">
-                                <input className="btn btn-theme btn-block" type="submit" value="Search" readOnly/>
+                                <Button variant={"theme"} className="btn-block" disabled={buttonDisabled} type="submit" readOnly>Search</Button>
                             </Col>
                         </Form>
                     </Card.Body>

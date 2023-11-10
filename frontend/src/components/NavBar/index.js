@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useQuery } from "@apollo/client";
 import { Link } from "react-router-dom";
-import { Navbar, Container, Nav, Modal, Col, Row, Form } from "react-bootstrap";
+import { Navbar, Container, Nav, Modal, Col, Button, Row, Form } from "react-bootstrap";
 
 import iconImage from "../../assets/images/N_Icon2_Transparent.png"
 import { QUERY_QUOTE_RESULT } from '../../utils/queries';
@@ -10,11 +10,14 @@ const QuoteCard = React.lazy(() => import("../QuoteCard"));
 
 function NavBar() {
     const [show, setShow] = useState(false);
+    const [buttonDisabled, setAbility] = useState(true)
     const value = useRef('');
 
     const handleChange = () => {
         let searchBar = document.getElementById("searchTerm");
         value.current = searchBar.value;
+        if(value.current) setAbility(false)
+        else setAbility(true)
     }
 
     const handleClose = () => setShow(false);
@@ -40,7 +43,7 @@ function NavBar() {
                                 <input type="text" id="searchTerm" placeholder="Search..." className="rounded width100 text-center" onChange={handleChange}></input>
                             </Col>
                             <Col xs={4} className="px-1">
-                                <input className="btn btn-theme btn-block max-width-100" type="submit" value="Search" readOnly/>
+                            <Button variant={"theme"} className="btn-block" disabled={buttonDisabled} type="submit" readOnly>Search</Button>
                             </Col>
                         </Form>
                     </Nav>

@@ -53,15 +53,12 @@ function Author () {
 
     return (        
         <Container>
-            {/* <MetaTags>
-                <title>1001 Nuggets - {author.name}</title>
-            </MetaTags> */}
             <Helmet>
                 <title>1001 Nuggets - {author.name}</title>
             </Helmet>
-            <Card>
-                <Card.Header>Home {`>`} Authors {`>`} {author.name}</Card.Header>
-                <Card.Body>
+            <Card bg={"transparent"} border={"none"}>
+                <Card.Header className="bg-light rounded">Home {`>`} Authors {`>`} {author.name}</Card.Header>
+                <Card.Body bg={"transparent"}>
                     <Row>
                          {/* First Quote Column */}
                          <Col xs={12} md={6} lg={4}>
