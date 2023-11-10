@@ -20,7 +20,7 @@ const TopicNav = React.lazy(() => import("./pages/TopicNav"));
 const CollectionNav = React.lazy(() => import ("./pages/CollectionNav"));
 const Collection = React.lazy(() => import ("./pages/Collection"));
 const SomePeople = React.lazy(() => import("./pages/SomePeople"));
-const SearchResult = React.lazy(() => import("./pages/SearchResult"));
+// const SearchResult = React.lazy(() => import("./pages/SearchResult"));
 
 const clientInfo = {
   httpLink: createHttpLink({uri:"/graphql"}),
@@ -58,7 +58,7 @@ function App () {
 
             <Route exact path="/quote/:quoteRealId" element={<React.Suspense><Quote/></React.Suspense>}/>
 
-            <Route exact path="/search/:query" element={<React.Suspense><SearchResult/></React.Suspense>}/>
+            {/* <Route exact path="/search/:query" element={<React.Suspense><SearchResult/></React.Suspense>}/> */}
           </Routes>
       </Router>
     </ApolloProvider>

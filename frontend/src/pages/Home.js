@@ -49,11 +49,11 @@ function Home () {
                     </Card.Footer>
                 </Card>
             </Container>
-            <Modal show={show} onHide={handleClose} backdrop="static" keyboard={false} className="width80">
-                <Modal.Header>
+            <Modal show={show} onHide={handleClose} backdrop="static" keyboard={false} className="width80 bg-transparent">
+                <Modal.Header className="rounded">
                     <p onClick={handleClose} className="link-theme"><strong>Done</strong></p>
                 </Modal.Header>
-                <Modal.Body>
+                <Modal.Body className="bg-transparent">
                     <Results input={value.current}/>
                 </Modal.Body>
             </Modal>
@@ -79,8 +79,6 @@ function Results({input}) {
     return (quoteList[0] ?
         <Container className="mb-2">
             <div>
-                <h5>Results under quotes . . .</h5>
-                <hr></hr>
                 <Row className="text-center">
                     {quoteList.map((index) => (
                         <Col xs={12} md={6} xl={4} className="mb-3" key={index.name + index.quoteText}>

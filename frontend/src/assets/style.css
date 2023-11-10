@@ -17,7 +17,7 @@ a {
 }
 
 body { 
-    background-color: #efefef!important;
+    background-color: #99A!important;
 }
 
 .border-none {
@@ -181,6 +181,11 @@ body {
 
 .mainBody {
     min-height: 67vh!important;
+}
+
+.modal-dialog {
+    margin-left: auto!important;
+    margin-right: auto!important;
 }
 
 .navbar-brand {
