@@ -14,7 +14,7 @@ const NavBar = React.lazy(() => import("./components/NavBar"));
 //Pages
 const Home = React.lazy(() => import("./pages/Home"))
 const Author = React.lazy(() => import("./pages/Author"));
-// const Topic = React.lazy(() => import("./pages/Topic"));
+const Topic = React.lazy(() => import("./pages/Topic"));
 const Quote = React.lazy(() => import("./pages/Quote"));
 const TopicNav = React.lazy(() => import("./pages/TopicNav"));
 const CollectionNav = React.lazy(() => import ("./pages/CollectionNav"));
@@ -48,7 +48,7 @@ function App () {
           <Routes>
             <Route exact path="/" element={<React.Suspense><Home/></React.Suspense>}/>
             <Route exact path="/topics" element={<React.Suspense><TopicNav/></React.Suspense>}/>
-            {/* <Route exact path="/topic/:topicRealId" element={<React.Suspense><Topic/></React.Suspense>}/> */}
+            <Route exact path="/topic/:topicRealId" element={<React.Suspense><Topic/></React.Suspense>}/>
 
             <Route exact path="/collections" element={<React.Suspense><CollectionNav/></React.Suspense>}/>
             <Route exact path="/collection/:collectionRealId" element={<React.Suspense><Collection/></React.Suspense>}/>
