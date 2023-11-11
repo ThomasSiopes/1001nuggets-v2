@@ -37,10 +37,10 @@ function Home () {
                     </Card.Header>
                     <Card.Body className="px-5">
                         <Form className="row" onSubmit={handleShow}>
-                            <Col xs={8} className="align-items-center d-flex px-1">
+                            <Col xs={7} className="align-items-center d-flex px-1">
                                 <input type="text" placeholder="Search 1001 Nuggets..." id="searchHome" className="formInput rounded text-center" onChange={handleChange}></input>
                             </Col>
-                            <Col xs={4} className="px-1">
+                            <Col xs={5} className="px-1">
                                 <Button variant={"theme"} className="btn-block" disabled={buttonDisabled} type="submit" readOnly>Search</Button>
                             </Col>
                         </Form>
