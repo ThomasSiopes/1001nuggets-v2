@@ -7,11 +7,12 @@ a {
 }
 
 .bg-theme {
-    background-color: #445!important;
+    /* background-color: #445!important; */
+    background-color: #C21!important;
 }
 
 .bg-nugget {
-    background-image: url("../../public/assets/images/Background4.png")!important;
+    background-image: url("../../public/assets/images/Background5.png")!important;
     background-size: 100% auto;
     background-repeat: repeat;
 }
@@ -36,13 +37,15 @@ body {
 
 .btn-theme {
     color: #fff!important;
-    background-color: #334!important;
+    /* background-color: #334!important; */
+    background-color: #C21!important;
     border: none!important;
 }
 
 .btn-theme:hover, .btn-theme:focus {
     color: #fff!important;
-    background-color: #112!important;
+    /* background-color: #112!important; */
+    background-color: #911!important;
     border: none!important;
 }
 
