@@ -7,8 +7,7 @@ a {
 }
 
 .bg-theme {
-    /* background-color: #445!important; */
-    background-color: #C21!important;
+    background-color: #C32!important;
 }
 
 .bg-nugget {
@@ -18,7 +17,7 @@ a {
 }
 
 body { 
-    background-color: #99A!important;
+    background-color: #DDD!important;
 }
 
 .border-none {
@@ -37,15 +36,13 @@ body {
 
 .btn-theme {
     color: #fff!important;
-    /* background-color: #334!important; */
-    background-color: #C21!important;
+    background-color: #D43!important;
     border: none!important;
 }
 
 .btn-theme:hover, .btn-theme:focus {
     color: #fff!important;
-    /* background-color: #112!important; */
-    background-color: #911!important;
+    background-color: #A21!important;
     border: none!important;
 }
 
