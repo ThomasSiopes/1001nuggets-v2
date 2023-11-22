@@ -6,6 +6,7 @@ import { Card, Container, Button, Col, Row, Form, Modal } from "react-bootstrap"
 import { QUERY_QUOTE_RESULT } from "../utils/queries";
 
 const QuoteCard = React.lazy(() => import("../components/QuoteCard"));
+const QuoteOfTheDay = React.lazy(() => import("../components/QuoteOfTheDay"))
 
 function Home () {    
     const [show, setShow] = useState(false);
@@ -51,6 +52,9 @@ function Home () {
                         <Button variant={"theme"} href={`/some-people`} className="btn-block my-3">People</Button>
                     </Card.Footer>
                 </Card>
+
+                <QuoteOfTheDay/>
+                
             </Container>
             <Modal show={show} onHide={handleClose} backdrop="static" keyboard={false} className="width80 bg-transparent">
                 <Modal.Header className="rounded">
