@@ -5,30 +5,41 @@ import { Link } from "react-router-dom";
 
 import AuthorButton from "../AuthorButton";
 
-import { QUERY_QUOTE_ALL } from "../../utils/queries";
+import { QUERY_QOTD, QUERY_QUOTE_REALID } from "../../utils/queries";
 
 function QuoteOfTheDay(){
-    let {loading, data} = useQuery(QUERY_QUOTE_ALL)
+    let {loading, data} = useQuery(QUERY_QOTD)
     if(loading) return <p>Loading...</p>
 
-    const quotes = data.quotes;
-    const randIndex = Math.floor(Math.random() * 100)
-    const QOTD = quotes[randIndex]
+    const QOTD = data.dailyQuote[0].index
+
+    return(
+        <QuoteCard realID={QOTD}/>
+    )
+}
+
+function QuoteCard({realID}) {
+    let {loading, data} = useQuery(QUERY_QUOTE_REALID, {
+        variables: {quoteRealId: realID},
+    })
+    if(loading) return <p>Loading quote card...</p>
+
+    const Quote = data.quoteR
 
     return(
         <div>
             <Card className="my-4">
                 <Card.Header>Quote of the Day</Card.Header>
                 <Card.Body className="quote-card">
-                    <Link to={"/quote/" + QOTD.realID}>
+                    <Link to={"/quote/" + Quote.realID}>
                         <Card.Text className="text-white">
                             <strong>
-                                <p>{QOTD.quoteText}</p>
+                                <p>{Quote.quoteText}</p>
                             </strong>
                         </Card.Text>
                     </Link>
                     <Card.Text>
-                        <strong>{QOTD.author && <AuthorButton type="link" name={QOTD.author}/>}</strong>
+                        <strong>{Quote.author && <AuthorButton type="link" name={Quote.author}/>}</strong>
                     </Card.Text>
                 </Card.Body>
             </Card>

@@ -318,3 +318,11 @@ export const QUERY_COLLECTION_LETTER = gql`
         }
     }
 `;
+
+export const QUERY_QOTD = gql`
+    query getQOTD {
+        dailyQuote {
+            index
+        }
+    }
+`

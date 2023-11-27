@@ -29,6 +29,10 @@ const typeDefs = gql`
         censors: [String]!
     }
 
+    type QOTD {
+        index: String
+    }
+
     type Collection {
         _id: ID
         name: String
@@ -60,6 +64,8 @@ const typeDefs = gql`
         quoteResult(input: String): [Quote]
         quote(quoteId: ID): Quote
         quoteR(quoteRealId: String): Quote
+
+        dailyQuote: [QOTD]
     }
 `;
 

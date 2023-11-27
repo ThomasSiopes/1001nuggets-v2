@@ -2,7 +2,7 @@ const { Schema, model } = require("mongoose");
 
 const qotd = new Schema({
     index: {
-        type: Number,
+        type: String,
         required: true
     }
 })

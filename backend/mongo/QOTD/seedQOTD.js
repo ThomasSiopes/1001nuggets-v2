@@ -1,11 +1,11 @@
 const db = require("../../config/connection");
 const { QOTD } = require("../models");
-const QOTD = require("./QOTD.json");
+const QOTDseed = require("./QOTD.json");
 
 db.once("open", async () => {
     try {
         await QOTD.deleteMany({});
-        await QOTD.create(QOTD[0]);
+        await QOTD.create(QOTDseed[0]);
         
     } catch(err) {
         console.error(err);
