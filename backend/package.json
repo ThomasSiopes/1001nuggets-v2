@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "watch": "nodemon",
-    "seed": "node mongo/seeders/seed.js"
+    "seed": "node mongo/seeders/seed.js",
+    "seedQOTD": "node mongo/QOTD/seedQOTD.js"
   },
   "author": "",
   "license": "ISC",
