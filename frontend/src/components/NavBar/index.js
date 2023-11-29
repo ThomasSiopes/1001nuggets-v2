@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useQuery } from "@apollo/client";
 import { Link } from "react-router-dom";
-import { Navbar, Container, Nav, Modal, Col, Button, Row, Form } from "react-bootstrap";
+import { Navbar, Container, Nav, Modal, Col, Button, Row, Form, Card } from "react-bootstrap";
 
 import iconImage from "../../assets/images/N_Icon2_Transparent.png"
 import { QUERY_QUOTE_RESULT } from '../../utils/queries';
@@ -28,7 +28,7 @@ function NavBar() {
 
     return(
         <Navbar variant="light" bg={"light"} expand="md" className="py-3 mb-3">
-            <Container>
+            <Container className="d-none d-md-flex">
                 <Link className="navbar-brand me-0 p-0" to={`/`}><img id="nav-icon" src={iconImage} alt="Logo"/></Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav" className="mx-2">
@@ -47,6 +47,29 @@ function NavBar() {
                             </Col>
                         </Form>
                     </Nav>
+                </Navbar.Collapse>
+            </Container>
+            <Container className="d-flex d-md-none">
+                <Link className="navbar-brand me-0 p-0" to={`/`}><img id="nav-icon" src={iconImage} alt="Logo"/></Link>
+                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                <Navbar.Collapse id="basic-navbar-nav" className="mx-2">
+                    <Card className="border-none mt-2">
+                        <Card.Body className="px-5">
+                            <Form className="row" onSubmit={handleShow}>
+                                <Col xs={7} className="align-items-center d-flex px-1">
+                                    <input type="text" placeholder="Search..." id="searchTerm" className="formInput rounded text-center" onChange={handleChange}></input>
+                                </Col>
+                                <Col xs={5} className="px-1">
+                                    <Button variant={"theme"} className="btn-block" disabled={buttonDisabled} type="submit" readOnly>Search</Button>
+                                </Col>
+                            </Form>
+                        </Card.Body>
+                        <Card.Footer className="px-5">
+                            <Button variant={"theme"} href={`/topics`} className="btn-block my-3">Topics</Button>
+                            <Button variant={"theme"} href={`/collections`} className="btn-block my-3">Collections</Button>
+                            <Button variant={"theme"} href={`/some-people`} className="btn-block my-3">People</Button>
+                        </Card.Footer>
+                    </Card>
                 </Navbar.Collapse>
             </Container>
             <Modal show={show} onHide={handleClose} backdrop="static" keyboard={false} className="width80">
