@@ -29,9 +29,6 @@ function Quote () {
 
     return (
         <Container>
-            {/* <MetaTags>
-                <title>1001 Nuggets - {quote.author} - {quote.quoteText}</title>
-            </MetaTags> */}
             <Helmet>
                 <title>1001 Nuggets - {quote.quoteText}</title>
                 <meta name="twitter:card" content="summary"></meta>

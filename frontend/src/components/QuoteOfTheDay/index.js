@@ -1,9 +1,10 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
 import { Card } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 import AuthorButton from "../AuthorButton";
+import TopicButton from "../TopicButton";
+import { FaTwitter, FaFacebookF } from "react-icons/fa";
 
 import { QUERY_QOTD, QUERY_QUOTE_REALID } from "../../utils/queries";
 
@@ -29,19 +30,23 @@ function QuoteCard({realID}) {
     return(
         <div>
             <Card className="my-4">
-                <Card.Header>Quote of the Day</Card.Header>
-                <Card.Body className="quote-card">
-                    <Link to={"/quote/" + Quote.realID}>
-                        <Card.Text className="text-white">
-                            <strong>
-                                <p>{Quote.quoteText}</p>
-                            </strong>
-                        </Card.Text>
-                    </Link>
-                    <Card.Text>
-                        <strong>{Quote.author && <AuthorButton type="link" name={Quote.author}/>}</strong>
-                    </Card.Text>
-                </Card.Body>
+                <div id="quote-page">
+                    <Card.Body>
+                        <Card.Text className="display-6 text-center"><span className="quote-body font-poppins" id="main-quote">{Quote.quoteText}</span></Card.Text>
+                        <Card.Text className="text-end pe-2"><strong><AuthorButton type={"link"} name={Quote.author}/></strong></Card.Text>
+                    </Card.Body>
+                    <Card.Body className="text-center">
+                        <a className="mx-2 share-button" href={`https://twitter.com/intent/tweet?url=${window.location.href}`} id="share-twitter"><FaTwitter/></a>
+                        <a className="mx-2 share-button" href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`} id="share-facebook"><FaFacebookF/></a>
+                    </Card.Body>
+                </div>
+                {Quote.topics.length !== 0 && 
+                    <Card.Footer className="text-center py-3">
+                            {Quote.topics.map((index) => (
+                                <TopicButton key={index} type={"button"} theme={"theme"} name={index}/>
+                            ))}
+                    </Card.Footer>
+                }
             </Card>
         </div>
     )
