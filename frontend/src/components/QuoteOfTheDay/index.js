@@ -30,14 +30,17 @@ function QuoteCard({realID}) {
     return(
         <div>
             <Card className="my-4">
+                <Card.Header>
+                    <h1>Quote of the Day</h1>
+                </Card.Header>
                 <div id="quote-page">
                     <Card.Body>
                         <Card.Text className="display-6 text-center"><span className="quote-body font-poppins" id="main-quote">{Quote.quoteText}</span></Card.Text>
                         <Card.Text className="text-end pe-2"><strong><AuthorButton type={"link"} name={Quote.author}/></strong></Card.Text>
                     </Card.Body>
                     <Card.Body className="text-center">
-                        <a className="mx-2 share-button" href={`https://twitter.com/intent/tweet?url=${window.location.href}`} id="share-twitter"><FaTwitter/></a>
-                        <a className="mx-2 share-button" href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`} id="share-facebook"><FaFacebookF/></a>
+                        <a className="mx-2 share-button" href={`https://twitter.com/intent/tweet?url=${window.location.href}/quote/${Quote.realID}`} id="share-twitter"><FaTwitter/></a>
+                        <a className="mx-2 share-button" href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}/quote/${Quote.realID}`} id="share-facebook"><FaFacebookF/></a>
                     </Card.Body>
                 </div>
                 {Quote.topics.length !== 0 && 
