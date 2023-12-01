@@ -10,8 +10,11 @@ const QuoteCard = React.lazy(() => import("../QuoteCard"));
 
 function NavBar() {
     const [show, setShow] = useState(false);
+    const [showSM, setShowSM] = useState(false);
     const [buttonDisabled, setAbility] = useState(true)
+    const [buttonDisabledSM, setAbilitySM] = useState(true)
     const value = useRef('');
+    const valueSM = useRef('');
 
     const handleChange = () => {
         let searchBar = document.getElementById("searchTerm");
@@ -20,10 +23,22 @@ function NavBar() {
         else setAbility(true)
     }
 
+    const handleChangeSM = () => {
+        let searchBar = document.getElementById("searchTermSM");
+        valueSM.current = searchBar.value;
+        if(valueSM.current) setAbilitySM(false)
+        else setAbilitySM(true)
+    }
+
     const handleClose = () => setShow(false);
+    const handleCloseSM = () => setShowSM(false);
     const handleShow = (event) => {
         event.preventDefault();
         setShow(true);
+    }
+    const handleShowSM = (event) => {
+        event.preventDefault();
+        setShowSM(true);
     }
 
     return(
@@ -55,12 +70,12 @@ function NavBar() {
                 <Navbar.Collapse id="basic-navbar-nav" className="mx-2">
                     <Card className="border-none mt-2">
                         <Card.Body className="px-5">
-                            <Form className="row" onSubmit={handleShow}>
+                            <Form className="row" onSubmit={handleShowSM}>
                                 <Col xs={7} className="align-items-center d-flex px-1">
-                                    <input type="text" placeholder="Search..." id="searchTerm" className="formInput rounded text-center" onChange={handleChange}></input>
+                                    <input type="text" placeholder="Search..." id="searchTermSM" className="formInput rounded text-center" onChange={handleChangeSM}></input>
                                 </Col>
                                 <Col xs={5} className="px-1">
-                                    <Button variant={"theme"} className="btn-block" disabled={buttonDisabled} type="submit" readOnly>Search</Button>
+                                    <Button variant={"theme"} className="btn-block" disabled={buttonDisabledSM} type="submit" readOnly>Search</Button>
                                 </Col>
                             </Form>
                         </Card.Body>
@@ -78,6 +93,14 @@ function NavBar() {
                 </Modal.Header>
                 <Modal.Body bg={"transparent"}>
                     <Results input={value.current}/>
+                </Modal.Body>
+            </Modal>
+            <Modal show={showSM} onHide={handleCloseSM} backdrop="static" keyboard={false} className="width80">
+                <Modal.Header className="rounded">
+                    <p onClick={handleCloseSM} className="link-theme"><strong>Done</strong></p>
+                </Modal.Header>
+                <Modal.Body bg={"transparent"}>
+                    <Results input={valueSM.current}/>
                 </Modal.Body>
             </Modal>
         </Navbar>
