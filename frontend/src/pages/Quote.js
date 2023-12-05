@@ -4,7 +4,7 @@ import { redirect, useParams } from "react-router-dom";
 import { useQuery} from "@apollo/client";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
-import { FaTwitter, FaFacebookF } from "react-icons/fa";
+import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 
 import TopicButton from "../components/TopicButton";
 import AuthorButton from "../components/AuthorButton";
@@ -46,10 +46,10 @@ function Quote () {
                                 <div id="quote-page">
                                     <Card.Body>
                                         <Card.Text className="display-6 text-center"><span className="quote-body font-poppins" id="main-quote">{quote.quoteText}</span></Card.Text>
-                                        <Card.Text className="text-end pe-2"><strong><AuthorButton type={"link"} name={quote.author}/></strong></Card.Text>
+                                        <Card.Text className="text-end pe-2"><strong><AuthorButton whitened={true} type={"link"} name={quote.author}/></strong></Card.Text>
                                     </Card.Body>
                                     <Card.Body className="text-center">
-                                        <a className="mx-2 share-button" href={`https://twitter.com/intent/tweet?url=${window.location.href}`} id="share-twitter"><FaTwitter/></a>
+                                        <a className="mx-2 share-button" href={`https://twitter.com/intent/tweet?url=${window.location.href}`} id="share-X"><FaXTwitter/></a>
                                         <a className="mx-2 share-button" href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`} id="share-facebook"><FaFacebookF/></a>
                                     </Card.Body>
                                 </div>

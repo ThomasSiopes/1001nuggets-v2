@@ -6,7 +6,7 @@ import { Button } from "react-bootstrap";
 
 import { QUERY_AUTHOR_NAME } from "../../utils/queries";
 
-const AuthorButton = ({type, name}) => {
+const AuthorButton = ({type, name, whitened}) => {
     let {loading, data} = useQuery(QUERY_AUTHOR_NAME, {
         variables: {name: name},
     })
@@ -22,7 +22,11 @@ const AuthorButton = ({type, name}) => {
             <Link to={`/author/${author.realID}`}><Button variant={"theme"}>{name}</Button></Link>
         )
     } else if(type === "link") {
-        return (
+        if(whitened) {
+            return(
+                <Link to={`/author/${author.realID}`} className="link-weak">{name}</Link>
+            )
+        } else return (
             <Link to={`/author/${author.realID}`} className="link-theme">{name}</Link>
         )
     } else return <span>Loading...</span>

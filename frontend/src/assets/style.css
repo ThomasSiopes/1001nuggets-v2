@@ -257,6 +257,14 @@ html {
     color: #1c315e !important;
 }
 
+#share-X {
+    color: #DDD !important;
+}
+
+#share-X:hover {
+    color: #999 !important;
+}
+
 .sidebar-text {
     font-size: 0.5rem!important;
 }

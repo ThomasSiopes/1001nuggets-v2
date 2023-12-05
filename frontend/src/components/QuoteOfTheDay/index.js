@@ -4,7 +4,7 @@ import { Card } from "react-bootstrap";
 
 import AuthorButton from "../AuthorButton";
 import TopicButton from "../TopicButton";
-import { FaTwitter, FaFacebookF } from "react-icons/fa";
+import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 
 import { QUERY_QOTD, QUERY_QUOTE_REALID } from "../../utils/queries";
 
@@ -36,10 +36,10 @@ function QuoteCard({realID}) {
                 <div id="quote-page">
                     <Card.Body>
                         <Card.Text className="display-6 text-center"><span className="quote-body font-poppins" id="main-quote">{Quote.quoteText}</span></Card.Text>
-                        <Card.Text className="text-end pe-2"><strong><AuthorButton type={"link"} name={Quote.author}/></strong></Card.Text>
+                        <Card.Text className="text-end pe-2"><strong><AuthorButton whitened={true} type={"link"} name={Quote.author}/></strong></Card.Text>
                     </Card.Body>
                     <Card.Body className="text-center">
-                        <a className="mx-2 share-button" href={`https://twitter.com/intent/tweet?url=${window.location.href}/quote/${Quote.realID}`} id="share-twitter"><FaTwitter/></a>
+                        <a className="mx-2 share-button" href={`https://twitter.com/intent/tweet?url=${window.location.href}`} id="share-X"><FaXTwitter/></a>
                         <a className="mx-2 share-button" href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}/quote/${Quote.realID}`} id="share-facebook"><FaFacebookF/></a>
                     </Card.Body>
                 </div>
