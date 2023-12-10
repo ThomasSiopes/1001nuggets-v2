@@ -1,10 +1,11 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
-import { Card } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 
 import AuthorButton from "../AuthorButton";
 import TopicButton from "../TopicButton";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
+import { FiShare } from "react-icons/fi";
 
 import { QUERY_QOTD, QUERY_QUOTE_REALID } from "../../utils/queries";
 
@@ -26,6 +27,20 @@ function QuoteCard({realID}) {
     if(loading) return <p>Loading quote card...</p>
 
     const Quote = data.quoteR
+
+    const shareButton = document.getElementById("mobileShare")
+    shareButton.addEventListener("click", (event) => {
+        if(navigator.share) {
+            navigator.share({
+                title: "1001 Nuggets",
+                text: "Test",
+                url: "https://youtube.com"
+            }).catch((error) => console.error(error))
+        }
+        else {
+            console.log("Share not supported on this browser...")
+        }
+    })
 
     return(
         <div>
@@ -50,6 +65,11 @@ function QuoteCard({realID}) {
                             ))}
                     </Card.Footer>
                 }
+                <Card.Footer>
+                    <Button id="mobileShare">
+                        <FiShare/>
+                    </Button>
+                </Card.Footer>
             </Card>
         </div>
     )
