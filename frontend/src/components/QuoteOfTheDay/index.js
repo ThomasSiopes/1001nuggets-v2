@@ -36,7 +36,7 @@ function QuoteCard({realID}) {
                     title: "1001 Nuggets",
                     text: "Test",
                     url: "https://youtube.com"
-                }).catch((error) => console.error(error))
+                }).catch((error) => console.alert("Error: " + error))
             }
             else {
                 console.log("Share not supported on this browser...")
@@ -68,7 +68,7 @@ function QuoteCard({realID}) {
                     </Card.Footer>
                 }
                 <Card.Footer>
-                    <Button id="mobileShare">
+                    <Button className="btn-block" id="mobileShare">
                         <FiShare/>
                     </Button>
                 </Card.Footer>
