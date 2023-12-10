@@ -28,7 +28,7 @@ function QuoteCard({realID}) {
 
     const Quote = data.quoteR
 
-    const shareButton = document.getElementById("mobileShare")
+    let shareButton = document.getElementById("mobileShare")
     shareButton.addEventListener("click", (event) => {
         if(navigator.share) {
             navigator.share({
