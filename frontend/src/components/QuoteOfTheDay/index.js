@@ -29,18 +29,20 @@ function QuoteCard({realID}) {
     const Quote = data.quoteR
 
     let shareButton = document.getElementById("mobileShare")
-    shareButton.addEventListener("click", (event) => {
-        if(navigator.share) {
-            navigator.share({
-                title: "1001 Nuggets",
-                text: "Test",
-                url: "https://youtube.com"
-            }).catch((error) => console.error(error))
-        }
-        else {
-            console.log("Share not supported on this browser...")
-        }
-    })
+    if(shareButton) {
+        shareButton.addEventListener("click", (event) => {
+            if(navigator.share) {
+                navigator.share({
+                    title: "1001 Nuggets",
+                    text: "Test",
+                    url: "https://youtube.com"
+                }).catch((error) => console.error(error))
+            }
+            else {
+                console.log("Share not supported on this browser...")
+            }
+        })
+    }
 
     return(
         <div>
