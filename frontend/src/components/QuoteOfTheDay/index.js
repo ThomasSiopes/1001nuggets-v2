@@ -28,22 +28,6 @@ function QuoteCard({realID}) {
 
     const Quote = data.quoteR
 
-    let shareButton = document.getElementById("mobileShare")
-    if(shareButton) {
-        shareButton.addEventListener("click", (event) => {
-            if(navigator.share) {
-                navigator.share({
-                    title: "1001 Nuggets",
-                    text: "Test",
-                    url: "https://youtube.com"
-                }).catch((error) => console.alert("Error: " + error))
-            }
-            else {
-                console.log("Share not supported on this browser...")
-            }
-        })
-    }
-
     return(
         <div>
             <Card className="my-4">
@@ -68,13 +52,25 @@ function QuoteCard({realID}) {
                     </Card.Footer>
                 }
                 <Card.Footer>
-                    <Button className="btn-block" id="mobileShare">
+                    <Button className="btn-block" onClick={MobileShare} id="mobileShare">
                         <FiShare/>
                     </Button>
                 </Card.Footer>
             </Card>
         </div>
     )
+}
+
+function MobileShare() {
+    if(navigator.canShare) {
+        navigator.share({
+        title:"1001 Nuggets",
+        text:"Test 1",
+        url:"https://www.youtube.com"
+    })
+    } else {
+        console.alert("Cannot navigate")
+    }
 }
 
 export default QuoteOfTheDay;
