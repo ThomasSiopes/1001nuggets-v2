@@ -67,9 +67,9 @@ function MobileShare() {
         title:"1001 Nuggets",
         text:"Test 1",
         url:"https://www.youtube.com"
-    })
+        });
     } else {
-        console.alert("Cannot navigate")
+        alert("Cannot navigate")
     }
 }
 
