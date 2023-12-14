@@ -65,7 +65,6 @@ function MobileShare() {
     if(navigator.canShare) {
         navigator.share({
         title:"1001 Nuggets",
-        text:"Test 1",
         url: window.location.href
         });
     } else {
