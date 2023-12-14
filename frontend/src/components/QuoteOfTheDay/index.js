@@ -66,7 +66,7 @@ function MobileShare() {
         navigator.share({
         title:"1001 Nuggets",
         text:"Test 1",
-        url:"https://www.youtube.com"
+        url: window.location.href
         });
     } else {
         alert("Cannot navigate")

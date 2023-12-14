@@ -97,7 +97,20 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
                   </span>
               </Modal.Footer>}
               <Modal.Footer className="justify-content-center">
-                <Link className="mb-1 btn btn-theme" to={`/quote/${quotes[index].realID}`}>Share <FiShare/></Link>
+                {/* <Link className="mb-1 btn btn-theme" to={`/quote/${quotes[index].realID}`}>Share <FiShare/></Link> */}
+                <Button onClick={() => {
+                    if(navigator.canShare) {
+                      navigator.share({
+                      title:"1001 Nuggets",
+                      text:"Test 1",
+                      url: (window.location.origin + "/quote/" + quotes[index].realID)
+                      });
+                    } else {
+                      alert("Cannot navigate")
+                    }
+                }}>
+                  <FiShare/>
+                </Button>
               </Modal.Footer>
             </Carousel.Item>
           ))}

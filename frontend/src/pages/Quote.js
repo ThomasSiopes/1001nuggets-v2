@@ -3,8 +3,9 @@ import { Helmet } from "react-helmet";
 import { redirect, useParams } from "react-router-dom";
 import { useQuery} from "@apollo/client";
 
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
+import { FiShare } from "react-icons/fi";
 
 import TopicButton from "../components/TopicButton";
 import AuthorButton from "../components/AuthorButton";
@@ -60,6 +61,11 @@ function Quote () {
                                             ))}
                                     </Card.Footer>
                                 }
+                                <Card.Footer className="text-center">
+                                    <Button variant={"weak"} onClick={MobileShare}>
+                                        <FiShare/>
+                                    </Button>
+                                </Card.Footer>
                             </Card>
                         </Col>
                     </Row>
@@ -67,6 +73,18 @@ function Quote () {
             </Card>
         </Container>
     )
+}
+
+function MobileShare() {
+    if(navigator.canShare) {
+        navigator.share({
+        title:"1001 Nuggets",
+        text:"Test 1",
+        url: window.location.href
+        });
+    } else {
+        alert("Cannot navigate")
+    }
 }
 
 export default Quote;
