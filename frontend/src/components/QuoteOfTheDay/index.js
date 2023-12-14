@@ -51,8 +51,8 @@ function QuoteCard({realID}) {
                             ))}
                     </Card.Footer>
                 }
-                <Card.Footer>
-                    <Button variant={"weak"} className="btn-block" onClick={MobileShare} id="mobileShare">
+                <Card.Footer className="text-center">
+                    <Button variant={"weak"} onClick={MobileShare} id="mobileShare">
                         <FiShare/>
                     </Button>
                 </Card.Footer>

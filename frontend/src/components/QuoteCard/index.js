@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { Button, Card, Modal, Container, Carousel } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 import { FiShare } from "react-icons/fi";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
