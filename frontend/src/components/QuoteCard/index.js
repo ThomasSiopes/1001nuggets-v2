@@ -98,7 +98,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
               </Modal.Footer>}
               <Modal.Footer className="justify-content-center">
                 {/* <Link className="mb-1 btn btn-theme" to={`/quote/${quotes[index].realID}`}>Share <FiShare/></Link> */}
-                <Button onClick={() => {
+                <Button variant={"weak"} onClick={() => {
                     if(navigator.canShare) {
                       navigator.share({
                       title:"1001 Nuggets",
