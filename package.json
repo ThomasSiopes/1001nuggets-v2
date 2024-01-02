@@ -13,7 +13,8 @@
     "seed": "cd backend && npm run seed",
     "seedQOTD": "cd backend && npm run seedQOTD",
     "build": "cd frontend && npm run build",
-    "rt": "cd backend/mongo/seeders && node relatedTopicCode.js"
+    "rt": "cd backend/mongo/seeders && node relatedTopicCode.js",
+    "qrIDa": "cd backend/mongo/seeders/testing && node quoteRealIDAdder.js"
   },
   "author": "Tom Siopes",
   "license": "ISC",
