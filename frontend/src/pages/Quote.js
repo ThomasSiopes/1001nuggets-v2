@@ -38,14 +38,14 @@ function Quote () {
                 <meta property="og:title" content="1001 Nuggets" />
                 <meta property="og:description" content={quote.quoteText}/>
             </Helmet>
-            <Card>
-                <Card.Header>Home {`>`} Authors {`>`} <AuthorButton type={"link"} name={quote.author}/> {`>`} Quotes</Card.Header>
-                <Card.Body>
+            <Card bg={"transparent"} border={"none"}>
+                <Card.Header className="bg-light rounded">Home {`>`} Authors {`>`} <AuthorButton type={"link"} name={quote.author}/> {`>`} Quotes</Card.Header>
+                <Card.Body bg={"transparent"}>
                     <Row>
                         <Col xs={12}>
-                            <Card className="mb-3">
+                            <Card className="mb-3 rounded">
                                 <div id="quote-page">
-                                    <Card.Body>
+                                    <Card.Body className="pt-5">
                                         <Card.Text className="display-6 text-center"><span className="quote-body font-poppins" id="main-quote">{quote.quoteText}</span></Card.Text>
                                         <Card.Text className="text-end pe-2"><strong><AuthorButton whitened={true} type={"link"} name={quote.author}/></strong></Card.Text>
                                     </Card.Body>
@@ -54,11 +54,18 @@ function Quote () {
                                         <a className="mx-2 share-button" href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`} id="share-facebook"><FaFacebookF/></a>
                                     </Card.Body>
                                 </div>
-                                {quote.topics.length !== 0 && 
+                                {quote.topics.length && 
                                     <Card.Footer className="text-center py-3">
+                                        <div className="mb-2">
                                             {quote.topics.map((index) => (
-                                                <TopicButton key={index} type={"button"} theme={"theme"} name={index}/>
+                                                <TopicButton key={index} type={"button"} theme={"weak"} name={index}/>
                                             ))}
+                                        </div>
+                                        <div>
+                                            {quote.relatedTopics.map((relatedTopic) => (
+                                                <TopicButton key={relatedTopic} type={"button"} theme={"small"} name={relatedTopic}/>
+                                            ))}
+                                        </div>
                                     </Card.Footer>
                                 }
                                 <Card.Footer className="text-center">
