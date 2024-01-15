@@ -50,8 +50,8 @@ function Quote () {
                                         <Card.Text className="text-end pe-2"><strong><AuthorButton whitened={true} type={"link"} name={quote.author}/></strong></Card.Text>
                                     </Card.Body>
                                     <Card.Body className="text-center">
-                                        <a className="mx-2 share-button" href={`https://twitter.com/intent/tweet?url=${window.location.href}`} id="share-X"><FaXTwitter/></a>
-                                        <a className="mx-2 share-button" href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`} id="share-facebook"><FaFacebookF/></a>
+                                        <a className="mx-2 share-button" target="_blank" rel="noreferrer" href={`https://twitter.com/intent/tweet?url=${window.location.href} - "${quote.quoteText}"`} id="share-X"><FaXTwitter/></a>
+                                        <a className="mx-2 share-button" target="_blank" rel="noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href} - "${quote.quoteText}"`} id="share-facebook"><FaFacebookF/></a>
                                     </Card.Body>
                                 </div>
                                 {quote.topics.length && 

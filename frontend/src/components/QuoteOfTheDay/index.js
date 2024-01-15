@@ -40,8 +40,8 @@ function QuoteCard({realID}) {
                         <Card.Text className="text-end pe-2"><strong><AuthorButton whitened={true} type={"link"} name={Quote.author}/></strong></Card.Text>
                     </Card.Body>
                     <Card.Body className="text-center">
-                        <a className="mx-2 share-button" target="_blank" rel="noreferrer" href={`https://twitter.com/intent/tweet?url=${window.location.href}`} id="share-X"><FaXTwitter/></a>
-                        <a className="mx-2 share-button" target="_blank" rel="noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}/quote/${Quote.realID}`} id="share-facebook"><FaFacebookF/></a>
+                        <a className="mx-2 share-button" target="_blank" rel="noreferrer" href={`https://twitter.com/intent/tweet?url=${window.location.href} - "${Quote.quoteText}"`} id="share-X"><FaXTwitter/></a>
+                        <a className="mx-2 share-button" target="_blank" rel="noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}/quote/${Quote.realID} - "${Quote.quoteText}"`} id="share-facebook"><FaFacebookF/></a>
                     </Card.Body>
                 </div>
                 {Quote.topics.length !== 0 && 
