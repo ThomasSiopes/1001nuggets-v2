@@ -23,10 +23,12 @@ function Collection () {
     if(!data) return redirect(`/404error`);
 
     const collection = data.collectionR
+
+    console.log(collection)
     
     let indexList = [];
 
-    for(let i =0; collection.quotes.length; ++i) {
+    for(let i = 0; i < collection.quotes.length; ++i) {
         indexList.push(i);
     }
 
@@ -57,7 +59,7 @@ function Collection () {
                 <title>1001 Nuggets - {collection.name}</title>
             </Helmet>
             <Card bg={"transparent"} border={"none"}>
-                <Card.Header className="bg-light rounded">Home {`>`} <Link className="link-theme" to={`/collections`}>collections</Link> {`>`} {collection.name}</Card.Header>
+                <Card.Header className="bg-light rounded">Home {`>`} <Link className="link-theme" to={`/collections`}>Collections</Link> {`>`} {collection.name}</Card.Header>
                 <Card.Body bg={"transparent"}>
                     <Row>
                          {/* First Quote Column */}
