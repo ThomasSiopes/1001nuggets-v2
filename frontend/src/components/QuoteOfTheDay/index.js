@@ -65,7 +65,7 @@ function MobileShare() {
     if(navigator.canShare) {
         navigator.share({
         title:"1001 Nuggets",
-        url: window.location.href
+        url: window.location.href + " - \"" + Quote.quoteText + "\""
         });
     } else {
         alert("Cannot navigate")
