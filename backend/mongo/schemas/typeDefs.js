@@ -25,6 +25,7 @@ const typeDefs = gql`
         realID: String
         somePeople: Boolean
         relatedTopics: [String]!
+        unrelatedTopics: [String]!
         collections: [String]!
         censors: [String]!
     }

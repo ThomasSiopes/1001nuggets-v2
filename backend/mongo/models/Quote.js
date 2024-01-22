@@ -24,6 +24,11 @@ const quote = new Schema({
             type: String,
         }
     ],
+    unrelatedTopics: [
+        {
+            type: String,
+        }
+    ],
     collections: [
         {
             type: String,

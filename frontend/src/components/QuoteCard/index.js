@@ -27,7 +27,6 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
-    console.log("Selected index: " + selectedIndex);
   }
 
   const handleFontResize = () => {

@@ -28,6 +28,7 @@ export const QUERY_AUTHOR_NAME = gql`
                 topics
                 realID
                 relatedTopics
+                unrelatedTopics
                 censors
             }
             realID
@@ -49,6 +50,7 @@ export const QUERY_AUTHOR_ID = gql`
                 topics
                 realID
                 relatedTopics
+                unrelatedTopics
                 censors
             }
             realID
@@ -70,6 +72,7 @@ export const QUERY_AUTHOR_REALID = gql`
                 topics
                 realID
                 relatedTopics
+                unrelatedTopics
                 censors
             }
             realID
@@ -87,6 +90,7 @@ export const QUERY_TOPIC_ALL = gql`
             quotes {
                 _id
                 relatedTopics
+                unrelatedTopics
             }
         }
     }
@@ -108,6 +112,7 @@ export const QUERY_TOPIC_NAME = gql`
                 realID
                 somePeople
                 relatedTopics
+                unrelatedTopics
                 censors
             }
         }
@@ -130,6 +135,7 @@ export const QUERY_TOPIC_ID = gql`
                 realID
                 somePeople
                 relatedTopics
+                unrelatedTopics
                 censors
             }
         }
@@ -152,6 +158,7 @@ export const QUERY_TOPIC_REALID = gql`
                 realID
                 somePeople
                 relatedTopics
+                unrelatedTopics
                 censors
             }
         }
@@ -299,6 +306,7 @@ export const QUERY_COLLECTION_REALID = gql`
                 realID
                 somePeople
                 relatedTopics
+                unrelatedTopics
                 censors
             }
         }

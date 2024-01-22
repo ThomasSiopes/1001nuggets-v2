@@ -23,8 +23,6 @@ function Collection () {
     if(!data) return redirect(`/404error`);
 
     const collection = data.collectionR
-
-    console.log(collection)
     
     let indexList = [];
 
