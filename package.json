@@ -10,7 +10,7 @@
     "start": "node backend/server.js",
     "dev": "concurrently \"cd backend && npm run watch\" \"cd frontend && npm start\"",
     "install": "cd backend && npm i && cd ../frontend && npm i",
-    "seed": "cd backend && npm run seed",
+    "seed": "npm run rt && cd backend && npm run seed",
     "seedQOTD": "cd backend && npm run seedQOTD",
     "build": "cd frontend && npm run build",
     "rt": "cd backend/mongo/seeders && node relatedTopicCode.js",
@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.0",
+    "dotenv": "^16.3.2",
     "graphql": "^16.7.1",
     "react-bootstrap": "^2.8.0",
     "react-icons": "^4.12.0"

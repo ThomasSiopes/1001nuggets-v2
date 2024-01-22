@@ -61,7 +61,7 @@ function QuoteCard({realID}) {
     )
 }
 
-function MobileShare() {
+function MobileShare(Quote) {
     if(navigator.canShare) {
         navigator.share({
         title:"1001 Nuggets",
