@@ -85,6 +85,11 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
                             <TopicButton type={"button"} name={related} theme={"small"} key={quotes[index].quoteText + "related" + related}/>
                         ))}
                     </span>}
+                    {quotes[index].unrelatedTopics && <span>
+                        {quotes[index].unrelatedTopics.map((unrelated) => (
+                            <TopicButton type={"button"} name={unrelated} theme={"smallun"} key={quotes[index].quoteText + "unrelated" + unrelated}/>
+                        ))}
+                    </span>}
               </Modal.Footer>}
 
               {/* Collection */}

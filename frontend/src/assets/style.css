@@ -61,6 +61,21 @@ body {
     border-color: #ccc!important;
 }
 
+.btn-smallun {
+    color: #fff!important;
+    background-color: #444!important;
+    border: 0.1rem solid!important;
+    border-color: #ccc!important;
+    font-size: 0.7rem!important;
+}
+
+.btn-smallun:hover, .btn-smallun:focus {
+    color: #fff!important;
+    background-color: #222!important;
+    border: 0.1rem solid!important;
+    border-color: #ccc!important;
+}
+
 .btn-weak {
     color: #000!important;
     background-color: #fff!important;
