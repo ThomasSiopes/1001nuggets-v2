@@ -52,7 +52,7 @@ function QuoteCard({realID}) {
                     </Card.Footer>
                 }
                 <Card.Footer className="text-center">
-                    <Button variant={"weak"} id="mobileShare" onClick={(Quote) => {
+                    <Button variant={"weak"} id="mobileShare" onClick={() => {
                         if(navigator.canShare) {
                             navigator.share({
                             title:"1001 Nuggets",
