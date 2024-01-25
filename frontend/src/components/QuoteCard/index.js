@@ -106,7 +106,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
                     if(navigator.canShare) {
                       navigator.share({
                       title:"1001 Nuggets",
-                      text: "\"" + quotes[index].quoteText + "\"",
+                      text: "\"" + quotes[index].quoteText + "\" - " + quotes[index].author,
                       url: (window.location.origin + "/quote/" + quotes[index].realID) + " - \"" + quotes[index].quoteText + "\""
                       });
                     } else {

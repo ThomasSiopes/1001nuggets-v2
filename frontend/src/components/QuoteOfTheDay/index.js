@@ -52,25 +52,23 @@ function QuoteCard({realID}) {
                     </Card.Footer>
                 }
                 <Card.Footer className="text-center">
-                    <Button variant={"weak"} onClick={MobileShare} id="mobileShare">
+                    <Button variant={"weak"} id="mobileShare" onClick={(Quote) => {
+                        if(navigator.canShare) {
+                            navigator.share({
+                            title:"1001 Nuggets",
+                            text:"\"" + Quote.quoteText + "\" - " + Quote.author,
+                            url: window.location.href
+                            });
+                        } else {
+                            alert("Cannot navigate")
+                        }
+                    }}>
                         <FiShare/>
                     </Button>
                 </Card.Footer>
             </Card>
         </div>
     )
-}
-
-function MobileShare(Quote) {
-    if(navigator.canShare) {
-        navigator.share({
-        title:"1001 Nuggets",
-        text:"\"" + Quote.quoteText + "\"",
-        url: window.location.href
-        });
-    } else {
-        alert("Cannot navigate")
-    }
 }
 
 export default QuoteOfTheDay;
