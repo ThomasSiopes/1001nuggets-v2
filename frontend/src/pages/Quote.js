@@ -32,10 +32,6 @@ function Quote () {
         <Container>
             <Helmet>
                 <title>1001 Nuggets - {quote.quoteText}</title>
-                <meta name="twitter:card" content="summary"></meta>
-                <meta name="twitter:site" content="1001 Nuggets"></meta>
-                <meta property="og:url" content={window.location.href} />
-                <meta property="og:title" content="1001 Nuggets" />
                 <meta property="og:description" content={quote.quoteText}/>
                 <meta name="twitter:description" content={quote.quoteText}/>
             </Helmet>
