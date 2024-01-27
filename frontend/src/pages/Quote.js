@@ -32,9 +32,9 @@ function Quote () {
         <Container>
             <Helmet>
                 <title>1001 Nuggets - {quote.quoteText}</title>
-                <meta name="description" content={quote.quoteText}/>
+                {/* <meta name="description" content={quote.quoteText}/>
                 <meta property="og:description" content={quote.quoteText}/>
-                <meta name="twitter:description" content={quote.quoteText}/>
+                <meta name="twitter:description" content={quote.quoteText}/> */}
             </Helmet>
             <Card bg={"transparent"} border={"none"}>
                 <Card.Header className="bg-light rounded">Home {`>`} Authors {`>`} <AuthorButton type={"link"} name={quote.author}/> {`>`} Quotes</Card.Header>
