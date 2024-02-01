@@ -48,9 +48,6 @@ function SomePeople () {
 
     return (
         <Container>
-            {/* <MetaTags>
-                <title>1001 Nuggets - Some People</title>
-            </MetaTags> */}
             <Helmet>
                 <title>1001 Nuggets - Some People</title>
             </Helmet>

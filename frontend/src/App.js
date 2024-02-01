@@ -7,8 +7,6 @@ import { setContext } from "@apollo/client/link/context";
 import "./assets/style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Quote from "./pages/Quote";
-
 //Components
 // import ErrorPage from "./components/ErrorPage";
 const NavBar = React.lazy(() => import("./components/NavBar"));
@@ -17,7 +15,7 @@ const NavBar = React.lazy(() => import("./components/NavBar"));
 const Home = React.lazy(() => import("./pages/Home"))
 const Author = React.lazy(() => import("./pages/Author"));
 const Topic = React.lazy(() => import("./pages/Topic"));
-// const Quote = React.lazy(() => import("./pages/Quote"));
+const Quote = React.lazy(() => import("./pages/Quote"));
 const TopicNav = React.lazy(() => import("./pages/TopicNav"));
 const CollectionNav = React.lazy(() => import ("./pages/CollectionNav"));
 const Collection = React.lazy(() => import ("./pages/Collection"));
