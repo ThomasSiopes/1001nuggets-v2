@@ -173,13 +173,15 @@ body {
     width: 70%!important;
 }
 
-.link-theme {
+.link-theme, .text-theme {
     color: #77A!important;
+    text-decoration-color: #77A!important;
     /* color: #494; */
 }
 
 .link-theme:hover {
     color: #99C!important;
+    text-decoration-color: #99C!important;
 }
 
 .link-weak, .quote-card .link-theme {
@@ -283,10 +285,6 @@ html {
 .subtext {
     color: #777!important;
     font-size: 14px!important;
-}
-
-.text-theme {
-    color: #000!important;
 }
 
 .width80 .modal-dialog {

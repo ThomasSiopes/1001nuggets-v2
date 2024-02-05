@@ -80,7 +80,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
                           <TopicButton type={"button"} name={topic} theme={"weak"} key={quotes[index].quoteText + topic}/>
                       ))}
                   </div>
-                  <div className="text-start mx-2">
+                  <div className="text-start text-theme mx-2">
                     <span>Related: </span>
                     {quotes[index].relatedTopics && <span>
                         {quotes[index].relatedTopics.map((related) => (
