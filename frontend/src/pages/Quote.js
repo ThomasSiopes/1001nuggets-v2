@@ -59,15 +59,15 @@ function Quote () {
                                                 <TopicButton key={index} type={"button"} theme={"weak"} name={index}/>
                                             ))}
                                         </div>
-                                        <div className="text-start">
+                                        <div className="text-start text-theme mx-2">
                                             <span>Related: </span>
                                             {quote.relatedTopics.map((relatedTopic) => (
                                                 <span>
                                                     {
                                                         relatedTopic === quote.relatedTopics[quote.relatedTopics.length-1] ?
-                                                            <span><TopicButton key={relatedTopic} type={"link"} theme={"small"} name={relatedTopic}/></span>
+                                                            <span><u><TopicButton key={relatedTopic} type={"link"} theme={"small"} name={relatedTopic}/></u></span>
                                                             :
-                                                            <span><TopicButton key={relatedTopic} type={"link"} theme={"small"} name={relatedTopic}/>, </span>
+                                                            <span><u><TopicButton key={relatedTopic} type={"link"} theme={"small"} name={relatedTopic}/></u>, </span>
                                                     }
                                                 </span>
                                             ))}
