@@ -67,7 +67,7 @@ function Quote () {
                                                         relatedTopic === quote.relatedTopics[quote.relatedTopics.length-1] ?
                                                             <span><u><TopicButton key={relatedTopic} type={"link"} theme={"small"} name={relatedTopic}/></u></span>
                                                             :
-                                                            <span><u><TopicButton key={relatedTopic} type={"link"} theme={"small"} name={relatedTopic}/></u>, </span>
+                                                            <span><u><TopicButton key={relatedTopic} type={"link"} theme={"small"} name={relatedTopic}/></u>; </span>
                                                     }
                                                 </span>
                                             ))}

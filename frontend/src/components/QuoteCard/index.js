@@ -89,7 +89,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
                                 related === quotes[index].relatedTopics[quotes[index].relatedTopics.length-1] ?
                                   <span><u><TopicButton type={"link"} name={related} theme={"small"} key={quotes[index].quoteText + "related" + related}/></u></span>
                                   :
-                                  <span><u><TopicButton type={"link"} name={related} theme={"small"} key={quotes[index].quoteText + "related" + related}/></u>, </span>
+                                  <span><u><TopicButton type={"link"} name={related} theme={"small"} key={quotes[index].quoteText + "related" + related}/></u>; </span>
                               }
                             </span>
                         ))}
