@@ -80,16 +80,26 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
                           <TopicButton type={"button"} name={topic} theme={"weak"} key={quotes[index].quoteText + topic}/>
                       ))}
                   </div>
+                  <div className="text-start mx-2">
+                    <span>Tags: </span>
                     {quotes[index].relatedTopics && <span>
                         {quotes[index].relatedTopics.map((related) => (
-                            <TopicButton type={"button"} name={related} theme={"small"} key={quotes[index].quoteText + "related" + related}/>
+                            <span>
+                              {
+                                related === quotes[index].relatedTopics[quotes[index].relatedTopics.length-1] ?
+                                  <span><TopicButton type={"link"} name={related} theme={"small"} key={quotes[index].quoteText + "related" + related}/></span>
+                                  :
+                                  <span><TopicButton type={"link"} name={related} theme={"small"} key={quotes[index].quoteText + "related" + related}/>, </span>
+                              }
+                            </span>
                         ))}
                     </span>}
-                    {quotes[index].unrelatedTopics && <span>
+                    {/* {quotes[index].unrelatedTopics && <span>
                         {quotes[index].unrelatedTopics.map((unrelated) => (
-                            <TopicButton type={"button"} name={unrelated} theme={"smallun"} key={quotes[index].quoteText + "unrelated" + unrelated}/>
+                            <TopicButton type={"link"} name={unrelated} theme={"smallun"} key={quotes[index].quoteText + "unrelated" + unrelated}/>
                         ))}
-                    </span>}
+                    </span>} */}
+                  </div>
               </Modal.Footer>}
 
               {/* Collection */}
