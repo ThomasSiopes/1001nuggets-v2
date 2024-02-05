@@ -81,15 +81,15 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
                       ))}
                   </div>
                   <div className="text-start mx-2">
-                    <span>Tags: </span>
+                    <span>Related: </span>
                     {quotes[index].relatedTopics && <span>
                         {quotes[index].relatedTopics.map((related) => (
                             <span>
                               {
                                 related === quotes[index].relatedTopics[quotes[index].relatedTopics.length-1] ?
-                                  <span><TopicButton type={"link"} name={related} theme={"small"} key={quotes[index].quoteText + "related" + related}/></span>
+                                  <span><u><TopicButton type={"link"} name={related} theme={"small"} key={quotes[index].quoteText + "related" + related}/></u></span>
                                   :
-                                  <span><TopicButton type={"link"} name={related} theme={"small"} key={quotes[index].quoteText + "related" + related}/>, </span>
+                                  <span><u><TopicButton type={"link"} name={related} theme={"small"} key={quotes[index].quoteText + "related" + related}/></u>, </span>
                               }
                             </span>
                         ))}

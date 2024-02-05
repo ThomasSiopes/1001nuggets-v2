@@ -60,7 +60,7 @@ function Quote () {
                                             ))}
                                         </div>
                                         <div className="text-start">
-                                            <span>Tags: </span>
+                                            <span>Related: </span>
                                             {quote.relatedTopics.map((relatedTopic) => (
                                                 <span>
                                                     {
