@@ -81,8 +81,8 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
                       ))}
                   </div>
                   <div className="text-start text-theme mx-2">
-                    <span>Related: </span>
                     {quotes[index].relatedTopics && <span>
+                        <span>Related: </span>
                         {quotes[index].relatedTopics.map((related) => (
                             <span>
                               {
