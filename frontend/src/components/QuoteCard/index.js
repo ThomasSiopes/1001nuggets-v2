@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Button, Card, Modal, Container, Carousel } from 'react-bootstrap';
 // import { Link } from 'react-router-dom';
+// import html2canvas from "html2canvas";
 
 import { FiShare } from "react-icons/fi";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
@@ -55,13 +56,13 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
       <Modal show={show} onHide={handleClose} aria-labelledby="contained-modal-title-vcenter" centered>
         <Modal.Header className="text-theme" closeButton/>
 
-      {/* Slider */}
+        {/* Slider */}
         <input type="range" className="mx-2 slider" min="20" max="40" id="myRange" onInput={handleFontResize}/>
 
         <Carousel activeIndex={currentQuote} indicators={false} interval={null} onSelect={handleSelect} touch={true} wrap={false} prevIcon={<MdKeyboardArrowLeft stroke={"black"} fill={"black"}/>} nextIcon={<MdKeyboardArrowRight stroke={"black"} fill={"black"}/>}>
           {indexOrder.map((index) => (
             <Carousel.Item key={quotes[index].quoteText}>
-              <Container className="quote-card py-4">
+              <Container className="quote-card quote-card-m py-4">
                 {/* Quote */}
                 <QuoteCardText type={"modal"} quotes={quotes} index={index}/>
 
@@ -84,12 +85,12 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
                     {quotes[index].relatedTopics && <span>
                         <span>Related: </span>
                         {quotes[index].relatedTopics.map((related) => (
-                            <span>
+                            <span key={quotes[index].quoteText + "related" + related}>
                               {
                                 related === quotes[index].relatedTopics[quotes[index].relatedTopics.length-1] ?
-                                  <span><u><TopicButton type={"link"} name={related} theme={"small"} key={quotes[index].quoteText + "related" + related}/></u></span>
+                                  <span><u><TopicButton type={"link"} name={related} theme={"small"}/></u></span>
                                   :
-                                  <span><u><TopicButton type={"link"} name={related} theme={"small"} key={quotes[index].quoteText + "related" + related}/></u>; </span>
+                                  <span><u><TopicButton type={"link"} name={related} theme={"small"}/></u>; </span>
                               }
                             </span>
                         ))}
@@ -99,6 +100,15 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
                             <TopicButton type={"link"} name={unrelated} theme={"smallun"} key={quotes[index].quoteText + "unrelated" + unrelated}/>
                         ))}
                     </span>} */}
+                    {/* <span onClick={() => {
+                      html2canvas(document.getElementsByClassName("quote-card-m")[index]).then((canvas) => {
+                        console.log(canvas);
+                        var a = document.createElement("a");
+                        a.href = canvas.toDataURL("image/jpeg")
+                        a.download = "1001nuggets-" + quotes[index].realID + ".jpg";
+                        a.click();
+                      })
+                    }}></span> */}
                   </div>
               </Modal.Footer>}
 
