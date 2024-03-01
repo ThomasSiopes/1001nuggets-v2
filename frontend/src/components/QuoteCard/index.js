@@ -4,6 +4,7 @@ import { Button, Card, Modal, Container, Carousel } from 'react-bootstrap';
 // import html2canvas from "html2canvas";
 
 import { FiShare } from "react-icons/fi";
+import { FaFacebookF, FaXTwitter } from 'react-icons/fa6';
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 import TopicButton from "../TopicButton";
@@ -122,6 +123,8 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
               </Modal.Footer>}
               <Modal.Footer className="justify-content-center">
                 {/* <Link className="mb-1 btn btn-theme" to={`/quote/${quotes[index].realID}`}>Share <FiShare/></Link> */}
+                <a className="mx-2 share-button share-X" target="_blank" rel="noreferrer" href={`https://twitter.com/intent/tweet?url=https://www.1001nuggets.com/quote/${quotes[index].realID} - "${quotes[index].quoteText}" - ${quotes[index].author}`}><FaXTwitter/></a>
+                <a className="mx-2 share-button share-facebook" target="_blank" rel="noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=https://www.1001nuggets.com/quote/${quotes[index].realID} - "${quotes[index].quoteText}" - ${quotes[index].author}`}><FaFacebookF/></a>
                 <Button variant={"weak"} onClick={() => {
                     if(navigator.canShare) {
                       navigator.share({

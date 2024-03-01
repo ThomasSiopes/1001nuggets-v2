@@ -262,19 +262,19 @@ html {
     color: #0d476b !important;
 }
 
-#share-facebook {
+#share-facebook, .share-facebook {
     color: #4867AA !important;
 }
 
-#share-facebook:hover {
+#share-facebook:hover, .share-facebook:hover {
     color: #1c315e !important;
 }
 
-#share-X {
+#share-X, .share-X {
     color: #DDD !important;
 }
 
-#share-X:hover {
+#share-X:hover, .share-X:hover {
     color: #999 !important;
 }
 
