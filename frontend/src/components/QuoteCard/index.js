@@ -1,10 +1,10 @@
 import React, { useState, useRef } from 'react';
 import { Button, Card, Modal, Container, Carousel } from 'react-bootstrap';
 // import { Link } from 'react-router-dom';
-// import html2canvas from "html2canvas";
+import html2canvas from "html2canvas";
 
 import { FiShare } from "react-icons/fi";
-import { FaFacebookF, FaXTwitter } from 'react-icons/fa6';
+import { FaFacebookF, FaXTwitter, FaInstagram } from 'react-icons/fa6';
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 import TopicButton from "../TopicButton";
@@ -83,7 +83,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
                       ))}
                   </div>
                   <div className="text-start text-theme mx-2">
-                    {quotes[index].relatedTopics && <span>
+                    {quotes[index].relatedTopics[0] && <span>
                         <span>Related: </span>
                         {quotes[index].relatedTopics.map((related) => (
                             <span key={quotes[index].quoteText + "related" + related}>
@@ -96,20 +96,6 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
                             </span>
                         ))}
                     </span>}
-                    {/* {quotes[index].unrelatedTopics && <span>
-                        {quotes[index].unrelatedTopics.map((unrelated) => (
-                            <TopicButton type={"link"} name={unrelated} theme={"smallun"} key={quotes[index].quoteText + "unrelated" + unrelated}/>
-                        ))}
-                    </span>} */}
-                    {/* <span onClick={() => {
-                      html2canvas(document.getElementsByClassName("quote-card-m")[index]).then((canvas) => {
-                        console.log(canvas);
-                        var a = document.createElement("a");
-                        a.href = canvas.toDataURL("image/jpeg")
-                        a.download = "1001nuggets-" + quotes[index].realID + ".jpg";
-                        a.click();
-                      })
-                    }}></span> */}
                   </div>
               </Modal.Footer>}
 
@@ -121,10 +107,22 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
                       ))}
                   </span>
               </Modal.Footer>}
+
+              {/* Share Buttons */}
               <Modal.Footer className="justify-content-center">
-                {/* <Link className="mb-1 btn btn-theme" to={`/quote/${quotes[index].realID}`}>Share <FiShare/></Link> */}
                 <a className="mx-2 share-button share-X" target="_blank" rel="noreferrer" href={`https://twitter.com/intent/tweet?url=https://www.1001nuggets.com/quote/${quotes[index].realID} - "${quotes[index].quoteText}" - ${quotes[index].author}`}><FaXTwitter/></a>
                 <a className="mx-2 share-button share-facebook" target="_blank" rel="noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=https://www.1001nuggets.com/quote/${quotes[index].realID} - "${quotes[index].quoteText}" - ${quotes[index].author}`}><FaFacebookF/></a>
+                <span className="mx-2 p-0 share-button" onClick={() => {
+                  var grab = document.getElementsByClassName("quote-card-m")[index]
+                  if(grab){
+                    html2canvas(grab).then((canvas) => {
+                      var a = document.createElement("a");
+                      a.href = canvas.toDataURL("image/jpeg");
+                      a.download = "1001nuggets-" + quotes[index].realID + ".jpg";
+                      a.click();
+                    })
+                  }
+                }} id="share-instagram"><FaInstagram/></span>
                 <Button variant={"weak"} onClick={() => {
                     if(navigator.canShare) {
                       navigator.share({

@@ -46,6 +46,8 @@ function SomePeople () {
         list3b = result[1].splice(-middleIndex);
     }
 
+    console.log(quoteList)
+
     return (
         <Container>
             <Helmet>
