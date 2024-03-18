@@ -15,7 +15,7 @@ import QuoteCardText from '../QuoteCardText';
 function QuoteCard({quotes, quoteIndex, indexOrder}) {
   const [show, setShow] = useState(false);
   const [currentQuote, setIndex] = useState(quoteIndex);
-  const fontSize = useRef(24);
+  const fontSize = useRef(32);
 
   const handleClose = () => {
     setShow(false);
@@ -58,7 +58,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
         <Modal.Header className="text-theme" closeButton/>
 
         {/* Slider */}
-        <input type="range" className="mx-2 slider" min="20" max="40" id="myRange" onInput={handleFontResize}/>
+        <input type="range" className="mx-2 slider" min="22" max="40" id="myRange" onInput={handleFontResize}/>
 
         <Carousel activeIndex={currentQuote} indicators={false} interval={null} onSelect={handleSelect} touch={true} wrap={false} prevIcon={<MdKeyboardArrowLeft stroke={"black"} fill={"black"}/>} nextIcon={<MdKeyboardArrowRight stroke={"black"} fill={"black"}/>}>
           {indexOrder.map((index) => (
@@ -72,6 +72,24 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
                   <strong>
                     {quotes[quoteIndex].author && <AuthorButton type={"link"} name={quotes[index].author}/>}
                   </strong>
+                </Container>
+                <Container className="justify-content-center text-center mt-2">
+                  <a className="mx-2 share-button share-X" target="_blank" rel="noreferrer" href={`https://twitter.com/intent/tweet?url=https://www.1001nuggets.com/quote/${quotes[index].realID} - "${quotes[index].quoteText}" - ${quotes[index].author}`}><FaXTwitter/></a>
+                  <a className="mx-2 share-button share-facebook" target="_blank" rel="noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=https://www.1001nuggets.com/quote/${quotes[index].realID} - "${quotes[index].quoteText}" - ${quotes[index].author}`}><FaFacebookF/></a>
+                  <span className="mx-2 p-0 share-button" onClick={() => {
+                    var grab = document.getElementsByClassName("quote-card-m")[index]
+                    console.log(index)
+                    console.log(grab)
+                    if(grab){
+                      html2canvas(grab).then((canvas) => {
+                        console.log(canvas)
+                        var a = document.createElement("a");
+                        a.href = canvas.toDataURL("image/jpeg");
+                        a.download = "1001nuggets-" + quotes[index].realID + ".jpg";
+                        a.click();
+                      })
+                    }
+                  }} id="share-instagram"><FaInstagram/></span>
                 </Container>
               </Container>
 
@@ -110,19 +128,6 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
 
               {/* Share Buttons */}
               <Modal.Footer className="justify-content-center">
-                <a className="mx-2 share-button share-X" target="_blank" rel="noreferrer" href={`https://twitter.com/intent/tweet?url=https://www.1001nuggets.com/quote/${quotes[index].realID} - "${quotes[index].quoteText}" - ${quotes[index].author}`}><FaXTwitter/></a>
-                <a className="mx-2 share-button share-facebook" target="_blank" rel="noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=https://www.1001nuggets.com/quote/${quotes[index].realID} - "${quotes[index].quoteText}" - ${quotes[index].author}`}><FaFacebookF/></a>
-                <span className="mx-2 p-0 share-button" onClick={() => {
-                  var grab = document.getElementsByClassName("quote-card-m")[index]
-                  if(grab){
-                    html2canvas(grab).then((canvas) => {
-                      var a = document.createElement("a");
-                      a.href = canvas.toDataURL("image/jpeg");
-                      a.download = "1001nuggets-" + quotes[index].realID + ".jpg";
-                      a.click();
-                    })
-                  }
-                }} id="share-instagram"><FaInstagram/></span>
                 <Button variant={"weak"} onClick={() => {
                     if(navigator.canShare) {
                       navigator.share({
