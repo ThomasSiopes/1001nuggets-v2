@@ -1,10 +1,10 @@
 import React, { useState, useRef } from 'react';
 import { Button, Card, Modal, Container, Carousel } from 'react-bootstrap';
 // import { Link } from 'react-router-dom';
-import html2canvas from "html2canvas";
+// import html2canvas from "html2canvas";
 
 import { FiShare } from "react-icons/fi";
-import { FaFacebookF, FaXTwitter, FaInstagram } from 'react-icons/fa6';
+import { FaFacebookF, FaXTwitter } from 'react-icons/fa6';
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 import TopicButton from "../TopicButton";
@@ -76,7 +76,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
                 <Container className="justify-content-center text-center mt-2">
                   <a className="mx-2 share-button share-X" target="_blank" rel="noreferrer" href={`https://twitter.com/intent/tweet?url=https://www.1001nuggets.com/quote/${quotes[index].realID} - "${quotes[index].quoteText}" - ${quotes[index].author}`}><FaXTwitter/></a>
                   <a className="mx-2 share-button share-facebook" target="_blank" rel="noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=https://www.1001nuggets.com/quote/${quotes[index].realID} - "${quotes[index].quoteText}" - ${quotes[index].author}`}><FaFacebookF/></a>
-                  <span className="mx-2 p-0 share-button" onClick={() => {
+                  {/* <span className="mx-2 p-0 share-button" onClick={() => {
                     var grab = document.getElementsByClassName("quote-card-m")[index]
                     console.log(index)
                     console.log(grab)
@@ -89,7 +89,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
                         a.click();
                       })
                     }
-                  }} id="share-instagram"><FaInstagram/></span>
+                  }} id="share-instagram"><FaInstagram/></span> */}
                 </Container>
               </Container>
 
