@@ -50,7 +50,6 @@ function NavBar() {
                     <Nav className="me-auto text-center">
                         <Nav.Link href="/topics">Topics</Nav.Link>
                         <Nav.Link href="/collections">Collections</Nav.Link>
-                        <Nav.Link href="/some-people">People</Nav.Link>
                     </Nav>
                     <Nav className="ms-auto">
                         <Form className="row text-center mx-auto mt-2 max-width-100" onSubmit={handleShow}>
@@ -82,7 +81,6 @@ function NavBar() {
                         <Card.Footer className="px-5">
                             <Button variant={"theme"} href={`/topics`} className="btn-block my-3">Topics</Button>
                             <Button variant={"theme"} href={`/collections`} className="btn-block my-3">Collections</Button>
-                            <Button variant={"theme"} href={`/some-people`} className="btn-block my-3">People</Button>
                         </Card.Footer>
                     </Card>
                 </Navbar.Collapse>
