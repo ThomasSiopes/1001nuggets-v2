@@ -32,9 +32,6 @@ function QuoteCard({realID}) {
     return(
         <div>
             <Card className="my-4">
-                <Card.Header>
-                    <h1>Quote of the Day</h1>
-                </Card.Header>
                 <div id="quote-page">
                     <Card.Body>
                         <Card.Text className="display-6 text-center"><span className="quote-body font-poppins" id="main-quote">{Quote.quoteText}</span></Card.Text>
@@ -43,7 +40,7 @@ function QuoteCard({realID}) {
                     <Card.Body className="text-center">
                         <a className="mx-2 share-button" target="_blank" rel="noreferrer" href={`https://twitter.com/intent/tweet?url=${window.location.href} - "${Quote.quoteText}" - ${Quote.author}`} id="share-X"><FaXTwitter/></a>
                         <a className="mx-2 share-button" target="_blank" rel="noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}/quote/${Quote.realID} - "${Quote.quoteText}" - ${Quote.author}`} id="share-facebook"><FaFacebookF/></a>
-                        <span className="mx-2 p-0 share-button" onClick={() => {
+                        {/* <span className="mx-2 p-0 share-button" onClick={() => {
                             html2canvas(document.getElementById("quote-page")).then((canvas) => {
                                 console.log(canvas);
                                 var a = document.createElement("a");
@@ -51,7 +48,7 @@ function QuoteCard({realID}) {
                                 a.download = "1001nuggets-" + Quote.realID + ".jpg";
                                 a.click();
                             })
-                        }} id="share-instagram"><FaInstagram/></span>
+                        }} id="share-instagram"><FaInstagram/></span> */}
                     </Card.Body>
                 </div>
                 {Quote.topics.length !== 0 && 

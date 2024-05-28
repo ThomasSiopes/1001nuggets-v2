@@ -44,20 +44,20 @@ function App () {
     <ApolloProvider client={client}>
       <Router>
         <React.Suspense fallback={<div>Loading...</div>}><NavBar/></React.Suspense>
-          <Routes>
-            <Route exact path="/" element={<React.Suspense><Home/></React.Suspense>}/>
-            <Route exact path="/topics" element={<React.Suspense><TopicNav/></React.Suspense>}/>
-            <Route exact path="/topic/:topicRealId" element={<React.Suspense><Topic/></React.Suspense>}/>
+        <Routes>
+          <Route exact path="/" element={<React.Suspense><Home/></React.Suspense>}/>
+          <Route exact path="/topics" element={<React.Suspense><TopicNav/></React.Suspense>}/>
+          <Route exact path="/topic/:topicRealId" element={<React.Suspense><Topic/></React.Suspense>}/>
 
-            <Route exact path="/collections" element={<React.Suspense><CollectionNav/></React.Suspense>}/>
-            <Route exact path="/collection/:collectionRealId" element={<React.Suspense><Collection/></React.Suspense>}/>
+          <Route exact path="/collections" element={<React.Suspense><CollectionNav/></React.Suspense>}/>
+          <Route exact path="/collection/:collectionRealId" element={<React.Suspense><Collection/></React.Suspense>}/>
 
-            <Route exact path="/author/:authorRealId" element={<React.Suspense><Author/></React.Suspense>}/>
+          <Route exact path="/author/:authorRealId" element={<React.Suspense><Author/></React.Suspense>}/>
 
-            <Route exact path="/quote/:quoteRealId" element={<React.Suspense><Quote/></React.Suspense>}/>
+          <Route exact path="/quote/:quoteRealId" element={<React.Suspense><Quote/></React.Suspense>}/>
 
-            {/* <Route exact path="/search/:query" element={<React.Suspense><SearchResult/></React.Suspense>}/> */}
-          </Routes>
+          {/* <Route exact path="/search/:query" element={<React.Suspense><SearchResult/></React.Suspense>}/> */}
+        </Routes>
       </Router>
     </ApolloProvider>
   )

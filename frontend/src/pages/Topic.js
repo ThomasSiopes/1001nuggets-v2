@@ -27,7 +27,7 @@ function Topic () {
     let indexList = [];
 
     for(let i = 0; i < topic.quotes.length; ++i) {
-        if(!(topic.quotes[i].somePeople)) indexList.push(i);
+        if(!(topic.quotes[i].somePeople) && !(topic.quotes[i].author === "1001 Nuggets")) indexList.push(i);
     }
 
     if(!indexList) return <p>Loading...</p>
