@@ -232,12 +232,13 @@ html {
     font-weight: 500!important;
 }
 
-#quote-page, .quote-card {
-    background-color: black!important;
-    color: white!important;
+#quote-page {
+    border-radius:0.3rem 0.3rem 0rem 0rem;
 }
 
 #quote-page, .quote-card {
+    background-color: black!important;
+    color: white!important;
     background-image: url("../assets/images/N_Icon2_TransparentDark.png")!important;
     background-size: contain!important;
     background-position: center!important;
