@@ -47,6 +47,7 @@ const typeDefs = gql`
         authorName(name: String): Author
         authorID(authorId: ID): Author
         authorR(authorRealId: String): Author
+        authorLetter(letter: String): [Author]
         
         topics: [Topic]
         topicName(name: String): Topic

@@ -16,6 +16,9 @@ const resolvers = {
         authorR: async (parent, { authorRealId }) => {
             return Author.findOne({ realID: authorRealId }).populate('quotes');
         },
+        authorLetter: async (parent, { letter }) => {
+            return Author.find({lastName: {$regex: '^' + letter, $options: 'i'}})
+        },
         
         // topics
         topics: async () => {

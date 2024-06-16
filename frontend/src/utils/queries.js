@@ -80,6 +80,20 @@ export const QUERY_AUTHOR_REALID = gql`
     }
 `;
 
+export const QUERY_AUTHOR_LETTER = gql`
+    query authorLetter($letter: String!) {
+        authorLetter(letter: $letter) {
+          _id
+          name
+          realID
+          lastName
+          quotes {
+            _id
+          }
+        }
+    }
+`;
+
 export const QUERY_TOPIC_ALL = gql`
     query getAllTopics {
         topics {
