@@ -23,7 +23,6 @@ export const QUERY_AUTHOR_NAME = gql`
             quotes {
                 _id
                 quoteText
-                collections
                 author
                 topics
                 realID
@@ -45,7 +44,6 @@ export const QUERY_AUTHOR_ID = gql`
             quotes {
                 _id
                 quoteText
-                collections
                 author
                 topics
                 realID
@@ -67,7 +65,6 @@ export const QUERY_AUTHOR_REALID = gql`
             quotes {
                 _id
                 quoteText
-                collections
                 author
                 topics
                 realID
@@ -120,7 +117,6 @@ export const QUERY_TOPIC_NAME = gql`
             quotes {
                 _id
                 quoteText
-                collections
                 author
                 topics
                 realID
@@ -143,7 +139,6 @@ export const QUERY_TOPIC_ID = gql`
             quotes {
                 _id
                 quoteText
-                collections
                 author
                 topics
                 realID
@@ -166,7 +161,6 @@ export const QUERY_TOPIC_REALID = gql`
             quotes {
                 _id
                 quoteText
-                collections
                 author
                 topics
                 realID
@@ -198,7 +192,6 @@ export const QUERY_QUOTE_ALL = gql`
         quotes {
             _id
             quoteText
-            collections
             author
             topics
             realID
@@ -214,7 +207,6 @@ export const QUERY_QUOTE_SP = gql`
         quoteSP {
             _id
             quoteText
-            collections
             author
             topics
             realID
@@ -230,7 +222,6 @@ export const QUERY_QUOTE_RESULT = gql`
         quoteResult(input: $input) {
             _id
             quoteText
-            collections
             author
             topics
             realID
@@ -245,7 +236,6 @@ export const QUERY_QUOTE_ID = gql`
         quote(quoteId: $quoteId) {
             _id
             quoteText
-            collections
             author
             topics
             realID
@@ -261,7 +251,6 @@ export const QUERY_QUOTE_REALID = gql`
         quoteR(quoteRealId: $quoteRealId) {
             _id
             quoteText
-            collections
             author
             topics
             realID
@@ -278,6 +267,7 @@ export const QUERY_COLLECTION_ALL = gql`
             name
             realID
             sortedName
+            topics
         }
     }
 `;
@@ -289,6 +279,7 @@ export const QUERY_COLLECTION_NAME = gql`
             name
             realID
             sortedName
+            topics
         }
     }
 `;
@@ -300,6 +291,7 @@ export const QUERY_COLLECTION_ID = gql`
             name
             realID
             sortedName
+            topics
         }
     }
 `;
@@ -311,18 +303,7 @@ export const QUERY_COLLECTION_REALID = gql`
             name
             realID
             sortedName
-            quotes {
-                _id
-                quoteText
-                collections
-                author
-                topics
-                realID
-                somePeople
-                relatedTopics
-                unrelatedTopics
-                censors
-            }
+            topics
         }
     }
 `;
@@ -334,9 +315,7 @@ export const QUERY_COLLECTION_LETTER = gql`
           name
           realID
           sortedName
-          quotes {
-            _id
-          }
+          topics
         }
     }
 `;

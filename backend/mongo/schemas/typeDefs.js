@@ -26,7 +26,6 @@ const typeDefs = gql`
         somePeople: Boolean
         relatedTopics: [String]!
         unrelatedTopics: [String]!
-        collections: [String]!
         censors: [String]!
     }
 
@@ -39,7 +38,7 @@ const typeDefs = gql`
         name: String
         sortedName: String
         realID: String
-        quotes: [Quote]!
+        topics: [String]!
     }
 
     type Query {

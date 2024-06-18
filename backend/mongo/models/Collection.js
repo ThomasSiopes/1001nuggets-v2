@@ -13,10 +13,9 @@ const collection = new Schema({
         type: String,
         required: true
     },
-    quotes: [
+    topics: [
         {
-            type: Schema.Types.ObjectId,
-            ref: "Quote",
+            type: String
         },
     ],
 });

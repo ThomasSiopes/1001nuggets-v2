@@ -24,6 +24,10 @@ const TopicButton = ({type, name, theme}) => {
         return (
             <Link to={`/topic/${topic.realID}`} className="link-theme">{name}</Link>
         )
+    } else if(type === "button-block") {
+        return (
+            <Button href={`/topic/${topic.realID}`} className="btn-block" variant={theme}>{name}</Button>
+        )
     }
 }
 

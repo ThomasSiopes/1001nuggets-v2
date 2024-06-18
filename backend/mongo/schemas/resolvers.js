@@ -40,16 +40,16 @@ const resolvers = {
         
         // collections
         collections: async () => {
-            return Collection.find().populate('quotes');
+            return Collection.find();
         },
         collectionName: async (parent, { name }) => {
-            return Collection.findOne({ name }).populate('quotes');
+            return Collection.findOne({ name });
         },
         collectionID: async (parent, { collectionId }) => {
-            return Collection.findOne({ _id: collectionId }).populate('quotes');
+            return Collection.findOne({ _id: collectionId });
         },
         collectionR: async (parent, { collectionRealId }) => {
-            return Collection.findOne({ realID: collectionRealId }).populate('quotes');
+            return Collection.findOne({ realID: collectionRealId });
         },
         collectionLetter: async (parent, { letter }) => {
             return Collection.find({sortedName: {$regex: '^' + letter, $options: 'i'}})

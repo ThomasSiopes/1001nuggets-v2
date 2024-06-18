@@ -14,10 +14,14 @@ function AuthorNavInst({letter}) {
     let sortedList = data.authorLetter.map((item) => Object.assign({}, item, {selected:false}))
     
     sortedList = sortedList.sort(function(a,b) {
-        if(a.sortedName < b.sortedName) return -1;
-        if(a.sortedName > b.sortedName) return 1;
+        if(a.lastName < b.lastName) return -1;
+        if(a.lastName > b.lastName) return 1;
         return 0;
     });
+
+    let uglyList = []
+    for(let i of sortedList) if(i.quotes.length === 0) uglyList.push(i.name);
+    console.log("Letter " + letter + ": " + uglyList);
 
     return(
         <div className="text-center mb-2">
