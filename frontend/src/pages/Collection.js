@@ -32,7 +32,7 @@ function Collection () {
                 <Card.Body bg={"transparent"}>
                     <Row>
                          {collection.topics.map((index) => (
-                            <Col key={index} className="mb-3" xs={6} sm={4} md={3}>
+                            <Col key={index} className="mb-3" xs={12} sm={6} md={4}>
                                 <TopicButton type={"button-block"} name={index} theme={"weak"}/>
                             </Col>
                          ))}
