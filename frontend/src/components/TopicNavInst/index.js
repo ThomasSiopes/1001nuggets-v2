@@ -19,6 +19,8 @@ function TopicNavInst({letter}) {
         return 0;
     });
 
+    if(sortedList.length === 0) return <span/>
+
     return(
         <div className="text-center mb-2">
             <div>

@@ -22,6 +22,7 @@ function AuthorNavInst({letter}) {
     let uglyList = []
     for(let i of sortedList) if(i.quotes.length === 0) uglyList.push(i.name);
     console.log("Letter " + letter + ": " + uglyList);
+    if(sortedList.length === 0) return <span/>;
 
     return(
         <div className="text-center mb-2">
