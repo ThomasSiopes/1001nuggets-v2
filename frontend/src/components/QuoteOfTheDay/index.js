@@ -1,12 +1,13 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
 import { Card, Button } from "react-bootstrap";
-import html2canvas from "html2canvas";
+// import html2canvas from "html2canvas";
 
 import AuthorButton from "../AuthorButton";
 import TopicButton from "../TopicButton";
-import { FaXTwitter, FaFacebookF, FaInstagram  } from "react-icons/fa6";
+import { FaXTwitter, FaFacebookF  } from "react-icons/fa6";
 import { FiShare } from "react-icons/fi";
+import truthSocialImage from "../../assets/images/truthsocial.png";
 
 import { QUERY_QOTD, QUERY_QUOTE_REALID } from "../../utils/queries";
 
@@ -40,6 +41,7 @@ function QuoteCard({realID}) {
                     <Card.Body className="text-center">
                         <a className="mx-2 share-button" target="_blank" rel="noreferrer" href={`https://twitter.com/intent/tweet?url=${window.location.href} - "${Quote.quoteText}" - ${Quote.author}`} id="share-X"><FaXTwitter/></a>
                         <a className="mx-2 share-button" target="_blank" rel="noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}/quote/${Quote.realID} - "${Quote.quoteText}" - ${Quote.author}`} id="share-facebook"><FaFacebookF/></a>
+                        <a className="mx-2 share-button share-truth" target="_blank" rel="noreferrer" href={`https://truthsocial.com/share?text=${window.location.href}/quote/${Quote.realID} - "${Quote.quoteText}" - ${Quote.author}`} id="share-truth"><img src={truthSocialImage} alt="TS"/></a>
                         {/* <span className="mx-2 p-0 share-button" onClick={() => {
                             html2canvas(document.getElementById("quote-page")).then((canvas) => {
                                 console.log(canvas);

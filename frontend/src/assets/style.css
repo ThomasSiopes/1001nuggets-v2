@@ -263,6 +263,18 @@ html {
     color: #0d476b !important;
 }
 
+#share-truth, .share-truth {
+    color: #5346ED !important;
+}
+
+#share-truth:hover, .share-truth:hover {
+    color: #2316AD !important;
+}
+
+#share-truth img, .share-truth img {
+    max-width:32px;
+}
+
 #share-facebook, .share-facebook {
     color: #4867AA !important;
 }
