@@ -141,9 +141,9 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
               </Modal.Footer>}
 
               {/* Share Buttons */}
-              <Modal.Footer className="justify-content-center">
+              {/* <Modal.Footer className="justify-content-center">
                 
-              </Modal.Footer>
+              </Modal.Footer> */}
             </Carousel.Item>
           ))}
           <Carousel.Item>
