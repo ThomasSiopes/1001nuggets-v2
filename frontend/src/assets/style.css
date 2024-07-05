@@ -122,6 +122,11 @@ body {
     width: 4%!important;
 }
 
+.cool-share-button {
+    font-size: 1.8rem!important;
+    cursor: pointer;
+}
+
 .floating-side-button-left, .floating-side-button-right {
     font-size: 3rem!important;
     opacity: 0.1!important;

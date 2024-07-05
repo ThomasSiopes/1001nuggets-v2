@@ -74,10 +74,23 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
                     {quotes[quoteIndex].author && <AuthorButton type={"link"} name={quotes[index].author}/>}
                   </strong>
                 </Container>
-                <Container className="justify-content-center text-center mt-2">
+                <Container className="justify-content-center text-center mt-2 align-items-center">
                   <a className="mx-2 share-button share-X" target="_blank" rel="noreferrer" href={`https://twitter.com/intent/tweet?url=https://www.1001nuggets.com/quote/${quotes[index].realID} - "${quotes[index].quoteText}" - ${quotes[index].author}`}><FaXTwitter/></a>
                   <a className="mx-2 share-button share-facebook" target="_blank" rel="noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=https://www.1001nuggets.com/quote/${quotes[index].realID} - "${quotes[index].quoteText}" - ${quotes[index].author}`}><FaFacebookF/></a>
                   <a className="mx-2 share-button share-truth" target="_blank" rel="noreferrer" href={`https://truthsocial.com/share?text=https://www.1001nuggets.com/quote/${quotes[index].realID} - "${quotes[index].quoteText}" - ${quotes[index].author}`}><img src={truthSocialImage} alt="TS"/></a>
+                  <span className="mx-2" onClick={() => {
+                    if(navigator.canShare) {
+                      navigator.share({
+                      title:"1001 Nuggets",
+                      text: "\"" + quotes[index].quoteText + "\" - " + quotes[index].author,
+                      url: (window.location.origin + "/quote/" + quotes[index].realID)
+                      });
+                    } else {
+                      alert("Cannot navigate")
+                    }
+                }}>
+                  <FiShare className="text-white cool-share-button"/>
+                </span>
                   {/* <span className="mx-2 p-0 share-button" onClick={() => {
                     var grab = document.getElementsByClassName("quote-card-m")[index]
                     console.log(index)
@@ -104,7 +117,6 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
                   </div>
                   <div className="text-start text-theme mx-2">
                     {quotes[index].relatedTopics[0] && <span>
-                        <span>Related: </span>
                         {quotes[index].relatedTopics.map((related) => (
                             <span key={quotes[index].quoteText + "related" + related}>
                               {
@@ -130,19 +142,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
 
               {/* Share Buttons */}
               <Modal.Footer className="justify-content-center">
-                <Button variant={"weak"} onClick={() => {
-                    if(navigator.canShare) {
-                      navigator.share({
-                      title:"1001 Nuggets",
-                      text: "\"" + quotes[index].quoteText + "\" - " + quotes[index].author,
-                      url: (window.location.origin + "/quote/" + quotes[index].realID)
-                      });
-                    } else {
-                      alert("Cannot navigate")
-                    }
-                }}>
-                  <FiShare/>
-                </Button>
+                
               </Modal.Footer>
             </Carousel.Item>
           ))}
