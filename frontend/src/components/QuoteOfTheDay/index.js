@@ -1,6 +1,6 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 // import html2canvas from "html2canvas";
 
 import AuthorButton from "../AuthorButton";
@@ -42,6 +42,19 @@ function QuoteCard({realID}) {
                         <a className="mx-2 share-button" target="_blank" rel="noreferrer" href={`https://twitter.com/intent/tweet?url=${window.location.href} - "${Quote.quoteText}" - ${Quote.author}`} id="share-X"><FaXTwitter/></a>
                         <a className="mx-2 share-button" target="_blank" rel="noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}quote/${Quote.realID} - "${Quote.quoteText}" - ${Quote.author}`} id="share-facebook"><FaFacebookF/></a>
                         <a className="mx-2 share-button share-truth" target="_blank" rel="noreferrer" href={`https://truthsocial.com/share?text=${window.location.href}quote/${Quote.realID} - "${Quote.quoteText}" - ${Quote.author}`} id="share-truth"><img src={truthSocialImage} alt="TS"/></a>
+                        <span className="mx-2" onClick={() => {
+                            if(navigator.canShare) {
+                                navigator.share({
+                                title:"1001 Nuggets",
+                                text:"\"" + Quote.quoteText + "\" - " + Quote.author,
+                                url: window.location.href
+                                });
+                            } else {
+                              alert("Cannot navigate")
+                            }
+                        }}>
+                          <FiShare className="text-white cool-share-button"/>
+                        </span>
                         {/* <span className="mx-2 p-0 share-button" onClick={() => {
                             html2canvas(document.getElementById("quote-page")).then((canvas) => {
                                 console.log(canvas);
@@ -60,21 +73,6 @@ function QuoteCard({realID}) {
                             ))}
                     </Card.Footer>
                 }
-                <Card.Footer className="text-center">
-                    <Button variant={"weak"} id="mobileShare" onClick={() => {
-                        if(navigator.canShare) {
-                            navigator.share({
-                            title:"1001 Nuggets",
-                            text:"\"" + Quote.quoteText + "\" - " + Quote.author,
-                            url: window.location.href
-                            });
-                        } else {
-                            alert("Cannot navigate")
-                        }
-                    }}>
-                        <FiShare/>
-                    </Button>
-                </Card.Footer>
             </Card>
         </div>
     )

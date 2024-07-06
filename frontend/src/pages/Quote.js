@@ -3,9 +3,10 @@ import { Helmet } from "react-helmet";
 import { redirect, useParams } from "react-router-dom";
 import { useQuery} from "@apollo/client";
 
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import { FiShare } from "react-icons/fi";
+import truthSocialImage from "../assets/images/truthsocial.png";
 
 import TopicButton from "../components/TopicButton";
 import AuthorButton from "../components/AuthorButton";
@@ -48,8 +49,12 @@ function Quote () {
                                         <Card.Text className="text-end pe-2"><strong><AuthorButton whitened={true} type={"link"} name={quote.author}/></strong></Card.Text>
                                     </Card.Body>
                                     <Card.Body className="text-center">
-                                        <a className="mx-2 share-button" target="_blank" rel="noreferrer" href={`https://twitter.com/intent/tweet?url=${window.location.href} - "${quote.quoteText}"`} id="share-X"><FaXTwitter/></a>
-                                        <a className="mx-2 share-button" target="_blank" rel="noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href} - "${quote.quoteText}"`} id="share-facebook"><FaFacebookF/></a>
+                                        <a className="mx-2 share-button" target="_blank" rel="noreferrer" href={`https://twitter.com/intent/tweet?url=${window.location.href} - "${quote.quoteText} - ${quote.author}"`} id="share-X"><FaXTwitter/></a>
+                                        <a className="mx-2 share-button" target="_blank" rel="noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href} - "${quote.quoteText} - ${quote.author}"`} id="share-facebook"><FaFacebookF/></a>
+                                        <a className="mx-2 share-button share-truth" target="_blank" rel="noreferrer" href={`https://truthsocial.com/share?text=${window.location.href} - "${quote.quoteText}" - ${quote.author}`}><img src={truthSocialImage} alt="TS"/></a>
+                                        <span className="mx-2" onClick={MobileShare}>
+                                        <FiShare className="text-white cool-share-button"/>
+                                        </span>
                                     </Card.Body>
                                 </div>
                                 {quote.topics.length && 
@@ -74,11 +79,6 @@ function Quote () {
                                         </div>
                                     </Card.Footer>
                                 }
-                                <Card.Footer className="text-center">
-                                    <Button variant={"weak"} onClick={MobileShare}>
-                                        <FiShare/>
-                                    </Button>
-                                </Card.Footer>
                             </Card>
                         </Col>
                     </Row>
