@@ -30,7 +30,7 @@ function CollectionNavInst({letter}) {
             {sortedList.map((index) => (
                 <div key={letter + index.name}>
                     <p><strong><Link to={`/collection/${index.realID}`} className="link-theme">{index.name}</Link></strong></p>
-                    <p>({index.topics.length} topics)</p>
+                    {/* <p>({index.topics.length} topics)</p> */}
                     <hr/>
                 </div>
             ))}
