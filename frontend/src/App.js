@@ -21,7 +21,7 @@ const CollectionNav = React.lazy(() => import ("./pages/CollectionNav"));
 const Collection = React.lazy(() => import ("./pages/Collection"));
 // const SearchResult = React.lazy(() => import("./pages/SearchResult"));
 
-const AuthorNav = React.lazy(() => import("./pages/AuthorNav"));
+// const AuthorNav = React.lazy(() => import("./pages/AuthorNav"));
 
 const clientInfo = {
   httpLink: createHttpLink({uri:"/graphql"}),
@@ -59,7 +59,7 @@ function App () {
           <Route exact path="/quote/:quoteRealId" element={<React.Suspense><Quote/></React.Suspense>}/>
 
           {/* <Route exact path="/search/:query" element={<React.Suspense><SearchResult/></React.Suspense>}/> */}
-          <Route exact path="/authors" element={<React.Suspense><AuthorNav/></React.Suspense>}/>
+          {/* <Route exact path="/authors" element={<React.Suspense><AuthorNav/></React.Suspense>}/> */}
         </Routes>
       </Router>
     </ApolloProvider>
