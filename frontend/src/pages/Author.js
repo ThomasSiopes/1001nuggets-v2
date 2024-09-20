@@ -26,13 +26,13 @@ function Author () {
 
     let indexList = [];
 
-    // for(let n = 0; ((n < author.quotes.length) && (n < 9)); ++n) {
-    //     indexList.push(n)
-    // }
-
-    for(let n = 0; (n < author.quotes.length); ++n) {
+    for(let n = 0; ((n < author.quotes.length) && (n < 9)); ++n) {
         indexList.push(n)
     }
+
+    // for(let n = 0; (n < author.quotes.length); ++n) {
+    //     indexList.push(n)
+    // }
 
     if(!indexList) return <p>Loading...</p>
 
