@@ -197,6 +197,26 @@ body {
     color: #ccc!important;
 }
 
+.link-related {
+    color: rgb(66, 131, 84)!important;
+    text-decoration-color: rgb(66, 131, 84)!important;
+}
+
+.link-related:hover {
+    color: rgb(132, 205, 152)!important;
+    text-decoration-color: rgb(132, 205, 152)!important;
+}
+
+.link-unrelated {
+    color: rgb(158, 54, 54)!important;
+    text-decoration-color: rgb(158, 54, 54)!important;
+}
+
+.link-unrelated:hover {
+    color: rgb(220, 147, 147)!important;
+    text-decoration-color: rgb(220, 147, 147)!important;
+}
+
 .mainBody {
     min-height: 67vh!important;
 }
