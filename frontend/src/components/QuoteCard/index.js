@@ -121,10 +121,17 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
                             <span key={quotes[index].quoteText + "related" + related}>
                               {
                                 related === quotes[index].relatedTopics[quotes[index].relatedTopics.length-1] ?
-                                  <span><u><TopicButton type={"link"} name={related} theme={"small"}/></u></span>
+                                  <span><u><TopicButton type={"link"} name={related} theme={"related"}/></u></span>
                                   :
-                                  <span><u><TopicButton type={"link"} name={related} theme={"small"}/></u>; </span>
+                                  <span><u><TopicButton type={"link"} name={related} theme={"related"}/></u>; </span>
                               }
+                            </span>
+                        ))}
+                    </span>}
+                    {quotes[index].unrelatedTopics[0] && <span>
+                        {quotes[index].unrelatedTopics.map((unrelated) => (
+                            <span key={quotes[index].quoteText + "unrelated" + unrelated}>
+                              <span>; <u><TopicButton type={"link"} name={unrelated} theme={"unrelated"}/></u></span>
                             </span>
                         ))}
                     </span>}
