@@ -21,9 +21,21 @@ const TopicButton = ({type, name, theme}) => {
             <Button href={`/topic/${topic.realID}`} className="mx-1 mb-2" variant={theme}>{name}</Button>
         )
     } else if(type === "link") {
-        return (
-            <Link to={`/topic/${topic.realID}`} className="link-theme">{name}</Link>
-        )
+        if(theme === "related") {
+            return (
+                <Link to={`/topic/${topic.realID}`} className="link-related">{name}</Link>
+            )
+        }
+        else if(theme === "unrelated") {
+            return (
+                <Link to={`/topic/${topic.realID}`} className="link-unrelated">{name}</Link>
+            )
+        }
+        else {
+            return (
+                <Link to={`/topic/${topic.realID}`} className="link-theme">{name}</Link>
+            )
+        }
     } else if(type === "button-block") {
         return (
             <Button href={`/topic/${topic.realID}`} className="btn-block" variant={theme}>{name}</Button>
