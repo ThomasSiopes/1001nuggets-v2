@@ -11,7 +11,7 @@ const TopicButton = ({type, name, theme}) => {
     })
 
     if(loading) return <span>Loading...</span>
-    
+
     let topic = data.topicName;
 
     if(!topic) return <span>Loading...</span>
@@ -44,3 +44,5 @@ const TopicButton = ({type, name, theme}) => {
 }
 
 export default TopicButton;
+
+

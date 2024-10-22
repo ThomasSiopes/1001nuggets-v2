@@ -111,12 +111,12 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
               {/* Topic */}
               {quotes[index].topics && quotes[index].topics.length > 0 && <Modal.Footer className="justify-content-center align-items-center text-center"> 
                   <div className="width100"> 
-                      {quotes[index].topics.map((topic) => (
+                      {quotes[index].topics && quotes[index].topics.map((topic) => (
                           <TopicButton type={"button"} name={topic} theme={"weak"} key={quotes[index].quoteText + topic}/>
                       ))}
                   </div>
                   <div className="text-start text-theme mx-2">
-                    {quotes[index].relatedTopics[0] && <span>
+                    {quotes[index].relatedTopics && <span>
                         {quotes[index].relatedTopics.map((related) => (
                             <span key={quotes[index].quoteText + "related" + related}>
                               {
@@ -128,7 +128,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
                             </span>
                         ))}
                     </span>}
-                    {quotes[index].unrelatedTopics[0] && <span>
+                    {quotes[index].unrelatedTopics && <span>
                         {quotes[index].unrelatedTopics.map((unrelated) => (
                             <span key={quotes[index].quoteText + "unrelated" + unrelated}>
                               <span>; <u><TopicButton type={"link"} name={unrelated} theme={"unrelated"}/></u></span>
