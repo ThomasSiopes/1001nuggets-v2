@@ -30,7 +30,7 @@ function TopicNavInst({letter}) {
             {sortedList.map((index) => (
                 <div key={letter + index.name}>
                     <p><strong><Link to={`/topic/${index.realID}`} className="link-theme">{index.name}</Link></strong></p>
-                    {/* <p>({index.quotes.length} quotes)</p> */}
+                    <p>({index.quotes.length} quotes)</p>
                     <hr/>
                 </div>
             ))}
