@@ -320,6 +320,15 @@ export const QUERY_COLLECTION_LETTER = gql`
     }
 `;
 
+export const QUERY_TAG_ALL = gql`
+    query getTags {
+        tags {
+            tag
+            authors
+        }
+    }
+`;
+
 export const QUERY_QOTD = gql`
     query getQOTD {
         dailyQuote {

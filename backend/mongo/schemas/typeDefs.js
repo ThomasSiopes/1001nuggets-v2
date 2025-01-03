@@ -41,6 +41,12 @@ const typeDefs = gql`
         topics: [String]!
     }
 
+    type Tag {
+        _id: ID
+        tag: String
+        authors: [String]!
+    }
+
     type Query {
         authors: [Author]
         authorName(name: String): Author
@@ -65,6 +71,8 @@ const typeDefs = gql`
         quoteResult(input: String): [Quote]
         quote(quoteId: ID): Quote
         quoteR(quoteRealId: String): Quote
+
+        tags: [Tag]
 
         dailyQuote: [QOTD]
     }

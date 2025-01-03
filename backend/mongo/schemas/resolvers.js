@@ -1,4 +1,4 @@
-const { Author, Topic, Quote, Collection, QOTD } = require("../models");
+const { Author, Topic, Quote, Collection, QOTD, Tag } = require("../models");
 
 const resolvers = {
     Query: {
@@ -70,6 +70,11 @@ const resolvers = {
         },
         quoteResult: async (parent, { input }) => {
             return Quote.find({quoteText: {$regex: "^.*" + input + ".*$", $options: 'i'}})
+        },
+
+        // tags
+        tags: async () => {
+            return Tag.find();
         },
 
         // QOTD

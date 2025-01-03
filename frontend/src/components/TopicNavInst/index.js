@@ -11,6 +11,13 @@ function TopicNavInst({letter}) {
 
     if(!data) return <span>...</span>;
 
+    let list = []
+    for(let indexa of data.topicLetter){
+        if(indexa.quotes.length < 6) list.push(indexa.name + " - " + indexa.quotes.length);
+    }
+    console.log(letter + ":");
+    console.log(list);
+
     let sortedList = data.topicLetter.map((item) => Object.assign({}, item, {selected:false}))
     
     sortedList = sortedList.sort(function(a,b) {
