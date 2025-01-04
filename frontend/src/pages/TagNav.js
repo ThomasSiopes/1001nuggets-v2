@@ -1,35 +1,11 @@
 import React from "react";
-import {Helmet} from "react-helmet";
-import { useQuery } from "@apollo/client";
+import {Helmet} from "react-helmet"
 
 import { Container, Row, Col, Card } from "react-bootstrap";
-import AuthorButton from "../components/AuthorButton";
+const TagNavInst = React.lazy(() => import("../components/TagNavInst"));
 
-import { QUERY_TAG_ALL } from "../utils/queries";
-
-const Installation = (inputObj) => {
-    const input = inputObj.inputObj;
-    
-    return(
-        <p>
-            <hr/>
-            <strong>{input.tag}</strong>
-            <hr/>
-            {input.authors.map((index) => (
-                <div>
-                    <AuthorButton key={index} type={"link"} name={index}/>
-                </div>
-            ))}
-        </p>
-    );
-}
-
-function Tags() {
-    let {loading, data} = useQuery(QUERY_TAG_ALL);
-    if(loading) return <span>Loading...</span>;
-    if(!data) return <span>...</span>;
-
-    const tagData = data.tags;
+function Authors () {
+    const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
     return (
         <Container>
@@ -39,20 +15,27 @@ function Tags() {
             <Row className="justify-content-center navPage-body">
                 <Col>
                     <Card>
-                        <Card.Body className="text-center">
-                            <Row>
-                                {tagData.map((index) => (
-                                    <div>
-                                        <Installation key={index} inputObj={index}/>
-                                    </div>
-                                ))}
+                        <Card.Body>
+                            <Row id="myGroup">
+                                {alphabet.map((index) => (
+                                    <TagNavInst key={index} letter={index}/>
+                                ))
+                                }
                             </Row>
                         </Card.Body>
                     </Card>
                 </Col>
+                <div className="col-05 p-0 text-center">
+                    <Row className="fitter px-0 py-2 ms-0 align-items-center justify-content-center">
+                        {alphabet.map((fitterIndex) => (
+                            <div className="p-0 mx-0 float-left sidebar-text" key={"fitter" + fitterIndex}><a href={"#" + fitterIndex} className="text-white">{fitterIndex}</a></div>
+                        ))
+                        }
+                    </Row>
+                </div>
             </Row>
         </Container>
-    );
+    )
 }
 
-export default Tags;
+export default Authors;

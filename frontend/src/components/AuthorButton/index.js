@@ -6,7 +6,7 @@ import { Button } from "react-bootstrap";
 
 import { QUERY_AUTHOR_NAME } from "../../utils/queries";
 
-const AuthorButton = ({type, name, whitened}) => {
+const AuthorButton = ({type, name, whitened, theme}) => {
     let {loading, data} = useQuery(QUERY_AUTHOR_NAME, {
         variables: {name: name},
     })
@@ -17,19 +17,25 @@ const AuthorButton = ({type, name, whitened}) => {
     
     let author = data.authorName;
     
-    if(type === "button") {
-        return (
-            <Link to={`/author/${author.realID}`}><Button variant={"theme"}>{name}</Button></Link>
-        )
-    } else if(type === "link") {
-        if(whitened) {
-            return(
-                <Link to={`/author/${author.realID}`} className="link-weak">{name}</Link>
+    switch(type){
+        case "button":
+            return (
+                <Link to={`/author/${author.realID}`}><Button variant={"theme"}>{name}</Button></Link>
             )
-        } else return (
-            <Link to={`/author/${author.realID}`} className="link-theme">{name}</Link>
-        )
-    } else return <span>Loading...</span>
+        case "button-block": 
+            return (
+                <Button href={`/author/${author.realID}`} className="btn-block" variant={theme}>{name}</Button>
+            )
+        case "link":
+            if(whitened) {
+                return(
+                    <Link to={`/author/${author.realID}`} className="link-weak">{name}</Link>
+                )
+            } else return (
+                <Link to={`/author/${author.realID}`} className="link-theme">{name}</Link>
+            )
+        default: return <p>Loading...</p>
+    }
 }
 
 export default AuthorButton;

@@ -73,6 +73,8 @@ const typeDefs = gql`
         quoteR(quoteRealId: String): Quote
 
         tags: [Tag]
+        tagLetter(letter: String): [Tag]
+        tagID(tagId: ID): Tag
 
         dailyQuote: [QOTD]
     }

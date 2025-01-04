@@ -20,6 +20,8 @@ const TopicNav = React.lazy(() => import("./pages/TopicNav"));
 const CollectionNav = React.lazy(() => import ("./pages/CollectionNav"));
 const Collection = React.lazy(() => import ("./pages/Collection"));
 const TagNav = React.lazy(() => import("./pages/TagNav"));
+const TagPage = React.lazy(() => import("./pages/TagPage"));
+
 // const SearchResult = React.lazy(() => import("./pages/SearchResult"));
 
 // const AuthorNav = React.lazy(() => import("./pages/AuthorNav"));
@@ -56,6 +58,7 @@ function App () {
           <Route exact path="/collection/:collectionRealId" element={<React.Suspense><Collection/></React.Suspense>}/>
 
           <Route exact path="/authors" element={<React.Suspense><TagNav/></React.Suspense>}/>
+          <Route exact path="/authortag/:tagId" element={<React.Suspense><TagPage/></React.Suspense>}/>
 
           <Route exact path="/author/:authorRealId" element={<React.Suspense><Author/></React.Suspense>}/>
 

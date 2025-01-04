@@ -76,6 +76,12 @@ const resolvers = {
         tags: async () => {
             return Tag.find();
         },
+        tagLetter: async (parent, { letter }) => {
+            return Tag.find({tag: {$regex: '^' + letter, $options: 'i'}})
+        },
+        tagID: async (parent, { tagId }) => {
+            return Tag.findOne({ _id: tagId });
+        },
 
         // QOTD
         dailyQuote: async () => {

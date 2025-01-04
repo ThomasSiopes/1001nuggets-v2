@@ -16,30 +16,33 @@ const TopicButton = ({type, name, theme}) => {
 
     if(!topic) return <span>Loading...</span>
 
-    if(type === "button") {
-        return (
-            <Button href={`/topic/${topic.realID}`} className="mx-1 mb-2" variant={theme}>{name}</Button>
-        )
-    } else if(type === "link") {
-        if(theme === "related") {
+    switch(type){
+        case "button": 
             return (
-                <Link to={`/topic/${topic.realID}`} className="link-related">{name}</Link>
-            )
-        }
-        else if(theme === "unrelated") {
+                <Button href={`/topic/${topic.realID}`} className="mx-1 mb-2" variant={theme}>{name}</Button>
+            );
+        case "button-block": 
             return (
-                <Link to={`/topic/${topic.realID}`} className="link-unrelated">{name}</Link>
+                <Button href={`/topic/${topic.realID}`} className="btn-block" variant={theme}>{name}</Button>
             )
-        }
-        else {
-            return (
-                <Link to={`/topic/${topic.realID}`} className="link-theme">{name}</Link>
-            )
-        }
-    } else if(type === "button-block") {
-        return (
-            <Button href={`/topic/${topic.realID}`} className="btn-block" variant={theme}>{name}</Button>
-        )
+        case "link": 
+            if(theme === "related") {
+                return (
+                    <Link to={`/topic/${topic.realID}`} className="link-related">{name}</Link>
+                )
+            }
+            else if(theme === "unrelated") {
+                return (
+                    <Link to={`/topic/${topic.realID}`} className="link-unrelated">{name}</Link>
+                )
+            }
+            else {
+                return (
+                    <Link to={`/topic/${topic.realID}`} className="link-theme">{name}</Link>
+                )
+            }
+        default:
+            return <p>Loading...</p>
     }
 }
 

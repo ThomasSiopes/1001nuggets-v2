@@ -264,6 +264,7 @@ export const QUERY_QUOTE_REALID = gql`
 export const QUERY_COLLECTION_ALL = gql`
     query getAllCollections {
         collections {
+            _id
             name
             realID
             sortedName
@@ -323,6 +324,27 @@ export const QUERY_COLLECTION_LETTER = gql`
 export const QUERY_TAG_ALL = gql`
     query getTags {
         tags {
+            _id
+            tag
+            authors
+        }
+    }
+`;
+
+export const QUERY_TAG_LETTER = gql`
+    query tagLetter($letter: String!) {
+        tagLetter(letter: $letter) {
+          _id
+          tag
+          authors
+        }
+    }
+`;
+
+export const QUERY_TAG_ID = gql`
+    query getTagById($tagId: ID!) {
+        tagID (tagId: $tagId){
+            _id
             tag
             authors
         }

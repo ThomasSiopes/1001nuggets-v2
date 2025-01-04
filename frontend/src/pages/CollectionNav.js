@@ -4,7 +4,7 @@ import {Helmet} from "react-helmet"
 import { Container, Row, Col, Card } from "react-bootstrap";
 const CollectionNavInst = React.lazy(() => import("../components/CollectionNavInst"));
 
-function Topics () {
+function Collections () {
     const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
     return (
@@ -38,4 +38,4 @@ function Topics () {
     )
 }
 
-export default Topics;
+export default Collections;
