@@ -44,6 +44,7 @@ const typeDefs = gql`
     type Tag {
         _id: ID
         tag: String
+        sortedName: String
         authors: [String]!
     }
 

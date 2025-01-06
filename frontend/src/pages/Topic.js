@@ -35,9 +35,6 @@ function Topic () {
 
     indexList = shuffle(indexList);
 
-    console.log("Full list:")
-    console.log(topic.quotes)
-
     let list1;
     let list2;
     let list3a;
@@ -54,15 +51,6 @@ function Topic () {
         list3a = result[1].splice(0,middleIndex);
         list3b = result[1].splice(-middleIndex);
     }
-
-    console.log("list 1: ")
-    console.log(list1[0])
-    console.log("list 2: ")
-    console.log(list2[0])
-    console.log("list 3a: ")
-    console.log(list3a[0])
-    console.log("list 3b: ")
-    console.log(list3b[0])
 
     return (
         <Container>

@@ -5,6 +5,10 @@ const tagThing = new Schema({
         type:String,
         required: true,
     },
+    sortedName:{
+        type:String,
+        required:false
+    },
     authors: [
         {
             type: String,

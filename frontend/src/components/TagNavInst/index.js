@@ -13,7 +13,7 @@ function TagNavInst({letter}) {
 
     let sortedList = data.tagLetter.map((item) => Object.assign({}, item, {selected:false}))
     
-    sortedList = sortedList.sort(function(a,b) {
+    sortedList = sortedList.sort((a,b) => {
         if(a.sortedName < b.sortedName) return -1;
         if(a.sortedName > b.sortedName) return 1;
         return 0;
