@@ -13,7 +13,7 @@ import CollectionButton from "../CollectionButton";
 import AuthorButton from "../AuthorButton";
 import QuoteCardText from '../QuoteCardText';
 
-function QuoteCard({quotes, quoteIndex, indexOrder}) {
+function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
   const [show, setShow] = useState(false);
   const [currentQuote, setIndex] = useState(quoteIndex);
   const fontSize = useRef(32);
@@ -155,6 +155,18 @@ function QuoteCard({quotes, quoteIndex, indexOrder}) {
           ))}
           <Carousel.Item>
               <div className="text-center quote-card py-5">
+                {relatedAuthors && 
+                  <div className="mb-3">
+                    <strong>
+                    {relatedAuthors.map((index) => (
+                      <div className="mb-2" key={"related author " + index}>
+                        <AuthorButton type={"link"} name={index}/>
+                      </div>
+                    ))}
+                    </strong>
+                    <hr className="mx-5"/>
+                  </div>
+                }
                 <Button variant={"theme"} className="text-center" href="https://www.amazon.com">See more on Amazon</Button>
               </div>
           </Carousel.Item>

@@ -18,7 +18,13 @@ const author = new Schema({
     realID: {
         type: String,
         required: true
-    }
+    },
+    relatedAuthors: [
+        {
+            type:String,
+            required:false
+        }
+    ]
 });
 
 const Author = model("Author", author);

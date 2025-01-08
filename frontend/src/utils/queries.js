@@ -20,6 +20,7 @@ export const QUERY_AUTHOR_NAME = gql`
             _id
             name
             lastName
+            relatedAuthors
             quotes {
                 _id
                 quoteText
@@ -41,6 +42,7 @@ export const QUERY_AUTHOR_ID = gql`
             _id
             name
             lastName
+            realtedAuthors
             quotes {
                 _id
                 quoteText
@@ -62,6 +64,7 @@ export const QUERY_AUTHOR_REALID = gql`
             _id
             name
             lastName
+            relatedAuthors
             quotes {
                 _id
                 quoteText
@@ -84,6 +87,7 @@ export const QUERY_AUTHOR_LETTER = gql`
           name
           realID
           lastName
+          relatedAuthors
           quotes {
             _id
           }

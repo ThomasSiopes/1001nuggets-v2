@@ -7,6 +7,7 @@ const typeDefs = gql`
         lastName: String
         realID: String
         quotes: [Quote]!
+        relatedAuthors: [String]!
     }
 
     type Topic {
