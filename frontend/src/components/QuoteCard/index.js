@@ -155,7 +155,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
           ))}
           <Carousel.Item>
               <div className="text-center quote-card py-5">
-                {relatedAuthors && 
+                {/* {relatedAuthors && 
                   <div className="mb-3">
                     <strong>
                     {relatedAuthors.map((index) => (
@@ -166,7 +166,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
                     </strong>
                     <hr className="mx-5"/>
                   </div>
-                }
+                } */}
                 <Button variant={"theme"} className="text-center" href="https://www.amazon.com">See more on Amazon</Button>
               </div>
           </Carousel.Item>

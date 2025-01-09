@@ -331,6 +331,7 @@ export const QUERY_TAG_ALL = gql`
             _id
             tag
             authors
+            sortedName
         }
     }
 `;
@@ -341,6 +342,7 @@ export const QUERY_TAG_LETTER = gql`
           _id
           tag
           authors
+          sortedName
         }
     }
 `;
@@ -351,6 +353,7 @@ export const QUERY_TAG_ID = gql`
             _id
             tag
             authors
+            sortedName
         }
     }
 `;
