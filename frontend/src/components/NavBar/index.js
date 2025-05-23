@@ -56,7 +56,7 @@ function NavBar() {
                     <Nav className="ms-auto">
                         <Form className="row text-center mx-auto mt-2 max-width-100" onSubmit={handleShow}>
                             <Col xs={8} className="align-items-center d-flex px-1">
-                                <input type="text" id="searchTerm" placeholder="Search..." className="rounded width100 text-center" onChange={handleChange}></input>
+                                <input type="text" id="searchTerm" placeholder="Search..." className="rounded width100 text-start" onChange={handleChange}/>
                             </Col>
                             <Col xs={4} className="px-1">
                                 <Button variant={"theme"} className="btn-block" disabled={buttonDisabled} type="submit" readOnly>Search</Button>
@@ -73,7 +73,7 @@ function NavBar() {
                         <Card.Body className="px-5">
                             <Form className="row" onSubmit={handleShowSM}>
                                 <Col xs={7} className="align-items-center d-flex px-1">
-                                    <input type="text" placeholder="Search..." id="searchTermSM" className="formInput rounded text-center" onChange={handleChangeSM}></input>
+                                    <input type="text" placeholder="Search..." id="searchTermSM" className="formInput rounded text-start" onChange={handleChangeSM}/>
                                 </Col>
                                 <Col xs={5} className="px-1">
                                     <Button variant={"theme"} className="btn-block" disabled={buttonDisabledSM} type="submit" readOnly>Search</Button>

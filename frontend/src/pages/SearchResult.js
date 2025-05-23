@@ -11,7 +11,7 @@ function SearchResults() {
     if(!query || query === null || query === "undefined") return redirect(`/`);
     
     return (
-        <Container className="auttopBody">
+        <Container className="auttopBody mb-3">
             <div className="wrapper">
                 <Helmet>
                     <title>1001 Nuggets - {query}</title>

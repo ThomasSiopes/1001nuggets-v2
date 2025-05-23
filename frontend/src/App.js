@@ -21,8 +21,7 @@ const CollectionNav = React.lazy(() => import ("./pages/CollectionNav"));
 const Collection = React.lazy(() => import ("./pages/Collection"));
 const TagNav = React.lazy(() => import("./pages/TagNav"));
 const TagPage = React.lazy(() => import("./pages/TagPage"));
-
-// const SearchResult = React.lazy(() => import("./pages/SearchResult"));
+const SearchResult = React.lazy(() => import("./pages/SearchResult"));
 
 // const AuthorNav = React.lazy(() => import("./pages/AuthorNav"));
 
@@ -64,7 +63,7 @@ function App () {
 
           <Route exact path="/quote/:quoteRealId" element={<React.Suspense><Quote/></React.Suspense>}/>
 
-          {/* <Route exact path="/search/:query" element={<React.Suspense><SearchResult/></React.Suspense>}/> */}
+          <Route exact path="/search/:query" element={<React.Suspense><SearchResult/></React.Suspense>}/>
           {/* <Route exact path="/authors" element={<React.Suspense><AuthorNav/></React.Suspense>}/> */}
         </Routes>
       </Router>
