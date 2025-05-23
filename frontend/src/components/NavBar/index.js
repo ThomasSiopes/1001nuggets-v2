@@ -59,7 +59,7 @@ function NavBar() {
                                 <input type="text" id="searchTerm" placeholder="Search..." className="rounded width100 text-center" onChange={handleChange}></input>
                             </Col>
                             <Col xs={4} className="px-1">
-                            <Button variant={"theme"} className="btn-block" disabled={buttonDisabled} type="submit" readOnly>Search</Button>
+                                <Button variant={"theme"} className="btn-block" disabled={buttonDisabled} type="submit" readOnly>Search</Button>
                             </Col>
                         </Form>
                     </Nav>
