@@ -33,8 +33,8 @@ function Home () {
                 </Container>
                 <div className="text-white d-xs-block d-sm-none bg-main">
                     <div id="homeBody">
-                        <h1 className="mb-3">1001 Nuggets</h1>
-                        <span>Everything • Everyone • Everywhere</span>
+                        <h1 className="mb-1">1001 NUGGETS</h1>
+                        <span>EVERYTHING • EVERYONE • EVERYWHERE</span>
                         <Form className="row mx-3 mt-5 align-items-center" onSubmit={handleSubmit}>
                             <Col className="p-0" xs={10}><input type="text" id="homeSearch" placeholder="Search Nuggets..." className="rounded width100 text-center py-2" onChange={handleChange}/></Col>
                             <Col className="p-0" xs={2}><Button variant={"theme"} type="submit" disabled={buttonDisabled} readOnly><FaSearch/></Button></Col>
