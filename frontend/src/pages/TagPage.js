@@ -23,7 +23,7 @@ function TagPage () {
     const tag = data.tagID;
 
     return (
-        <Container>
+        <Container className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - {tag.tag}</title>
             </Helmet>

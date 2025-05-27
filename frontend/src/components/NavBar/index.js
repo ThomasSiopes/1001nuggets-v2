@@ -42,7 +42,7 @@ function NavBar() {
     }
 
     return(
-        <Navbar variant="light" bg={"light"} expand="md" className="py-3 mb-3">
+        <Navbar variant="light" bg={"light"} expand="md" className="py-3">
             <Container className="d-none d-md-flex">
                 <Link className="navbar-brand me-0 p-0" to={`/`}><img id="nav-icon" src={iconImage} alt="Logo"/></Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>

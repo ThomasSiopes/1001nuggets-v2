@@ -8,7 +8,7 @@ function Topics () {
     const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
     return (
-        <Container>
+        <Container className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - Topics</title>
             </Helmet>

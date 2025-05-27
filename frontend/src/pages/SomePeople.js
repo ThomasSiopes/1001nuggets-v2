@@ -49,7 +49,7 @@ function SomePeople () {
     console.log(quoteList)
 
     return (
-        <Container>
+        <Container className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - Some People</title>
             </Helmet>

@@ -30,7 +30,7 @@ function Quote () {
     const quote = data.quoteR;
 
     return (
-        <Container>
+        <Container className="pt-5">
             <Helmet>
                 <title>1001 Nuggets - {quote.quoteText}</title>
                 {/* <meta name="description" content={quote.quoteText}/>

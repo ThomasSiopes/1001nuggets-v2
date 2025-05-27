@@ -27,25 +27,27 @@ function Home () {
             <Helmet>
                 <title>1001 Nuggets</title>
             </Helmet>
-            <Container className="text-center">
-                <div className="d-none d-sm-block">
+            <div className="text-center">
+                <Container className="d-none d-sm-block">
                     <QuoteOfTheDay/>
+                </Container>
+                <div className="text-white d-xs-block d-sm-none bg-main">
+                    <div id="homeBody">
+                        <h1 className="mb-3">1001 Nuggets</h1>
+                        <span>Everything • Everyone • Everywhere</span>
+                        <Form className="row mx-3 mt-5 align-items-center" onSubmit={handleSubmit}>
+                            <Col className="p-0" xs={10}><input type="text" id="homeSearch" placeholder="Search Nuggets..." className="rounded width100 text-center py-2" onChange={handleChange}/></Col>
+                            <Col className="p-0" xs={2}><Button variant={"theme"} type="submit" disabled={buttonDisabled} readOnly><FaSearch/></Button></Col>
+                        </Form>
+                        <Row className="align-items-center text-center my-4 mx-1">
+                            <Col className="break-line"/>
+                            <Col className="p-0" xs={1}>OR</Col>
+                            <Col className="break-line"/>
+                        </Row>
+                        <Button variant={"theme"} className="py-3 px-5">Find Nuggets</Button>
+                    </div>
                 </div>
-                <div id="homeBody" className="text-white d-xs-block d-sm-none">
-                    <h1 className="mb-3">1001 Nuggets</h1>
-                    <span>Everything • Everyone • Everywhere</span>
-                    <Form className="row mx-3 mt-5 align-items-center" onSubmit={handleSubmit}>
-                        <Col className="p-0" xs={10}><input type="text" id="homeSearch" placeholder="Search Nuggets..." className="rounded width100 text-center py-2" onChange={handleChange}/></Col>
-                        <Col className="p-0" xs={2}><Button variant={"theme"} type="submit" disabled={buttonDisabled} readOnly><FaSearch/></Button></Col>
-                    </Form>
-                    <Row className="align-items-center text-center my-4 mx-1">
-                        <Col className="break-line"/>
-                        <Col className="p-0" xs={1}>OR</Col>
-                        <Col className="break-line"/>
-                    </Row>
-                    <Button variant={"theme"} className="py-3 px-5">Find Nuggets</Button>
-                </div>
-            </Container>
+            </div>
         </div>
     )
 }

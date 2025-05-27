@@ -59,7 +59,7 @@ function Author () {
     if(author.relatedAuthors[0]) extraAuthors = author.relatedAuthors;
 
     return (        
-        <Container>
+        <Container className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - {author.name}</title>
             </Helmet>

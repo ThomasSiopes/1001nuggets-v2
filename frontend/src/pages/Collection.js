@@ -23,7 +23,7 @@ function Collection () {
     const collection = data.collectionR
 
     return (
-        <Container>
+        <Container className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - {collection.name}</title>
             </Helmet>

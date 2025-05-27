@@ -53,7 +53,7 @@ function Topic () {
     }
 
     return (
-        <Container>
+        <Container  className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - {topic.name}</title>
             </Helmet>
