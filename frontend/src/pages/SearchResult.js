@@ -11,12 +11,10 @@ function SearchResults() {
     if(!query || query === null || query === "undefined") return redirect(`/`);
     
     return (
-        <Container className="auttopBody pt-3">
-            <div className="wrapper">
-                <Helmet>
-                    <title>1001 Nuggets - {query}</title>
-                </Helmet>
-            </div>
+        <Container className="pt-3">
+            <Helmet>
+                <title>1001 Nuggets - {query}</title>
+            </Helmet>
             <Card>
                 {/* <Card.Header><Link to={`/`} className="link-theme">Home</Link> {`>`} Search Results for "{query}"</Card.Header> */}
                 <Card.Body>
