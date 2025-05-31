@@ -50,7 +50,7 @@ function Home () {
                             <Col className="break-line"/>
                         </Row>
                         <Button variant={"theme"} className="py-3 px-5" onClick={handleModalShow}>Find Nuggets</Button>
-                        <Modal show={show} onHide={handleModalClose} className="px-2">
+                        <Modal show={show} onHide={handleModalClose} centered className="px-2">
                             <Modal.Body>
                                 <Button variant={"theme"} href={`/topics`} className="btn-block my-3">Topics</Button>
                                 <Button variant={"theme"} href={`/collections`} className="btn-block my-3">Collections</Button>
