@@ -3,7 +3,7 @@ import { useQuery } from "@apollo/client";
 import { Link } from "react-router-dom";
 import { Navbar, Container, Nav, Modal, Col, Button, Row, Form, Card } from "react-bootstrap";
 
-import iconImage from "../../assets/images/N_Icon2_Transparent.png"
+import iconImage from "../../assets/images/N_IconGoldTransparent.png"
 import { QUERY_QUOTE_RESULT } from '../../utils/queries';
 
 const QuoteCard = React.lazy(() => import("../QuoteCard"));
