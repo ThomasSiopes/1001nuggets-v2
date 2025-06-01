@@ -15,7 +15,7 @@ function HomeNav() {
                             <Button variant={"theme"} href={`/topics`} className="btn-block my-3">Topics</Button>
                             <Button variant={"theme"} href={`/collections`} className="btn-block my-3">Collections</Button>
                             {/* <Button variant={"theme"} href={`/authors`} className="btn-block my-3">Authors</Button> */}
-                            <Button variant={"theme"} href={`/publishings`} className="btn-block my-3">Publishings</Button>
+                            <Button variant={"theme"} href={`/publications`} className="btn-block my-3">Publications</Button>
                         </Col>
                     </Row>
                 </Card.Body>

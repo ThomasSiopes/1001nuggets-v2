@@ -10,11 +10,11 @@ import icon6 from "../assets/images/bookpics/book6.png";
 import iconLite from "../assets/images/bookpics/bookLite.png";
 import iconSB from "../assets/images/bookpics/bookSB.png";
 
-function Publishings() {
+function Publications() {
     return(
         <Container className="pt-3">
             <Helmet>
-                <title>1001 Nuggets - Publishings</title>
+                <title>1001 Nuggets - Publications</title>
             </Helmet>
             <Card>
                 <Card.Body>
@@ -82,4 +82,4 @@ function Publishings() {
     )
 }
 
-export default Publishings;
+export default Publications;
