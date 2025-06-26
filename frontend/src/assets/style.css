@@ -11,13 +11,13 @@ a {
 }
 
 .bg-main {
-    background-image: url("../../public/assets/images/GoldNuggets2ExtendedGrad.png")!important;
+    background-image: url("../../public/assets/images/GoldNuggets3ExtendedGrad.png")!important;
     background-size: 100% auto;
     min-height: 89vh;
 }
 
 .bg-nugget {
-    background-image: url("../../public/assets/images/GoldNuggetsExtended.png")!important;
+    background-image: url("../../public/assets/images/GoldNuggets3Extended.png")!important;
     background-size: 100% auto;
     background-repeat: repeat;
     min-height: 100%;
