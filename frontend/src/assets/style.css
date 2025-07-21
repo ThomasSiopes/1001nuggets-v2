@@ -11,7 +11,7 @@ a {
 }
 
 .bg-main {
-    background-image: url("../../public/assets/images/GoldNuggets3ExtendedGrad.png")!important;
+    background-image: url("../../public/assets/images/GoldNuggets3ExtendedGrad.webp")!important;
     background-size: 100% auto;
     min-height: 89vh;
 }
