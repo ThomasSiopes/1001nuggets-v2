@@ -17,7 +17,7 @@ a {
 }
 
 .bg-nugget {
-    background-image: url("../../public/assets/images/GoldNuggets3Extended.png")!important;
+    background-image: url("../../public/assets/images/GoldNuggets3Extended.webp")!important;
     background-size: 100% auto;
     background-repeat: repeat;
     min-height: 100%;
