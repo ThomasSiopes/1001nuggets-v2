@@ -42,7 +42,7 @@ function Home () {
                         <span id="homeSubtext">EVERYTHING • EVERYONE • EVERYWHERE</span>
                         <Form className="row mx-3 mt-5 align-items-center" onSubmit={handleSubmit}>
                             <Col className="p-0" xs={10}><input type="text" id="homeSearch" placeholder="Search Nuggets..." className="rounded width100 text-center py-2" onChange={handleChange}/></Col>
-                            <Col className="p-0" xs={2}><Button variant={"theme"} type="submit" disabled={buttonDisabled} readOnly><FaSearch/></Button></Col>
+                            <Col className="p-0" xs={2}><Button variant={"theme"} type="submit" disabled={buttonDisabled} name="search" readOnly><FaSearch/></Button></Col>
                         </Form>
                         <Row className="align-items-center text-center my-4 mx-1">
                             <Col className="break-line"/>
