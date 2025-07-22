@@ -3,9 +3,6 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import { ApolloClient, ApolloProvider, createHttpLink, InMemoryCache } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 
-//Styles
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 //Components
 // import ErrorPage from "./components/ErrorPage";
 const NavBar = React.lazy(() => import("./components/NavBar"));

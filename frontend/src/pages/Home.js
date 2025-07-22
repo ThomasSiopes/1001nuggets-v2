@@ -36,7 +36,7 @@ function Home () {
                 <Container className="d-none d-sm-block">
                     <QuoteOfTheDay/>
                 </Container>
-                <div className="text-white d-xs-block d-sm-none bg-main">
+                <div className="text-white d-xs-block d-sm-none">
                     <div id="homeBody">
                         <h1 className="mb-1">1001 NUGGETS</h1>
                         <span id="homeSubtext">EVERYTHING • EVERYONE • EVERYWHERE</span>
