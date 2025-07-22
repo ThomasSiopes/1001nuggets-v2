@@ -39,9 +39,9 @@ function QuoteCard({realID}) {
                         <Card.Text className="text-end pe-2"><strong><AuthorButton whitened={true} type={"link"} name={Quote.author}/></strong></Card.Text>
                     </Card.Body>
                     <Card.Body className="text-center">
-                        <a className="mx-2 share-button" target="_blank" rel="noreferrer" href={`https://twitter.com/intent/tweet?url=${window.location.href} - "${Quote.quoteText}" - ${Quote.author}`} id="share-X"><FaXTwitter/></a>
-                        <a className="mx-2 share-button" target="_blank" rel="noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}quote/${Quote.realID} - "${Quote.quoteText}" - ${Quote.author}`} id="share-facebook"><FaFacebookF/></a>
-                        <a className="mx-2 share-button share-truth" target="_blank" rel="noreferrer" href={`https://truthsocial.com/share?text=${window.location.href}quote/${Quote.realID} - "${Quote.quoteText}" - ${Quote.author}`} id="share-truth"><img src={truthSocialImage} alt="TS"/></a>
+                        <a className="mx-2 share-button" target="_blank" aria-label="Share on X" rel="noreferrer" href={`https://twitter.com/intent/tweet?url=${window.location.href} - "${Quote.quoteText}" - ${Quote.author}`} id="share-X"><FaXTwitter/></a>
+                        <a className="mx-2 share-button" target="_blank" aria-label="Share on Facebook" rel="noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}quote/${Quote.realID} - "${Quote.quoteText}" - ${Quote.author}`} id="share-facebook"><FaFacebookF/></a>
+                        <a className="mx-2 share-button share-truth" target="_blank" aria-label="Share on TruthSocial" rel="noreferrer" href={`https://truthsocial.com/share?text=${window.location.href}quote/${Quote.realID} - "${Quote.quoteText}" - ${Quote.author}`} id="share-truth"><img src={truthSocialImage} alt="TS"/></a>
                         <span className="mx-2" onClick={() => {
                             if(navigator.canShare) {
                                 navigator.share({

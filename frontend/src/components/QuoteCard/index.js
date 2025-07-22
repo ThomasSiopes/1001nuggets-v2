@@ -75,9 +75,9 @@ function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
                   </strong>
                 </Container>
                 <Container className="justify-content-center text-center mt-2 align-items-center">
-                  <a className="mx-2 share-button share-X" target="_blank" rel="noreferrer" href={`https://twitter.com/intent/tweet?url=https://www.1001nuggets.com/quote/${quotes[index].realID} - "${quotes[index].quoteText}" - ${quotes[index].author}`}><FaXTwitter/></a>
-                  <a className="mx-2 share-button share-facebook" target="_blank" rel="noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=https://www.1001nuggets.com/quote/${quotes[index].realID} - "${quotes[index].quoteText}" - ${quotes[index].author}`}><FaFacebookF/></a>
-                  <a className="mx-2 share-button share-truth" target="_blank" rel="noreferrer" href={`https://truthsocial.com/share?text=https://www.1001nuggets.com/quote/${quotes[index].realID} - "${quotes[index].quoteText}" - ${quotes[index].author}`}><img src={truthSocialImage} alt="TS"/></a>
+                  <a className="mx-2 share-button share-X" target="_blank" aria-label="Share on X" rel="noreferrer" href={`https://twitter.com/intent/tweet?url=https://www.1001nuggets.com/quote/${quotes[index].realID} - "${quotes[index].quoteText}" - ${quotes[index].author}`}><FaXTwitter/></a>
+                  <a className="mx-2 share-button share-facebook" target="_blank" aria-label="Share on Facebook" rel="noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=https://www.1001nuggets.com/quote/${quotes[index].realID} - "${quotes[index].quoteText}" - ${quotes[index].author}`}><FaFacebookF/></a>
+                  <a className="mx-2 share-button share-truth" target="_blank" aria-label="Share on TruthSocial" rel="noreferrer" href={`https://truthsocial.com/share?text=https://www.1001nuggets.com/quote/${quotes[index].realID} - "${quotes[index].quoteText}" - ${quotes[index].author}`}><img src={truthSocialImage} alt="TS"/></a>
                   <span className="mx-2" onClick={() => {
                     if(navigator.canShare) {
                       navigator.share({
