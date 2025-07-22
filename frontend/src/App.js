@@ -4,7 +4,6 @@ import { ApolloClient, ApolloProvider, createHttpLink, InMemoryCache } from "@ap
 import { setContext } from "@apollo/client/link/context";
 
 //Styles
-import "./assets/style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Components
