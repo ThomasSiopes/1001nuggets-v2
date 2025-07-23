@@ -32,7 +32,7 @@ function Home () {
             <Helmet>
                 <title>1001 Nuggets</title>
             </Helmet>
-            <div className="text-center">
+            <div className="text-center bg-main">
                 <Container className="d-none d-sm-block">
                     <QuoteOfTheDay/>
                 </Container>
