@@ -31,7 +31,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("public", {
     setHeaders: (res, path) => {
-        if(path.endsWith(".html")) {
+        if(path.endsWith(".html") || path.endsWith(".js")) {
             res.setHeader("Cache-Control", "max-age=31536000");
         }
     }
