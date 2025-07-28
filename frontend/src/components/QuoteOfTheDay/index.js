@@ -1,7 +1,6 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
 import { Card } from "react-bootstrap";
-// import html2canvas from "html2canvas";
 
 import AuthorButton from "../AuthorButton";
 import TopicButton from "../TopicButton";
