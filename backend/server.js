@@ -29,15 +29,7 @@ middleWare();
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static("public", {
-    etag: true,
-    lastModified: true,
-    setHeaders: (res, path) => {
-        if(path.endsWith(".html") || path.endsWith(".js") || path.endsWith(".css")) {
-            res.setHeader("Cache-Control", "max-age=31536000");
-        }
-    }
-}));
+app.use(express.static("public", {maxAge: 3_600_000}));
 
 if(process.env.NODE_ENV === "production") {
     app.use(express.static(path.join(__dirname, "../frontend/build")));
