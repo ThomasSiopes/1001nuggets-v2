@@ -29,7 +29,7 @@ middleWare();
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static("public", {maxAge: 3_600_000}));
+app.use(express.static("public"));
 
 if(process.env.NODE_ENV === "production") {
     app.use(express.static(path.join(__dirname, "../frontend/build")));

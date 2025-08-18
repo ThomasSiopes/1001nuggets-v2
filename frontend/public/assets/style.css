@@ -11,7 +11,7 @@ a {
 }
 
 .bg-nugget {
-    background-image: url("./images/GoldNuggets3ExtendedGrad.webp");
+    /* background-image: url("./images/GoldNuggets3ExtendedGrad.webp"); */
     background-size: 100% auto;
     background-repeat: repeat;
     min-height: 100%;
@@ -20,7 +20,7 @@ a {
 
 @media (min-width:576px) {
     .bg-nugget {
-        background-image: url("./images/GoldNuggets3Extended.webp")!important;
+        /* background-image: url("./images/GoldNuggets3Extended.webp")!important; */
     }
 }
 
