@@ -358,6 +358,39 @@ export const QUERY_TAG_ID = gql`
     }
 `;
 
+export const QUERY_SPECIAL_ALL = gql`
+    query getSpecials {
+        specials {
+            _id
+            special
+            quotes
+            sortedName
+        }
+    }
+`;
+
+export const QUERY_SPECIAL_LETTER = gql`
+    query specialLetter($letter: String!) {
+        specialLetter(letter: $letter) {
+          _id
+          special
+          quotes
+          sortedName
+        }
+    }
+`;
+
+export const QUERY_SPECIAL_ID = gql`
+    query getSpecialById($specialId: ID!) {
+        specialID (specialId: $specialId){
+            _id
+            special
+            quotes
+            sortedName
+        }
+    }
+`;
+
 export const QUERY_QOTD = gql`
     query getQOTD {
         dailyQuote {
