@@ -1,7 +1,7 @@
 const { Schema, model } = require("mongoose");
 
-const specialThing = new Schema({
-    special: {
+const peopleThing = new Schema({
+    people: {
         type:String,
         required: true,
     },
@@ -16,6 +16,6 @@ const specialThing = new Schema({
     ]
 });
 
-const Special = model("Special", specialThing);
+const People = model("People", peopleThing);
 
-module.exports = Special;
+module.exports = People;

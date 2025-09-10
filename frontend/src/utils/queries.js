@@ -358,33 +358,33 @@ export const QUERY_TAG_ID = gql`
     }
 `;
 
-export const QUERY_SPECIAL_ALL = gql`
-    query getSpecials {
-        specials {
+export const QUERY_PEOPLE_ALL = gql`
+    query getPeoples {
+        peoples {
             _id
-            special
+            people
             quotes
             sortedName
         }
     }
 `;
 
-export const QUERY_SPECIAL_LETTER = gql`
-    query specialLetter($letter: String!) {
-        specialLetter(letter: $letter) {
+export const QUERY_PEOPLE_LETTER = gql`
+    query peopleLetter($letter: String!) {
+        peopleLetter(letter: $letter) {
           _id
-          special
+          people
           quotes
           sortedName
         }
     }
 `;
 
-export const QUERY_SPECIAL_ID = gql`
-    query getSpecialById($specialId: ID!) {
-        specialID (specialId: $specialId){
+export const QUERY_PEOPLE_ID = gql`
+    query getPeopleById($peopleId: ID!) {
+        peopleID (peopleId: $peopleId){
             _id
-            special
+            people
             quotes
             sortedName
         }

@@ -1,4 +1,4 @@
-const { Author, Topic, Quote, Collection, QOTD, Tag, Special } = require("../models");
+const { Author, Topic, Quote, Collection, QOTD, Tag, People } = require("../models");
 
 const resolvers = {
     Query: {
@@ -83,15 +83,15 @@ const resolvers = {
             return Tag.findOne({ _id: tagId });
         },
 
-        // special
-        specials: async () => {
-            return Special.find();
+        // people
+        peoples: async () => {
+            return People.find();
         },
-        specialLetter: async (parent, { letter }) => {
-            return Special.find({sortedName: {$regex: '^' + letter, $options: 'i'}})
+        peopleLetter: async (parent, { letter }) => {
+            return People.find({sortedName: {$regex: '^' + letter, $options: 'i'}})
         },
-        specialID: async (parent, { specialId }) => {
-            return Special.findOne({ _id: specialId });
+        peopleID: async (parent, { peopleId }) => {
+            return People.findOne({ _id: peopleId });
         },
 
         // QOTD

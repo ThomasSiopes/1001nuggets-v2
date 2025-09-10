@@ -49,9 +49,9 @@ const typeDefs = gql`
         authors: [String]!
     }
 
-    type Special {
+    type People {
         _id: ID
-        special: String
+        people: String
         sortedName: String
         quotes: [String]!
     }
@@ -85,9 +85,9 @@ const typeDefs = gql`
         tagLetter(letter: String): [Tag]
         tagID(tagId: ID): Tag
 
-        specials: [Special]
-        specialLetter(letter: String): [Special]
-        specialID(specialId: ID): Special
+        peoples: [People]
+        peopleLetter(letter: String): [People]
+        peopleID(peopleId: ID): People
 
         dailyQuote: [QOTD]
     }

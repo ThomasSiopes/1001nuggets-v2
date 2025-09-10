@@ -4,6 +4,6 @@ const Quote = require("./Quote");
 const Collection = require("./Collection");
 const Tag = require("./Tag");
 const QOTD = require("./QOTD");
-const Special = require("./Special")
+const People = require("./People")
 
-module.exports = {Author, Topic, Quote, Collection, QOTD, Tag, Special};
+module.exports = {Author, Topic, Quote, Collection, QOTD, Tag, People};
