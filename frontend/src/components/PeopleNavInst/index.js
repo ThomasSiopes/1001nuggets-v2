@@ -5,15 +5,19 @@ import { useQuery } from "@apollo/client";
 import { QUERY_PEOPLE_LETTER } from "../../utils/queries";
 
 function PeopleNavInst({letter}) {
-    let {loading, data} = useQuery(QUERY_PEOPLE_LETTER, {variables: {letter: letter},});
+    let {loading, data, error} = useQuery(QUERY_PEOPLE_LETTER, {variables: {letter: letter},});
 
     if(loading) return <span>Loading {letter}s...</span>
 
+    if(error) {
+        console.log(error)
+    }
+
     if(!data) return <span>...</span>;
 
-    let sortedList = data.peopleLetter.map((item) => Object.assign({}, item, {selected:false}))
+    let sortedList = data.peopleByLetter.map((item) => Object.assign({}, item, {selected:false}))
     
-    sortedList = sortedList.sort((a,b) => {
+    sortedList = sortedList.sort(function(a,b) {
         if(a.sortedName < b.sortedName) return -1;
         if(a.sortedName > b.sortedName) return 1;
         return 0;
@@ -29,7 +33,7 @@ function PeopleNavInst({letter}) {
             </div>
             {sortedList.map((index) => (
                 <div key={letter + index.name}>
-                    <p><strong><Link to={`/people/${index._id}`} className="link-theme">{index.name}</Link></strong></p>
+                    <p><strong><Link to={`/people/${index.realID}`} className="link-theme">{index.name}</Link></strong></p>
                     <hr/>
                 </div>
             ))}

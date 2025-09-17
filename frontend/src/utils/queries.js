@@ -360,31 +360,27 @@ export const QUERY_TAG_ID = gql`
 
 export const QUERY_PEOPLE_ALL = gql`
     query getPeoples {
-        peoples {
+        peopleAll {
             _id
             name
             sortedName
             realID
             quotes {
                 _id
-                relatedTopics
-                unrelatedTopics
             }
         }
     }
 `;
 
 export const QUERY_PEOPLE_LETTER = gql`
-    query peopleLetter($letter: String!) {
-        peopleLetter(letter: $letter) {
+    query getPeopleByLetter($letter: String!) {
+        peopleByLetter(letter: $letter) {
             _id
             name
             sortedName
             realID
             quotes {
                 _id
-                relatedTopics
-                unrelatedTopics
             }
         }
     }
@@ -392,7 +388,7 @@ export const QUERY_PEOPLE_LETTER = gql`
 
 export const QUERY_PEOPLE_ID = gql`
     query getPeopleById($peopleId: ID!) {
-        peopleID (peopleId: $peopleId){
+        peopleID(peopleId: $peopleId){
             _id
             name
             sortedName

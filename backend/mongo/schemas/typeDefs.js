@@ -77,6 +77,11 @@ const typeDefs = gql`
         collectionR(collectionRealId: String): Collection
         collectionLetter(letter: String): [Collection]
         
+        peopleAll: [People]
+        peopleByLetter(letter: String): [People]
+        peopleID(peopleId: ID): People
+        peopleR(peopleRealId: String): People
+
         quotes: [Quote]
         quoteSP: [Quote]
         quoteResult(input: String): [Quote]
@@ -86,11 +91,6 @@ const typeDefs = gql`
         tags: [Tag]
         tagLetter(letter: String): [Tag]
         tagID(tagId: ID): Tag
-
-        peoples: [People]
-        peopleLetter(letter: String): [People]
-        peopleID(peopleId: ID): People
-        peopleR(peopleRealId: String): People
 
         dailyQuote: [QOTD]
     }

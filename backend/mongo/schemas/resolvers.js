@@ -83,17 +83,17 @@ const resolvers = {
         },
 
         // people
-        peoples: async () => {
-            return People.find();
+        peopleAll: async () => {
+            return People.find().populate('quotes');
         },
-        peopleLetter: async (parent, { letter }) => {
+        peopleByLetter: async (parent, { letter }) => {
             return People.find({sortedName: {$regex: '^' + letter, $options: 'i'}})
         },
         peopleID: async (parent, { peopleId }) => {
             return People.findOne({ _id: peopleId });
         },
         peopleR: async (parent, { peopleRealId }) => {
-            return People.findOne({ realID: peopleRealId }).populate('quotes');;
+            return People.findOne({ realID: peopleRealId }).populate('quotes');
         },
 
         // QOTD
