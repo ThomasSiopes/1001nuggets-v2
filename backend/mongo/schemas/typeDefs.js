@@ -23,6 +23,7 @@ const typeDefs = gql`
         quoteText: String
         author: String
         topics: [String]!
+        people: [String]!
         realID: String
         somePeople: Boolean
         relatedTopics: [String]!
@@ -51,9 +52,10 @@ const typeDefs = gql`
 
     type People {
         _id: ID
-        people: String
+        name: String
         sortedName: String
-        quotes: [String]!
+        realID: String
+        quotes: [Quote]!
     }
 
     type Query {
@@ -88,6 +90,7 @@ const typeDefs = gql`
         peoples: [People]
         peopleLetter(letter: String): [People]
         peopleID(peopleId: ID): People
+        peopleR(peopleRealId: String): People
 
         dailyQuote: [QOTD]
     }

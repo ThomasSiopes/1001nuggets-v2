@@ -18,7 +18,6 @@ function QuoteCardText({type, quotes, index}) {
         }
     }
 
-
     if(type === "modal") {
         return (
             <Container className="font-poppins">

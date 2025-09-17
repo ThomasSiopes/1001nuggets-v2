@@ -33,7 +33,6 @@ const resolvers = {
         topicR: async (parent, { topicRealId }) => {
             return Topic.findOne({ realID: topicRealId }).populate('quotes');;
         },
-
         topicLetter: async (parent, { letter }) => {
             return Topic.find({sortedName: {$regex: '^' + letter, $options: 'i'}})
         },
@@ -92,6 +91,9 @@ const resolvers = {
         },
         peopleID: async (parent, { peopleId }) => {
             return People.findOne({ _id: peopleId });
+        },
+        peopleR: async (parent, { peopleRealId }) => {
+            return People.findOne({ realID: peopleRealId }).populate('quotes');;
         },
 
         // QOTD

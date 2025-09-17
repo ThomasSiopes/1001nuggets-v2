@@ -1,19 +1,24 @@
 const { Schema, model } = require("mongoose");
 
 const peopleThing = new Schema({
-    people: {
-        type:String,
+    name: {
+        type: String,
         required: true,
     },
-    sortedName:{
-        type:String,
-        required:false
+    sortedName: {
+        type: String, 
+        required: true
+    },
+    realID: {
+        type: String,
+        required: true
     },
     quotes: [
         {
-            type: String,
-        }
-    ]
+            type: Schema.Types.ObjectId,
+            ref: "Quote",
+        },
+    ],
 });
 
 const People = model("People", peopleThing);

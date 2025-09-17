@@ -362,9 +362,14 @@ export const QUERY_PEOPLE_ALL = gql`
     query getPeoples {
         peoples {
             _id
-            people
-            quotes
+            name
             sortedName
+            realID
+            quotes {
+                _id
+                relatedTopics
+                unrelatedTopics
+            }
         }
     }
 `;
@@ -372,10 +377,15 @@ export const QUERY_PEOPLE_ALL = gql`
 export const QUERY_PEOPLE_LETTER = gql`
     query peopleLetter($letter: String!) {
         peopleLetter(letter: $letter) {
-          _id
-          people
-          quotes
-          sortedName
+            _id
+            name
+            sortedName
+            realID
+            quotes {
+                _id
+                relatedTopics
+                unrelatedTopics
+            }
         }
     }
 `;
@@ -384,9 +394,36 @@ export const QUERY_PEOPLE_ID = gql`
     query getPeopleById($peopleId: ID!) {
         peopleID (peopleId: $peopleId){
             _id
-            people
-            quotes
+            name
             sortedName
+            realID
+            quotes {
+                _id
+                relatedTopics
+                unrelatedTopics
+            }
+        }
+    }
+`;
+
+export const QUERY_PEOPLE_REALID = gql`
+    query peopleR($peopleRealId: String!) {
+        peopleR(peopleRealId: $peopleRealId) {
+            _id
+            name
+            sortedName
+            realID
+            quotes {
+                _id
+                quoteText
+                author
+                topics
+                realID
+                somePeople
+                relatedTopics
+                unrelatedTopics
+                censors
+            }
         }
     }
 `;

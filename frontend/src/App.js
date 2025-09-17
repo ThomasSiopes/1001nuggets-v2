@@ -59,8 +59,8 @@ function App () {
           <Route exact path="/authors" element={<React.Suspense><TagNav/></React.Suspense>}/>
           <Route exact path="/authortag/:tagId" element={<React.Suspense><TagPage/></React.Suspense>}/>
 
-          <Route exact path="/people" element={<React.Suspense><PeopleNav/></React.Suspense>}/>
-          <Route exact path="/people/:tagId" element={<React.Suspense><PeoplePage/></React.Suspense>}/>
+          <Route exact path="/peoples" element={<React.Suspense><PeopleNav/></React.Suspense>}/>
+          <Route exact path="/people/:peopleRealId" element={<React.Suspense><PeoplePage/></React.Suspense>}/>
 
           <Route exact path="/author/:authorRealId" element={<React.Suspense><Author/></React.Suspense>}/>
 

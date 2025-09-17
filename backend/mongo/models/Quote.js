@@ -15,6 +15,11 @@ const quote = new Schema({
             type: String,
         }
     ],
+    people: [
+        {
+            type: String,
+        }
+    ],
     realID: {
         type: String,
         required: true
