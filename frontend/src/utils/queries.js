@@ -201,6 +201,7 @@ export const QUERY_QUOTE_ALL = gql`
             realID
             somePeople
             relatedTopics
+            unrelatedTopics
             censors
         }
     }
@@ -216,6 +217,7 @@ export const QUERY_QUOTE_SP = gql`
             realID
             somePeople
             relatedTopics
+            unrelatedTopics
             censors
         }
     }
@@ -230,6 +232,7 @@ export const QUERY_QUOTE_RESULT = gql`
             topics
             realID
             relatedTopics
+            unrelatedTopics
             censors
         }
     }
@@ -245,6 +248,7 @@ export const QUERY_QUOTE_ID = gql`
             realID
             somePeople
             relatedTopics
+            unrelatedTopics
             censors
         }
     }
@@ -260,6 +264,7 @@ export const QUERY_QUOTE_REALID = gql`
             realID
             somePeople
             relatedTopics
+            unrelatedTopics
             censors
         }
     }

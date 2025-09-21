@@ -29,6 +29,8 @@ function Quote () {
 
     const quote = data.quoteR;
 
+    console.log(quote)
+
     return (
         <Container className="pt-5">
             <Helmet>
@@ -65,16 +67,18 @@ function Quote () {
                                             ))}
                                         </div>
                                         <div className="text-start text-theme mx-2">
-                                            <span>Related: </span>
                                             {quote.relatedTopics.map((relatedTopic) => (
                                                 <span>
                                                     {
                                                         relatedTopic === quote.relatedTopics[quote.relatedTopics.length-1] ?
-                                                            <span><u><TopicButton key={relatedTopic} type={"link"} theme={"small"} name={relatedTopic}/></u></span>
+                                                            <span><u><TopicButton key={relatedTopic} type={"link"} theme={"related"} name={relatedTopic}/></u></span>
                                                             :
-                                                            <span><u><TopicButton key={relatedTopic} type={"link"} theme={"small"} name={relatedTopic}/></u>; </span>
+                                                            <span><u><TopicButton key={relatedTopic} type={"link"} theme={"related"} name={relatedTopic}/></u>; </span>
                                                     }
                                                 </span>
+                                            ))}
+                                            {quote.unrelatedTopics.map((unrelatedTopic) => (
+                                                <span>; <u><TopicButton key={unrelatedTopic} type={"link"} theme={"unrelated"} name={unrelatedTopic}/></u> </span>
                                             ))}
                                         </div>
                                     </Card.Footer>
