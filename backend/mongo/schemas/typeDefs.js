@@ -24,6 +24,7 @@ const typeDefs = gql`
         author: String
         topics: [String]!
         people: [String]!
+        things: [String]!
         realID: String
         somePeople: Boolean
         relatedTopics: [String]!
@@ -57,6 +58,14 @@ const typeDefs = gql`
         realID: String
         quotes: [Quote]!
     }
+    
+    type Thing {
+        _id: ID
+        name: String
+        sortedName: String
+        realID: String
+        quotes: [Quote]!
+    }
 
     type Query {
         authors: [Author]
@@ -81,6 +90,11 @@ const typeDefs = gql`
         peopleByLetter(letter: String): [People]
         peopleID(peopleId: ID): People
         peopleR(peopleRealId: String): People
+        
+        thingAll: [Thing]
+        thingByLetter(letter: String): [Thing]
+        thingID(thingId: ID): Thing
+        thingR(thingRealId: String): Thing
 
         quotes: [Quote]
         quoteSP: [Quote]

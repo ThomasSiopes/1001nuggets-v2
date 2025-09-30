@@ -20,6 +20,11 @@ const quote = new Schema({
             type: String,
         }
     ],
+    things: [
+        {
+            type: String,
+        }
+    ],
     realID: {
         type: String,
         required: true

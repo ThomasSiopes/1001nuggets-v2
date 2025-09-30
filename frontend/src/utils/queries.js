@@ -429,6 +429,72 @@ export const QUERY_PEOPLE_REALID = gql`
     }
 `;
 
+export const QUERY_THINGS_ALL = gql`
+    query getThingss {
+        thingAll {
+            _id
+            name
+            sortedName
+            realID
+            quotes {
+                _id
+            }
+        }
+    }
+`;
+
+export const QUERY_THING_LETTER = gql`
+    query getThingsByLetter($letter: String!) {
+        thingByLetter(letter: $letter) {
+            _id
+            name
+            sortedName
+            realID
+            quotes {
+                _id
+            }
+        }
+    }
+`;
+
+export const QUERY_THING_ID = gql`
+    query getThingById($thingId: ID!) {
+        thingID(thingId: $thingId){
+            _id
+            name
+            sortedName
+            realID
+            quotes {
+                _id
+                relatedTopics
+                unrelatedTopics
+            }
+        }
+    }
+`;
+
+export const QUERY_THING_REALID = gql`
+    query thingR($thingRealId: String!) {
+        thingR(thingRealId: $thingRealId) {
+            _id
+            name
+            sortedName
+            realID
+            quotes {
+                _id
+                quoteText
+                author
+                topics
+                realID
+                somePeople
+                relatedTopics
+                unrelatedTopics
+                censors
+            }
+        }
+    }
+`;
+
 export const QUERY_QOTD = gql`
     query getQOTD {
         dailyQuote {

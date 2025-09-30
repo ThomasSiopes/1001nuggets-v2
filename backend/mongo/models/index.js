@@ -5,5 +5,6 @@ const Collection = require("./Collection");
 const Tag = require("./Tag");
 const QOTD = require("./QOTD");
 const People = require("./People")
+const Things = require("./Thing")
 
-module.exports = {Author, Topic, Quote, Collection, QOTD, Tag, People};
+module.exports = {Author, Topic, Quote, Collection, QOTD, Tag, People, Things};

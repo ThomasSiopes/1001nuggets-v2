@@ -9,16 +9,25 @@ const NavBar = React.lazy(() => import("./components/NavBar"));
 
 //Pages
 const Home = React.lazy(() => import("./pages/Home"))
+
 const Author = React.lazy(() => import("./pages/Author"));
-const Topic = React.lazy(() => import("./pages/Topic"));
 const Quote = React.lazy(() => import("./pages/Quote"));
+
+const Topic = React.lazy(() => import("./pages/Topic"));
 const TopicNav = React.lazy(() => import("./pages/TopicNav"));
+
 const CollectionNav = React.lazy(() => import ("./pages/CollectionNav"));
 const Collection = React.lazy(() => import ("./pages/Collection"));
+
 const TagNav = React.lazy(() => import("./pages/TagNav"));
 const TagPage = React.lazy(() => import("./pages/TagPage"));
+
 const PeopleNav = React.lazy(() => import("./pages/PeopleNav"));
 const PeoplePage = React.lazy(() => import("./pages/PeoplePage"));
+
+const ThingNav = React.lazy(() => import("./pages/ThingNav"));
+const ThingPage = React.lazy(() => import("./pages/ThingPage"));
+
 const SearchResult = React.lazy(() => import("./pages/SearchResult"));
 // const HomeNav = React.lazy(() => import("./pages/HomeNav"));
 const Publications = React.lazy(() => import("./pages/Publications"));
@@ -61,6 +70,9 @@ function App () {
 
           <Route exact path="/peoples" element={<React.Suspense><PeopleNav/></React.Suspense>}/>
           <Route exact path="/people/:peopleRealId" element={<React.Suspense><PeoplePage/></React.Suspense>}/>
+
+          <Route exact path="/things" element={<React.Suspense><ThingNav/></React.Suspense>}/>
+          <Route exact path="/thing/:peopleRealId" element={<React.Suspense><ThingPage/></React.Suspense>}/>
 
           <Route exact path="/author/:authorRealId" element={<React.Suspense><Author/></React.Suspense>}/>
 
