@@ -22,11 +22,13 @@ function Thing () {
 
     if(!data) return redirect(`/404error`);
 
-    const person = data.thingR;
+    const thing = data.thingR;
+
+    console.log(data)
 
     let indexList = [];
 
-    for(let i = 0; i < person.quotes.length; ++i) {
+    for(let i = 0; i < thing.quotes.length; ++i) {
         indexList.push(i);
     }
 
@@ -38,7 +40,7 @@ function Thing () {
     let list2;
     let list3a;
     let list3b;
-    if(person.quotes) {
+    if(thing.quotes) {
         let result = [];
         for(let n = 3; n > 0; --n) {
             result.push(indexList.splice(0,Math.ceil(indexList.length / n)));
@@ -54,11 +56,11 @@ function Thing () {
     return (
         <Container  className="pt-3">
             <Helmet>
-                <title>1001 Nuggets - {person.name}</title>
+                <title>1001 Nuggets - {thing.name}</title>
             </Helmet>
             <Container>
                 <Card bg={"transparent"} border={"none"}>
-                    <Card.Header className="bg-light rounded">Home {'>'} <Link className="link-theme" to={`/things`}>Thing</Link> {'>'} {person.name}</Card.Header>
+                    <Card.Header className="bg-light rounded">Home {'>'} <Link className="link-theme" to={`/things`}>Thing</Link> {'>'} {thing.name}</Card.Header>
                     <Card.Body bg={"transparent"}>
                         <Row>
                             {/* First Quote Column */}
@@ -66,8 +68,8 @@ function Thing () {
                                {list1 && 
                                    <Row>
                                        {list1.map((index) => (
-                                           <Col xs={12} className="mb-3" key={person.quotes[index].quoteText}>
-                                               <QuoteCard quotes={person.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                           <Col xs={12} className="mb-3" key={thing.quotes[index].quoteText}>
+                                               <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
                                            </Col>
                                        ))}
                                    </Row>
@@ -76,8 +78,8 @@ function Thing () {
                                    list3a &&
                                    <Row className="d-xs-block d-lg-none">
                                        {list3a.map((index) => (
-                                           <Col xs={12} className="mb-3" key={"false" + person.quotes[index].quoteText}>
-                                               <QuoteCard quotes={person.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                           <Col xs={12} className="mb-3" key={"false" + thing.quotes[index].quoteText}>
+                                               <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
                                            </Col>
                                        ))}
                                    </Row>
@@ -88,8 +90,8 @@ function Thing () {
                                 {list3a && 
                                     <Row>
                                         {list3a.map((index) => (
-                                            <Col xs={12} className="mb-3" key={person.quotes[index].quoteText}>
-                                                <QuoteCard quotes={person.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                            <Col xs={12} className="mb-3" key={thing.quotes[index].quoteText}>
+                                                <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
                                             </Col>
                                         ))}
                                     </Row>
@@ -97,8 +99,8 @@ function Thing () {
                                 {list3b && 
                                     <Row>
                                         {list3b.map((index) => (
-                                            <Col xs={12} className="mb-3" key={person.quotes[index].quoteText}>
-                                                <QuoteCard quotes={person.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                            <Col xs={12} className="mb-3" key={thing.quotes[index].quoteText}>
+                                                <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
                                             </Col>
                                         ))}
                                     </Row>
@@ -111,8 +113,8 @@ function Thing () {
                                     list3b &&
                                     <Row className="d-xs-block d-lg-none">
                                         {list3b.map((index) => (
-                                            <Col xs={12} className="mb-3" key={"false" + person.quotes[index].quoteText}>
-                                                <QuoteCard quotes={person.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                            <Col xs={12} className="mb-3" key={"false" + thing.quotes[index].quoteText}>
+                                                <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
                                             </Col>
                                         ))}
                                     </Row>
@@ -120,8 +122,8 @@ function Thing () {
                                 {list2 && 
                                     <Row>
                                         {list2.map((index) => (
-                                            <Col xs={12} className="mb-3" key={person.quotes[index].quoteText}>
-                                                <QuoteCard quotes={person.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                            <Col xs={12} className="mb-3" key={thing.quotes[index].quoteText}>
+                                                <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
                                             </Col>
                                         ))}
                                     </Row>
