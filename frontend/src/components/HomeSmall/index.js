@@ -42,9 +42,10 @@ function SmallHome() {
                 <Modal show={show} onHide={handleModalClose} centered className="px-2">
                     <Modal.Body>
                         <Button variant={"theme"} href={`/topics`} className="btn-block my-3">Topics</Button>
-                        <Button variant={"theme"} href={`/peoples`} className="btn-block my-3">People</Button>
-                        <Button variant={"theme"} href={`/things`} className="btn-block my-3">Things</Button>
                         <Button variant={"theme"} href={`/collections`} className="btn-block my-3">Collections</Button>
+                        <Button variant={"theme"} href={`/everyone`} className="btn-block my-3">Everyone</Button>
+                        <Button variant={"theme"} href={`/everything`} className="btn-block my-3">Everything</Button>
+                        <Button variant={"theme"} href={`/everywhere`} className="btn-block my-3">Everywhere</Button>
                         {/* <Button variant={"theme"} href={`/authors`} className="btn-block my-3">Authors</Button> */}
                         <Button variant={"theme"} href={`/publications`} className="btn-block my-3">Publications</Button>
                     </Modal.Body>

@@ -42,7 +42,7 @@ function NavBar() {
     }
 
     return(
-        <Navbar variant="light" bg={"light"} expand="md" className="py-3">
+        <Navbar variant="light" bg={"light"} expand="lg" className="py-3">
             <Container className="d-none d-md-flex">
                 <Link className="navbar-brand me-0 p-0" to={`/`}><img id="nav-icon" src={iconImage} alt="Logo"/></Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
@@ -50,9 +50,10 @@ function NavBar() {
                     <Nav className="me-auto text-center">
                         {/* <Nav.Link href="/authors">Authors</Nav.Link> */}
                         <Nav.Link href="/topics">Topics</Nav.Link>
-                        <Nav.Link href="/peoples">People</Nav.Link>
-                        <Nav.Link href="/things">Things</Nav.Link>
                         <Nav.Link href="/collections">Collections</Nav.Link>
+                        <Nav.Link href="/everyone">Everyone</Nav.Link>
+                        <Nav.Link href="/everything">Everything</Nav.Link>
+                        <Nav.Link href="/everywhere">Everywhere</Nav.Link>
                         {/* <Nav.Link href="/authors">Authors</Nav.Link> */}
                         <Nav.Link href="/publications">Publications</Nav.Link>
                     </Nav>
@@ -86,9 +87,10 @@ function NavBar() {
                         <Card.Footer className="px-5">
                             {/* <Button variant={"theme"} href={`/authors`} className="btn-block my-3">Authors</Button> */}
                             <Button variant={"theme"} href={`/topics`} className="btn-block my-3">Topics</Button>
-                            <Button variant={"theme"} href={`/peoples`} className="btn-block my-3">People</Button>
-                            <Button variant={"theme"} href={`/things`} className="btn-block my-3">Things</Button>
                             <Button variant={"theme"} href={`/collections`} className="btn-block my-3">Collections</Button>
+                            <Button variant={"theme"} href={`/everyone`} className="btn-block my-3">Everyone</Button>
+                            <Button variant={"theme"} href={`/everything`} className="btn-block my-3">Everything</Button>
+                            <Button variant={"theme"} href={`/everywhere`} className="btn-block my-3">Everywhere</Button>
                             {/* <Button variant={"theme"} href={`/authors`} className="btn-block my-3">Authors</Button> */}
                             <Button variant={"theme"} href={`/publications`} className="btn-block my-3">Publications</Button>
                         </Card.Footer>

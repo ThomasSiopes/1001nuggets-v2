@@ -59,6 +59,7 @@ function App () {
         <React.Suspense fallback={<div>Loading...</div>}><NavBar/></React.Suspense>
         <Routes>
           <Route exact path="/" element={<React.Suspense><Home/></React.Suspense>}/>
+          
           <Route exact path="/topics" element={<React.Suspense><TopicNav/></React.Suspense>}/>
           <Route exact path="/topic/:topicRealId" element={<React.Suspense><Topic/></React.Suspense>}/>
 
@@ -68,11 +69,11 @@ function App () {
           <Route exact path="/authors" element={<React.Suspense><TagNav/></React.Suspense>}/>
           <Route exact path="/authortag/:tagId" element={<React.Suspense><TagPage/></React.Suspense>}/>
 
-          <Route exact path="/peoples" element={<React.Suspense><PeopleNav/></React.Suspense>}/>
-          <Route exact path="/people/:peopleRealId" element={<React.Suspense><PeoplePage/></React.Suspense>}/>
+          <Route exact path="/everyone" element={<React.Suspense><PeopleNav/></React.Suspense>}/>
+          <Route exact path="/everyone/:peopleRealId" element={<React.Suspense><PeoplePage/></React.Suspense>}/>
 
-          <Route exact path="/things" element={<React.Suspense><ThingNav/></React.Suspense>}/>
-          <Route exact path="/thing/:thingRealId" element={<React.Suspense><ThingPage/></React.Suspense>}/>
+          <Route exact path="/everything" element={<React.Suspense><ThingNav/></React.Suspense>}/>
+          <Route exact path="/everything/:thingRealId" element={<React.Suspense><ThingPage/></React.Suspense>}/>
 
           <Route exact path="/author/:authorRealId" element={<React.Suspense><Author/></React.Suspense>}/>
 
