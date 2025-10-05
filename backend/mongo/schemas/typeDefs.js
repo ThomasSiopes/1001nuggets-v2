@@ -25,6 +25,7 @@ const typeDefs = gql`
         topics: [String]!
         people: [String]!
         things: [String]!
+        everywhere: [String]!
         realID: String
         somePeople: Boolean
         relatedTopics: [String]!
@@ -66,6 +67,14 @@ const typeDefs = gql`
         realID: String
         quotes: [Quote]!
     }
+    
+    type Everywhere {
+        _id: ID
+        name: String
+        sortedName: String
+        realID: String
+        quotes: [Quote]!
+    }
 
     type Query {
         authors: [Author]
@@ -95,6 +104,11 @@ const typeDefs = gql`
         thingByLetter(letter: String): [Thing]
         thingID(thingId: ID): Thing
         thingR(thingRealId: String): Thing
+        
+        everywhereAll: [Everywhere]
+        everywhereByLetter(letter: String): [Everywhere]
+        everywhereID(everywhereId: ID): Everywhere
+        everywhereR(everywhereRealId: String): Everywhere
 
         quotes: [Quote]
         quoteSP: [Quote]

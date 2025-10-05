@@ -1,4 +1,4 @@
-const { Author, Topic, Quote, Collection, QOTD, Tag, People, Things } = require("../models");
+const { Author, Topic, Quote, Collection, QOTD, Tag, People, Things, Everywhere } = require("../models");
 
 const resolvers = {
     Query: {
@@ -108,6 +108,20 @@ const resolvers = {
         },
         thingR: async (parent, { thingRealId }) => {
             return Things.findOne({ realID: thingRealId }).populate('quotes');
+        },
+
+        // things
+        everywhereAll: async () => {
+            return Everywhere.find().populate('quotes');
+        },
+        everywhereByLetter: async (parent, { letter }) => {
+            return Everywhere.find({sortedName: {$regex: '^' + letter, $options: 'i'}})
+        },
+        everywhereID: async (parent, { everywhereId }) => {
+            return Everywhere.findOne({ _id: everywhereId });
+        },
+        everywhereR: async (parent, { everywhereRealId }) => {
+            return Everywhere.findOne({ realID: everywhereRealId }).populate('quotes');
         },
 
         // QOTD
