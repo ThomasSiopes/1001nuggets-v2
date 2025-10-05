@@ -28,6 +28,9 @@ const PeoplePage = React.lazy(() => import("./pages/PeoplePage"));
 const ThingNav = React.lazy(() => import("./pages/ThingNav"));
 const ThingPage = React.lazy(() => import("./pages/ThingPage"));
 
+const EverywhereNav = React.lazy(() => import("./pages/EverywhereNav"));
+const EverywherePage = React.lazy(() => import("./pages/EverywherePage"));
+
 const SearchResult = React.lazy(() => import("./pages/SearchResult"));
 // const HomeNav = React.lazy(() => import("./pages/HomeNav"));
 const Publications = React.lazy(() => import("./pages/Publications"));
@@ -74,6 +77,9 @@ function App () {
 
           <Route exact path="/everything" element={<React.Suspense><ThingNav/></React.Suspense>}/>
           <Route exact path="/everything/:thingRealId" element={<React.Suspense><ThingPage/></React.Suspense>}/>
+
+          <Route exact path="/everywhere" element={<React.Suspense><EverywhereNav/></React.Suspense>}/>
+          <Route exact path="/everywhere/:everywhereRealId" element={<React.Suspense><EverywherePage/></React.Suspense>}/>
 
           <Route exact path="/author/:authorRealId" element={<React.Suspense><Author/></React.Suspense>}/>
 
