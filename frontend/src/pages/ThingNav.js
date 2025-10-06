@@ -10,7 +10,7 @@ function Things () {
     return (
         <Container className="pt-3">
             <Helmet>
-                <title>1001 Nuggets - Things</title>
+                <title>1001 Nuggets - Everything</title>
             </Helmet>
             <Row className="justify-content-center navPage-body">
                 <Col>

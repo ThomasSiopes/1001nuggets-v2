@@ -33,7 +33,7 @@ function ThingNavInst({letter}) {
             </div>
             {sortedList.map((index) => (
                 <div key={letter + index.name}>
-                    <p><strong><Link to={`/thing/${index.realID}`} className="link-theme">{index.name}</Link></strong></p>
+                    <p><strong><Link to={`/everything/${index.realID}`} className="link-theme">{index.name}</Link></strong></p>
                     <hr/>
                 </div>
             ))}

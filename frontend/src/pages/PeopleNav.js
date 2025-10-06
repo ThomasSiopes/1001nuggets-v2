@@ -10,7 +10,7 @@ function Peoples () {
     return (
         <Container className="pt-3">
             <Helmet>
-                <title>1001 Nuggets - People</title>
+                <title>1001 Nuggets - Everyone</title>
             </Helmet>
             <Row className="justify-content-center navPage-body">
                 <Col>

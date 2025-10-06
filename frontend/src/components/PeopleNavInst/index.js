@@ -33,7 +33,7 @@ function PeopleNavInst({letter}) {
             </div>
             {sortedList.map((index) => (
                 <div key={letter + index.name}>
-                    <p><strong><Link to={`/people/${index.realID}`} className="link-theme">{index.name}</Link></strong></p>
+                    <p><strong><Link to={`/everyone/${index.realID}`} className="link-theme">{index.name}</Link></strong></p>
                     <hr/>
                 </div>
             ))}
