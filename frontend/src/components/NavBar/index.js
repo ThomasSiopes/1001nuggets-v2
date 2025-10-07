@@ -19,14 +19,14 @@ function NavBar() {
     const handleChange = () => {
         let searchBar = document.getElementById("searchTerm");
         value.current = searchBar.value;
-        if(value.current) setAbility(false)
+        if(value.current && value.current.length > 4) setAbility(false)
         else setAbility(true)
     }
 
     const handleChangeSM = () => {
         let searchBar = document.getElementById("searchTermSM");
         valueSM.current = searchBar.value;
-        if(valueSM.current) setAbilitySM(false)
+        if(valueSM.current && valueSM.current.length > 4) setAbilitySM(false)
         else setAbilitySM(true)
     }
 
