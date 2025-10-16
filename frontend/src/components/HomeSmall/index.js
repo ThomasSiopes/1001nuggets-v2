@@ -5,24 +5,24 @@ import { FaSearch } from "react-icons/fa";
 
 function SmallHome() {
     const [buttonDisabled, setAbility] = useState(true)
-        const value = useRef('');
-    
-        const [show, setShow] = useState(false);
-    
-        const handleModalClose = () => setShow(false);
-        const handleModalShow = () => setShow(true);
-    
-        const handleChange = () => {
-            let searchBar = document.getElementById("homeSearch");
-            value.current = searchBar.value;
-            if(value.current) setAbility(false);
-            else setAbility(true);
-        }
-    
-        const handleSubmit = (event) => {
-            event.preventDefault();
-            window.location.href = "/search/" + value.current;
-        }
+    const value = useRef('');
+
+    const [show, setShow] = useState(false);
+
+    const handleModalClose = () => setShow(false);
+    const handleModalShow = () => setShow(true);
+
+    const handleChange = () => {
+        let searchBar = document.getElementById("homeSearch");
+        value.current = searchBar.value;
+        if(value.current) setAbility(false);
+        else setAbility(true);
+    }
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        window.location.href = "/search/" + value.current;
+    }
     
     return(
         <div className="text-white d-xs-block d-sm-none">

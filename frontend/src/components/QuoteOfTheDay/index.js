@@ -27,6 +27,10 @@ function QuoteCard({realID}) {
     })
     if(loading) return <p>Loading quote card...</p>
 
+    console.log(data);
+
+    if(!data || !data.quoteR.quoteText) return <Card><Card.Body><h1>No Current Quote of the Day</h1></Card.Body></Card>
+
     const Quote = data.quoteR
 
     return(
