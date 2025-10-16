@@ -23,7 +23,7 @@ function LargeHome(){
 
     return(
         <Container id="homeBodyLarge" className="text-white">
-            <h1 className="mt-5">1001 NUGGETS</h1>
+            <h1 className="pt-5">1001 NUGGETS</h1>
             <span id="homeSubtext">EVERYTHING • EVERYONE • EVERYWHERE</span>
             <Form className="px-4 mt-5 mb-4 row align-items-center" onSubmit={handleSubmit}>
                 <Col xs={11}><input placeholder="Search..." id="homeSearchLarge" className="rounded width100 text-center py-2" onChange={handleChange}/></Col>
