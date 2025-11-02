@@ -33,7 +33,7 @@ function EverywhereNavInst({letter}) {
             </div>
             {sortedList.map((index) => (
                 <div key={letter + index.name}>
-                    <p><strong><Link to={`/everywhere/${index.realID}`} className="link-theme">{index.name}</Link></strong></p>
+                    <p><strong><Link to={`/place/${index.realID}`} className="link-theme">{index.name}</Link></strong></p>
                     <hr/>
                 </div>
             ))}

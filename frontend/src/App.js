@@ -73,13 +73,13 @@ function App () {
           <Route exact path="/authortag/:tagId" element={<React.Suspense><TagPage/></React.Suspense>}/>
 
           <Route exact path="/everyone" element={<React.Suspense><PeopleNav/></React.Suspense>}/>
-          <Route exact path="/everyone/:peopleRealId" element={<React.Suspense><PeoplePage/></React.Suspense>}/>
+          <Route exact path="/person/:peopleRealId" element={<React.Suspense><PeoplePage/></React.Suspense>}/>
 
           <Route exact path="/everything" element={<React.Suspense><ThingNav/></React.Suspense>}/>
-          <Route exact path="/everything/:thingRealId" element={<React.Suspense><ThingPage/></React.Suspense>}/>
+          <Route exact path="/thing/:thingRealId" element={<React.Suspense><ThingPage/></React.Suspense>}/>
 
           <Route exact path="/everywhere" element={<React.Suspense><EverywhereNav/></React.Suspense>}/>
-          <Route exact path="/everywhere/:everywhereRealId" element={<React.Suspense><EverywherePage/></React.Suspense>}/>
+          <Route exact path="/place/:everywhereRealId" element={<React.Suspense><EverywherePage/></React.Suspense>}/>
 
           <Route exact path="/author/:authorRealId" element={<React.Suspense><Author/></React.Suspense>}/>
 
