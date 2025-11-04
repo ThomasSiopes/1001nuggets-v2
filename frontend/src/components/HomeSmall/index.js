@@ -33,7 +33,6 @@ function SmallHome() {
                     <Col className="p-0" xs={10}><input type="text" id="homeSearch" placeholder="Search Nuggets..." className="rounded width100 text-center py-2" onChange={handleChange}/></Col>
                     <Col className="p-0" xs={2}><Button variant={"theme"} type="submit" disabled={buttonDisabled} aria-label="search" readOnly><FaSearch/></Button></Col>
                 </Form>
-                <div class="adsbygoogle" data-ad-client="ca-pub-7531037282217434" data-ad-slot="475186136" data-ad-format="auto" data-full-width-responsive="true"/>
                 <Row className="align-items-center text-center my-4 mx-1">
                     <Col className="break-line"/>
                     <Col className="p-0" xs={1}>OR</Col>
