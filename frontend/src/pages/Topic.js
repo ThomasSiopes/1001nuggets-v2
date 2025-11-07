@@ -129,6 +129,9 @@ function Topic () {
                             }
                         </Col>
                     </Row>
+                    <div>
+                        <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7531037282217434" data-ad-slot="6084252145"></ins>
+                    </div>
                 </Card.Body>
             </Card>
         </Container>
