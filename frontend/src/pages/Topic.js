@@ -130,6 +130,7 @@ function Topic () {
                         </Col>
                     </Row>
                     <div>
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7531037282217434" crossorigin="anonymous"></script>
                         <ins className="adsbygoogle" style={{display: "block"}} data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7531037282217434" data-ad-slot="6084252145"></ins>
                         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
                     </div>
