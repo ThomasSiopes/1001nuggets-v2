@@ -8,7 +8,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import { QUERY_TOPIC_REALID } from "../utils/queries";
 import shuffle from "../utils/shuffle";
 
-import AdComponent from "../components/AdComponent";
+const AdComponent = React.lazy(()=> import("../components/AdComponent"));
 const QuoteCard = React.lazy(() => import("../components/QuoteCard"));
 
 function Topic () {
