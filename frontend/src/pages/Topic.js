@@ -126,13 +126,13 @@ function Topic () {
                                             <QuoteCard quotes={topic.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
                                         </Col>
                                     ))}
+                                    <Col>
+                                        <AdComponent/>
+                                    </Col>
                                 </Row>
                             }
                         </Col>
                     </Row>
-                    <div>
-                        <AdComponent/>
-                    </div>
                 </Card.Body>
             </Card>
         </Container>
