@@ -15,7 +15,8 @@ class AdComponent extends React.Component {
                     style={{display: 'block'}}
                     data-ad-layout="in-article"
                     data-ad-client="ca-pub-7531037282217434"
-                    data-ad-slot="6084252145"/>
+                    data-ad-slot="6084252145"
+                    data-ad-format="auto" />
                 </Card.Body>
             </Card>
         );
