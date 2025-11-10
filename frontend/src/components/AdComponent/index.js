@@ -11,7 +11,7 @@ class AdComponent extends React.Component {
         return (
             <Card>
                 <Card.Body className="rounded">
-                    <ins className='adsbygoogle adresponsive'
+                    <ins className='adsbygoogle'
                     style={{display: 'block'}}
                     data-ad-layout="in-article"
                     data-ad-client="ca-pub-7531037282217434"
