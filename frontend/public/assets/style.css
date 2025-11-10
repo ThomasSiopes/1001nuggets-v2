@@ -2,10 +2,6 @@ a {
     text-decoration: none!important;
 }
 
-.adsbygoogle, .adsbygoogle div {
-    max-width:100%!important;
-}
-
 #banner, .formInput, img, #myInput, .navbar, .footer, .width100 {
     width: 100%!important;
 }

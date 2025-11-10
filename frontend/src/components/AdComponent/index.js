@@ -13,15 +13,12 @@ class AdComponent extends React.Component {
                 <Card.Body className="rounded">
                     <ins className='adsbygoogle'
                     style={{
-                        display: 'block',
-                        width:"100%", 
-                        maxWidth:"100%",
-                        margin:"0"
+                        display: 'block'
                     }}
                     data-ad-layout="in-article"
                     data-ad-client="ca-pub-7531037282217434"
                     data-ad-slot="6084252145"
-                    data-ad-format="auto" />
+                    data-ad-format="fluid" />
                 </Card.Body>
             </Card>
         );
