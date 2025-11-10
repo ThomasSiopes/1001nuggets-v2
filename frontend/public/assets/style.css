@@ -2,10 +2,6 @@ a {
     text-decoration: none!important;
 }
 
-.adresponsive {
-    width:100%!important;
-}
-
 #banner, .formInput, img, #myInput, .navbar, .footer, .width100 {
     width: 100%!important;
 }
