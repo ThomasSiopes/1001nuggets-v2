@@ -15,7 +15,8 @@ class AdComponent extends React.Component {
                     style={{
                         display: 'block',
                         width:"100%", 
-                        maxWidth:"100%"
+                        maxWidth:"100%",
+                        margin:"0"
                     }}
                     data-ad-layout="in-article"
                     data-ad-client="ca-pub-7531037282217434"
