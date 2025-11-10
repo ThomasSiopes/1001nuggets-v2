@@ -71,6 +71,7 @@ function Topic () {
                                             <QuoteCard quotes={topic.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
                                         </Col>
                                     ))}
+                                    <Col xs={12} className="mb-3"><AdComponent/></Col>
                                 </Row>
                             }
                             {
@@ -126,9 +127,7 @@ function Topic () {
                                             <QuoteCard quotes={topic.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
                                         </Col>
                                     ))}
-                                    <Col>
-                                        <AdComponent/>
-                                    </Col>
+                                    <Col xs={12} className="mb-3"><AdComponent/></Col>
                                 </Row>
                             }
                         </Col>
