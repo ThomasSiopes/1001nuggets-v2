@@ -97,7 +97,6 @@ function Topic () {
                                     ))}
                                 </Row>
                             }
-                            <Col xs={12} className="mb-3"><AdComponent/></Col>
                             {list3b && 
                                 <Row>
                                     {list3b.map((index) => (
