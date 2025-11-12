@@ -12,7 +12,7 @@ class AdComponent extends React.Component {
                     style={{display:"block"}}
                     data-ad-client="ca-pub-7531037282217434"
                     data-ad-slot="9046894192"
-                    data-ad-format="auto"
+                    data-ad-format="auto, horizontal"
                     data-full-width-responsive="true"
                 />
             </div>
