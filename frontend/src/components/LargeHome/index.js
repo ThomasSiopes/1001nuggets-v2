@@ -30,7 +30,7 @@ function LargeHome(){
                 <Col xs={1}><Button variant={"theme"} type="submit" disabled={buttonDisabled} aria-label="search" readOnly><FaSearch/></Button></Col>
             </Form>
             <Row>
-                <Col xs={4}>
+                <Col>
                     <Card className="my-4">
                         <Card.Body>
                             {/* <Form className="row">
@@ -43,9 +43,9 @@ function LargeHome(){
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col xs={8}>
+                {/* <Col xs={8}>
                     <QuoteOfTheDay/>
-                </Col>
+                </Col> */}
             </Row>
         </Container>
     )
