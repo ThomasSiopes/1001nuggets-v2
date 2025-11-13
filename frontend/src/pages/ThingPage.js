@@ -3,12 +3,13 @@ import { Helmet } from "react-helmet";
 import { Link, useParams, redirect } from 'react-router-dom';
 import { useQuery } from "@apollo/client";
 
-import QuoteCard from "../components/QuoteCard"
-
 import { Container, Card, Row, Col } from "react-bootstrap";
 
 import { QUERY_THING_REALID } from "../utils/queries";
 import shuffle from "../utils/shuffle";
+
+const AdComponent = React.lazy(() => import("../components/AdComponent"));
+const QuoteCard = React.lazy(() => import("../components/QuoteCard"));
 
 function Thing () {
     const { thingRealId } = useParams();
@@ -23,8 +24,6 @@ function Thing () {
     if(!data) return redirect(`/404error`);
 
     const thing = data.thingR;
-
-    console.log(data)
 
     let indexList = [];
 
@@ -72,6 +71,7 @@ function Thing () {
                                                <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
                                            </Col>
                                        ))}
+                                        <Col xs={12} className="mb-3"><AdComponent/></Col>
                                    </Row>
                                }
                                {
@@ -126,6 +126,7 @@ function Thing () {
                                                 <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
                                             </Col>
                                         ))}
+                                        <Col xs={12} className="mb-3"><AdComponent/></Col>
                                     </Row>
                                 }
                             </Col>
