@@ -110,6 +110,17 @@ function Topic () {
                         
                         {/* Last Quote Column */}
                         <Col xs={12} md={6} lg={4}>
+                            {list2 && 
+                                <Row>
+                                    <Col xs={12} className="mb-3"><AdComponent/></Col>
+                                    {list2.map((index) => (
+                                        <Col xs={12} className="mb-3" key={topic.quotes[index].quoteText}>
+                                            <QuoteCard quotes={topic.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                        </Col>
+                                    ))}
+                                    <Col xs={12} className="mb-3"><AdComponent/></Col>
+                                </Row>
+                            }
                             {
                                 list3b &&
                                 <Row className="d-xs-block d-lg-none">
@@ -118,16 +129,6 @@ function Topic () {
                                             <QuoteCard quotes={topic.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
                                         </Col>
                                     ))}
-                                </Row>
-                            }
-                            {list2 && 
-                                <Row>
-                                    {list2.map((index) => (
-                                        <Col xs={12} className="mb-3" key={topic.quotes[index].quoteText}>
-                                            <QuoteCard quotes={topic.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
-                                        </Col>
-                                    ))}
-                                    <Col xs={12} className="mb-3"><AdComponent/></Col>
                                 </Row>
                             }
                         </Col>
