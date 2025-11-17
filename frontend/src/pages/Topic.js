@@ -87,7 +87,6 @@ function Topic () {
                                         <QuoteCard quotes={topic.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
                                     </Col>
                                 ))}
-                                <Col xs={12} className="mb-3"><AdComponent/></Col>
                                 {list3b && list3b.map((index) => (
                                     <Col xs={12} className="mb-3 d-none d-lg-block" key={topic.quotes[index].quoteText}>
                                         <QuoteCard quotes={topic.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
