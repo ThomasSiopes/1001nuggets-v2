@@ -64,71 +64,53 @@ function People () {
                         <Row>
                             {/* First Quote Column */}
                             <Col xs={12} md={6} lg={4}>
-                               {list1 && 
-                                   <Row>
-                                       {list1.map((index) => (
-                                           <Col xs={12} className="mb-3" key={person.quotes[index].quoteText}>
-                                               <QuoteCard quotes={person.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
-                                           </Col>
-                                       ))}
-                                       <Col xs={12} className="mb-3"><AdComponent/></Col>
-                                   </Row>
-                               }
-                               {
-                                   list3a &&
-                                   <Row className="d-xs-block d-lg-none">
-                                       {list3a.map((index) => (
-                                           <Col xs={12} className="mb-3" key={"false" + person.quotes[index].quoteText}>
-                                               <QuoteCard quotes={person.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
-                                           </Col>
-                                       ))}
-                                   </Row>
-                               }
+                                <Row>
+                                    {list1 && list1.map((index) => (
+                                        <Col xs={12} className="mb-3" key={person.quotes[index].quoteText}>
+                                            <QuoteCard quotes={person.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                        </Col>
+                                    ))}
+                                    <Col xs={12} className="mb-3"><AdComponent/></Col>
+                                    {list3a && list3a.map((index) => (
+                                        <Col xs={12} className="mb-3 d-xs-block d-lg-none" key={"false" + person.quotes[index].quoteText}>
+                                            <QuoteCard quotes={person.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                        </Col>
+                                    ))}
+                                </Row>
                             </Col>
+                        
                             {/* Middle Quote Column */}
-                            <Col lg={4} className="d-none d-lg-block">
-                                {list3a && 
-                                    <Row>
-                                        {list3a.map((index) => (
-                                            <Col xs={12} className="mb-3" key={person.quotes[index].quoteText}>
-                                                <QuoteCard quotes={person.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
-                                            </Col>
-                                        ))}
-                                    </Row>
-                                }
-                                {list3b && 
-                                    <Row>
-                                        {list3b.map((index) => (
-                                            <Col xs={12} className="mb-3" key={person.quotes[index].quoteText}>
-                                                <QuoteCard quotes={person.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
-                                            </Col>
-                                        ))}
-                                    </Row>
-                                }
+                            <Col lg={4}>
+                                <Row>
+                                    {list3a && list3a.map((index) => (
+                                        <Col xs={12} className="mb-3 d-none d-lg-block" key={person.quotes[index].quoteText}>
+                                            <QuoteCard quotes={person.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                        </Col>
+                                    ))}
+                                    {list3b && list3b.map((index) => (
+                                        <Col xs={12} className="mb-3 d-none d-lg-block" key={person.quotes[index].quoteText}>
+                                            <QuoteCard quotes={person.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                        </Col>
+                                    ))}
+                                </Row>
                             </Col>
                             
                             {/* Last Quote Column */}
                             <Col xs={12} md={6} lg={4}>
-                                {
-                                    list3b &&
-                                    <Row className="d-xs-block d-lg-none">
-                                        {list3b.map((index) => (
-                                            <Col xs={12} className="mb-3" key={"false" + person.quotes[index].quoteText}>
-                                                <QuoteCard quotes={person.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
-                                            </Col>
-                                        ))}
-                                    </Row>
-                                }
-                                {list2 && 
-                                    <Row>
-                                        {list2.map((index) => (
-                                            <Col xs={12} className="mb-3" key={person.quotes[index].quoteText}>
-                                                <QuoteCard quotes={person.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
-                                            </Col>
-                                        ))}
-                                        <Col xs={12} className="mb-3"><AdComponent/></Col>
-                                    </Row>
-                                }
+                                <Row>
+                                    {list3b && list3b.map((index) => (
+                                        <Col xs={12} className="mb-3 d-xs-block d-lg-none" key={"false" + person.quotes[index].quoteText}>
+                                            <QuoteCard quotes={person.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                        </Col>
+                                    ))}
+                                    <Col xs={12} className="mb-3"><AdComponent/></Col>
+                                    {list2 && list2.map((index) => (
+                                        <Col xs={12} className="mb-3" key={person.quotes[index].quoteText}>
+                                            <QuoteCard quotes={person.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                        </Col>
+                                    ))}
+                                    <Col xs={12} className="mb-3"><AdComponent/></Col>
+                                </Row>
                             </Col>
                         </Row>
                     </Card.Body>
