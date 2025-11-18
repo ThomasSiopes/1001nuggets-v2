@@ -62,7 +62,7 @@ function Topic () {
                 <Card.Header className="bg-light rounded">Home {`>`} <Link className="link-theme" to={`/topics`}>Topics</Link> {`>`} {topic.name}</Card.Header>
                 <Card.Body bg={"transparent"}>
                     <Row>
-                         {/* First Quote Column */}
+                        {/* First Quote Column */}
                         <Col xs={12} md={6} lg={4}>
                             <Row>
                                 {list1 && list1.map((index) => (

@@ -12,6 +12,7 @@ import TopicButton from "../TopicButton";
 import CollectionButton from "../CollectionButton";
 import AuthorButton from "../AuthorButton";
 import QuoteCardText from '../QuoteCardText';
+import AdComponent from '../AdComponent';
 
 function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
   const [show, setShow] = useState(false);
@@ -153,6 +154,11 @@ function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
               </Modal.Footer> */}
             </Carousel.Item>
           ))}
+          <Carousel.Item>
+            <div className="text-center py-5">
+              <AdComponent/>
+            </div>
+          </Carousel.Item>
           <Carousel.Item>
               <div className="text-center quote-card py-5">
                 {/* {relatedAuthors && 
