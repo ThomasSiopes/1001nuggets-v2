@@ -12,7 +12,7 @@ import TopicButton from "../TopicButton";
 import CollectionButton from "../CollectionButton";
 import AuthorButton from "../AuthorButton";
 import QuoteCardText from '../QuoteCardText';
-import AdComponentQuoteCard from '../AdComponentQuoteCard';
+import AdComponent from '../AdComponent';
 
 function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
   const [show, setShow] = useState(false);
@@ -156,7 +156,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
           ))}
           <Carousel.Item>
             <div className="text-center py-5">
-              <AdComponentQuoteCard/>
+              <AdComponent/>
             </div>
           </Carousel.Item>
           <Carousel.Item>
