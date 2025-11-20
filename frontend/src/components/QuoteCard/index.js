@@ -13,8 +13,6 @@ import CollectionButton from "../CollectionButton";
 import AuthorButton from "../AuthorButton";
 import QuoteCardText from '../QuoteCardText';
 
-const AdComponent = React.lazy(() => import('../AdComponent'));
-
 function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
   const [show, setShow] = useState(false);
   const [currentQuote, setIndex] = useState(quoteIndex);
@@ -155,11 +153,6 @@ function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
               </Modal.Footer> */}
             </Carousel.Item>
           ))}
-          <Carousel.Item>
-            <div className="text-center py-5">
-              <AdComponent/>
-            </div>
-          </Carousel.Item>
           <Carousel.Item>
               <div className="text-center quote-card py-5">
                 {/* {relatedAuthors && 
