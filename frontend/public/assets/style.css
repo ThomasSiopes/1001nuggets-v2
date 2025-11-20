@@ -2,6 +2,25 @@ a {
     text-decoration: none!important;
 }
 
+.ad-responsive {
+    width:320px;
+    height: 100px;
+}
+
+@media(min-width:451px) {
+    .ad-responsive{
+        width:468px;
+        height:60px;
+    }
+}
+
+@media(min-width:490px) {
+    .ad-responsive{
+        width:728px;
+        height:90px;
+    }
+}
+
 #banner, .formInput, img, #myInput, .navbar, .footer, .width100 {
     width: 100%!important;
 }
