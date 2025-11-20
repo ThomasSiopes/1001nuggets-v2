@@ -12,7 +12,8 @@ import TopicButton from "../TopicButton";
 import CollectionButton from "../CollectionButton";
 import AuthorButton from "../AuthorButton";
 import QuoteCardText from '../QuoteCardText';
-import AdComponent from '../AdComponent';
+
+const AdComponent = React.lazy(() => import('../AdComponent'));
 
 function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
   const [show, setShow] = useState(false);
