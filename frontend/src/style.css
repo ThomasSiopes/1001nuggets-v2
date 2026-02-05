@@ -28,7 +28,7 @@ a {
 @media (max-width:576px) {
     .bg-main {
         padding-bottom:36vh;
-        background-image: url("../public/assets/images/Option4Grad.webp");
+        background-image: url("../public/assets/images/Option4GradLOW.webp");
         background-size: 100% auto;
         background-repeat: repeat;
         min-height: 100%;
@@ -203,12 +203,27 @@ body {
 
 #homeBody h1, #homeBodyLarge h1 {
     /* font-size: 2.8rem; */
-    font-size: 240%;
+    font-size: 255%;
     font-family: Georgia serif;
 }
 
 #homeBody #homeSubtext {
     font-size:85%;
+}
+
+.hoverable {
+    border-top: 0.1rem solid!important;
+    border-bottom: 0.1rem solid!important;
+    border-color: #333!important;
+}
+
+.hoverable:hover {
+    border-color: white!important;
+    transition: all 0.7s ease!important;
+}
+
+html {
+    min-height:100%;
 }
 
 .link-theme, .text-theme {
@@ -269,21 +284,6 @@ body {
 
 .navPage-body, .max-width-100 {
     max-width: 100%
-}
-
-.hoverable {
-    border-top: 0.1rem solid!important;
-    border-bottom: 0.1rem solid!important;
-    border-color: #333!important;
-}
-
-.hoverable:hover {
-    border-color: white!important;
-    transition: all 0.7s ease!important;
-}
-
-html {
-    min-height:100%;
 }
 
 .quote-body, .quote-preview {
