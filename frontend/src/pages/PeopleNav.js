@@ -25,14 +25,14 @@ function Peoples () {
                         </Card.Body>
                     </Card>
                 </Col>
-                <div className="col-05 p-0 text-center">
+                {/* <div className="col-05 p-0 text-center">
                     <Row className="fitter px-0 py-2 ms-0 align-items-center justify-content-center">
                         {alphabet.map((fitterIndex) => (
                             <div className="p-0 mx-0 float-left sidebar-text" key={"fitter" + fitterIndex}><a href={"#" + fitterIndex} className="text-white">{fitterIndex}</a></div>
                         ))
                         }
                     </Row>
-                </div>
+                </div> */}
             </Row>
         </Container>
     )

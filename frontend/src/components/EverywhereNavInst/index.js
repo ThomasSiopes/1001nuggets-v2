@@ -27,10 +27,10 @@ function EverywhereNavInst({letter}) {
 
     return(
         <div className="text-center mb-2">
-            <div>
+            {/* <div>
                 <strong id={letter}>{letter.toUpperCase()}</strong>
                 <hr/>
-            </div>
+            </div> */}
             {sortedList.map((index) => (
                 <div key={letter + index.name}>
                     <p><strong><Link to={`/place/${index.realID}`} className="link-theme">{index.name}</Link></strong></p>
