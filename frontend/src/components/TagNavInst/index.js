@@ -30,13 +30,13 @@ function TagNavInst({letter}) {
             {sortedList.map((index) => (
                 <div key={letter + index.tag}>
                     <p><strong><Link to={`/authortag/${index._id}`} className="link-theme">{index.tag}</Link></strong></p>
-                    {/* <hr/> */}
+                    <hr/>
                 </div>
             ))}
-            <div>
-                {/* <strong id={letter}>{letter.toUpperCase()}</strong> */}
+            {/* <div>
+                <strong id={letter}>{letter.toUpperCase()}</strong>
                 <hr/>
-            </div>
+            </div> */}
         </div>
     );
 }
