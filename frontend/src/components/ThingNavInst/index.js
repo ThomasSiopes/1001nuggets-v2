@@ -26,17 +26,17 @@ function ThingNavInst({letter}) {
     if(sortedList.length === 0) return <span/>
 
     return(
-        <div className="text-center mb-2">
-            {/* <div>
-                <strong id={letter}>{letter.toUpperCase()}</strong>
-                <hr/>
-            </div> */}
+        <div className="text-center">
             {sortedList.map((index) => (
                 <div key={letter + index.name}>
                     <p><strong><Link to={`/thing/${index.realID}`} className="link-theme">{index.name}</Link></strong></p>
-                    <hr/>
+                    {/* <hr/> */}
                 </div>
             ))}
+            <div>
+                {/* <strong id={letter}>{letter.toUpperCase()}</strong> */}
+                <hr/>
+            </div>
         </div>
     );
 }
