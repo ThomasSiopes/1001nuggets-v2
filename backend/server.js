@@ -12,32 +12,27 @@ const app = express();
 const server = new ApolloServer({
     typeDefs,
     resolvers,
-    playground: {
-        settings: {
-          'editor.theme': 'light',
-        }
-    },
 });
-
-async function middleWare() {
-    await server.start();
-
-    server.applyMiddleware({ app });
-}
-
-middleWare();
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("public"));
 
-if(process.env.NODE_ENV === "production") {
-    app.use(express.static(path.join(__dirname, "../frontend/build")));
+async function middleWare() {
+    await server.start();
+    server.applyMiddleware({ app });
 }
 
-app.get("*", (request, response) => {
-    response.sendFile(path.join(__dirname, "../frontend/build/index.html"));
-});
+middleWare();
+
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static(path.join(__dirname, "../frontend/build")));
+
+    // Only serve the catch-all in production so it doesn't swallow /graphql
+    app.get("*", (request, response) => {
+        response.sendFile(path.join(__dirname, "../frontend/build/index.html"));
+    });
+}
 
 db.once("open", () => {
     app.listen(PORT, ()=> {
