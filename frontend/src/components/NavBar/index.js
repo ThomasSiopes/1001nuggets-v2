@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, memo } from "react";
 import { useQuery } from "@apollo/client";
 import { Link } from "react-router-dom";
 import { Navbar, Container, Nav, Modal, Col, Button, Row, Form, Card } from "react-bootstrap";
@@ -6,7 +6,7 @@ import { Navbar, Container, Nav, Modal, Col, Button, Row, Form, Card } from "rea
 import iconImage from "../../assets/images/N_IconGoldTransparentTiny.png"
 import { QUERY_QUOTE_RESULT } from '../../utils/queries';
 
-const QuoteCard = React.lazy(() => import("../QuoteCard"));
+const QuoteCard = memo(React.lazy(() => import("../QuoteCard")));
 
 function NavBar() {
     const [show, setShow] = useState(false);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { Helmet } from "react-helmet";
 import { Link, useParams, redirect } from 'react-router-dom';
 import { useQuery } from "@apollo/client";
@@ -9,7 +9,7 @@ import { QUERY_EVERYWHERE_REALID } from "../utils/queries";
 import shuffle from "../utils/shuffle";
 
 const AdComponent = React.lazy(() => import("../components/AdComponent"));
-const QuoteCard = React.lazy(() => import("../components/QuoteCard"));
+const QuoteCard = memo(React.lazy(() => import("../components/QuoteCard")));
 
 function Everywhere () {
     const { everywhereRealId } = useParams();

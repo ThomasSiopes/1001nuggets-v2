@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { Helmet } from "react-helmet";
 import { redirect } from "react-router-dom";
 import { useQuery} from "@apollo/client";
@@ -8,7 +8,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import { QUERY_QUOTE_SP } from "../utils/queries";
 import shuffle from "../utils/shuffle";
 
-const QuoteCard = React.lazy(() => import("../components/QuoteCard"));
+const QuoteCard = memo(React.lazy(() => import("../components/QuoteCard")));
 
 function SomePeople () {
     let {loading, data} = useQuery(QUERY_QUOTE_SP);
