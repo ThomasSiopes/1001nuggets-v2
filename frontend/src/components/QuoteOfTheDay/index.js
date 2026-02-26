@@ -58,15 +58,6 @@ function QuoteCard({realID}) {
                         }}>
                           <FiShare className="text-white cool-share-button"/>
                         </span>
-                        {/* <span className="mx-2 p-0 share-button" onClick={() => {
-                            html2canvas(document.getElementById("quote-page")).then((canvas) => {
-                                console.log(canvas);
-                                var a = document.createElement("a");
-                                a.href = canvas.toDataURL("image/jpeg");
-                                a.download = "1001nuggets-" + Quote.realID + ".jpg";
-                                a.click();
-                            })
-                        }} id="share-instagram"><FaInstagram/></span> */}
                     </Card.Body>
                 </div>
                 {Quote.topics.length !== 0 && 

@@ -3,7 +3,7 @@ import { Form, Button, Container, Card, Row, Col } from "react-bootstrap";
 
 import { FaSearch } from "react-icons/fa";
 
-const QuoteOfTheDay = React.lazy(() => import("../QuoteOfTheDay"));
+// const QuoteOfTheDay = React.lazy(() => import("../QuoteOfTheDay"));
 
 function LargeHome(){
     const [buttonDisabled, setAbility] = useState(true);

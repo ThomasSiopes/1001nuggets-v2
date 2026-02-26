@@ -60,37 +60,39 @@ function App () {
     <ApolloProvider client={client}>
       <Router>
         <React.Suspense fallback={<div>Loading...</div>}><NavBar/></React.Suspense>
-        <Routes>
-          <Route exact path="/" element={<React.Suspense><Home/></React.Suspense>}/>
-          
-          <Route exact path="/topics" element={<React.Suspense><TopicNav/></React.Suspense>}/>
-          <Route exact path="/topic/:topicRealId" element={<React.Suspense><Topic/></React.Suspense>}/>
+        <React.Suspense>
+          <Routes>
+            <Route exact path="/" element={<Home/>}/>
+            
+            <Route exact path="/topics" element={<TopicNav/>}/>
+            <Route exact path="/topic/:topicRealId" element={<Topic/>}/>
 
-          <Route exact path="/collections" element={<React.Suspense><CollectionNav/></React.Suspense>}/>
-          <Route exact path="/collection/:collectionRealId" element={<React.Suspense><Collection/></React.Suspense>}/>
+            <Route exact path="/collections" element={<CollectionNav/>}/>
+            <Route exact path="/collection/:collectionRealId" element={<Collection/>}/>
 
-          <Route exact path="/authors" element={<React.Suspense><TagNav/></React.Suspense>}/>
-          <Route exact path="/authortag/:tagId" element={<React.Suspense><TagPage/></React.Suspense>}/>
+            <Route exact path="/authors" element={<TagNav/>}/>
+            <Route exact path="/authortag/:tagId" element={<TagPage/>}/>
 
-          <Route exact path="/everyone" element={<React.Suspense><PeopleNav/></React.Suspense>}/>
-          <Route exact path="/person/:peopleRealId" element={<React.Suspense><PeoplePage/></React.Suspense>}/>
+            <Route exact path="/everyone" element={<PeopleNav/>}/>
+            <Route exact path="/person/:peopleRealId" element={<PeoplePage/>}/>
 
-          <Route exact path="/everything" element={<React.Suspense><ThingNav/></React.Suspense>}/>
-          <Route exact path="/thing/:thingRealId" element={<React.Suspense><ThingPage/></React.Suspense>}/>
+            <Route exact path="/everything" element={<ThingNav/>}/>
+            <Route exact path="/thing/:thingRealId" element={<ThingPage/>}/>
 
-          <Route exact path="/everywhere" element={<React.Suspense><EverywhereNav/></React.Suspense>}/>
-          <Route exact path="/place/:everywhereRealId" element={<React.Suspense><EverywherePage/></React.Suspense>}/>
+            <Route exact path="/everywhere" element={<EverywhereNav/>}/>
+            <Route exact path="/place/:everywhereRealId" element={<EverywherePage/>}/>
 
-          <Route exact path="/author/:authorRealId" element={<React.Suspense><Author/></React.Suspense>}/>
+            <Route exact path="/author/:authorRealId" element={<Author/>}/>
 
-          <Route exact path="/quote/:quoteRealId" element={<React.Suspense><Quote/></React.Suspense>}/>
+            <Route exact path="/quote/:quoteRealId" element={<Quote/>}/>
 
-          <Route exact path="/search/:query" element={<React.Suspense><SearchResult/></React.Suspense>}/>
-          {/* <Route exact path="/authors" element={<React.Suspense><AuthorNav/></React.Suspense>}/> */}
+            <Route exact path="/search/:query" element={<SearchResult/>}/>
+            {/* <Route exact path="/authors" element={<AuthorNav/>}*/}
 
-          <Route exact path="/publications" element={<React.Suspense><Publications/></React.Suspense>}/>
-          {/* <Route exact path="/more quotes" element={<React.Suspense><HomeNav/></React.Suspense>}/> */}
-        </Routes>
+            <Route exact path="/publications" element={<Publications/>}/>
+            {/* <Route exact path="/more quotes" element={<HomeNav/>}*/}
+          </Routes>
+        </React.Suspense>
       </Router>
     </ApolloProvider>
   )

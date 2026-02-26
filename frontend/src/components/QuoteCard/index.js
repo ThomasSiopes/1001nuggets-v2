@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { Button, Card, Modal, Container, Carousel } from 'react-bootstrap';
 // import { Link } from 'react-router-dom';
-// import html2canvas from "html2canvas";
 
 import { FiShare } from "react-icons/fi";
 import { FaFacebookF, FaXTwitter } from 'react-icons/fa6';
@@ -63,7 +62,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
 
         <Carousel activeIndex={currentQuote} indicators={false} interval={null} onSelect={handleSelect} touch={true} wrap={false} prevIcon={<MdKeyboardArrowLeft stroke={"black"} fill={"black"}/>} nextIcon={<MdKeyboardArrowRight stroke={"black"} fill={"black"}/>}>
           {indexOrder.map((index) => (
-            <Carousel.Item key={quotes[index].quoteText}>
+            <Carousel.Item key={quotes[index].realID}>
               <Container className="quote-card quote-card-m py-4">
                 {/* Quote */}
                 <QuoteCardText type={"modal"} quotes={quotes} index={index}/>
@@ -91,20 +90,6 @@ function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
                 }}>
                   <FiShare className="text-white cool-share-button"/>
                 </span>
-                  {/* <span className="mx-2 p-0 share-button" onClick={() => {
-                    var grab = document.getElementsByClassName("quote-card-m")[index]
-                    console.log(index)
-                    console.log(grab)
-                    if(grab){
-                      html2canvas(grab).then((canvas) => {
-                        console.log(canvas)
-                        var a = document.createElement("a");
-                        a.href = canvas.toDataURL("image/jpeg");
-                        a.download = "1001nuggets-" + quotes[index].realID + ".jpg";
-                        a.click();
-                      })
-                    }
-                  }} id="share-instagram"><FaInstagram/></span> */}
                 </Container>
               </Container>
 
@@ -112,13 +97,13 @@ function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
               {quotes[index].topics && quotes[index].topics.length > 0 && <Modal.Footer className="justify-content-center align-items-center text-center"> 
                   <div className="width100"> 
                       {quotes[index].topics && quotes[index].topics.map((topic) => (
-                          <TopicButton type={"button"} name={topic} theme={"weak"} key={quotes[index].quoteText + topic}/>
+                          <TopicButton type={"button"} name={topic} theme={"weak"} key={quotes[index].realID + topic}/>
                       ))}
                   </div>
                   <div className="text-start text-theme mx-2">
                     {quotes[index].relatedTopics && <span>
                         {quotes[index].relatedTopics.map((related) => (
-                            <span key={quotes[index].quoteText + "related" + related}>
+                            <span key={quotes[index].realID + "related" + related}>
                               {
                                 related === quotes[index].relatedTopics[quotes[index].relatedTopics.length-1] ?
                                   <span><u><TopicButton type={"link"} name={related} theme={"related"}/></u></span>
@@ -130,7 +115,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
                     </span>}
                     {quotes[index].unrelatedTopics && <span>
                         {quotes[index].unrelatedTopics.map((unrelated) => (
-                            <span key={quotes[index].quoteText + "unrelated" + unrelated}>
+                            <span key={quotes[index].realID + "unrelated" + unrelated}>
                               <span>; <u><TopicButton type={"link"} name={unrelated} theme={"unrelated"}/></u></span>
                             </span>
                         ))}
@@ -155,18 +140,6 @@ function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
           ))}
           <Carousel.Item>
               <div className="text-center quote-card py-5">
-                {/* {relatedAuthors && 
-                  <div className="mb-3">
-                    <strong>
-                    {relatedAuthors.map((index) => (
-                      <div className="mb-2" key={"related author " + index}>
-                        <AuthorButton type={"link"} name={index}/>
-                      </div>
-                    ))}
-                    </strong>
-                    <hr className="mx-5"/>
-                  </div>
-                } */}
                 <Button variant={"theme"} className="text-center" href="https://www.amazon.com">See more on Amazon</Button>
               </div>
           </Carousel.Item>
