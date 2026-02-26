@@ -31,12 +31,24 @@ function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
     setIndex(selectedIndex);
   }
 
-  const handleFontResize = () => {
+  function debounce(func, delay) {
+    let timeout;
+    return function (...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => {
+            func.apply(this, args);
+        }, delay);
+    };
+  }
+
+  const handleFontResizeNonDe = () => {
     let slider = document.getElementById("myRange");
     let targets = document.getElementsByClassName("targetText");
     fontSize.current = slider.value;
     for(let index of targets) index.style.fontSize = fontSize.current + "px";
   }
+
+  const handleFontResize = debounce(handleFontResizeNonDe, 100);
 
   if(quotes) {
     return (

@@ -55,6 +55,8 @@ function Author () {
         list3b = result[1].splice(-middleIndex);
     }
 
+    let newIndexOrder = list1.concat(list3a.concat(list3b.concat(list2)));
+
     let extraAuthors = null;
     if(author.relatedAuthors[0]) extraAuthors = author.relatedAuthors;
 
@@ -73,7 +75,7 @@ function Author () {
                                 <Row>
                                     {list1.map((index) => (
                                         <Col xs={12} className="mb-3" key={author.quotes[index].quoteText}>
-                                            <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                            <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -83,7 +85,7 @@ function Author () {
                                 <Row className="d-xs-block d-lg-none">
                                     {list3a.map((index) => (
                                         <Col xs={12} className="mb-3" key={"false" + author.quotes[index].quoteText}>
-                                            <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                            <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -96,7 +98,7 @@ function Author () {
                                 <Row>
                                     {list3a.map((index) => (
                                         <Col xs={12} className="mb-3" key={author.quotes[index].quoteText}>
-                                            <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                            <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -105,7 +107,7 @@ function Author () {
                                 <Row>
                                     {list3b.map((index) => (
                                         <Col xs={12} className="mb-3" key={author.quotes[index].quoteText}>
-                                            <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                            <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -119,7 +121,7 @@ function Author () {
                                 <Row className="d-xs-block d-lg-none">
                                     {list3b.map((index) => (
                                         <Col xs={12} className="mb-3" key={"false" + author.quotes[index].quoteText}>
-                                            <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                            <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -128,7 +130,7 @@ function Author () {
                                 <Row>
                                     {list2.map((index) => (
                                         <Col xs={12} className="mb-3" key={author.quotes[index].quoteText}>
-                                            <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                            <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                 </Row>

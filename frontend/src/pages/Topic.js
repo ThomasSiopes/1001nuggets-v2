@@ -53,6 +53,8 @@ function Topic () {
         list3b = result[1].splice(-middleIndex);
     }
 
+    let newIndexOrder = list1.concat(list3a.concat(list3b.concat(list2)));
+
     return (
         <Container  className="pt-3">
             <Helmet>
@@ -67,13 +69,13 @@ function Topic () {
                             <Row>
                                 {list1 && list1.map((index) => (
                                     <Col xs={12} className="mb-3" key={topic.quotes[index].quoteText}>
-                                        <QuoteCard quotes={topic.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                        <QuoteCard quotes={topic.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                     </Col>
                                 ))}
                                 <Col xs={12} className="mb-3"><AdComponent/></Col>
                                 {list3a && list3a.map((index) => (
                                     <Col xs={12} className="mb-3 d-xs-block d-lg-none" key={"false" + topic.quotes[index].quoteText}>
-                                        <QuoteCard quotes={topic.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                        <QuoteCard quotes={topic.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                     </Col>
                                 ))}
                             </Row>
@@ -84,12 +86,12 @@ function Topic () {
                             <Row>
                                 {list3a && list3a.map((index) => (
                                     <Col xs={12} className="mb-3 d-none d-lg-block" key={topic.quotes[index].quoteText}>
-                                        <QuoteCard quotes={topic.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                        <QuoteCard quotes={topic.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                     </Col>
                                 ))}
                                 {list3b && list3b.map((index) => (
                                     <Col xs={12} className="mb-3 d-none d-lg-block" key={topic.quotes[index].quoteText}>
-                                        <QuoteCard quotes={topic.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                        <QuoteCard quotes={topic.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                     </Col>
                                 ))}
                             </Row>
@@ -100,13 +102,13 @@ function Topic () {
                             <Row>
                                 {list3b && list3b.map((index) => (
                                     <Col xs={12} className="mb-3 d-xs-block d-lg-none" key={"false" + topic.quotes[index].quoteText}>
-                                        <QuoteCard quotes={topic.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                        <QuoteCard quotes={topic.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                     </Col>
                                 ))}
                                 <Col xs={12} className="mb-3"><AdComponent/></Col>
                                 {list2 && list2.map((index) => (
                                     <Col xs={12} className="mb-3" key={topic.quotes[index].quoteText}>
-                                        <QuoteCard quotes={topic.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                        <QuoteCard quotes={topic.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                     </Col>
                                 ))}
                                 <Col xs={12} className="mb-3"><AdComponent/></Col>
