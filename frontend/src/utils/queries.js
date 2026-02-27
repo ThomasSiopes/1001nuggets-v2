@@ -20,6 +20,39 @@ export const QUERY_AUTHOR_NAME = gql`
             _id
             name
             lastName
+            relatedAuthors
+            quotes {
+                _id
+                quoteText
+                author
+                topics
+                realID
+                relatedTopics
+                unrelatedTopics
+                censors
+            }
+            realID
+        }
+    }
+`;
+
+export const QUERY_AUTHOR_ID = gql`
+    query getAuthorById($authorId: ID!) {
+        authorID (authorId: $authorId){
+            _id
+            name
+            lastName
+            realtedAuthors
+            quotes {
+                _id
+                quoteText
+                author
+                topics
+                realID
+                relatedTopics
+                unrelatedTopics
+                censors
+            }
             realID
         }
     }
@@ -40,6 +73,7 @@ export const QUERY_AUTHOR_REALID = gql`
                 realID
                 relatedTopics
                 unrelatedTopics
+                censors
             }
             realID
         }
@@ -53,9 +87,26 @@ export const QUERY_AUTHOR_LETTER = gql`
           name
           realID
           lastName
+          relatedAuthors
           quotes {
             _id
           }
+        }
+    }
+`;
+
+export const QUERY_TOPIC_ALL = gql`
+    query getAllTopics {
+        topics {
+            _id
+            name
+            sortedName
+            realID
+            quotes {
+                _id
+                relatedTopics
+                unrelatedTopics
+            }
         }
     }
 `;
@@ -67,6 +118,39 @@ export const QUERY_TOPIC_NAME = gql`
             name
             sortedName
             realID
+            quotes {
+                _id
+                quoteText
+                author
+                topics
+                realID
+                somePeople
+                relatedTopics
+                unrelatedTopics
+                censors
+            }
+        }
+    }
+`;
+
+export const QUERY_TOPIC_ID = gql`
+    query topicId($topicId: ID!) {
+        topicID(topicId: $topicId) {
+            _id
+            name
+            sortedName
+            realID
+            quotes {
+                _id
+                quoteText
+                author
+                topics
+                realID
+                somePeople
+                relatedTopics
+                unrelatedTopics
+                censors
+            }
         }
     }
 `;
@@ -84,10 +168,12 @@ export const QUERY_TOPIC_REALID = gql`
                 author
                 topics
                 realID
+                somePeople
                 relatedTopics
                 unrelatedTopics
+                censors
             }
-            somePeople
+
         }
     }
 `;
@@ -106,6 +192,22 @@ export const QUERY_TOPIC_LETTER = gql`
     }
 `;
 
+export const QUERY_QUOTE_ALL = gql`
+    query getAllQuotes {
+        quotes {
+            _id
+            quoteText
+            author
+            topics
+            realID
+            somePeople
+            relatedTopics
+            unrelatedTopics
+            censors
+        }
+    }
+`;
+
 export const QUERY_QUOTE_SP = gql`
     query getQuoteSP {
         quoteSP {
@@ -114,8 +216,10 @@ export const QUERY_QUOTE_SP = gql`
             author
             topics
             realID
+            somePeople
             relatedTopics
             unrelatedTopics
+            censors
         }
     }
 `;
@@ -130,6 +234,7 @@ export const QUERY_QUOTE_RESULT = gql`
             realID
             relatedTopics
             unrelatedTopics
+            censors
         }
     }
 `
@@ -142,8 +247,10 @@ export const QUERY_QUOTE_ID = gql`
             author
             topics
             realID
+            somePeople
             relatedTopics
             unrelatedTopics
+            censors
         }
     }
 `;
@@ -156,8 +263,10 @@ export const QUERY_QUOTE_REALID = gql`
             author
             topics
             realID
+            somePeople
             relatedTopics
             unrelatedTopics
+            censors
         }
     }
 `;
@@ -181,6 +290,7 @@ export const QUERY_COLLECTION_NAME = gql`
             name
             realID
             sortedName
+            topics
         }
     }
 `;
@@ -282,6 +392,22 @@ export const QUERY_PEOPLE_LETTER = gql`
     }
 `;
 
+export const QUERY_PEOPLE_ID = gql`
+    query getPeopleById($peopleId: ID!) {
+        peopleID(peopleId: $peopleId){
+            _id
+            name
+            sortedName
+            realID
+            quotes {
+                _id
+                relatedTopics
+                unrelatedTopics
+            }
+        }
+    }
+`;
+
 export const QUERY_PEOPLE_REALID = gql`
     query peopleR($peopleRealId: String!) {
         peopleR(peopleRealId: $peopleRealId) {
@@ -295,8 +421,24 @@ export const QUERY_PEOPLE_REALID = gql`
                 author
                 topics
                 realID
+                somePeople
                 relatedTopics
                 unrelatedTopics
+                censors
+            }
+        }
+    }
+`;
+
+export const QUERY_THINGS_ALL = gql`
+    query getThingss {
+        thingAll {
+            _id
+            name
+            sortedName
+            realID
+            quotes {
+                _id
             }
         }
     }
@@ -316,6 +458,22 @@ export const QUERY_THING_LETTER = gql`
     }
 `;
 
+export const QUERY_THING_ID = gql`
+    query getThingById($thingId: ID!) {
+        thingID(thingId: $thingId){
+            _id
+            name
+            sortedName
+            realID
+            quotes {
+                _id
+                relatedTopics
+                unrelatedTopics
+            }
+        }
+    }
+`;
+
 export const QUERY_THING_REALID = gql`
     query thingR($thingRealId: String!) {
         thingR(thingRealId: $thingRealId) {
@@ -329,8 +487,24 @@ export const QUERY_THING_REALID = gql`
                 author
                 topics
                 realID
+                somePeople
                 relatedTopics
                 unrelatedTopics
+                censors
+            }
+        }
+    }
+`;
+
+export const QUERY_EVERYWHERE_ALL = gql`
+    query getEverywheres {
+        everywhereAll {
+            _id
+            name
+            sortedName
+            realID
+            quotes {
+                _id
             }
         }
     }
@@ -350,6 +524,22 @@ export const QUERY_EVERYWHERE_LETTER = gql`
     }
 `;
 
+export const QUERY_EVERYWHERE_ID = gql`
+    query getEverywhereById($everywhereId: ID!) {
+        everywhereID(everywhereId: $everywhereId){
+            _id
+            name
+            sortedName
+            realID
+            quotes {
+                _id
+                relatedTopics
+                unrelatedTopics
+            }
+        }
+    }
+`;
+
 export const QUERY_EVERYWHERE_REALID = gql`
     query everywhereR($everywhereRealId: String!) {
         everywhereR(everywhereRealId: $everywhereRealId) {
@@ -363,8 +553,10 @@ export const QUERY_EVERYWHERE_REALID = gql`
                 author
                 topics
                 realID
+                somePeople
                 relatedTopics
                 unrelatedTopics
+                censors
             }
         }
     }

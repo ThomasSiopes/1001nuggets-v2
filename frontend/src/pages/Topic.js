@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import { Helmet } from "react-helmet";
-import { Link, redirect, useParams } from "react-router-dom";
+import { Link, Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
@@ -17,11 +17,11 @@ function Topic () {
         variables: {topicRealId: topicRealId},
     });
 
-    if(!topicRealId || topicRealId === null || topicRealId === "undefined") return redirect(`/topics`);
+    if(!topicRealId || topicRealId === null || topicRealId === "undefined") return <Navigate to="/topics" replace />;
 
     if(loading) return <p>Loading...</p>
 
-    if(!data) return redirect(`/404error`);
+    if(!data) return <Navigate to="/404error" replace />;
 
     const topic = data.topicR;
 
