@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Link, redirect, useParams } from "react-router-dom";
+import { Link, Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
@@ -14,11 +14,11 @@ function TagPage () {
         variables: {tagId: tagId},
     });
 
-    if(!tagId || tagId === null || tagId === "undefined") return redirect(`/authors`);
+    if(!tagId || tagId === null || tagId === "undefined") return <Navigate to={`/authors`}/>;
 
     if(loading) return <p>Loading...</p>
 
-    if(!data) return redirect(`/404error`);
+    if(!data) return <Navigate to={`/404error`}/>;
 
     const tag = data.tagID;
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { redirect, useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import { useQuery} from "@apollo/client";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
@@ -19,13 +19,13 @@ function Quote () {
         variables: {quoteRealId: quoteRealId},
     })
 
-    if(!quoteRealId || quoteRealId === null || quoteRealId === "undefined") return redirect(`/404error`);
+    if(!quoteRealId || quoteRealId === null || quoteRealId === "undefined") return <Navigate to={`/404error`}/>;
 
     if(loading) {
         return <div className="loadingPage">Loading...</div>;
     }
 
-    if(!data) return redirect(`/404error`);
+    if(!data) return <Navigate to={`/404error`}/>;
 
     const quote = data.quoteR;
 

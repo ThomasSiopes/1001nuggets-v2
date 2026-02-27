@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import { Helmet } from "react-helmet";
-import { redirect } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import { useQuery} from "@apollo/client";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
@@ -15,7 +15,7 @@ function SomePeople () {
 
     if(loading) return <p>Loading...</p>
 
-    if(!data) return redirect(`/404error`);
+    if(!data) return <Navigate to={`/404error`}/>;
 
     const quoteList = data.quoteSP;
 

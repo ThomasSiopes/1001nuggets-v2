@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import { Helmet } from "react-helmet";
-import { Link, useParams, redirect } from 'react-router-dom';
+import { Link, useParams, Navigate } from 'react-router-dom';
 import { useQuery } from "@apollo/client";
 
 import { Container, Card, Row, Col } from "react-bootstrap";
@@ -17,11 +17,11 @@ function Everywhere () {
         {variables: {everywhereRealId: everywhereRealId}}
     );
 
-    if(!everywhereRealId || everywhereRealId === null || everywhereRealId === "undefined") return redirect(`/everywheres`);
+    if(!everywhereRealId || everywhereRealId === null || everywhereRealId === "undefined") return <Navigate to={`/everywheres`}/>;
 
     if(loading) return <p>Loading...</p>
 
-    if(!data) return redirect(`/404error`);
+    if(!data) return <Navigate to={`/404error`}/>;
 
     const everywhere = data.everywhereR;
 

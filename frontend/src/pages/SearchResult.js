@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { redirect, useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import { Container, Card } from "react-bootstrap";
 
 import ResultsQuote from "../components/ResultsQuote";
@@ -8,7 +8,7 @@ import ResultsQuote from "../components/ResultsQuote";
 function SearchResults() {
     const { query } = useParams();
 
-    if(!query || query === null || query === "undefined") return redirect(`/`);
+    if(!query || query === null || query === "undefined") return <Navigate to={`/`}/>;
     
     return (
         <Container className="pt-3">

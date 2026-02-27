@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import { Helmet } from "react-helmet";
-import { redirect, useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
@@ -16,11 +16,11 @@ function Author () {
         variables: {authorRealId: authorRealId },
     });
 
-    if(!authorRealId || authorRealId === null || authorRealId === "undefined") return redirect(`/404error`); 
+    if(!authorRealId || authorRealId === null || authorRealId === "undefined") return <Navigate to={`/authors`}/>; 
 
     if(loading) return <div className="loadingPage">Loading...</div>;
 
-    if(!data) return redirect(`/404error`);
+    if(!data) return <Navigate to="/404error" replace />;
 
     const author = data.authorR;
 

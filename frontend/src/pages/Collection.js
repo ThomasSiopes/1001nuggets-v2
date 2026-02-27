@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Link, redirect, useParams } from "react-router-dom";
+import { Link, Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
@@ -14,11 +14,11 @@ function Collection () {
         variables: {collectionRealId: collectionRealId},
     });
 
-    if(!collectionRealId || collectionRealId === null || collectionRealId === "undefined") return redirect(`/collections`);
+    if(!collectionRealId || collectionRealId === null || collectionRealId === "undefined") return <Navigate to={`/collections`}/>;
 
     if(loading) return <p>Loading...</p>
 
-    if(!data) return redirect(`/404error`);
+    if(!data) return <Navigate to={`/404error`}/>;
 
     const collection = data.collectionR
 
