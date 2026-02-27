@@ -14,11 +14,11 @@ function Collection () {
         variables: {collectionRealId: collectionRealId},
     });
 
-    if(!collectionRealId || collectionRealId === null || collectionRealId === "undefined") return <Navigate to={`/collections`}/>;
+    if(!collectionRealId || collectionRealId === null || collectionRealId === "undefined") return <Navigate to={`/collections`} replace/>;
 
     if(loading) return <p>Loading...</p>
 
-    if(!data) return <Navigate to={`/404error`}/>;
+    if(!data) return <Navigate to={`/404error`} replace/>;
 
     const collection = data.collectionR
 

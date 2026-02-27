@@ -17,11 +17,11 @@ function Thing () {
         {variables: {thingRealId: thingRealId}}
     );
 
-    if(!thingRealId || thingRealId === null || thingRealId === "undefined") return <Navigate to={`/things`}/>;
+    if(!thingRealId || thingRealId === null || thingRealId === "undefined") return <Navigate to={`/things`} replace/>;
 
     if(loading) return <p>Loading...</p>
 
-    if(!data) return <Navigate to={`/404error`}/>;
+    if(!data) return <Navigate to={`/404error`} replace/>;
 
     const thing = data.thingR;
 

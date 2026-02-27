@@ -14,11 +14,11 @@ function TagPage () {
         variables: {tagId: tagId},
     });
 
-    if(!tagId || tagId === null || tagId === "undefined") return <Navigate to={`/authors`}/>;
+    if(!tagId || tagId === null || tagId === "undefined") return <Navigate to={`/authors`} replace/>;
 
     if(loading) return <p>Loading...</p>
 
-    if(!data) return <Navigate to={`/404error`}/>;
+    if(!data) return <Navigate to={`/404error`} replace/>;
 
     const tag = data.tagID;
 

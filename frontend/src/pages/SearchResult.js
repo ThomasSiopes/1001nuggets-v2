@@ -8,7 +8,7 @@ import ResultsQuote from "../components/ResultsQuote";
 function SearchResults() {
     const { query } = useParams();
 
-    if(!query || query === null || query === "undefined") return <Navigate to={`/`}/>;
+    if(!query || query === null || query === "undefined") return <Navigate to={`/`} replace/>;
     
     return (
         <Container className="pt-3">

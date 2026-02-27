@@ -19,13 +19,13 @@ function Quote () {
         variables: {quoteRealId: quoteRealId},
     })
 
-    if(!quoteRealId || quoteRealId === null || quoteRealId === "undefined") return <Navigate to={`/404error`}/>;
+    if(!quoteRealId || quoteRealId === null || quoteRealId === "undefined") return <Navigate to={`/404error`} replace/>;
 
     if(loading) {
         return <div className="loadingPage">Loading...</div>;
     }
 
-    if(!data) return <Navigate to={`/404error`}/>;
+    if(!data) return <Navigate to={`/404error`} replace/>;
 
     const quote = data.quoteR;
 

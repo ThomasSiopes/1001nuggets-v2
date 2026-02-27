@@ -17,11 +17,11 @@ function People () {
         {variables: {peopleRealId: peopleRealId}}
     );
 
-    if(!peopleRealId || peopleRealId === null || peopleRealId === "undefined") return <Navigate to={`/peoples`}/>;
+    if(!peopleRealId || peopleRealId === null || peopleRealId === "undefined") return <Navigate to={`/peoples`} replace/>;
 
     if(loading) return <p>Loading...</p>
 
-    if(!data) return <Navigate to={`/404error`}/>;
+    if(!data) return <Navigate to={`/404error`} replace/>;
 
     const person = data.peopleR;
 

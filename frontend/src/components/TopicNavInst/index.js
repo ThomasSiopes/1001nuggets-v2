@@ -11,7 +11,7 @@ function TopicNavInst({letter}) {
 
     if(!data) return <span>...</span>;
 
-    let sortedList = data.topicLetter.map((item) => Object.assign({}, item, {selected:false}))
+    let sortedList = data.topicLetter.map((item) => Object.assign({}, item, {selected:false}));
     
     sortedList = sortedList.sort(function(a,b) {
         if(a.sortedName < b.sortedName) return -1;

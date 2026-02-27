@@ -62,6 +62,23 @@ export const QUERY_AUTHOR_LETTER = gql`
     }
 `;
 
+export const QUERY_TOPIC_ALL = gql`
+    query getAllTopics {
+        topics {
+            _id
+            name
+            sortedName
+            realID
+            quotes {
+                _id
+                realID
+                relatedTopics
+                unrelatedTopics
+            }
+        }
+    }
+`;
+
 export const QUERY_TOPIC_NAME = gql`
     query topicName($name: String!) {
         topicName(name: $name) {

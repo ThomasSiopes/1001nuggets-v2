@@ -17,11 +17,11 @@ function Everywhere () {
         {variables: {everywhereRealId: everywhereRealId}}
     );
 
-    if(!everywhereRealId || everywhereRealId === null || everywhereRealId === "undefined") return <Navigate to={`/everywheres`}/>;
+    if(!everywhereRealId || everywhereRealId === null || everywhereRealId === "undefined") return <Navigate to={`/everywheres`} replace/>;
 
     if(loading) return <p>Loading...</p>
 
-    if(!data) return <Navigate to={`/404error`}/>;
+    if(!data) return <Navigate to={`/404error`} replace/>;
 
     const everywhere = data.everywhereR;
 

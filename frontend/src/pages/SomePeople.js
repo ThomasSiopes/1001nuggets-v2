@@ -15,7 +15,7 @@ function SomePeople () {
 
     if(loading) return <p>Loading...</p>
 
-    if(!data) return <Navigate to={`/404error`}/>;
+    if(!data) return <Navigate to={`/404error`} replace/>;
 
     const quoteList = data.quoteSP;
 
