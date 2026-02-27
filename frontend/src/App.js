@@ -52,7 +52,18 @@ const clientInfo = {
 
 const client = new ApolloClient({
   link: clientInfo.authLink.concat(clientInfo.httpLink),
-  cache: new InMemoryCache()
+  cache: new InMemoryCache({
+    typePolicies: {
+      Author: { keyFields: ["realID"] },
+      Topic: { keyFields: ["realID"] },
+      Quote: { keyFields: ["realID"] },
+      Collection: { keyFields: ["realID"] },
+      People: { keyFields: ["realID"] },
+      Thing: { keyFields: ["realID"] },
+      Everywhere: { keyFields: ["realID"] },
+      QOTD: { keyFields: ["index"] }
+    },
+  })
 });
 
 function App () {

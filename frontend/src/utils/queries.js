@@ -8,6 +8,7 @@ export const QUERY_AUTHOR_ALL = gql`
             lastName
             quotes {
                 _id
+                realID
             }
             realID
         }
@@ -55,6 +56,7 @@ export const QUERY_AUTHOR_LETTER = gql`
           lastName
           quotes {
             _id
+            realID
           }
         }
     }
@@ -102,6 +104,7 @@ export const QUERY_TOPIC_LETTER = gql`
           sortedName
           quotes {
             _id
+            realID
           }
         }
     }
@@ -263,6 +266,7 @@ export const QUERY_PEOPLE_ALL = gql`
             realID
             quotes {
                 _id
+                realID
             }
         }
     }
@@ -277,6 +281,7 @@ export const QUERY_PEOPLE_LETTER = gql`
             realID
             quotes {
                 _id
+                realID
             }
         }
     }
@@ -311,6 +316,7 @@ export const QUERY_THING_LETTER = gql`
             realID
             quotes {
                 _id
+                realID
             }
         }
     }
@@ -345,6 +351,7 @@ export const QUERY_EVERYWHERE_LETTER = gql`
             realID
             quotes {
                 _id
+                realID
             }
         }
     }
