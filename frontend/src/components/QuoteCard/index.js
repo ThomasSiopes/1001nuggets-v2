@@ -60,7 +60,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
             </strong>
             <p className="text-end mb-0">
               <strong>
-                {quotes[quoteIndex].author && <AuthorButton type={"link"} name={quotes[quoteIndex].author}/>}
+                {quotes[quoteIndex].author && <AuthorButton type={"link"} name={quotes[quoteIndex].author} realID={quotes[quoteIndex].authorRealID}/>}
               </strong>
             </p>
         </Card.Body>
@@ -86,7 +86,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
                       {/* Author */}
                       <Container className="mt-3 pe-4 text-end">
                         <strong>
-                          {quotes[quoteIndex].author && <AuthorButton type={"link"} name={quotes[index].author}/>}
+                          {quotes[quoteIndex].author && <AuthorButton type={"link"} name={quotes[index].author} realID={quotes[quoteIndex].authorRealID}/>}
                         </strong>
                       </Container>
                       <Container className="justify-content-center text-center mt-2 align-items-center">
@@ -110,34 +110,42 @@ function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
                     </Container>
 
                     {/* Topic */}
-                    {quotes[index].topics && quotes[index].topics.length > 0 && <Modal.Footer className="justify-content-center align-items-center text-center"> 
-                        <div className="width100"> 
-                            {quotes[index].topics && quotes[index].topics.map((topic) => (
-                                <TopicButton type={"button"} name={topic} theme={"weak"} key={quotes[index].realID + topic}/>
+                    {quotes[index].topicDetails && quotes[index].topicDetails.length > 0 && 
+                      <Modal.Footer className="justify-content-center align-items-center text-center"> 
+                        <div className="width100">
+                            {quotes[index].topicDetails.map((topicDetail) => (
+                                <TopicButton type={"button"} name={topicDetail.name} realID={topicDetail.realID} theme={"weak"} key={quotes[index].realID + topicDetail.name}/>
                             ))}
                         </div>
+
                         <div className="text-start text-theme mx-2">
-                          {quotes[index].relatedTopics && <span>
-                              {quotes[index].relatedTopics.map((related) => (
-                                  <span key={quotes[index].realID + "related" + related}>
+                          
+                          {/* Related Topics */}
+                          {quotes[index].relatedTopicDetails && 
+                            <span>
+                              {quotes[index].relatedTopicDetails.map((detail) => (
+                                  <span key={quotes[index].realID + "related" + detail.name}>
                                     {
-                                      related === quotes[index].relatedTopics[quotes[index].relatedTopics.length-1] ?
-                                        <span><u><TopicButton type={"link"} name={related} theme={"related"}/></u></span>
+                                      detail === quotes[index].relatedTopicDetails[quotes[index].relatedTopicDetails.length-1] ?
+                                        <span><u><TopicButton type={"link"} name={detail.name} realID={detail.realID} theme={"related"}/></u></span>
                                         :
-                                        <span><u><TopicButton type={"link"} name={related} theme={"related"}/></u>; </span>
+                                        <span><u><TopicButton type={"link"} name={detail.name} realID={detail.realID} theme={"related"}/></u>; </span>
                                     }
                                   </span>
                               ))}
-                          </span>}
-                          {quotes[index].unrelatedTopics && <span>
-                              {quotes[index].unrelatedTopics.map((unrelated) => (
-                                  <span key={quotes[index].realID + "unrelated" + unrelated}>
-                                    <span>; <u><TopicButton type={"link"} name={unrelated} theme={"unrelated"}/></u></span>
+                            </span>}
+                          
+                          {/* Unrelated Topics */}
+                          {quotes[index].unrelatedTopicDetails && 
+                            <span>
+                              {quotes[index].unrelatedTopicDetails.map((detail) => (
+                                  <span key={quotes[index].realID + "unrelated" + detail.name}>
+                                    <span>; <u><TopicButton type={"link"} name={detail.name} realID={detail.realID} theme={"unrelated"}/></u></span>
                                   </span>
                               ))}
-                          </span>}
+                            </span>}
                         </div>
-                    </Modal.Footer>}
+                      </Modal.Footer>}
 
                     {/* Collection */}
                     {quotes[index].collections && quotes[index].collections.length > 0 && <Modal.Footer className="justify-content-center align-items-center">

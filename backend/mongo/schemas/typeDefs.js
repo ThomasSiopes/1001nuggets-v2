@@ -18,18 +18,28 @@ const typeDefs = gql`
         quotes: [Quote]!
     }
 
+    type TopicDetail {
+        name: String
+        realID: String
+    }
+
     type Quote {
         _id: ID
         quoteText: String
         author: String
+        authorRealID: String
         topics: [String]!
+        relatedTopics: [String]!
+        unrelatedTopics: [String]!
+        topicDetails: [TopicDetail]!
+        relatedTopicDetails: [TopicDetail]!
+        unrelatedTopicDetails: [TopicDetail]!
+
         people: [String]!
         things: [String]!
         everywhere: [String]!
         realID: String
         somePeople: Boolean
-        relatedTopics: [String]!
-        unrelatedTopics: [String]!
         censors: [String]!
     }
 

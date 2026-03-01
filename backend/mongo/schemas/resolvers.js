@@ -128,6 +128,54 @@ const resolvers = {
         dailyQuote: async () => {
             return QOTD.find();
         }
+    },
+
+    Quote: {
+        authorRealID: async(parent) => {
+            if(!parent.author) return null;
+            const author = await Author.findOne(
+                { name: parent.author},
+                { realID: 1 }
+            );
+            return author ? author.realID : null;
+        },
+
+        topicDetails: async(parent) => {
+            if(!parent.topics || parent.topics.length === 0) return [];
+            const found = await Topic.find(
+                { name: { $in: parent.topics }},
+                { name: 1, realID: 1 }
+            );
+            return parent.topics.map(name => {
+                const t = found.find(t => t.name === name);
+                return { name, realID: t ? t.realID : null };
+            });
+        },
+
+        relatedTopicDetails: async(parent) => {
+            if(!parent.relatedTopics || parent.relatedTopics.length === 0) return [];
+            const found = await Topic.find(
+                { name: { $in: parent.relatedTopics }},
+                { name: 1, realID: 1 }
+            );
+            return parent.relatedTopics.map(name=> {
+                const t = found.find(t => t.name === name);
+                return { name, realID: t ? t.realID : null };
+            });
+        },
+
+        
+        unrelatedTopicDetails: async(parent) => {
+            if(!parent.unrelatedTopics || parent.unrelatedTopics.length === 0) return [];
+            const found = await Topic.find(
+                { name: { $in: parent.unrelatedTopics }},
+                { name: 1, realID: 1 }
+            );
+            return parent.unrelatedTopics.map(name=> {
+                const t = found.find(t => t.name === name);
+                return { name, realID: t ? t.realID : null };
+            });
+        },
     }
 }
 
