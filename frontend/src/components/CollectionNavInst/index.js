@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { useQuery } from "@apollo/client";
-
+import { useLazyQuery } from "@apollo/client";
 import { QUERY_COLLECTION_LETTER } from "../../utils/queries";
 
-function CollectionNavInst({letter}) {
-    let {loading, data} = useQuery(QUERY_COLLECTION_LETTER, {variables: {letter: letter},});
+function CollectionNavInst({ letter }) {
+    const ref = useRef(null);
+    const [fetchLetter, { loading, data }] = useLazyQuery(QUERY_COLLECTION_LETTER, {
+        variables: { letter },
+    });
 
-    if(loading) return <span>Loading {letter}s...</span>
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => { if (entry.isIntersecting) { fetchLetter(); observer.disconnect(); } },
+            { rootMargin: "200px" } // start fetching 200px before it enters view
+        );
+        if (ref.current) observer.observe(ref.current);
+        return () => observer.disconnect();
+    }, [fetchLetter]);
 
-    if(!data) return <span>...</span>;
+    if (loading) return <div ref={ref}><span>Loading {letter}s...</span></div>;
+    if (!data)   return <div ref={ref} />;
 
     let sortedList = data.collectionLetter.map((item) => Object.assign({}, item, {selected:false}))
     
@@ -22,7 +32,7 @@ function CollectionNavInst({letter}) {
     if(sortedList.length === 0) return <span/>
 
     return(
-        <div className="text-center mb-2">
+        <div ref={ref} className="text-center mb-2">
             {/* <div>
                 <strong id={letter}>{letter.toUpperCase()}</strong>
                 <hr/>
@@ -30,7 +40,7 @@ function CollectionNavInst({letter}) {
             {sortedList.map((index) => (
                 <div key={letter + index.name}>
                     <p><strong><Link to={`/collection/${index.realID}`} className="link-theme">{index.name}</Link></strong></p>
-                    {/* <p>({index.topics.length} topics)</p> */}
+                    {/* <p>({index.collections.length} collections)</p> */}
                     <hr/>
                 </div>
             ))}

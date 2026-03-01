@@ -1,19 +1,25 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { useQuery } from "@apollo/client";
-
+import { useLazyQuery } from "@apollo/client";
 import { QUERY_EVERYWHERE_LETTER } from "../../utils/queries";
 
-function EverywhereNavInst({letter}) {
-    let {loading, data, error} = useQuery(QUERY_EVERYWHERE_LETTER, {variables: {letter: letter},});
+function EverywhereNavInst({ letter }) {
+    const ref = useRef(null);
+    const [fetchLetter, { loading, data }] = useLazyQuery(QUERY_EVERYWHERE_LETTER, {
+        variables: { letter },
+    });
 
-    if(loading) return <span>Loading {letter}s...</span>
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => { if (entry.isIntersecting) { fetchLetter(); observer.disconnect(); } },
+            { rootMargin: "200px"}
+        );
+        if (ref.current) observer.observe(ref.current);
+        return () => observer.disconnect();
+    }, [fetchLetter]);
 
-    if(error) {
-        console.log(error)
-    }
-
-    if(!data) return <span>...</span>;
+    if (loading) return <div ref={ref}><span>Loading {letter}s...</span></div>;
+    if (!data)   return <div ref={ref}/>;
 
     let sortedList = data.everywhereByLetter.map((item) => Object.assign({}, item, {selected:false}))
     
@@ -26,7 +32,7 @@ function EverywhereNavInst({letter}) {
     if(sortedList.length === 0) return <span/>
 
     return(
-        <div className="text-center mb-2">
+        <div ref={ref} className="text-center mb-2">
             {/* <div>
                 <strong id={letter}>{letter.toUpperCase()}</strong>
                 <hr/>
