@@ -1,38 +1,34 @@
-import React from "react";
+import React, { memo, useMemo } from "react";
 import { Card, Container } from "react-bootstrap"
 
+const CENSORS = new Set(["BULLSHIT", "BULLSHITTING", "SHIT", "SHITTING", "SHITTY", "FUCK", "FUCKING", "FUCKED", "N*GGER","NIGGER"]);
+
 function QuoteCardText({type, quotes, index}) {
-    let split = 0
-    let censors = ["bullshit", "bullshitting", "shit", "shitting", "shitty", "fuck", "fucking", "fucked", "n*gger","nigger"];
+    const quoteText = quotes[index]?.quoteText;
 
-    if(quotes[index]) split = quotes[index].quoteText.split(/(\s+)/);
-    if(split) {
-        for(let i = 0; i < split.length; ++i) {
-            let check = false;
-            for(let n = 0; n < censors.length; ++n) {
-                if(split[i].toUpperCase().replace(/[^\w]/g, "") === censors[n].toUpperCase().replace(/[^\w]/g, "")) check = true;
-            }
-
-            if(check) split[i] = <span className="censor" key={"split" + split[i] + i}>{split[i]}</span>
-            else split[i] = <span key={"split" + split[i] + i}>{split[i]}</span>
-        }
-    }
+    const split = useMemo(() => {
+        if(!quoteText) return [];
+        return quoteText.split(/(\s+)/).map((word, i) => {
+            const normalized = word.toUpperCase().replace(/[^\w]/g, "");
+            const isCensored = CENSORS.has(normalized);
+            return(
+                <span className={isCensored? "censor" : undefined} key={"split" + word + i}>{word}</span>
+            );
+        });
+    }, [quoteText]);
 
     if(type === "modal") {
-        return (
+        return(
             <Container className="font-poppins">
-                <strong><p className="quote-modal-text text-center targetText">
-                    {split.map((index3) => index3)}
-                </p></strong>
+                <strong>
+                    <p className="quote-modal-text tex-center targetText">{split}</p>
+                </strong>
             </Container>
-        )
-    }else {
-        return (
-            <Card.Text className="font-poppins text-center">
-                    {split.map((index3) => index3)}
-            </Card.Text>
-        )
+        );
     }
+    return(
+        <Card.Text className="font-poppins text-center">{split}</Card.Text>
+    );
 }
 
-export default QuoteCardText;
+export default memo(QuoteCardText);
