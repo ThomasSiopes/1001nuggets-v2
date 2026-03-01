@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, memo } from 'react';
 import { Button, Card, Modal, Container, Carousel } from 'react-bootstrap';
 // import { Link } from 'react-router-dom';
 
@@ -139,7 +139,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
               {quotes[index].collections && quotes[index].collections.length > 0 && <Modal.Footer className="justify-content-center align-items-center">
                   <span className="text-center">
                       {quotes[index].collections.map((collection) => (
-                          <CollectionButton type={"button"} name={collection} theme={"weak"} key={quotes[index].quotesText + collection}/>
+                          <CollectionButton type={"button"} name={collection} theme={"weak"} key={quotes[index].realID + collection}/>
                       ))}
                   </span>
               </Modal.Footer>}
@@ -162,4 +162,4 @@ function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
   else return(<p>Loading...</p>)
 }
 
-export default QuoteCard;
+export default memo(QuoteCard);

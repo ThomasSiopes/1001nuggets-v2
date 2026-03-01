@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
@@ -9,7 +9,7 @@ import { QUERY_TOPIC_REALID } from "../utils/queries";
 import shuffle from "../utils/shuffle";
 
 const AdComponent = React.lazy(()=> import("../components/AdComponent"));
-const QuoteCard = memo(React.lazy(() => import("../components/QuoteCard")));
+const QuoteCard = React.lazy(() => import("../components/QuoteCard"));
 
 function Topic () {
     const { topicRealId } = useParams();

@@ -1,4 +1,4 @@
-import React, { useState, memo } from "react";
+import React, { useState } from "react";
 import { useQuery } from "@apollo/client";
 
 import { Container, Col, Modal, Row } from "react-bootstrap";
@@ -6,7 +6,7 @@ import { Container, Col, Modal, Row } from "react-bootstrap";
 import { QUERY_TOPIC_REALID } from "../../utils/queries";
 import shuffle from "../../utils/shuffle";
 
-const QuoteCard = memo(React.lazy(() => import("../QuoteCard")));
+const QuoteCard = React.lazy(() => import("../QuoteCard"));
 
 function TopicComponent({name, realID}){
     const [show, setShow] = useState(false)

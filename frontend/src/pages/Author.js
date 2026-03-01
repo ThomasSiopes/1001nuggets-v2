@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import { Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
@@ -8,7 +8,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import { QUERY_AUTHOR_REALID } from "../utils/queries";
 import shuffle from "../utils/shuffle";
 
-const QuoteCard = memo(React.lazy(() => import("../components/QuoteCard")));
+const QuoteCard = React.lazy(() => import("../components/QuoteCard"));
 
 function Author () {
     const { authorRealId } = useParams();

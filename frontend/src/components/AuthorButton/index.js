@@ -1,8 +1,7 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
-
-import { Button } from "react-bootstrap";
 
 import { QUERY_AUTHOR_NAME } from "../../utils/queries";
 
