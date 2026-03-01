@@ -2,6 +2,7 @@ import React from "react";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import { ApolloClient, ApolloProvider, createHttpLink, InMemoryCache } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
+import { persistCache, LocalStorageWrapper } from "apollo3-cache-persist";
 
 //Components
 // import ErrorPage from "./components/ErrorPage";
@@ -37,6 +38,8 @@ const Publications = React.lazy(() => import("./pages/Publications"));
 
 // const AuthorNav = React.lazy(() => import("./pages/AuthorNav"));
 
+
+// Client & Cache Stuff
 const clientInfo = {
   httpLink: createHttpLink({uri:"/graphql"}),
   authLink: setContext((_, {headers}) => {
@@ -50,9 +53,7 @@ const clientInfo = {
   })
 }
 
-const client = new ApolloClient({
-  link: clientInfo.authLink.concat(clientInfo.httpLink),
-  cache: new InMemoryCache({
+const cache = new InMemoryCache({
     typePolicies: {
       Author: { keyFields: ["realID"] },
       Topic: { keyFields: ["realID"] },
@@ -63,7 +64,16 @@ const client = new ApolloClient({
       Everywhere: { keyFields: ["realID"] },
       QOTD: { keyFields: ["index"] }
     },
-  })
+});
+
+await persistCache({
+  cache,
+  storage: new LocalStorageWrapper(window.localStorage)
+});
+
+const client = new ApolloClient({
+  link: clientInfo.authLink.concat(clientInfo.httpLink),
+  cache
 });
 
 function App () {
