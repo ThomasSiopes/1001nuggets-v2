@@ -1,4 +1,4 @@
-import React, { useState, useRef, memo } from 'react';
+import React, { useState, memo } from 'react';
 import { Button, Card, Modal, Container, Carousel } from 'react-bootstrap';
 // import { Link } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ import QuoteCardText from '../QuoteCardText';
 function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
   const [show, setShow] = useState(false);
   const [currentQuote, setIndex] = useState(quoteIndex);
-  const fontSize = useRef(32);
+  const [fontSize, setFontSize] = useState(32);
 
   const handleClose = () => {
     setShow(false);
@@ -31,24 +31,9 @@ function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
     setIndex(selectedIndex);
   }
 
-  function debounce(func, delay) {
-    let timeout;
-    return function (...args) {
-        clearTimeout(timeout);
-        timeout = setTimeout(() => {
-            func.apply(this, args);
-        }, delay);
-    };
+  const handleFontResize = (e) => {
+    setFontSize(Number(e.target.value));
   }
-
-  const handleFontResizeNonDe = () => {
-    let slider = document.getElementById("myRange");
-    let targets = document.getElementsByClassName("targetText");
-    fontSize.current = slider.value;
-    for(let index of targets) index.style.fontSize = fontSize.current + "px";
-  }
-
-  const handleFontResize = debounce(handleFontResizeNonDe, 100);
 
   if(quotes) {
     return (
@@ -81,7 +66,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
                   <span>
                     <Container className="quote-card quote-card-m py-4">
                       {/* Quote */}
-                      <QuoteCardText type={"modal"} quotes={quotes} index={index}/>
+                      <QuoteCardText type={"modal"} quotes={quotes} index={index} fontSize={fontSize}/>
 
                       {/* Author */}
                       <Container className="mt-3 pe-4 text-end">

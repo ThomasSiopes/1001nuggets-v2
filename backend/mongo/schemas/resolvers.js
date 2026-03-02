@@ -176,6 +176,20 @@ const resolvers = {
                 return { name, realID: t ? t.realID : null };
             });
         },
+    },
+
+    Collection: {
+        topicDetails: async(parent) => {
+            if(!parent.topics || parent.topics.length === 0) return [];
+            const found = await Topic.find(
+                { name: { $in: parent.topics }},
+                { name: 1, realID: 1 }
+            );
+            return parent.topics.map(name => {
+                const t = found.find(t => t.name === name);
+                return { name, realID: t ? t.realID : null };
+            });
+        },
     }
 }
 

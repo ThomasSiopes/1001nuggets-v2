@@ -31,9 +31,9 @@ function Collection () {
                 <Card.Header className="bg-light rounded">Home {`>`} <Link className="link-theme" to={`/collections`}>Collections</Link> {`>`} {collection.name}</Card.Header>
                 <Card.Body bg={"transparent"}>
                     <Row>
-                         {collection.topics.map((index) => (
+                         {collection.topicDetails.map((index) => (
                             <Col key={index} className="mb-3" xs={12} sm={6} md={4}>
-                                <TopicButton type={"button-block"} name={index} theme={"weak"}/>
+                                <TopicButton type={"button-block"} name={index.name} realID={index.realID} theme={"weak"}/>
                             </Col>
                          ))}
                     </Row>

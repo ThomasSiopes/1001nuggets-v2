@@ -3,7 +3,7 @@ import { Card, Container } from "react-bootstrap"
 
 const CENSORS = new Set(["BULLSHIT", "BULLSHITTING", "SHIT", "SHITTING", "SHITTY", "FUCK", "FUCKING", "FUCKED", "N*GGER","NIGGER"]);
 
-function QuoteCardText({type, quotes, index}) {
+function QuoteCardText({type, quotes, index, fontSize}) {
     const quoteText = quotes[index]?.quoteText;
 
     const split = useMemo(() => {
@@ -21,7 +21,7 @@ function QuoteCardText({type, quotes, index}) {
         return(
             <Container className="font-poppins">
                 <strong>
-                    <p className="quote-modal-text tex-center targetText">{split}</p>
+                    <p className="quote-modal-text text-center targetText" style={fontSize ? {fontSize: `${fontSize}px`} : undefined}>{split}</p>
                 </strong>
             </Container>
         );

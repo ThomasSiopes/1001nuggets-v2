@@ -53,6 +53,7 @@ const typeDefs = gql`
         sortedName: String
         realID: String
         topics: [String]!
+        topicDetails: [TopicDetail]!
     }
 
     type Tag {

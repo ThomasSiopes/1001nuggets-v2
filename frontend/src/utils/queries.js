@@ -249,6 +249,7 @@ export const QUERY_COLLECTION_REALID = gql`
             realID
             sortedName
             topics
+            topicDetails { name realID }
         }
     }
 `;
