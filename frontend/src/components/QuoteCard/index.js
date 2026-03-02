@@ -55,7 +55,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
         <Modal.Header className="text-theme" closeButton/>
 
         {/* Slider */}
-        <input type="range" className="mx-2 slider" min="22" max="40" id="myRange" onInput={handleFontResize}/>
+        <input type="range" className="mx-2 slider" min="22" max="40" value={fontSize} id="myRange" onChange={handleFontResize}/>
 
         <Carousel activeIndex={currentQuote} indicators={false} interval={null} onSelect={handleSelect} touch={true} wrap={false} prevIcon={<MdKeyboardArrowLeft stroke={"black"} fill={"black"}/>} nextIcon={<MdKeyboardArrowRight stroke={"black"} fill={"black"}/>}>
           {indexOrder.map((index, position) => {
