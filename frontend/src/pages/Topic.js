@@ -14,9 +14,30 @@ const QuoteCard = React.lazy(() => import("../components/QuoteCard"));
 function Topic () {
     const { topicRealId } = useParams();
     let {loading, data} = useQuery(QUERY_TOPIC_REALID, {
-        variables: {topicRealId: topicRealId},
-        fetchPolicy: "cache-first"
+        variables: {topicRealId: topicRealId}, fetchPolicy: "cache-first"
     });
+
+    const { list1, list2, list3a, list3b, newIndexOrder } = useMemo(() => {
+        const quotes = data?.topicR.quotes;
+        if(!quotes) return { list1:[], list2:[], list3a:[], list3b:[], newIndexOrder:[] };
+
+        let indexList = quotes.map((_, i) => i);
+        indexList = shuffle(indexList);
+
+        let result = [];
+        for(let n = 3; n > 0; --n) {
+            result.push(indexList.splice(0, Math.ceil(indexList.length / n)));
+        }
+
+        const list1 = result[0];
+        const list2 = result[2];
+        const middleIndex = Math.ceil(result[1].length / 2);
+        const list3a = result[1].splice(0, middleIndex);
+        const list3b = result[1].splice(-middleIndex);
+        const newIndexOrder = [...list1, ...list3a, ...list3b, ...list2];
+
+        return{ list1, list2, list3a, list3b, newIndexOrder };
+    }, [data]);
 
     if(!topicRealId || topicRealId === null || topicRealId === "undefined") return <Navigate to="/topics" replace />;
 
@@ -25,36 +46,6 @@ function Topic () {
     if(!data) return <Navigate to="/404error" replace />;
 
     const topic = data.topicR;
-
-    let indexList = [];
-
-    for(let i = 0; i < topic.quotes.length; ++i) {
-        // if(!(topic.quotes[i].somePeople) && !(topic.quotes[i].author === "1001 Nuggets")) indexList.push(i);
-        indexList.push(i);
-    }
-
-    if(!indexList) return <p>Loading...</p>
-
-    indexList = shuffle(indexList);
-
-    let list1;
-    let list2;
-    let list3a;
-    let list3b;
-    if(topic.quotes) {
-        let result = [];
-        for(let n = 3; n > 0; --n) {
-            result.push(indexList.splice(0,Math.ceil(indexList.length / n)));
-        }
-        list1 = result[0];
-        list2 = result[2];
-
-        let middleIndex = Math.ceil(result[1].length/2);
-        list3a = result[1].splice(0,middleIndex);
-        list3b = result[1].splice(-middleIndex);
-    }
-
-    let newIndexOrder = list1.concat(list3a.concat(list3b.concat(list2)));
 
     return (
         <Container  className="pt-3">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useMemo} from "react";
 import { Helmet } from "react-helmet";
 import { Link, useParams, Navigate } from 'react-router-dom';
 import { useQuery } from "@apollo/client";
@@ -17,6 +17,28 @@ function Thing () {
         {variables: {thingRealId: thingRealId}}
     );
 
+    const { list1, list2, list3a, list3b, newIndexOrder } = useMemo(() => {
+            const quotes = data?.thingR.quotes;
+            if(!quotes) return { list1:[], list2:[], list3a:[], list3b:[], newIndexOrder:[] };
+    
+            let indexList = quotes.map((_, i) => i);
+            indexList = shuffle(indexList);
+    
+            let result = [];
+            for(let n = 3; n > 0; --n) {
+                result.push(indexList.splice(0, Math.ceil(indexList.length / n)));
+            }
+    
+            const list1 = result[0];
+            const list2 = result[2];
+            const middleIndex = Math.ceil(result[1].length / 2);
+            const list3a = result[1].splice(0, middleIndex);
+            const list3b = result[1].splice(-middleIndex);
+            const newIndexOrder = [...list1, ...list3a, ...list3b, ...list2];
+    
+            return{ list1, list2, list3a, list3b, newIndexOrder };
+    }, [data]);
+
     if(!thingRealId || thingRealId === null || thingRealId === "undefined") return <Navigate to={`/things`} replace/>;
 
     if(loading) return <p>Loading...</p>
@@ -24,33 +46,6 @@ function Thing () {
     if(!data) return <Navigate to={`/404error`} replace/>;
 
     const thing = data.thingR;
-
-    let indexList = [];
-
-    for(let i = 0; i < thing.quotes.length; ++i) {
-        indexList.push(i);
-    }
-
-    if(!indexList) return <p>Loading...</p>
-
-    indexList = shuffle(indexList);
-
-    let list1;
-    let list2;
-    let list3a;
-    let list3b;
-    if(thing.quotes) {
-        let result = [];
-        for(let n = 3; n > 0; --n) {
-            result.push(indexList.splice(0,Math.ceil(indexList.length / n)));
-        }
-        list1 = result[0];
-        list2 = result[2];
-
-        let middleIndex = Math.ceil(result[1].length/2);
-        list3a = result[1].splice(0,middleIndex);
-        list3b = result[1].splice(-middleIndex);
-    }
 
     return (
         <Container  className="pt-3">
@@ -67,13 +62,13 @@ function Thing () {
                                 <Row>
                                     {list1 && list1.map((index) => (
                                         <Col xs={12} className="mb-3" key={thing.quotes[index].quoteText}>
-                                            <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                            <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                     <Col xs={12} className="mb-3"><AdComponent/></Col>
                                     {list3a && list3a.map((index) => (
                                         <Col xs={12} className="mb-3 d-xs-block d-lg-none" key={"false" + thing.quotes[index].quoteText}>
-                                            <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                            <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -84,12 +79,12 @@ function Thing () {
                                 <Row>
                                     {list3a && list3a.map((index) => (
                                         <Col xs={12} className="mb-3 d-none d-lg-block" key={thing.quotes[index].quoteText}>
-                                            <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                            <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                     {list3b && list3b.map((index) => (
                                         <Col xs={12} className="mb-3 d-none d-lg-block" key={thing.quotes[index].quoteText}>
-                                            <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                            <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -100,13 +95,13 @@ function Thing () {
                                 <Row>
                                     {list3b && list3b.map((index) => (
                                         <Col xs={12} className="mb-3 d-xs-block d-lg-none" key={"false" + thing.quotes[index].quoteText}>
-                                            <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                            <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                     <Col xs={12} className="mb-3"><AdComponent/></Col>
                                     {list2 && list2.map((index) => (
                                         <Col xs={12} className="mb-3" key={thing.quotes[index].quoteText}>
-                                            <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                            <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                     <Col xs={12} className="mb-3"><AdComponent/></Col>

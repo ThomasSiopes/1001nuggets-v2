@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useMemo} from "react";
 import { Helmet } from "react-helmet";
 import { Navigate } from "react-router-dom";
 import { useQuery} from "@apollo/client";
@@ -13,40 +13,33 @@ const QuoteCard = React.lazy(() => import("../components/QuoteCard"));
 function SomePeople () {
     let {loading, data} = useQuery(QUERY_QUOTE_SP);
 
+    const { list1, list2, list3a, list3b, newIndexOrder } = useMemo(() => {
+            const quotes = data?.quoteSP.quotes;
+            if(!quotes) return { list1:[], list2:[], list3a:[], list3b:[], newIndexOrder:[] };
+    
+            let indexList = quotes.map((_, i) => i);
+            indexList = shuffle(indexList);
+    
+            let result = [];
+            for(let n = 3; n > 0; --n) {
+                result.push(indexList.splice(0, Math.ceil(indexList.length / n)));
+            }
+    
+            const list1 = result[0];
+            const list2 = result[2];
+            const middleIndex = Math.ceil(result[1].length / 2);
+            const list3a = result[1].splice(0, middleIndex);
+            const list3b = result[1].splice(-middleIndex);
+            const newIndexOrder = [...list1, ...list3a, ...list3b, ...list2];
+    
+            return{ list1, list2, list3a, list3b, newIndexOrder };
+        }, [data]);
+
     if(loading) return <p>Loading...</p>
 
     if(!data) return <Navigate to={`/404error`} replace/>;
 
     const quoteList = data.quoteSP;
-
-    let indexList = [];
-
-    for(let n = 0; n < quoteList.length; ++n) {
-        indexList.push(n);
-    }
-
-    if(!indexList) return <p>Loading...</p>
-
-    indexList = shuffle(indexList);
-
-    let list1 
-    let list2
-    let list3a
-    let list3b
-    if(quoteList) {
-        let result = [];
-        for(let i = 3; i > 0; --i) {
-            result.push(indexList.splice(0, Math.ceil(indexList.length / i)))
-        }
-        list1 = result[0];
-        list2 = result[2];
-        
-        let middleIndex = Math.ceil(result[1].length/2);
-        list3a = result[1].splice(0,middleIndex);
-        list3b = result[1].splice(-middleIndex);
-    }
-
-    console.log(quoteList)
 
     return (
         <Container className="pt-3">
@@ -63,7 +56,7 @@ function SomePeople () {
                                 <Row>
                                     {list1.map((index) => (
                                         <Col xs={12} className="mb-3" key={quoteList[index].quoteText}>
-                                            <QuoteCard quotes={quoteList} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                            <QuoteCard quotes={quoteList} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -73,7 +66,7 @@ function SomePeople () {
                                 <Row className="d-xs-block d-lg-none">
                                     {list3a.map((index) => (
                                         <Col xs={12} className="mb-3" key={"false" + quoteList[index].quoteText}>
-                                            <QuoteCard quotes={quoteList} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                            <QuoteCard quotes={quoteList} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -86,7 +79,7 @@ function SomePeople () {
                                 <Row>
                                     {list3a.map((index) => (
                                         <Col xs={12} className="mb-3" key={quoteList[index].quoteText}>
-                                            <QuoteCard quotes={quoteList} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                            <QuoteCard quotes={quoteList} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -95,7 +88,7 @@ function SomePeople () {
                                 <Row>
                                     {list3b.map((index) => (
                                         <Col xs={12} className="mb-3" key={quoteList[index].quoteText}>
-                                            <QuoteCard quotes={quoteList} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                            <QuoteCard quotes={quoteList} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -109,7 +102,7 @@ function SomePeople () {
                                 <Row className="d-xs-block d-lg-none">
                                     {list3b.map((index) => (
                                         <Col xs={12} className="mb-3" key={"false" + quoteList[index].quoteText}>
-                                            <QuoteCard quotes={quoteList} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                            <QuoteCard quotes={quoteList} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -118,7 +111,7 @@ function SomePeople () {
                                 <Row>
                                     {list2.map((index) => (
                                         <Col xs={12} className="mb-3" key={quoteList[index].quoteText}>
-                                            <QuoteCard quotes={quoteList} quoteIndex={index} indexOrder={list1.concat(list3a.concat(list3b.concat(list2)))}/>
+                                            <QuoteCard quotes={quoteList} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                 </Row>

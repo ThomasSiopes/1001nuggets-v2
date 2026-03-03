@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useMemo} from "react";
 import { Helmet } from "react-helmet";
 import { Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
@@ -13,9 +13,30 @@ const QuoteCard = React.lazy(() => import("../components/QuoteCard"));
 function Author () {
     const { authorRealId } = useParams();
     let { loading, data } = useQuery(QUERY_AUTHOR_REALID, {
-        variables: {authorRealId: authorRealId},
-        fetchPolicy: "cache-first"
+        variables: {authorRealId: authorRealId}, fetchPolicy: "cache-first"
     });
+
+    const { list1, list2, list3a, list3b, newIndexOrder } = useMemo(() => {
+            const quotes = data?.authorR.quotes;
+            if(!quotes) return { list1:[], list2:[], list3a:[], list3b:[], newIndexOrder:[] };
+    
+            let indexList = quotes.map((_, i) => i);
+            indexList = shuffle(indexList);
+    
+            let result = [];
+            for(let n = 3; n > 0; --n) {
+                result.push(indexList.splice(0, Math.ceil(indexList.length / n)));
+            }
+    
+            const list1 = result[0];
+            const list2 = result[2];
+            const middleIndex = Math.ceil(result[1].length / 2);
+            const list3a = result[1].splice(0, middleIndex);
+            const list3b = result[1].splice(-middleIndex);
+            const newIndexOrder = [...list1, ...list3a, ...list3b, ...list2];
+    
+            return{ list1, list2, list3a, list3b, newIndexOrder };
+        }, [data]);
 
     if(!authorRealId || authorRealId === null || authorRealId === "undefined") return <Navigate to={`/authors`}/>; 
 
@@ -24,39 +45,6 @@ function Author () {
     if(!data) return <Navigate to="/404error" replace />;
 
     const author = data.authorR;
-
-    let indexList = [];
-
-    for(let n = 0; ((n < author.quotes.length) && (n < 20)); ++n) {
-        indexList.push(n)
-    }
-
-    // for(let n = 0; (n < author.quotes.length); ++n) {
-    //     indexList.push(n)
-    // }
-
-    if(!indexList) return <p>Loading...</p>
-
-    indexList = shuffle(indexList);
-
-    let list1 
-    let list2 
-    let list3a
-    let list3b
-    if(indexList && author.quotes) {
-        let result = [];
-        for(let i = 3; i > 0; --i) {
-            result.push(indexList.splice(0, Math.ceil(indexList.length / i)))
-        }
-        list1 = result[0];
-        list2 = result[2];
-        
-        let middleIndex = Math.ceil(result[1].length/2);
-        list3a = result[1].splice(0,middleIndex);
-        list3b = result[1].splice(-middleIndex);
-    }
-
-    let newIndexOrder = list1.concat(list3a.concat(list3b.concat(list2)));
 
     let extraAuthors = null;
     if(author.relatedAuthors[0]) extraAuthors = author.relatedAuthors;
