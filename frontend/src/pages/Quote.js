@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Navigate, useParams } from "react-router-dom";
 import { useQuery} from "@apollo/client";
 
@@ -33,6 +33,7 @@ function Quote () {
     console.log(quote)
 
     return (
+        <HelmetProvider>
         <Container className="pt-5">
             <Helmet>
                 <title>1001 Nuggets - {quote.quoteText}</title>
@@ -90,6 +91,7 @@ function Quote () {
                 </Card.Body>
             </Card>
         </Container>
+        </HelmetProvider>
     )
 }
 

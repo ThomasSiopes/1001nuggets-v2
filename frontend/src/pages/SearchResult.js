@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Navigate, useParams } from 'react-router-dom';
 import { Container, Card } from "react-bootstrap";
 
@@ -11,6 +11,7 @@ function SearchResults() {
     if(!query || query === null || query === "undefined") return <Navigate to={`/`} replace/>;
     
     return (
+        <HelmetProvider>
         <Container className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - {query}</title>
@@ -24,6 +25,7 @@ function SearchResults() {
                 </Card.Body>
             </Card>
         </Container>
+        </HelmetProvider>
     )
 }
 

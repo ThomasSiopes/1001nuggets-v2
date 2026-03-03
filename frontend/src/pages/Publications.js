@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Card, Row, Col, Button } from "react-bootstrap";
 import icon1 from "../assets/images/bookpics/book1.webp";
 import icon2 from "../assets/images/bookpics/book2.webp";
@@ -12,6 +12,7 @@ import iconSB from "../assets/images/bookpics/bookSB.webp";
 
 function Publications() {
     return(
+        <HelmetProvider>
         <Container className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - Publications</title>
@@ -55,6 +56,7 @@ function Publications() {
                 </Card.Body>
             </Card>
         </Container>
+        </HelmetProvider>
     )
 }
 

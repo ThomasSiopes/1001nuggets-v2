@@ -1,5 +1,5 @@
 import React from "react";
-import {Helmet} from "react-helmet"
+import {Helmet, HelmetProvider} from "react-helmet-async"
 
 import { Container, Row, Col, Card } from "react-bootstrap";
 const EverywhereNavInst = React.lazy(() => import("../components/EverywhereNavInst"));
@@ -8,6 +8,7 @@ function Everywhere () {
     const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
     return (
+        <HelmetProvider>
         <Container className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - Everywhere</title>
@@ -35,6 +36,7 @@ function Everywhere () {
                 </div> */}
             </Row>
         </Container>
+        </HelmetProvider>
     )
 }
 

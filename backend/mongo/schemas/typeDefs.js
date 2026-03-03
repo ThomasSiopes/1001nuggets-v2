@@ -16,6 +16,7 @@ const typeDefs = gql`
         sortedName: String
         realID: String
         quotes: [Quote]!
+        quoteCount: Int
     }
 
     type TopicDetail {
@@ -97,7 +98,7 @@ const typeDefs = gql`
         topics: [Topic]
         topicName(name: String): Topic
         topicID(topicId: ID): Topic
-        topicR(topicRealId: String): Topic
+        topicR(topicRealId: String, offset: Int, limit: Int): Topic
         topicLetter(letter: String): [Topic]
         
         collections: [Collection]

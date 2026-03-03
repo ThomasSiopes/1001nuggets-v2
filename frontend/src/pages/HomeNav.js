@@ -1,9 +1,10 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Card, Row, Col, Button } from "react-bootstrap";
 
 function HomeNav() {
     return(
+        <HelmetPRovider>
         <Container className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - More Nuggets</title>
@@ -21,6 +22,7 @@ function HomeNav() {
                 </Card.Body>
             </Card>
         </Container>
+        </HelmetPRovider>
     )
 }
 

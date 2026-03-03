@@ -1,5 +1,5 @@
 import React from "react";
-import {Helmet} from "react-helmet"
+import {Helmet, HelmetProvider} from "react-helmet-async"
 
 import { Container, Row, Col, Card } from "react-bootstrap";
 const PeopleNavInst = React.lazy(() => import("../components/PeopleNavInst"));
@@ -8,6 +8,7 @@ function Peoples () {
     const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
     return (
+        <HelmetProvider>
         <Container className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - Everyone</title>
@@ -35,6 +36,7 @@ function Peoples () {
                 </div> */}
             </Row>
         </Container>
+        </HelmetProvider>
     )
 }
 

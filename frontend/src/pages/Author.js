@@ -1,5 +1,5 @@
 import React, {useMemo} from "react";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 
@@ -49,7 +49,8 @@ function Author () {
     let extraAuthors = null;
     if(author.relatedAuthors[0]) extraAuthors = author.relatedAuthors;
 
-    return (        
+    return (
+        <HelmetProvider>
         <Container className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - {author.name}</title>
@@ -129,6 +130,7 @@ function Author () {
                 </Card.Body>
             </Card>
         </Container>
+        </HelmetProvider>
     )
 }
 

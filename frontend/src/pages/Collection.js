@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 
@@ -24,6 +24,7 @@ function Collection () {
     const collection = data.collectionR
 
     return (
+        <HelmetProvider>
         <Container className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - {collection.name}</title>
@@ -41,6 +42,7 @@ function Collection () {
                 </Card.Body>
             </Card>
         </Container>
+        </HelmetProvider>
     )
 }
 

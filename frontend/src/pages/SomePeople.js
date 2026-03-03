@@ -1,5 +1,5 @@
 import React, {useMemo} from "react";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Navigate } from "react-router-dom";
 import { useQuery} from "@apollo/client";
 
@@ -42,6 +42,7 @@ function SomePeople () {
     const quoteList = data.quoteSP;
 
     return (
+        <HelmetProvider>
         <Container className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - Some People</title>
@@ -121,6 +122,7 @@ function SomePeople () {
                 </Card.Body>
             </Card>
         </Container>
+        </HelmetProvider>
     )
 }
 

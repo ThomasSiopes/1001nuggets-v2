@@ -1,12 +1,12 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const SmallHome = React.lazy(() => import("../components/HomeSmall"));
 const LargeHome = React.lazy(() => import("../components/LargeHome"));
 
 function Home () {      
     return (
-        <div>
+        <HelmetProvider>
             <Helmet>
                 <title>1001 Nuggets</title>
             </Helmet>
@@ -18,7 +18,7 @@ function Home () {
                     <SmallHome/>
                 </div>
             </div>
-        </div>
+        </HelmetProvider>
     )
 }
 

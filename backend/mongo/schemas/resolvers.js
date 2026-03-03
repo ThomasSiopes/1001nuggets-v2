@@ -30,8 +30,17 @@ const resolvers = {
         topicID: async (parent, { topicId }) => {
             return Topic.findOne({ _id: topicId }).populate('quotes');
         },
-        topicR: async (parent, { topicRealId }) => {
-            return Topic.findOne({ realID: topicRealId }).populate('quotes');;
+        topicR: async (parent, { topicRealId, offset=0, limit=9 }) => {
+            const topic = await Topic.findOne({realID: topicRealId}).lean();
+            if(!topic) return null;
+
+            const quoteCount = topic.quotes.length;
+            const pageIds = topic.quotes.slice(offset, offset + limit);
+            const quotes = await Quote.find({_id: { $in: pageIds }});
+
+            return {...topic, quotes, quoteCount};
+
+            // return Topic.findOne({ realID: topicRealId }).populate('quotes');;
         },
         topicLetter: async (parent, { letter }) => {
             return Topic.find({sortedName: {$regex: '^' + letter, $options: 'i'}})

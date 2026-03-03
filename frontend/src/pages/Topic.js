@@ -1,5 +1,5 @@
-import React, { useMemo } from "react";
-import { Helmet } from "react-helmet";
+import React, { useMemo, useState, useEffect, useRef } from "react";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 
@@ -11,11 +11,53 @@ import shuffle from "../utils/shuffle";
 const AdComponent = React.lazy(()=> import("../components/AdComponent"));
 const QuoteCard = React.lazy(() => import("../components/QuoteCard"));
 
+const PAGE_SIZE = 9;
+
 function Topic () {
     const { topicRealId } = useParams();
-    let {loading, data} = useQuery(QUERY_TOPIC_REALID, {
-        variables: {topicRealId: topicRealId}, fetchPolicy: "cache-first"
+
+    const [offset, setOffset] = useState(0);
+    // ref for sentinel element
+    const sentinelRef = useRef(null);
+
+    const {loading, data, fetchMore} = useQuery(QUERY_TOPIC_REALID, {
+        variables: {topicRealId: topicRealId, offset: 0, limit: PAGE_SIZE}, fetchPolicy: "cache-first"
     });
+
+    const quoteCount = data?.topicR?.quoteCount ?? 0;
+    const loadedCount = data?.topicR?.quotes?.length ?? 0;
+    const hasMore = loadedCount < quoteCount;
+
+    useEffect(() => {
+        if(!sentinelRef.current) return;
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                if(entries[0].isIntersecting && hasMore && !loading) {
+                    const nextOffset = offset + PAGE_SIZE;
+                    setOffset(nextOffset);
+                    fetchMore({
+                        variables: {topicRealId, offset: nextOffset, limit:PAGE_SIZE},
+                        updateQuery:(prev, {fetchMoreResult}) => {
+                            if(!fetchMoreResult?.topicR?.quotes?.length) return prev;
+                            return{
+                                topicR: {
+                                    ...prev.topicR,
+                                    quotes: [
+                                        ...prev.topicR.quotes,
+                                        ...fetchMoreResult.topicR.quotes,
+                                    ]
+                                }
+                            }
+                        }
+                    })
+                }
+            }, {rootMargin: "300px"}
+        );
+
+        observer.observe(sentinelRef.current);
+        return() => observer.disconnect();
+    }, [hasMore, loading, offset, topicRealId, fetchMore]);
 
     const { list1, list2, list3a, list3b, newIndexOrder } = useMemo(() => {
         const quotes = data?.topicR.quotes;
@@ -48,6 +90,7 @@ function Topic () {
     const topic = data.topicR;
 
     return (
+        <HelmetProvider>
         <Container  className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - {topic.name}</title>
@@ -107,9 +150,12 @@ function Topic () {
                             </Row>
                         </Col>
                     </Row>
+
+                    <div ref={sentinelRef} style={{height:1}}/>
                 </Card.Body>
             </Card>
         </Container>
+        </HelmetProvider>
     )
 }
 
