@@ -5,13 +5,11 @@ import { QUERY_COLLECTION_LETTER } from "../../utils/queries";
 
 function CollectionNavInst({ letter }) {
     const ref = useRef(null);
-    const [fetchLetter, { loading, data }] = useLazyQuery(QUERY_COLLECTION_LETTER, {
-        variables: { letter },
-    });
+    const [fetchLetter, { loading, data }] = useLazyQuery(QUERY_COLLECTION_LETTER);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
-            ([entry]) => { if (entry.isIntersecting) { fetchLetter(); observer.disconnect(); } },
+            ([entry]) => { if (entry.isIntersecting) { fetchLetter({variables: { letter }}); observer.disconnect(); } },
             { rootMargin: "200px" } // start fetching 200px before it enters view
         );
         if (ref.current) observer.observe(ref.current);

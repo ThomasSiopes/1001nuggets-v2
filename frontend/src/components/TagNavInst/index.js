@@ -5,13 +5,11 @@ import { QUERY_TAG_LETTER } from "../../utils/queries";
 
 function TagNavInst({ letter }) {
     const ref = useRef(null);
-    const [fetchLetter, { loading, data }] = useLazyQuery(QUERY_TAG_LETTER, {
-        variables: { letter },
-    });
+    const [fetchLetter, { loading, data }] = useLazyQuery(QUERY_TAG_LETTER);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
-            ([entry]) => { if (entry.isIntersecting) { fetchLetter(); observer.disconnect(); } },
+            ([entry]) => { if (entry.isIntersecting) { fetchLetter({variables: { letter }}); observer.disconnect(); } },
             { rootMargin: "200px"}
         );
         if (ref.current) observer.observe(ref.current);

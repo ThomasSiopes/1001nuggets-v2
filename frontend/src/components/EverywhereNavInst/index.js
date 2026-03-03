@@ -5,13 +5,11 @@ import { QUERY_EVERYWHERE_LETTER } from "../../utils/queries";
 
 function EverywhereNavInst({ letter }) {
     const ref = useRef(null);
-    const [fetchLetter, { loading, data }] = useLazyQuery(QUERY_EVERYWHERE_LETTER, {
-        variables: { letter },
-    });
+    const [fetchLetter, { loading, data }] = useLazyQuery(QUERY_EVERYWHERE_LETTER);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
-            ([entry]) => { if (entry.isIntersecting) { fetchLetter(); observer.disconnect(); } },
+            ([entry]) => { if (entry.isIntersecting) { fetchLetter({variables: { letter }}); observer.disconnect(); } },
             { rootMargin: "200px"}
         );
         if (ref.current) observer.observe(ref.current);
