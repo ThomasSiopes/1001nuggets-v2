@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { Helmet } from "react-helmet";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
@@ -15,6 +15,7 @@ function Topic () {
     const { topicRealId } = useParams();
     let {loading, data} = useQuery(QUERY_TOPIC_REALID, {
         variables: {topicRealId: topicRealId},
+        fetchPolicy: "cache-first"
     });
 
     if(!topicRealId || topicRealId === null || topicRealId === "undefined") return <Navigate to="/topics" replace />;

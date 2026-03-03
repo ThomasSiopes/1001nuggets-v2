@@ -14,7 +14,7 @@ const QuoteCard = React.lazy(() => import("../components/QuoteCard"));
 function Everywhere () {
     const { everywhereRealId } = useParams();
     let {loading, data} = useQuery(QUERY_EVERYWHERE_REALID, 
-        {variables: {everywhereRealId: everywhereRealId}}
+        {variables: {everywhereRealId: everywhereRealId}, fetchPolicy: "cache-first"}
     );
 
     if(!everywhereRealId || everywhereRealId === null || everywhereRealId === "undefined") return <Navigate to={`/everywheres`} replace/>;

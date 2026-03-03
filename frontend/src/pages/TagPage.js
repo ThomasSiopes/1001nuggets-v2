@@ -12,6 +12,7 @@ function TagPage () {
     const { tagId } = useParams();
     let {loading, data} = useQuery(QUERY_TAG_ID, {
         variables: {tagId: tagId},
+        fetchPolicy: "cache-first"
     });
 
     if(!tagId || tagId === null || tagId === "undefined") return <Navigate to={`/authors`} replace/>;

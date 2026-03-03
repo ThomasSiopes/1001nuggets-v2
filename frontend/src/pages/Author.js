@@ -13,7 +13,8 @@ const QuoteCard = React.lazy(() => import("../components/QuoteCard"));
 function Author () {
     const { authorRealId } = useParams();
     let { loading, data } = useQuery(QUERY_AUTHOR_REALID, {
-        variables: {authorRealId: authorRealId },
+        variables: {authorRealId: authorRealId},
+        fetchPolicy: "cache-first"
     });
 
     if(!authorRealId || authorRealId === null || authorRealId === "undefined") return <Navigate to={`/authors`}/>; 

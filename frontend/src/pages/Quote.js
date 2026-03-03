@@ -17,6 +17,7 @@ function Quote () {
     const { quoteRealId } = useParams();
     let { loading, data } = useQuery(QUERY_QUOTE_REALID, {
         variables: {quoteRealId: quoteRealId},
+        fetchPolicy: "cache-first"
     })
 
     if(!quoteRealId || quoteRealId === null || quoteRealId === "undefined") return <Navigate to={`/404error`} replace/>;
