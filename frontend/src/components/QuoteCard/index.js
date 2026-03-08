@@ -15,7 +15,7 @@ import QuoteCardText from '../QuoteCardText';
 function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
   const [show, setShow] = useState(false);
   const [currentQuote, setIndex] = useState(quoteIndex);
-  const [fontSize, setFontSize] = useState(32);
+  const [fontSize, setFontSize] = useState(23);
 
   const handleClose = () => {
     setShow(false);
@@ -55,7 +55,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
         <Modal.Header className="text-theme" closeButton/>
 
         {/* Slider */}
-        <input type="range" className="mx-2 slider" min="22" max="40" value={fontSize} id="myRange" onChange={handleFontResize}/>
+        <input type="range" className="mx-2 slider" min="14" max="32" value={fontSize} id="myRange" onChange={handleFontResize}/>
 
         <Carousel activeIndex={currentQuote} indicators={false} interval={null} onSelect={handleSelect} touch={true} wrap={false} prevIcon={<MdKeyboardArrowLeft stroke={"black"} fill={"black"}/>} nextIcon={<MdKeyboardArrowRight stroke={"black"} fill={"black"}/>}>
           {indexOrder.map((index, position) => {
