@@ -11,7 +11,7 @@ import shuffle from "../utils/shuffle";
 const AdComponent = React.lazy(()=> import("../components/AdComponent"));
 const QuoteCard = React.lazy(() => import("../components/QuoteCard"));
 
-const PAGE_SIZE = 9;
+const PAGE_SIZE = 15;
 
 function Topic () {
     const { topicRealId } = useParams();

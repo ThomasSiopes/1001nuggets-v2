@@ -187,6 +187,20 @@ const resolvers = {
         },
     },
 
+    Tag: {
+        authorDetails: async(parent) => {
+            if(!parent.authors || parent.authors.length === 0) return [];
+            const found = await Author.find(
+                {name: {$in: parent.authors}},
+                {name: 1, realID: 1}
+            );
+            return parent.authors.map(name => {
+                const a = found.find(a => a.name === name);
+                return { name, realID: a ? a.realID : null};
+            });
+        }  
+    },
+
     Collection: {
         topicDetails: async(parent) => {
             if(!parent.topics || parent.topics.length === 0) return [];

@@ -23,6 +23,8 @@ function TagPage () {
 
     const tag = data.tagID;
 
+    console.log(tag)
+
     return (
         <HelmetProvider>
         <Container className="pt-3">
@@ -33,9 +35,9 @@ function TagPage () {
                 <Card.Header className="bg-light rounded">Home {`>`} <Link className="link-theme" to={`/authors`}>Author Tags</Link> {`>`} {tag.tag}</Card.Header>
                 <Card.Body bg={"transparent"}>
                     <Row>
-                         {tag.authors.map((index) => (
+                         {tag.authorDetails.map((index) => (
                             <Col key={index} className="mb-3" xs={12} sm={6} md={4}>
-                                <AuthorButton type={"button-block"} name={index} theme={"weak"}/>
+                                <AuthorButton type={"button-block"} name={index.name} realID={index.realID} theme={"weak"}/>
                             </Col>
                          ))}
                     </Row>

@@ -10,6 +10,11 @@ const typeDefs = gql`
         relatedAuthors: [String]!
     }
 
+    type AuthorDetail {
+        name: String
+        realID: String
+    }
+
     type Topic {
         _id: ID
         name: String
@@ -62,6 +67,7 @@ const typeDefs = gql`
         tag: String
         sortedName: String
         authors: [String]!
+        authorDetails: [AuthorDetail]!
     }
 
     type People {

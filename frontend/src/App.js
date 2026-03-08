@@ -93,6 +93,8 @@ function App () {
 
             <Route exact path="/authors" element={<TagNav/>}/>
             <Route exact path="/authortag/:tagId" element={<TagPage/>}/>
+            <Route exact path="/author/:authorRealId" element={<Author/>}/>
+            {/* <Route exact path="/authors" element={<AuthorNav/>}*/}
 
             <Route exact path="/everyone" element={<PeopleNav/>}/>
             <Route exact path="/person/:peopleRealId" element={<PeoplePage/>}/>
@@ -103,12 +105,9 @@ function App () {
             <Route exact path="/everywhere" element={<EverywhereNav/>}/>
             <Route exact path="/place/:everywhereRealId" element={<EverywherePage/>}/>
 
-            <Route exact path="/author/:authorRealId" element={<Author/>}/>
-
             <Route exact path="/quote/:quoteRealId" element={<Quote/>}/>
 
             <Route exact path="/search/:query" element={<SearchResult/>}/>
-            {/* <Route exact path="/authors" element={<AuthorNav/>}*/}
 
             <Route exact path="/publications" element={<Publications/>}/>
             {/* <Route exact path="/more quotes" element={<HomeNav/>}*/}

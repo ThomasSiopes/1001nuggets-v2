@@ -54,7 +54,6 @@ function NavBar() {
                         <Nav.Link href="/everything">Everything</Nav.Link>
                         <Nav.Link href="/everyone">Everyone</Nav.Link>
                         <Nav.Link href="/everywhere">Everywhere</Nav.Link>
-                        {/* <Nav.Link href="/authors">Authors</Nav.Link> */}
                         <Nav.Link href="/publications">Publications</Nav.Link>
                     </Nav>
                     <Nav className="ms-auto">
@@ -91,7 +90,6 @@ function NavBar() {
                             <Button variant={"theme"} href={`/everything`} className="btn-block my-3">Everything</Button>
                             <Button variant={"theme"} href={`/everyone`} className="btn-block my-3">Everyone</Button>
                             <Button variant={"theme"} href={`/everywhere`} className="btn-block my-3">Everywhere</Button>
-                            {/* <Button variant={"theme"} href={`/authors`} className="btn-block my-3">Authors</Button> */}
                             <Button variant={"theme"} href={`/publications`} className="btn-block my-3">Publications</Button>
                         </Card.Footer>
                     </Card>

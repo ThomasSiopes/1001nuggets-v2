@@ -296,6 +296,7 @@ export const QUERY_TAG_ID = gql`
             tag
             authors
             sortedName
+            authorDetails { name realID }
         }
     }
 `;
