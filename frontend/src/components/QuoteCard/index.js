@@ -15,7 +15,7 @@ import QuoteCardText from '../QuoteCardText';
 function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
   const [show, setShow] = useState(false);
   const [currentQuote, setIndex] = useState(quoteIndex);
-  const [fontSize, setFontSize] = useState(23);
+  const [fontSize, setFontSize] = useState(20);
 
   const handleClose = () => {
     setShow(false);
