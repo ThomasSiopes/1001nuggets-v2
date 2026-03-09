@@ -12,6 +12,7 @@ const NavBar = React.lazy(() => import("./components/NavBar"));
 const Home = React.lazy(() => import("./pages/Home"))
 
 const Author = React.lazy(() => import("./pages/Author"));
+// const AuthorNav = React.lazy(() => import("./pages/AuthorNav"));
 const Quote = React.lazy(() => import("./pages/Quote"));
 
 const Topic = React.lazy(() => import("./pages/Topic"));
@@ -36,8 +37,7 @@ const SearchResult = React.lazy(() => import("./pages/SearchResult"));
 // const HomeNav = React.lazy(() => import("./pages/HomeNav"));
 const Publications = React.lazy(() => import("./pages/Publications"));
 
-// const AuthorNav = React.lazy(() => import("./pages/AuthorNav"));
-
+const GlossaryNav = React.lazy(() => import("./pages/GlossaryNav"));
 
 // Client & Cache Stuff
 const clientInfo = {

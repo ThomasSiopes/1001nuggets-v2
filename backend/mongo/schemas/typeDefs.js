@@ -94,6 +94,18 @@ const typeDefs = gql`
         quotes: [Quote]!
     }
 
+    type Glossary {
+        _id: ID
+        typing: String
+        content: [GlossaryIndex]!
+    }
+
+    type GlossaryIndex {
+        index: String
+        definition: String
+        sortedName: String
+    }
+
     type Query {
         authors: [Author]
         authorName(name: String): Author
@@ -137,6 +149,9 @@ const typeDefs = gql`
         tags: [Tag]
         tagLetter(letter: String): [Tag]
         tagID(tagId: ID): Tag
+
+        glossaryAll: [Glossary]
+        glossaryType(typing: String): Glossary
 
         dailyQuote: [QOTD]
     }

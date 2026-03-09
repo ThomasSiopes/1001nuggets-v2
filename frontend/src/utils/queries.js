@@ -433,6 +433,32 @@ export const QUERY_EVERYWHERE_REALID = gql`
     }
 `;
 
+export const QUERY_GLOSSARY_ALL = gql`
+    query getGlossary {
+        glossaryAll {
+            typing
+            content {
+                index
+                definition
+                sortedName
+            }
+        }
+    }
+`
+
+export const QUERY_GLOSSARY_TYPING = gql`
+    query getGlossary($typing: String!) {
+        glossaryType(typing: $typing) {
+            typing
+            content {
+                index
+                definition
+                sortedName
+            }
+        }
+    }
+`
+
 export const QUERY_QOTD = gql`
     query getQOTD {
         dailyQuote {

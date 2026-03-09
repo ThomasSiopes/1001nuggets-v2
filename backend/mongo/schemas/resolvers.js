@@ -1,4 +1,4 @@
-const { Author, Topic, Quote, Collection, QOTD, Tag, People, Things, Everywhere } = require("../models");
+const { Author, Topic, Quote, Collection, QOTD, Tag, People, Things, Everywhere, Glossary } = require("../models");
 
 const resolvers = {
     Query: {
@@ -119,7 +119,7 @@ const resolvers = {
             return Things.findOne({ realID: thingRealId }).populate('quotes');
         },
 
-        // things
+        // places
         everywhereAll: async () => {
             return Everywhere.find().populate('quotes');
         },
@@ -131,6 +131,15 @@ const resolvers = {
         },
         everywhereR: async (parent, { everywhereRealId }) => {
             return Everywhere.findOne({ realID: everywhereRealId }).populate('quotes');
+        },
+
+        // glossary
+        glossaryAll: async () => {
+            return Glossary.find();
+        },
+
+        glossaryType: async (parent, {typing}) => {
+            return Glossary.findOne({typing: typing});
         },
 
         // QOTD

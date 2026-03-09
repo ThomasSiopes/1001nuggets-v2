@@ -7,5 +7,6 @@ const QOTD = require("./QOTD");
 const People = require("./People");
 const Things = require("./Thing");
 const Everywhere = require("./Everywhere");
+const Glossary = require("./Glossary");
 
-module.exports = {Author, Topic, Quote, Collection, QOTD, Tag, People, Things, Everywhere};
+module.exports = {Author, Topic, Quote, Collection, QOTD, Tag, People, Things, Everywhere, Glossary};
