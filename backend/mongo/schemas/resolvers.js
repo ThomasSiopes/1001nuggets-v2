@@ -236,37 +236,43 @@ const resolvers = {
         realID: async(parent) => {
             if(!parent.index || !parent.typing) return null;
             
-            let returnVal = null;
+            let returnVal = "n/a";
+            let found = null;
             switch(parent.typing){
                 case "topics": {
-                    returnVal = await Topic.findOne(
+                    found = await Topic.findOne(
                         { name: parent.index },
                         { realID: 1 }
                     );
+                    returnVal = found.realID;
                 } break;
                 case "collections": {
-                    returnVal = await Collection.findOne(
+                    found = await Collection.findOne(
                         { name: parent.index },
                         { realID: 1 }
                     );
+                    returnVal = found.realID;
                 } break;
                 case "everything": {
-                    returnVal = await Things.findOne(
+                    found = await Things.findOne(
                         { name: parent.index },
                         { realID: 1 }
                     );
+                    returnVal = found.realID;
                 } break;
                 case "everyone": {
-                    returnVal = await People.findOne(
+                    found = await People.findOne(
                         { name: parent.index },
                         { realID: 1 }
                     );
+                    returnVal = found.realID;
                 } break;
                 case "everywhere": {
-                    returnVal = await Everywhere.findOne(
+                    found = await Everywhere.findOne(
                         { name: parent.index },
                         { realID: 1 }
                     );
+                    returnVal = found.realID;
                 } break;
                 default: {
                     returnVal = parent.index.replace(/[^a-zA-Z]/g), '';

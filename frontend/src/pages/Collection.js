@@ -12,7 +12,7 @@ function Collection () {
     const { collectionRealId } = useParams();
     let {loading, data} = useQuery(QUERY_COLLECTION_REALID, {
         variables: {collectionRealId: collectionRealId},
-        fetchPolicy: "cache-first"
+        fetchPolicy: "cache-and-network"
     });
 
     if(!collectionRealId || collectionRealId === null || collectionRealId === "undefined") return <Navigate to={`/collections`} replace/>;

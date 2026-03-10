@@ -13,7 +13,7 @@ const QuoteCard = React.lazy(() => import("../components/QuoteCard"));
 function Author () {
     const { authorRealId } = useParams();
     let { loading, data } = useQuery(QUERY_AUTHOR_REALID, {
-        variables: {authorRealId: authorRealId}, fetchPolicy: "cache-first"
+        variables: {authorRealId: authorRealId}, fetchPolicy: "cache-and-network"
     });
 
     const { list1, list2, list3a, list3b, newIndexOrder } = useMemo(() => {

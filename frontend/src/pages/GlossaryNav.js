@@ -15,6 +15,8 @@ function GlossaryNav () {
 
     const glossary = data.glossaryAll;
 
+    console.log(glossary)
+
     return (
         <HelmetProvider>
             <Container className="pt-3">

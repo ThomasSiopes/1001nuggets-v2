@@ -21,7 +21,7 @@ function Topic () {
     const sentinelRef = useRef(null);
 
     const {loading, data, fetchMore} = useQuery(QUERY_TOPIC_REALID, {
-        variables: {topicRealId: topicRealId, offset: 0, limit: PAGE_SIZE}, fetchPolicy: "cache-first"
+        variables: {topicRealId: topicRealId, offset: 0, limit: PAGE_SIZE}, fetchPolicy: "cache-and-network"
     });
 
     const quoteCount = data?.topicR?.quoteCount ?? 0;

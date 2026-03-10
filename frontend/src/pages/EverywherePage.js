@@ -14,7 +14,7 @@ const QuoteCard = React.lazy(() => import("../components/QuoteCard"));
 function Everywhere () {
     const { everywhereRealId } = useParams();
     let {loading, data} = useQuery(QUERY_EVERYWHERE_REALID, 
-        {variables: {everywhereRealId: everywhereRealId}, fetchPolicy: "cache-first"}
+        {variables: {everywhereRealId: everywhereRealId}, fetchPolicy: "cache-and-network"}
     );
 
     const { list1, list2, list3a, list3b, newIndexOrder } = useMemo(() => {
