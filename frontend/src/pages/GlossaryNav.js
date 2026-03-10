@@ -30,7 +30,7 @@ function GlossaryNav () {
                     <title>1001 Nuggets - Glossary</title>
                 </Helmet>
                 <Card className="justify-content-center text-center" bg={"transparent"} border={"none"}>
-                    <Card.Header className="bg-light rounded my-2">
+                    <Card.Header className="bg-light rounded py-3">
                         <h1>GLOSSARY</h1>
                     </Card.Header>
                     <Card.Body>
