@@ -45,6 +45,7 @@ function GlossaryIndex () {
                             <div key={index.index}>
                                 <p><strong><Link to={"/" + prefix + "/" +  index.realID} className="link-theme">{index.index}</Link></strong> - {index.definition}</p>
                                 {/* <p><strong>{index.index}</strong> - {index.definition}</p> */}
+                                <hr/>
                             </div>
                         ))}
                     </Card.Body>
