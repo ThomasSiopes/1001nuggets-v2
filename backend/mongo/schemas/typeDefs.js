@@ -102,6 +102,7 @@ const typeDefs = gql`
 
     type GlossaryIndex {
         index: String
+        realID: String
         definition: String
         sortedName: String
     }

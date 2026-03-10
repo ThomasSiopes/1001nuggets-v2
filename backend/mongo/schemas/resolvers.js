@@ -222,6 +222,60 @@ const resolvers = {
             });
         },
     },
+
+    Glossary: {
+        content: (parent) => {
+            return parent.content.map(item => ({
+            ...item.toObject ? item.toObject() : item,
+            typing: parent.typing
+            }));
+        }
+    },
+
+    GlossaryIndex: {
+        realID: async(parent) => {
+            if(!parent.index || !parent.typing) return null;
+            
+            let returnVal = null;
+            switch(parent.typing){
+                case "topics": {
+                    returnVal = await Topic.findOne(
+                        { name: parent.index },
+                        { realID: 1 }
+                    );
+                } break;
+                case "collections": {
+                    returnVal = await Collection.findOne(
+                        { name: parent.index },
+                        { realID: 1 }
+                    );
+                } break;
+                case "everything": {
+                    returnVal = await Things.findOne(
+                        { name: parent.index },
+                        { realID: 1 }
+                    );
+                } break;
+                case "everyone": {
+                    returnVal = await People.findOne(
+                        { name: parent.index },
+                        { realID: 1 }
+                    );
+                } break;
+                case "everywhere": {
+                    returnVal = await Everywhere.findOne(
+                        { name: parent.index },
+                        { realID: 1 }
+                    );
+                } break;
+                default: {
+                    returnVal = parent.index.replace(/[^a-zA-Z]/g), '';
+                }
+            }
+
+            return returnVal;
+        },
+    },
 }
 
 module.exports = resolvers;
