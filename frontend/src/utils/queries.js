@@ -449,6 +449,7 @@ export const QUERY_GLOSSARY_TYPING = gql`
                 index
                 definition
                 sortedName
+                realID
             }
         }
     }

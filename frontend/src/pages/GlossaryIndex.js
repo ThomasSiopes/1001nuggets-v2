@@ -28,21 +28,23 @@ function GlossaryIndex () {
         default: prefix="topic";
     }
 
+    const typingCap = String(typing).charAt(0).toUpperCase() + String(typing).slice(1);
+
     return (
         <HelmetProvider>
             <Container className="pt-3">
                 <Helmet>
-                    <title>1001 Nuggets - Glossary - {typing}</title>
+                    <title>1001 Nuggets - Glossary - {typingCap}</title>
                 </Helmet>
                 <Card>
                     <Card.Header className="my-2 justify-content-center text-center">
-                        <h1>{typing}</h1>
+                        <h1>{typingCap}</h1>
                     </Card.Header>
                     <Card.Body>
                         {glossaryIndex.content.map((index) => (
-                            <div>
-                                {/* <p><strong><Link to={"/" + prefix + "/" +  index.index} className="link-theme">{index.index}</Link></strong> - {index.definition}</p> */}
-                                <p><strong>{index.index}</strong> - {index.definition}</p>
+                            <div key={index.index}>
+                                <p><strong><Link to={"/" + prefix + "/" +  index.realID} className="link-theme">{index.index}</Link></strong> - {index.definition}</p>
+                                {/* <p><strong>{index.index}</strong> - {index.definition}</p> */}
                             </div>
                         ))}
                     </Card.Body>
