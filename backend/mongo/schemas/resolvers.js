@@ -182,7 +182,6 @@ const resolvers = {
             });
         },
 
-        
         unrelatedTopicDetails: async(parent) => {
             if(!parent.unrelatedTopics || parent.unrelatedTopics.length === 0) return [];
             const found = await Topic.find(
@@ -222,7 +221,7 @@ const resolvers = {
                 return { name, realID: t ? t.realID : null };
             });
         },
-    }
+    },
 }
 
 module.exports = resolvers;
