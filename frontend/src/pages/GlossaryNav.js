@@ -15,7 +15,7 @@ function GlossaryNav () {
 
     const glossary = data.glossaryAll;
 
-    console.log(glossary)
+    
 
     return (
         <HelmetProvider>
@@ -30,8 +30,8 @@ function GlossaryNav () {
                     <Card.Body>
                         {glossary.map((index) => (
                             <div className="mb-3" key={index.typing}>
-                                <Button className="btn-block py-2" variant={"weak"} href={`/glossary/${index.typing}`}>
-                                    {index.typing}
+                                <Button className="btn-block py-3" variant={"weak"} href={`/glossary/${index.typing}`}>
+                                    {String(index.typing).charAt(0).toUpperCase() + String(index.typing).slice(1)}
                                 </Button>
                             </div>
                         ))}

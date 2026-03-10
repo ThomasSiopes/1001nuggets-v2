@@ -97,11 +97,13 @@ const typeDefs = gql`
     type Glossary {
         _id: ID
         typing: String
+        sortedName: String
         content: [GlossaryIndex]!
     }
 
     type GlossaryIndex {
         index: String
+        typing: String!
         realID: String
         definition: String
         sortedName: String

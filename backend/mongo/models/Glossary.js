@@ -6,9 +6,14 @@ const glossary = new Schema({
         required: true,
         unique: true,
     },
+    sortedName: {
+        type: String,
+        required: true
+    },
     content: [
         {
             index: {type: String, required:true, unique:true},
+            typing: {type: String, required:true, unique:true},
             definition: {type: String, required:true},
             sortedName: {type: String, required:true, unique:true},
         }

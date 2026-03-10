@@ -223,63 +223,60 @@ const resolvers = {
         },
     },
 
-    Glossary: {
-        content: (parent) => {
-            return parent.content.map(item => ({
-            ...item.toObject ? item.toObject() : item,
-            typing: parent.typing
-            }));
-        }
-    },
+    // Glossary: {
+    //     content: (parent) => {
+    //         return parent.content.map(item => ({
+    //         ...item.toObject ? item.toObject() : item,
+    //         typing: parent.typing
+    //         }));
+    //     }
+    // },
 
     GlossaryIndex: {
         realID: async(parent) => {
-            if(!parent.index || !parent.typing) return null;
+            if(!parent.index) return "";
             
-            let returnVal = "n/a";
-            let found = null;
+            let found;
             switch(parent.typing){
                 case "topics": {
                     found = await Topic.findOne(
                         { name: parent.index },
                         { realID: 1 }
                     );
-                    returnVal = found.realID;
-                } break;
+                    return (found.realID);
+                }
                 case "collections": {
                     found = await Collection.findOne(
                         { name: parent.index },
                         { realID: 1 }
                     );
-                    returnVal = found.realID;
-                } break;
+                    return (found.realID);
+                }
                 case "everything": {
                     found = await Things.findOne(
                         { name: parent.index },
                         { realID: 1 }
                     );
-                    returnVal = found.realID;
-                } break;
+                    return (found.realID);
+                }
                 case "everyone": {
                     found = await People.findOne(
                         { name: parent.index },
                         { realID: 1 }
                     );
-                    returnVal = found.realID;
-                } break;
+                    return (found.realID);
+                }
                 case "everywhere": {
                     found = await Everywhere.findOne(
                         { name: parent.index },
                         { realID: 1 }
                     );
-                    returnVal = found.realID;
-                } break;
+                    return (found.realID);
+                }
                 default: {
-                    returnVal = parent.index.replace(/[^a-zA-Z]/g), '';
+                    return (parent.index);
                 }
             }
-
-            return returnVal;
         },
     },
 }
