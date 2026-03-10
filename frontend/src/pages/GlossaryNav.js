@@ -15,7 +15,13 @@ function GlossaryNav () {
 
     const glossary = data.glossaryAll;
 
+    let sortedList = glossary.map((item) => Object.assign({}, item, {selected:false}));
     
+    sortedList = sortedList.sort(function(a,b) {
+        if(a.sortedName < b.sortedName) return -1;
+        if(a.sortedName > b.sortedName) return 1;
+        return 0;
+    });
 
     return (
         <HelmetProvider>
@@ -28,7 +34,7 @@ function GlossaryNav () {
                         <h1>GLOSSARY</h1>
                     </Card.Header>
                     <Card.Body>
-                        {glossary.map((index) => (
+                        {sortedList.map((index) => (
                             <div className="mb-3" key={index.typing}>
                                 <Button className="btn-block py-3" variant={"weak"} href={`/glossary/${index.typing}`}>
                                     {String(index.typing).charAt(0).toUpperCase() + String(index.typing).slice(1)}

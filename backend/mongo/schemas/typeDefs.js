@@ -97,7 +97,7 @@ const typeDefs = gql`
     type Glossary {
         _id: ID
         typing: String
-        sortedName: String
+        sortedName: String!
         content: [GlossaryIndex]!
     }
 
