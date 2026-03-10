@@ -38,6 +38,7 @@ const SearchResult = React.lazy(() => import("./pages/SearchResult"));
 const Publications = React.lazy(() => import("./pages/Publications"));
 
 const GlossaryNav = React.lazy(() => import("./pages/GlossaryNav"));
+const GlossaryIndex = React.lazy(() => import("./pages/GlossaryIndex"));
 
 // Client & Cache Stuff
 const clientInfo = {
@@ -110,6 +111,10 @@ function App () {
             <Route exact path="/search/:query" element={<SearchResult/>}/>
 
             <Route exact path="/publications" element={<Publications/>}/>
+
+            <Route exact path="/glossary" element={<GlossaryNav/>}/>
+            <Route exact path="/glossary/:typing" element={<GlossaryIndex/>}/>
+
             {/* <Route exact path="/more quotes" element={<HomeNav/>}*/}
           </Routes>
         </React.Suspense>

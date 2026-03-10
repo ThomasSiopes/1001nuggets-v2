@@ -47,13 +47,14 @@ function NavBar() {
                 <Link className="navbar-brand me-0 p-0" to={`/`}><img id="nav-icon" src={iconImage} alt="Logo"/></Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav" className="mx-2">
-                    <Nav className="me-auto text-center">
+                    <Nav className="me-auto justify-content-center text-center">
                         {/* <Nav.Link href="/authors">Authors</Nav.Link> */}
                         <Nav.Link href="/topics">Topics</Nav.Link>
                         <Nav.Link href="/collections">Collections</Nav.Link>
                         <Nav.Link href="/everything">Everything</Nav.Link>
                         <Nav.Link href="/everyone">Everyone</Nav.Link>
                         <Nav.Link href="/everywhere">Everywhere</Nav.Link>
+                        <Nav.Link href="/glossary">Glossary</Nav.Link>
                         <Nav.Link href="/publications">Publications</Nav.Link>
                     </Nav>
                     <Nav className="ms-auto">
@@ -90,6 +91,7 @@ function NavBar() {
                             <Button variant={"theme"} href={`/everything`} className="btn-block my-3">Everything</Button>
                             <Button variant={"theme"} href={`/everyone`} className="btn-block my-3">Everyone</Button>
                             <Button variant={"theme"} href={`/everywhere`} className="btn-block my-3">Everywhere</Button>
+                            <Button variant={"theme"} href={`/glossary`} className="btn-block my-3">Glossary</Button>
                             <Button variant={"theme"} href={`/publications`} className="btn-block my-3">Publications</Button>
                         </Card.Footer>
                     </Card>

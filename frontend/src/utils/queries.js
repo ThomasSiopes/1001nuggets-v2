@@ -437,11 +437,6 @@ export const QUERY_GLOSSARY_ALL = gql`
     query getGlossary {
         glossaryAll {
             typing
-            content {
-                index
-                definition
-                sortedName
-            }
         }
     }
 `
