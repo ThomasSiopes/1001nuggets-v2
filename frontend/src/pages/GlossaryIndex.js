@@ -41,7 +41,8 @@ function GlossaryIndex () {
                     <Card.Body>
                         {glossaryIndex.content.map((index) => (
                             <div>
-                                <p><strong><Link to={"/" + prefix + "/" +  index.index} className="link-theme">{index.index}</Link></strong> - {index.definition}</p>
+                                {/* <p><strong><Link to={"/" + prefix + "/" +  index.index} className="link-theme">{index.index}</Link></strong> - {index.definition}</p> */}
+                                <p><strong>{index.index}</strong> - {index.definition}</p>
                             </div>
                         ))}
                     </Card.Body>
