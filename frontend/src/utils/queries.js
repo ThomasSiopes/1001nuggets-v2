@@ -443,9 +443,10 @@ export const QUERY_GLOSSARY_ALL = gql`
 `
 
 export const QUERY_GLOSSARY_TYPING = gql`
-    query getGlossary($typing: String!) {
+    query getGlossaryByType($typing: String!) {
         glossaryType(typing: $typing) {
             sortedName
+            typing
             content {
                 index
                 definition

@@ -243,35 +243,35 @@ const resolvers = {
                         { name: parent.index },
                         { realID: 1 }
                     );
-                    return (found.realID);
+                    return (found ? found.realID : parent.index);
                 }
                 case "collections": {
                     found = await Collection.findOne(
                         { name: parent.index },
                         { realID: 1 }
                     );
-                    return (found.realID);
+                    return (found ? found.realID : parent.index);
                 }
                 case "everything": {
                     found = await Things.findOne(
                         { name: parent.index },
                         { realID: 1 }
                     );
-                    return (found.realID);
+                    return (found ? found.realID : parent.index);
                 }
                 case "everyone": {
                     found = await People.findOne(
                         { name: parent.index },
                         { realID: 1 }
                     );
-                    return (found.realID);
+                    return (found ? found.realID : parent.index);
                 }
                 case "everywhere": {
                     found = await Everywhere.findOne(
                         { name: parent.index },
                         { realID: 1 }
                     );
-                    return (found.realID);
+                    return (found ? found.realID : parent.index);
                 }
                 default: {
                     return (parent.index);
