@@ -13,7 +13,7 @@ function GlossaryIndex () {
 
     if(loading) return <div>Loading Glossary Index...</div>
 
-    if(!data) return <Navigate to={"/404error"} replace/>
+    if(!data && !typing) return <Navigate to={"/404error"} replace/>
 
     const glossaryIndex = data.glossaryType;
 
