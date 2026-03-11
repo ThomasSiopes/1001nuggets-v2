@@ -7,7 +7,7 @@ import { QUERY_GLOSSARY_ALL } from "../utils/queries";
 import { Container, Card, Button } from "react-bootstrap";
 
 function GlossaryNav () {
-    const {loading, data} = useQuery(QUERY_GLOSSARY_ALL);
+    const {loading, data} = useQuery(QUERY_GLOSSARY_ALL, { fetchPolicy: "network-only" });
 
     if(loading) return <p>Loading Glossary...</p>
 

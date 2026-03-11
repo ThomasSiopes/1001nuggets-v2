@@ -9,11 +9,13 @@ import { Container, Card } from "react-bootstrap";
 function GlossaryIndex () {
     const { typing } = useParams();
 
-    const {loading, data} = useQuery(QUERY_GLOSSARY_TYPING, {variables: {typing: typing}});
+    const {loading, data} = useQuery(QUERY_GLOSSARY_TYPING, { variables: { typing: typing }, fetchPolicy: "network-only" });
 
     if(loading) return <div>Loading Glossary Index...</div>
 
-    if(!data && !typing) return <Navigate to={"/404error"} replace/>
+    if(!typing) return <Navigate to={"/404error"} replace/>
+
+    if(!data || !data.glossaryType) return <Navigate to={"/404error"} replace/>
 
     const glossaryIndex = data.glossaryType;
 

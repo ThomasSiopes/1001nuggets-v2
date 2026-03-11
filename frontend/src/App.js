@@ -63,7 +63,9 @@ const cache = new InMemoryCache({
       People: { keyFields: ["realID"] },
       Thing: { keyFields: ["realID"] },
       Everywhere: { keyFields: ["realID"] },
-      QOTD: { keyFields: ["index"] }
+      QOTD: { keyFields: ["index"] },
+      Glossary: { keyFields: ["typing"] },
+      GlossaryIndex: { keyFields: ["index"] },
     },
 });
 
