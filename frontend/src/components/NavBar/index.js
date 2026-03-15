@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import { Navbar, Container, Nav, Modal, Col, Button, Row, Form, Card } from "react-bootstrap";
 
 import iconImage from "../../assets/images/N_IconGoldTransparentTiny.png"
-import { QUERY_QUOTE_RESULT } from '../../utils/queries';
+import { QUERY_QUOTE_RESULT_PREVIEW } from '../../utils/queries';
 
 const QuoteCard = React.lazy(() => import("../QuoteCard"));
 
@@ -93,16 +93,18 @@ function NavBar() {
 }
 
 function Results({input}) {
-    let quoteList, listOrder=[];
+    let listOrder=[];
 
-    let {loading, error, data} = useQuery(QUERY_QUOTE_RESULT, {
-        variables: {input: input},
+    let {loading, error, data} = useQuery(QUERY_QUOTE_RESULT_PREVIEW, {
+        variables: {input: input, limit: 100},
     })
 
     if(loading) return <p>Loading...</p>
     if(error || !data) return <p>Something went wrong.</p>
 
-    quoteList = data.quoteResult;
+    const MAX_PREVIEW = 20;
+    const quoteList = data.quoteResultP.slice(0, MAX_PREVIEW);
+    const hasMore = data.quoteResultP.length > MAX_PREVIEW;
 
     for(let n = 0; n < quoteList.length; ++n) {
         listOrder.push(n);
@@ -119,6 +121,7 @@ function Results({input}) {
                     ))}
                 </Row>
             </div>
+            {hasMore && <p className="text-center">Showing 20 results — <Button variant={"theme"} href={`/search/${input}`}>View all results</Button></p>}
         </Container>
         :
         <Container>

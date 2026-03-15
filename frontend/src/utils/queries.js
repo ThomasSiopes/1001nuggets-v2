@@ -172,6 +172,19 @@ export const QUERY_QUOTE_RESULT = gql`
     }
 `
 
+export const QUERY_QUOTE_RESULT_PREVIEW = gql`
+    query getQuoteResultPreview($input: String!, $limit: Int) {
+        quoteResultP(input: $input, limit: $limit) {
+            _id
+            quoteText
+            author
+            topics
+            realID
+            topicDetails { name realID }
+        }
+    }
+`
+
 export const QUERY_QUOTE_ID = gql`
     query getQuote($quoteId: ID!) {
         quote(quoteId: $quoteId) {

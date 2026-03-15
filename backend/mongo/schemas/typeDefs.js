@@ -146,6 +146,7 @@ const typeDefs = gql`
         quotes: [Quote]
         quoteSP: [Quote]
         quoteResult(input: String): [Quote]
+        quoteResultP(input: String, limit: Int): [Quote]
         quote(quoteId: ID): Quote
         quoteR(quoteRealId: String): Quote
 

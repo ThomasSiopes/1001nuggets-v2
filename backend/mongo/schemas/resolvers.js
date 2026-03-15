@@ -79,6 +79,10 @@ const resolvers = {
         quoteResult: async (parent, { input }) => {
             return Quote.find({quoteText: {$regex: "^.*" + input + ".*$", $options: 'i'}})
         },
+        quoteResultP: async (parent, { input, limit }) => {
+            const quotes = await Quote.find({quoteText: {$regex: "^.*" + input + ".*$", $options: 'i'}})
+            return quotes.slice(0,limit);
+        },
 
         // tags
         tags: async () => {
