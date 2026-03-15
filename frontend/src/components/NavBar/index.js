@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { useQuery } from "@apollo/client";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Navbar, Container, Nav, Modal, Col, Button, Row, Form, Card } from "react-bootstrap";
 
 import iconImage from "../../assets/images/N_IconGoldTransparentTiny.png"
@@ -10,35 +10,18 @@ const QuoteCard = React.lazy(() => import("../QuoteCard"));
 
 function NavBar() {
     const [show, setShow] = useState(false);
-    const [showSM, setShowSM] = useState(false);
     const [buttonDisabled, setAbility] = useState(true)
-    const [buttonDisabledSM, setAbilitySM] = useState(true)
     const value = useRef('');
-    const valueSM = useRef('');
 
-    const handleChange = () => {
-        let searchBar = document.getElementById("searchTerm");
-        value.current = searchBar.value;
-        if(value.current && value.current.length > 4) setAbility(false)
-        else setAbility(true)
-    }
-
-    const handleChangeSM = () => {
-        let searchBar = document.getElementById("searchTermSM");
-        valueSM.current = searchBar.value;
-        if(valueSM.current && valueSM.current.length > 4) setAbilitySM(false)
-        else setAbilitySM(true)
+    const handleChange = (e) => {
+        value.current = e.target.value;
+        setAbility(value.current && value.current.length <= 4)
     }
 
     const handleClose = () => setShow(false);
-    const handleCloseSM = () => setShowSM(false);
     const handleShow = (event) => {
         event.preventDefault();
         setShow(true);
-    }
-    const handleShowSM = (event) => {
-        event.preventDefault();
-        setShowSM(true);
     }
 
     return(
@@ -49,13 +32,13 @@ function NavBar() {
                 <Navbar.Collapse id="basic-navbar-nav" className="mx-2">
                     <Nav className="me-auto justify-content-center text-center">
                         {/* <Nav.Link href="/authors">Authors</Nav.Link> */}
-                        <Nav.Link href="/topics">Topics</Nav.Link>
-                        <Nav.Link href="/collections">Collections</Nav.Link>
-                        <Nav.Link href="/everything">Everything</Nav.Link>
-                        <Nav.Link href="/everyone">Everyone</Nav.Link>
-                        <Nav.Link href="/everywhere">Everywhere</Nav.Link>
-                        <Nav.Link href="/glossary">Glossary</Nav.Link>
-                        <Nav.Link href="/publications">Publications</Nav.Link>
+                        <Nav.Link as={NavLink} to="/topics">Topics</Nav.Link>
+                        <Nav.Link as={NavLink} to="/collections">Collections</Nav.Link>
+                        <Nav.Link as={NavLink} to="/everything">Everything</Nav.Link>
+                        <Nav.Link as={NavLink} to="/everyone">Everyone</Nav.Link>
+                        <Nav.Link as={NavLink} to="/everywhere">Everywhere</Nav.Link>
+                        <Nav.Link as={NavLink} to="/glossary">Glossary</Nav.Link>
+                        <Nav.Link as={NavLink} to="/publications">Publications</Nav.Link>
                     </Nav>
                     <Nav className="ms-auto">
                         <Form className="row text-center mx-auto mt-2 max-width-100" onSubmit={handleShow}>
@@ -75,24 +58,24 @@ function NavBar() {
                 <Navbar.Collapse id="basic-navbar-nav" className="mx-2">
                     <Card className="border-none mt-2">
                         <Card.Body className="px-5">
-                            <Form className="row" onSubmit={handleShowSM}>
+                            <Form className="row" onSubmit={handleShow}>
                                 <Col xs={7} className="align-items-center d-flex px-1">
-                                    <input type="text" placeholder="Search..." id="searchTermSM" className="formInput rounded text-start" onChange={handleChangeSM}/>
+                                    <input type="text" placeholder="Search..." id="searchTerm" className="formInput rounded text-start" onChange={handleChange}/>
                                 </Col>
                                 <Col xs={5} className="px-1">
-                                    <Button variant={"theme"} className="btn-block" disabled={buttonDisabledSM} type="submit" readOnly>Search</Button>
+                                    <Button variant={"theme"} className="btn-block" disabled={buttonDisabled} type="submit" readOnly>Search</Button>
                                 </Col>
                             </Form>
                         </Card.Body>
                         <Card.Footer className="px-5">
                             {/* <Button variant={"theme"} href={`/authors`} className="btn-block my-3">Authors</Button> */}
-                            <Button variant={"theme"} href={`/topics`} className="btn-block my-3">Topics</Button>
-                            <Button variant={"theme"} href={`/collections`} className="btn-block my-3">Collections</Button>
-                            <Button variant={"theme"} href={`/everything`} className="btn-block my-3">Everything</Button>
-                            <Button variant={"theme"} href={`/everyone`} className="btn-block my-3">Everyone</Button>
-                            <Button variant={"theme"} href={`/everywhere`} className="btn-block my-3">Everywhere</Button>
-                            <Button variant={"theme"} href={`/glossary`} className="btn-block my-3">Glossary</Button>
-                            <Button variant={"theme"} href={`/publications`} className="btn-block my-3">Publications</Button>
+                            <Button variant={"theme"} as={NavLink} to={`/topics`} className="btn-block my-3">Topics</Button>
+                            <Button variant={"theme"} as={NavLink} to={`/collections`} className="btn-block my-3">Collections</Button>
+                            <Button variant={"theme"} as={NavLink} to={`/everything`} className="btn-block my-3">Everything</Button>
+                            <Button variant={"theme"} as={NavLink} to={`/everyone`} className="btn-block my-3">Everyone</Button>
+                            <Button variant={"theme"} as={NavLink} to={`/everywhere`} className="btn-block my-3">Everywhere</Button>
+                            <Button variant={"theme"} as={NavLink} to={`/glossary`} className="btn-block my-3">Glossary</Button>
+                            <Button variant={"theme"} as={NavLink} to={`/publications`} className="btn-block my-3">Publications</Button>
                         </Card.Footer>
                     </Card>
                 </Navbar.Collapse>
@@ -102,15 +85,7 @@ function NavBar() {
                     <p onClick={handleClose} className="link-theme"><strong>Done</strong></p>
                 </Modal.Header>
                 <Modal.Body bg={"transparent"}>
-                    <Results input={value.current}/>
-                </Modal.Body>
-            </Modal>
-            <Modal show={showSM} onHide={handleCloseSM} backdrop="static" keyboard={false} className="width80">
-                <Modal.Header className="rounded">
-                    <p onClick={handleCloseSM} className="link-theme"><strong>Done</strong></p>
-                </Modal.Header>
-                <Modal.Body bg={"transparent"}>
-                    <Results input={valueSM.current}/>
+                    {show && <Results input={value.current}/>}
                 </Modal.Body>
             </Modal>
         </Navbar>
@@ -120,11 +95,12 @@ function NavBar() {
 function Results({input}) {
     let quoteList, listOrder=[];
 
-    let {loading, data} = useQuery(QUERY_QUOTE_RESULT, {
+    let {loading, error, data} = useQuery(QUERY_QUOTE_RESULT, {
         variables: {input: input},
     })
 
     if(loading) return <p>Loading...</p>
+    if(error || !data) return <p>Something went wrong.</p>
 
     quoteList = data.quoteResult;
 
@@ -136,9 +112,9 @@ function Results({input}) {
         <Container className="mb-2">
             <div>
                 <Row className="text-center">
-                    {quoteList.map((index) => (
+                    {quoteList.map((index, i) => (
                         <Col xs={12} md={6} xl={4} className="mb-3" key={index.name + index.quoteText}>
-                            <QuoteCard quotes={quoteList} quoteIndex={quoteList.indexOf(index)} indexOrder={listOrder}/>
+                            <QuoteCard quotes={quoteList} quoteIndex={i} indexOrder={listOrder}/>
                         </Col>
                     ))}
                 </Row>
