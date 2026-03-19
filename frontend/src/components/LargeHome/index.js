@@ -1,4 +1,5 @@
 import React, {useRef, useState} from "react";
+import { useNavigate } from "react-router-dom";
 import { Form, Button, Container, Card, Row, Col } from "react-bootstrap";
 
 import { FaSearch } from "react-icons/fa";
@@ -7,18 +8,17 @@ import { FaSearch } from "react-icons/fa";
 
 function LargeHome(){
     const [buttonDisabled, setAbility] = useState(true);
-    const value = useRef('');
+    const inputRef = useRef(null);
+    const navigate = useNavigate();
 
-    const handleChange = () => {
-        let searchBar = document.getElementById("homeSearchLarge");
-        value.current = searchBar.value;
-        if(value.current) setAbility(false);
-        else setAbility(true);
+    const handleChange = (e) => {
+        setAbility(!e.target.value);
     }
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        window.location.href = "/search/" + value.current;
+        const term = inputRef.current?.value?.trim();
+        if(term) navigate(`/search/${term}`);
     }
 
     return(
@@ -26,8 +26,14 @@ function LargeHome(){
             <h1 className="pt-5">1001 NUGGETS</h1>
             <span id="homeSubtext">EVERYTHING • EVERYONE • EVERYWHERE</span>
             <Form className="px-4 mt-5 mb-4 row align-items-center" onSubmit={handleSubmit}>
-                <Col xs={11}><input placeholder="Search..." id="homeSearchLarge" className="rounded width100 text-center py-2" onChange={handleChange}/></Col>
-                <Col xs={1}><Button variant={"theme"} type="submit" disabled={buttonDisabled} aria-label="search" readOnly><FaSearch/></Button></Col>
+                <Col xs={11}>
+                    <input ref={inputRef} placeholder="Search..." id="homeSearchLarge" className="rounded width100 text-center py-2" onChange={handleChange}/>
+                </Col>
+                <Col xs={1}>
+                    <Button variant={"theme"} type="submit" disabled={buttonDisabled} aria-label="search" readOnly>
+                        <FaSearch/>
+                    </Button>
+                </Col>
             </Form>
             <Row>
                 <Col>

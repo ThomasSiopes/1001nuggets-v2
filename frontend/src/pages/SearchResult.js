@@ -8,7 +8,7 @@ import ResultsQuote from "../components/ResultsQuote";
 function SearchResults() {
     const { query } = useParams();
 
-    if(!query || query === null || query === "undefined") return <Navigate to={`/`} replace/>;
+    if(!query || query === "undefined") return <Navigate to={`/`} replace/>;
     
     return (
         <HelmetProvider>

@@ -77,11 +77,12 @@ const resolvers = {
             return Quote.findOne({ realID: quoteRealId })
         },
         quoteResult: async (parent, { input }) => {
-            return Quote.find({quoteText: {$regex: "^.*" + input + ".*$", $options: 'i'}})
+            const sanitized = input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            return Quote.find({quoteText: {$regex: sanitized, $options: 'i'}})
         },
         quoteResultP: async (parent, { input, limit }) => {
-            const quotes = await Quote.find({quoteText: {$regex: "^.*" + input + ".*$", $options: 'i'}})
-            return quotes.slice(0,limit);
+            const sanitized = input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            return Quote.find({quoteText: {$regex: sanitized, $options: 'i'}}).limit(limit);
         },
 
         // tags
