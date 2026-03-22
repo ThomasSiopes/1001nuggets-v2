@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { useQuery } from '@apollo/client';
 import { Container, Col, Row } from "react-bootstrap";
 
@@ -23,7 +23,7 @@ const ResultsQuote = ({input}) => {
 
     return (quoteList[0] ?
         <Container className="mb-2">
-            <div>
+            <Suspense fallback={<p>Loading...</p>}>
                 <h5>Results under quotes . . .</h5>
                 <hr></hr>
                 <Row className="text-center">
@@ -33,7 +33,7 @@ const ResultsQuote = ({input}) => {
                         </Col>
                     ))}
                 </Row>
-            </div>
+            </Suspense>
         </Container>
         :
         <Container>
