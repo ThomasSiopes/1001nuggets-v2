@@ -24,12 +24,12 @@ const ResultsQuote = ({input}) => {
     return (quoteList[0] ?
         <Container className="mb-2">
             <Suspense fallback={<p>Loading...</p>}>
-                <h5>Results under quotes . . .</h5>
+                <h5>Search Results for "{input}" . . .</h5>
                 <hr></hr>
                 <Row className="text-center">
-                    {quoteList.map((index) => (
+                    {quoteList.map((index, i) => (
                         <Col xs={12} md={6} xl={4} className="mb-3" key={index.name + index.quoteText}>
-                            <QuoteCard quotes={quoteList} quoteIndex={quoteList.indexOf(index)} indexOrder={listOrder}/>
+                            <QuoteCard quotes={quoteList} quoteIndex={i} indexOrder={listOrder}/>
                         </Col>
                     ))}
                 </Row>

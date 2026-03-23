@@ -15,13 +15,13 @@ function SmallHome() {
     const handleModalShow = () => setShow(true);
 
     const handleChange = (e) => {
-        setAbility(!e.target.value);
+        setAbility(e.target.value.length <= 3);
     }
 
     const handleSubmit = (event) => {
         event.preventDefault();
         const term = inputRef.current?.value?.trim();
-        if(term) navigate(`/search/${term}`);
+        if(term && !buttonDisabled) navigate(`/search/${term}`);
     }
     
     return(

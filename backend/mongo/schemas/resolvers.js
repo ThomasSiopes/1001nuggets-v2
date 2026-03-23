@@ -154,50 +154,44 @@ const resolvers = {
     },
 
     Quote: {
-        authorRealID: async(parent) => {
+        authorRealID: async(parent, _args, context) => {
             if(!parent.author) return null;
-            const author = await Author.findOne(
-                { name: parent.author},
-                { realID: 1 }
-            );
+            const author = await context.loaders.authorByName.load(parent.author);
             return author ? author.realID : null;
         },
 
-        topicDetails: async(parent) => {
-            if(!parent.topics || parent.topics.length === 0) return [];
-            const found = await Topic.find(
-                { name: { $in: parent.topics }},
-                { name: 1, realID: 1 }
-            );
-            return parent.topics.map(name => {
-                const t = found.find(t => t.name === name);
-                return { name, realID: t ? t.realID : null };
-            });
-        },
+        topicDetails: async (parent, _args, context) => {
+        if (!parent.topics || parent.topics.length === 0) return [];
+        const results = await Promise.all(
+            parent.topics.map(name => context.loaders.topicByName.load(name))
+        );
+        return parent.topics.map((name, i) => ({
+            name,
+            realID: results[i] ? results[i].realID : null,
+        }));
+    },
 
-        relatedTopicDetails: async(parent) => {
-            if(!parent.relatedTopics || parent.relatedTopics.length === 0) return [];
-            const found = await Topic.find(
-                { name: { $in: parent.relatedTopics }},
-                { name: 1, realID: 1 }
-            );
-            return parent.relatedTopics.map(name=> {
-                const t = found.find(t => t.name === name);
-                return { name, realID: t ? t.realID : null };
-            });
-        },
+    relatedTopicDetails: async (parent, _args, context) => {
+        if (!parent.relatedTopics || parent.relatedTopics.length === 0) return [];
+        const results = await Promise.all(
+            parent.relatedTopics.map(name => context.loaders.topicByName.load(name))
+        );
+        return parent.relatedTopics.map((name, i) => ({
+            name,
+            realID: results[i] ? results[i].realID : null,
+        }));
+    },
 
-        unrelatedTopicDetails: async(parent) => {
-            if(!parent.unrelatedTopics || parent.unrelatedTopics.length === 0) return [];
-            const found = await Topic.find(
-                { name: { $in: parent.unrelatedTopics }},
-                { name: 1, realID: 1 }
-            );
-            return parent.unrelatedTopics.map(name=> {
-                const t = found.find(t => t.name === name);
-                return { name, realID: t ? t.realID : null };
-            });
-        },
+    unrelatedTopicDetails: async (parent, _args, context) => {
+        if (!parent.unrelatedTopics || parent.unrelatedTopics.length === 0) return [];
+        const results = await Promise.all(
+            parent.unrelatedTopics.map(name => context.loaders.topicByName.load(name))
+        );
+        return parent.unrelatedTopics.map((name, i) => ({
+            name,
+            realID: results[i] ? results[i].realID : null,
+        }));
+    },
     },
 
     Tag: {

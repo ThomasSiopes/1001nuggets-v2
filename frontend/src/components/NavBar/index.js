@@ -15,7 +15,7 @@ function NavBar() {
 
     const handleChange = (e) => {
         value.current = e.target.value;
-        setAbility(value.current && value.current.length <= 4)
+        setAbility(value.current.length <= 3)
     }
 
     const handleClose = () => setShow(false);

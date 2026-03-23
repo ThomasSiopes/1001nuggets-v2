@@ -1,4 +1,4 @@
-import React, {useRef, useState} from "react";
+import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Form, Button, Container, Card, Row, Col } from "react-bootstrap";
 
@@ -12,13 +12,13 @@ function LargeHome(){
     const navigate = useNavigate();
 
     const handleChange = (e) => {
-        setAbility(!e.target.value);
+        setAbility(e.target.value.length <= 3);
     }
 
     const handleSubmit = (event) => {
         event.preventDefault();
         const term = inputRef.current?.value?.trim();
-        if(term) navigate(`/search/${term}`);
+        if(term && !buttonDisabled) navigate(`/search/${term}`);
     }
 
     return(

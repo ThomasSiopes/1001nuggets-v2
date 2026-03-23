@@ -3,6 +3,7 @@ const { ApolloServer } = require("apollo-server-express");
 const path = require("path");
 
 const { typeDefs, resolvers } = require("./mongo/schemas");
+const { createLoaders } = require("./mongo/schemas/loaders");
 
 const db = require("./config/connection");
 
@@ -12,6 +13,9 @@ const app = express();
 const server = new ApolloServer({
     typeDefs,
     resolvers,
+    context: () => ({
+        loaders: createLoaders(),
+    })
 });
 
 app.use(express.urlencoded({ extended: false }));
