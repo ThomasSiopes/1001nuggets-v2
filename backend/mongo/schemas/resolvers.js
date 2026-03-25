@@ -17,7 +17,7 @@ const resolvers = {
             return Author.findOne({ realID: authorRealId }).populate('quotes');
         },
         authorLetter: async (parent, { letter }) => {
-            return Author.find({lastName: {$regex: '^' + letter, $options: 'i'}})
+            return Author.find({lastName: {$regex: '^' + letter, $options: 'i'}}).populate('quotes');
         },
         
         // topics
@@ -43,24 +43,24 @@ const resolvers = {
             // return Topic.findOne({ realID: topicRealId }).populate('quotes');;
         },
         topicLetter: async (parent, { letter }) => {
-            return Topic.find({sortedName: {$regex: '^' + letter, $options: 'i'}})
+            return Topic.find({sortedName: {$regex: '^' + letter, $options: 'i'}}).populate('quotes');
         },
         
         // collections
         collections: async () => {
-            return Collection.find();
+            return Collection.find().populate('quotes');
         },
         collectionName: async (parent, { name }) => {
-            return Collection.findOne({ name });
+            return Collection.findOne({ name }).populate('quotes');
         },
         collectionID: async (parent, { collectionId }) => {
-            return Collection.findOne({ _id: collectionId });
+            return Collection.findOne({ _id: collectionId }).populate('quotes');
         },
         collectionR: async (parent, { collectionRealId }) => {
-            return Collection.findOne({ realID: collectionRealId });
+            return Collection.findOne({ realID: collectionRealId }).populate('quotes');
         },
         collectionLetter: async (parent, { letter }) => {
-            return Collection.find({sortedName: {$regex: '^' + letter, $options: 'i'}})
+            return Collection.find({sortedName: {$regex: '^' + letter, $options: 'i'}}).populate('quotes');
         },
         
         // quotes
