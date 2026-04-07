@@ -41,6 +41,7 @@ const GlossaryNav = React.lazy(() => import("./pages/GlossaryNav"));
 const GlossaryIndex = React.lazy(() => import("./pages/GlossaryIndex"));
 
 const ErrorPage = React.lazy(() => import("./pages/404error"));
+const DNE = React.lazy(() => import("./pages/DNE"));
 
 // Client & Cache Stuff
 const clientInfo = {
@@ -122,6 +123,7 @@ function App () {
             {/* <Route exact path="/more quotes" element={<HomeNav/>}*/}
 
             <Route exact path="/404error" element={<ErrorPage/>}/>
+            <Route path="*" element={<DNE/>}/>
           </Routes>
         </React.Suspense>
       </Router>
