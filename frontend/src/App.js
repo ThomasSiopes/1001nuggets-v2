@@ -72,10 +72,14 @@ const cache = new InMemoryCache({
     },
 });
 
-await persistCache({
-  cache,
-  storage: new LocalStorageWrapper(window.localStorage)
-});
+try {
+  await persistCache({
+    cache,
+    storage: new LocalStorageWrapper(window.localStorage)
+  });
+} catch (e) {
+  console.error('Cache restore failed, starting fresh:', e);
+}
 
 const client = new ApolloClient({
   link: clientInfo.authLink.concat(clientInfo.httpLink),
@@ -87,7 +91,7 @@ function App () {
     <ApolloProvider client={client}>
       <Router>
         <React.Suspense fallback={<div>Loading...</div>}><NavBar/></React.Suspense>
-        <React.Suspense>
+        <React.Suspense fallback={<div>Loading...</div>}>
           <Routes>
             <Route exact path="/" element={<Home/>}/>
             

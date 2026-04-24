@@ -5,7 +5,9 @@ import { QUERY_COLLECTION_LETTER } from "../../utils/queries";
 
 function CollectionNavInst({ letter }) {
     const ref = useRef(null);
-    const [fetchLetter, { loading, data }] = useLazyQuery(QUERY_COLLECTION_LETTER);
+    const [fetchLetter, { loading, data }] = useLazyQuery(QUERY_COLLECTION_LETTER, {
+        fetchPolicy: "cache-and-network"
+    });
 
     useEffect(() => {
         const observer = new IntersectionObserver(
