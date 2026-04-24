@@ -60,7 +60,7 @@ const resolvers = {
             return Collection.findOne({ realID: collectionRealId }).populate('quotes');
         },
         collectionLetter: async (parent, { letter }) => {
-            return Collection.find({sortedName: {$regex: '^' + letter, $options: 'i'}}).populate('quotes');
+            return Collection.find({sortedName: {$regex: '^' + letter, $options: 'i'}});
         },
         
         // quotes

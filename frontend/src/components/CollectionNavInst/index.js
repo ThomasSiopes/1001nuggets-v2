@@ -6,7 +6,7 @@ import { QUERY_COLLECTION_LETTER } from "../../utils/queries";
 function CollectionNavInst({ letter }) {
     const ref = useRef(null);
     const [fetchLetter, { loading, data }] = useLazyQuery(QUERY_COLLECTION_LETTER, {
-        fetchPolicy: "cache-and-network"
+        fetchPolicy: "network-only"
     });
 
     useEffect(() => {
@@ -21,6 +21,8 @@ function CollectionNavInst({ letter }) {
     if (loading) return <div ref={ref}><span>Loading {letter}s...</span></div>;
     if (!data)   return <div ref={ref} />;
 
+    console.log(data)
+    
     let sortedList = data.collectionLetter.map((item) => Object.assign({}, item, {selected:false}))
     
     sortedList = sortedList.sort(function(a,b) {
