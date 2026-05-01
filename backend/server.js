@@ -43,7 +43,6 @@ middleWare();
 if (process.env.NODE_ENV === "production") {
     app.use(express.static(path.join(__dirname, "../frontend/build")));
 
-    // Only serve the catch-all in production so it doesn't swallow /graphql
     app.get("*", (request, response) => {
         response.sendFile(path.join(__dirname, "../frontend/build/index.html"));
     });
