@@ -1,5 +1,6 @@
 const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
+const cors = require("cors");
 const path = require("path");
 
 const { typeDefs, resolvers } = require("./mongo/schemas");
@@ -17,6 +18,15 @@ const server = new ApolloServer({
         loaders: createLoaders(),
     })
 });
+
+app.use(cors({
+  origin: [
+    "http://localhost:3000",
+    "capacitor://localhost",
+    "http://localhost",
+  ],
+  credentials: true,
+}));
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
