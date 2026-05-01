@@ -4,6 +4,8 @@ import { ApolloClient, ApolloProvider, createHttpLink, InMemoryCache } from "@ap
 import { setContext } from "@apollo/client/link/context";
 import { persistCache, LocalStorageWrapper } from "apollo3-cache-persist";
 
+const uri = process.env.REACT_APP_GRAPHQL_URI || '/graphql'
+
 //Components
 // import ErrorPage from "./components/ErrorPage";
 const NavBar = React.lazy(() => import("./components/NavBar"));
@@ -45,7 +47,7 @@ const DNE = React.lazy(() => import("./pages/DNE"));
 
 // Client & Cache Stuff
 const clientInfo = {
-  httpLink: createHttpLink({uri:"/graphql"}),
+  httpLink: createHttpLink({uri: uri}),
   authLink: setContext((_, {headers}) => {
     const token = localStorage.getItem('id_token');
     return {

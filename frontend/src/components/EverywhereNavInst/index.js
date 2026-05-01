@@ -14,7 +14,7 @@ function EverywhereNavInst({ letter }) {
         );
         if (ref.current) observer.observe(ref.current);
         return () => observer.disconnect();
-    }, [fetchLetter]);
+    }, [fetchLetter, letter]);
 
     if (loading) return <div ref={ref}><span>Loading {letter}s...</span></div>;
     if (!data)   return <div ref={ref}/>;

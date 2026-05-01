@@ -5,6 +5,10 @@
   "proxy": "http://127.0.0.1:3001",
   "dependencies": {
     "@apollo/client": "^3.14.0",
+    "@capacitor/android": "^8.3.1",
+    "@capacitor/cli": "^8.3.1",
+    "@capacitor/core": "^8.3.1",
+    "@capacitor/ios": "^8.3.1",
     "@emotion/react": "^11.11.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
