@@ -16,7 +16,8 @@ const server = new ApolloServer({
     resolvers,
     context: () => ({
         loaders: createLoaders(),
-    })
+    }), 
+    cache: "bounded"
 });
 
 app.use(express.urlencoded({ extended: false }));
