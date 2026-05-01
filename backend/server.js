@@ -2,7 +2,6 @@ const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
 const cors = require("cors");
 const path = require("path");
-const cors = require("cors");
 
 const { typeDefs, resolvers } = require("./mongo/schemas");
 const { createLoaders } = require("./mongo/schemas/loaders");

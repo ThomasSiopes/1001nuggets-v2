@@ -1,7 +1,7 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
+  appId: 'com.w1001nuggets.app',
   appName: '1001 Nuggets',
   webDir: 'build'
 };
