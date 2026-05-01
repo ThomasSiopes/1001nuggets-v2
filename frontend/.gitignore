@@ -10,7 +10,6 @@
 # testing
 /coverage
 /.env
-/.env.development
 
 # production
 /build
