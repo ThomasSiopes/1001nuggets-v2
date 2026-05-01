@@ -2,6 +2,7 @@ const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
 const cors = require("cors");
 const path = require("path");
+const cors = require("cors");
 
 const { typeDefs, resolvers } = require("./mongo/schemas");
 const { createLoaders } = require("./mongo/schemas/loaders");
@@ -16,16 +17,17 @@ const server = new ApolloServer({
     resolvers,
     context: () => ({
         loaders: createLoaders(),
-    })
+    }), 
+    cache: "bounded"
 });
 
 app.use(cors({
-  origin: [
-    "http://localhost:3000",
-    "capacitor://localhost",
-    "http://localhost",
-  ],
-  credentials: true,
+    origin: [
+        "http://localhost:3000", //web
+        "capacitor://localhost", //IOS cap
+        "http://localhost", //Android cap
+    ],
+    credentials: true
 }));
 
 app.use(express.urlencoded({ extended: false }));
@@ -42,7 +44,6 @@ middleWare();
 if (process.env.NODE_ENV === "production") {
     app.use(express.static(path.join(__dirname, "../frontend/build")));
 
-    // Only serve the catch-all in production so it doesn't swallow /graphql
     app.get("*", (request, response) => {
         response.sendFile(path.join(__dirname, "../frontend/build/index.html"));
     });

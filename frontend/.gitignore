@@ -4,9 +4,12 @@
 /node_modules
 /.pnp
 .pnp.js
+/ios
+/android
 
 # testing
 /coverage
+/.env
 
 # production
 /build
