@@ -20,10 +20,6 @@ const server = new ApolloServer({
     cache: "bounded"
 });
 
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
-app.use(express.static("public"));
-
 app.use(cors({
     origin: [
         "http://localhost:3000", //web
@@ -32,6 +28,10 @@ app.use(cors({
     ],
     credentials: true
 }));
+
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(express.static("public"));
 
 async function middleWare() {
     await server.start();
