@@ -87,6 +87,7 @@ const client = new ApolloClient({
 });
 
 function App () {
+  alert("Test Result: " + process.env.NAME)
   return (
     <ApolloProvider client={client}>
       <Router>
