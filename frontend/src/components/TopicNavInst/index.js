@@ -1,20 +1,22 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
-import { useLazyQuery } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 import { QUERY_TOPIC_LETTER } from "../../utils/queries";
 
 function TopicNavInst({ letter }) {
     const ref = useRef(null);
-    const [fetchLetter, { loading, data }] = useLazyQuery(QUERY_TOPIC_LETTER);
+    const { loading, data } = useQuery(QUERY_TOPIC_LETTER, {
+        variables: {letter:letter}, fetchPolicy: "cache-and-network"
+    });
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => { if (entry.isIntersecting) { fetchLetter({variables: { letter }}); observer.disconnect(); } },
-            { rootMargin: "200px" } // start fetching 200px before it enters view
-        );
-        if (ref.current) observer.observe(ref.current);
-        return () => observer.disconnect();
-    }, [fetchLetter, letter]);
+    // useEffect(() => {
+    //     const observer = new IntersectionObserver(
+    //         ([entry]) => { if (entry.isIntersecting) { fetchLetter({variables: { letter }}); observer.disconnect(); } },
+    //         { rootMargin: "200px" } // start fetching 200px before it enters view
+    //     );
+    //     if (ref.current) observer.observe(ref.current);
+    //     return () => observer.disconnect();
+    // }, [fetchLetter, letter]);
 
     if (loading) return <div ref={ref}><span>Loading {letter}s...</span></div>;
     if (!data)   return <div ref={ref} />;
