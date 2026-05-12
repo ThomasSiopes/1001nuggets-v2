@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {Helmet, HelmetProvider} from "react-helmet-async"
 
 import { Container, Row, Col, Card } from "react-bootstrap";
@@ -6,6 +6,8 @@ const TopicNavInst = React.lazy(() => import("../components/TopicNavInst"));
 
 function Topics () {
     const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+
+    useEffect(() => { window.scrollTo(0, 0); }, []);
 
     return (
         <HelmetProvider>

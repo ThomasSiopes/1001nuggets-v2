@@ -88,7 +88,6 @@ const client = new ApolloClient({
 });
 
 function App () {
-  alert(window.location.hostname)
   return (
     <ApolloProvider client={client}>
       <Router>
