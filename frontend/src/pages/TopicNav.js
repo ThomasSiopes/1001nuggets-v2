@@ -1,11 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {Helmet, HelmetProvider} from "react-helmet-async"
 
 import { Container, Row, Col, Card } from "react-bootstrap";
 const TopicNavInst = React.lazy(() => import("../components/TopicNavInst"));
 
+const SCROLL_KEY = 'topicNavScrollY';
+
 function Topics () {
     const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+
+    useEffect(() => {
+        const prevRestoration = 'scrollRestoration' in history ? history.scrollRestoration : null;
+        if (prevRestoration !== null) history.scrollRestoration = 'manual';
+
+        const saved = sessionStorage.getItem(SCROLL_KEY);
+        if (saved !== null) {
+            sessionStorage.removeItem(SCROLL_KEY);
+            window.scrollTo(0, parseInt(saved, 10));
+        }
+
+        return () => {
+            sessionStorage.setItem(SCROLL_KEY, String(Math.round(window.scrollY)));
+            if (prevRestoration !== null) history.scrollRestoration = prevRestoration;
+        };
+    }, []);
+
+    const scrollToLetter = (letter) => {
+        document.getElementById(letter)?.scrollIntoView({ behavior: 'smooth' });
+    };
 
     return (
         <HelmetProvider>
@@ -29,7 +51,9 @@ function Topics () {
                 <div className="col-05 p-0 text-center">
                     <Row className="fitter px-0 py-2 ms-0 align-items-center justify-content-center">
                         {alphabet.map((fitterIndex) => (
-                            <div className="p-0 mx-0 float-left sidebar-text" key={"fitter" + fitterIndex}><a href={"#" + fitterIndex} className="text-white">{fitterIndex}</a></div>
+                            <div className="p-0 mx-0 float-left sidebar-text" key={"fitter" + fitterIndex}>
+                                <span role="button" onClick={() => scrollToLetter(fitterIndex)} className="text-white" style={{cursor:'pointer'}}>{fitterIndex}</span>
+                            </div>
                         ))
                         }
                     </Row>
