@@ -1,20 +1,13 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
-import { useLazyQuery } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 import { QUERY_EVERYWHERE_LETTER } from "../../utils/queries";
 
 function EverywhereNavInst({ letter }) {
     const ref = useRef(null);
-    const [fetchLetter, { loading, data }] = useLazyQuery(QUERY_EVERYWHERE_LETTER);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => { if (entry.isIntersecting) { fetchLetter({variables: { letter }}); observer.disconnect(); } },
-            { rootMargin: "200px"}
-        );
-        if (ref.current) observer.observe(ref.current);
-        return () => observer.disconnect();
-    }, [fetchLetter, letter]);
+    const { loading, data } = useQuery(QUERY_EVERYWHERE_LETTER, {
+        variables: {letter:letter}, fetchPolicy: "cache-and-network"
+    });
 
     if (loading) return <div ref={ref}><span>Loading {letter}s...</span></div>;
     if (!data)   return <div ref={ref}/>;

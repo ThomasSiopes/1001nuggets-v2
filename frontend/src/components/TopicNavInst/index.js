@@ -9,15 +9,6 @@ function TopicNavInst({ letter }) {
         variables: {letter:letter}, fetchPolicy: "cache-and-network"
     });
 
-    // useEffect(() => {
-    //     const observer = new IntersectionObserver(
-    //         ([entry]) => { if (entry.isIntersecting) { fetchLetter({variables: { letter }}); observer.disconnect(); } },
-    //         { rootMargin: "200px" } // start fetching 200px before it enters view
-    //     );
-    //     if (ref.current) observer.observe(ref.current);
-    //     return () => observer.disconnect();
-    // }, [fetchLetter, letter]);
-
     if (loading) return <div ref={ref}><span>Loading {letter}s...</span></div>;
     if (!data)   return <div ref={ref} />;
 
