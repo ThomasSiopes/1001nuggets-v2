@@ -1,44 +1,11 @@
-import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import React from "react";
 import {Helmet, HelmetProvider} from "react-helmet-async"
 
 import { Container, Row, Col, Card } from "react-bootstrap";
 const TopicNavInst = React.lazy(() => import("../components/TopicNavInst"));
 
-const SCROLL_KEY = 'topicnav-scroll-state';
-
 function Topics () {
     const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-    const location = useLocation();
-
-    useEffect(() => {
-        // Save scroll position while on this page, keyed to this history entry
-        const handleScroll = () => {
-            sessionStorage.setItem(SCROLL_KEY, JSON.stringify({
-                key: location.key,
-                scroll: window.scrollY
-            }));
-        };
-        window.addEventListener('scroll', handleScroll, { passive: true });
-
-        // Restore scroll only when returning via browser back/forward (same location key)
-        const saved = JSON.parse(sessionStorage.getItem(SCROLL_KEY) || 'null');
-        if (saved && saved.key === location.key && saved.scroll > 0) {
-            const targetY = saved.scroll;
-            let attempts = 0;
-            const tryScroll = () => {
-                window.scrollTo(0, targetY);
-                // Retry while page isn't tall enough yet (lazy content still loading)
-                if (Math.abs(window.scrollY - targetY) > 50 && attempts < 8) {
-                    attempts++;
-                    setTimeout(tryScroll, 100);
-                }
-            };
-            setTimeout(tryScroll, 50);
-        }
-
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, [location.key]);
 
     return (
         <HelmetProvider>
