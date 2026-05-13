@@ -10,8 +10,8 @@ function Topics () {
     const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
     useEffect(() => {
-        const prevRestoration = 'scrollRestoration' in history ? history.scrollRestoration : null;
-        if (prevRestoration !== null) history.scrollRestoration = 'manual';
+        const prevRestoration = 'scrollRestoration' in window.history ? window.history.scrollRestoration : null;
+        if (prevRestoration !== null) window.history.scrollRestoration = 'manual';
 
         const saved = sessionStorage.getItem(SCROLL_KEY);
         if (saved !== null) {
@@ -21,7 +21,7 @@ function Topics () {
 
         return () => {
             sessionStorage.setItem(SCROLL_KEY, String(Math.round(window.scrollY)));
-            if (prevRestoration !== null) history.scrollRestoration = prevRestoration;
+            if (prevRestoration !== null) window.history.scrollRestoration = prevRestoration;
         };
     }, []);
 
