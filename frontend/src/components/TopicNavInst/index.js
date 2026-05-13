@@ -9,7 +9,7 @@ function TopicNavInst({ letter }) {
         variables: {letter:letter}, fetchPolicy: "cache-and-network"
     });
 
-    if (loading) return <div ref={ref}><span>Loading {letter}s...</span></div>;
+    if (loading && !data) return <div ref={ref}><span>Loading {letter}s...</span></div>;
     if (!data)   return <div ref={ref} />;
 
     let sortedList = data.topicLetter.map((item) => Object.assign({}, item, {selected:false}));
