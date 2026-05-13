@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {Helmet, HelmetProvider} from "react-helmet-async"
 
 import { Container, Row, Col, Card } from "react-bootstrap";
@@ -8,22 +8,6 @@ const SCROLL_KEY = 'topicNavScrollY';
 
 function Topics () {
     const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-
-    useEffect(() => {
-        const prevRestoration = 'scrollRestoration' in window.history ? window.history.scrollRestoration : null;
-        if (prevRestoration !== null) window.history.scrollRestoration = 'manual';
-
-        const saved = sessionStorage.getItem(SCROLL_KEY);
-        if (saved !== null) {
-            sessionStorage.removeItem(SCROLL_KEY);
-            window.scrollTo(0, parseInt(saved, 10));
-        }
-
-        return () => {
-            sessionStorage.setItem(SCROLL_KEY, String(Math.round(window.scrollY)));
-            if (prevRestoration !== null) window.history.scrollRestoration = prevRestoration;
-        };
-    }, []);
 
     const scrollToLetter = (letter) => {
         document.getElementById(letter)?.scrollIntoView({ behavior: 'smooth' });
