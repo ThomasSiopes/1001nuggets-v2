@@ -9,10 +9,6 @@ const SCROLL_KEY = 'topicNavScrollY';
 function Topics () {
     const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
-    const scrollToLetter = (letter) => {
-        document.getElementById(letter)?.scrollIntoView({ behavior: 'smooth' });
-    };
-
     return (
         <HelmetProvider>
         <Container className="pt-3">
