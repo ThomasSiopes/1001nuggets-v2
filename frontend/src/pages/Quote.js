@@ -1,4 +1,5 @@
 import React from "react";
+import LoadingOverlay from "../components/LoadingOverlay";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Navigate, useParams } from "react-router-dom";
 import { useQuery} from "@apollo/client";
@@ -22,18 +23,14 @@ function Quote () {
 
     if(!quoteRealId || quoteRealId === null || quoteRealId === "undefined") return <Navigate to={`/404error`} replace/>;
 
-    if(loading) {
-        return <div className="loadingPage">Loading...</div>;
-    }
+    if(!loading && !data) return <Navigate to={`/404error`} replace/>;
 
-    if(!data) return <Navigate to={`/404error`} replace/>;
-
-    const quote = data.quoteR;
-
-    console.log(quote)
+    const quote = data?.quoteR;
 
     return (
-        <HelmetProvider>
+        <>
+        <LoadingOverlay show={loading && !data} />
+        {quote && <HelmetProvider>
         <Container className="pt-5">
             <Helmet>
                 <title>1001 Nuggets - {quote.quoteText}</title>
@@ -91,7 +88,8 @@ function Quote () {
                 </Card.Body>
             </Card>
         </Container>
-        </HelmetProvider>
+        </HelmetProvider>}
+        </>
     )
 }
 

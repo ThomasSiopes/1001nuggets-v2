@@ -1,4 +1,5 @@
 import React from "react";
+import LoadingOverlay from "../components/LoadingOverlay";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
@@ -17,16 +18,14 @@ function TagPage () {
 
     if(!tagId || tagId === null || tagId === "undefined") return <Navigate to={`/authors`} replace/>;
 
-    if(loading) return <p>Loading...</p>
+    if(!loading && !data) return <Navigate to={`/404error`} replace/>;
 
-    if(!data) return <Navigate to={`/404error`} replace/>;
-
-    const tag = data.tagID;
-
-    console.log(tag)
+    const tag = data?.tagID;
 
     return (
-        <HelmetProvider>
+        <>
+        <LoadingOverlay show={loading && !data} />
+        {tag && <HelmetProvider>
         <Container className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - {tag.tag}</title>
@@ -44,7 +43,8 @@ function TagPage () {
                 </Card.Body>
             </Card>
         </Container>
-        </HelmetProvider>
+        </HelmetProvider>}
+        </>
     )
 }
 
