@@ -1,4 +1,5 @@
 import React, {useMemo} from "react";
+import LoadingOverlay from "../components/LoadingOverlay";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link, useParams, Navigate } from 'react-router-dom';
 import { useQuery } from "@apollo/client";
@@ -41,14 +42,14 @@ function People () {
 
     if(!peopleRealId || peopleRealId === null || peopleRealId === "undefined") return <Navigate to={`/peoples`} replace/>;
 
-    if(loading) return <p>Loading...</p>
+    if(!loading && !data) return <Navigate to={`/404error`} replace/>;
 
-    if(!data) return <Navigate to={`/404error`} replace/>;
-
-    const person = data.peopleR;
+    const person = data?.peopleR;
 
     return (
-        <HelmetProvider>
+        <>
+        <LoadingOverlay show={loading && !data} />
+        {person && <HelmetProvider>
         <Container  className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - {person.name}</title>
@@ -113,7 +114,8 @@ function People () {
                 </Card>
             </Container>
         </Container>
-        </HelmetProvider>
+        </HelmetProvider>}
+        </>
     )
 }
 

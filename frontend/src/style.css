@@ -2,6 +2,20 @@ a {
     text-decoration: none!important;
 }
 
+.loading-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: #333333;
+    z-index: 1050;
+    opacity: 1;
+    transition: opacity 0.6s ease;
+    pointer-events: none;
+}
+
+.loading-overlay--hidden {
+    opacity: 0;
+}
+
 #banner, .formInput, img, #myInput, .navbar, .footer, .width100 {
     width: 100%!important;
 }

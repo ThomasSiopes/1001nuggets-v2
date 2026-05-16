@@ -1,4 +1,5 @@
 import React, {useMemo} from "react";
+import LoadingOverlay from "../components/LoadingOverlay";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
@@ -38,19 +39,19 @@ function Author () {
             return{ list1, list2, list3a, list3b, newIndexOrder };
         }, [data]);
 
-    if(!authorRealId || authorRealId === null || authorRealId === "undefined") return <Navigate to={`/authors`}/>; 
+    if(!authorRealId || authorRealId === null || authorRealId === "undefined") return <Navigate to={`/authors`}/>;
 
-    if(loading) return <div className="loadingPage">Loading...</div>;
+    if(!loading && !data) return <Navigate to="/404error" replace />;
 
-    if(!data) return <Navigate to="/404error" replace />;
-
-    const author = data.authorR;
+    const author = data?.authorR;
 
     let extraAuthors = null;
-    if(author.relatedAuthors[0]) extraAuthors = author.relatedAuthors;
+    if(author?.relatedAuthors?.[0]) extraAuthors = author.relatedAuthors;
 
     return (
-        <HelmetProvider>
+        <>
+        <LoadingOverlay show={loading && !data} />
+        {author && <HelmetProvider>
         <Container className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - {author.name}</title>
@@ -130,7 +131,8 @@ function Author () {
                 </Card.Body>
             </Card>
         </Container>
-        </HelmetProvider>
+        </HelmetProvider>}
+        </>
     )
 }
 

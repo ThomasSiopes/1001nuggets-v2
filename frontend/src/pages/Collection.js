@@ -1,4 +1,5 @@
 import React from "react";
+import LoadingOverlay from "../components/LoadingOverlay";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
@@ -17,14 +18,14 @@ function Collection () {
 
     if(!collectionRealId || collectionRealId === null || collectionRealId === "undefined") return <Navigate to={`/collections`} replace/>;
 
-    if(loading) return <p>Loading...</p>
+    if(!loading && !data) return <Navigate to={`/404error`} replace/>;
 
-    if(!data) return <Navigate to={`/404error`} replace/>;
-
-    const collection = data.collectionR
+    const collection = data?.collectionR;
 
     return (
-        <HelmetProvider>
+        <>
+        <LoadingOverlay show={loading && !data} />
+        {collection && <HelmetProvider>
         <Container className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - {collection.name}</title>
@@ -42,7 +43,8 @@ function Collection () {
                 </Card.Body>
             </Card>
         </Container>
-        </HelmetProvider>
+        </HelmetProvider>}
+        </>
     )
 }
 

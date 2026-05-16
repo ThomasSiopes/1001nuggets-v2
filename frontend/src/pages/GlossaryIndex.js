@@ -1,4 +1,5 @@
 import React from "react";
+import LoadingOverlay from "../components/LoadingOverlay";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
@@ -11,13 +12,11 @@ function GlossaryIndex () {
 
     const {loading, data} = useQuery(QUERY_GLOSSARY_TYPING, { variables: { typing: typing }, fetchPolicy: "network-only" });
 
-    if(loading) return <div>Loading Glossary Index...</div>
-
     if(!typing) return <Navigate to={"/404error"} replace/>
 
-    if(!data || !data.glossaryType) return <Navigate to={"/404error"} replace/>
+    if(!loading && (!data || !data.glossaryType)) return <Navigate to={"/404error"} replace/>
 
-    const glossaryIndex = data.glossaryType;
+    const glossaryIndex = data?.glossaryType;
 
     let prefix = null;
 
@@ -33,7 +32,9 @@ function GlossaryIndex () {
     const typingCap = String(typing).charAt(0).toUpperCase() + String(typing).slice(1);
 
     return (
-        <HelmetProvider>
+        <>
+        <LoadingOverlay show={loading && !data} />
+        {glossaryIndex && <HelmetProvider>
             <Container className="pt-3">
                 <Helmet>
                     <title>1001 Nuggets - Glossary - {typingCap}</title>
@@ -53,7 +54,8 @@ function GlossaryIndex () {
                     </Card.Body>
                 </Card>
             </Container>
-        </HelmetProvider>
+        </HelmetProvider>}
+        </>
     )
 }
 
