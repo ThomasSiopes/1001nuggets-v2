@@ -5,7 +5,7 @@ a {
 .loading-overlay {
     position: fixed;
     inset: 0;
-    background-color: #333333;
+    background-color: #222;
     z-index: 1050;
     opacity: 1;
     transition: opacity 0.6s ease;

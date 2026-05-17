@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
+import loadingIcon from "../../assets/images/N_IconGoldTransparent.png";
 
- const MIN_DISPLAY_MS = 1000;
+ const MIN_DISPLAY_MS = 3000;
 
 function LoadingOverlay({ show }) {
     const [visible, setVisible] = useState(true);
@@ -23,7 +24,9 @@ function LoadingOverlay({ show }) {
     if (!visible) return null;
 
     return (
-        <div className={`loading-overlay${fading ? ' loading-overlay--hidden' : ''}`} />
+        <div className={`loading-overlay${fading ? ' loading-overlay--hidden' : ''}`}>
+            <img src={loadingIcon} alt="Loading..." />
+        </div>
     );
 }
 
