@@ -12,6 +12,15 @@ a {
     pointer-events: none;
 }
 
+.loading-overlay img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px!important;
+    height: 150px!important;
+}
+
 .loading-overlay--hidden {
     opacity: 0;
 }
