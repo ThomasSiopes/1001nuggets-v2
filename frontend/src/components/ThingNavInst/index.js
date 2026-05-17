@@ -6,7 +6,7 @@ import { QUERY_THING_LETTER } from "../../utils/queries";
 function ThingNavInst({ letter }) {
     const ref = useRef(null);
     const { loading, data } = useQuery(QUERY_THING_LETTER, {
-        variable:{letter:letter}, fetchPolicy:"cache-and-network"
+        variables:{letter:letter}, fetchPolicy:"cache-and-network"
     });
 
     if (loading) return <div ref={ref}><span>Loading {letter}s...</span></div>;
