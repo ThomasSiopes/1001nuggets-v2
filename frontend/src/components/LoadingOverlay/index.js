@@ -1,14 +1,22 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+
+ const MIN_DISPLAY_MS = 1000;
 
 function LoadingOverlay({ show }) {
     const [visible, setVisible] = useState(true);
     const [fading, setFading] = useState(false);
+    const mountTime = useRef(Date.now());
 
     useEffect(() => {
         if (!show) {
-            setFading(true);
-            const timer = setTimeout(() => setVisible(false), 600);
-            return () => clearTimeout(timer);
+            const elapsed = Date.now() - mountTime.current;
+            const delay = Math.max(0, MIN_DISPLAY_MS - elapsed);
+            const fadeTimer = setTimeout(() => {
+                setFading(true);
+                const removeTimer = setTimeout(() => setVisible(false), 600);
+                return () => clearTimeout(removeTimer);
+            }, delay);
+            return () => clearTimeout(fadeTimer);;
         }
     }, [show]);
 
