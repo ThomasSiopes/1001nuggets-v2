@@ -1,6 +1,6 @@
 import React from "react";
 import {Helmet, HelmetProvider} from "react-helmet-async";
-import LoadingOverlay from "../components/LoadingOverlay";
+
 
 import { Container, Row, Col, Card } from "react-bootstrap";
 const TopicNavInst = React.lazy(() => import("../components/TopicNavInst"));
@@ -13,9 +13,7 @@ function Topics () {
     };
 
     return (
-        <>
-            <LoadingOverlay show={false} />
-            <HelmetProvider>
+        <HelmetProvider>
             <Container className="pt-3">
                 <Helmet>
                     <title>1001 Nuggets - Topics</title>
@@ -45,8 +43,7 @@ function Topics () {
                     </div>
                 </Row>
             </Container>
-            </HelmetProvider>
-        </>
+        </HelmetProvider>
     )
 }
 
