@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import { QUERY_THING_LETTER } from "../../utils/queries";
+import LoadingOverlay from "../../components/LoadingOverlay";
 
 function ThingNavInst({ letter }) {
     const ref = useRef(null);
@@ -23,6 +24,8 @@ function ThingNavInst({ letter }) {
     if(sortedList.length === 0) return <span/>
 
     return(
+        <>
+        <LoadingOverlay show={loading && !data} />
         <div ref={ref} className="text-center">
             {sortedList.map((index) => (
                 <div key={letter + index.name}>
@@ -35,6 +38,7 @@ function ThingNavInst({ letter }) {
                 <hr/>
             </div>
         </div>
+        </>
     );
 }
 

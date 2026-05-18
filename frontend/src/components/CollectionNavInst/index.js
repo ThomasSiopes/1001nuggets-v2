@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import { QUERY_COLLECTION_LETTER } from "../../utils/queries";
+import LoadingOverlay from "../../components/LoadingOverlay";
 
 function CollectionNavInst({ letter }) {
     const ref = useRef(null);
@@ -23,6 +24,8 @@ function CollectionNavInst({ letter }) {
     if(sortedList.length === 0) return <span/>
 
     return(
+        <>
+        <LoadingOverlay show={loading && !data} />
         <div ref={ref} className="text-center mb-2">
             {/* <div>
                 <strong id={letter}>{letter.toUpperCase()}</strong>
@@ -36,6 +39,7 @@ function CollectionNavInst({ letter }) {
                 </div>
             ))}
         </div>
+        </>
     );
 }
 
