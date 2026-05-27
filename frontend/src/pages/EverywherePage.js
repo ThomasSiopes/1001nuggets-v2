@@ -53,6 +53,11 @@ function Everywhere () {
         <Container  className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - {everywhere.name}</title>
+                <meta name="description" content={`Read quotes from ${everywhere.name} on 1001 Nuggets.`} />
+                <meta property="og:title" content={`1001 Nuggets - ${everywhere.name}`} />
+                <meta property="og:description" content={`Read quotes from ${everywhere.name} on 1001 Nuggets.`} />
+                <meta property="og:url" content={`https://1001nuggets.com/everywhere/${everywhereRealId}`} />
+                <link rel="canonical" href={`https://1001nuggets.com/everywhere/${everywhereRealId}`} />
             </Helmet>
             <Container>
                 <Card bg={"transparent"} border={"none"}>

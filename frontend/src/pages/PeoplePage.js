@@ -53,6 +53,11 @@ function People () {
         <Container  className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - {person.name}</title>
+                <meta name="description" content={`Read quotes by ${person.name} on 1001 Nuggets.`} />
+                <meta property="og:title" content={`1001 Nuggets -${person.name}`} />
+                <meta property="og:description" content={`Read quotes by ${person.name} on 1001 Nuggets.`} />
+                <meta property="og:url" content={`https://1001nuggets.com/person/${peopleRealId}`} />
+                <link rel="canonical" href={`https://1001nuggets.com/person/${peopleRealId}`} />
             </Helmet>
             <Container>
                 <Card bg={"transparent"} border={"none"}>

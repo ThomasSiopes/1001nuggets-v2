@@ -56,7 +56,7 @@ function Author () {
             <Helmet>
                 <title>1001 Nuggets - {author.name}</title>
                 <meta name="description" content={`Read quotes by ${author.name} on 1001 Nuggets.`} />
-                <meta property="og:title" content={`1001 Nuggets -${author.name}`} />
+                <meta property="og:title" content={`1001 Nuggets - ${author.name}`} />
                 <meta property="og:description" content={`Read quotes by ${author.name} on 1001 Nuggets.`} />
                 <meta property="og:url" content={`https://1001nuggets.com/author/${authorRealId}`} />
                 <link rel="canonical" href={`https://1001nuggets.com/author/${authorRealId}`} />

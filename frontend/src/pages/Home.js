@@ -9,6 +9,11 @@ function Home () {
         <HelmetProvider>
             <Helmet>
                 <title>1001 Nuggets</title>
+                <meta name="description" content={`Read over 20,000 quotes on 1001 Nuggets.`} />
+                <meta property="og:title" content={`1001 Nuggets`} />
+                <meta property="og:description" content={`Read over 20,000 quotes on 1001 Nuggets.`} />
+                <meta property="og:url" content={`https://1001nuggets.com`} />
+                <link rel="canonical" href={`https://1001nuggets.com`} />
             </Helmet>
             <div className="text-center bg-main">
                 <div className="d-none d-sm-block">

@@ -53,6 +53,11 @@ function Thing () {
         <Container  className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - {thing.name}</title>
+                <meta name="description" content={`Read quotes about ${thing.name} on 1001 Nuggets.`} />
+                <meta property="og:title" content={`1001 Nuggets - ${thing.name}`} />
+                <meta property="og:description" content={`Read quotes about ${thing.name} on 1001 Nuggets.`} />
+                <meta property="og:url" content={`https://1001nuggets.com/thing/${thingRealId}`} />
+                <link rel="canonical" href={`https://1001nuggets.com/thing/${thingRealId}`} />
             </Helmet>
             <Container>
                 <Card bg={"transparent"} border={"none"}>

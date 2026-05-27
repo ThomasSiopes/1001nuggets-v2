@@ -34,9 +34,11 @@ function Quote () {
         <Container className="pt-5">
             <Helmet>
                 <title>1001 Nuggets - {quote.quoteText}</title>
-                {/* <meta name="description" content={quote.quoteText}/>
-                <meta property="og:description" content={quote.quoteText}/>
-                <meta name="twitter:description" content={quote.quoteText}/> */}
+                <meta name="description" content={`"${quote.quoteText}" on 1001 Nuggets.`} />
+                <meta property="og:title" content={`1001 Nuggets - ${quote.quoteText}`} />
+                <meta property="og:description" content={`"${quote.quoteText}" on 1001 Nuggets.`} />
+                <meta property="og:url" content={`https://1001nuggets.com/quote/${quoteRealId}`} />
+                <link rel="canonical" href={`https://1001nuggets.com/quote/${quoteRealId}`} />
             </Helmet>
             <Card bg={"transparent"} border={"none"}>
                 <Card.Header className="bg-light rounded">Home {`>`} Authors {`>`} <AuthorButton type={"link"} name={quote.author}/> {`>`} Quotes</Card.Header>
