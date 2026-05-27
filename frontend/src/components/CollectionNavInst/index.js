@@ -10,7 +10,10 @@ function CollectionNavInst({ letter }) {
         variables: {letter:letter}, fetchPolicy: "cache-and-network"
     });
 
-    if (loading) return <div ref={ref}><span>Loading {letter}s...</span></div>;
+    if (loading) return <div ref={ref}>
+        <LoadingOverlay show={loading && !data} />
+        <span>Loading {letter}s...</span>
+        </div>;
     if (!data)   return <div ref={ref} />;
     
     let sortedList = data.collectionLetter.map((item) => Object.assign({}, item, {selected:false}))
@@ -25,7 +28,6 @@ function CollectionNavInst({ letter }) {
 
     return(
         <>
-        <LoadingOverlay show={loading && !data} />
         <div ref={ref} className="text-center mb-2">
             {/* <div>
                 <strong id={letter}>{letter.toUpperCase()}</strong>

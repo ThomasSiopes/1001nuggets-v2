@@ -10,7 +10,10 @@ function TagNavInst({ letter }) {
         variables:{letter:letter}, fetchPolicy:"cache-and-network"
     });
 
-    if (loading) return <div ref={ref}><span>Loading {letter}s...</span></div>;
+    if (loading) return <div ref={ref}>
+        <LoadingOverlay show={loading && !data} />
+        <span>Loading {letter}s...</span>
+        </div>;
     if (!data)   return <div ref={ref} />;
 
     let sortedList = data.tagLetter.map((item) => Object.assign({}, item, {selected:false}))
@@ -25,7 +28,6 @@ function TagNavInst({ letter }) {
 
     return(
         <>
-        <LoadingOverlay show={loading && !data} />
         <div ref={ref} className="text-center mb-2">
             {sortedList.map((index) => (
                 <div key={letter + index.tag}>
