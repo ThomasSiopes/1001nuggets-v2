@@ -58,8 +58,8 @@ function Author () {
                 <meta name="description" content={`Read quotes by ${author.name} on 1001 Nuggets.`} />
                 <meta property="og:title" content={`1001 Nuggets -${author.name}`} />
                 <meta property="og:description" content={`Read quotes by ${author.name} on 1001 Nuggets.`} />
-                <meta property="og:url" content={`https://1001nuggets.com/author/${author.realId}`} />
-                <link rel="canonical" href={`https://1001nuggets.com/author/${author.realId}`} />
+                <meta property="og:url" content={`https://1001nuggets.com/author/${authorRealId}`} />
+                <link rel="canonical" href={`https://1001nuggets.com/author/${authorRealId}`} />
             </Helmet>
             <Card bg={"transparent"} border={"none"}>
                 <Card.Header className="bg-light rounded">Home {`>`} Authors {`>`} {author.name}</Card.Header>

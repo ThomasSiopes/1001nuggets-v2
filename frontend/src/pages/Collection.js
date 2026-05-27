@@ -29,6 +29,11 @@ function Collection () {
         <Container className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - {collection.name}</title>
+                <meta name="description" content={`Read quotes by ${collection.name} on 1001 Nuggets.`} />
+                <meta property="og:title" content={`1001 Nuggets -${collection.name}`} />
+                <meta property="og:description" content={`Read quotes by ${collection.name} on 1001 Nuggets.`} />
+                <meta property="og:url" content={`https://1001nuggets.com/collection/${collectionRealId}`} />
+                <link rel="canonical" href={`https://1001nuggets.com/collection/${collectionRealId}`} />
             </Helmet>
             <Card bg={"transparent"} border={"none"}>
                 <Card.Header className="bg-light rounded">Home {`>`} <Link className="link-theme" to={`/collections`}>Collections</Link> {`>`} {collection.name}</Card.Header>
