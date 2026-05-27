@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import loadingIcon from "../../assets/images/bookpics/book1.webp";
 
- const MIN_DISPLAY_MS = 600;
+ const MIN_DISPLAY_MS = 900;
 
 function LoadingOverlay({ show }) {
     const [visible, setVisible] = useState(true);
