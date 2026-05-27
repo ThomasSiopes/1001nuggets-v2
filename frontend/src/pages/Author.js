@@ -60,6 +60,16 @@ function Author () {
                 <meta property="og:description" content={`Read quotes by ${author.name} on 1001 Nuggets.`} />
                 <meta property="og:url" content={`https://1001nuggets.com/author/${authorRealId}`} />
                 <link rel="canonical" href={`https://1001nuggets.com/author/${authorRealId}`} />
+                <script type="application/ld+json">{JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Person",
+                    "name": author.name,
+                    "url": `https://www.1001nuggets.com/author/${authorRealId}`,
+                    "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": `https://www.1001nuggets.com/author/${authorRealId}`
+                    }
+                })}</script>
             </Helmet>
             <Card bg={"transparent"} border={"none"}>
                 <Card.Header className="bg-light rounded">Home {`>`} Authors {`>`} {author.name}</Card.Header>

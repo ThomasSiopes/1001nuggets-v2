@@ -39,6 +39,21 @@ function Quote () {
                 <meta property="og:description" content={`"${quote.quoteText}" on 1001 Nuggets.`} />
                 <meta property="og:url" content={`https://1001nuggets.com/quote/${quoteRealId}`} />
                 <link rel="canonical" href={`https://1001nuggets.com/quote/${quoteRealId}`} />
+                <script type="application/ld+json">{JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Quotation",
+                    "text": quote.quoteText,
+                    "spokenByCharacter": {
+                        "@type": "Person",
+                        "name": quote.author,
+                        "url": `https://www.1001nuggets.com/author/${quote.authorRealID}`
+                        },
+                    "isPartOf": {
+                        "@type": "WebSite",
+                        "name": "1001 Nuggets",
+                        "url": "https://www.1001nuggets.com"
+                    }
+                })}</script>
             </Helmet>
             <Card bg={"transparent"} border={"none"}>
                 <Card.Header className="bg-light rounded">Home {`>`} Authors {`>`} <AuthorButton type={"link"} name={quote.author}/> {`>`} Quotes</Card.Header>

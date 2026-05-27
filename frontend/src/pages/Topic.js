@@ -95,11 +95,19 @@ function Topic () {
         <Container  className="pt-3">
             <Helmet>
                 <title>1001 Nuggets - {topic.name}</title>
-                <meta name="description" content={`Read quotes under ${topic.name} on 1001 Nuggets.`} />
+                <meta name="description" content={`Read quotes under the topic of ${topic.name} on 1001 Nuggets.`} />
                 <meta property="og:title" content={`1001 Nuggets - ${topic.name}`} />
-                <meta property="og:description" content={`Read quotes under ${topic.name} on 1001 Nuggets.`} />
+                <meta property="og:description" content={`Read quotes under the topic of ${topic.name} on 1001 Nuggets.`} />
                 <meta property="og:url" content={`https://1001nuggets.com/topic/${topicRealId}`} />
                 <link rel="canonical" href={`https://1001nuggets.com/topic/${topicRealId}`} />
+                <script type="application/ld+json">{JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "CollectionPage",
+                    "name": `${topic.name} Quotes`,
+                    "description": `Read quotes under the topic of ${topic.name} on 1001 Nuggets.`,
+                    "url": `https://www.1001nuggets.com/topic/${topicRealId}`,
+                    "numberOfItems": topic.quoteCount
+                })}</script>
             </Helmet>
             <Card bg={"transparent"} border={"none"}>
                 <Card.Header className="bg-light rounded">Home {`>`} <Link className="link-theme" to={`/topics`}>Topics</Link> {`>`} {topic.name}</Card.Header>
