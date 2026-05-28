@@ -1,6 +1,6 @@
 import React from "react";
 import {Helmet, HelmetProvider} from "react-helmet-async";
-import LoadingOverlay from "../components/LoadingOverlay";
+// import LoadingOverlay from "../components/LoadingOverlay";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
 const CollectionNavInst = React.lazy(() => import("../components/CollectionNavInst"));
@@ -10,7 +10,7 @@ function Collections () {
 
     return (
         <>
-            <LoadingOverlay show={false} />
+            {/* <LoadingOverlay show={false} /> */}
             <HelmetProvider>
             <Container className="pt-3">
                 <Helmet>

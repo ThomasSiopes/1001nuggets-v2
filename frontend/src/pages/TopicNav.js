@@ -1,6 +1,6 @@
 import React from "react";
 import {Helmet, HelmetProvider} from "react-helmet-async";
-import LoadingOverlay from "../components/LoadingOverlay";
+// import LoadingOverlay from "../components/LoadingOverlay";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
 const TopicNavInst = React.lazy(() => import("../components/TopicNavInst"));
@@ -14,7 +14,7 @@ function Topics () {
 
     return (
         <>
-            <LoadingOverlay show={false} />
+            {/* <LoadingOverlay show={false} /> */}
             <HelmetProvider>
             <Container className="pt-3">
                 <Helmet>

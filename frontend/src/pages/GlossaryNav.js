@@ -1,5 +1,5 @@
 import React from "react";
-import LoadingOverlay from "../components/LoadingOverlay";
+// import LoadingOverlay from "../components/LoadingOverlay";
 import {Helmet, HelmetProvider} from "react-helmet-async";
 import { useQuery } from "@apollo/client";
 import { Navigate } from "react-router-dom";
@@ -24,7 +24,7 @@ function GlossaryNav () {
 
     return (
         <>
-        <LoadingOverlay show={loading && !data} />
+        {/* <LoadingOverlay show={loading && !data} /> */}
         {glossary && <HelmetProvider>
             <Container className="pt-3">
                 <Helmet>
