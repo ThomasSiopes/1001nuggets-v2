@@ -45,7 +45,7 @@ const DNE = React.lazy(() => import("./pages/DNE"));
 
 // Client & Cache Stuff
 const clientInfo = {
-  httpLink: createHttpLink({uri: process.env.REACT_APP_GRAPHQL_URI || "/graphql"}),
+  httpLink: createHttpLink({uri: "/graphql"}),
   // httpLink: createHttpLink({uri: (((window.location.hostname === "1001nuggets.com") || (window.location.hostname === "w1001nuggets.herokuapp.com") || (window.location.hostname === "localhost")) ? "/graphql" : process.env.REACT_APP_GRAPHQL_URI)}),
   authLink: setContext((_, {headers}) => {
     const token = localStorage.getItem('id_token');
