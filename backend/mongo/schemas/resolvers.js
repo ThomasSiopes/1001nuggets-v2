@@ -161,33 +161,36 @@ const resolvers = {
         },
 
         topicDetails: async (parent, _args, context) => {
-        if (!parent.topics || parent.topics.length === 0) return [];
+        const topics = (parent.topics || []).filter(Boolean);
+        if (topics.length === 0) return [];
         const results = await Promise.all(
-            parent.topics.map(name => context.loaders.topicByName.load(name))
+            topics.map(name => context.loaders.topicByName.load(name))
         );
-        return parent.topics.map((name, i) => ({
+        return topics.map((name, i) => ({
             name,
             realID: results[i] ? results[i].realID : null,
         }));
     },
 
     relatedTopicDetails: async (parent, _args, context) => {
-        if (!parent.relatedTopics || parent.relatedTopics.length === 0) return [];
+        const topics = (parent.relatedTopics || []).filter(Boolean);
+        if (topics.length === 0) return [];
         const results = await Promise.all(
-            parent.relatedTopics.map(name => context.loaders.topicByName.load(name))
+            topics.map(name => context.loaders.topicByName.load(name))
         );
-        return parent.relatedTopics.map((name, i) => ({
+        return topics.map((name, i) => ({
             name,
             realID: results[i] ? results[i].realID : null,
         }));
     },
 
     unrelatedTopicDetails: async (parent, _args, context) => {
-        if (!parent.unrelatedTopics || parent.unrelatedTopics.length === 0) return [];
+        const topics = (parent.unrelatedTopics || []).filter(Boolean);
+        if (topics.length === 0) return [];
         const results = await Promise.all(
-            parent.unrelatedTopics.map(name => context.loaders.topicByName.load(name))
+            topics.map(name => context.loaders.topicByName.load(name))
         );
-        return parent.unrelatedTopics.map((name, i) => ({
+        return topics.map((name, i) => ({
             name,
             realID: results[i] ? results[i].realID : null,
         }));
