@@ -102,8 +102,8 @@ function App () {
             <Route exact path="/collections" element={<CollectionNav/>}/>
             <Route exact path="/collection/:collectionRealId" element={<Collection/>}/>
 
-            <Route exact path="/authors" element={<TagNav/>}/>
-            <Route exact path="/authortag/:tagId" element={<TagPage/>}/>
+            {/* <Route exact path="/authors" element={<TagNav/>}/> */}
+            {/* <Route exact path="/authortag/:tagId" element={<TagPage/>}/> */}
             <Route exact path="/author/:authorRealId" element={<Author/>}/>
             {/* <Route exact path="/authors" element={<AuthorNav/>}*/}
 
