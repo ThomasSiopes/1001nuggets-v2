@@ -7,7 +7,7 @@ const { SitemapStream, streamToPromise } = require("sitemap");
 const { Readable } = require("stream");
 
 const { typeDefs, resolvers } = require("./mongo/schemas");
-const { Author, Topic, Quote, Collection, People, Thing, Everywhere } = require("./mongo/models");
+const { Author, Topic, Quote, Collection, People, Things, Everywhere } = require("./mongo/models");
 const { createLoaders } = require("./mongo/schemas/loaders");
 
 const db = require("./config/connection");
@@ -56,7 +56,7 @@ if (process.env.NODE_ENV === "production") {
                 Quote.find({}, "realID").lean(),
                 Collection.find({}, "realID").lean(),
                 People.find({}, "realID").lean(),
-                Thing.find({}, "realID").lean(),
+                Things.find({}, "realID").lean(),
                 Everywhere.find({}, "realID").lean(),
             ]);
 
