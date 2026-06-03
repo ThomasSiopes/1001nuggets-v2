@@ -21,8 +21,8 @@ const TopicNav = React.lazy(() => import("./pages/TopicNav"));
 const CollectionNav = React.lazy(() => import ("./pages/CollectionNav"));
 const Collection = React.lazy(() => import ("./pages/Collection"));
 
-const TagNav = React.lazy(() => import("./pages/TagNav"));
-const TagPage = React.lazy(() => import("./pages/TagPage"));
+// const TagNav = React.lazy(() => import("./pages/TagNav"));
+// const TagPage = React.lazy(() => import("./pages/TagPage"));
 
 const PeopleNav = React.lazy(() => import("./pages/PeopleNav"));
 const PeoplePage = React.lazy(() => import("./pages/PeoplePage"));

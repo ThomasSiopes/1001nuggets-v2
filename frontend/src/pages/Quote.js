@@ -27,6 +27,8 @@ function Quote () {
 
     const quote = data?.quoteR;
 
+    console.log(quote)
+
     return (
         <>
         <LoadingOverlay show={loading && !data} />
@@ -64,7 +66,9 @@ function Quote () {
                                 <div id="quote-page">
                                     <Card.Body className="pt-5">
                                         <Card.Text className="display-6 text-center"><span className="quote-body font-poppins" id="main-quote">{quote.quoteText}</span></Card.Text>
-                                        <Card.Text className="text-end pe-2"><strong><AuthorButton whitened={true} type={"link"} name={quote.author}/></strong></Card.Text>
+                                        <Card.Text className="text-end pe-2"><strong>
+                                            {quote.author && <AuthorButton type={"link"} whitened={true} name={quote.author} realID={quote.authorRealID}/>}
+                                        </strong></Card.Text>
                                     </Card.Body>
                                     <Card.Body className="text-center">
                                         <a className="mx-2 share-button" target="_blank" rel="noreferrer" href={`https://twitter.com/intent/tweet?url=${window.location.href} - "${quote.quoteText} - ${quote.author}"`} id="share-X"><FaXTwitter/></a>
@@ -78,23 +82,23 @@ function Quote () {
                                 {quote.topics.length && 
                                     <Card.Footer className="text-center py-3">
                                         <div className="mb-2">
-                                            {quote.topics.map((index) => (
-                                                <TopicButton key={index} type={"button"} theme={"weak"} name={index}/>
+                                            {quote.topicDetails.map((index) => (
+                                                <TopicButton type={"button"} name={index.name} realID={index.realID} theme={"weak"} key={index.realID}/>
                                             ))}
                                         </div>
                                         <div className="text-start text-theme mx-2">
-                                            {quote.relatedTopics.map((relatedTopic) => (
+                                            {quote.relatedTopicDetails.map((detail) => (
                                                 <span>
                                                     {
-                                                        relatedTopic === quote.relatedTopics[quote.relatedTopics.length-1] ?
-                                                            <span><u><TopicButton key={relatedTopic} type={"link"} theme={"related"} name={relatedTopic}/></u></span>
-                                                            :
-                                                            <span><u><TopicButton key={relatedTopic} type={"link"} theme={"related"} name={relatedTopic}/></u>; </span>
+                                                    detail === quote.relatedTopicDetails[quote.relatedTopicDetails.length-1] ?
+                                                        <span><u><TopicButton type={"link"} name={detail.name} realID={detail.realID} theme={"related"}/></u></span>
+                                                        :
+                                                        <span><u><TopicButton type={"link"} name={detail.name} realID={detail.realID} theme={"related"}/></u>; </span>
                                                     }
                                                 </span>
                                             ))}
-                                            {quote.unrelatedTopics.map((unrelatedTopic) => (
-                                                <span>; <u><TopicButton key={unrelatedTopic} type={"link"} theme={"unrelated"} name={unrelatedTopic}/></u> </span>
+                                            {quote.unrelatedTopicDetails.map((detail) => (
+                                                <span>; <u><TopicButton key={detail.realID} type={"link"} theme={"unrelated"} name={detail.name} realID={detail.realID}/></u></span>
                                             ))}
                                         </div>
                                     </Card.Footer>
