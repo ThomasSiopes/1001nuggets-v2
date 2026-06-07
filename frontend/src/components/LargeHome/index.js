@@ -43,9 +43,13 @@ function LargeHome(){
                                 <Col xs={10}><input placeholder="Search..." className="rounded width100 text-center py-2"/></Col>
                                 <Col xs={2}><Button><FaSearch/></Button></Col>
                             </Form> */}
+                            <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/topics`}>Topics</Button></div>
+                            <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/collections`}>Collections</Button></div>
                             <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/everything`}>Everything</Button></div>
                             <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/everyone`}>Everyone</Button></div>
                             <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/everywhere`}>Everywhere</Button></div>
+                            <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/glossary`}>Glossary</Button></div>
+                            <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/publications`}>Publications</Button></div>
                         </Card.Body>
                     </Card>
                 </Col>

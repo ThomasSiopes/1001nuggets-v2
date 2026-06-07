@@ -5,7 +5,7 @@ import { Navigate, useParams } from "react-router-dom";
 import { useQuery} from "@apollo/client";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
-import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 import { FiShare } from "react-icons/fi";
 import truthSocialImage from "../assets/images/truthsocial.png";
 
@@ -72,7 +72,7 @@ function Quote () {
                                     </Card.Body>
                                     <Card.Body className="text-center">
                                         <a className="mx-2 share-button" target="_blank" rel="noreferrer" href={`https://twitter.com/intent/tweet?url=${window.location.href} - "${quote.quoteText} - ${quote.author}"`} id="share-X"><FaXTwitter/></a>
-                                        <a className="mx-2 share-button" target="_blank" rel="noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href} - "${quote.quoteText} - ${quote.author}"`} id="share-facebook"><FaFacebookF/></a>
+                                        {/* <a className="mx-2 share-button" target="_blank" rel="noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href} - "${quote.quoteText} - ${quote.author}"`} id="share-facebook"><FaFacebookF/></a> */}
                                         <a className="mx-2 share-button share-truth" target="_blank" rel="noreferrer" href={`https://truthsocial.com/share?text=${window.location.href} - "${quote.quoteText}" - ${quote.author}`}><img src={truthSocialImage} alt="TS" loading="lazy"/></a>
                                         <span className="mx-2" onClick={MobileShare}>
                                         <FiShare className="text-white cool-share-button"/>
