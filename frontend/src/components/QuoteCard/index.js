@@ -153,7 +153,7 @@ function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
           })}
           <Carousel.Item>
               <div className="text-center quote-card py-5">
-                <Button variant={"theme"} className="text-center" href="https://www.amazon.com">See more on Amazon</Button>
+                <Button variant={"theme"} className="text-center" href="https://www.amazon.com/dp/B0H4GKDCGB?binding=paperback&ref=dbs_dp_rwt_sb_pc_tpbk">See more on Amazon</Button>
               </div>
           </Carousel.Item>
         </Carousel>
