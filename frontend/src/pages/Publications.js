@@ -41,8 +41,8 @@ function Publications() {
                                 <Card.Body><Button className="btn-block" href={"https://a.co/d/0fMY1e7X"} variant={"theme"}>1001 Nuggets: Book 5</Button></Card.Body>
                         </Card></Col>
                         <Col xs={12} sm={6} className="my-2"><Card>
-                                <a href="https://www.google.com" aria-label="Shop for book 6"><Card.Img alt="Book Icon 6" variant="top" src={icon6}/></a>
-                                <Card.Body><Button className="btn-block" href={"https://www.google.com"} variant={"theme"}>1001 Nuggets: Book 6</Button></Card.Body>
+                                <a href="https://a.co/d/04J48wHp" aria-label="Shop for book 6"><Card.Img alt="Book Icon 6" variant="top" src={icon6}/></a>
+                                <Card.Body><Button className="btn-block" href={"https://a.co/d/04J48wHp"} variant={"theme"}>1001 Nuggets: Book 6</Button></Card.Body>
                         </Card></Col>
                         <Col xs={12} sm={6} className="my-2"><Card>
                                 <a href="https://a.co/d/04A3GhGh" aria-label="Shop for book lite"><Card.Img alt="Book Icon Lite" variant="top" src={iconLite}/></a>
