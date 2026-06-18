@@ -1,5 +1,5 @@
 import React from "react";
-import LoadingOverlay from "../components/LoadingOverlay";
+// import LoadingOverlay from "../components/LoadingOverlay";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
@@ -24,7 +24,7 @@ function TagPage () {
 
     return (
         <>
-        <LoadingOverlay show={loading && !data} />
+        {/* <LoadingOverlay show={loading && !data} /> */}
         {tag && <HelmetProvider>
         <Container className="pt-3">
             <Helmet>

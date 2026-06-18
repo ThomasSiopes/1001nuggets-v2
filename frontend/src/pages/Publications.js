@@ -20,7 +20,7 @@ function Publications() {
             <Card>
                 <Card.Body>
                     <Row className="text-center">
-                        <Col xs={12} sm={6} className="my-2"><Card>
+                        {/* <Col xs={12} sm={6} className="my-2"><Card>
                                 <a href="https://a.co/d/0hCtVeQZ" aria-label="Shop for book 1"><Card.Img alt="Book Icon 1" variant="top" src={icon1}/></a>
                                 <Card.Body><Button className="btn-block" href={"https://a.co/d/0hCtVeQZ"} variant={"theme"}>1001 Nuggets: Book 1</Button></Card.Body>
                         </Card></Col>
@@ -51,6 +51,39 @@ function Publications() {
                         <Col xs={12} sm={6} className="my-2"><Card>
                                 <a href="https://a.co/d/0c57Z20Z" aria-label="Shop for scrapbook"><Card.Img alt="Book Icon Scrapbook" variant="top" src={iconSB}/></a>
                                 <Card.Body><Button className="btn-block" href={"https://a.co/d/0c57Z20Z"} variant={"theme"}>1001 Nuggets: Scrapbook</Button></Card.Body>
+                        </Card></Col> */}
+                        
+                        <Col xs={12} sm={6} className="my-2"><Card>
+                                <a href="https://www.amazon.com/dp/B0H4GKDCGB" aria-label="Shop for book 1"><Card.Img alt="Book Icon 1" variant="top" src={icon1}/></a>
+                                <Card.Body><Button className="btn-block" href={"https://www.amazon.com/dp/B0H4GKDCGB"} variant={"theme"}>1001 Nuggets: Book 1</Button></Card.Body>
+                        </Card></Col>
+                        <Col xs={12} sm={6} className="my-2"><Card>
+                                <a href="https://www.amazon.com/dp/B0H4GKDCGB" aria-label="Shop for book 2"><Card.Img alt="Book Icon 2" variant="top" src={icon2}/></a>
+                                <Card.Body><Button className="btn-block" href={"https://www.amazon.com/dp/B0H4GKDCGB"} variant={"theme"}>1001 Nuggets: Book 2</Button></Card.Body>
+                        </Card></Col>
+                        <Col xs={12} sm={6} className="my-2"><Card>
+                                <a href="https://www.amazon.com/dp/B0H4GKDCGB" aria-label="Shop for book 3"><Card.Img alt="Book Icon 3" variant="top" src={icon3}/></a>
+                                <Card.Body><Button className="btn-block" href={"https://www.amazon.com/dp/B0H4GKDCGB"} variant={"theme"}>1001 Nuggets: Book 3</Button></Card.Body>
+                        </Card></Col>
+                        <Col xs={12} sm={6} className="my-2"><Card>
+                                <a href="https://www.amazon.com/dp/B0H4GKDCGB" aria-label="Shop for book 4"><Card.Img alt="Book Icon 4" variant="top" src={icon4}/></a>
+                                <Card.Body><Button className="btn-block" href={"https://www.amazon.com/dp/B0H4GKDCGB"} variant={"theme"}>1001 Nuggets: Book 4</Button></Card.Body>
+                        </Card></Col>
+                        <Col xs={12} sm={6} className="my-2"><Card>
+                                <a href="https://www.amazon.com/dp/B0H4GKDCGB" aria-label="Shop for book 5"><Card.Img alt="Book Icon 5" variant="top" src={icon5}/></a>
+                                <Card.Body><Button className="btn-block" href={"https://www.amazon.com/dp/B0H4GKDCGB"} variant={"theme"}>1001 Nuggets: Book 5</Button></Card.Body>
+                        </Card></Col>
+                        <Col xs={12} sm={6} className="my-2"><Card>
+                                <a href="https://www.amazon.com/dp/B0H4GKDCGB" aria-label="Shop for book 6"><Card.Img alt="Book Icon 6" variant="top" src={icon6}/></a>
+                                <Card.Body><Button className="btn-block" href={"https://www.amazon.com/dp/B0H4GKDCGB"} variant={"theme"}>1001 Nuggets: Book 6</Button></Card.Body>
+                        </Card></Col>
+                        <Col xs={12} sm={6} className="my-2"><Card>
+                                <a href="https://www.amazon.com/dp/B0H4GKDCGB" aria-label="Shop for book lite"><Card.Img alt="Book Icon Lite" variant="top" src={iconLite}/></a>
+                                <Card.Body><Button className="btn-block" href={"https://www.amazon.com/dp/B0H4GKDCGB"} variant={"theme"}>1001 Nuggets: Lite</Button></Card.Body>
+                        </Card></Col>
+                        <Col xs={12} sm={6} className="my-2"><Card>
+                                <a href="https://www.amazon.com/dp/B0H4GKDCGB" aria-label="Shop for scrapbook"><Card.Img alt="Book Icon Scrapbook" variant="top" src={iconSB}/></a>
+                                <Card.Body><Button className="btn-block" href={"https://www.amazon.com/dp/B0H4GKDCGB"} variant={"theme"}>1001 Nuggets: Scrapbook</Button></Card.Body>
                         </Card></Col>
                     </Row>
                 </Card.Body>

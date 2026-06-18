@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import { QUERY_PEOPLE_LETTER } from "../../utils/queries";
-import LoadingOverlay from "../../components/LoadingOverlay";
+// import LoadingOverlay from "../../components/LoadingOverlay";
 
 function PeopleNavInst({ letter }) {
     const ref = useRef(null);
@@ -11,7 +11,7 @@ function PeopleNavInst({ letter }) {
     });
 
     if (loading) return <div ref={ref}>
-        <LoadingOverlay show={loading && !data} />
+        {/* <LoadingOverlay show={loading && !data} /> */}
         <span>Loading {letter}s...</span>
         </div>;
     if (!data)   return <div ref={ref} />;

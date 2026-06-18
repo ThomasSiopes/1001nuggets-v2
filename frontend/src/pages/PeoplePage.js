@@ -1,5 +1,5 @@
 import React, {useMemo} from "react";
-import LoadingOverlay from "../components/LoadingOverlay";
+// import LoadingOverlay from "../components/LoadingOverlay";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link, useParams, Navigate } from 'react-router-dom';
 import { useQuery } from "@apollo/client";
@@ -48,7 +48,7 @@ function People () {
 
     return (
         <>
-        <LoadingOverlay show={loading && !data} />
+        {/* <LoadingOverlay show={loading && !data} /> */}
         {person && <HelmetProvider>
         <Container  className="pt-3">
             <Helmet>
