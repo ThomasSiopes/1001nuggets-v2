@@ -110,7 +110,7 @@ function Topic () {
                 })}</script>
             </Helmet>
             <Card bg={"transparent"} border={"none"}>
-                <Card.Header className="bg-light rounded">Home {`>`} <Link className="link-theme" to={`/topics`}>Topics</Link> {`>`} {topic.name}</Card.Header>
+                <Card.Header className="bg-light rounded"><Link className="link-theme" to={`/`}>Home</Link> {`>`} <Link className="link-theme" to={`/topics`}>Topics</Link> {`>`} {topic.name}</Card.Header>
                 <Card.Body bg={"transparent"}>
                     <Row>
                         {/* First Quote Column */}

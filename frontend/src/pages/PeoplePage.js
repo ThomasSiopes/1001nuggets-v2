@@ -61,7 +61,7 @@ function People () {
             </Helmet>
             <Container>
                 <Card bg={"transparent"} border={"none"}>
-                    <Card.Header className="bg-light rounded">Home {'>'} <Link className="link-theme" to={`/everyone`}>Everyone</Link> {'>'} {person.name}</Card.Header>
+                    <Card.Header className="bg-light rounded"><Link className="link-theme" to={`/`}>Home</Link> {'>'} <Link className="link-theme" to={`/everyone`}>Everyone</Link> {'>'} {person.name}</Card.Header>
                     <Card.Body bg={"transparent"}>
                         <Row>
                             {/* First Quote Column */}

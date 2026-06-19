@@ -36,7 +36,7 @@ function Collection () {
                 <link rel="canonical" href={`https://1001nuggets.com/collection/${collectionRealId}`} />
             </Helmet>
             <Card bg={"transparent"} border={"none"}>
-                <Card.Header className="bg-light rounded">Home {`>`} <Link className="link-theme" to={`/collections`}>Collections</Link> {`>`} {collection.name}</Card.Header>
+                <Card.Header className="bg-light rounded"><Link className="link-theme" to={`/`}>Home</Link> {`>`} <Link className="link-theme" to={`/collections`}>Collections</Link> {`>`} {collection.name}</Card.Header>
                 <Card.Body bg={"transparent"}>
                     <Row>
                          {collection.topicDetails.map((index) => (
