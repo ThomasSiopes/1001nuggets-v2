@@ -40,6 +40,7 @@ function GlossaryIndex () {
                     <title>1001 Nuggets - Glossary - {typingCap}</title>
                 </Helmet>
                 <Card>
+                    <Card.Header><Link className="link-theme" to={`/`}>Home</Link> {`>`} <Link className="link-theme" to={`/glossary`}>Glossary</Link> {`>`} {typingCap}</Card.Header>
                     <Card.Header className="py-3 justify-content-center text-center">
                         <h1>{typingCap}</h1>
                     </Card.Header>

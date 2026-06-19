@@ -1,7 +1,7 @@
 import React, {useMemo} from "react";
 // import LoadingOverlay from "../components/LoadingOverlay";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Navigate, useParams } from "react-router-dom";
+import { Link, Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
@@ -39,7 +39,7 @@ function Author () {
             return{ list1, list2, list3a, list3b, newIndexOrder };
         }, [data]);
 
-    if(!authorRealId || authorRealId === null || authorRealId === "undefined") return <Navigate to={`/authors`}/>;
+    if(!authorRealId || authorRealId === null || authorRealId === "undefined") return <Navigate to={`/`}/>;
 
     if(!loading && !data) return <Navigate to="/404error" replace />;
 
@@ -72,7 +72,7 @@ function Author () {
                 })}</script>
             </Helmet>
             <Card bg={"transparent"} border={"none"}>
-                <Card.Header className="bg-light rounded">Home {`>`} Authors {`>`} {author.name}</Card.Header>
+                <Card.Header className="bg-light rounded"><Link className="link-theme" to={`/`}>Home</Link> {`>`} Authors {`>`} {author.name}</Card.Header>
                 <Card.Body bg={"transparent"}>
                     <Row>
                          {/* First Quote Column */}

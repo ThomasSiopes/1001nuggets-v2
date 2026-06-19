@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import { Container, Card, Row, Col, Button } from "react-bootstrap";
 import icon1 from "../assets/images/bookpics/book1.webp";
 import icon2 from "../assets/images/bookpics/book2.webp";
@@ -18,6 +19,7 @@ function Publications() {
                 <title>1001 Nuggets - Publications</title>
             </Helmet>
             <Card>
+                <Card.Header className="bg-light rounded"><Link className="link-theme" to={`/`}>Home</Link> {`>`} Publications</Card.Header>
                 <Card.Body>
                     <Row className="text-center">
                         {/* <Col xs={12} sm={6} className="my-2"><Card>

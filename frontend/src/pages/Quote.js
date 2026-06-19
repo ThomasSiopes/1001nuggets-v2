@@ -1,7 +1,7 @@
 import React from "react";
 // import LoadingOverlay from "../components/LoadingOverlay";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Navigate, useParams } from "react-router-dom";
+import { Link, Navigate, useParams } from "react-router-dom";
 import { useQuery} from "@apollo/client";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
@@ -58,7 +58,7 @@ function Quote () {
                 })}</script>
             </Helmet>
             <Card bg={"transparent"} border={"none"}>
-                <Card.Header className="bg-light rounded">Home {`>`} Authors {`>`} <AuthorButton type={"link"} name={quote.author}/> {`>`} Quotes</Card.Header>
+                <Card.Header className="bg-light rounded"><Link className="link-theme" to={`/`}>Home</Link> {`>`} Authors {`>`} <AuthorButton type={"link"} name={quote.author} realID={quote.authorRealID} /></Card.Header>
                 <Card.Body bg={"transparent"}>
                     <Row>
                         <Col xs={12}>
