@@ -32,6 +32,7 @@ function QuoteCard({realID}) {
     if(!data || !data.quoteR.quoteText) return <Card><Card.Body><h1>No Current Quote of the Day</h1></Card.Body></Card>
 
     const Quote = data.quoteR
+    console.log(Quote);
 
     return(
         <div>
@@ -39,7 +40,7 @@ function QuoteCard({realID}) {
                 <div id="quote-page">
                     <Card.Body>
                         <Card.Text className="display-6 text-center"><span className="quote-body font-poppins" id="main-quote">{Quote.quoteText}</span></Card.Text>
-                        <Card.Text className="text-end pe-2"><strong><AuthorButton whitened={true} type={"link"} name={Quote.author}/></strong></Card.Text>
+                        <Card.Text className="text-end pe-2"><strong><AuthorButton type={"link"} name={Quote.author} realID={Quote.authorRealID}/></strong></Card.Text>
                     </Card.Body>
                     <Card.Body className="text-center">
                         <a className="mx-2 share-button" target="_blank" aria-label="Share on X" rel="noreferrer" href={`https://twitter.com/intent/tweet?url=${window.location.href} - "${Quote.quoteText}" - ${Quote.author}`} id="share-X"><FaXTwitter/></a>
@@ -62,8 +63,8 @@ function QuoteCard({realID}) {
                 </div>
                 {Quote.topics.length !== 0 && 
                     <Card.Footer className="text-center py-3">
-                            {Quote.topics.map((index) => (
-                                <TopicButton key={index} type={"button"} theme={"theme"} name={index}/>
+                            {Quote.topicDetails.map((index) => (
+                                <TopicButton type={"button"} name={index.name} realID={index.realID} theme={"weak"} key={index.realID + index.name}/>
                             ))}
                     </Card.Footer>
                 }

@@ -34,9 +34,9 @@ function NavBar() {
                         {/* <Nav.Link href="/authors">Authors</Nav.Link> */}
                         <Nav.Link as={NavLink} to="/topics">Topics</Nav.Link>
                         <Nav.Link as={NavLink} to="/collections">Collections</Nav.Link>
-                        <Nav.Link as={NavLink} to="/everything">Everything</Nav.Link>
-                        <Nav.Link as={NavLink} to="/everyone">Everyone</Nav.Link>
-                        <Nav.Link as={NavLink} to="/everywhere">Everywhere</Nav.Link>
+                        {/* <Nav.Link as={NavLink} to="/everything">Everything</Nav.Link> */}
+                        {/* <Nav.Link as={NavLink} to="/everyone">Everyone</Nav.Link> */}
+                        {/* <Nav.Link as={NavLink} to="/everywhere">Everywhere</Nav.Link> */}
                         <Nav.Link as={NavLink} to="/glossary">Glossary</Nav.Link>
                         <Nav.Link as={NavLink} to="/publications">Publications</Nav.Link>
                     </Nav>
@@ -71,9 +71,9 @@ function NavBar() {
                             {/* <Button variant={"theme"} href={`/authors`} className="btn-block my-3">Authors</Button> */}
                             <Button variant={"theme"} as={NavLink} to={`/topics`} className="btn-block my-3">Topics</Button>
                             <Button variant={"theme"} as={NavLink} to={`/collections`} className="btn-block my-3">Collections</Button>
-                            <Button variant={"theme"} as={NavLink} to={`/everything`} className="btn-block my-3">Everything</Button>
-                            <Button variant={"theme"} as={NavLink} to={`/everyone`} className="btn-block my-3">Everyone</Button>
-                            <Button variant={"theme"} as={NavLink} to={`/everywhere`} className="btn-block my-3">Everywhere</Button>
+                            {/* <Button variant={"theme"} as={NavLink} to={`/everything`} className="btn-block my-3">Everything</Button> */}
+                            {/* <Button variant={"theme"} as={NavLink} to={`/everyone`} className="btn-block my-3">Everyone</Button> */}
+                            {/* <Button variant={"theme"} as={NavLink} to={`/everywhere`} className="btn-block my-3">Everywhere</Button> */}
                             <Button variant={"theme"} as={NavLink} to={`/glossary`} className="btn-block my-3">Glossary</Button>
                             <Button variant={"theme"} as={NavLink} to={`/publications`} className="btn-block my-3">Publications</Button>
                         </Card.Footer>

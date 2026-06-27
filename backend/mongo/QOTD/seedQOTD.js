@@ -1,6 +1,6 @@
 const db = require("../../config/connection");
 const { QOTD } = require("../models");
-const QOTDseed = require("./QOTD.json");
+const QOTDseed = require("./QOTDseeds.json");
 
 db.once("open", async () => {
     try {

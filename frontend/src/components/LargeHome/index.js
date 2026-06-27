@@ -4,7 +4,7 @@ import { Form, Button, Container, Card, Row, Col } from "react-bootstrap";
 
 import { FaSearch } from "react-icons/fa";
 
-// const QuoteOfTheDay = React.lazy(() => import("../QuoteOfTheDay"));
+const QuoteOfTheDay = React.lazy(() => import("../QuoteOfTheDay"));
 
 function LargeHome(){
     const [buttonDisabled, setAbility] = useState(true);
@@ -45,17 +45,17 @@ function LargeHome(){
                             </Form> */}
                             <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/topics`}>Topics</Button></div>
                             <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/collections`}>Collections</Button></div>
-                            <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/everything`}>Everything</Button></div>
-                            <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/everyone`}>Everyone</Button></div>
-                            <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/everywhere`}>Everywhere</Button></div>
+                            {/* <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/everything`}>Everything</Button></div> */}
+                            {/* <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/everyone`}>Everyone</Button></div> */}
+                            {/* <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/everywhere`}>Everywhere</Button></div> */}
                             <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/glossary`}>Glossary</Button></div>
                             <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/publications`}>Publications</Button></div>
                         </Card.Body>
                     </Card>
                 </Col>
-                {/* <Col xs={8}>
+                <Col xs={8}>
                     <QuoteOfTheDay/>
-                </Col> */}
+                </Col>
             </Row>
         </Container>
     )
