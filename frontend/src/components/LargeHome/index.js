@@ -4,6 +4,8 @@ import { Form, Button, Container, Card, Row, Col } from "react-bootstrap";
 
 import { FaSearch } from "react-icons/fa";
 
+import HomePagePopularWidget from "../HomePagePopularWidget";
+import HomePageCatalogueWidget from "../HomePageCatalogueWidget";
 const QuoteOfTheDay = React.lazy(() => import("../QuoteOfTheDay"));
 
 function LargeHome(){
@@ -35,8 +37,8 @@ function LargeHome(){
                     </Button>
                 </Col>
             </Form>
-            <Row>
-                <Col>
+            <Row className="mb-3">
+                <Col xs={4}>
                     <Card className="my-4">
                         <Card.Body>
                             {/* <Form className="row">
@@ -55,6 +57,12 @@ function LargeHome(){
                 </Col>
                 <Col xs={8}>
                     <QuoteOfTheDay/>
+                </Col>
+                <Col xs={9}>
+                    <HomePagePopularWidget/>
+                </Col>
+                <Col>
+                    <HomePageCatalogueWidget/>
                 </Col>
             </Row>
         </Container>

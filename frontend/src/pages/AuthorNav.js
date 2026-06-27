@@ -7,6 +7,10 @@ const AuthorNavInst = React.lazy(() => import("../components/AuthorNavInst"));
 function Authors () {
     const alphabet = ["1","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
+    const scrollToLetter = (letter) => {
+        document.getElementById(letter)?.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <HelmetProvider>
         <Container className="pt-3">
@@ -29,7 +33,9 @@ function Authors () {
                 <div className="col-05 p-0 text-center">
                     <Row className="fitter px-0 py-3 ms-0 align-items-center justify-content-center">
                         {alphabet.map((fitterIndex) => (
-                            <div className="p-0 mx-0 float-left sidebar-text" key={"fitter" + fitterIndex}><a href={"#" + fitterIndex} className="text-white">{fitterIndex}</a></div>
+                            <div className="p-0 mx-0 float-left sidebar-text" key={"fitter" + fitterIndex}>
+                                <span role="button" onClick={() => scrollToLetter(fitterIndex)} className="text-white" style={{cursor:'pointer'}}>{fitterIndex}</span>
+                            </div>
                         ))}
                     </Row>
                 </div>

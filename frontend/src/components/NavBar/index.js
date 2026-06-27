@@ -31,7 +31,7 @@ function NavBar() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav" className="mx-2">
                     <Nav className="me-auto justify-content-center text-center">
-                        {/* <Nav.Link href="/authors">Authors</Nav.Link> */}
+                        <Nav.Link as={NavLink} to="/authors">Authors</Nav.Link>
                         <Nav.Link as={NavLink} to="/topics">Topics</Nav.Link>
                         <Nav.Link as={NavLink} to="/collections">Collections</Nav.Link>
                         {/* <Nav.Link as={NavLink} to="/everything">Everything</Nav.Link> */}
@@ -68,7 +68,7 @@ function NavBar() {
                             </Form>
                         </Card.Body>
                         <Card.Footer className="px-5">
-                            {/* <Button variant={"theme"} href={`/authors`} className="btn-block my-3">Authors</Button> */}
+                            <Button variant={"theme"} as={NavLink} to={`/authors`} className="btn-block my-3">Authors</Button>
                             <Button variant={"theme"} as={NavLink} to={`/topics`} className="btn-block my-3">Topics</Button>
                             <Button variant={"theme"} as={NavLink} to={`/collections`} className="btn-block my-3">Collections</Button>
                             {/* <Button variant={"theme"} as={NavLink} to={`/everything`} className="btn-block my-3">Everything</Button> */}

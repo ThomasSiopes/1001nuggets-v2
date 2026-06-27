@@ -7,12 +7,13 @@ import { persistCache, LocalStorageWrapper } from "apollo3-cache-persist";
 //Components
 // import ErrorPage from "./components/ErrorPage";
 const NavBar = React.lazy(() => import("./components/NavBar"));
+const Footer = React.lazy(() => import("./components/Footer"));
 
 //Pages
 const Home = React.lazy(() => import("./pages/Home"))
 
 const Author = React.lazy(() => import("./pages/Author"));
-// const AuthorNav = React.lazy(() => import("./pages/AuthorNav"));
+const AuthorNav = React.lazy(() => import("./pages/AuthorNav"));
 const Quote = React.lazy(() => import("./pages/Quote"));
 
 const Topic = React.lazy(() => import("./pages/Topic"));
@@ -105,7 +106,7 @@ function App () {
             {/* <Route exact path="/authors" element={<TagNav/>}/> */}
             {/* <Route exact path="/authortag/:tagId" element={<TagPage/>}/> */}
             <Route exact path="/author/:authorRealId" element={<Author/>}/>
-            {/* <Route exact path="/authors" element={<AuthorNav/>}*/}
+            <Route exact path="/authors" element={<AuthorNav/>}/>
 
             <Route exact path="/everyone" element={<PeopleNav/>}/>
             <Route exact path="/person/:peopleRealId" element={<PeoplePage/>}/>
@@ -131,6 +132,7 @@ function App () {
             <Route path="*" element={<DNE/>}/>
           </Routes>
         </React.Suspense>
+        {/* <React.Suspense fallback={<div>Loading...</div>}><Footer/></React.Suspense> */}
       </Router>
     </ApolloProvider>
   )
