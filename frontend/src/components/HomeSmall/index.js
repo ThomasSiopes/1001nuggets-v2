@@ -47,9 +47,10 @@ function SmallHome() {
                 <Button variant={"theme"} className="py-3 px-5" onClick={handleModalShow}>Find Nuggets</Button>
                 <Modal show={show} onHide={handleModalClose} centered className="px-2">
                     <Modal.Body>
-                        <Button variant={"theme"} as={NavLink} to={`/everything`} className="btn-block my-3">Everything</Button>
-                        <Button variant={"theme"} as={NavLink} to={`/everyone`} className="btn-block my-3">Everyone</Button>
-                        <Button variant={"theme"} as={NavLink} to={`/everywhere`} className="btn-block my-3">Everywhere</Button>
+                        {/* <Button variant={"theme"} as={NavLink} to={`/everything`} className="btn-block my-3">Everything</Button> */}
+                        {/* <Button variant={"theme"} as={NavLink} to={`/everyone`} className="btn-block my-3">Everyone</Button> */}
+                        {/* <Button variant={"theme"} as={NavLink} to={`/everywhere`} className="btn-block my-3">Everywhere</Button> */}
+                        <Button variant={"theme"} as={NavLink} to={`/authors`} className="btn-block my-3">Authors</Button>
                         <Button variant={"theme"} as={NavLink} to={`/topics`} className="btn-block my-3">Topics</Button>
                         <Button variant={"theme"} as={NavLink} to={`/collections`} className="btn-block my-3">Collections</Button>
                         <Button variant={"theme"} as={NavLink} to={`/glossary`} className="btn-block my-3">Glossary</Button>

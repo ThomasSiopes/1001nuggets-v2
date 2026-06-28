@@ -35,7 +35,7 @@ function QuoteCard({realID}) {
         <div>
             <Card className="my-4">
                 <div id="quote-page">
-                    <Card.Header className="bg-light text-black"><h3>Quote of the Day</h3></Card.Header>
+                    <Card.Title className="bg-light text-black"><h4>Quote of the Day</h4></Card.Title>
                     <Card.Body>
                         <Card.Text className="display-6 text-center"><span className="quote-body font-poppins" id="main-quote">{Quote.quoteText}</span></Card.Text>
                         <Card.Text className="text-end pe-2"><strong><AuthorButton type={"link"} name={Quote.author} realID={Quote.authorRealID}/></strong></Card.Text>

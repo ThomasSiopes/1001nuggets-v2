@@ -6,6 +6,7 @@ import { FaSearch } from "react-icons/fa";
 
 import HomePagePopularWidget from "../HomePagePopularWidget";
 import HomePageCatalogueWidget from "../HomePageCatalogueWidget";
+import HomePagePopularAuthorWidget from "../HomePagePopularAuthorWidget";
 const QuoteOfTheDay = React.lazy(() => import("../QuoteOfTheDay"));
 
 function LargeHome(){
@@ -45,6 +46,7 @@ function LargeHome(){
                                 <Col xs={10}><input placeholder="Search..." className="rounded width100 text-center py-2"/></Col>
                                 <Col xs={2}><Button><FaSearch/></Button></Col>
                             </Form> */}
+                            <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/authors`}>Authors</Button></div>
                             <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/topics`}>Topics</Button></div>
                             <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/collections`}>Collections</Button></div>
                             {/* <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/everything`}>Everything</Button></div> */}
@@ -63,6 +65,9 @@ function LargeHome(){
                 </Col>
                 <Col>
                     <HomePageCatalogueWidget/>
+                </Col>
+                <Col xs={12} className="text-center">
+                    <HomePagePopularAuthorWidget/>
                 </Col>
             </Row>
         </Container>
