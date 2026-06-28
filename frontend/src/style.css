@@ -43,7 +43,7 @@ a {
 
 @media (min-width:577px) {
     .bg-main {
-        min-height:156vh;
+        min-height:130vh;
         background:linear-gradient(0deg, transparent, black 96%) top;
     }
 }

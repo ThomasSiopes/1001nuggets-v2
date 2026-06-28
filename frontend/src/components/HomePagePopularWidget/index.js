@@ -2,9 +2,7 @@ import React from "react";
 
 import { Card, Col, Row, Button } from "react-bootstrap";
 
-function List({inputList, type}) {
-    console.log(inputList)
-    
+function List({inputList, type}) {    
     return (
         <Col>
             <p>Popular {type}s</p>

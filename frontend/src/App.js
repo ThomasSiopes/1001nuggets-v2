@@ -22,17 +22,17 @@ const TopicNav = React.lazy(() => import("./pages/TopicNav"));
 const CollectionNav = React.lazy(() => import ("./pages/CollectionNav"));
 const Collection = React.lazy(() => import ("./pages/Collection"));
 
-// const TagNav = React.lazy(() => import("./pages/TagNav"));
-// const TagPage = React.lazy(() => import("./pages/TagPage"));
+const TagNav = React.lazy(() => import("./pages/TagNav"));
+const TagPage = React.lazy(() => import("./pages/TagPage"));
 
-const PeopleNav = React.lazy(() => import("./pages/PeopleNav"));
-const PeoplePage = React.lazy(() => import("./pages/PeoplePage"));
+// const PeopleNav = React.lazy(() => import("./pages/PeopleNav"));
+// const PeoplePage = React.lazy(() => import("./pages/PeoplePage"));
 
 const ThingNav = React.lazy(() => import("./pages/ThingNav"));
 const ThingPage = React.lazy(() => import("./pages/ThingPage"));
 
-const EverywhereNav = React.lazy(() => import("./pages/EverywhereNav"));
-const EverywherePage = React.lazy(() => import("./pages/EverywherePage"));
+// const EverywhereNav = React.lazy(() => import("./pages/EverywhereNav"));
+// const EverywherePage = React.lazy(() => import("./pages/EverywherePage"));
 
 const SearchResult = React.lazy(() => import("./pages/SearchResult"));
 // const HomeNav = React.lazy(() => import("./pages/HomeNav"));
@@ -103,19 +103,19 @@ function App () {
             <Route exact path="/collections" element={<CollectionNav/>}/>
             <Route exact path="/collection/:collectionRealId" element={<Collection/>}/>
 
-            {/* <Route exact path="/authors" element={<TagNav/>}/> */}
-            {/* <Route exact path="/authortag/:tagId" element={<TagPage/>}/> */}
+            <Route exact path="/author-catalogue" element={<TagNav/>}/>
+            <Route exact path="/author-catalogue/:tagRealId" element={<TagPage/>}/>
             <Route exact path="/author/:authorRealId" element={<Author/>}/>
             <Route exact path="/authors" element={<AuthorNav/>}/>
 
-            <Route exact path="/everyone" element={<PeopleNav/>}/>
-            <Route exact path="/person/:peopleRealId" element={<PeoplePage/>}/>
+            {/* <Route exact path="/everyone" element={<PeopleNav/>}/>
+            <Route exact path="/person/:peopleRealId" element={<PeoplePage/>}/> */}
 
-            <Route exact path="/everything" element={<ThingNav/>}/>
-            <Route exact path="/thing/:thingRealId" element={<ThingPage/>}/>
+            <Route exact path="/quote-catalogue" element={<ThingNav/>}/>
+            <Route exact path="/quote-catalogue/:thingRealId" element={<ThingPage/>}/>
 
-            <Route exact path="/everywhere" element={<EverywhereNav/>}/>
-            <Route exact path="/place/:everywhereRealId" element={<EverywherePage/>}/>
+            {/* <Route exact path="/everywhere" element={<EverywhereNav/>}/>
+            <Route exact path="/place/:everywhereRealId" element={<EverywherePage/>}/> */}
 
             <Route exact path="/quote/:quoteRealId" element={<Quote/>}/>
 
@@ -132,7 +132,7 @@ function App () {
             <Route path="*" element={<DNE/>}/>
           </Routes>
         </React.Suspense>
-        {/* <React.Suspense fallback={<div>Loading...</div>}><Footer/></React.Suspense> */}
+        <React.Suspense fallback={<div>Loading...</div>}><Footer/></React.Suspense>
       </Router>
     </ApolloProvider>
   )

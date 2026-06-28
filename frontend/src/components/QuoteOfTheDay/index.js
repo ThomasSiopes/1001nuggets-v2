@@ -4,7 +4,7 @@ import { Card } from "react-bootstrap";
 
 import AuthorButton from "../AuthorButton";
 import TopicButton from "../TopicButton";
-import { FaXTwitter, FaFacebookF  } from "react-icons/fa6";
+import { FaXTwitter  } from "react-icons/fa6";
 import { FiShare } from "react-icons/fi";
 import truthSocialImage from "../../assets/images/truthsocial.png";
 
@@ -42,14 +42,14 @@ function QuoteCard({realID}) {
                     </Card.Body>
                     <Card.Body className="text-center">
                         <a className="mx-2 share-button" target="_blank" aria-label="Share on X" rel="noreferrer" href={`https://twitter.com/intent/tweet?url=${window.location.href} - "${Quote.quoteText}" - ${Quote.author}`} id="share-X"><FaXTwitter/></a>
-                        <a className="mx-2 share-button" target="_blank" aria-label="Share on Facebook" rel="noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}quote/${Quote.realID} - "${Quote.quoteText}" - ${Quote.author}`} id="share-facebook"><FaFacebookF/></a>
+                        {/* <a className="mx-2 share-button" target="_blank" aria-label="Share on Facebook" rel="noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}quote/${Quote.realID} - "${Quote.quoteText}" - ${Quote.author}`} id="share-facebook"><FaFacebookF/></a> */}
                         <a className="mx-2 share-button share-truth" target="_blank" aria-label="Share on TruthSocial" rel="noreferrer" href={`https://truthsocial.com/share?text=${window.location.href}quote/${Quote.realID} - "${Quote.quoteText}" - ${Quote.author}`} id="share-truth"><img src={truthSocialImage} alt="TS" loading="lazy"/></a>
                         <span className="mx-2" onClick={() => {
                             if(navigator.canShare) {
                                 navigator.share({
                                 title:"1001 Nuggets",
                                 text:"\"" + Quote.quoteText + "\" - " + Quote.author,
-                                url: window.location.href
+                                url: "/quote/" + Quote.realID
                                 });
                             } else {
                               alert("Cannot navigate")

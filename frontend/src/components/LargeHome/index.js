@@ -5,7 +5,7 @@ import { Form, Button, Container, Card, Row, Col } from "react-bootstrap";
 import { FaSearch } from "react-icons/fa";
 
 import HomePagePopularWidget from "../HomePagePopularWidget";
-import HomePageCatalogueWidget from "../HomePageCatalogueWidget";
+// import HomePageCatalogueWidget from "../HomePageCatalogueWidget";
 import HomePagePopularAuthorWidget from "../HomePagePopularAuthorWidget";
 const QuoteOfTheDay = React.lazy(() => import("../QuoteOfTheDay"));
 
@@ -39,7 +39,7 @@ function LargeHome(){
                 </Col>
             </Form>
             <Row className="mb-3">
-                <Col xs={4}>
+                <Col xs={3}>
                     <Card className="my-4">
                         <Card.Body>
                             {/* <Form className="row">
@@ -52,20 +52,24 @@ function LargeHome(){
                             {/* <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/everything`}>Everything</Button></div> */}
                             {/* <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/everyone`}>Everyone</Button></div> */}
                             {/* <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/everywhere`}>Everywhere</Button></div> */}
+
+                            <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/author-catalogue`}>Author Catalogue</Button></div>
+                            <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/quote-catalogue`}>Quote Catalogue</Button></div>
+                            
                             <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/glossary`}>Glossary</Button></div>
                             <div><Button variant={"theme"} className="btn-block py-2 my-2" href={`/publications`}>Publications</Button></div>
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col xs={8}>
+                <Col xs={9}>
                     <QuoteOfTheDay/>
                 </Col>
-                <Col xs={9}>
+                <Col>
                     <HomePagePopularWidget/>
                 </Col>
-                <Col>
+                {/* <Col xs={4}>
                     <HomePageCatalogueWidget/>
-                </Col>
+                </Col> */}
                 <Col xs={12} className="text-center">
                     <HomePagePopularAuthorWidget/>
                 </Col>
