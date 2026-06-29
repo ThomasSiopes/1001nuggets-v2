@@ -68,6 +68,7 @@ const typeDefs = gql`
         sortedName: String
         authors: [String]!
         authorDetails: [AuthorDetail]!
+        realID: String
     }
 
     type People {
@@ -153,6 +154,7 @@ const typeDefs = gql`
         tags: [Tag]
         tagLetter(letter: String): [Tag]
         tagID(tagId: ID): Tag
+        tagR(tagRealId: String): Tag
 
         glossaryAll: [Glossary]
         glossaryType(typing: String): Glossary

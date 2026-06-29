@@ -298,6 +298,7 @@ export const QUERY_TAG_LETTER = gql`
           tag
           authors
           sortedName
+          realID
         }
     }
 `;
@@ -305,6 +306,18 @@ export const QUERY_TAG_LETTER = gql`
 export const QUERY_TAG_ID = gql`
     query getTagById($tagId: ID!) {
         tagID (tagId: $tagId){
+            _id
+            tag
+            authors
+            sortedName
+            authorDetails { name realID }
+        }
+    }
+`;
+
+export const QUERY_TAG_REALID = gql`
+    query getTagByRealId($tagRealId: String!) {
+        tagR(tagRealId: $tagRealId){
             _id
             tag
             authors

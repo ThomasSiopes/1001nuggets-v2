@@ -103,14 +103,14 @@ function App () {
             <Route exact path="/collections" element={<CollectionNav/>}/>
             <Route exact path="/collection/:collectionRealId" element={<Collection/>}/>
 
-            <Route exact path="/author-catalogue" element={<TagNav/>}/>
-            <Route exact path="/author-catalogue/:tagRealId" element={<TagPage/>}/>
             <Route exact path="/author/:authorRealId" element={<Author/>}/>
             <Route exact path="/authors" element={<AuthorNav/>}/>
 
             {/* <Route exact path="/everyone" element={<PeopleNav/>}/>
             <Route exact path="/person/:peopleRealId" element={<PeoplePage/>}/> */}
 
+            <Route exact path="/author-catalogue" element={<TagNav/>}/>
+            <Route exact path="/author-catalogue/:tagRealId" element={<TagPage/>}/>
             <Route exact path="/quote-catalogue" element={<ThingNav/>}/>
             <Route exact path="/quote-catalogue/:thingRealId" element={<ThingPage/>}/>
 

@@ -95,6 +95,9 @@ const resolvers = {
         tagID: async (parent, { tagId }) => {
             return Tag.findOne({ _id: tagId });
         },
+        tagR: async (parent, { tagRealId }) => {
+            return Tag.findOne({ realID: tagRealId });
+        },
 
         // people
         peopleAll: async () => {

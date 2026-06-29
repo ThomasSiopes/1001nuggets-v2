@@ -15,6 +15,7 @@ function QuoteOfTheDay(){
     if(loading) return <p>Loading...</p>
 
     const QOTD = data.dailyQuote[0].index
+    console.log("QOTD: ", QOTD)
 
     return(
         <QuoteCard realID={QOTD}/>

@@ -13,7 +13,11 @@ const tagThing = new Schema({
         {
             type: String,
         }
-    ]
+    ],
+    realID: {
+        type: String,
+        required: true
+    },
 });
 
 const Tag = model("Tag", tagThing);

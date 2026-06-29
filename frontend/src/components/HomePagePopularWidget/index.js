@@ -5,7 +5,9 @@ import { Card, Col, Row, Button } from "react-bootstrap";
 function List({inputList, type}) {    
     return (
         <Col>
-            <p>Popular {type}s</p>
+            <p>
+                {type === "Proverb" ? `1001 Proverbs` : `Popular ${type}s`}
+            </p>
                 {inputList.map((item, index) => (
                     <p className="mb-0" key={index}>
                         <a href={`/${type === "Proverb" ? "Author" : type}/${item.realID}`}>{item.name}</a>

@@ -7,12 +7,12 @@ import { useQuery } from "@apollo/client";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import AuthorButton from "../components/AuthorButton";
 
-import { QUERY_TAG_ID } from "../utils/queries";
+import { QUERY_TAG_REALID } from "../utils/queries";
 
 function TagPage () {
     const { tagId } = useParams();
-    let {loading, data} = useQuery(QUERY_TAG_ID, {
-        variables: {tagId: tagId},
+    let {loading, data} = useQuery(QUERY_TAG_REALID, {
+        variables: {tagRealId: tagId},
         fetchPolicy: "cache-and-network"
     });
 
@@ -20,7 +20,7 @@ function TagPage () {
 
     if(!loading && !data) return <Navigate to={`/404error`} replace/>;
 
-    const tag = data?.tagID;
+    const tag = data?.tagR;
 
     return (
         <>

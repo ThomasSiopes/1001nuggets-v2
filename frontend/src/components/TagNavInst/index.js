@@ -31,7 +31,7 @@ function TagNavInst({ letter }) {
         <div ref={ref} className="text-center mb-2">
             {sortedList.map((index) => (
                 <div key={letter + index.tag}>
-                    <p><strong><Link to={`/authortag/${index._id}`} className="link-theme">{index.tag}</Link></strong></p>
+                    <p><strong><Link to={`/author-catalogue/${index.realID}`} className="link-theme">{index.tag}</Link></strong></p>
                     <hr/>
                 </div>
             ))}
