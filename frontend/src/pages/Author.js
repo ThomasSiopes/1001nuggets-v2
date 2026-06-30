@@ -72,7 +72,7 @@ function Author () {
                 })}</script>
             </Helmet>
             <Card bg={"transparent"} border={"none"}>
-                <Card.Header className="bg-light rounded"><Link className="link-theme" to={`/`}>Home</Link> {`>`} Authors {`>`} {author.name}</Card.Header>
+                <Card.Header className="bg-light rounded"><Link className="link-theme" to={`/`}>Home</Link> {`>`} <Link className="link-theme" to={`/authors`}>Authors</Link> {`>`} {author.name}</Card.Header>
                 <Card.Body bg={"transparent"}>
                     <Row>
                          {/* First Quote Column */}

@@ -2,8 +2,7 @@ import React from "react";
 
 import { Card, Col, Row, Button } from "react-bootstrap";
 
-function List({inputList, type}) {    
-    return (
+function List({inputList, type}) {       return (
         <Col>
             <p>
                 {type === "Proverb" ? `1001 Proverbs` : `Popular ${type}s`}
@@ -20,28 +19,71 @@ function List({inputList, type}) {
 
 function HomePagePopularWidget() {
     const authorList = [
-        {name: "Author 1", realID: "author1"}, 
-        {name: "Author 2", realID: "author2"}, 
-        {name: "Author 3", realID: "author3"}, 
-        {name: "Author 4", realID: "author4"}, 
-        {name: "Author 5", realID: "author5"}
+        {name: "Mark Twain quotes", realID:"MarkTwain"},
+        {name: "Albert Einstein quotes", realID:"Albert-Einstein"},
+        {name: "Winston Churchill quotes", realID:"Winston-Churchill"},
+        {name: "Elon Musk quotes", realID:"ElonMusk"},
+        {name: "William Shakespeare quotes", realID:"William-Shakespeare"},
+        {name: "Mahatma Gandhi quotes", realID:"MahatmaGandhi"},
+        {name: "Henry Ford quotes", realID:"Henry-Ford"},
+        {name: "Ralph Waldo Emerson quotes", realID:"Ralph-Waldo-Emerson"},
+        {name: "Benjamin Franklin quotes", realID:"Benjamin-Franklin"},
+        {name: "Samuel Johnson quotes", realID:"Samuel-Johnson"},
+        {name: "Oscar Wilde quotes", realID:"OscarWilde"},
+        {name: "Maya Angelou quotes", realID:"MayaAngelou"},
+        {name: "George Bernard Shaw quotes", realID:"GeorgeBernardShaw"},
+        {name: "Eleanor Roosevelt quotes", realID:"EleanorRoosevelt"},
+        {name: "Aristotle quotes", realID:"Aristotle"},
+        {name: "Confucius quotes", realID:"Confucius"},
+        {name: "Will Rogers quotes", realID:"WillRogers"},
+        {name: "Cicero quotes", realID:"Cicero"},
+        {name: "Josh Billings quotes", realID:"JoshBillings"},
     ]
     const topicList = [
-        {name: "Topic 1", realID: "topic1"}, 
-        {name: "Topic 2", realID: "topic2"}, 
-        {name: "Topic 3", realID: "topic3"}, 
-        {name: "Topic 4", realID: "topic4"}, 
-        {name: "Topic 5", realID: "topic5"}
+        {name: "Armchair QBs", realID: "Armchair-QBs"},
+        {name: "Business.101", realID: "Business-101"},
+        {name: "Critical thinking", realID: "Critical-thinking"},
+        {name: "Duty", realID: "Duty"},
+        {name: "Eperience", realID: "Experience"},
+        {name: "Golf", realID: "Golf"},
+        {name: "Husbands & Wives", realID: "HusbandsAndWives"},
+        {name: "Ivory towers", realID: "Ivory-towers"},
+        {name: "Jealousy", realID: "Jealousy"},
+        {name: "Know-it-alls", realID: "Know-it-alls"},
+        {name: "Louder than words", realID: "Louder-than-words"},
+        {name: "Nonconformity", realID: "Nonconformity"},
+        {name: "Obstacles", realID: "Obstacles"},
+        {name: "Picking your battles", realID: "Picking-your-battles"},
+        {name: "Reflection", realID: "Reflection"},
+        {name: "Social media", realID: "Social-media"},
+        {name: "Theory vs. Practice", realID: "Theory-vs--Practice"},
+        {name: "Venturing", realID: "Venturing"},
+        {name: "Winners & Losers", realID: "Winners---Losers"},
+        {name: "Youth", realID: "Youth"}
     ]
     const proverbList = [
-        {name: "Proverb 1", realID: "proverb1"}, 
-        {name: "Proverb 2", realID: "proverb2"}, 
-        {name: "Proverb 3", realID: "proverb3"}, 
-        {name: "Proverb 4", realID: "proverb4"}, 
-        {name: "Proverb 5", realID: "proverb5"},
-        {name: "Proverb 6", realID: "proverb6"},
-        {name: "Proverb 7", realID: "proverb7"},
+        {name: "African Proverbs", realID: "African-Proverb"},
+        {name: "American Proverbs", realID: "American-proverb"},
+        {name: "Arabian Proverbs", realID: "Arabian-proverb"},
+        {name: "Chinese Proverbs", realID: "Chinese-proverb"},
+        {name: "Danish Proverbs ", realID: "DanishProverb"},
+        {name: "Dutch Proverbs", realID: "Dutch-proverb"},
+        {name: "English Proverbs", realID: "English-proverb"},
+        {name: "French Proverbs", realID: "French-proverb"},
+        {name: "German Proverbs", realID: "German-proverb"},
+        {name: "Greek Proverbs", realID: "Greek-proverb"},
+        {name: "Irish Proverbs", realID: "Irish-proverb"},
+        {name: "Italian Proverbs", realID: "Italian-proverb"},
+        {name: "Japanese Proverbs", realID: "Japanese-proverb"},
+        {name: "Jewish Proverbs", realID: "Jewish-proverb"},
+        {name: "Latin Proverbs", realID: "Latin-proverb"},
+        {name: "Russian Proverbs", realID: "Russian-proverb"},
+        {name: "Scottish Proverbs", realID: "Scottish-proverb"},
+        {name: "Spanish Proverbs", realID: "Spanish-proverb"},
+        {name: "Turkish Proverbs", realID: "Turkish-proverb"},
+        {name: "Yiddish Proverbs", realID: "Yiddish-proverb"},
     ]
+
 
     return(
         <Card>
