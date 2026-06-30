@@ -44,7 +44,7 @@ function HomePagePopularWidget() {
         {name: "Business.101", realID: "Business-101"},
         {name: "Critical thinking", realID: "Critical-thinking"},
         {name: "Duty", realID: "Duty"},
-        {name: "Eperience", realID: "Experience"},
+        {name: "Experience", realID: "Experience"},
         {name: "Golf", realID: "Golf"},
         {name: "Husbands & Wives", realID: "HusbandsAndWives"},
         {name: "Ivory towers", realID: "Ivory-towers"},
