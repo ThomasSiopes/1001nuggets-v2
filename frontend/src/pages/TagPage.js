@@ -16,7 +16,7 @@ function TagPage () {
         fetchPolicy: "cache-and-network"
     });
 
-    if(!tagId || tagId === null || tagId === "undefined") return <Navigate to={`/authors`} replace/>;
+    if(!tagId || tagId === null || tagId === "undefined") return <Navigate to={`/author-catalogue`} replace/>;
 
     if(!loading && !data) return <Navigate to={`/404error`} replace/>;
 
@@ -31,7 +31,7 @@ function TagPage () {
                 <title>1001 Nuggets - {tag.tag}</title>
             </Helmet>
             <Card bg={"transparent"} border={"none"}>
-                <Card.Header className="bg-light rounded">Home {`>`} <Link className="link-theme" to={`/authors`}>Author Tags</Link> {`>`} {tag.tag}</Card.Header>
+                <Card.Header className="bg-light rounded">Home {`>`} <Link className="link-theme" to={`/author-catalogue`}>Author Catalogue</Link> {`>`} {tag.tag}</Card.Header>
                 <Card.Body bg={"transparent"}>
                     <Row>
                          {tag.authorDetails.map((index) => (

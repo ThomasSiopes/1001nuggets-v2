@@ -5,7 +5,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 const AuthorNavInst = React.lazy(() => import("../components/AuthorNavInst"));
 
 function Authors () {
-    const alphabet = ["1","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+    const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
     const scrollToLetter = (letter) => {
         document.getElementById(letter)?.scrollIntoView({ behavior: 'smooth' });

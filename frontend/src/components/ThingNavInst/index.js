@@ -31,7 +31,7 @@ function ThingNavInst({ letter }) {
         <div ref={ref} className="text-center">
             {sortedList.map((index) => (
                 <div key={letter + index.name}>
-                    <p><strong><Link to={`/thing/${index.realID}`} className="link-theme">{index.name}</Link></strong></p>
+                    <p><strong><Link to={`/quote-catalogue/${index.realID}`} className="link-theme">{index.name}</Link></strong></p>
                     {/* <hr/> */}
                 </div>
             ))}

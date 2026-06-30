@@ -61,7 +61,7 @@ function Thing () {
             </Helmet>
             <Container>
                 <Card bg={"transparent"} border={"none"}>
-                    <Card.Header className="bg-light rounded"><Link className="link-theme" to={`/`}>Home</Link> {'>'} <Link className="link-theme" to={`/everything`}>Everything</Link> {'>'} {thing.name}</Card.Header>
+                    <Card.Header className="bg-light rounded"><Link className="link-theme" to={`/`}>Home</Link> {'>'} <Link className="link-theme" to={`/quote-catalogue`}>Quote Catalogue</Link> {'>'} {thing.name}</Card.Header>
                     <Card.Body bg={"transparent"}>
                         <Row>
                             {/* First Quote Column */}
