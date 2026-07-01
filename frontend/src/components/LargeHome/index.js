@@ -39,7 +39,7 @@ function LargeHome(){
                 </Col>
             </Form>
             <Row className="mb-3">
-                <Col xs={3}>
+                <Col xs={4} lg={3}>
                     <Card className="my-4">
                         <Card.Body>
                             {/* <Form className="row">
@@ -61,7 +61,7 @@ function LargeHome(){
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col xs={9}>
+                <Col xs={8} lg={9}>
                     <QuoteOfTheDay/>
                 </Col>
                 <Col>

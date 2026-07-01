@@ -11,7 +11,7 @@ import truthSocialImage from "../../assets/images/truthsocial.png";
 import { QUERY_QOTD, QUERY_QUOTE_REALID } from "../../utils/queries";
 
 function QuoteOfTheDay(){
-    let {loading, data} = useQuery(QUERY_QOTD)
+    let {loading, data} = useQuery(QUERY_QOTD, { fetchPolicy: "cache-and-network" });
     if(loading) return <p>Loading...</p>
 
     const QOTD = data.dailyQuote[0].index
