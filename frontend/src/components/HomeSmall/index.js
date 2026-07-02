@@ -53,8 +53,9 @@ function SmallHome() {
                         <Button variant={"theme"} as={NavLink} to={`/authors`} className="btn-block my-3">Authors</Button>
                         <Button variant={"theme"} as={NavLink} to={`/topics`} className="btn-block my-3">Topics</Button>
                         <Button variant={"theme"} as={NavLink} to={`/collections`} className="btn-block my-3">Collections</Button>
+                        <Button variant={"theme"} as={NavLink} to={`/author-catalogue`} className="btn-block my-3">Author Catalogue</Button>
+                        <Button variant={"theme"} as={NavLink} to={`/quote-catalogue`} className="btn-block my-3">Quote Catalogue</Button>
                         <Button variant={"theme"} as={NavLink} to={`/glossary`} className="btn-block my-3">Glossary</Button>
-                        {/* <Button variant={"theme"} href={`/authors`} className="btn-block my-3">Authors</Button> */}
                         <Button variant={"theme"} as={NavLink} to={`/publications`} className="btn-block my-3">Publications</Button>
                     </Modal.Body>
                 </Modal>
