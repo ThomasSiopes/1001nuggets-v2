@@ -38,6 +38,7 @@ function HomePagePopularWidget() {
         {name: "Will Rogers", realID:"WillRogers"},
         {name: "Cicero", realID:"Cicero"},
         {name: "Josh Billings", realID:"JoshBillings"},
+        {name: "Buddha", realID:"Buddha"},
     ]
     const topicList = [
         {name: "Armchair QBs", realID: "Armchair-QBs"},

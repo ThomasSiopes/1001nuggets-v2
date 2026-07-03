@@ -215,6 +215,10 @@ body {
     font-family: 'Frank Ruhl Libre', serif;
 }
 
+.footer {
+    float: bottom!important;
+}
+
 #footer-img {
     width: 70%!important;
 }
