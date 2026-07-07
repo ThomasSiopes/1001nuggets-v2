@@ -11,7 +11,7 @@ function Footer() {
             <Container>
                 <Row className="py-4">
                     <Col xs={12} md={2}>
-                        <Card border={"none"} bg={"transparent"}>
+                        <Card border={"none"} bg={"transparent"} className="pt-4">
                             <Container className="text-center">
                                 <a href="/"><Card.Img id="footer-icon" src={require("../../assets/images/N_IconGold.png")} alt="Logo"/></a>
                             </Container>
@@ -23,7 +23,7 @@ function Footer() {
                         </Card>
                     </Col>
                     <Col xs={12} md={3}>
-                        <p className="pt-4 mb-1">1001 Nuggets provides tens of thousands quotes of wisdom from over 5,000 famous people, categorized by thousands of curated topics.</p>
+                        <Container className="pt-4 mb-1">1001 Nuggets provides tens of thousands of wise quotes from authors, philosophers, and leaders, categorized by thousands of curated topics.</Container>
                     </Col>
                     <Col xs={12} md={4} className="text-center">
                         <p className="pt-4 mb-1">Site</p>

@@ -132,7 +132,7 @@ function App () {
             <Route path="*" element={<DNE/>}/>
           </Routes>
         </React.Suspense>
-        <React.Suspense fallback={<div>Loading...</div>}><Footer className="align-self-end"/></React.Suspense>
+        <React.Suspense fallback={<div>Loading...</div>}><Footer/></React.Suspense>
       </Router>
     </ApolloProvider>
   )
