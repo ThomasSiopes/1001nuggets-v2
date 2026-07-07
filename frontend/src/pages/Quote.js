@@ -33,7 +33,7 @@ function Quote () {
         <>
         {/* <LoadingOverlay show={loading && !data} /> */}
         {quote && <HelmetProvider>
-        <Container className="pt-5">
+        <Container className="pt-5 mainBody">
             <Helmet>
                 <title>1001 Nuggets - {quote.quoteText}</title>
                 <meta name="description" content={`"${quote.quoteText}" on 1001 Nuggets.`} />

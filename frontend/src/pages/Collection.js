@@ -26,7 +26,7 @@ function Collection () {
         <>
         {/* <LoadingOverlay show={loading && !data} /> */}
         {collection && <HelmetProvider>
-        <Container className="pt-3">
+        <Container className="pt-3 mainBody">
             <Helmet>
                 <title>1001 Nuggets - {collection.name}</title>
                 <meta name="description" content={`Read quotes under ${collection.name} on 1001 Nuggets.`} />

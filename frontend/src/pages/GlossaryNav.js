@@ -26,7 +26,7 @@ function GlossaryNav () {
         <>
         {/* <LoadingOverlay show={loading && !data} /> */}
         {glossary && <HelmetProvider>
-            <Container className="pt-3">
+            <Container className="pt-3 mainBody">
                 <Helmet>
                     <title>1001 Nuggets - Glossary</title>
                 </Helmet>

@@ -114,7 +114,7 @@ function Author () {
         <>
         {/* <LoadingOverlay show={loading && !data} /> */}
         {author && <HelmetProvider>
-        <Container className="pt-3">
+        <Container className="pt-3 mainBody">
             <Helmet>
                 <title>1001 Nuggets - {author.name}</title>
                 <meta name="description" content={`Read quotes by ${author.name} on 1001 Nuggets.`} />

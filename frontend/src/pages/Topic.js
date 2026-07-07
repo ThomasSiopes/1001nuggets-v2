@@ -92,7 +92,7 @@ function Topic () {
         <>
         {/* <LoadingOverlay show={loading && !data} /> */}
         {topic && <HelmetProvider>
-        <Container  className="pt-3">
+        <Container className="pt-3 mainBody">
             <Helmet>
                 <title>1001 Nuggets - {topic.name}</title>
                 <meta name="description" content={`Read quotes under the topic of ${topic.name} on 1001 Nuggets.`} />

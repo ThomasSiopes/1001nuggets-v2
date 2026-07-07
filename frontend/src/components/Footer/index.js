@@ -7,7 +7,7 @@ import { Card, Container, Col, Row } from "react-bootstrap";
 
 function Footer() {
     return(
-        <footer id="footer"className="bg-light">
+        <footer id="footer"className="bg-light mt-4">
             <Container>
                 <Row className="pb-3">
                     <Col xs={12} sm={5} md={2}>
@@ -50,7 +50,7 @@ function Footer() {
                     </Col>
                 </Row>
             </Container>
-            <p className="py-3 text-center bg-footermost">©2024-2026 1001 Nuggets</p>
+            <p className="py-3 mb-0 text-center bg-footermost">©2024-2026 1001 Nuggets</p>
         </footer>
     )
 }
