@@ -25,7 +25,7 @@ a {
     opacity: 0;
 }
 
-#banner, .formInput, img, #myInput, .navbar, .footer, .width100 {
+#banner, .formInput, img, #myInput, .navbar, #footer, .width100 {
     width: 100%!important;
 }
 
@@ -33,11 +33,16 @@ a {
     background-color: #C32!important;
 }
 
+.bg-footermost {
+    background-color: #dedede!important;
+}
+
 .bg-nugget {
     background-image: url("../public/assets/images/Option4.webp");
     background-size: 100% auto;
     background-repeat: repeat;
-    min-height: 100%;
+    height: 100%!important;
+    min-height: 100%!important;
     box-shadow: inset 0 0 0 100vw rgba(26, 26, 26, 0.3);
 }
 
@@ -215,12 +220,12 @@ body {
     font-family: 'Frank Ruhl Libre', serif;
 }
 
-.footer {
-    float: bottom!important;
+#footer {
+    
 }
 
-#footer-img {
-    width: 70%!important;
+#footer-icon {
+    width: 75px!important;
 }
 
 #homeBody {
@@ -250,6 +255,7 @@ body {
 }
 
 html {
+    height:100%;
     min-height:100%;
 }
 
@@ -379,6 +385,14 @@ html {
 
 #share-facebook:hover, .share-facebook:hover {
     color: #1c315e !important;
+}
+
+#share-instagram, .share-instagram {
+    color: #FB0060 !important;
+}
+
+#share-instagram:hover, .share-instagram:hover {
+    color: #FEA409 !important;
 }
 
 #share-X, .share-X {
