@@ -298,8 +298,16 @@ html {
     text-decoration-color: rgb(220, 147, 147)!important;
 }
 
-.mainBody {
-    min-height: 58vh!important;
+@media (min-width:577px) {
+    .mainBody {
+        min-height: 58vh!important;
+    }
+}
+
+@media (max-width:576px) {
+    .mainBody {
+        min-height: 67vh!important;
+    }
 }
 
 .modal-dialog {

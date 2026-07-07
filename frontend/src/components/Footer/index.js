@@ -17,7 +17,7 @@ function Footer() {
                                     <a href="/"><Card.Img id="footer-icon" src={require("../../assets/images/N_IconGold.png")} alt="Logo"/></a>
                                 </Container>
                             </Col>
-                            <Col xs={4} sm={12}>
+                            <Col xs={5} sm={12}>
                                 <a className="share-button mx-1 share-facebook" href="https://www.facebook.com/profile.php?id=61573520023726" target="_blank" rel="noopener noreferrer"><FaFacebook/></a>
                                 <a className="share-button mx-1 share-X" href="https://x.com/1001_Nuggets" target="_blank" rel="noopener noreferrer"><FaXTwitter/></a>
                                 <a className="share-button mx-1 share-instagram" href="https://www.instagram.com/1001_nuggets/" target="_blank" rel="noopener noreferrer"><FaInstagram/></a>
