@@ -20,7 +20,7 @@ const quote = new Schema({
             type: String,
         }
     ],
-    things: [
+    quoteCat: [
         {
             type: String,
         }

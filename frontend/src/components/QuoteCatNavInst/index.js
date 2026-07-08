@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
-import { QUERY_THING_LETTER } from "../../utils/queries";
+import { QUERY_QUOTECAT_LETTER } from "../../utils/queries";
 // import LoadingOverlay from "../../components/LoadingOverlay";
 
-function ThingNavInst({ letter }) {
+function QuoteCatNavInst({ letter }) {
     const ref = useRef(null);
-    const { loading, data } = useQuery(QUERY_THING_LETTER, {
+    const { loading, data } = useQuery(QUERY_QUOTECAT_LETTER, {
         variables:{letter:letter}, fetchPolicy:"cache-and-network"
     });
 
@@ -16,7 +16,7 @@ function ThingNavInst({ letter }) {
         </div>;
     if (!data)   return <div ref={ref}/>;
 
-    let sortedList = data.thingByLetter.map((item) => Object.assign({}, item, {selected:false}))
+    let sortedList = data.quotecatByLetter.map((item) => Object.assign({}, item, {selected:false}))
     
     sortedList = sortedList.sort(function(a,b) {
         if(a.sortedName < b.sortedName) return -1;
@@ -44,4 +44,4 @@ function ThingNavInst({ letter }) {
     );
 }
 
-export default ThingNavInst;
+export default QuoteCatNavInst;

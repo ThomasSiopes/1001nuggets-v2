@@ -1,7 +1,7 @@
 const { Schema, model } = require("mongoose");
 
-const tagThing = new Schema({
-    tag: {
+const authorCat = new Schema({
+    name: {
         type:String,
         required: true,
     },
@@ -20,6 +20,6 @@ const tagThing = new Schema({
     },
 });
 
-const Tag = model("Tag", tagThing);
+const AuthorCat = model("AuthorCat", authorCat);
 
-module.exports = Tag;
+module.exports = AuthorCat;

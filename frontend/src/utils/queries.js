@@ -280,22 +280,22 @@ export const QUERY_COLLECTION_LETTER = gql`
     }
 `;
 
-export const QUERY_TAG_ALL = gql`
-    query getTags {
-        tags {
+export const QUERY_AUTHORCAT_ALL = gql`
+    query getAuthorCats {
+        authorCats {
             _id
-            tag
+            name
             authors
             sortedName
         }
     }
 `;
 
-export const QUERY_TAG_LETTER = gql`
-    query tagLetter($letter: String!) {
-        tagLetter(letter: $letter) {
+export const QUERY_AUTHORCAT_LETTER = gql`
+    query authorCatLetter($letter: String!) {
+        authorCatLetter(letter: $letter) {
           _id
-          tag
+          name
           authors
           sortedName
           realID
@@ -303,11 +303,11 @@ export const QUERY_TAG_LETTER = gql`
     }
 `;
 
-export const QUERY_TAG_ID = gql`
-    query getTagById($tagId: ID!) {
-        tagID (tagId: $tagId){
+export const QUERY_AUTHORCAT_ID = gql`
+    query getAuthorCatById($authorCatId: ID!) {
+        authorCatID (authorCatId: $authorCatId){
             _id
-            tag
+            name
             authors
             sortedName
             authorDetails { name realID }
@@ -315,11 +315,11 @@ export const QUERY_TAG_ID = gql`
     }
 `;
 
-export const QUERY_TAG_REALID = gql`
-    query getTagByRealId($tagRealId: String!) {
-        tagR(tagRealId: $tagRealId){
+export const QUERY_AUTHORCAT_REALID = gql`
+    query getAuthorCatByRealId($authorCatRealId: String!) {
+        authorCatR(authorCatRealId: $authorCatRealId){
             _id
-            tag
+            name
             authors
             sortedName
             authorDetails { name realID }
@@ -381,9 +381,9 @@ export const QUERY_PEOPLE_REALID = gql`
     }
 `;
 
-export const QUERY_THING_LETTER = gql`
-    query getThingsByLetter($letter: String!) {
-        thingByLetter(letter: $letter) {
+export const QUERY_QUOTECAT_LETTER = gql`
+    query getQuoteCatsByLetter($letter: String!) {
+        quotecatByLetter(letter: $letter) {
             _id
             name
             sortedName
@@ -396,9 +396,9 @@ export const QUERY_THING_LETTER = gql`
     }
 `;
 
-export const QUERY_THING_REALID = gql`
-    query thingR($thingRealId: String!) {
-        thingR(thingRealId: $thingRealId) {
+export const QUERY_QUOTECAT_REALID = gql`
+    query quotecatR($quotecatRealId: String!) {
+        quotecatR(quotecatRealId: $quotecatRealId) {
             _id
             name
             sortedName

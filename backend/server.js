@@ -7,7 +7,7 @@ const { SitemapStream, streamToPromise } = require("sitemap");
 const { Readable } = require("stream");
 
 const { typeDefs, resolvers } = require("./mongo/schemas");
-const { Author, Topic, Quote, Collection, People, Things, Everywhere } = require("./mongo/models");
+const { Author, Topic, Quote, Collection, People, AuthorCat, QuoteCat, Everywhere } = require("./mongo/models");
 const { createLoaders } = require("./mongo/schemas/loaders");
 
 const db = require("./config/connection");
@@ -50,13 +50,14 @@ if (process.env.NODE_ENV === "production") {
 
     app.get("/sitemap.xml", async (req, res) => {
         try {
-            const [authors, topics, quotes, collections, people, things, places] = await Promise.all([
+            const [authors, topics, quotes, collections, people, authorcats, quotecats, places] = await Promise.all([
                 Author.find({}, "realID").lean(),
                 Topic.find({}, "realID").lean(),
                 Quote.find({}, "realID").lean(),
                 Collection.find({}, "realID").lean(),
                 People.find({}, "realID").lean(),
-                Things.find({}, "realID").lean(),
+                AuthorCat.find({}, "realID").lean(),
+                QuoteCat.find({}, "realID").lean(),
                 Everywhere.find({}, "realID").lean(),
             ]);
 
@@ -66,7 +67,7 @@ if (process.env.NODE_ENV === "production") {
                 { url: "/collections", changefreq: "weekly",  priority: 0.8 },
                 { url: "/authors",     changefreq: "weekly",  priority: 0.8 },
                 { url: "/everyone",    changefreq: "weekly",  priority: 0.7 },
-                { url: "/everything",  changefreq: "weekly",  priority: 0.7 },
+                { url: "/everyquotecat",  changefreq: "weekly",  priority: 0.7 },
                 { url: "/everywhere",  changefreq: "weekly",  priority: 0.7 },
                 { url: "/glossary",    changefreq: "monthly", priority: 0.6 },
                 ...authors.map(a =>     ({ url: `/author/${a.realID}`,     changefreq: "monthly", priority: 0.7 })),
@@ -74,7 +75,7 @@ if (process.env.NODE_ENV === "production") {
                 ...quotes.map(q =>      ({ url: `/quote/${q.realID}`,      changefreq: "never",   priority: 0.5 })),
                 ...collections.map(c => ({ url: `/collection/${c.realID}`, changefreq: "monthly", priority: 0.6 })),
                 ...people.map(p =>      ({ url: `/person/${p.realID}`,     changefreq: "monthly", priority: 0.6 })),
-                ...things.map(t =>      ({ url: `/thing/${t.realID}`,      changefreq: "monthly", priority: 0.6 })),
+                ...quotecats.map(t =>      ({ url: `/quotecat/${t.realID}`,      changefreq: "monthly", priority: 0.6 })),
                 ...places.map(p =>      ({ url: `/place/${p.realID}`,      changefreq: "monthly", priority: 0.6 })),
             ];
 

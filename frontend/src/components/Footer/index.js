@@ -7,7 +7,7 @@ import { Card, Container, Col, Row } from "react-bootstrap";
 
 function Footer() {
     return(
-        <footer id="footer"className="bg-light mt-4">
+        <footer id="footer"className="bg-light">
             <Container>
                 <Row className="pb-3">
                     <Col xs={12} sm={5} md={2}>

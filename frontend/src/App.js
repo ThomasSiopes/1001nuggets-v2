@@ -22,14 +22,14 @@ const TopicNav = React.lazy(() => import("./pages/TopicNav"));
 const CollectionNav = React.lazy(() => import ("./pages/CollectionNav"));
 const Collection = React.lazy(() => import ("./pages/Collection"));
 
-const TagNav = React.lazy(() => import("./pages/TagNav"));
-const TagPage = React.lazy(() => import("./pages/TagPage"));
+const AuthorCatalogueNav = React.lazy(() => import("./pages/AuthorCatalogueNav"));
+const AuthorCataloguePage = React.lazy(() => import("./pages/AuthorCataloguePage"));
 
 // const PeopleNav = React.lazy(() => import("./pages/PeopleNav"));
 // const PeoplePage = React.lazy(() => import("./pages/PeoplePage"));
 
-const ThingNav = React.lazy(() => import("./pages/ThingNav"));
-const ThingPage = React.lazy(() => import("./pages/ThingPage"));
+const QuoteCatalogueNav = React.lazy(() => import("./pages/QuoteCatalogueNav"));
+const QuoteCataloguePage = React.lazy(() => import("./pages/QuoteCataloguePage"));
 
 // const EverywhereNav = React.lazy(() => import("./pages/EverywhereNav"));
 // const EverywherePage = React.lazy(() => import("./pages/EverywherePage"));
@@ -66,7 +66,7 @@ const cache = new InMemoryCache({
       Quote: { keyFields: ["realID"] },
       Collection: { keyFields: ["realID"] },
       People: { keyFields: ["realID"] },
-      Thing: { keyFields: ["realID"] },
+      QuoteCatalogue: { keyFields: ["realID"] },
       Everywhere: { keyFields: ["realID"] },
       QOTD: { keyFields: ["index"] },
       Glossary: { keyFields: ["typing"] },
@@ -109,10 +109,10 @@ function App () {
             {/* <Route exact path="/everyone" element={<PeopleNav/>}/>
             <Route exact path="/person/:peopleRealId" element={<PeoplePage/>}/> */}
 
-            <Route exact path="/author-catalogue" element={<TagNav/>}/>
-            <Route exact path="/author-catalogue/:tagRealId" element={<TagPage/>}/>
-            <Route exact path="/quote-catalogue" element={<ThingNav/>}/>
-            <Route exact path="/quote-catalogue/:thingRealId" element={<ThingPage/>}/>
+            <Route exact path="/author-catalogue" element={<AuthorCatalogueNav/>}/>
+            <Route exact path="/author-catalogue/:AuthorCatalogueRealId" element={<AuthorCataloguePage/>}/>
+            <Route exact path="/quote-catalogue" element={<QuoteCatalogueNav/>}/>
+            <Route exact path="/quote-catalogue/:QuoteCatalogueRealId" element={<QuoteCataloguePage/>}/>
 
             {/* <Route exact path="/everywhere" element={<EverywhereNav/>}/>
             <Route exact path="/place/:everywhereRealId" element={<EverywherePage/>}/> */}

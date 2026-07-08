@@ -14,7 +14,7 @@ import iconSB from "../assets/images/bookpics/bookSB.webp";
 function Publications() {
     return(
         <HelmetProvider>
-        <Container className="pt-3">
+        <Container className="pt-3 mb-4">
             <Helmet>
                 <title>1001 Nuggets - Publications</title>
             </Helmet>

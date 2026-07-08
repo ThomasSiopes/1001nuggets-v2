@@ -1,4 +1,4 @@
-const { Author, Topic, Quote, Collection, QOTD, Tag, People, Things, Everywhere, Glossary } = require("../models");
+const { Author, Topic, Quote, Collection, QOTD, AuthorCat, People, QuoteCat, Everywhere, Glossary } = require("../models");
 
 const resolvers = {
     Query: {
@@ -85,18 +85,18 @@ const resolvers = {
             return Quote.find({quoteText: {$regex: sanitized, $options: 'i'}}).limit(limit);
         },
 
-        // tags
-        tags: async () => {
-            return Tag.find();
+        // author catalogue
+        authorCats: async () => {
+            return AuthorCat.find();
         },
-        tagLetter: async (parent, { letter }) => {
-            return Tag.find({sortedName: {$regex: '^' + letter, $options: 'i'}})
+        authorCatLetter: async (parent, { letter }) => {
+            return AuthorCat.find({sortedName: {$regex: '^' + letter, $options: 'i'}})
         },
-        tagID: async (parent, { tagId }) => {
-            return Tag.findOne({ _id: tagId });
+        authorCatID: async (parent, { authorCatId }) => {
+            return AuthorCat.findOne({ _id: authorCatId });
         },
-        tagR: async (parent, { tagRealId }) => {
-            return Tag.findOne({ realID: tagRealId });
+        authorCatR: async (parent, { authorCatRealId }) => {
+            return AuthorCat.findOne({ realID: authorCatRealId });
         },
 
         // people
@@ -113,18 +113,18 @@ const resolvers = {
             return People.findOne({ realID: peopleRealId }).populate('quotes');
         },
 
-        // things
-        thingAll: async () => {
-            return Things.find().populate('quotes');
+        // quotecats
+        quotecatAll: async () => {
+            return QuoteCat.find().populate('quotes');
         },
-        thingByLetter: async (parent, { letter }) => {
-            return Things.find({sortedName: {$regex: '^' + letter, $options: 'i'}})
+        quotecatByLetter: async (parent, { letter }) => {
+            return QuoteCat.find({sortedName: {$regex: '^' + letter, $options: 'i'}})
         },
-        thingID: async (parent, { thingId }) => {
-            return Things.findOne({ _id: thingId });
+        quotecatID: async (parent, { quotecatId }) => {
+            return QuoteCat.findOne({ _id: quotecatId });
         },
-        thingR: async (parent, { thingRealId }) => {
-            return Things.findOne({ realID: thingRealId }).populate('quotes');
+        quotecatR: async (parent, { quotecatRealId }) => {
+            return QuoteCat.findOne({ realID: quotecatRealId }).populate('quotes');
         },
 
         // places
@@ -200,7 +200,7 @@ const resolvers = {
     },
     },
 
-    Tag: {
+    AuthorCat: {
         authorDetails: async(parent) => {
             if(!parent.authors || parent.authors.length === 0) return [];
             const found = await Author.find(
@@ -257,27 +257,27 @@ const resolvers = {
                     );
                     return (found ? found.realID : parent.index);
                 }
-                case "everything": {
-                    found = await Things.findOne(
-                        { name: parent.index },
-                        { realID: 1 }
-                    );
-                    return (found ? found.realID : parent.index);
-                }
-                case "everyone": {
-                    found = await People.findOne(
-                        { name: parent.index },
-                        { realID: 1 }
-                    );
-                    return (found ? found.realID : parent.index);
-                }
-                case "everywhere": {
-                    found = await Everywhere.findOne(
-                        { name: parent.index },
-                        { realID: 1 }
-                    );
-                    return (found ? found.realID : parent.index);
-                }
+                // case "everyquotecat": {
+                //     found = await QuoteCat.findOne(
+                //         { name: parent.index },
+                //         { realID: 1 }
+                //     );
+                //     return (found ? found.realID : parent.index);
+                // }
+                // case "everyone": {
+                //     found = await People.findOne(
+                //         { name: parent.index },
+                //         { realID: 1 }
+                //     );
+                //     return (found ? found.realID : parent.index);
+                // }
+                // case "everywhere": {
+                //     found = await Everywhere.findOne(
+                //         { name: parent.index },
+                //         { realID: 1 }
+                //     );
+                //     return (found ? found.realID : parent.index);
+                // }
                 default: {
                     return (parent.index);
                 }

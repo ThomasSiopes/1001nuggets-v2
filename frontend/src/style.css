@@ -220,9 +220,9 @@ body {
     font-family: 'Frank Ruhl Libre', serif;
 }
 
-#footer {
+/* #footer {
     
-}
+} */
 
 #footer-icon {
     width: 75px!important;
@@ -306,7 +306,7 @@ html {
 
 @media (max-width:576px) {
     .mainBody {
-        min-height: 67vh!important;
+        min-height: 70vh!important;
     }
 }
 

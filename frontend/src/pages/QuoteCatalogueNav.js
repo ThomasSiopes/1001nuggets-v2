@@ -3,18 +3,18 @@ import {Helmet, HelmetProvider} from "react-helmet-async";
 // import LoadingOverlay from "../components/LoadingOverlay";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
-const ThingNavInst = React.lazy(() => import("../components/ThingNavInst"));
+const QuoteCatNavInst = React.lazy(() => import("../components/QuoteCatNavInst"));
 
-function Things () {
+function QuoteCats () {
     const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
     return (
         <>
             {/* <LoadingOverlay show={false} /> */}
             <HelmetProvider>
-            <Container className="pt-3">
+            <Container className="pt-3 mb-4">
                 <Helmet>
-                    <title>1001 Nuggets - Everything</title>
+                    <title>1001 Nuggets - Quote Catalogue</title>
                 </Helmet>
                 <Row className="justify-content-center navPage-body">
                     <Col>
@@ -22,7 +22,7 @@ function Things () {
                             <Card.Body>
                                 <Row id="myGroup">
                                     {alphabet.map((index) => (
-                                        <ThingNavInst key={index} letter={index}/>
+                                        <QuoteCatNavInst key={index} letter={index}/>
                                     ))
                                     }
                                 </Row>
@@ -44,4 +44,4 @@ function Things () {
     )
 }
 
-export default Things;
+export default QuoteCats;

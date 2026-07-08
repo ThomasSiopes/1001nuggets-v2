@@ -7,7 +7,7 @@ import { Container, Card } from "react-bootstrap";
 function ErrorPage () {
     return(
         <HelmetProvider>
-            <Container className="pt-3">
+            <Container className="pt-3 mainBody">
                 <Helmet>
                     <title>1001 Nuggets - Error</title>
                 </Helmet>

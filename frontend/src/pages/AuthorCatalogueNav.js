@@ -3,7 +3,7 @@ import {Helmet, HelmetProvider} from "react-helmet-async";
 // import LoadingOverlay from "../components/LoadingOverlay";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
-const TagNavInst = React.lazy(() => import("../components/TagNavInst"));
+const AuthorCatNavInst = React.lazy(() => import("../components/AuthorCatNavInst"));
 
 function Authors () {
     const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
@@ -12,7 +12,7 @@ function Authors () {
         <>
             {/* <LoadingOverlay show={false} /> */}
             <HelmetProvider>
-            <Container className="pt-3">
+            <Container className="pt-3 mb-4">
                 <Helmet>
                     <title>1001 Nuggets - Authors</title>
                 </Helmet>
@@ -22,7 +22,7 @@ function Authors () {
                             <Card.Body>
                                 <Row id="myGroup">
                                     {alphabet.map((index) => (
-                                        <TagNavInst key={index} letter={index}/>
+                                        <AuthorCatNavInst key={index} letter={index}/>
                                     ))
                                     }
                                 </Row>

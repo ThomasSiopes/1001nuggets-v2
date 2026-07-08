@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
-import { QUERY_TAG_LETTER } from "../../utils/queries";
+import { QUERY_AUTHORCAT_LETTER } from "../../utils/queries";
 // import LoadingOverlay from "../../components/LoadingOverlay";
 
-function TagNavInst({ letter }) {
+function AuthorCatNavInst({ letter }) {
     const ref = useRef(null);
-    const { loading, data } = useQuery(QUERY_TAG_LETTER, {
+    const { loading, data } = useQuery(QUERY_AUTHORCAT_LETTER, {
         variables:{letter:letter}, fetchPolicy:"cache-and-network"
     });
 
@@ -16,7 +16,7 @@ function TagNavInst({ letter }) {
         </div>;
     if (!data)   return <div ref={ref} />;
 
-    let sortedList = data.tagLetter.map((item) => Object.assign({}, item, {selected:false}))
+    let sortedList = data.authorCatLetter.map((item) => Object.assign({}, item, {selected:false}))
     
     sortedList = sortedList.sort((a,b) => {
         if(a.sortedName < b.sortedName) return -1;
@@ -30,8 +30,8 @@ function TagNavInst({ letter }) {
         <>
         <div ref={ref} className="text-center mb-2">
             {sortedList.map((index) => (
-                <div key={letter + index.tag}>
-                    <p><strong><Link to={`/author-catalogue/${index.realID}`} className="link-theme">{index.tag}</Link></strong></p>
+                <div key={letter + index.name}>
+                    <p><strong><Link to={`/author-catalogue/${index.realID}`} className="link-theme">{index.name}</Link></strong></p>
                 </div>
             ))}
             {/* <div>
@@ -44,4 +44,4 @@ function TagNavInst({ letter }) {
     );
 }
 
-export default TagNavInst;
+export default AuthorCatNavInst;

@@ -35,7 +35,7 @@ function GlossaryIndex () {
         <>
         {/* <LoadingOverlay show={loading && !data} /> */}
         {glossaryIndex && <HelmetProvider>
-            <Container className="pt-3">
+            <Container className="pt-3 mb-4">
                 <Helmet>
                     <title>1001 Nuggets - Glossary - {typingCap}</title>
                 </Helmet>

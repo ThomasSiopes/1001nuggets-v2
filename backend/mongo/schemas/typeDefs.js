@@ -42,7 +42,7 @@ const typeDefs = gql`
         unrelatedTopicDetails: [TopicDetail]!
 
         people: [String]!
-        things: [String]!
+        quotecats: [String]!
         everywhere: [String]!
         realID: String
         somePeople: Boolean
@@ -62,9 +62,9 @@ const typeDefs = gql`
         topicDetails: [TopicDetail]!
     }
 
-    type Tag {
+    type AuthorCat {
         _id: ID
-        tag: String
+        name: String
         sortedName: String
         authors: [String]!
         authorDetails: [AuthorDetail]!
@@ -79,7 +79,7 @@ const typeDefs = gql`
         quotes: [Quote]!
     }
     
-    type Thing {
+    type QuoteCat {
         _id: ID
         name: String
         sortedName: String
@@ -134,10 +134,10 @@ const typeDefs = gql`
         peopleID(peopleId: ID): People
         peopleR(peopleRealId: String): People
         
-        thingAll: [Thing]
-        thingByLetter(letter: String): [Thing]
-        thingID(thingId: ID): Thing
-        thingR(thingRealId: String): Thing
+        quotecatAll: [QuoteCat]
+        quotecatByLetter(letter: String): [QuoteCat]
+        quotecatID(quotecatId: ID): QuoteCat
+        quotecatR(quotecatRealId: String): QuoteCat
         
         everywhereAll: [Everywhere]
         everywhereByLetter(letter: String): [Everywhere]
@@ -151,10 +151,10 @@ const typeDefs = gql`
         quote(quoteId: ID): Quote
         quoteR(quoteRealId: String): Quote
 
-        tags: [Tag]
-        tagLetter(letter: String): [Tag]
-        tagID(tagId: ID): Tag
-        tagR(tagRealId: String): Tag
+        authorCats: [AuthorCat]
+        authorCatLetter(letter: String): [AuthorCat]
+        authorCatID(authorCatId: ID): AuthorCat
+        authorCatR(authorCatRealId: String): AuthorCat
 
         glossaryAll: [Glossary]
         glossaryType(typing: String): Glossary

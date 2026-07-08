@@ -16,7 +16,7 @@ function Topics () {
         <>
             {/* <LoadingOverlay show={false} /> */}
             <HelmetProvider>
-            <Container className="pt-3">
+            <Container className="pt-3 mb-4">
                 <Helmet>
                     <title>1001 Nuggets - Topics</title>
                 </Helmet>

@@ -6,20 +6,20 @@ import { useQuery } from "@apollo/client";
 
 import { Container, Card, Row, Col } from "react-bootstrap";
 
-import { QUERY_THING_REALID } from "../utils/queries";
+import { QUERY_QUOTECAT_REALID } from "../utils/queries";
 import shuffle from "../utils/shuffle";
 
 const AdComponent = React.lazy(() => import("../components/AdComponent"));
 const QuoteCard = React.lazy(() => import("../components/QuoteCard"));
 
-function Thing () {
-    const { thingRealId } = useParams();
-    let {loading, data} = useQuery(QUERY_THING_REALID, 
-        {variables: {thingRealId: thingRealId}}
+function QuoteCat () {
+    const { quotecatRealId } = useParams();
+    let {loading, data} = useQuery(QUERY_QUOTECAT_REALID, 
+        {variables: {quotecatRealId: quotecatRealId}}
     );
 
     const { list1, list2, list3a, list3b, newIndexOrder } = useMemo(() => {
-            const quotes = data?.thingR.quotes;
+            const quotes = data?.quotecatR.quotes;
             if(!quotes) return { list1:[], list2:[], list3a:[], list3b:[], newIndexOrder:[] };
     
             let indexList = quotes.map((_, i) => i);
@@ -40,42 +40,42 @@ function Thing () {
             return{ list1, list2, list3a, list3b, newIndexOrder };
     }, [data]);
 
-    if(!thingRealId || thingRealId === null || thingRealId === "undefined") return <Navigate to={`/things`} replace/>;
+    if(!quotecatRealId || quotecatRealId === null || quotecatRealId === "undefined") return <Navigate to={`/quotecats`} replace/>;
 
     if(!loading && !data) return <Navigate to={`/404error`} replace/>;
 
-    const thing = data?.thingR;
+    const quotecat = data?.quotecatR;
 
     return (
         <>
         {/* <LoadingOverlay show={loading && !data} /> */}
-        {thing && <HelmetProvider>
-        <Container  className="pt-3">
+        {quotecat && <HelmetProvider>
+        <Container  className="pt-3 mainBody">
             <Helmet>
-                <title>1001 Nuggets - {thing.name}</title>
-                <meta name="description" content={`Read quotes about ${thing.name} on 1001 Nuggets.`} />
-                <meta property="og:title" content={`1001 Nuggets - ${thing.name}`} />
-                <meta property="og:description" content={`Read quotes about ${thing.name} on 1001 Nuggets.`} />
-                <meta property="og:url" content={`https://1001nuggets.com/thing/${thingRealId}`} />
-                <link rel="canonical" href={`https://1001nuggets.com/thing/${thingRealId}`} />
+                <title>1001 Nuggets - {quotecat.name}</title>
+                <meta name="description" content={`Read quotes about ${quotecat.name} on 1001 Nuggets.`} />
+                <meta property="og:title" content={`1001 Nuggets - ${quotecat.name}`} />
+                <meta property="og:description" content={`Read quotes about ${quotecat.name} on 1001 Nuggets.`} />
+                <meta property="og:url" content={`https://1001nuggets.com/quotecat/${quotecatRealId}`} />
+                <link rel="canonical" href={`https://1001nuggets.com/quotecat/${quotecatRealId}`} />
             </Helmet>
             <Container>
                 <Card bg={"transparent"} border={"none"}>
-                    <Card.Header className="bg-light rounded"><Link className="link-theme" to={`/`}>Home</Link> {'>'} <Link className="link-theme" to={`/quote-catalogue`}>Quote Catalogue</Link> {'>'} {thing.name}</Card.Header>
+                    <Card.Header className="bg-light rounded"><Link className="link-theme" to={`/`}>Home</Link> {'>'} <Link className="link-theme" to={`/quote-catalogue`}>Quote Catalogue</Link> {'>'} {quotecat.name}</Card.Header>
                     <Card.Body bg={"transparent"}>
                         <Row>
                             {/* First Quote Column */}
                             <Col xs={12} md={6} lg={4}>
                                 <Row>
                                     {list1 && list1.map((index) => (
-                                        <Col xs={12} className="mb-3" key={thing.quotes[index].quoteText}>
-                                            <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
+                                        <Col xs={12} className="mb-3" key={quotecat.quotes[index].quoteText}>
+                                            <QuoteCard quotes={quotecat.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                     <Col xs={12} className="mb-3"><AdComponent/></Col>
                                     {list3a && list3a.map((index) => (
-                                        <Col xs={12} className="mb-3 d-xs-block d-lg-none" key={"false" + thing.quotes[index].quoteText}>
-                                            <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
+                                        <Col xs={12} className="mb-3 d-xs-block d-lg-none" key={"false" + quotecat.quotes[index].quoteText}>
+                                            <QuoteCard quotes={quotecat.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -85,13 +85,13 @@ function Thing () {
                             <Col lg={4}>
                                 <Row>
                                     {list3a && list3a.map((index) => (
-                                        <Col xs={12} className="mb-3 d-none d-lg-block" key={thing.quotes[index].quoteText}>
-                                            <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
+                                        <Col xs={12} className="mb-3 d-none d-lg-block" key={quotecat.quotes[index].quoteText}>
+                                            <QuoteCard quotes={quotecat.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                     {list3b && list3b.map((index) => (
-                                        <Col xs={12} className="mb-3 d-none d-lg-block" key={thing.quotes[index].quoteText}>
-                                            <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
+                                        <Col xs={12} className="mb-3 d-none d-lg-block" key={quotecat.quotes[index].quoteText}>
+                                            <QuoteCard quotes={quotecat.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                 </Row>
@@ -101,14 +101,14 @@ function Thing () {
                             <Col xs={12} md={6} lg={4}>
                                 <Row>
                                     {list3b && list3b.map((index) => (
-                                        <Col xs={12} className="mb-3 d-xs-block d-lg-none" key={"false" + thing.quotes[index].quoteText}>
-                                            <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
+                                        <Col xs={12} className="mb-3 d-xs-block d-lg-none" key={"false" + quotecat.quotes[index].quoteText}>
+                                            <QuoteCard quotes={quotecat.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                     <Col xs={12} className="mb-3"><AdComponent/></Col>
                                     {list2 && list2.map((index) => (
-                                        <Col xs={12} className="mb-3" key={thing.quotes[index].quoteText}>
-                                            <QuoteCard quotes={thing.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
+                                        <Col xs={12} className="mb-3" key={quotecat.quotes[index].quoteText}>
+                                            <QuoteCard quotes={quotecat.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                         </Col>
                                     ))}
                                     <Col xs={12} className="mb-3"><AdComponent/></Col>
@@ -124,4 +124,4 @@ function Thing () {
     )
 }
 
-export default Thing;
+export default QuoteCat;
