@@ -1,45 +1,43 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/assets/images/N_IconGold.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content=" #000000" />
-
-    <meta name="keywords" content="quotes,nuggets,1001,1001nuggets,authors,topics">
-    <meta property="og:type" content="article">
-    <meta property="og:image" content="%PUBLIC_URL%/assets/images/N_IconGold2.png"/>
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="www.1001nuggets.com">
-    <meta name="twitter:title" content="1001nuggets.com">
-    <meta name="twitter:description" content="Thousands of organized quotes and proverbs, all at the push of a button!">
-    <meta name="twitter:image" content="%PUBLIC_URL%/assets/images/N_IconGold2.png">
-    
-    <meta name="google-adsense-account" content="ca-pub-9171319044593691">
-
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/assets/images/N_IconGold3.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- <link href="./assets/style.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"  rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
-
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@200&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"> 
-    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500&family=Noto+Serif+Vithkuqi:wght@500&family=Victor+Mono:wght@700&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9171319044593691" crossorigin="anonymous"></script>
-    
-    <title>1001 Nuggets</title>
-  </head>
-  <body class="bg-nugget">
-    <noscript>
-      <body class="bg-nugget">
-        <p>This is a MERN app, meaning it relies on JavaScript to function Please enable JavaScript to continue!</p>
+   <head>
+      <meta charset="utf-8">
+      <link rel="icon" href="/assets/images/N_IconGold.png">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="theme-color" content=" #000000">
+      <meta name="keywords" content="quotes,nuggets,1001,1001nuggets,authors,topics">
+      <meta property="og:type" content="article">
+      <meta property="og:image" content="/assets/images/N_IconGold2.png">
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:site" content="www.1001nuggets.com">
+      <meta name="twitter:title" content="1001nuggets.com">
+      <meta name="twitter:description" content="Thousands of organized quotes and proverbs, all at the push of a button!">
+      <meta name="twitter:image" content="/assets/images/N_IconGold2.png">
+      <meta name="google-adsense-account" content="ca-pub-9171319044593691">
+      <link rel="apple-touch-icon" href="/assets/images/N_IconGold3.png">
+      <link rel="manifest" href="/manifest.json">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+      <link href="https://fonts.googleapis.com/css2?family=Merriweather&amp;family=Poppins:wght@200&amp;display=swap" rel="stylesheet" as="style" onload="this.onload=null,this.rel=&quot;stylesheet&quot;">
+      <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500&amp;family=Noto+Serif+Vithkuqi:wght@500&amp;family=Victor+Mono:wght@700&amp;display=swap" rel="stylesheet" as="style" onload="this.onload=null,this.rel=&quot;stylesheet&quot;">
+      <script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202607060101/show_ads_impl_fy2021.js?bust=31099552"></script>
+      <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9171319044593691" crossorigin="anonymous" data-checked-head="true"></script>
+      <title>1001 Nuggets</title>
+      <script defer="defer" src="/static/js/main.1f60ad37.js"></script>
+      <link href="/static/css/main.260c2b53.css" rel="stylesheet">
+      <meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+      <meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+      <meta http-equiv="origin-trial" content="A9nrunKdU5m96PSN1XsSGr3qOP0lvPFUB2AiAylCDlN5DTl17uDFkpQuHj1AFtgWLxpLaiBZuhrtb2WOu7ofHwEAAACKeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+      <meta http-equiv="origin-trial" content="A93bovR+QVXNx2/38qDbmeYYf1wdte9EO37K9eMq3r+541qo0byhYU899BhPB7Cv9QqD7wIbR1B6OAc9kEfYCA4AAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+      <meta http-equiv="origin-trial" content="A1S5fojrAunSDrFbD8OfGmFHdRFZymSM/1ss3G+NEttCLfHkXvlcF6LGLH8Mo5PakLO1sCASXU1/gQf6XGuTBgwAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+      <link rel="canonical" href="https://1001nuggets.com" data-rh="true">
+      <meta name="description" content="Read over 20,000 organized quotes and proverbs, all at the push of a button at 1001nuggets.com." data-rh="true">
+      <meta property="og:title" content="1001 Nuggets" data-rh="true">
+      <meta property="og:description" content="Read over 20,000 organized quotes and proverbs, all at the push of a button at 1001nuggets.com." data-rh="true">
+      <meta property="og:url" content="https://1001nuggets.com" data-rh="true">
+      <script type="application/ld+json" data-rh="true">{"@context":"https://schema.org","@type":"WebSite","name":"1001 Nuggets","url":"https://www.1001nuggets.com","description":"Read over 20,000 organized quotes and proverbs, all at the push of a button at 1001nuggets.com.","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.1001nuggets.com/search/{search_term_string}"},"query-input":"required name=search_term_string"}}</script>
+   </head>
+   <body class="bg-nugget">
+      <noscript>This is a MERN app that uses React, and React relies on JavaScript to run the app with any functionality. Please enable JavaScript to continue.</noscript>
       <div id="root">
          <nav class="py-3 navbar navbar-expand-lg navbar-light bg-light">
             <div class="d-none d-md-flex container">
@@ -2829,18 +2827,19 @@
             <p class="py-3 mb-0 text-center bg-footermost">©2024-2026 1001 Nuggets</p>
          </footer>
       </div>
+      <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a18955f6ab9f0f65',t:'MTc4MzYyMTE1NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+      <iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;">
+      </iframe>
+      <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;ea10130fbeb24ba395bf4a6d4510d455&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
+      <ins class="adsbygoogle adsbygoogle-noablate" data-ad-hi="true" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled">
+         <div id="aswift_0_host" style="border-width: medium; border-style: none; border-color: currentcolor; border-image: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;">
+            <iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;min-height:auto;max-height:none;min-width:auto;max-width:none;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-9171319044593691&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;abgtt=6&amp;lmt=1783554583&amp;plat=3%3A65536%2C4%3A65536%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1048576%2C32%3A32%2C41%3A32%2C42%3A32%2C43%3A32%2C44%3A32&amp;format=0x0&amp;url=https%3A%2F%2F1001nuggets.com%2F&amp;pra=5&amp;asro=0&amp;aimartd=4&amp;aieuf=1&amp;aicrs=1&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiMTUwLjAuNzg3MS4xMDEiLG51bGwsMCxudWxsLCI2NCIsW1siTm90O0E9QnJhbmQiLCI4LjAuMC4wIl0sWyJDaHJvbWl1bSIsIjE1MC4wLjc4NzEuMTAxIl0sWyJHb29nbGUgQ2hyb21lIiwiMTUwLjAuNzg3MS4xMDEiXV0sMF0.&amp;dt=1783621156751&amp;bpp=5&amp;bdt=507&amp;idt=210&amp;shv=r20260706&amp;mjsv=m202607060101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3Daa838c08d8b344c5%3AT%3D1778093891%3ART%3D1782520523%3AS%3DALNI_MZjdOyzo05QlSQD9H8dCToDk8K9kA&amp;gpic=UID%3D0000136e8293eb08%3AT%3D1778093891%3ART%3D1782520523%3AS%3DALNI_MaEDBnarD17yPyy7bjU_js0ViSHuQ&amp;eo_id_str=ID%3D9aaa97781546c075%3AT%3D1778093891%3ART%3D1782520523%3AS%3DAA-AfjYOp8L9EoepwSzE7JE-QkBC&amp;nras=1&amp;correlator=5269508930973&amp;frm=20&amp;pv=2&amp;u_tz=-240&amp;u_his=2&amp;u_h=1080&amp;u_w=3840&amp;u_ah=1040&amp;u_aw=3840&amp;u_cd=24&amp;u_sd=1&amp;dmc=16&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1080&amp;bih=918&amp;scr_x=0&amp;scr_y=0&amp;eid=31099552%2C42533293%2C95393484&amp;oid=2&amp;pvsid=1696115160538535&amp;tmod=848391209&amp;uas=0&amp;nvt=4&amp;fsapi=1&amp;fc=1920&amp;brdim=804%2C0%2C804%2C0%2C3840%2C0%2C1096%2C1047%2C1080%2C918&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;bz=1.01&amp;pgls=CAk.&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=250" data-google-container-id="a!1" tabindex="0" title="Advertisement" aria-label="Advertisement" data-load-complete="true">
+            </iframe>
+         </div>
+      </ins>
+      <iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;">
+      </iframe>
    </body>
-    </noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+   <iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20260706/r20190131/zrt_lookup_fy2021.html" style="display: none;">
+   </iframe>
 </html>
