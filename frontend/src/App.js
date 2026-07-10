@@ -110,9 +110,9 @@ function App () {
             <Route exact path="/person/:peopleRealId" element={<PeoplePage/>}/> */}
 
             <Route exact path="/author-catalogue" element={<AuthorCatalogueNav/>}/>
-            <Route exact path="/author-catalogue/:AuthorCatalogueRealId" element={<AuthorCataloguePage/>}/>
+            <Route exact path="/author-catalogue/:authorCatRealId" element={<AuthorCataloguePage/>}/>
             <Route exact path="/quote-catalogue" element={<QuoteCatalogueNav/>}/>
-            <Route exact path="/quote-catalogue/:QuoteCatalogueRealId" element={<QuoteCataloguePage/>}/>
+            <Route exact path="/quote-catalogue/:quoteCatRealId" element={<QuoteCataloguePage/>}/>
 
             {/* <Route exact path="/everywhere" element={<EverywhereNav/>}/>
             <Route exact path="/place/:everywhereRealId" element={<EverywherePage/>}/> */}

@@ -113,18 +113,18 @@ const resolvers = {
             return People.findOne({ realID: peopleRealId }).populate('quotes');
         },
 
-        // quotecats
-        quotecatAll: async () => {
+        // quoteCats
+        quoteCatAll: async () => {
             return QuoteCat.find().populate('quotes');
         },
-        quotecatByLetter: async (parent, { letter }) => {
+        quoteCatByLetter: async (parent, { letter }) => {
             return QuoteCat.find({sortedName: {$regex: '^' + letter, $options: 'i'}})
         },
-        quotecatID: async (parent, { quotecatId }) => {
-            return QuoteCat.findOne({ _id: quotecatId });
+        quoteCatID: async (parent, { quoteCatId }) => {
+            return QuoteCat.findOne({ _id: quoteCatId });
         },
-        quotecatR: async (parent, { quotecatRealId }) => {
-            return QuoteCat.findOne({ realID: quotecatRealId }).populate('quotes');
+        quoteCatR: async (parent, { quoteCatRealId }) => {
+            return QuoteCat.findOne({ realID: quoteCatRealId }).populate('quotes');
         },
 
         // places
@@ -257,7 +257,7 @@ const resolvers = {
                     );
                     return (found ? found.realID : parent.index);
                 }
-                // case "everyquotecat": {
+                // case "everyquoteCat": {
                 //     found = await QuoteCat.findOne(
                 //         { name: parent.index },
                 //         { realID: 1 }

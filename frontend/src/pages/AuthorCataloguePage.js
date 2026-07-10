@@ -10,31 +10,31 @@ import AuthorButton from "../components/AuthorButton";
 import { QUERY_AUTHORCAT_REALID } from "../utils/queries";
 
 function AuthorCatPage () {
-    const { authorcatId } = useParams();
+    const { authorCatRealId } = useParams();
     let {loading, data} = useQuery(QUERY_AUTHORCAT_REALID, {
-        variables: {authorcatRealId: authorcatId},
+        variables: {authorCatRealId: authorCatRealId},
         fetchPolicy: "cache-and-network"
     });
 
-    if(!authorcatId || authorcatId === null || authorcatId === "undefined") return <Navigate to={`/author-catalogue`} replace/>;
+    if(!authorCatRealId || authorCatRealId === null || authorCatRealId === "undefined") return <Navigate to={`/author-catalogue`} replace/>;
 
     if(!loading && !data) return <Navigate to={`/404error`} replace/>;
 
-    const authorcat = data?.authorcatR;
+    const authorCat = data?.authorCatR;
 
     return (
         <>
         {/* <LoadingOverlay show={loading && !data} /> */}
-        {authorcat && <HelmetProvider>
-        <Container className="pt-3">
+        {authorCat && <HelmetProvider>
+        <Container className="pt-3 mainBody">
             <Helmet>
-                <title>1001 Nuggets - {authorcat.authorcat}</title>
+                <title>1001 Nuggets - {authorCat.name}</title>
             </Helmet>
             <Card bg={"transparent"} border={"none"}>
-                <Card.Header className="bg-light rounded">Home {`>`} <Link className="link-theme" to={`/author-catalogue`}>Author Catalogue</Link> {`>`} {authorcat.authorcat}</Card.Header>
+                <Card.Header className="bg-light rounded"> <Link className="link-theme" to="/">Home</Link> {`>`} <Link className="link-theme" to={`/author-catalogue`}>Author Catalogue</Link> {`>`} {authorCat.name}</Card.Header>
                 <Card.Body bg={"transparent"}>
                     <Row>
-                         {authorcat.authorDetails.map((index) => (
+                         {authorCat.authorDetails.map((index) => (
                             <Col key={index} className="mb-3" xs={12} sm={6} md={4}>
                                 <AuthorButton type={"button-block"} name={index.name} realID={index.realID} theme={"weak"}/>
                             </Col>

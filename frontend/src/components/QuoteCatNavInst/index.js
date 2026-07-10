@@ -16,7 +16,7 @@ function QuoteCatNavInst({ letter }) {
         </div>;
     if (!data)   return <div ref={ref}/>;
 
-    let sortedList = data.quotecatByLetter.map((item) => Object.assign({}, item, {selected:false}))
+    let sortedList = data.quoteCatByLetter.map((item) => Object.assign({}, item, {selected:false}))
     
     sortedList = sortedList.sort(function(a,b) {
         if(a.sortedName < b.sortedName) return -1;

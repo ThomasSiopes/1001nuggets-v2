@@ -42,7 +42,7 @@ const typeDefs = gql`
         unrelatedTopicDetails: [TopicDetail]!
 
         people: [String]!
-        quotecats: [String]!
+        quoteCats: [String]!
         everywhere: [String]!
         realID: String
         somePeople: Boolean
@@ -134,10 +134,10 @@ const typeDefs = gql`
         peopleID(peopleId: ID): People
         peopleR(peopleRealId: String): People
         
-        quotecatAll: [QuoteCat]
-        quotecatByLetter(letter: String): [QuoteCat]
-        quotecatID(quotecatId: ID): QuoteCat
-        quotecatR(quotecatRealId: String): QuoteCat
+        quoteCatAll: [QuoteCat]
+        quoteCatByLetter(letter: String): [QuoteCat]
+        quoteCatID(quoteCatId: ID): QuoteCat
+        quoteCatR(quoteCatRealId: String): QuoteCat
         
         everywhereAll: [Everywhere]
         everywhereByLetter(letter: String): [Everywhere]

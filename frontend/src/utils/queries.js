@@ -383,7 +383,7 @@ export const QUERY_PEOPLE_REALID = gql`
 
 export const QUERY_QUOTECAT_LETTER = gql`
     query getQuoteCatsByLetter($letter: String!) {
-        quotecatByLetter(letter: $letter) {
+        quoteCatByLetter(letter: $letter) {
             _id
             name
             sortedName
@@ -397,8 +397,8 @@ export const QUERY_QUOTECAT_LETTER = gql`
 `;
 
 export const QUERY_QUOTECAT_REALID = gql`
-    query quotecatR($quotecatRealId: String!) {
-        quotecatR(quotecatRealId: $quotecatRealId) {
+    query quoteCatR($quoteCatRealId: String!) {
+        quoteCatR(quoteCatRealId: $quoteCatRealId) {
             _id
             name
             sortedName
