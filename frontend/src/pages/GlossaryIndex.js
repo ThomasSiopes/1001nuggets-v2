@@ -23,9 +23,8 @@ function GlossaryIndex () {
     switch(typing){
         case "topics": prefix="topic"; break
         case "collections": prefix="collection"; break
-        case "everything": prefix="thing"; break
-        case "everyone": prefix="person"; break
-        case "everywhere": prefix="place"; break
+        case "Author Catalogue": prefix="author-catalogue"; break
+        case "Quote Catalogue": prefix="quote-catalogue"; break
         default: prefix="topic";
     }
 

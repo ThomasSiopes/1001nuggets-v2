@@ -257,20 +257,20 @@ const resolvers = {
                     );
                     return (found ? found.realID : parent.index);
                 }
-                // case "everyquoteCat": {
-                //     found = await QuoteCat.findOne(
-                //         { name: parent.index },
-                //         { realID: 1 }
-                //     );
-                //     return (found ? found.realID : parent.index);
-                // }
-                // case "everyone": {
-                //     found = await People.findOne(
-                //         { name: parent.index },
-                //         { realID: 1 }
-                //     );
-                //     return (found ? found.realID : parent.index);
-                // }
+                case "Author Catalogue": {
+                    found = await AuthorCat.findOne(
+                        { name: parent.index },
+                        { realID: 1 }
+                    );
+                    return (found ? found.realID : parent.index);
+                }
+                case "Quote Catalogue": {
+                    found = await QuoteCat.findOne(
+                        { name: parent.index },
+                        { realID: 1 }
+                    );
+                    return (found ? found.realID : parent.index);
+                }
                 // case "everywhere": {
                 //     found = await Everywhere.findOne(
                 //         { name: parent.index },
