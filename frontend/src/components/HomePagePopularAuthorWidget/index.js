@@ -283,7 +283,7 @@ function HomePagePopularAuthorWidget() {
         <Card className="my-4">
             <Card.Body>
                 <Card.Text>
-                    Explore popular authors and discover their quotes in the 1001 Nuggets collection.
+                    For more inspirational and motivational quotes, explore our collection of popular authors:
                 </Card.Text>
                 
                 {/* Small View */}
