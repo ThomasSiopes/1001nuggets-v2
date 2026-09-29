@@ -12,6 +12,7 @@
     "install": "cd backend && npm i && cd ../frontend && npm i",
     "seed": "npm run rt && cd backend && npm run seed",
     "seedQOTD": "cd backend && npm run seedQOTD",
+    "seedGlossary": "cd backend && npm run seedGlossary",
     "build": "cd frontend && npm run build",
     "rt": "cd backend/mongo/seeders && node relatedTopicCode.js",
     "qrIDa": "cd backend/mongo/seeders/testing && node quoteRealIDAdder.js"

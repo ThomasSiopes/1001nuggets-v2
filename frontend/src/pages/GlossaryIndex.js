@@ -30,6 +30,8 @@ function GlossaryIndex () {
 
     const typingCap = String(typing).charAt(0).toUpperCase() + String(typing).slice(1);
 
+    console.log(glossaryIndex)
+
     return (
         <>
         {/* <LoadingOverlay show={loading && !data} /> */}
