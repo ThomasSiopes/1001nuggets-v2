@@ -120,7 +120,7 @@ const typeDefs = gql`
         topics: [Topic]
         topicName(name: String): Topic
         topicID(topicId: ID): Topic
-        topicR(topicRealId: String, offset: Int, limit: Int): Topic
+        topicR(topicRealId: String): Topic
         topicLetter(letter: String): [Topic]
         
         collections: [Collection]

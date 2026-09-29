@@ -95,8 +95,8 @@ export const QUERY_TOPIC_NAME = gql`
 `;
 
 export const QUERY_TOPIC_REALID = gql`
-    query topicR($topicRealId: String, $offset: Int, $limit: Int) {
-        topicR(topicRealId: $topicRealId, offset: $offset, limit: $limit) {
+    query topicR($topicRealId: String!) {
+        topicR(topicRealId: $topicRealId) {
             _id
             name
             sortedName
