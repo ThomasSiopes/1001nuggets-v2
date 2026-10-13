@@ -21,8 +21,8 @@ function GlossaryIndex () {
     let prefix = null;
 
     switch(typing){
-        case "topics": prefix="topic"; break
-        case "collections": prefix="collection"; break
+        case "Topics": prefix="topic"; break
+        case "Collections": prefix="collection"; break
         case "Author Catalogue": prefix="author-catalogue"; break
         case "Quote Catalogue": prefix="quote-catalogue"; break
         default: prefix="topic";
