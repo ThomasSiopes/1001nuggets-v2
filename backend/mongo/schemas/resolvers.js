@@ -234,14 +234,14 @@ const resolvers = {
             
             let found;
             switch(parent.typing){
-                case "topics": {
+                case "Topics": {
                     found = await Topic.findOne(
                         { name: parent.index },
                         { realID: 1 }
                     );
                     return (found ? found.realID : parent.index);
                 }
-                case "collections": {
+                case "Collections": {
                     found = await Collection.findOne(
                         { name: parent.index },
                         { realID: 1 }
@@ -262,13 +262,6 @@ const resolvers = {
                     );
                     return (found ? found.realID : parent.index);
                 }
-                // case "everywhere": {
-                //     found = await Everywhere.findOne(
-                //         { name: parent.index },
-                //         { realID: 1 }
-                //     );
-                //     return (found ? found.realID : parent.index);
-                // }
                 default: {
                     return (parent.index);
                 }
