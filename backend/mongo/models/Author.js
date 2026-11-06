@@ -24,7 +24,11 @@ const author = new Schema({
             type:String,
             required:false
         }
-    ]
+    ],
+    biography: {
+        type:String,
+        required:false
+    }
 });
 
 const Author = model("Author", author);

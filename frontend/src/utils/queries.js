@@ -11,6 +11,7 @@ export const QUERY_AUTHOR_ALL = gql`
                 realID
             }
             realID
+            biography
         }
     }
 `;
@@ -22,6 +23,7 @@ export const QUERY_AUTHOR_NAME = gql`
             name
             lastName
             realID
+            biography
         }
     }
 `;
@@ -47,6 +49,7 @@ export const QUERY_AUTHOR_REALID = gql`
                 unrelatedTopicDetails { name realID }
             }
             realID
+            biography
         }
     }
 `;
@@ -62,6 +65,7 @@ export const QUERY_AUTHOR_LETTER = gql`
             _id
             realID
           }
+            biography
         }
     }
 `;

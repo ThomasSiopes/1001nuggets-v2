@@ -45,7 +45,8 @@ function Footer() {
                         </Row>
                     </Col>
                     <Col sm={3} className="d-none d-sm-block text-center">
-                        <p className="pt-4 mb-1">About Us</p>
+                        <p className="pt-4 mb-1">Contact Us</p>
+                        <p className="mb-0"><Link to="/about">About Us</Link></p>
                         <p><Link to={"https://www.graffitian.com"}>Graffitian Publishing</Link></p>
                     </Col>
                 </Row>

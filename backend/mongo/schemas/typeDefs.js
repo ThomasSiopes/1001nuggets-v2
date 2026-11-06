@@ -8,6 +8,7 @@ const typeDefs = gql`
         realID: String
         quotes: [Quote]!
         relatedAuthors: [String]!
+        biography: String
     }
 
     type AuthorDetail {

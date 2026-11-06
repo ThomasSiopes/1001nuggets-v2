@@ -136,118 +136,130 @@ function Author () {
             <Card bg={"transparent"} border={"none"}>
                 <Card.Header className="bg-light rounded"><Link className="link-theme" to={`/`}>Home</Link> {`>`} <Link className="link-theme" to={`/authors`}>Authors</Link> {`>`} {author.name}</Card.Header>
                 <Card.Body bg={"transparent"}>
-                    {totalPages > 1 &&
-                        <Pagination className="justify-content-center mb-4 flex-wrap" size="md">
-                        {/* <Pagination.First onClick={() => goToPage(1)} disabled={page === 1} />
-                        <Pagination.Prev
-                            onClick={() => goToPage(Math.max(1, page - 1))}
-                            disabled={page === 1}
-                        /> */}
-                        {getPageNumbers(page, totalPages, isSmallScreen ? 2 : 3).map((p, i) =>
-                            p === "ellipsis"
-                                ? <Pagination.Ellipsis key={`ellipsis-${i}`} disabled />
-                                : <Pagination.Item key={p} active={p === page} onClick={() => goToPage(p)}>
-                                    {p}
-                                </Pagination.Item>
-                        )}
-                        {/* <Pagination.Next
-                            onClick={() => goToPage(Math.min(totalPages, page + 1))}
-                            disabled={page === totalPages}
-                        />
-                        <Pagination.Last onClick={() => goToPage(totalPages)} disabled={page === totalPages} /> */}
-                        </Pagination>
-                    }
-
                     <Row>
-                         {/* First Quote Column */}
-                         <Col xs={12} md={6} lg={4}>
-                            {list1 && 
-                                <Row>
-                                    {list1.map((index) => (
-                                        <Col xs={12} className="mb-3" key={author.quotes[index].quoteText}>
-                                            <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
-                                        </Col>
-                                    ))}
-                                </Row>
+                        { author.biography && <Col xs={12} md={3} className="mb-3">
+                            <Card>
+                                <Card.Header className="text-center">{author.name}</Card.Header>
+                                <Card.Body>
+                                    {author.biography}
+                                </Card.Body>
+                            </Card>
+                        </Col> }
+                        <Col>
+                            {totalPages > 1 &&
+                                <Pagination className="justify-content-center mb-4 flex-wrap" size="md">
+                                {/* <Pagination.First onClick={() => goToPage(1)} disabled={page === 1} />
+                                <Pagination.Prev
+                                    onClick={() => goToPage(Math.max(1, page - 1))}
+                                    disabled={page === 1}
+                                /> */}
+                                {getPageNumbers(page, totalPages, isSmallScreen ? 2 : 3).map((p, i) =>
+                                    p === "ellipsis"
+                                        ? <Pagination.Ellipsis key={`ellipsis-${i}`} disabled />
+                                        : <Pagination.Item key={p} active={p === page} onClick={() => goToPage(p)}>
+                                            {p}
+                                        </Pagination.Item>
+                                )}
+                                {/* <Pagination.Next
+                                    onClick={() => goToPage(Math.min(totalPages, page + 1))}
+                                    disabled={page === totalPages}
+                                />
+                                <Pagination.Last onClick={() => goToPage(totalPages)} disabled={page === totalPages} /> */}
+                                </Pagination>
                             }
-                            {
-                                list3a &&
-                                <Row className="d-xs-block d-lg-none">
-                                    {list3a.map((index) => (
-                                        <Col xs={12} className="mb-3" key={"false" + author.quotes[index].quoteText}>
-                                            <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
-                                        </Col>
-                                    ))}
-                                </Row>
-                            }
-                        </Col>
 
-                        {/* Middle Quote Column */}
-                        <Col lg={4} className="d-none d-lg-block">
-                            {list3a && 
-                                <Row>
-                                    {list3a.map((index) => (
-                                        <Col xs={12} className="mb-3" key={author.quotes[index].quoteText}>
-                                            <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
-                                        </Col>
-                                    ))}
-                                </Row>
-                            }
-                            {list3b && 
-                                <Row>
-                                    {list3b.map((index) => (
-                                        <Col xs={12} className="mb-3" key={author.quotes[index].quoteText}>
-                                            <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
-                                        </Col>
-                                    ))}
-                                </Row>
-                            }
-                        </Col>
-                        
-                        {/* Last Quote Column */}
-                        <Col xs={12} md={6} lg={4}>
-                            {
-                                list3b &&
-                                <Row className="d-xs-block d-lg-none">
-                                    {list3b.map((index) => (
-                                        <Col xs={12} className="mb-3" key={"false" + author.quotes[index].quoteText}>
-                                            <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
-                                        </Col>
-                                    ))}
-                                </Row>
-                            }
-                            {list2 && 
-                                <Row>
-                                    {list2.map((index) => (
-                                        <Col xs={12} className="mb-3" key={author.quotes[index].quoteText}>
-                                            <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
-                                        </Col>
-                                    ))}
-                                </Row>
+                            <Row>
+                                {/* First Quote Column */}
+                                <Col xs={12} md={6} lg={4}>
+                                    {list1 && 
+                                        <Row>
+                                            {list1.map((index) => (
+                                                <Col xs={12} className="mb-3" key={author.quotes[index].quoteText}>
+                                                    <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
+                                                </Col>
+                                            ))}
+                                        </Row>
+                                    }
+                                    {
+                                        list3a &&
+                                        <Row className="d-xs-block d-lg-none">
+                                            {list3a.map((index) => (
+                                                <Col xs={12} className="mb-3" key={"false" + author.quotes[index].quoteText}>
+                                                    <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
+                                                </Col>
+                                            ))}
+                                        </Row>
+                                    }
+                                </Col>
+
+                                {/* Middle Quote Column */}
+                                <Col lg={4} className="d-none d-lg-block">
+                                    {list3a && 
+                                        <Row>
+                                            {list3a.map((index) => (
+                                                <Col xs={12} className="mb-3" key={author.quotes[index].quoteText}>
+                                                    <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
+                                                </Col>
+                                            ))}
+                                        </Row>
+                                    }
+                                    {list3b && 
+                                        <Row>
+                                            {list3b.map((index) => (
+                                                <Col xs={12} className="mb-3" key={author.quotes[index].quoteText}>
+                                                    <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
+                                                </Col>
+                                            ))}
+                                        </Row>
+                                    }
+                                </Col>
+                                
+                                {/* Last Quote Column */}
+                                <Col xs={12} md={6} lg={4}>
+                                    {
+                                        list3b &&
+                                        <Row className="d-xs-block d-lg-none">
+                                            {list3b.map((index) => (
+                                                <Col xs={12} className="mb-3" key={"false" + author.quotes[index].quoteText}>
+                                                    <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
+                                                </Col>
+                                            ))}
+                                        </Row>
+                                    }
+                                    {list2 && 
+                                        <Row>
+                                            {list2.map((index) => (
+                                                <Col xs={12} className="mb-3" key={author.quotes[index].quoteText}>
+                                                    <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
+                                                </Col>
+                                            ))}
+                                        </Row>
+                                    }
+                                </Col>
+                            </Row>
+                            {totalPages > 1 &&
+                                <Pagination className="justify-content-center mt-4 flex-wrap" size="md">
+                                {/* <Pagination.First onClick={() => goToPage(1)} disabled={page === 1} />
+                                <Pagination.Prev
+                                    onClick={() => goToPage(Math.max(1, page - 1))}
+                                    disabled={page === 1}
+                                /> */}
+                                {getPageNumbers(page, totalPages, isSmallScreen ? 2 : 3).map((p, i) =>
+                                    p === "ellipsis"
+                                        ? <Pagination.Ellipsis key={`ellipsis-${i}`} disabled />
+                                        : <Pagination.Item key={p} active={p === page} onClick={() => goToPage(p)}>
+                                            {p}
+                                        </Pagination.Item>
+                                )}
+                                {/* <Pagination.Next
+                                    onClick={() => goToPage(Math.min(totalPages, page + 1))}
+                                    disabled={page === totalPages}
+                                />
+                                <Pagination.Last onClick={() => goToPage(totalPages)} disabled={page === totalPages} /> */}
+                                </Pagination>
                             }
                         </Col>
                     </Row>
-                    {totalPages > 1 &&
-                        <Pagination className="justify-content-center mt-4 flex-wrap" size="md">
-                        {/* <Pagination.First onClick={() => goToPage(1)} disabled={page === 1} />
-                        <Pagination.Prev
-                            onClick={() => goToPage(Math.max(1, page - 1))}
-                            disabled={page === 1}
-                        /> */}
-                        {getPageNumbers(page, totalPages, isSmallScreen ? 2 : 3).map((p, i) =>
-                            p === "ellipsis"
-                                ? <Pagination.Ellipsis key={`ellipsis-${i}`} disabled />
-                                : <Pagination.Item key={p} active={p === page} onClick={() => goToPage(p)}>
-                                    {p}
-                                </Pagination.Item>
-                        )}
-                        {/* <Pagination.Next
-                            onClick={() => goToPage(Math.min(totalPages, page + 1))}
-                            disabled={page === totalPages}
-                        />
-                        <Pagination.Last onClick={() => goToPage(totalPages)} disabled={page === totalPages} /> */}
-                        </Pagination>
-                    }
                 </Card.Body>
             </Card>
         </Container>

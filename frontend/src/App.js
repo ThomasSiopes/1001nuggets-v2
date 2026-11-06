@@ -41,6 +41,8 @@ const Publications = React.lazy(() => import("./pages/Publications"));
 const GlossaryNav = React.lazy(() => import("./pages/GlossaryNav"));
 const GlossaryIndex = React.lazy(() => import("./pages/GlossaryIndex"));
 
+const AboutUs = React.lazy(() => import("./pages/AboutUs"));
+
 const ErrorPage = React.lazy(() => import("./pages/404error"));
 const DNE = React.lazy(() => import("./pages/DNE"));
 
@@ -127,6 +129,8 @@ function App () {
             <Route exact path="/glossary/:typing" element={<GlossaryIndex/>}/>
 
             {/* <Route exact path="/more quotes" element={<HomeNav/>}*/}
+
+            {/* <Route exact path="/about" element={<AboutUs/>}/> */}
 
             <Route exact path="/404error" element={<ErrorPage/>}/>
             <Route path="*" element={<DNE/>}/>
