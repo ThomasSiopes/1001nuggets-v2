@@ -144,7 +144,11 @@ function Author () {
                                     <span>See also: </span>
                                     {author.relatedAuthors.map((relatedAuthor, index) => (
                                         <span key={index}>
-                                            <Link className="link-theme" to={`/author/${relatedAuthor}`}>{relatedAuthor}</Link>, 
+                                            {
+                                                index === author.relatedAuthors.length - 1 ?
+                                                <Link className="link-theme" to={`/author/${relatedAuthor}`}>{relatedAuthor}</Link> : 
+                                                <Link className="link-theme" to={`/author/${relatedAuthor}`}>{relatedAuthor}, </Link> 
+                                            }
                                         </span>))}
                                 </Card.Footer>}
                             </Card>
