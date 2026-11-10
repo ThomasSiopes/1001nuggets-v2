@@ -130,7 +130,7 @@ function App () {
 
             {/* <Route exact path="/more quotes" element={<HomeNav/>}*/}
 
-            {/* <Route exact path="/about" element={<AboutUs/>}/> */}
+            <Route exact path="/about" element={<AboutUs/>}/>
 
             <Route exact path="/404error" element={<ErrorPage/>}/>
             <Route path="*" element={<DNE/>}/>

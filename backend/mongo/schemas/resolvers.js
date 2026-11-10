@@ -147,6 +147,20 @@ const resolvers = {
         }
     },
 
+    Author: {
+        relatedAuthorDetails: async (parent, _args, context) => {
+            if (!parent.relatedAuthors || parent.relatedAuthors.length === 0) return [];
+            const found = await Author.find(
+                { name: { $in: parent.relatedAuthors } },
+                { name: 1, realID: 1 }
+            );
+            return parent.relatedAuthors.map(name => {
+                const a = found.find(a => a.name === name);
+                return { name, realID: a ? a.realID : null };
+            });
+        }
+    },
+
     Quote: {
         authorRealID: async(parent, _args, context) => {
             if(!parent.author) return null;
@@ -155,40 +169,40 @@ const resolvers = {
         },
 
         topicDetails: async (parent, _args, context) => {
-        const topics = (parent.topics || []).filter(Boolean);
-        if (topics.length === 0) return [];
-        const results = await Promise.all(
-            topics.map(name => context.loaders.topicByName.load(name))
-        );
-        return topics.map((name, i) => ({
-            name,
-            realID: results[i] ? results[i].realID : null,
-        }));
-    },
+            const topics = (parent.topics || []).filter(Boolean);
+            if (topics.length === 0) return [];
+            const results = await Promise.all(
+                topics.map(name => context.loaders.topicByName.load(name))
+            );
+            return topics.map((name, i) => ({
+                name,
+                realID: results[i] ? results[i].realID : null,
+            }));
+        },
 
-    relatedTopicDetails: async (parent, _args, context) => {
-        const topics = (parent.relatedTopics || []).filter(Boolean);
-        if (topics.length === 0) return [];
-        const results = await Promise.all(
-            topics.map(name => context.loaders.topicByName.load(name))
-        );
-        return topics.map((name, i) => ({
-            name,
-            realID: results[i] ? results[i].realID : null,
-        }));
-    },
+        relatedTopicDetails: async (parent, _args, context) => {
+            const topics = (parent.relatedTopics || []).filter(Boolean);
+            if (topics.length === 0) return [];
+            const results = await Promise.all(
+                topics.map(name => context.loaders.topicByName.load(name))
+            );
+            return topics.map((name, i) => ({
+                name,
+                realID: results[i] ? results[i].realID : null,
+            }));
+        },
 
-    unrelatedTopicDetails: async (parent, _args, context) => {
-        const topics = (parent.unrelatedTopics || []).filter(Boolean);
-        if (topics.length === 0) return [];
-        const results = await Promise.all(
-            topics.map(name => context.loaders.topicByName.load(name))
-        );
-        return topics.map((name, i) => ({
-            name,
-            realID: results[i] ? results[i].realID : null,
-        }));
-    },
+        unrelatedTopicDetails: async (parent, _args, context) => {
+            const topics = (parent.unrelatedTopics || []).filter(Boolean);
+            if (topics.length === 0) return [];
+            const results = await Promise.all(
+                topics.map(name => context.loaders.topicByName.load(name))
+            );
+            return topics.map((name, i) => ({
+                name,
+                realID: results[i] ? results[i].realID : null,
+            }));
+        },
     },
 
     AuthorCat: {

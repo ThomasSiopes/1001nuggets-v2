@@ -107,9 +107,6 @@ function Author () {
 
     const author = data?.authorR;
 
-    let extraAuthors = null;
-    if(author?.relatedAuthors?.[0]) extraAuthors = author.relatedAuthors;
-
     return (
         <>
         {/* <LoadingOverlay show={loading && !data} /> */}
@@ -137,12 +134,19 @@ function Author () {
                 <Card.Header className="bg-light rounded"><Link className="link-theme" to={`/`}>Home</Link> {`>`} <Link className="link-theme" to={`/authors`}>Authors</Link> {`>`} {author.name}</Card.Header>
                 <Card.Body bg={"transparent"}>
                     <Row>
-                        { author.biography && <Col xs={12} md={3} className="mb-3">
+                        { author.biography && <Col xs={12} md={4} xl={3} className="mb-3">
                             <Card>
                                 <Card.Header className="text-center">{author.name}</Card.Header>
                                 <Card.Body>
                                     {author.biography}
                                 </Card.Body>
+                                { author.relatedAuthors && <Card.Footer className="text-center">
+                                    <span>See also: </span>
+                                    {author.relatedAuthors.map((relatedAuthor, index) => (
+                                        <span key={index}>
+                                            <Link className="link-theme" to={`/author/${relatedAuthor}`}>{relatedAuthor}</Link>, 
+                                        </span>))}
+                                </Card.Footer>}
                             </Card>
                         </Col> }
                         <Col>
@@ -175,7 +179,7 @@ function Author () {
                                         <Row>
                                             {list1.map((index) => (
                                                 <Col xs={12} className="mb-3" key={author.quotes[index].quoteText}>
-                                                    <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
+                                                    <QuoteCard quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                                 </Col>
                                             ))}
                                         </Row>
@@ -185,7 +189,7 @@ function Author () {
                                         <Row className="d-xs-block d-lg-none">
                                             {list3a.map((index) => (
                                                 <Col xs={12} className="mb-3" key={"false" + author.quotes[index].quoteText}>
-                                                    <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
+                                                    <QuoteCard quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                                 </Col>
                                             ))}
                                         </Row>
@@ -198,7 +202,7 @@ function Author () {
                                         <Row>
                                             {list3a.map((index) => (
                                                 <Col xs={12} className="mb-3" key={author.quotes[index].quoteText}>
-                                                    <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
+                                                    <QuoteCard quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                                 </Col>
                                             ))}
                                         </Row>
@@ -207,7 +211,7 @@ function Author () {
                                         <Row>
                                             {list3b.map((index) => (
                                                 <Col xs={12} className="mb-3" key={author.quotes[index].quoteText}>
-                                                    <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
+                                                    <QuoteCard quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                                 </Col>
                                             ))}
                                         </Row>
@@ -221,7 +225,7 @@ function Author () {
                                         <Row className="d-xs-block d-lg-none">
                                             {list3b.map((index) => (
                                                 <Col xs={12} className="mb-3" key={"false" + author.quotes[index].quoteText}>
-                                                    <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
+                                                    <QuoteCard quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                                 </Col>
                                             ))}
                                         </Row>
@@ -230,7 +234,7 @@ function Author () {
                                         <Row>
                                             {list2.map((index) => (
                                                 <Col xs={12} className="mb-3" key={author.quotes[index].quoteText}>
-                                                    <QuoteCard relatedAuthors={extraAuthors} quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
+                                                    <QuoteCard quotes={author.quotes} quoteIndex={index} indexOrder={newIndexOrder}/>
                                                 </Col>
                                             ))}
                                         </Row>

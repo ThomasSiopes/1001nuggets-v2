@@ -35,6 +35,7 @@ export const QUERY_AUTHOR_REALID = gql`
             name
             lastName
             relatedAuthors
+            relatedAuthorDetails { name realID }
             quotes {
                 _id
                 quoteText

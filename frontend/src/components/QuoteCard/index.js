@@ -12,7 +12,7 @@ import CollectionButton from "../CollectionButton";
 import AuthorButton from "../AuthorButton";
 import QuoteCardText from '../QuoteCardText';
 
-function QuoteCard({quotes, quoteIndex, indexOrder, relatedAuthors}) {
+function QuoteCard({quotes, quoteIndex, indexOrder}) {
   const [show, setShow] = useState(false);
   const [currentQuote, setIndex] = useState(quoteIndex);
   const [fontSize, setFontSize] = useState(23);
