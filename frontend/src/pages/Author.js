@@ -134,20 +134,22 @@ function Author () {
                 <Card.Header className="bg-light rounded"><Link className="link-theme" to={`/`}>Home</Link> {`>`} <Link className="link-theme" to={`/authors`}>Authors</Link> {`>`} {author.name}</Card.Header>
                 <Card.Body bg={"transparent"}>
                     <Row>
-                        { author.biography && <Col xs={12} md={4} xl={3} className="mb-3">
+                        { (author.biography || author.relatedAuthorDetails.length > 0) && <Col xs={12} md={4} xl={3} className="mb-3">
                             <Card>
                                 <Card.Header className="text-center">{author.name}</Card.Header>
-                                <Card.Body>
-                                    {author.biography}
-                                </Card.Body>
-                                { author.relatedAuthors && <Card.Footer className="text-center">
+                                { author.biography &&
+                                    <Card.Body>
+                                        {author.biography}
+                                    </Card.Body>
+                                }
+                                { author.relatedAuthorDetails.length > 0 && <Card.Footer className="text-center">
                                     <span>See also: </span>
-                                    {author.relatedAuthors.map((relatedAuthor, index) => (
+                                    {author.relatedAuthorDetails.map((relatedAuthor, index) => (
                                         <span key={index}>
                                             {
-                                                index === author.relatedAuthors.length - 1 ?
-                                                <Link className="link-theme" to={`/author/${relatedAuthor}`}>{relatedAuthor}</Link> : 
-                                                <span><Link className="link-theme" to={`/author/${relatedAuthor}`}>{relatedAuthor}</Link>, </span>
+                                                index === author.relatedAuthorDetails.length - 1 ?
+                                                <Link className="link-theme" to={`/author/${relatedAuthor.realID}`}>{relatedAuthor.name}</Link> : 
+                                                <span><Link className="link-theme" to={`/author/${relatedAuthor.realID}`}>{relatedAuthor.name}</Link>, </span>
                                             }
                                         </span>))}
                                 </Card.Footer>}
