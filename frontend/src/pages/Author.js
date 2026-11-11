@@ -147,7 +147,7 @@ function Author () {
                                             {
                                                 index === author.relatedAuthors.length - 1 ?
                                                 <Link className="link-theme" to={`/author/${relatedAuthor}`}>{relatedAuthor}</Link> : 
-                                                <Link className="link-theme" to={`/author/${relatedAuthor}`}>{relatedAuthor}, </Link> 
+                                                <span><Link className="link-theme" to={`/author/${relatedAuthor}`}>{relatedAuthor}</Link>, </span>
                                             }
                                         </span>))}
                                 </Card.Footer>}
